@@ -14,7 +14,7 @@
  */
 
 import('classes.handler.Handler');
-import('lib.pkp.classes.core.JSONMessage');
+import('lib.sep.classes.core.JSONMessage');
 
 class ReportGeneratorHandler extends Handler {
 	/**
@@ -81,7 +81,7 @@ class ReportGeneratorHandler extends Handler {
 		$this->validate();
 
 		$issueId = (int) $request->getUserVar('issueId');
-		import('lib.pkp.classes.core.JSONMessage');
+		import('lib.sep.classes.core.JSONMessage');
 		$json = new JSONMessage();
 
 		if (!$issueId) {
@@ -111,7 +111,7 @@ class ReportGeneratorHandler extends Handler {
 		$this->validate();
 
 		$countryId = (string) $request->getUserVar('countryId');
-		import('lib.pkp.classes.core.JSONMessage');
+		import('lib.sep.classes.core.JSONMessage');
 		$json = new JSONMessage(false);
 
 		if ($countryId) {
@@ -133,12 +133,12 @@ class ReportGeneratorHandler extends Handler {
 	}
 
 	/**
-	 * @see PKPHandler::setupTemplate()
+	 * @see SEPHandler::setupTemplate()
 	 */
 	function setupTemplate() {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_OJS_MANAGER,
-			LOCALE_COMPONENT_OJS_EDITOR, LOCALE_COMPONENT_PKP_SUBMISSION);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_MANAGER, LOCALE_COMPONENT_CLA_MANAGER,
+			LOCALE_COMPONENT_CLA_EDITOR, LOCALE_COMPONENT_SEP_SUBMISSION);
 	}
 
 

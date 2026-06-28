@@ -13,12 +13,12 @@
  *  copyeditor submission.
  */
 
-import('lib.pkp.classes.security.authorization.DataObjectRequiredPolicy');
+import('lib.sep.classes.security.authorization.DataObjectRequiredPolicy');
 
 class CopyeditorSubmissionRequiredPolicy extends DataObjectRequiredPolicy {
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function CopyeditorSubmissionRequiredPolicy(&$request, &$args, $submissionParameterName = 'articleId') {
 		parent::DataObjectRequiredPolicy($request, $args, $submissionParameterName, 'user.authorization.invalidCopyditorSubmission');
@@ -40,7 +40,7 @@ class CopyeditorSubmissionRequiredPolicy extends DataObjectRequiredPolicy {
 
 		// Get the user
 		$user =& $request->getUser();
-		if (!is_a($user, 'PKPUser')) return AUTHORIZATION_DENY;
+		if (!is_a($user, 'SEPUser')) return AUTHORIZATION_DENY;
 
 		// Validate the article id.
 		$copyeditorSubmissionDao =& DAORegistry::getDAO('CopyeditorSubmissionDAO');

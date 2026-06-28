@@ -101,7 +101,7 @@ class PluginRegistry {
 
 		if ($enabledOnly && Config::getVar('general', 'installed')) {
 			// Get enabled plug-ins from the database.
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			$products =& $application->getEnabledProducts('plugins.'.$category, $mainContextId);
 			foreach ($products as $product) {
 				$file = $product->getProduct();
@@ -175,7 +175,7 @@ class PluginRegistry {
 	 * @return array
 	 */
 	function getCategories() {
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$categories = $application->getPluginCategories();
 		HookRegistry::call('PluginRegistry::getCategories', array(&$categories));
 		return $categories;

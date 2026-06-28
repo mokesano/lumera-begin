@@ -10,21 +10,21 @@
  * @class CitationGridHandler
  * @ingroup controllers_grid_citation
  *
- * @brief Handle OJS specific parts of citation grid requests.
+ * @brief Handle CLA specific parts of citation grid requests.
  */
 
-import('lib.pkp.classes.controllers.grid.citation.PKPCitationGridHandler');
+import('lib.sep.classes.controllers.grid.citation.SEPCitationGridHandler');
 
 // import validation classes
 import('classes.handler.validation.HandlerValidatorJournal');
-import('lib.pkp.classes.handler.validation.HandlerValidatorRoles');
+import('lib.sep.classes.handler.validation.HandlerValidatorRoles');
 
-class CitationGridHandler extends PKPCitationGridHandler {
+class CitationGridHandler extends SEPCitationGridHandler {
 	/**
 	 * Constructor
 	 */
 	function CitationGridHandler() {
-		parent::PKPCitationGridHandler();
+		parent::SEPCitationGridHandler();
 		$this->addRoleAssignment(
 				array(ROLE_ID_EDITOR, ROLE_ID_SECTION_EDITOR),
 				array('fetchGrid', 'addCitation', 'editCitation', 'updateRawCitation',
@@ -34,20 +34,20 @@ class CitationGridHandler extends PKPCitationGridHandler {
 
 
 	//
-	// Implement template methods from PKPHandler
+	// Implement template methods from SEPHandler
 	//
 	/**
-	 * @see PKPHandler::authorize()
+	 * @see SEPHandler::authorize()
 	 */
 	function authorize(&$request, &$args, $roleAssignments) {
 		// Make sure the user can edit the submission in the request.
-		import('classes.security.authorization.OjsSubmissionAccessPolicy');
-		$this->addPolicy(new OjsSubmissionAccessPolicy($request, $args, $roleAssignments, 'assocId'));
+		import('classes.security.authorization.CLASubmissionAccessPolicy');
+		$this->addPolicy(new CLASubmissionAccessPolicy($request, $args, $roleAssignments, 'assocId'));
 		return parent::authorize($request, $args, $roleAssignments);
 	}
 
 	/**
-	 * @see PKPHandler::initialize()
+	 * @see SEPHandler::initialize()
 	 */
 	function initialize(&$request, $args) {
 		// Associate the citation editor with the authorized article.
@@ -60,10 +60,10 @@ class CitationGridHandler extends PKPCitationGridHandler {
 	}
 
 	//
-	// Override methods from PKPCitationGridHandler
+	// Override methods from SEPCitationGridHandler
 	//
 	/**
-	 * @see PKPCitationGridHandler::exportCitations()
+	 * @see SEPCitationGridHandler::exportCitations()
 	 */
 	function exportCitations($args, &$request) {
 		$dispatcher =& $this->getDispatcher();

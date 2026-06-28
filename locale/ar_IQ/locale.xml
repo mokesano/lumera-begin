@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/ar_IQ/locale.xml
@@ -361,9 +361,9 @@
 
 	<!-- Site Administration -->
 
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[لتحصل على فهرسة لمحتويات جميع المجلات المستضافة في هذا الموقع ضمن نظام موزع عالمياً من أنظمة المعلومات، <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">سجل</a> رابط موقعك في: البيانات الوصفية لمشروع المعرفة العامة <a href="http://pkp.sfu.ca/harvester/" target="_blank">الحاصود</a>. هذه الأداة تجمع البيانات الوصفية من كل فقرة مفهرسة في تلك المجلات، لتمكين عمليات البحث الدقيقة والمتكاملة بين المواقع البحثية التي تلتزم <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">بروتوكول مبادرة المحفوظات المفتوحة لحصد البيانات الوصفية</a>.
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[لتحصل على فهرسة لمحتويات جميع المجلات المستضافة في هذا الموقع ضمن نظام موزع عالمياً من أنظمة المعلومات، <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">سجل</a> رابط موقعك في: البيانات الوصفية لمشروع المعرفة العامة <a href="http://lumera.sangia.org/harvester/" target="_blank">الحاصود</a>. هذه الأداة تجمع البيانات الوصفية من كل فقرة مفهرسة في تلك المجلات، لتمكين عمليات البحث الدقيقة والمتكاملة بين المواقع البحثية التي تلتزم <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">بروتوكول مبادرة المحفوظات المفتوحة لحصد البيانات الوصفية</a>.
 		<br /><br />
-			<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">أنقر هنا</a> وأدخل <span class="highlight">{$siteUrl}</span> ضمن <strong>رابط الموقع</strong>، و<span class="highlight">{$oaiUrl}</span> ضمن <strong>الرابط الأساسي لمحفوظات البروتوكول أعلاه</strong>.
+			<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">أنقر هنا</a> وأدخل <span class="highlight">{$siteUrl}</span> ضمن <strong>رابط الموقع</strong>، و<span class="highlight">{$oaiUrl}</span> ضمن <strong>الرابط الأساسي لمحفوظات البروتوكول أعلاه</strong>.
 		<br /><br />
 	لاحظ أن واجهة OAI لهذا الموقع يمكن تعطيلها عبر تعديل إعدادات نظام المجلات المفتوحة. النسخ القادمة (بإذن الله) من هذا النظام ستسمح بتمكين أو تعطيل تلك الواجهة على مستوى أحد المجلات المستضافة في الموقع وليس للموقع بأكمله.]]></message>
 
@@ -375,7 +375,7 @@
 		<li>أن ملقمك لا يدعم أو يسمح بتشغيل أداة فك ضغط ملف من نوع "tar" </li>
 		<li>النظام عاجز عن تحديث ملف تسجيل اللغات، وهو عادة: "registry/locales.xml".</li>
 	</ul>
-	<p>يمكن تنزيل حزم اللغات يدوياً من <a href="http://pkp.sfu.ca">موقع مشروع المعرفة العامة</a>.</p>]]></message>
+	<p>يمكن تنزيل حزم اللغات يدوياً من <a href="http://sep.sfu.ca">موقع مشروع المعرفة العامة</a>.</p>]]></message>
 
 	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>تحديد مصدر مصادقة إفتراضي مغاير لنظام المجلات المفتوحة له التبعات الآتية:</p>
 	<ul>
@@ -888,14 +888,14 @@
 	<message key="about.journalSponsorship">كفالة المجلة</message>
 	<message key="about.aboutThisPublishingSystem">عن نظام النشر هذا</message>
 	<message key="about.aboutThisPublishingSystem.altText">عملية التحرير والنشر لنظام المجلات المفتوحة</message>
-	<message key="about.aboutOJSJournal"><![CDATA[هذه المجلة تستعمل نظام المجلات المفتوحة {$ojsVersion}، والذي هو نظام مفتوح المصدر لإدارة النشر مطور ومدعوم وموزع مجاناً عبر الرابط <a href="http://pkp.sfu.ca/">مشروع المعرفة العامة</a> تحت رخصة GNU General Public License.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[هذا الموقع يستعمل نظام المجلات المفتوحة {$ojsVersion} والذي هو نظام مفتوح المصدر لإدارة النشر العلمي، مطور ومدعوم وموزع مجاناً عبر الرابط <a href="http://pkp.sfu.ca/">مشروع المعرفة العامة</a> تحت رخصة GNU General Public License.]]></message>
+	<message key="about.aboutCLAJournal"><![CDATA[هذه المجلة تستعمل نظام المجلات المفتوحة {$claVersion}، والذي هو نظام مفتوح المصدر لإدارة النشر مطور ومدعوم وموزع مجاناً عبر الرابط <a href="http://lumera.sangia.org/">مشروع المعرفة العامة</a> تحت رخصة GNU General Public License.]]></message>
+	<message key="about.aboutCLASite"><![CDATA[هذا الموقع يستعمل نظام المجلات المفتوحة {$claVersion} والذي هو نظام مفتوح المصدر لإدارة النشر العلمي، مطور ومدعوم وموزع مجاناً عبر الرابط <a href="http://lumera.sangia.org/">مشروع المعرفة العامة</a> تحت رخصة GNU General Public License.]]></message>
 
 	<!-- Announcement -->
 
 	<!-- Help -->
-	<message key="help.ojsHelp">ملفات المساعدة لنظام المجلات المفتوحة</message>
-	<message key="help.ojsHelpAbbrev">OJS مساعد</message>
+	<message key="help.claHelp">ملفات المساعدة لنظام المجلات المفتوحة</message>
+	<message key="help.claHelpAbbrev">CLA مساعد</message>
 	<message key="help.searchReturnResults">العودة إلى نتائج البحث</message>
 
 	<!-- Donations -->
@@ -979,16 +979,16 @@
 	<message key="payment.subscription.expires">تنتهي صلاحيته</message>
 
 	<!-- Installer -->
-	<message key="installer.ojsInstallation">تنصيب نظام المجلات المفتوحة</message>
-	<message key="installer.ojsUpgrade">ترقية نظام المجلات المفتوحة</message>
+	<message key="installer.claInstallation">تنصيب نظام المجلات المفتوحة</message>
+	<message key="installer.claUpgrade">ترقية نظام المجلات المفتوحة</message>
 	<message key="installer.installationInstructions">
         <![CDATA[<h4>نسخة نظام المجلات المفتوحة {$version}</h4>
 
-<p>شكراً لقيامك بتنزيل <strong>نظام المجلات المفتوحة</strong> لمشروع المعرفة العامة. قبل المتابعة، لطفاً إقرأ <a href="{$baseUrl}/docs/README">ملف إقرأني</a> المضمن في هذا البرنامج. للمزيد من المعلومات عن مشروع المعرفة العامة وبرامجياته، لطفاً اتبع الرابط <a href="http://pkp.sfu.ca/" target="_blank">موقع PKP</a>. إن كانت لديك إخباريات عن أخطاء برمجية، أو استفسارات فنية عن نظام المجلات المفتوحة، أنظر <a href="http://forum.pkp.sfu.ca" target="_blank">منتدى الدعم</a> أو زر موقع PKP's online <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">نظام التبليغ عن الأخطاء</a>. رغم كون منتدى الدعم هو المكان الأمثل للحصول على المساعدة، إلا أنه بإمكانك أيضاً مراسلة فريق العمل على <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>شكراً لقيامك بتنزيل <strong>نظام المجلات المفتوحة</strong> لمشروع المعرفة العامة. قبل المتابعة، لطفاً إقرأ <a href="{$baseUrl}/docs/README">ملف إقرأني</a> المضمن في هذا البرنامج. للمزيد من المعلومات عن مشروع المعرفة العامة وبرامجياته، لطفاً اتبع الرابط <a href="http://lumera.sangia.org/" target="_blank">موقع SEP</a>. إن كانت لديك إخباريات عن أخطاء برمجية، أو استفسارات فنية عن نظام المجلات المفتوحة، أنظر <a href="http://forum.sep.sfu.ca" target="_blank">منتدى الدعم</a> أو زر موقع SEP's online <a href="https://github.com/sep/sep-lib#issues" target="_blank">نظام التبليغ عن الأخطاء</a>. رغم كون منتدى الدعم هو المكان الأمثل للحصول على المساعدة، إلا أنه بإمكانك أيضاً مراسلة فريق العمل على <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
 
 <h4>الترقية</h4>
 
-<p>إن كنت بصدد ترقية التنصيب الحالي من OJS 2.x, <a href="{$upgradeUrl}">أنقر هنا</a> للمتابعة.</p>
+<p>إن كنت بصدد ترقية التنصيب الحالي من CLA 2.x, <a href="{$upgradeUrl}">أنقر هنا</a> للمتابعة.</p>
 
 <h4>المتطلبات المستحسنة لتشغيل النظام</h4>
 
@@ -999,7 +999,7 @@
 	<li>نظام التشغيل: أي نظام تشغيل يدعم البرمجيات أعلاه، متضمناً <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.oracle.com/sun/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, <a href="http://www.microsoft.com/">Windows</a></li>
 </ul>
 
-<p>بما أن PKP لا تمتلك الموارد لاختبار تشغيل النظام على كل احتمالات البرامجيات المتاحة من نسخ وأنظمة تشغيل، لذا فإنها لا تعطي أي ضمانات للتشغيل الصحيح.</p>
+<p>بما أن SEP لا تمتلك الموارد لاختبار تشغيل النظام على كل احتمالات البرامجيات المتاحة من نسخ وأنظمة تشغيل، لذا فإنها لا تعطي أي ضمانات للتشغيل الصحيح.</p>
 
 <p>التعديل على هذه الإعدادات يمكن إجراؤه بعد التنصيب عبر تعديل محتوى الملف <tt>config.inc.php</tt> الموجود في حافظة الملفات الرئيسية لنظام المجلات المفتوحة، أو عبر استعمال واجعة إدارة الموقع.</p>
 
@@ -1022,7 +1022,7 @@
 <p>2. حافظة ملفات لتخزين الملفات المرفوعة إلى الموقع ينبغي إنشاؤها وجعلها قابلة للتعديل (أنظر "إعدادات الملفات" أدناه).</p>]]></message>
 	<message key="installer.upgradeInstructions"><![CDATA[<h4>نسخة نظام المجلات المفتوحة {$version}</h4>
 
-<p>شكراً لقيامك بتنزيل <strong>نظام المجلات المفتوحة</strong> لمشروع المعرفة العامة. قبل المتابعة، لطفاً إقرأ <a href="{$baseUrl}/docs/README">ملف إقرأني</a> و <a href="{$baseUrl}/docs/UPGRADE">ملف الترقية</a>المضمنين في هذا البرنامج. للمزيد من المعلومات عن مشروع المعرفة العامة وبرامجياته، لطفاً اتبع الرابط <a href="http://pkp.sfu.ca/" target="_blank">موقع PKP</a>. إن كانت لديك إخباريات عن أخطاء برمجية، أو استفسارات فنية عن نظام المجلات المفتوحة، أنظر <a href="http://forum.pkp.sfu.ca" target="_blank">منتدى الدعم</a> أو زر موقع PKP's online <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">نظام التبليغ عن الأخطاء</a>. رغم كون منتدى الدعم هو المكان الأمثل للحصول على المساعدة، إلا أنه بإمكانك أيضاً مراسلة فريق العمل على <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>شكراً لقيامك بتنزيل <strong>نظام المجلات المفتوحة</strong> لمشروع المعرفة العامة. قبل المتابعة، لطفاً إقرأ <a href="{$baseUrl}/docs/README">ملف إقرأني</a> و <a href="{$baseUrl}/docs/UPGRADE">ملف الترقية</a>المضمنين في هذا البرنامج. للمزيد من المعلومات عن مشروع المعرفة العامة وبرامجياته، لطفاً اتبع الرابط <a href="http://lumera.sangia.org/" target="_blank">موقع SEP</a>. إن كانت لديك إخباريات عن أخطاء برمجية، أو استفسارات فنية عن نظام المجلات المفتوحة، أنظر <a href="http://forum.sep.sfu.ca" target="_blank">منتدى الدعم</a> أو زر موقع SEP's online <a href="https://github.com/sep/sep-lib#issues" target="_blank">نظام التبليغ عن الأخطاء</a>. رغم كون منتدى الدعم هو المكان الأمثل للحصول على المساعدة، إلا أنه بإمكانك أيضاً مراسلة فريق العمل على <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
 <p>إنه من <strong>الموصى به بشدة</strong> أن تقوم بالخزن الإحتياطي لقاعدة بيانات النظام وحافظة ملفات التحميل وحافظة ملفات تنصيب النظام قبل المتابعة بعملية الترقية.</p>
 <p>إن كنت تقوم بالتشغيل عبر <a href="http://www.php.net/features.safe-mode" target="_blank">PHP Safe Mode</a>، لطفاً، تأكد من أن max_execution_time directive المتوضع في الملف التعريفي php.ini مضبوط على high limit. إن كان الأمر غير ذلك (فإن مؤشرApache's "Timeout") سيصل حده الأقصى، وعملية الترقية ستتم مقاطعتها، ولذلك ستتطلب التدخل اليدوي.</p>]]></message>
 	<message key="installer.localeSettingsInstructions"><![CDATA[للحصول على دعم كامل لترميز Unicode (UTF-8)، إختر UTF-8 لجميع إعدادات ترميز الحروف. لاحظ أن هذا الدعم يتطلب حالياً أن تكون قواعد البيانات بخوادم MySQL >= 4.1.1 أو PostgreSQL >= 7.1 . فضلاً عن كون الدعم الكامل لترميز Unicode يتطلب PHP >= 4.3.0 مجتمعاً مع دعم مكتبة <a href="http://www.php.net/mbstring" target="_blank">mbstring</a> (ممكنة إفتراضياً في معظم تنصيبات PHP الحالية). قد تواجه صعوبات عند استعمال مجموعات الحروف الإضافية فيما لو كان الملقم الذي تستعمله لا يلبي تلك المتطلبات.
@@ -1043,18 +1043,18 @@
 <p>للشروع باستعمال النظام، <a href="{$loginUrl}">أدخل</a> مستعملاً اسم الدخول وكلمة المرور المدخلين في الصفحة السابقة.</p>
 <p>إن رغبت في تلقي الأخبار والتحديثات، فإمكانك:</p>
 <ol>
-	<li><a href="http://pkp.sfu.ca/ojs/register" target="_new">تسجيل</a> مجلتك، مؤتمرك، حاصودك وتلقي تحديثات لترقية النظام فضلاً عن حزم الصيانة والأمان، والمزيد أيضاً.</li>
-	<li>إنضم إلى <a href="http://pkp.sfu.ca/informed" target="_new">قائمة المناقشة</a> التابعة لأنظمة OJS, OCS, the Harvester, Lemon8-XML, OMP, أو كل ما سبق.</li>
-	<li>إشترك في <a href="http://pkp.sfu.ca/blog" target="_new">PKP blog</a> <a href="http://pkp.sfu.ca/blog/feed" target="_new">RSS feed</a>.</li>
+	<li><a href="http://lumera.sangia.org/cla/register" target="_new">تسجيل</a> مجلتك، مؤتمرك، حاصودك وتلقي تحديثات لترقية النظام فضلاً عن حزم الصيانة والأمان، والمزيد أيضاً.</li>
+	<li>إنضم إلى <a href="http://lumera.sangia.org/informed" target="_new">قائمة المناقشة</a> التابعة لأنظمة CLA, OCS, the Harvester, Lemon8-XML, OMP, أو كل ما سبق.</li>
+	<li>إشترك في <a href="http://lumera.sangia.org/blog" target="_new">SEP blog</a> <a href="http://lumera.sangia.org/blog/feed" target="_new">RSS feed</a>.</li>
 </ol>
-<p>إن كانت لديك استفسارات أو تعليقات، لطفاً، أنقر <a href="http://forum.pkp.sfu.ca" target="_new">منتدى الدعم</a>.</p>]]></message>
+<p>إن كانت لديك استفسارات أو تعليقات، لطفاً، أنقر <a href="http://forum.sep.sfu.ca" target="_new">منتدى الدعم</a>.</p>]]></message>
 	<message key="installer.upgradeComplete"><![CDATA[<p>ترقية نظام المجلات المفتوحة إلى النسخة {$version} قد إكتمل بنجاح.</p>
 <p>لا تنسَ إعادة ضبط الإعداد "installed" في ملفك التعريفي config.inc.php إلى <em>On</em>.</p>
-<p>إن لم يسبق لك التسجيل وترغب في الحصول على الأخبار والتحديثات <strong>لطفاً، سجل في <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a>.</strong> إن كانت لديك استفسارات أو تعليقات، لطفاً، أنقر <a href="http://forum.pkp.sfu.ca" target="_new">منتدى الدعم</a>.</p>]]></message>
+<p>إن لم يسبق لك التسجيل وترغب في الحصول على الأخبار والتحديثات <strong>لطفاً، سجل في <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a>.</strong> إن كانت لديك استفسارات أو تعليقات، لطفاً، أنقر <a href="http://forum.sep.sfu.ca" target="_new">منتدى الدعم</a>.</p>]]></message>
 
 	<!-- Installation upgrade warnings -->
-	<message key="site.upgradeAvailable.admin"><![CDATA[تم إطلاق نسخة جديدة من نظام المجلات المفتوحة! أنت حالياً تستعمل النسخة {$currentVersion}  منه. النسخة ذات الإصدار الأحدث هي  OJS {$latestVersion}. لطفاً، قم بزيارة <a href="http://pkp.sfu.ca/ojs_download" target="_new">هذه الصفحة</a> لتنزيل النسخة الأحدث والعثور على تعليمات الترقية.]]></message>
-	<message key="site.upgradeAvailable.manager"><![CDATA[تم إطلاق نسخة جديدة من نظام المجلات المفتوحة! أنت حالياً تستعمل النسخة {$currentVersion}منه. النسخة ذات الإصدار الأحدث هي OJS {$latestVersion}. لطفاً، إتصل بمدير الموقع ({$siteAdminName}، <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) لإبلاغه عن هذا الإصدار الأخير. للمزيد من المعلومات أنظر <a href="http://pkp.sfu.ca/ojs_download" target="_new">هنا</a>.]]></message>
+	<message key="site.upgradeAvailable.admin"><![CDATA[تم إطلاق نسخة جديدة من نظام المجلات المفتوحة! أنت حالياً تستعمل النسخة {$currentVersion}  منه. النسخة ذات الإصدار الأحدث هي  CLA {$latestVersion}. لطفاً، قم بزيارة <a href="http://lumera.sangia.org/cla_download" target="_new">هذه الصفحة</a> لتنزيل النسخة الأحدث والعثور على تعليمات الترقية.]]></message>
+	<message key="site.upgradeAvailable.manager"><![CDATA[تم إطلاق نسخة جديدة من نظام المجلات المفتوحة! أنت حالياً تستعمل النسخة {$currentVersion}منه. النسخة ذات الإصدار الأحدث هي CLA {$latestVersion}. لطفاً، إتصل بمدير الموقع ({$siteAdminName}، <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) لإبلاغه عن هذا الإصدار الأخير. للمزيد من المعلومات أنظر <a href="http://lumera.sangia.org/cla_download" target="_new">هنا</a>.]]></message>
 
 	<!-- Article Logs -->
 	<message key="log.author.submitted">{$authorName} قد أدخل طلب نشر جديد، رقمه التعريفي ID {$submissionId}.</message>
@@ -1140,8 +1140,8 @@
 
 	<message key="rt.metadata.dublinCore.primaryAuthor">المنشئ</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">اسم المؤلف، الانتماء، الدولة</message>
-	<message key="rt.metadata.pkp.peerReviewed">مؤلَّف محكَّم</message>
+	<message key="rt.metadata.sep.primaryAuthor">اسم المؤلف، الانتماء، الدولة</message>
+	<message key="rt.metadata.sep.peerReviewed">مؤلَّف محكَّم</message>
 
 
 

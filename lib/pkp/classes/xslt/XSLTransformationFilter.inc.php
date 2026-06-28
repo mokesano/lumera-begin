@@ -13,8 +13,8 @@
  * @brief Class that transforms XML via XSL.
  */
 
-import('lib.pkp.classes.filter.PersistableFilter');
-import('lib.pkp.classes.xslt.XSLTransformer');
+import('lib.sep.classes.filter.PersistableFilter');
+import('lib.sep.classes.xslt.XSLTransformer');
 
 class XSLTransformationFilter extends PersistableFilter {
 	/**
@@ -32,7 +32,7 @@ class XSLTransformationFilter extends PersistableFilter {
 		if (!substr($filterGroup->getInputType(), 0, 5) == 'xml::') fatalError('XSL filters need XML as input.');
 
 		// Instantiate the settings of this filter
-		import('lib.pkp.classes.filter.FilterSetting');
+		import('lib.sep.classes.filter.FilterSetting');
 		$this->addSetting(new FilterSetting('xsl', null, null));
 		$this->addSetting(new FilterSetting('xslType', null, null));
 		$this->addSetting(new FilterSetting('resultType', null, null, FORM_VALIDATOR_OPTIONAL_VALUE));
@@ -110,7 +110,7 @@ class XSLTransformationFilter extends PersistableFilter {
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.classes.xslt.XSLTransformationFilter';
+		return 'lib.sep.classes.xslt.XSLTransformationFilter';
 	}
 
 

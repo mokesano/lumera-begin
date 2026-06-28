@@ -364,7 +364,7 @@ class PeopleHandler extends ManagerHandler {
 	/**
 	 * Display form to create a new user.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createUser($args, &$request) {
 		$this->editUser($args, $request);

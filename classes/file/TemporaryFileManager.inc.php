@@ -15,15 +15,15 @@
  */
 
 
-import('lib.pkp.classes.file.PKPTemporaryFileManager');
+import('lib.sep.classes.file.SEPTemporaryFileManager');
 
-class TemporaryFileManager extends PKPTemporaryFileManager {
+class TemporaryFileManager extends SEPTemporaryFileManager {
 	/**
 	 * Constructor.
 	 * Create a manager for handling temporary file uploads.
 	 */
 	function TemporaryFileManager() {
-		parent::PKPTemporaryFileManager();
+		parent::SEPTemporaryFileManager();
 	}
 
 	/**

@@ -17,10 +17,10 @@
  * @brief Form class for user purchase of individual subscription.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class UserIndividualSubscriptionForm extends Form {
-	/** @var $request PKPRequest */
+	/** @var $request SEPRequest */
 	var $request;
 
 	/** @var userId int the user associated with the subscription */
@@ -34,7 +34,7 @@ class UserIndividualSubscriptionForm extends Form {
 
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $userId int
 	 * @param $subscriptionId int
 	 */
@@ -145,8 +145,8 @@ class UserIndividualSubscriptionForm extends Form {
 			$subscription =& $this->subscription;
 		}
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($this->request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($this->request);
 		$paymentPlugin =& $paymentManager->getPaymentPlugin();
 		
 		if ($paymentPlugin->getName() == 'ManualPayment') {

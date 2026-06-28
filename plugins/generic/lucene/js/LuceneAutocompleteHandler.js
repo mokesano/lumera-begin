@@ -16,20 +16,20 @@
 (function($) {
 
 	/** @type {Object} */
-	$.pkp.plugins.generic.lucene = $.pkp.plugins.generic.lucene || {};
+	$.sep.plugins.generic.lucene = $.sep.plugins.generic.lucene || {};
 
 
 
 	/**
 	 * @constructor
 	 *
-	 * @extends $.pkp.controllers.AutocompleteHandler
+	 * @extends $.sep.controllers.AutocompleteHandler
 	 *
 	 * @param {jQueryObject} $autocompleteField the wrapped HTML input element.
 	 * @param {Object} options options to be passed
 	 *  into the jqueryUI SimpleSearchForm plugin.
 	 */
-	$.pkp.plugins.generic.lucene.LuceneAutocompleteHandler =
+	$.sep.plugins.generic.lucene.LuceneAutocompleteHandler =
 			function($autocompleteField, options) {
 
 		options.minLength = 1;
@@ -37,9 +37,9 @@
 		this.searchForm_ = options.searchForm;
 		this.parent($autocompleteField, options);
 	};
-	$.pkp.classes.Helper.inherits(
-			$.pkp.plugins.generic.lucene.LuceneAutocompleteHandler,
-			$.pkp.controllers.AutocompleteHandler);
+	$.sep.classes.Helper.inherits(
+			$.sep.plugins.generic.lucene.LuceneAutocompleteHandler,
+			$.sep.controllers.AutocompleteHandler);
 
 
 	//
@@ -50,7 +50,7 @@
 	 * @private
 	 * @type {string}
 	 */
-	$.pkp.plugins.generic.lucene.LuceneAutocompleteHandler.prototype.
+	$.sep.plugins.generic.lucene.LuceneAutocompleteHandler.prototype.
 			searchForm_ = '';
 
 
@@ -64,7 +64,7 @@
 	 * @param {Function} response The response handler function.
 	 */
 	/*jslint unparam: true*/
-	$.pkp.plugins.generic.lucene.LuceneAutocompleteHandler.prototype.
+	$.sep.plugins.generic.lucene.LuceneAutocompleteHandler.prototype.
 			fetchAutocomplete = function(callingElement, request, response) {
 		var $textInput;
 

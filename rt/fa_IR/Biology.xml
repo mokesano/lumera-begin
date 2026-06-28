@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<!DOCTYPE version SYSTEM "../../lib/pkp/dtd/rtVersion.dtd">
+<!DOCTYPE version SYSTEM "../../lib/sep/dtd/rtVersion.dtd">
 <!--
   * Biology.xml
   *
@@ -46,9 +46,9 @@
     </search>
     <search>
       <search_title>جمع اورکنندهء آرشیوهای پروژهء اطلاعات عمومی</search_title>
-      <search_description>جمع آوری کننده آرشیو های باز PKP یک سیستم رایگان فهرست بندی متادیتا است که توسط پروژهء اطلاعات عمومی بر اثر تلاشهای صورت گرفته در این پروژه به منظور گسترش و بهینه سازی دسترسی به تحقیقات ابداء شده است هزینه این پروژه از طریق بودجه فدرال تامین شده است جمع آوری کنندهء PKP OAI به شما امکان میدهد که یک فهرست با قابلیت جستجو را از متادیتاهای آرشیوهای باز مانند سایتهایی که از سیستمهای ژورنال آزاد یا سیستمهای کنفرانس ازاد استفاده میکنند تهیه کنید </search_description>
-      <url>http://pkp.sfu.ca/harvester/</url>
-      <search_url>http://pkp.sfu.ca/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
+      <search_description>جمع آوری کننده آرشیو های باز SEP یک سیستم رایگان فهرست بندی متادیتا است که توسط پروژهء اطلاعات عمومی بر اثر تلاشهای صورت گرفته در این پروژه به منظور گسترش و بهینه سازی دسترسی به تحقیقات ابداء شده است هزینه این پروژه از طریق بودجه فدرال تامین شده است جمع آوری کنندهء SEP OAI به شما امکان میدهد که یک فهرست با قابلیت جستجو را از متادیتاهای آرشیوهای باز مانند سایتهایی که از سیستمهای ژورنال آزاد یا سیستمهای کنفرانس ازاد استفاده میکنند تهیه کنید </search_description>
+      <url>http://lumera.sangia.org/harvester/</url>
+      <search_url>http://lumera.sangia.org/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
     </search>
     <search>
       <search_title>اطلاعات حیوانات: اطلاعاتی  دربارهء پستانداران  کمیاب-درمعرض خطر ودرحال انقراض</search_title>

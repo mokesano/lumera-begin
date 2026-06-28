@@ -169,7 +169,7 @@ class StatisticsHandler extends ManagerHandler {
 		$this->validate();
 		$this->setupTemplate();
 
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_OJS_EDITOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION, LOCALE_COMPONENT_CLA_EDITOR);
 
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->display('manager/statistics/reportGenerator.tpl');
@@ -179,12 +179,12 @@ class StatisticsHandler extends ManagerHandler {
 	 * Generate statistics reports from passed
 	 * request arguments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function generateReport(&$args, &$request) {
 		$this->validate();
 		$this->setupTemplate(true);
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_OJS_EDITOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION, LOCALE_COMPONENT_CLA_EDITOR);
 
 		$router =& $request->getRouter();
 		$context =& $router->getContext($request); /* @var $context Journal */

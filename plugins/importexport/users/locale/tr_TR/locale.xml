@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/users/locale/tr_TR/locale.xml
@@ -55,5 +55,5 @@ Seçenekli etiketler:
 	<message key="plugins.importexport.users.export.errorsOccurred">Veriler ihraç edilirken hata oldu</message>
 	<message key="plugins.importexport.users.export.couldNotWriteFile">"{$fileName}" dosyasına yazamıyorum.</message>
 	<message key="plugins.importexport.users.import.warning">Uyarı</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">{$importHash} ile karma şifreleri kullanmayın; ADS {$ojsHash} kullanmak üzere yapılandırılmıştır. Eğer devam ederseniz, içe aktarılan kullanıcıların parolalarını sıfırlamak gerekir.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">{$importHash} ile karma şifreleri kullanmayın; ADS {$claHash} kullanmak üzere yapılandırılmıştır. Eğer devam ederseniz, içe aktarılan kullanıcıların parolalarını sıfırlamak gerekir.</message>
 </locale>

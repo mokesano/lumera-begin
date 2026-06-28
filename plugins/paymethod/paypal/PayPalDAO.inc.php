@@ -13,7 +13,7 @@
  * @brief Operations for retrieving and modifying Transactions objects.
  */
 
-import('lib.pkp.classes.db.DAO');
+import('lib.sep.classes.db.DAO');
 
 class PayPalDAO extends DAO {
 	/**

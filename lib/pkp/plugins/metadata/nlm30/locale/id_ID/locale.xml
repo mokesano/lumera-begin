@@ -36,11 +36,11 @@
 
 	<!-- NLM 3.0 output -->
 	<message key="plugins.metadata.nlm30.nlm30XmlOutput.displayName">Output Penerbitan Jurnal NLM 3.0</message>
-	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Konversi artikel/tulisan OJS atau OCS ke dalam NLM 3.0.</message>
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Konversi artikel/tulisan CLA atau OCS ke dalam NLM 3.0.</message>
 
 	<!-- NLM 2.3 output -->
 	<message key="plugins.metadata.nlm30.nlm23XmlOutput.displayName">Output Penerbitan Jurnal NLM 2.3</message>
-	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Konversi artikel/tulisan OJS atau OCS ke dalam NLM 2.3.</message>
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Konversi artikel/tulisan CLA atau OCS ke dalam NLM 2.3.</message>
 
 	<!-- NLM 3.0 to 2.3 downgrade -->
 	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.displayName">Penurunan Versi Penerbitan Jurnal NLM 3.0 ke 2.3</message>
@@ -48,5 +48,5 @@
 
 	<!-- Plain text reference list output -->
 	<message key="plugins.metadata.nlm30.refList.displayName">Daftar menciptakan teks referensi</message>
-	<message key="plugins.metadata.nlm30.refList.description">Menciptakan daftar teks referensi yang terformat dari penyerahan referensi OJS/OCS/OMP</message>
+	<message key="plugins.metadata.nlm30.refList.description">Menciptakan daftar teks referensi yang terformat dari penyerahan referensi CLA/OCS/OMP</message>
 </locale>

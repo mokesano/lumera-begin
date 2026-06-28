@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 <!--
   * locale/ca_ES/manager.xml
   *
@@ -7,7 +7,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_(ca_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Catalan_(ca_ES)
   *
   * Localization strings.
   -->
@@ -21,7 +21,7 @@
 	<message key="manager.groups.context.editorialTeam.short">Equip editorial</message>
 	<message key="manager.groups.context.people">Mostra el títol com a categoria pròpia a Persones (p. ex. Comitè editorial)</message>
 	<message key="manager.groups.create">Crea un títol de càrrec</message>
-	<message key="manager.groups.disableBoard">L’OJS llista els membres de l’equip editorial amb els rols que tenen assignats (administrador/a de la revista, corrector/a, etc.)</message>
+	<message key="manager.groups.disableBoard">L’CLA llista els membres de l’equip editorial amb els rols que tenen assignats (administrador/a de la revista, corrector/a, etc.)</message>
 	<message key="manager.groups.enableBoard">L’administrador/a de la revista crea títols i afegeix persones sota cada títol.</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[Sota <a href="{$aboutEditorialTeamUrl}">Persones</a> a la pàgina «Sobre la revista»:]]></message>
 	<message key="manager.groups.noneCreated">No s’ha creat cap càrrec de l’equip editorial.</message>
@@ -31,7 +31,7 @@
 	<message key="manager.language.forms">Formularis</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Aquesta acció reemplaça els paràmetres de la revista específics per a aquesta configuració regional</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Torna a carregar els valors predeterminats</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[L'OJS es pot posar a disposició dels usuaris/àries en qualsevol de les llengües compatibles. L’OJS també pot funcionar com a sistema multilingüe, en què l’usuari/ària pot seleccionar la llengua de cada pàgina i introduir determinades dades en diverses llengües addicionals.<br /><br />Si alguna de les llengües compatibles amb l’OJS no apareix llistada a continuació, n’heu de sol·licitar la instal·lació a l’administrador/a del lloc web. Consulteu la documentació de l’OJS per obtenir més informació sobre com instal·lar llengües addicionals.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[L'CLA es pot posar a disposició dels usuaris/àries en qualsevol de les llengües compatibles. L’CLA també pot funcionar com a sistema multilingüe, en què l’usuari/ària pot seleccionar la llengua de cada pàgina i introduir determinades dades en diverses llengües addicionals.<br /><br />Si alguna de les llengües compatibles amb l’CLA no apareix llistada a continuació, n’heu de sol·licitar la instal·lació a l’administrador/a del lloc web. Consulteu la documentació de l’CLA per obtenir més informació sobre com instal·lar llengües addicionals.]]></message>
 	<message key="manager.languages.noneAvailable">No hi ha cap llengua addicional disponible. Si voleu utilitzar llengües addicionals per a aquesta revista, poseu-vos en contacte amb l’administrador/a del lloc.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Aquesta és la llengua predeterminada per al lloc web de la revista.</message>
 	<message key="manager.managementPages">Pàgines d’administració</message>
@@ -41,7 +41,7 @@
 	<message key="manager.payment.authorFees">Quotes dels autors/ores</message>
 	<message key="manager.payment.authorFeesDescription">Les opcions seleccionades, juntament amb la descripció i la quota corresponents (que podeu editar a continuació), apareixen al pas 1 del procés de tramesa, a la pàgina «Sobre la revista», secció «Trameses», i també en els passos que requereixin fer pagaments.</message>
 	<message key="manager.payment.currency">Moneda</message>
-	<message key="manager.payment.currencymessage">L’OJS no fa conversions de moneda. Si accepteu pagaments per les subscripcions, assegureu-vos que la moneda de la subscripció coincideixi amb la que s’indica aquí.</message>
+	<message key="manager.payment.currencymessage">L’CLA no fa conversions de moneda. Si accepteu pagaments per les subscripcions, assegureu-vos que la moneda de la subscripció coincideixi amb la que s’indica aquí.</message>
 	<message key="manager.payment.description">Descripció</message>
 	<message key="manager.payment.details">Detalls</message>
 	<message key="manager.payment.editSubscription">Edita la subscripció</message>
@@ -211,7 +211,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Apareixerà a «Sobre la revista») </message>
 	<message key="manager.setup.authorCopyrightNotice">Avís de drets d'autor/a</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Demana als autors/ores que acceptin l’avís de drets d'autor/a com a part del procediment de la tramesa.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Aquest avís de drets d'autor/a apareixerà a la pàgina «Sobre la revista» i a les metadades de tots els elements publicats. Si bé la revista és l’encarregada de determinar els termes de l’acord de drets d'autor/a amb els autors/ores, el Public Knowledge Project recomana utilitzar la llicència <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. Amb aquesta finalitat, es proporciona <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">un redactat d’exemple per a l'avís de drets d'autor/a</a> que podeu copiar a continuació per a les revistes que (i) ofereixen accés lliure, (ii) ofereixen accés lliure diferit o (iii) no ofereixen accés lliure.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Aquest avís de drets d'autor/a apareixerà a la pàgina «Sobre la revista» i a les metadades de tots els elements publicats. Si bé la revista és l’encarregada de determinar els termes de l’acord de drets d'autor/a amb els autors/ores, el Sangia Editorial Project recomana utilitzar la llicència <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. Amb aquesta finalitat, es proporciona <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">un redactat d’exemple per a l'avís de drets d'autor/a</a> que podeu copiar a continuació per a les revistes que (i) ofereixen accés lliure, (ii) ofereixen accés lliure diferit o (iii) no ofereixen accés lliure.]]></message>
 	<message key="manager.setup.authorGuidelines">Directrius per a l’autor/a</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Indiqueu als autors/ores les normes bibliogràfiques i de formatació que s’utilitzen per als elements tramesos a la revista (p. ex. <em>Publication Manual of the American Psychological Association</em>, 5a edició, 2001). Sovint resulta útil indicar exemples dels formats de citació de revistes i llibres que s’utilitzen més habitualment a les trameses. També podeu identificar els tipus de fitxers addicionals (com ara conjunts de dades, instruments de recerca, etc.) que es recomana als autors/ores de carregar, juntament amb les trameses, amb l’objectiu de potenciar el compromís dels lectors/ores amb la seva obra.]]></message>
 	<message key="manager.setup.competingInterests">Conflicte d’interessos</message>
@@ -258,7 +258,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Les revistes tenen consells de redacció per supervisar-ne la direcció editorial, per participar en l’elecció d’editors/ores i, gràcies a la reputació dels seus membres, per aportar rellevància a la revista en l'àmbit temàtic al qual pertany. Els consells de revisió tenen una funció semblant a la dels consells de redacció però, a més, també dirigeixen el procés d'avaluació d'experts/ertes. Els membres dels consells de revisió no tenen accés al sistema administratiu de la revista, però s’afegeixen a la llista de persones disponibles per fer avaluacions d'experts/ertes.</message>
 	<message key="manager.setup.emailBounceAddress">Adreça de retorn</message>
 	<message key="manager.setup.emailBounceAddressDescription">S’enviarà un missatge d’error a aquesta adreça cada vegada que no s’hagi pogut entregar un missatge de correu electrònic.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Nota:</strong> Per activar aquesta opció, l’administrador/a del lloc web ha d’activar l’opció <tt>allow_envelope_sender</tt> del fitxer de configuració de l’OJS. És possible que es necessiti una configuració addicional del servidor perquè el programa admeti aquesta funció (és possible que no tots els servidors la permetin), tal com s'indica a la documentació de l'OJS.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Nota:</strong> Per activar aquesta opció, l’administrador/a del lloc web ha d’activar l’opció <tt>allow_envelope_sender</tt> del fitxer de configuració de l’CLA. És possible que es necessiti una configuració addicional del servidor perquè el programa admeti aquesta funció (és possible que no tots els servidors la permetin), tal com s'indica a la documentació de l'CLA.]]></message>
 	<message key="manager.setup.emails">Identificació per correu electrònic</message>
 	<message key="manager.setup.emailSignature">Signatura</message>
 	<message key="manager.setup.emailSignatureDescription">Les plantilles dels missatges de correu electrònic enviats pel sistema en nom de la revista tenen la signatura següent al final. Podeu editar el cos de la plantilla dels missatges de correu electrònic a la secció «Administració de la revista».</message>
@@ -280,7 +280,7 @@
 	<message key="manager.setup.focusScope">Objectius i temàtica</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>DADES HTML D’EXEMPLE</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Instruccions per a la indexació d’obres per part dels autors/ores</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[L'OJS s'adhereix al Protocol for metadata Harvesting de l'<a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a>, que és un estàndard cada vegada més utilitzat a nivell mundial per oferir un accés ben indexat a recursos electrònics de recerca. Els autors/ores utilitzen plantilles semblants per proporcionar les metadades de les seves trameses. L’administrador/a de la revista ha de seleccionar les categories per a la indexació i també ha de proporcionar exemples rellevants als autors/ores per ajudar-los a indexar les seves obres. Els termes s’han de separar amb punt i coma (p. ex. terme1; terme2). Les entrades s’han d’introduir com a exemples utilitzant les formes «p. ex.» o «per exemple».]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[L'CLA s'adhereix al Protocol for metadata Harvesting de l'<a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a>, que és un estàndard cada vegada més utilitzat a nivell mundial per oferir un accés ben indexat a recursos electrònics de recerca. Els autors/ores utilitzen plantilles semblants per proporcionar les metadades de les seves trameses. L’administrador/a de la revista ha de seleccionar les categories per a la indexació i també ha de proporcionar exemples rellevants als autors/ores per ajudar-los a indexar les seves obres. Els termes s’han de separar amb punt i coma (p. ex. terme1; terme2). Les entrades s’han d’introduir com a exemples utilitzant les formes «p. ex.» o «per exemple».]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Heu d’introduir l'adreça electrònica del contacte principal.</message>
 	<message key="manager.setup.form.contactNameRequired">Heu d’introduir el nom del contacte principal.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Heu d’introduir les inicials de la revista.</message>
@@ -303,7 +303,7 @@
 	<message key="manager.setup.information.forLibrarians">Per als bibliotecaris/àries</message>
 	<message key="manager.setup.information.forReaders">Per a lectors/ores</message>
 	<message key="manager.setup.initialIssue">Número inicial</message>
-	<message key="manager.setup.initialIssueDescription">Segons el format seleccionat, identifiqueu el número, el volum o l’any del primer número que es publicarà a l’OJS:</message>
+	<message key="manager.setup.initialIssueDescription">Segons el format seleccionat, identifiqueu el número, el volum o l’any del primer número que es publicarà a l’CLA:</message>
 	<message key="manager.setup.institution">Institució</message>
 	<message key="manager.setup.issnDescription"><![CDATA[L’ISSN (número internacional normalitzat per a publicacions en sèrie) és un número de vuit dígits que identifica publicacions periòdiques, incloses les revistes electròniques. Aquests números són gestionats per una xarxa mundial de centres nacionals coordinats per un centre internacional amb seu a París que rep el suport de la UNESCO i del govern francès. Per obtenir un d’aquests números cal adreçar-se al <a href="http://www.issn.org" target="_new">lloc web de l’ISSN</a>. Podeu fer-ho durant qualsevol de les fases d’elaboració de la revista.]]></message>
 	<message key="manager.setup.issuePerVolume">Números per volum</message>
@@ -419,8 +419,8 @@
 	<message key="manager.setup.reviewGuidelines">Directrius de revisió</message>
 	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Les directrius de revisió proporcionen als revisors/ores els criteris per jutjar la idoneïtat d'una tramesa per ser publicada a la revista, i poden incloure instruccions especials per a la preparació d'una revisió eficaç i útil. A l'hora de fer la revisió, els revisors/ores trobaran dos quadres de text en blanc: el primer «per a l'autor/a i l'editor/a» i el segon «per a l'editor/a». D'altra banda, l'administrador/a de la revista pot crear un formulari d'avaluació d'experts/ertes a <a href="{$reviewFormsUrl}" class="action">Formularis de revisió</a>. En tots els casos, els editors/ores tenen l'opció d'incloure les revisions en correspondència amb l'autor/a.]]></message>
 	<message key="manager.setup.reviewOptions">Opcions de revisió</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">És possible enviar recordatoris automàtics per correu electrònic als revisors/ores (disponibles a les plantilles de missatges de correu electrònic de l’OJS) en dues ocasions (però l'editor/a pot enviar missatges de correu electrònic als revisors/ores directament sempre que ho vulgui).</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Nota:</strong> Per activar aquestes opcions, l’administrador/a del lloc ha d’habilitar l’opció <tt>scheduled_tasks</tt> del fitxer de configuració de l’OJS. És possible que es necessiti una configuració addicional del servidor perquè el programa admeti aquesta funció (és possible que no tots els servidors la permetin), tal com s'indica a la documentació de l'OJS.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">És possible enviar recordatoris automàtics per correu electrònic als revisors/ores (disponibles a les plantilles de missatges de correu electrònic de l’CLA) en dues ocasions (però l'editor/a pot enviar missatges de correu electrònic als revisors/ores directament sempre que ho vulgui).</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Nota:</strong> Per activar aquestes opcions, l’administrador/a del lloc ha d’habilitar l’opció <tt>scheduled_tasks</tt> del fitxer de configuració de l’CLA. És possible que es necessiti una configuració addicional del servidor perquè el programa admeti aquesta funció (és possible que no tots els servidors la permetin), tal com s'indica a la documentació de l'CLA.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Avaluació anònima</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">El podeu modificar durant el procés editorial.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Temps mitjà de què disposaran els revisors/ores</message>
@@ -439,7 +439,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Inclou un enllaç a la secció <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Assegurar una avaluació anònima</a> a totes les pàgines en què els autors/ores i els revisors/ores carreguin fitxers.]]></message>
 	<message key="manager.setup.reviewPolicy">Política de revisió</message>
 	<message key="manager.setup.reviewProcess">Procés de revisió</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[L’OJS admet dos models per a l'administració del procés de revisió. Es recomana utilitzar el procés estàndard de revisió, atès que guia els revisors/ores pas a pas, s’assegura de registrar el procés de revisió complet per a cada tramesa i utilitza el sistema de recordatoris automàtics i recomanacions estàndard per a les trameses («Accepta», «Accepta amb revisions», «Tramet per a la revisió», «Tramet a un altre lloc», «Rebutja», «Visualitza els comentaris»).<br /><br />Seleccioneu una de les opcions següents:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[L’CLA admet dos models per a l'administració del procés de revisió. Es recomana utilitzar el procés estàndard de revisió, atès que guia els revisors/ores pas a pas, s’assegura de registrar el procés de revisió complet per a cada tramesa i utilitza el sistema de recordatoris automàtics i recomanacions estàndard per a les trameses («Accepta», «Accepta amb revisions», «Tramet per a la revisió», «Tramet a un altre lloc», «Rebutja», «Visualitza els comentaris»).<br /><br />Seleccioneu una de les opcions següents:]]></message>
 	<message key="manager.setup.reviewProcessEmail">Procés de revisió mitjançant fitxers adjunts en correus electrònics</message>
 	<message key="manager.setup.reviewProcessStandard">Procés de revisió estàndard</message>
 	<message key="manager.setup.reviewProcessStandardDescription">Els editors/ores envien per correu electrònic als revisors/ores seleccionats el títol i el resum de la tramesa, juntament amb una invitació per entrar al lloc web de la revista amb l’objectiu de completar la revisió. Els revisors/ores han d'entrar al lloc web de la revista per acceptar la tasca de revisió, descarregar trameses, enviar els seus comentaris i seleccionar una recomanació.</message>
@@ -449,7 +449,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Si no s’afegeix cap secció, les trameses s’assignen per defecte a la secció «Articles»).</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Per crear o modificar seccions de la revista (com ara articles, ressenyes literàries, etc.), entreu a l’Administració de seccions.<br /><br />Els autors/ores que facin trameses a la revista han de designar...]]></message>
 	<message key="manager.setup.securitySettings">Paràmetres d’accés i seguretat</message>
-	<message key="manager.setup.securitySettingsDescription">L’OJS ofereix una sèrie d’opcions de seguretat que permeten restringir els continguts de la revista i mantenir informació addicional relativa a les trameses per a finalitats de control.</message>
+	<message key="manager.setup.securitySettingsDescription">L’CLA ofereix una sèrie d’opcions de seguretat que permeten restringir els continguts de la revista i mantenir informació addicional relativa a les trameses per a finalitats de control.</message>
 	<message key="manager.setup.selectEditorDescription">L’editor/a de la revista que segueix tot el procés editorial.</message>
 	<message key="manager.setup.selectSectionDescription">La secció de la revista adequada per a la tramesa.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Mostra sempre els enllaços a les galerades i indica l’accés restringit.</message>
@@ -471,7 +471,7 @@
 	<message key="manager.setup.submissions.description">Directrius per a l’autor/a, drets d’autoria i indexació (inclòs el registre).</message>
 	<message key="manager.setup.subscription">Tothom que vulgui accedir a una part o a la totalitat dels continguts de la revista, hi ha d'estar subscrit.</message>
 	<message key="manager.setup.subscriptionDescription">Aquesta acció requereix l’assignació d’un administrador/a de subscripcions que tingui accés al mòdul de subscripcions. Aquest mòdul inclou opcions addicionals d’accés lliure, d'arxivament automàtic i de notificació per correu electrònic.</message>
-	<message key="manager.setup.noPublishing">L'OJS no s'ha d'utilitzar per publicar continguts de la revista en línia.</message>
+	<message key="manager.setup.noPublishing">L'CLA no s'ha d'utilitzar per publicar continguts de la revista en línia.</message>
 	<message key="manager.setup.technicalSupportContact">Contacte de suport tècnic</message>
 	<message key="manager.setup.technicalSupportContactDescription">Aquesta persona apareix a la pàgina «Contacte» per a editors/ores, autors/ores i revisors/ores i ha de dominar el funcionament del sistema des del punt de vista de tots els rols possibles. Atès que el sistema de la revista necessita molt poc suport tècnic, aquesta tasca es pot considerar de temps parcial. Per exemple, es pot donar el cas que un autor/a o un revisor/a tingui problemes relacionats amb les instruccions o els formats dels fitxers, o bé que calgui verificar que es realitzen còpies de seguretat al servidor de manera periòdica.</message>
 	<message key="manager.setup.typeExamples">(p. ex. recerca històrica, mètode quasiexperimental, anàlisi literària, enquesta/entrevista)</message>
@@ -503,7 +503,7 @@
 	<message key="manager.statistics.reports.defaultReport.issueTableOfContents">Visualitzacions de les pàgines que contenen la taula de continguts dels números</message>
 	<message key="manager.statistics.reports.defaultReport.issueTableOfContentsAndDownloads">Taules de contingut i descàrregues dels números</message>
 	<message key="manager.statistics.reports.defaultReport.journalIndexPageViews">Visualitzacions de la pàgina principal de la revista</message>
-	<message key="manager.statistics.reports.description">L’OJS genera informes de seguiment que detallen el processament de les trameses a la revista des de la perspectiva de les trameses, els editors/ores, els revisors/ores i les seccions durant un període de temps determinat. Aquests informes es generen en format CSV, per la qual cosa necessiteu una aplicació de fulls de càlcul per visualitzar-los.</message>
+	<message key="manager.statistics.reports.description">L’CLA genera informes de seguiment que detallen el processament de les trameses a la revista des de la perspectiva de les trameses, els editors/ores, els revisors/ores i les seccions durant un període de temps determinat. Aquests informes es generen en format CSV, per la qual cosa necessiteu una aplicació de fulls de càlcul per visualitzar-los.</message>
 	<message key="manager.statistics.reports.generateReport">Genera un informe personalitzat</message>
 	<message key="manager.statistics.reports.advancedOptions">Opcions avançades</message>
 	<message key="manager.statistics.reports.advancedOptions.label">Personalitza les opcions relacionades amb les columnes, els filtres i la distribució del contingut. Si canvieu alguna d'aquestes opcions, és possible que la plantilla de l'informe no es generi de la forma esperada.</message>
@@ -539,7 +539,7 @@
 	<message key="manager.statistics.statistics.count.revise">Torna a enviar</message>
 	<message key="manager.statistics.statistics.daysPerReview">Dies per a la revisió</message>
 	<message key="manager.statistics.statistics.daysToPublication">Dies per a la publicació</message>
-	<message key="manager.statistics.statistics.description">L’OJS calcula les estadístiques següents per a cada revista: Els «dies per a la revisió» es calculen entre la data de tramesa (o de la designació de la versió de revisió) i la decisió de l’editor/a inicial, mentre que els «dies per a la publicació» es calculen entre la primera càrrega d’una tramesa acceptada i la seva publicació.</message>
+	<message key="manager.statistics.statistics.description">L’CLA calcula les estadístiques següents per a cada revista: Els «dies per a la revisió» es calculen entre la data de tramesa (o de la designació de la versió de revisió) i la decisió de l’editor/a inicial, mentre que els «dies per a la publicació» es calculen entre la primera càrrega d’una tramesa acceptada i la seva publicació.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Elements publicats</message>
 	<message key="manager.statistics.statistics.makePublic">Marqueu els elements que estaran disponibles per als lectors/ores a la pàgina «Sobre la revista».</message>
 	<message key="manager.statistics.statistics.note">Nota: És possible que els percentatges per a les trameses avaluades per persones expertes no sumin el 100%, atès que els articles que s'han tornat a enviar poden estar en estat d’acceptats, rebutjats o en procés.</message>
@@ -574,8 +574,8 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">Notifica els subscriptors/ores per correu electrònic</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">setmana/es abans del venciment de la subscripció.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Recordatoris del venciment de les subscripcions</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">És possible enviar recordatoris automàtics per correu electrònic (que l'administrador/a de la revista pot editar en les plantilles de missatges de correu electrònic de l’OJS) als subscriptors/ores abans i després del venciment d’una subscripció.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Nota:</strong> Per activar aquestes opcions, l’administrador/a del lloc ha d’habilitar l’opció <tt>scheduled_tasks</tt> del fitxer de configuració de l’OJS. És possible que es necessiti una configuració addicional del servidor perquè el programa admeti aquesta funció (és possible que no tots els servidors la permetin), tal com s'indica a la documentació de l'OJS.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">És possible enviar recordatoris automàtics per correu electrònic (que l'administrador/a de la revista pot editar en les plantilles de missatges de correu electrònic de l’CLA) als subscriptors/ores abans i després del venciment d’una subscripció.</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Nota:</strong> Per activar aquestes opcions, l’administrador/a del lloc ha d’habilitar l’opció <tt>scheduled_tasks</tt> del fitxer de configuració de l’CLA. És possible que es necessiti una configuració addicional del servidor perquè el programa admeti aquesta funció (és possible que no tots els servidors la permetin), tal com s'indica a la documentació de l'CLA.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Seleccioneu una de les opcions següents:</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[Si utilitzeu HTML en àrees de text (p. ex. per indicar la mida o el color de la lletra), tingueu en compte que els «retorns» es tractaran com a <tt>&lt;br&gt;</tt>. L’editor d’HTML funciona amb el navegador Firefox.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Seleccioneu un valor vàlid per al nombre de mesos després del venciment de la subscripció.</message>
@@ -583,9 +583,9 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Seleccioneu un valor vàlid per al nombre de setmanes després de la subscripció.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Seleccioneu un valor vàlid per al nombre de setmanes abans del venciment de la subscripció.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Els usuaris/àries registrats tenen l'opció de rebre per correu electrònic taules de continguts quan un número esdevingui d'accés obert.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Nota:</strong> per activar aquesta opció, l’administrador/a del lloc ha d’habilitar l’opció <tt>scheduled_tasks</tt> al fitxer de configuració de l’OJS. És possible que es necessiti una configuració addicional del servidor perquè el programa admeti aquesta funció (és possible que no tots els servidors la permetin), tal com s'indica a la documentació de l'OJS.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Nota:</strong> per activar aquesta opció, l’administrador/a del lloc ha d’habilitar l’opció <tt>scheduled_tasks</tt> al fitxer de configuració de l’CLA. És possible que es necessiti una configuració addicional del servidor perquè el programa admeti aquesta funció (és possible que no tots els servidors la permetin), tal com s'indica a la documentació de l'CLA.]]></message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Notificacions de pagament en línia</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">És possible enviar notificacions automàtiques per correu electrònic (que l'administrador/a de la revista pot editar en les plantilles de missatges de correu electrònic de l’OJS) a l'administrador de subscripcions en completar-se els pagaments de les subscripcions en línia.</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">És possible enviar notificacions automàtiques per correu electrònic (que l'administrador/a de la revista pot editar en les plantilles de missatges de correu electrònic de l’CLA) a l'administrador de subscripcions en completar-se els pagaments de les subscripcions en línia.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Notifica l'administrador/a de les subscripcions per correu electrònic quan es compri en línia una subscripció individual.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseInstitutional">Notifica l'administrador/a de subscripcions per correu electrònic quan es compri en línia una subscripció institucional (recomanat).</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">Notifica l'administrador/a de subscripcions per correu electrònic quan es renovi en línia una subscripció individual.</message>
@@ -737,7 +737,7 @@
 	<message key="manager.setup.confirmResetLicenseChanged">Heu canviat la informació de llicència i drets d'autor a la configuració de la revista. Guardeu aquests canvis abans de restablir els permisos.</message>
 	<message key="manager.setup.emailHeader">Capçalera del correu</message>
 	<message key="manager.setup.emailHeaderDescription">Els correus electrònics preestablerts que el sistema envia en nom de la revista començaran amb la següent capçalera. El remitent d'aquests correus serà el contacte principal, per la qual cosa és important aclarir que el contacte principal no és necessàriament el responsable del contingut dels missatges, que poden haver estat enviats en nom d'un usuari diferent.</message>
-	<message key="manager.statistics.reports.optionalColumns.description">Els elements en cursiva i amb el símbol * representen dades opcionals per a l'actual sistema de càlcul d'estadístiques en l'OJS (tipus mètric). És possible que tingueu dades o no, depenent de la configuració del vostre mòdul d'estadístiques.</message>
+	<message key="manager.statistics.reports.optionalColumns.description">Els elements en cursiva i amb el símbol * representen dades opcionals per a l'actual sistema de càlcul d'estadístiques en l'CLA (tipus mètric). És possible que tingueu dades o no, depenent de la configuració del vostre mòdul d'estadístiques.</message>
 	<message key="manager.statistics.reports.yesterday">Ahir</message>
 	<message key="manager.setup.copyrightYearBasis.Article">L'any per defecte s'extraurà de la data de publicació de l'article, com es fa en publicar de manera immediata.</message>
 	<message key="manager.setup.copyrightYearBasis.Issue">L'any per defecte s'extraurà de la data de publicació del número.</message>

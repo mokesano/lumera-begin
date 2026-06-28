@@ -15,13 +15,13 @@
  *   metadata::fully.qualified.MetadataSchema(ASSOC)
  *
  * e.g.:
- *   metadata::lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema(ARTICLE)
+ *   metadata::lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema(ARTICLE)
  *
  * The assoc form must be the final part of a ASSOC_TYPE_* definition.
  * It can be '*' to designate any assoc type.
  */
 
-import('lib.pkp.classes.filter.ClassTypeDescription');
+import('lib.sep.classes.filter.ClassTypeDescription');
 
 define('ASSOC_TYPE_ANY', -1);
 
@@ -79,7 +79,7 @@ class MetadataTypeDescription extends ClassTypeDescription {
 	function parseTypeName($typeName) {
 		// Configure the parent class type description
 		// with the expected meta-data class.
-		parent::parseTypeName('lib.pkp.classes.metadata.MetadataDescription');
+		parent::parseTypeName('lib.sep.classes.metadata.MetadataDescription');
 
 		// Split the type name into class name and assoc type.
 		$typeNameParts = explode('(', $typeName);

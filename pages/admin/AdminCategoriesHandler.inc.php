@@ -33,7 +33,7 @@ class AdminCategoriesHandler extends AdminHandler {
 	/**
 	 * Display a list of categories.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function categories($args, &$request) {
 		$this->validate($request);
@@ -45,12 +45,12 @@ class AdminCategoriesHandler extends AdminHandler {
 		$categoryEntryDao =& $categoryDao->getEntryDAO();
 
 		$categoriesArray =& $categoryDao->getCategories();
-		import('lib.pkp.classes.core.ArrayItemIterator');
+		import('lib.sep.classes.core.ArrayItemIterator');
 		$categories =& ArrayItemIterator::fromRangeInfo($categoriesArray, $rangeInfo);
 
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 		$templateMgr->assign_by_ref('categories', $categories);
 
 		$site =& $request->getSite();
@@ -62,7 +62,7 @@ class AdminCategoriesHandler extends AdminHandler {
 	/**
 	 * Delete a category.
 	 * @param $args array first parameter is the ID of the category to delete
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteCategory($args, &$request) {
 		$categoryId = (int) array_shift($args);
@@ -83,7 +83,7 @@ class AdminCategoriesHandler extends AdminHandler {
 	/**
 	 * Change the sequence of a category.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function moveCategory($args, &$request) {
 		$categoryId = (int) $request->getUserVar('id');
@@ -126,7 +126,7 @@ class AdminCategoriesHandler extends AdminHandler {
 	/**
 	 * Display form to edit a category.
 	 * @param $args array optional, first parameter is the ID of the category to edit
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editCategory($args, &$request) {
 		$categoryId = (int) array_shift($args);
@@ -157,7 +157,7 @@ class AdminCategoriesHandler extends AdminHandler {
 	/**
 	 * Display form to create new category.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createCategory($args, &$request) {
 		$this->editCategory($args, $request);
@@ -166,7 +166,7 @@ class AdminCategoriesHandler extends AdminHandler {
 	/**
 	 * Save changes to a category.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateCategory($args, &$request) {
 		$categoryId = $request->getUserVar('categoryId') === null? null : (int) $request->getUserVar('categoryId');
@@ -208,7 +208,7 @@ class AdminCategoriesHandler extends AdminHandler {
 	/**
 	 * Set the site-wide categories enabled/disabled flag.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function setCategoriesEnabled($args, &$request) {
 		$this->validate($request);
@@ -220,7 +220,7 @@ class AdminCategoriesHandler extends AdminHandler {
 
 	/**
 	 * Set up the template.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $category Category optional
 	 * @param $subclass boolean optional
 	 */
@@ -240,7 +240,7 @@ class AdminCategoriesHandler extends AdminHandler {
 	 * will be fetched and validated against. If,
 	 * additionally, the user ID is supplied, the user and membership
 	 * objects will be validated and fetched.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $categoryId int optional
 	 */
 	function validate(&$request, $categoryId = null) {

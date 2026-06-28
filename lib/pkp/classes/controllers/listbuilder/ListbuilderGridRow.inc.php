@@ -13,7 +13,7 @@
  * @brief Handle list builder row requests.
  */
 
-import('lib.pkp.classes.controllers.grid.GridRow');
+import('lib.sep.classes.controllers.grid.GridRow');
 
 class ListbuilderGridRow extends GridRow {
 
@@ -44,7 +44,7 @@ class ListbuilderGridRow extends GridRow {
 	//
 	/**
 	 * @see GridRow::initialize()
-	 * @param PKPRequest $request
+	 * @param SEPRequest $request
 	 */
 	function initialize(&$request, $template = 'controllers/listbuilder/listbuilderGridRow.tpl') {
 		parent::initialize($request);
@@ -54,7 +54,7 @@ class ListbuilderGridRow extends GridRow {
 
 		if ($this->_hasDeleteItemLink) {
 			// Add deletion action (handled in JS-land)
-			import('lib.pkp.classes.linkAction.request.NullAction');
+			import('lib.sep.classes.linkAction.request.NullAction');
 			$this->addAction(
 				new LinkAction(
 					'delete',

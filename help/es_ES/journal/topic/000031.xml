@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 <!--
   * 000031.xml
   *
@@ -7,7 +7,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  * Credits: http://lumera.sangia.org/wiki/index.php?title=CLA:_Spanish_%28es_ES%29
   *
   * Management Pages - Import/Export
   *
@@ -15,7 +15,7 @@
 
 <topic id="journal/topic/000031" locale="es_ES" title="Importar/Exportar datos" toc="journal/toc/000001" key="journal.managementPages.importExport">
 	<section>
-		<![CDATA[<p>La función Importar/Exportar datos, disponible en Gestión de la revista, permite al gestor/a de la revista introducir y extraer datos de OJS.</p><p>La importación/exportación de datos se implementa mediante módulos, uno diferente por cada tipo y formato de datos. Para más información, consulte la documentación de cada módulo, ubicada en el directorio de módulos de OJS.</p><p>OJS incluye cinco módulos para importar/exportar que se explican más abajo.</p><p>La función de importar y exportar también está disponible como herramienta de línea de comandos. Para más información, ver tools/importExport.php.</p>]]>
+		<![CDATA[<p>La función Importar/Exportar datos, disponible en Gestión de la revista, permite al gestor/a de la revista introducir y extraer datos de CLA.</p><p>La importación/exportación de datos se implementa mediante módulos, uno diferente por cada tipo y formato de datos. Para más información, consulte la documentación de cada módulo, ubicada en el directorio de módulos de CLA.</p><p>CLA incluye cinco módulos para importar/exportar que se explican más abajo.</p><p>La función de importar y exportar también está disponible como herramienta de línea de comandos. Para más información, ver tools/importExport.php.</p>]]>
 	</section>
 	<section title="Módulo XML usuarios/as">
 			<![CDATA[<p>El módulo XML usuarios/as sirve para importar y exportar usuarios/as y sus roles. Vea XML DTD en "plugins/importexport/users/users.dtd" para más información.</p>]]>

@@ -15,19 +15,19 @@
  */
 
 
-import('lib.pkp.classes.filter.PersistableFilter');
-import('lib.pkp.classes.filter.BooleanFilterSetting');
+import('lib.sep.classes.filter.PersistableFilter');
+import('lib.sep.classes.filter.BooleanFilterSetting');
 
-import('lib.pkp.classes.metadata.MetadataDescription');
-import('lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema');
-import('lib.pkp.plugins.metadata.nlm30.schema.Nlm30NameSchema');
-import('lib.pkp.plugins.metadata.nlm30.filter.PersonStringNlm30NameSchemaFilter');
-import('lib.pkp.classes.metadata.DateStringNormalizerFilter');
+import('lib.sep.classes.metadata.MetadataDescription');
+import('lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema');
+import('lib.sep.plugins.metadata.nlm30.schema.Nlm30NameSchema');
+import('lib.sep.plugins.metadata.nlm30.filter.PersonStringNlm30NameSchemaFilter');
+import('lib.sep.classes.metadata.DateStringNormalizerFilter');
 
-import('lib.pkp.classes.webservice.XmlWebService');
+import('lib.sep.classes.webservice.XmlWebService');
 
-import('lib.pkp.classes.xml.XMLHelper');
-import('lib.pkp.classes.xslt.XSLTransformationFilter');
+import('lib.sep.classes.xml.XMLHelper');
+import('lib.sep.classes.xslt.XSLTransformationFilter');
 
 class Nlm30CitationSchemaFilter extends PersistableFilter {
 	/** @var array */
@@ -135,7 +135,7 @@ class Nlm30CitationSchemaFilter extends PersistableFilter {
 	 */
 	function constructSearchStrings(&$searchTemplates, &$citationDescription) {
 		// Convert first authors' name description to a string
-		import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30NameSchemaPersonStringFilter');
+		import('lib.sep.plugins.metadata.nlm30.filter.Nlm30NameSchemaPersonStringFilter');
 		$personStringFilter = new Nlm30NameSchemaPersonStringFilter();
 
 		// Retrieve the authors
@@ -367,7 +367,7 @@ class Nlm30CitationSchemaFilter extends PersistableFilter {
 	 */
 	function &getNlm30CitationDescriptionFromMetadataArray(&$metadataArray) {
 		// Create a new citation description
-		$citationDescription = new MetadataDescription('lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema', ASSOC_TYPE_CITATION);
+		$citationDescription = new MetadataDescription('lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema', ASSOC_TYPE_CITATION);
 
 		// Add the meta-data to the description
 		$metadataArray = arrayClean($metadataArray);

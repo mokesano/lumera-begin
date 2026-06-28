@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE toc SYSTEM "../../../../lib/pkp/dtd/helpToc.dtd">
+<!DOCTYPE toc SYSTEM "../../../../lib/sep/dtd/helpToc.dtd">
 <!--
   * 000000.xml
   *
@@ -9,12 +9,12 @@
   *
   * Main table of contents for help. 
   *
-  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_%28es_ES%29
+  * Credits: http://lumera.sangia.org/wiki/index.php?title=CLA:_Spanish_%28es_ES%29
   *
   -->
 
-	<toc id="index/toc/000000" locale="es_ES" title="Ayuda de OJS" parent_topic="index/topic/000000">
-	<topic id="intro/topic/000000" title="Introducción a OJS" />
+	<toc id="index/toc/000000" locale="es_ES" title="Ayuda de CLA" parent_topic="index/topic/000000">
+	<topic id="intro/topic/000000" title="Introducción a CLA" />
 	<topic id="site/topic/000000" title="Administración del sitio" />
 	<topic id="journal/topic/000000" title="Gestión de la revista" />
 	<topic id="submission/topic/000000" title="Proceso de envío" />

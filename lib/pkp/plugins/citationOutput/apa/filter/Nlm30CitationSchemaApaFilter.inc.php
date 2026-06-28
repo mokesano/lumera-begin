@@ -18,7 +18,7 @@
  *  APA citation output.
  */
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaCitationOutputFormatFilter');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaCitationOutputFormatFilter');
 
 class Nlm30CitationSchemaApaFilter extends Nlm30CitationSchemaCitationOutputFormatFilter {
 	/**
@@ -38,7 +38,7 @@ class Nlm30CitationSchemaApaFilter extends Nlm30CitationSchemaCitationOutputForm
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationOutput.apa.filter.Nlm30CitationSchemaApaFilter';
+		return 'lib.sep.plugins.citationOutput.apa.filter.Nlm30CitationSchemaApaFilter';
 	}
 
 

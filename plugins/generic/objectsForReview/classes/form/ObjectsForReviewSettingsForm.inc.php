@@ -13,7 +13,7 @@
  * @brief Form for editors to modify objects for review plugin settings
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ObjectsForReviewSettingsForm extends Form {
 	/** @var object */

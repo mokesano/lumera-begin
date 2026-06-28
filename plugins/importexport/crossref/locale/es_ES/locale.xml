@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 <!--
   * plugins/importexport/crossref/locale/es_ES/locale.xml
   *
@@ -7,7 +7,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Spanish_(es_ES)
   *
   * Localization strings
   -->
@@ -26,8 +26,8 @@
 	<message key="plugins.importexport.crossref.settings.form.depositorNameRequired">Introduzca el nombre del depositario.</message>
 	<message key="plugins.importexport.crossref.settings.form.depositorEmailRequired">Introduzca el email del depositario.</message>
 	<message key="plugins.importexport.crossref.settings.form.automaticRegistration">Registro automático de DOIs</message>
-	<message key="plugins.importexport.crossref.settings.form.automaticRegistration.description"><![CDATA[OJS depositará los DOIs de los artículos a CrossRef según sean publicados estos artículos. Note que esto llevará un tiempo tras el proceso de publicación. Puede comprobar todos los DOIs no registrados en la <a href="{$unregisteredURL}">lista de artículos sin registrar</a>.]]></message>
-	<message key="plugins.importexport.crossref.registrationIntro"><![CDATA[Este plugin puede ser configurado para publicar automáticamente Digital Object Identifiers (DOIs) con CrossRef. Necesitará un usuario y contraseña (disponibles en <a href="http://www.crossref.org" target="_blank">CrossRef</a>) para hacerlo. Aún si no tiene usuario y contraseña propios, todavía puede exportar en el formato CrossRef XML, pero no puede registrar sus DOIs con CrossRef desde dentro de OJS.]]></message>
+	<message key="plugins.importexport.crossref.settings.form.automaticRegistration.description"><![CDATA[CLA depositará los DOIs de los artículos a CrossRef según sean publicados estos artículos. Note que esto llevará un tiempo tras el proceso de publicación. Puede comprobar todos los DOIs no registrados en la <a href="{$unregisteredURL}">lista de artículos sin registrar</a>.]]></message>
+	<message key="plugins.importexport.crossref.registrationIntro"><![CDATA[Este plugin puede ser configurado para publicar automáticamente Digital Object Identifiers (DOIs) con CrossRef. Necesitará un usuario y contraseña (disponibles en <a href="http://www.crossref.org" target="_blank">CrossRef</a>) para hacerlo. Aún si no tiene usuario y contraseña propios, todavía puede exportar en el formato CrossRef XML, pero no puede registrar sus DOIs con CrossRef desde dentro de CLA.]]></message>
 	<message key="plugins.importexport.crossref.settings.description"><![CDATA[Puede <a href="{$settingsUrl}">configurar el plugin CrossRef de exportación/registratro aquí</a>.]]></message>
 	<message key="plugins.importexport.crossref.settings.form.description">Configure el plugin de CrossRef de exportación/registro.</message>
 	<message key="plugins.importexport.crossref.settings.form.username">Usuario</message>

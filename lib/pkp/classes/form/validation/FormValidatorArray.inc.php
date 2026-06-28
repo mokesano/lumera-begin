@@ -13,7 +13,7 @@
  * @brief Form validation check that checks an array of fields.
  */
 
-import('lib.pkp.classes.form.validation.FormValidator');
+import('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorArray extends FormValidator {
 

@@ -23,7 +23,7 @@ define('NOTIFICATION_TYPE_SWORD_ENABLED',		NOTIFICATION_TYPE_PLUGIN_BASE + 0x000
 define('NOTIFICATION_TYPE_SWORD_DEPOSIT_COMPLETE',	NOTIFICATION_TYPE_PLUGIN_BASE + 0x0000003);
 define('NOTIFICATION_TYPE_SWORD_AUTO_DEPOSIT_COMPLETE',	NOTIFICATION_TYPE_PLUGIN_BASE + 0x0000004);
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class SwordPlugin extends GenericPlugin {
 	/**
@@ -131,7 +131,7 @@ class SwordPlugin extends GenericPlugin {
 		// The most recent decision was an "Accept"; perform auto deposits.
 		$journal =& Request::getJournal();
 		$depositPoints = $this->getSetting($journal->getId(), 'depositPoints');
-		import('classes.sword.OJSSwordDeposit');
+		import('classes.sword.CLASwordDeposit');
 
 		import('classes.notification.NotificationManager');
 		$notificationManager = new NotificationManager();
@@ -145,7 +145,7 @@ class SwordPlugin extends GenericPlugin {
 			if ($depositType != SWORD_DEPOSIT_TYPE_AUTOMATIC) continue;
 
 			// For each automatic deposit point, perform a deposit.
-			$deposit = new OJSSwordDeposit($sectionEditorSubmission);
+			$deposit = new CLASwordDeposit($sectionEditorSubmission);
 			$deposit->setMetadata();
 			$deposit->addEditorial();
 			$deposit->createPackage();
@@ -256,7 +256,7 @@ class SwordPlugin extends GenericPlugin {
 
 		switch ($verb) {
 			case 'settings':
-				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_PKP_MANAGER);
+				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_SEP_MANAGER);
 				$templateMgr =& TemplateManager::getManager();
 				$templateMgr->register_function('plugin_url', array(&$this, 'smartyPluginUrl'));
 

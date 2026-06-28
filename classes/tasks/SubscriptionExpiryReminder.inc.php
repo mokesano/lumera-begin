@@ -13,7 +13,7 @@
  * @brief Class to perform automated reminders for reviewers.
  */
 
-import('lib.pkp.classes.scheduledTask.ScheduledTask');
+import('lib.sep.classes.scheduledTask.ScheduledTask');
 
 define('SECONDS_PER_WEEK', 7 * 24 * 60 * 60);
 
@@ -53,7 +53,7 @@ class SubscriptionExpiryReminder extends ScheduledTask {
 
 		$subscriptionContactSignature = $subscriptionName;
 
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_USER, LOCALE_COMPONENT_APPLICATION_COMMON);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_USER, LOCALE_COMPONENT_APPLICATION_COMMON);
 
 		if ($subscriptionMailingAddress != '') {
 			$subscriptionContactSignature .= "\n" . $subscriptionMailingAddress;

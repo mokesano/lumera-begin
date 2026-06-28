@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/paymethod/manual/locale/cs_CZ/emailTemplateData.xml
   *
@@ -17,6 +17,6 @@
 Položka, za kterou je placeno "{$itemName}".
 Cena je {$itemCost} ({$itemCurrencyCode}).
 
-Tento email byl vygenerován OJS pluginem Manuální platby.</body>
+Tento email byl vygenerován CLA pluginem Manuální platby.</body>
 	</email_text>
 </email_texts>

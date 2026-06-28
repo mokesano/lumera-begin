@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000028.xml
@@ -18,7 +18,7 @@
 	</section>
 	
 		<section title="FÅ-TAG-I sökfunktion">
-		<![CDATA[<p>För FÅ-TAG-I sökfunktionen söker man och ser på resultatets URL. T ex på Google ger en sökning på "FOOBAR" </p><p><samp class="code">http://www.google.ca/search?hl=en&q=FOOBAR&meta=</samp></p><p>Ersätt söktermen, FOOBAR, med variabeln &#123;$formKeywords&#125;. När OJS finner denna variabel ersätts den med det rätta värde från målets metadata. Detta resulterar i en ny URL </p><p><samp class="code">http://www.google.ca/search?hl=en&q=&#123;$formKeywords&#125;&meta=</samp></p><p> för RT. Dock, eftersom de andra variablerna är onödiga i det här fallet kan vi använda en förenklad URL </p><p><samp class="code">http://www.google.ca/search?q=&#123;$formKeywords&#125;</samp></p><p> för RT.</p>]]>
+		<![CDATA[<p>För FÅ-TAG-I sökfunktionen söker man och ser på resultatets URL. T ex på Google ger en sökning på "FOOBAR" </p><p><samp class="code">http://www.google.ca/search?hl=en&q=FOOBAR&meta=</samp></p><p>Ersätt söktermen, FOOBAR, med variabeln &#123;$formKeywords&#125;. När CLA finner denna variabel ersätts den med det rätta värde från målets metadata. Detta resulterar i en ny URL </p><p><samp class="code">http://www.google.ca/search?hl=en&q=&#123;$formKeywords&#125;&meta=</samp></p><p> för RT. Dock, eftersom de andra variablerna är onödiga i det här fallet kan vi använda en förenklad URL </p><p><samp class="code">http://www.google.ca/search?q=&#123;$formKeywords&#125;</samp></p><p> för RT.</p>]]>
 	</section>
 			
 	<section title="POST sökning">

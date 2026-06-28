@@ -46,7 +46,7 @@ class FormValidatorReCaptcha extends FormValidator {
 	 * @return boolean
 	 */
 	function isValid() {
-		import('lib.pkp.lib.recaptcha.recaptchalib');
+		import('lib.sep.lib.recaptcha.recaptchalib');
 		$privateKey = Config::getVar('captcha', 'recaptcha_private_key');
 		$form =& $this->getForm();
 		$challengeField = $form->getData($this->_challengeField);

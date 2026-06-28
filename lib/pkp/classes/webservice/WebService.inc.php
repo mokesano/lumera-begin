@@ -20,7 +20,7 @@ define('WEBSERVICE_MICROSECONDS_BEFORE_RETRY', 100000);
 define('WEBSERVICE_RESPONSE_OK', 200);
 define('WEBSERVICE_RESPONSE_CREATED', 201);
 
-import('lib.pkp.classes.webservice.WebServiceRequest');
+import('lib.sep.classes.webservice.WebServiceRequest');
 
 class WebService {
 	/** @var string */

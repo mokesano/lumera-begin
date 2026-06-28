@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 
 <!--
   * @file plugins/generic/sword/locale/ru_RU/emailTemplates.xml
@@ -19,7 +19,7 @@
 
 Для продолжения перейдите по адресу {$swordDepositUrl}.
 
-Это письмо было сгенерировано плагином передачи на хранение «SWORD» Open Journal Systems.</body>
+Это письмо было сгенерировано плагином передачи на хранение «SWORD» Code Lumera Editorial.</body>
 		<description>Этот шаблон письма используется для уведомления автора о возможных точках хранения для передачи по протоколу SWORD.</description>
 	</email_text>
 </email_texts>

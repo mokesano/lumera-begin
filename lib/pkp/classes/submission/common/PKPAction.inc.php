@@ -5,24 +5,24 @@
  */
 
 /**
- * @file classes/submission/common/PKPAction.inc.php
+ * @file classes/submission/common/SEPAction.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPAction
+ * @class SEPAction
  * @ingroup submission_common
  *
  * @brief Application-independent submission actions.
  */
 
 
-class PKPAction {
+class SEPAction {
 	/**
 	 * Constructor.
 	 */
-	function PKPAction() {
+	function SEPAction() {
 
 	}
 
@@ -41,15 +41,15 @@ class PKPAction {
 		$templateMgr =& TemplateManager::getManager();
 
 		// Add extra style sheets required for ajax components
-		// FIXME: Must be removed after OMP->OJS backporting
-		$templateMgr->addStyleSheet($request->getBaseUrl().'/styles/ojs.css');
+		// FIXME: Must be removed after OMP->CLA backporting
+		$templateMgr->addStyleSheet($request->getBaseUrl().'/styles/cla.css');
 
 		// Add extra java script required for ajax components
-		// FIXME: Must be removed after OMP->OJS backporting
-		$templateMgr->addJavaScript('lib/pkp/js/functions/modal.js');
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/validate/jquery.validate.min.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/jqueryValidatorI18n.js');
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.splitter.js');
+		// FIXME: Must be removed after OMP->CLA backporting
+		$templateMgr->addJavaScript('lib/sep/js/functions/modal.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/validate/jquery.validate.min.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/jqueryValidatorI18n.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.splitter.js');
 
 
 		// Check whether the citation editor requirements are complete.

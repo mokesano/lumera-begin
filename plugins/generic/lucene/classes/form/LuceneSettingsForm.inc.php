@@ -14,8 +14,8 @@
  */
 
 
-import('lib.pkp.classes.form.Form');
-import('lib.pkp.classes.form.validation.FormValidatorBoolean');
+import('lib.sep.classes.form.Form');
+import('lib.sep.classes.form.validation.FormValidatorBoolean');
 
 // These are the first few letters of an md5 of '##placeholder##'.
 // FIXME: Any better idea how to prevent a password clash?
@@ -70,7 +70,7 @@ class LuceneSettingsForm extends Form {
 	 */
 	function readInputData() {
 		$this->readUserVars($this->_getFormFields());
-		$request = PKPApplication::getRequest();
+		$request = SEPApplication::getRequest();
 		$password = $request->getUserVar('password');
 		if ($password === LUCENE_PLUGIN_PASSWORD_PLACEHOLDER) {
 			$plugin =& $this->_plugin;

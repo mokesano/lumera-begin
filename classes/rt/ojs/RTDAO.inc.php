@@ -1,20 +1,20 @@
 <?php
 
 /**
- * @file classes/rt/ojs/RTDAO.inc.php
+ * @file classes/rt/cla/RTDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class RTDAO
- * @ingroup rt_ojs
+ * @ingroup rt_cla
  * @see RT
  *
- * @brief DAO operations for the OJS Reading Tools interface.
+ * @brief DAO operations for the CLA Reading Tools interface.
  */
 
-import('classes.rt.ojs.JournalRT');
+import('classes.rt.cla.JournalRT');
 
 class RTDAO extends DAO {
 	var $versionCache;

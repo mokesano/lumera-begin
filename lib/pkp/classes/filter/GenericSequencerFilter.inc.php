@@ -15,7 +15,7 @@
  *  the result of the last filter in the chain to the caller.
  */
 
-import('lib.pkp.classes.filter.CompositeFilter');
+import('lib.sep.classes.filter.CompositeFilter');
 
 class GenericSequencerFilter extends CompositeFilter {
 	/**
@@ -33,7 +33,7 @@ class GenericSequencerFilter extends CompositeFilter {
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.classes.filter.GenericSequencerFilter';
+		return 'lib.sep.classes.filter.GenericSequencerFilter';
 	}
 
 

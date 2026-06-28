@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/translator/locale/id_ID/locale.xml
@@ -14,8 +14,8 @@
 <locale name="id_ID" full_name="Bahasa Indonesia">
 	<message key="plugins.generic.translator.name"> Plugin Translator </message> 
 	<message key="plugins.generic.translator.description"> Plugin ini memungkinkan pemeliharaan web-based file terjemahan.</message> 
-	<message key="plugins.generic.translator.longdescription"> Area ini memungkinkan  Administrator Situs untuk membangun, memodifikasi, dan mengecek terjemahan IOJS. Ini adalah site-wide dan tidak seharusnya digunakan untuk menyesuaikan jurnal OJS tunggal.</message> 
-	<message key="plugins.generic.translator.localeDescription"> Halaman ini mendaftar semua komponen terjemahan IOJS dan menyediakan penerjemah kesempatan untuk mengedit. Terjemahan penuh dari sebuah naskah terjemahan harus mengandung terjemahan lengkap semua komponen.</message>	
+	<message key="plugins.generic.translator.longdescription"> Area ini memungkinkan  Administrator Situs untuk membangun, memodifikasi, dan mengecek terjemahan ICLA. Ini adalah site-wide dan tidak seharusnya digunakan untuk menyesuaikan jurnal CLA tunggal.</message> 
+	<message key="plugins.generic.translator.localeDescription"> Halaman ini mendaftar semua komponen terjemahan ICLA dan menyediakan penerjemah kesempatan untuk mengedit. Terjemahan penuh dari sebuah naskah terjemahan harus mengandung terjemahan lengkap semua komponen.</message>	
 	<message key="plugins.generic.translator.tarMissing"> Fungsi ekspor plugin ini telah diaktivasi karena configured tar binary tidak bisa ditemukan di sistem ini. Pastikan bahwa Anda mempunyai program tar yang diinstal dan kemudian mengatur jalan ke tar binary di bagian config.inc.php's [cli]!</message>
 	<message key="plugins.generic.translator.localeName"> Nama locale </message> 
 	<message key="plugins.generic.translator.localeKey"> Kunci </message> 

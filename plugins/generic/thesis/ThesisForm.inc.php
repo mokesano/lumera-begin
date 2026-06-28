@@ -13,7 +13,7 @@
  * @brief Form for journal managers to create/edit thesis abstracts.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ThesisForm extends Form {
 

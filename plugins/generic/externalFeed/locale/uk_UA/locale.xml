@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/externalFeed/locale/uk_UA/locale.xml
@@ -60,7 +60,7 @@
        <message key="plugins.generic.externalFeed.form.titleRequired">Будь ласка, вкажіть заголовок для цієї стрічки</message>
        <message key="plugins.generic.externalFeed.form.feedUrl">URL</message>
        <message key="plugins.generic.externalFeed.form.feedUrlValid">Будь ласка, вкажіть коректну адресу URL стрічки (з префіксом http://)</message>
-       <message key="plugins.generic.externalFeed.form.feedUrlDescription">Адреса URL зовнішньої стрічки синдикації Atom/RSS (наприклад, http://pkp.sfu.ca/blog/feed)</message>
+       <message key="plugins.generic.externalFeed.form.feedUrlDescription">Адреса URL зовнішньої стрічки синдикації Atom/RSS (наприклад, http://lumera.sangia.org/blog/feed)</message>
        <message key="plugins.generic.externalFeed.form.display">Відображення</message>
        <message key="plugins.generic.externalFeed.form.displayHomepage">Відображати на домашній сторінці</message>
        <message key="plugins.generic.externalFeed.form.displayBlockNone">Не відображати блоком</message>

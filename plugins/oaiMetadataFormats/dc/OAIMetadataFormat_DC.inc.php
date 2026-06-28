@@ -17,12 +17,12 @@
  *
  * @brief OAI metadata format class -- Dublin Core.
  */
-import('lib.pkp.plugins.oaiMetadataFormats.dc.PKPOAIMetadataFormat_DC');
+import('lib.sep.plugins.oaiMetadataFormats.dc.SEPOAIMetadataFormat_DC');
 
-class OAIMetadataFormat_DC extends PKPOAIMetadataFormat_DC {
+class OAIMetadataFormat_DC extends SEPOAIMetadataFormat_DC {
 
 	/**
-	 * @see lib/pkp/plugins/oaiMetadataFormats/dc/PKPOAIMetadataFormat_DC::toXml()
+	 * @see lib/sep/plugins/oaiMetadataFormats/dc/SEPOAIMetadataFormat_DC::toXml()
 	 */
 	function toXml(&$record, $format = null) {
 		$article =& $record->getData('article');

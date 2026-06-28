@@ -37,11 +37,11 @@
 
 	<!-- вывод NLM 3.0 -->
 	<message key="plugins.metadata.nlm30.nlm30XmlOutput.displayName">Вывод публикации журнала NLM 3.0</message>
-	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Преобразует OJS или OCS статью/материал в NLM 3.0.</message>
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Преобразует CLA или OCS статью/материал в NLM 3.0.</message>
 
 	<!-- вывод NLM 2.3 -->
 	<message key="plugins.metadata.nlm30.nlm23XmlOutput.displayName">Вывод публикации журнала NLM 2.3</message>
-	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Преобразует OJS или OCS статью/материал вo NLM 2.3.</message>
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Преобразует CLA или OCS статью/материал вo NLM 2.3.</message>
 
 	<!-- Преобразование NLM 3.0 в 2.3  -->
 	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.displayName">Преобразование публикации журнала из NLM 3.0 в 2.3</message>
@@ -49,5 +49,5 @@
 
 	<!-- Вывод списка ссылок простым текстом -->
 	<message key="plugins.metadata.nlm30.refList.displayName">Генерация списка ссылок в виде простого текста</message>
-	<message key="plugins.metadata.nlm30.refList.description">Генерирует отформатированный список ссылок в виде простого текста из ссылок материала OJS/OCS/OMP</message>
+	<message key="plugins.metadata.nlm30.refList.description">Генерирует отформатированный список ссылок в виде простого текста из ссылок материала CLA/OCS/OMP</message>
 </locale>

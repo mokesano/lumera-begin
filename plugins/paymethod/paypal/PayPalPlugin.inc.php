@@ -112,7 +112,7 @@ class PayPalPlugin extends PaymethodPlugin {
 	 * Display the payment form
 	 * @param $queuedPaymentId int
 	 * @param $queuedPayment QueuedPayment
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function displayPaymentForm($queuedPaymentId, &$queuedPayment, &$request) {
 		if (!$this->isConfigured()) return false;
@@ -152,7 +152,7 @@ class PayPalPlugin extends PaymethodPlugin {
 	/**
 	 * Handle incoming requests/notifications
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function handle($args, &$request) {
 		$templateMgr =& TemplateManager::getManager();
@@ -195,7 +195,7 @@ class PayPalPlugin extends PaymethodPlugin {
 				curl_setopt($ch, CURLOPT_URL, $this->getSetting($journal->getId(), 'paypalurl'));
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 				curl_setopt($ch, CURLOPT_POST, 1);
-				curl_setopt($ch, CURLOPT_HTTPHEADER, array('User-Agent: PKP PayPal Service', 'Content-Type: application/x-www-form-urlencoded', 'Content-Length: ' . strlen($req)));
+				curl_setopt($ch, CURLOPT_HTTPHEADER, array('User-Agent: SEP PayPal Service', 'Content-Type: application/x-www-form-urlencoded', 'Content-Length: ' . strlen($req)));
 				curl_setopt($ch, CURLOPT_POSTFIELDS, $req);
 				$ret = curl_exec ($ch);
 				$curlError = curl_error($ch);
@@ -230,11 +230,11 @@ class PayPalPlugin extends PaymethodPlugin {
 							);
 							$queuedPaymentId = $request->getUserVar('custom');
 
-							import('classes.payment.ojs.OJSPaymentManager');
-							$ojsPaymentManager = new OJSPaymentManager($request);
+							import('classes.payment.cla.CLAPaymentManager');
+							$claPaymentManager = new CLAPaymentManager($request);
 
 							// Verify the cost and user details as per PayPal spec.
-							$queuedPayment =& $ojsPaymentManager->getQueuedPayment($queuedPaymentId);
+							$queuedPayment =& $claPaymentManager->getQueuedPayment($queuedPaymentId);
 							if (!$queuedPayment) {
 								// The queued payment entry is missing. Complain.
 								$mail->assignParams(array(
@@ -280,7 +280,7 @@ class PayPalPlugin extends PaymethodPlugin {
 							}
 
 							// Fulfill the queued payment.
-							if ($ojsPaymentManager->fulfillQueuedPayment($queuedPayment, $this->getName())) exit();
+							if ($claPaymentManager->fulfillQueuedPayment($queuedPayment, $this->getName())) exit();
 							
 							// If we're still here, it means the payment couldn't be fulfilled.
 							$mail->assignParams(array(
@@ -319,12 +319,12 @@ class PayPalPlugin extends PaymethodPlugin {
 
 				break;
 			case 'cancel':
-				AppLocale::requireComponents(LOCALE_COMPONENT_PKP_COMMON, LOCALE_COMPONENT_PKP_USER, LOCALE_COMPONENT_APPLICATION_COMMON);
+				AppLocale::requireComponents(LOCALE_COMPONENT_SEP_COMMON, LOCALE_COMPONENT_SEP_USER, LOCALE_COMPONENT_APPLICATION_COMMON);
 				$templateMgr->assign(array(
 					'currentUrl' => $request->url(null, 'index'),
 					'pageTitle' => 'plugins.paymethod.paypal.purchase.cancelled.title',
 					'message' => 'plugins.paymethod.paypal.purchase.cancelled',
-					'backLink' => $request->getUserVar('ojsReturnUrl'),
+					'backLink' => $request->getUserVar('claReturnUrl'),
 					'backLinkLabel' => 'common.continue'
 				));
 				$templateMgr->display('common/message.tpl');

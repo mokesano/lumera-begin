@@ -5,7 +5,7 @@
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * PKP-wide shared stylesheet.
+ * SEP-wide shared stylesheet.
  * DEPRECATED. Do not modify.
  */
 
@@ -363,19 +363,19 @@ span.nested {
  * Form-specific elements
  */
 
-span.pkp_form_error { /* Named for compatibility with new lessphp structure */
+span.sep_form_error { /* Named for compatibility with new lessphp structure */
 	color: #900;
 	font-weight: bold;
 	font-size: 1em;
 }
 
-span.pkp_form_success { /* Named for compatibility with new lessphp structure */
+span.sep_form_success { /* Named for compatibility with new lessphp structure */
 	color: #090;
 	font-weight: bold;
 	font-size: 1em;
 }
 
-ul.pkp_form_error_list { /* Named for compatibility with new lessphp structure */
+ul.sep_form_error_list { /* Named for compatibility with new lessphp structure */
 	color: #900;
 }
 

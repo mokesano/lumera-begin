@@ -22,7 +22,7 @@ switch ($op) {
 	case 'view':
 	case 'search':
 		define('HANDLER_CLASS', 'HelpHandler');
-		import('lib.pkp.pages.help.HelpHandler');
+		import('lib.sep.pages.help.HelpHandler');
 		break;
 }
 

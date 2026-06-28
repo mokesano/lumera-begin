@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale.xml
@@ -57,5 +57,5 @@ Ejemplos:
 	<message key="plugins.importexport.users.export.errorsOccurred">Ha ocurrido un error durante la exportación</message>
 	<message key="plugins.importexport.users.export.couldNotWriteFile">No ha sido posible escribir al articulo "{$fileName}".</message>
 	<message key="plugins.importexport.users.import.warning">Aviso</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">No es posible usar contraseñas codificadas con {$importHash}; OJS utiliza{$ojsHash}. Si decide continuar, necesitará volver a crear las contraseñas de los usuarios importados.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">No es posible usar contraseñas codificadas con {$importHash}; CLA utiliza{$claHash}. Si decide continuar, necesitará volver a crear las contraseñas de los usuarios importados.</message>
 </locale>

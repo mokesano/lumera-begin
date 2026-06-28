@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 <!--
   * 000001.xml
   *
@@ -12,10 +12,10 @@
   -->
 <topic title="نصب " toc="site/toc/000000" key="site.installation" locale="fa_IR" id="site/topic/000001" >
 	<section><![CDATA[<p>
-برنامه OJSیک برنامه اپن سورس است که آن را میتوان به طوررایگان دانلود کرده و بر روی هر کامپیوتر خانگی یا سرور نصب کرد . 
+برنامه CLAیک برنامه اپن سورس است که آن را میتوان به طوررایگان دانلود کرده و بر روی هر کامپیوتر خانگی یا سرور نصب کرد . 
 </p>]]></section>
 	<section title="مالکیت معنوی" ><![CDATA[<p>
-برنامه OJSبر طبق توافقنامه کاربری زیل قابل استفاده است
+برنامه CLAبر طبق توافقنامه کاربری زیل قابل استفاده است
 <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">
 </a>
 یک نسخه از توافقنامه کاربری برای استفاده از این برنامه به صورت نسخه اصلی یا اصلاح شده همراه با فایل نصب برنامه قابل دانلود است . 
@@ -33,26 +33,26 @@
 <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.oracle.com/sun/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, and <a href="http://www.microsoft.com/">Windows</a></li>
 		</ul>
 		<p>
-برنامه OJSتا کنون فقط بر روی MYSQLوPOSTGRESQL تست شده است .اگرچه سایر سیستمهای مدیریت بانکهای اطلاعاتی زیر نیز با آن کار میکند 
+برنامه CLAتا کنون فقط بر روی MYSQLوPOSTGRESQL تست شده است .اگرچه سایر سیستمهای مدیریت بانکهای اطلاعاتی زیر نیز با آن کار میکند 
 <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a>
  گزارش کاربران درباره کیفیت کارکرد برنامه موجب مزید امتنان است 
 </p>
 		]]></section>
 	<section title="دانلود" ><![CDATA[<p>
-برنامه OJSرا میتوان از وب سایت پروژه توسعه اطلاعات عمومی به آدرس 
-<a href="http://pkp.sfu.ca/ojs/" target="_blank">دانلود کرد</a>.</p>]]></section>
+برنامه CLAرا میتوان از وب سایت پروژه توسعه اطلاعات عمومی به آدرس 
+<a href="http://lumera.sangia.org/cla/" target="_blank">دانلود کرد</a>.</p>]]></section>
 	<section title="نصب " ><![CDATA[<p>
-برنامه OJSدارای یک دستورالعمل برپایه وب است که مدیر سیستم را در تمام مراحل نصب راهنمایی میکند .همچنین نصب آن از طریق تایپ کردن خطوط فرمان نیز انکتن پذیر است 
+برنامه CLAدارای یک دستورالعمل برپایه وب است که مدیر سیستم را در تمام مراحل نصب راهنمایی میکند .همچنین نصب آن از طریق تایپ کردن خطوط فرمان نیز انکتن پذیر است 
 </p>
 		<ol>
 			<li>
-				آرشیو OJSرا دانلود کنید 
+				آرشیو CLAرا دانلود کنید 
 			</li>
 			<li>
-				آرشیو OJSرا روی وب سرور خود از حالت فشرده خارج کنید و آنرا در مسیر دلخواهی قرار دهید
+				آرشیو CLAرا روی وب سرور خود از حالت فشرده خارج کنید و آنرا در مسیر دلخواهی قرار دهید
 <br />
-				<tt>$ tar -zxf ojs-2.*.tar.gz<br />
-				$ mv ojs-* /var/www/myjournal</tt>
+				<tt>$ tar -zxf cla-2.*.tar.gz<br />
+				$ mv cla-* /var/www/myjournal</tt>
 			</li>
 			<li>
 				این فایلها و پوشه ها را طوری تغییر دهید که قابل اصلاح باشند (مثلا با استفاده از CHMOD)

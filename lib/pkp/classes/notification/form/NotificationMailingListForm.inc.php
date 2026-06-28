@@ -17,7 +17,7 @@
  */
 
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 import('classes.notification.Notification');
 
 class NotificationMailingListForm extends Form {
@@ -33,7 +33,7 @@ class NotificationMailingListForm extends Form {
 	function NotificationMailingListForm() {
 		parent::Form('notification/maillist.tpl');
 
-		import('lib.pkp.classes.captcha.CaptchaManager');
+		import('lib.sep.classes.captcha.CaptchaManager');
 		$captchaManager = new CaptchaManager();
 		$this->captchaEnabled = ($captchaManager->isEnabled() && Config::getVar('captcha', 'captcha_on_mailinglist'))?true:false;		
 		$this->recaptchaEnabled = Config::getVar('captcha', 'captcha_on_mailinglist') && Config::getVar('captcha', 'recaptcha');
@@ -71,14 +71,14 @@ class NotificationMailingListForm extends Form {
 		$templateMgr->assign('new', true);
 		
 		if ($this->captchaEnabled && $this->recaptchaEnabled) {
-			import('lib.pkp.lib.recaptcha.recaptchalib');
+			import('lib.sep.lib.recaptcha.recaptchalib');
 			$publicKey = Config::getVar('captcha', 'recaptcha_public_key');
 			$useSSL = Config::getVar('security', 'force_ssl')||Request::getProtocol()=='https'?true:false;
 			$reCaptchaHtml = recaptcha_get_html($publicKey, null, $useSSL);
 			$templateMgr->assign('reCaptchaHtml', $reCaptchaHtml);
 			$templateMgr->assign('captchaEnabled', true);
 		} elseif ($this->captchaEnabled) {
-			import('lib.pkp.classes.captcha.CaptchaManager');
+			import('lib.sep.classes.captcha.CaptchaManager');
 			$captchaManager = new CaptchaManager();
 			$captcha =& $captchaManager->createCaptcha();
 			if ($captcha) {

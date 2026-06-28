@@ -20,7 +20,7 @@ class ObjectsForReviewAuthorHandler extends Handler {
 	/**
 	 * Display objects for review author listing page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function objectsForReview($args, &$request) {
 		$journal =& $request->getJournal();
@@ -83,7 +83,7 @@ class ObjectsForReviewAuthorHandler extends Handler {
 	/**
 	 * Author requests an object for review.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function requestObjectForReview($args, &$request) {
 		$journal =& $request->getJournal();
@@ -132,7 +132,7 @@ class ObjectsForReviewAuthorHandler extends Handler {
 
 	/**
 	 * Ensure that we have a journal, plugin is enabled, and user is author.
-	 * @see PKPHandler::authorize()
+	 * @see SEPHandler::authorize()
 	 */
 	function authorize(&$request, &$args, $roleAssignments) {
 		$journal =& $request->getJournal();
@@ -151,7 +151,7 @@ class ObjectsForReviewAuthorHandler extends Handler {
 
 	/**
 	 * Setup common template variables.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $subclass boolean (optional) set to true if caller is below this handler in the hierarchy
 	 */
 	function setupTemplate($request, $subclass = false) {
@@ -206,7 +206,7 @@ class ObjectsForReviewAuthorHandler extends Handler {
 	 * @param $user User
 	 * @param $returnUrl string
 	 * @param $action string
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _displayEmailForm($email, $objectForReview, $user, $returnUrl, $action, $request) {
 		if (!$request->getUserVar('continued')) {
@@ -230,7 +230,7 @@ class ObjectsForReviewAuthorHandler extends Handler {
 	/**
 	 * Create trivial notification
 	 * @param $notificationType int
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _createTrivialNotification($notificationType, &$request) {
 		$user =& $request->getUser();

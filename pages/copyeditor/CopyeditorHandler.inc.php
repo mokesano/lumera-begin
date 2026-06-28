@@ -32,7 +32,7 @@ class CopyeditorHandler extends Handler {
 	/**
 	 * Display copyeditor index page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$this->validate($request);
@@ -121,7 +121,7 @@ class CopyeditorHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $articleId = 0, $parentPage = null) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION);
 		$templateMgr =& TemplateManager::getManager();
 		$pageHierarchy = $subclass ? array(array(Request::url(null, 'user'), 'navigation.user'), array(Request::url(null, 'copyeditor'), 'user.role.copyeditor'))
 				: array(array('user', 'navigation.user'), array('copyeditor', 'user.role.copyeditor'));
@@ -137,7 +137,7 @@ class CopyeditorHandler extends Handler {
 	/**
 	 * Display submission management instructions.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function instructions($args, &$request) {
 		$this->setupTemplate();
@@ -150,7 +150,7 @@ class CopyeditorHandler extends Handler {
 	/**
 	 * Validate that the user is the assigned copyeditor for
 	 * the article, if specified. Validate user role.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $articleId int optional
 	 */
 	function validate($request, $articleId = null) {

@@ -13,7 +13,7 @@
  * @brief Class for information block plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class InformationBlockPlugin extends BlockPlugin {
 	/**

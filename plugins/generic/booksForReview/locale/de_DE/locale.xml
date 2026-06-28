@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/booksForReview/locale/de_DE/locale.xml
@@ -125,7 +125,7 @@
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderBeforeDays2">Tag(e) vor dem Fälligkeitsdatum schicken.</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays1">Autor/innen eine Erinnerungs-E-Mail</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays2">Tag(e) nach dem Fälligkeitsdatum schicken.</message>
-	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Hinweis:</strong> Um diese Optionen zu aktivieren, muss der/die Zeitschriftenverwalter/in die <tt>scheduled_tasks</tt>-Option in der OJS-Konfigurationsdatei auswählen. Eventuell sind weitere Einstellungen des Servers (die vielleicht nicht auf allen Servern möglich sind) erforderlich, um diese Funktionen zu ermöglichen, vgl. die OJS-Dokumentation.]]></message>
+	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Hinweis:</strong> Um diese Optionen zu aktivieren, muss der/die Zeitschriftenverwalter/in die <tt>scheduled_tasks</tt>-Option in der CLA-Konfigurationsdatei auswählen. Eventuell sind weitere Einstellungen des Servers (die vielleicht nicht auf allen Servern möglich sind) erforderlich, um diese Funktionen zu ermöglichen, vgl. die CLA-Dokumentation.]]></message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformation">Zusätzliche Informationen</message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformationDescription">Zusätzliche Informationen, die zusammen mit der Liste der zu rezensierenden Bücher veröffentlicht werden.</message>
 	<message key="plugins.generic.booksForReview.settings.dueWeeksRequired">Bitte geben Sie die Zahl an Wochen ein, nach der Buchrezensionen fällig sind.</message>

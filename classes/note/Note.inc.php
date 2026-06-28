@@ -11,18 +11,18 @@
  * @ingroup note
  * @see NoteDAO
  *
- * @brief Class for OJS Note.
+ * @brief Class for CLA Note.
  */
 
 import('classes.article.ArticleFile');
-import('lib.pkp.classes.note.PKPNote');
+import('lib.sep.classes.note.SEPNote');
 
-class Note extends PKPNote {
+class Note extends SEPNote {
 	/**
 	 * Constructor.
 	 */
 	function Note() {
-		parent::PKPNote();
+		parent::SEPNote();
 	}
 
 	/**

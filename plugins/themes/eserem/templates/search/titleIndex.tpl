@@ -21,7 +21,7 @@
 	<script type="text/javascript">
 		$(function() {ldelim}
 			// Attach the form handler.
-			$('#searchForm').pkpHandler('$.pkp.pages.search.SearchFormHandler');
+			$('#searchForm').sepHandler('$.sep.pages.search.SearchFormHandler');
 		{rdelim});
 	</script>
 	<form method="post" id="searchForm" action="{url op="search"}">

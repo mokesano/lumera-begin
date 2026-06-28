@@ -1,12 +1,12 @@
 <?php
 /**
- * @class IntegratePKP
+ * @class IntegrateSEP
  *
- * Integrates PKP applications with the jbimages image upload utility for TinyMCE
+ * Integrates SEP applications with the jbimages image upload utility for TinyMCE
  */
 
 
-class IntegratePKP {
+class IntegrateSEP {
 	/* @var $baseDir string Path to the base OxS directory */
 	var $baseDir;
 
@@ -24,7 +24,7 @@ class IntegratePKP {
 		// Load and execute initialization code
 		chdir($this->baseDir);
 		define('INDEX_FILE_LOCATION', $this->baseDir . '/index.php');
-		require($this->baseDir . '/lib/pkp/includes/bootstrap.inc.php');
+		require($this->baseDir . '/lib/sep/includes/bootstrap.inc.php');
 
 		$publicDir = Config::getVar('files', 'public_files_dir');
 		$config = Config::getData();
@@ -68,7 +68,7 @@ class IntegratePKP {
 		$locale = LOCALE_DEFAULT;
 		$localeFile = new LocaleFile(
 			$locale,
-			$this->baseDir . "/lib/pkp/locale/$locale/installer.xml"
+			$this->baseDir . "/lib/sep/locale/$locale/installer.xml"
 		);
 		Registry::get('localeFiles', true, array($locale => array($localeFile)));
 
@@ -81,7 +81,7 @@ class IntegratePKP {
 			// User is logged in
 			$siteDir = $this->baseDir . '/' . $publicDir . '/site/';
 			if (!file_exists($siteDir . '/images/')) {
-				import('lib.pkp.classes.file.FileManager');
+				import('lib.sep.classes.file.FileManager');
 				$fileManager = new FileManager();
 
 				// Check that the public/site/ directory exists and is writeable
@@ -95,7 +95,7 @@ class IntegratePKP {
 			}
 			//Check if user's image directory exists, else create it
 			if (Validation::isLoggedIn() && !file_exists($siteDir . '/images/' . $user->getUsername())) {
-				import('lib.pkp.classes.file.FileManager');
+				import('lib.sep.classes.file.FileManager');
 				$fileManager = new FileManager();
 
 				// Check that the public/site/images/ directory exists and is writeable
@@ -125,7 +125,7 @@ class IntegratePKP {
 	 * Get the absolute path to the user's image upload directory
 	 * @return string
 	 */
-	public function getPKPImageUploadPath() {
+	public function getSEPImageUploadPath() {
 		if (isset($this->baseDir) && isset($this->imageDir)) {
 			return $this->baseDir . '/' . $this->imageDir;
 		}
@@ -137,7 +137,7 @@ class IntegratePKP {
 	 * Get the URL (minus domain name) for the user's image upload directory
 	 * @return string
 	 */
-	public function getPKPImageUrl() {
+	public function getSEPImageUrl() {
 		if (isset($this->baseUrl) && isset($this->imageDir)) {
 			$url = $this->baseUrl . '/' . $this->imageDir;
 			$urlParts = parse_url($url);

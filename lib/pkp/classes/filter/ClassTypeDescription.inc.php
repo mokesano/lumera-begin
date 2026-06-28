@@ -11,11 +11,11 @@
  *
  * @brief A type description that validates objects by class type.
  *
- * Example type identifier: 'class::lib.pkp.classes.submission.Submission'
+ * Example type identifier: 'class::lib.sep.classes.submission.Submission'
  */
 
-import('lib.pkp.classes.filter.TypeDescription');
-import('lib.pkp.classes.filter.TypeDescriptionFactory');
+import('lib.sep.classes.filter.TypeDescription');
+import('lib.sep.classes.filter.TypeDescriptionFactory');
 
 class ClassTypeDescription extends TypeDescription {
 	/** @var string a valid class name */

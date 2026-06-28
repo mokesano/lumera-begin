@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000002.xml
@@ -28,7 +28,7 @@
 	
 	<section title="Idiomas">
 		<![CDATA[<p>O sistema foi desenvolvido como um sistema multilingue, permitindo que revistas que trabalhem com conteúdo multilingue sejam hospedadas em um único sistema. O Administrador do Sistema pode especificar o idioma padrão para o sistema e instalar novas traduções para uso nas revistas.</p>
-		<p>Pacotes adicionais de idiomas estarão normalmente disponíveis no <a href="http://pkp.sfu.ca/" target="_blank">portal web</a> do sistema assim que as contribuições da comunidade forem recebidas. Estes pacotes podem ser instalados em um sistema existente para disponibilização às revistas.</p>]]>
+		<p>Pacotes adicionais de idiomas estarão normalmente disponíveis no <a href="http://lumera.sangia.org/" target="_blank">portal web</a> do sistema assim que as contribuições da comunidade forem recebidas. Estes pacotes podem ser instalados em um sistema existente para disponibilização às revistas.</p>]]>
 	</section>
 	
 	<section title="Fontes de Autenticação">

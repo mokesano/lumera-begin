@@ -16,7 +16,7 @@
 define('SUBSCRIPTION_OPEN_ACCESS_DELAY_MIN', '0');
 define('SUBSCRIPTION_OPEN_ACCESS_DELAY_MAX', '24');
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 
 class SubscriptionPolicyForm extends Form {

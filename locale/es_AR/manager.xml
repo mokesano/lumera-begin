@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
-  * ojs2-devel/locale/es_AR/manager.xml
+  * cla2-devel/locale/es_AR/manager.xml
   *
   * Copyright (c) 2013-2017 Simon Fraser University
   * Copyright (c) 2003-2016 John Willinsky
@@ -20,14 +20,14 @@
 	<message key="manager.groups.context.editorialTeam.short">Equipo Editorial</message>
 	<message key="manager.groups.context.people">Mostrar el título como categoría propia en Equipo (p.e. Comité Editorial)</message>
 	<message key="manager.groups.create">Crear Título de Posición</message>
-	<message key="manager.groups.disableBoard">OJS muestra el Equipo Editorial con sus roles asignados (Gestor de la revista, corrector de estilo, etc.)</message>
+	<message key="manager.groups.disableBoard">CLA muestra el Equipo Editorial con sus roles asignados (Gestor de la revista, corrector de estilo, etc.)</message>
 	<message key="manager.groups.enableBoard">El/la Gestor/a de Revista crea títulos (encabezados) y añade nombres bajo cada título</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[En<a href="{$aboutEditorialTeamUrl}">"Equipo"</a> en "Acerca de la revista":]]></message>
 	<message key="manager.groups.noneCreated">No se ha creado ningún cargo del equipo editorial.</message>
 	<message key="manager.journalManagement">Gestión de la revista</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Esto remplazara cualquier configuración específica de este locale</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Recargar configuración defectos de este locale</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS puede utilizar cualquiera de los idiomas disponibles. También puede operar como un sistema multi-idioma, permitiendo al usuario seleccionar el idioma de cada página, y permitiendo que algunos datos se introduzcan en varios idiomas. <br /><br />Si su idioma no aparece en la lista siguiente, pida al administrador del sitio que instale el idioma. Para instrucciones sobre instalación de idiomas consulte la documentación de OJS.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA puede utilizar cualquiera de los idiomas disponibles. También puede operar como un sistema multi-idioma, permitiendo al usuario seleccionar el idioma de cada página, y permitiendo que algunos datos se introduzcan en varios idiomas. <br /><br />Si su idioma no aparece en la lista siguiente, pida al administrador del sitio que instale el idioma. Para instrucciones sobre instalación de idiomas consulte la documentación de CLA.]]></message>
 	<message key="manager.languages.noneAvailable">Lo sentimos, no hay idiomas adicionales disponibles. Póngase en contacto con el/la administrador/a del sitio si desea usar otros idiomas con esta revista.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Este será el idioma por defecto del sitio.</message>
 	<message key="manager.managementPages">Páginas de gestión</message>
@@ -37,7 +37,7 @@
 	<message key="manager.payment.authorFees">Tarifas de autor</message>
 	<message key="manager.payment.authorFeesDescription">Las opciones seleccionadas, junto con su descripción y tarifas (que pueden editarse a continuación), aparecerán en el paso 1 del proceso de envío y en la sección "La revista" en Envíos, así como en los pasos que requieran realizar pagos.</message>
 	<message key="manager.payment.currency">Moneda</message>
-	<message key="manager.payment.currencymessage">OJS no realiza conversión de monedas. Si admite pagos, asegúrese de que la moneda para la suscripción coincide con la especificada aquí.</message>
+	<message key="manager.payment.currencymessage">CLA no realiza conversión de monedas. Si admite pagos, asegúrese de que la moneda para la suscripción coincide con la especificada aquí.</message>
 	<message key="manager.payment.description">Descripción</message>
 	<message key="manager.payment.details">Detalles</message>
 	<message key="manager.payment.editSubscription">Editar Suscripción</message>
@@ -209,7 +209,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Las revistas cuentan con Consejos Editoriales / Revisores para supervisar la línea editorial de la revista, participar en la elección de editoras/es, y, mediante la reputación de los miembros del consejo, aportar relevancia a la revista en su área temática. Los Consejos Revisores juegan un papel similar pero además se encargan del proceso de revisión por pares. Los miembros del Consejo Revisor no tendrán acceso al sistema administrativo de la revista, pero se añadirán a la lista de revisores/as.</message>
 	<message key="manager.setup.emailBounceAddress">Dirección de Rebote</message>
 	<message key="manager.setup.emailBounceAddressDescription">Se enviará un mensaje de error a esta dirección por cada correo que no haya podido ser entregado.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Atención:</strong> Para activar esta opción, el/la administrador/a debe habilitar la opción <tt>allow_envelope_sender</tt> en el archivo de configuración de OJS. Es posible que haya que configurar maś cosas en el servidor (lo cuál puede que no sea posible en todos los servidores) para soportar esta funcionalidad, tal y como se indica en la documentación de OJS.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Atención:</strong> Para activar esta opción, el/la administrador/a debe habilitar la opción <tt>allow_envelope_sender</tt> en el archivo de configuración de CLA. Es posible que haya que configurar maś cosas en el servidor (lo cuál puede que no sea posible en todos los servidores) para soportar esta funcionalidad, tal y como se indica en la documentación de CLA.]]></message>
 	<message key="manager.setup.emails">Identificación por Correo-e</message>
 	<message key="manager.setup.emailSignature">Firma</message>
 	<message key="manager.setup.emailSignatureDescription">Los correos predeterminados que se envíen desde el sistema tendrán la siguiente firma. En Gestión de la Revista se puede editar el cuerpo de los mensajes predeterminados.</message>
@@ -231,7 +231,7 @@
 	<message key="manager.setup.focusScope">Temática y alcance</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>DATOS HMTL DE EJEMPLO</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Para que los/as autores/as indexen su trabajo</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS se adhiere al protocolo de Recogida de Metadatos de la <a href="http://www.openarchives.org/" target="_blank">Iniciativa de Archivos Abiertos</a> , que es la norma emergente para proporcionar acceso a recursos electrónicos de investigación bien indexados a escala global. Se usaran plantillas similares para proporcionar los metadatos de los envíos. La persona encargada de la gestión de la revista debería seleccionar las categorías para indexar y presentar a los/as autores/as ejemplos relevantes que le faciliten la indexación de su trabajo, separando los términos con punto y coma (p.e., término1; término2). Las entradas deberían ser introducidas como ejemplos usando "P.e.," o "Por ejemplo,".]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA se adhiere al protocolo de Recogida de Metadatos de la <a href="http://www.openarchives.org/" target="_blank">Iniciativa de Archivos Abiertos</a> , que es la norma emergente para proporcionar acceso a recursos electrónicos de investigación bien indexados a escala global. Se usaran plantillas similares para proporcionar los metadatos de los envíos. La persona encargada de la gestión de la revista debería seleccionar las categorías para indexar y presentar a los/as autores/as ejemplos relevantes que le faciliten la indexación de su trabajo, separando los términos con punto y coma (p.e., término1; término2). Las entradas deberían ser introducidas como ejemplos usando "P.e.," o "Por ejemplo,".]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Es necesario el correo-e del contacto principal.</message>
 	<message key="manager.setup.form.contactNameRequired">Es necesario el nombre del contacto principal.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Son necesarias las iniciales de la revista.</message>
@@ -254,7 +254,7 @@
 	<message key="manager.setup.information.forLibrarians">Para bibliotecarios/as</message>
 	<message key="manager.setup.information.forReaders">Para lectores/as</message>
 	<message key="manager.setup.initialIssue">Número inicial</message>
-	<message key="manager.setup.initialIssueDescription">Dependiendo del formato seleccionado, identificar el número, volúmen y/o año del primer número publicado con OJS:</message>
+	<message key="manager.setup.initialIssueDescription">Dependiendo del formato seleccionado, identificar el número, volúmen y/o año del primer número publicado con CLA:</message>
 	<message key="manager.setup.institution">Institución</message>
 	<message key="manager.setup.issnDescription"><![CDATA[El ISSN (International Standard Serial Number) es un número de ocho dígitos que identifica publicaciones periódicas, incluyendo revistas electrónicas. Está gestionado por una red internacional de Centros Nacionales coordinados por un Centro Internacional con sede en París, auspiciado por la Unesco y el gobierno francés. Se puede solicitar un número en <a href="http://www.issn.org" target="_new">el sitio web del ISSN</a>. Se puede introducir esta información en cualquier momento.]]></message>
 	<message key="manager.setup.issuePerVolume">Números por volumen</message>
@@ -365,8 +365,8 @@
 	<message key="manager.setup.reviewGuidelines">Directrices de revisión</message>
 	<message key="manager.setup.reviewGuidelinesDescription">Las directrices de revisión proporcionan a los/as revisores/as los criterios para juzgar si un envío se adecúa a la revista, así como instrucciones especiales para preparar una revisión efectiva y útil.</message>
 	<message key="manager.setup.reviewOptions">Opciones de revisión</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">Se pueden enviar correos electrónicos de recordatorio automáticamente (disponible en Plantillas de correos-e en OJS) a los revisores/as en dos sitios diferentes (aunque el/la editor/a siempre puede enviar correos-e directamente)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Nota:</strong> Para activar estas opciones, el/la administrador/a del sitio debe habilitar la opción <tt>scheduled_tasks</tt> en el archivo de configuración de OJS. Es posible que se necesite configuración adicional en el servidor para soportar esta funcionalidad (lo cual puede no ser posible en todos los servidores), tal y como se indica en la documentación de OJS.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">Se pueden enviar correos electrónicos de recordatorio automáticamente (disponible en Plantillas de correos-e en CLA) a los revisores/as en dos sitios diferentes (aunque el/la editor/a siempre puede enviar correos-e directamente)</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Nota:</strong> Para activar estas opciones, el/la administrador/a del sitio debe habilitar la opción <tt>scheduled_tasks</tt> en el archivo de configuración de CLA. Es posible que se necesite configuración adicional en el servidor para soportar esta funcionalidad (lo cual puede no ser posible en todos los servidores), tal y como se indica en la documentación de CLA.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Revisión ciega</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Puede ser modificado durante el proceso editorial.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">El tiempo que tendrán los/as revisores/as</message>
@@ -385,7 +385,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Proporcione vínculos a <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action"> Asegurando una Revisión Ciega </a> en la páginas en que los autores y revisores envían archivos.]]></message>
 	<message key="manager.setup.reviewPolicy">Política de Revisión</message>
 	<message key="manager.setup.reviewProcess">Proceso de revisión</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS apoya dos modelos para gestionar el proceso de revisión. El Proceso estándar de Revisión se recomienda porque va guiando a / a la revisor/a en los pasos que tiene que dar, se asegura de registrar el proceso completo de revisión de cada envío, y además usa el sistema automático de recordatorios, y recomendaciones estándares de envío (Aceptar; Aceptar con revisiones; Enviar para revisión; Enviar a otro lugar; Rechazar; Ver comentarios).<br /><br />Seleccione uno de los siguientes:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA apoya dos modelos para gestionar el proceso de revisión. El Proceso estándar de Revisión se recomienda porque va guiando a / a la revisor/a en los pasos que tiene que dar, se asegura de registrar el proceso completo de revisión de cada envío, y además usa el sistema automático de recordatorios, y recomendaciones estándares de envío (Aceptar; Aceptar con revisiones; Enviar para revisión; Enviar a otro lugar; Rechazar; Ver comentarios).<br /><br />Seleccione uno de los siguientes:]]></message>
 	<message key="manager.setup.reviewProcessEmail">Correo-e - Proceso de Revisión Adjunto</message>
 	<message key="manager.setup.reviewProcessStandard">Proceso de Revisión Estándar</message>
 	<message key="manager.setup.reviewProcessStandardDescription">Los/as editores/as mandarán por correo-e a los/as revisores/as seleccionados/as el título y el resumen del envío, así como una invitación a identificarse en la revista para completar la revisión. Los/as revisores/as entran en la revista para aceptar la revisión, bajar los envíos, enviar sus comentarios, y seleccionar su recomendación.</message>
@@ -395,7 +395,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Si no se añaden secciones, se envía a la sección Artículos por defecto.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Para crear o modificar secciones de la revista (p.e., artículos, revisiones de libros, etc.), vaya a Gestión de Sección.<br /><br />Los/as autores/as que hagan envíos a la revista designarán...]]></message>
 	<message key="manager.setup.securitySettings">Opciones de Acceso y Seguridad</message>
-	<message key="manager.setup.securitySettingsDescription">OJS proporciona una serie de opciones de seguridad que pueden usarse para restringir el acceso a algunas secciones de la revista, y mantiene información adicional sobre envíos a efectos de registro.</message>
+	<message key="manager.setup.securitySettingsDescription">CLA proporciona una serie de opciones de seguridad que pueden usarse para restringir el acceso a algunas secciones de la revista, y mantiene información adicional sobre envíos a efectos de registro.</message>
 	<message key="manager.setup.selectEditorDescription">El/la editor/a de la revista que lo verá a través del proceso editorial.</message>
 	<message key="manager.setup.selectSectionDescription">La sección de la revista apropiada.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Muestra siempre vínculos a las galeradas e indica acceso restringido.</message>
@@ -433,7 +433,7 @@
 	<message key="manager.setup.useTextTitle">Título del texto</message>
 	<message key="manager.setup.volumePerYear">Volúmenes por año</message>
 	<message key="manager.statistics.reports">Generador de informes</message>
-	<message key="manager.statistics.reports.description">OJS genera informes que detallan el proceso de los envíos a la revista durante un período de tiempo. Los informes se generan en formato CSV, que puede abrirse en una hoja de cálculo.</message>
+	<message key="manager.statistics.reports.description">CLA genera informes que detallan el proceso de los envíos a la revista durante un período de tiempo. Los informes se generan en formato CSV, que puede abrirse en una hoja de cálculo.</message>
 	<message key="manager.statistics.statistics">Estadísticas</message>
 	<message key="manager.statistics.statistics.articleViews">Número de visitas al artículo (sólo para autores)</message>
 	<message key="manager.statistics.statistics.count.accept">Aceptados</message>
@@ -441,7 +441,7 @@
 	<message key="manager.statistics.statistics.count.revise">Reenviados</message>
 	<message key="manager.statistics.statistics.daysPerReview">Días para la revisión</message>
 	<message key="manager.statistics.statistics.daysToPublication">Días hasta la publicación</message>
-	<message key="manager.statistics.statistics.description">OJS calcula las siguientes estadísticas de cada revista.  "Días tomados" esta calculado desde la fecha de envío (o desde la designación de la versión de revisión) hasta la fecha de la decisión inicial del editor, mientras que los "Días hasta la publicación" están calculados desde la fecha en que se subió el archivo originalmente hasta la fecha en la que se publicó.</message>
+	<message key="manager.statistics.statistics.description">CLA calcula las siguientes estadísticas de cada revista.  "Días tomados" esta calculado desde la fecha de envío (o desde la designación de la versión de revisión) hasta la fecha de la decisión inicial del editor, mientras que los "Días hasta la publicación" están calculados desde la fecha en que se subió el archivo originalmente hasta la fecha en la que se publicó.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Números publicados:</message>
 	<message key="manager.statistics.statistics.makePublic">Marque los elementos que quiere hacer públicos en Sobre la Revista.</message>
 	<message key="manager.statistics.statistics.note">Nota: Es posible que los porcentajes de la revisión por pares no sumen 100% si elementos reenviados son aceptados, rechazados o están en proceso.</message>
@@ -476,8 +476,8 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">Notificar a subscriptores por correo-e</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">semana(s) antes que se caduque la subscripción.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Recordatorio de caducidad de subscripción</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Recordatorios automáticos por correo-e (disponibles para ser editados por los/as Gestores/as de Revista en los correos-e por defecto de OJS) pueden ser enviados tanto antes como después de la caducidad de la subscripción.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Nota:</strong> Para activar estas opciones, el administrador del sitio debe activar la opción  <tt>scheduled_tasks</tt> dentro del archivo de configuración de OJS. Es posible que para soportar esta funcionalidad sea necesario configurar otros parámetros del servidor (lo cuál puede que no sea posible en todos los servidores), tal y como se indica en la documentación de OJS.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Recordatorios automáticos por correo-e (disponibles para ser editados por los/as Gestores/as de Revista en los correos-e por defecto de CLA) pueden ser enviados tanto antes como después de la caducidad de la subscripción.</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Nota:</strong> Para activar estas opciones, el administrador del sitio debe activar la opción  <tt>scheduled_tasks</tt> dentro del archivo de configuración de CLA. Es posible que para soportar esta funcionalidad sea necesario configurar otros parámetros del servidor (lo cuál puede que no sea posible en todos los servidores), tal y como se indica en la documentación de CLA.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Seleccione uno de los siguientes:</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[Se puede usar HTML en 'textarea' (para cambiar el tamaño de la fuente, el color, etc.), con "returns" tratados como <tt><br></tt>; El editor de HTML funciona con Firefox.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Por favor elija un número valido de meses después de que caduque la subscripción.</message>
@@ -485,7 +485,7 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Por favor elija un número valido de meses después de que caduque la subscripción.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Por favor elija un número valido de meses antes de que caduque la subscripción.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Las personas registradas tendrán la opción de recibir la tabla de contenido por correo-e cuando un número pase a ser de acceso abierto.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Nota:</strong> Para activar esta opción, el administrador del sitio debe activar la opción <tt>scheduled_tasks</tt> dentro del archivo de configuración de OJS. Es posible que para soportar esta funcionalidad sea necesario configurar otros parámetros del servidor (lo cuál puede que no sea posible en todos los servidores), tal y como se indica en la documentación de OJS.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Nota:</strong> Para activar esta opción, el administrador del sitio debe activar la opción <tt>scheduled_tasks</tt> dentro del archivo de configuración de CLA. Es posible que para soportar esta funcionalidad sea necesario configurar otros parámetros del servidor (lo cuál puede que no sea posible en todos los servidores), tal y como se indica en la documentación de CLA.]]></message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">Opciones de Acceso abierto para Revistas bajo subscripción</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">Las revistas bajo suscripción pueden permitir "Acceso libre diferido" y/o "auto-archivo de autores" (que mejoran la cantidad de lectores y la cantidad de veces que se cita el contenido).  Las políticas elegidas apareceran en Acerca de la Revista.</message>
 	<message key="manager.subscriptionPolicies.subscriptionAdditionalInformation">Información de la Subscrición</message>
@@ -592,7 +592,7 @@
 	<message key="manager.plugins.deleteConfirm">Está seguro de que desea borrar el plugin del sistema de archivos del servidor?</message>
 	<message key="manager.plugins.uploadError">Error subiéndo archivo</message>
 	<message key="manager.plugins.fileSelectError">Por favor, primero seleccione un archivo.</message>
-	<message key="manager.setup.noPublishing">OJS no se usará para publicar los contenidos de la revista de forma online.</message>
+	<message key="manager.setup.noPublishing">CLA no se usará para publicar los contenidos de la revista de forma online.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Notificaciones de Pago Online</message>
 	<message key="manager.individualSubscriptions">Suscripciones Individuales</message>
 	<message key="manager.institutionalSubscriptions">Suscripciones Institucionales</message>
@@ -652,7 +652,7 @@
 	<message key="manager.subscriptions.form.userProfileInstructions">Nota: Todos los cambios de abajo son para el perfil del usuario en todo el sistema.</message>
 	<message key="manager.setup.historyDescription">Este texto aparecerá en la sección "Sobre nosotros"  de la revista y puede ser usado para describir cambios en cargos, consejo editorial, y otros temas de relevancia para la historia de la revista.</message>
 	<message key="manager.setup.sponsorNoteDescription">Este texto aparecerá bajo la cabecera "Patrocinadores" y sobre la lista de los nombres y URLs de los patrocinadores bajo "Patrocinio de la Revista" en la página "Sobre Nostros".</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Las notificaciones automatizadas por email (disponibles para edición por los Gestores de la Revista en Emails Preparados de OJS) pueden ser enviadas al Gestor de Suscripciones tras completar los pagos online de suscripción.</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Las notificaciones automatizadas por email (disponibles para edición por los Gestores de la Revista en Emails Preparados de CLA) pueden ser enviadas al Gestor de Suscripciones tras completar los pagos online de suscripción.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Notificar al Gestor de Suscripciones por email sobre la compra online de una suscripción individual.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentDisabled"><![CDATA[<strong>Nota:</strong> Para habilitar estas opciones, el Gestor de la Revista tiene que habilitar el módulo de pagos online, incluyendo los pagos online para suscripciones, bajo Tasas de Lector.]]></message>
 	<message key="manager.setup.contributorNoteDescription">Este texto aparecerá bajo el titular "Fuentes de Soporte/Apoyo" y sobre la lista de nombres y urls de las organizaciones patrocinadoras bajo "Patrocinadores de la Revista" en la página "Sobre Nosotros".</message>
@@ -661,7 +661,7 @@
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">Notificar al Gestor de Suscripciones por email tras la renovación online de una Suscripción Individual.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewInstitutional">Notificar al Gestor de Suscripciones por email tras la renovación online de una Suscripción Institucional.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentPurchaseInstitutionalDescription"><![CDATA[<strong>Nota:</strong> Las Suscripciones Institutionales compradas online requieren de la aprobación del dominio y rangos de IP, y de la activación de la suscripción por el Gestor de Suscripciones.]]></message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[El aviso de Copyright abajo expuesto aparecerá en la sección "Sobre Nosotros" de la revista y en cada metadato de los ítems publicados.  Si bien corresponde a la revista determinar la naturaleza de su acuerdo de derecho de autor con los autores, el Proyecto de Conocimiento Público (PKP) recomienda el uso de la licencia<a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. A tal fín,se proporciona el <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">ejemplo de aviso de Copyright </a> que puede ser copiado y pegado en el espacio inferior para revistas que (a) ofrezcan acceso abierto, (b) ofrezcan acceso abierto retardado, o (c) no ofrezcan acceso abierto.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[El aviso de Copyright abajo expuesto aparecerá en la sección "Sobre Nosotros" de la revista y en cada metadato de los ítems publicados.  Si bien corresponde a la revista determinar la naturaleza de su acuerdo de derecho de autor con los autores, el Proyecto de Conocimiento Público (SEP) recomienda el uso de la licencia<a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. A tal fín,se proporciona el <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">ejemplo de aviso de Copyright </a> que puede ser copiado y pegado en el espacio inferior para revistas que (a) ofrezcan acceso abierto, (b) ofrezcan acceso abierto retardado, o (c) no ofrezcan acceso abierto.]]></message>
 	<message key="manager.groups.publishEmails">Publicar direcciones de correo electrónico de los miembros</message>
 	<message key="manager.language.submissions">Peticiones</message>
 	<message key="manager.plugins.versionFileInvalid">El archivo version.xml en el directorio de plugins contiene datos inválidos.</message>

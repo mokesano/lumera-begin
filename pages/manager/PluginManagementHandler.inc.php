@@ -17,9 +17,9 @@ define('VERSION_FILE', '/version.xml');
 define('INSTALL_FILE', '/install.xml');
 define('UPGRADE_FILE', '/upgrade.xml');
 
-import('lib.pkp.classes.site.Version');
-import('lib.pkp.classes.site.VersionCheck');
-import('lib.pkp.classes.file.FileManager');
+import('lib.sep.classes.site.Version');
+import('lib.sep.classes.site.VersionCheck');
+import('lib.sep.classes.file.FileManager');
 import('classes.install.Install');
 import('classes.install.Upgrade');
 import('pages.manager.ManagerHandler');
@@ -35,7 +35,7 @@ class PluginManagementHandler extends ManagerHandler {
 	/**
 	 * Display a list of plugins along with management options.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function managePlugins($args, &$request) {
 		$this->validate($request);
@@ -72,7 +72,7 @@ class PluginManagementHandler extends ManagerHandler {
 	/**
 	 * The site setting option 'preventManagerPluginManagement' must not be set for
 	 * journal managers to be able to manage plugins.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function validate($request) {
 		parent::validate();
@@ -85,7 +85,7 @@ class PluginManagementHandler extends ManagerHandler {
 
 	/**
 	 * Show plugin installation form.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _showInstallForm($request) {
 		$this->validate($request);
@@ -103,7 +103,7 @@ class PluginManagementHandler extends ManagerHandler {
 
 	/**
 	 * Show form to select plugin for upgrade.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $category string
 	 * @param $plugin string
 	 */
@@ -123,7 +123,7 @@ class PluginManagementHandler extends ManagerHandler {
 
 	/**
 	 * Confirm deletion of plugin.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $category string
 	 * @param $plugin string
 	 */
@@ -145,7 +145,7 @@ class PluginManagementHandler extends ManagerHandler {
 
 	/**
 	 * Decompress uploaded plugin and install in the correct plugin directory.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $function string type of operation to perform after upload ('upgrade' or 'install')
 	 * @param $category string the category of the uploaded plugin (upgrade only)
 	 * @param $plugin string the name of the uploaded plugin (upgrade only)
@@ -218,7 +218,7 @@ class PluginManagementHandler extends ManagerHandler {
 
 	/**
 	 * Installs the uploaded plugin
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $path string path to plugin Directory
 	 * @param $templateMgr reference to template manager
 	 * @return boolean
@@ -252,7 +252,7 @@ class PluginManagementHandler extends ManagerHandler {
 
 			// Upgrade the database with the new plug-in.
 			$installFile = $pluginDest . INSTALL_FILE;
-			if(!is_file($installFile)) $installFile = Core::getBaseDir() . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'pkp' . DIRECTORY_SEPARATOR . 'xml' . DIRECTORY_SEPARATOR . 'defaultPluginInstall.xml';
+			if(!is_file($installFile)) $installFile = Core::getBaseDir() . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'sep' . DIRECTORY_SEPARATOR . 'xml' . DIRECTORY_SEPARATOR . 'defaultPluginInstall.xml';
 			assert(is_file($installFile));
 			$params = $this->_setConnectionParams();
 			$installer = new Install($params, $installFile, true);
@@ -284,7 +284,7 @@ class PluginManagementHandler extends ManagerHandler {
 
 	/**
 	 * Upgrade a plugin to a newer version from the user's filesystem
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $path string path to plugin Directory
 	 * @param $templateMgr reference to template manager
 	 * @param $category string
@@ -372,7 +372,7 @@ class PluginManagementHandler extends ManagerHandler {
 
 	/**
 	 * Delete a plugin from the system
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $category string
 	 * @param $plugin string
 	 */
@@ -433,7 +433,7 @@ class PluginManagementHandler extends ManagerHandler {
 
 	/**
 	 * Set the page's breadcrumbs
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $subclass boolean
 	 * @param $category string
 	 */

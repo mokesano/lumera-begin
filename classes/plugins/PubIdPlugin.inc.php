@@ -27,10 +27,10 @@ class PubIdPlugin extends Plugin {
 
 
 	//
-	// Implement template methods from PKPPlugin
+	// Implement template methods from SEPPlugin
 	//
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		$success = parent::register($category, $path);
@@ -46,7 +46,7 @@ class PubIdPlugin extends Plugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getManagementVerbs()
+	 * @see SEPPlugin::getManagementVerbs()
 	 */
 	function getManagementVerbs() {
 		if ($this->getEnabled()) {
@@ -72,7 +72,7 @@ class PubIdPlugin extends Plugin {
 	}
 
 	/**
-	 * @see PKPPlugin::manage()
+	 * @see SEPPlugin::manage()
 	 */
 	function manage($verb, $args) {
 		$templateManager =& TemplateManager::getManager();

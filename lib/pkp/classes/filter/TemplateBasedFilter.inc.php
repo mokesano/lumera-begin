@@ -14,7 +14,7 @@
  *  their input via smarty templates.
  */
 
-import('lib.pkp.classes.filter.PersistableFilter');
+import('lib.sep.classes.filter.PersistableFilter');
 
 class TemplateBasedFilter extends PersistableFilter {
 	/**
@@ -72,7 +72,7 @@ class TemplateBasedFilter extends PersistableFilter {
 	function &process(&$input) {
 		// Initialize view
 		$locale = AppLocale::getLocale();
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$request =& $application->getRequest();
 		$templateMgr =& TemplateManager::getManager($request);
 

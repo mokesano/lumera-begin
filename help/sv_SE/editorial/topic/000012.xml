@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000012.xml
@@ -17,4 +17,3 @@
 		<![CDATA[<p>Manusredaktören får en epost-förfrågan från Sektionsredaktören om att redigera ett manuskript, vilket kommer att synas i Manusredaktörens manuskriptlista. En Manusredaktör som inte har möjlighet att åta sig arbetet svarar Sektionsredaktören med epost </p>]]>	
 	</section>
 </topic>
-

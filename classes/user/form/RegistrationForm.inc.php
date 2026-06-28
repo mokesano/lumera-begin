@@ -17,7 +17,7 @@
  * @brief Form for user registration.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class RegistrationForm extends Form {
 
@@ -49,7 +49,7 @@ class RegistrationForm extends Form {
 		} else {
 			$this->existingUser = Request::getUserVar('existingUser') ? 1 : 0;
 
-			import('lib.pkp.classes.captcha.CaptchaManager');
+			import('lib.sep.classes.captcha.CaptchaManager');
 			$captchaManager = new CaptchaManager();
 			$this->captchaEnabled = ($captchaManager->isEnabled() && Config::getVar('captcha', 'captcha_on_register'))?true:false;
 			if ($this->captchaEnabled) {
@@ -109,14 +109,14 @@ class RegistrationForm extends Form {
 		if ($this->captchaEnabled) {
 			$templateMgr->assign('reCaptchaEnabled', $this->reCaptchaEnabled);
 			if ($this->reCaptchaEnabled) {
-				import('lib.pkp.lib.recaptcha.recaptchalib');
+				import('lib.sep.lib.recaptcha.recaptchalib');
 				$publicKey = Config::getVar('captcha', 'recaptcha_public_key');
 				$useSSL = Config::getVar('security', 'force_ssl')||Request::getProtocol()=='https'?true:false;
 				$reCaptchaHtml = recaptcha_get_html($publicKey, null, $useSSL);
 				$templateMgr->assign('reCaptchaHtml', $reCaptchaHtml);
 				$templateMgr->assign('captchaEnabled', $this->captchaEnabled);
 			} else {
-				import('lib.pkp.classes.captcha.CaptchaManager');
+				import('lib.sep.classes.captcha.CaptchaManager');
 				$captchaManager = new CaptchaManager();
 				$captcha =& $captchaManager->createCaptcha();
 				if ($captcha) {
@@ -291,7 +291,7 @@ class RegistrationForm extends Form {
 
 			// Insert the user interests
 			$interests = $this->getData('interestsKeywords') ? $this->getData('interestsKeywords') : $this->getData('interestsTextOnly');
-			import('lib.pkp.classes.user.InterestManager');
+			import('lib.sep.classes.user.InterestManager');
 			$interestManager = new InterestManager();
 			$interestManager->setInterestsForUser($user, $interests);
 
@@ -334,7 +334,7 @@ class RegistrationForm extends Form {
 			import('classes.mail.MailTemplate');
 			if ($requireValidation) {
 				// Create an access key
-				import('lib.pkp.classes.security.AccessKeyManager');
+				import('lib.sep.classes.security.AccessKeyManager');
 				$accessKeyManager = new AccessKeyManager();
 				$accessKey = $accessKeyManager->createKey('RegisterContext', $user->getId(), null, Config::getVar('email', 'validation_timeout'));
 

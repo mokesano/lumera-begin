@@ -13,7 +13,7 @@
  * @brief Plugin to allow generation of a backup extract
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class BackupPlugin extends GenericPlugin {
 	/**
@@ -67,7 +67,7 @@ class BackupPlugin extends GenericPlugin {
 		// We've already verified that this is a site admin through
 		// conditional hook registration.
 
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_ADMIN, LOCALE_COMPONENT_APPLICATION_COMMON);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_ADMIN, LOCALE_COMPONENT_APPLICATION_COMMON);
 		$returnValue = 0;
 		switch ($op) {
 			case 'index':
@@ -165,7 +165,7 @@ class BackupPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::manage()
+	 * @see SEPPlugin::manage()
 	 */
 	function manage($verb, $args, &$message, &$messageParams) {
 		switch ($verb) {

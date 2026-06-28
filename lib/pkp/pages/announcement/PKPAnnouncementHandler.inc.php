@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file pages/announcement/PKPAnnouncementHandler.inc.php
+ * @file pages/announcement/SEPAnnouncementHandler.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPAnnouncementHandler
+ * @class SEPAnnouncementHandler
  * @ingroup pages_announcement
  *
  * @brief Handle requests for public announcement functions.
@@ -15,15 +15,15 @@
 
 import('classes.handler.Handler');
 
-class PKPAnnouncementHandler extends Handler {
-	function PKPAnnouncementHandler() {
+class SEPAnnouncementHandler extends Handler {
+	function SEPAnnouncementHandler() {
 		parent::Handler();
 	}
 
 	/**
 	 * Display announcement index page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$this->validate();
@@ -49,7 +49,7 @@ class PKPAnnouncementHandler extends Handler {
 	/**
 	 * View announcement details.
 	 * @param $args array first parameter is the ID of the announcement to display
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function view($args, &$request) {
 		$this->validate();
@@ -81,7 +81,7 @@ class PKPAnnouncementHandler extends Handler {
 
 	/**
 	 * Setup common template variables.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $subclass boolean set to true if caller is below this handler in the hierarchy
 	 */
 	function setupTemplate($request, $subclass = false) {
@@ -95,7 +95,7 @@ class PKPAnnouncementHandler extends Handler {
 	/**
 	 * Returns true when announcements are enabled
 	 * in the context, otherwise false.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return boolean
 	 */
 	function _getAnnouncementsEnabled($request) {
@@ -106,7 +106,7 @@ class PKPAnnouncementHandler extends Handler {
 	/**
 	 * Returns a list of (non-expired) announcements
 	 * for this context.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $rangeInfo DBResultRange
 	 * @return DAOResultFactory
 	 */
@@ -118,7 +118,7 @@ class PKPAnnouncementHandler extends Handler {
 	/**
 	 * Returns an introductory text to be displayed
 	 * with the announcements.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string
 	 */
 	function _getAnnouncementsIntroduction($request) {

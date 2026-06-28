@@ -15,14 +15,14 @@
  */
 
 
-import('lib.pkp.classes.submission.PKPAuthor');
+import('lib.sep.classes.submission.SEPAuthor');
 
-class Author extends PKPAuthor {
+class Author extends SEPAuthor {
 	/**
 	 * Constructor.
 	 */
 	function Author() {
-		parent::PKPAuthor();
+		parent::SEPAuthor();
 	}
 
 	//

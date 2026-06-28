@@ -16,7 +16,7 @@
  */
 
 
-import('lib.pkp.plugins.metadata.openurl10.schema.Openurl10BaseSchema');
+import('lib.sep.plugins.metadata.openurl10.schema.Openurl10BaseSchema');
 
 define('OPENURL10_GENRE_CONFERENCE', 'conference');
 define('OPENURL10_GENRE_PROCEEDING', 'proceeding');

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/zh_CN/manager.xml
@@ -29,7 +29,7 @@
 	<message key="manager.language.forms">表单</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">这将替换在此区域下您已经设定的任何指定区域的期刊设置。</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">恢复默认设置</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS可以让用户使用几种受到支持的语言介面。同时，OJS可以当作一个部分多语化的系统，让用户在每个页面中可以切换语言，并允许某些资料以额外的两种语言进行输入。<br /><br />如果一个受到OJS支持的语言没有列在下表，请您的网站管理员从网站管理介面来安装该项语系。新增支持新语系的指引说明，请见OJS的文件。]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA可以让用户使用几种受到支持的语言介面。同时，CLA可以当作一个部分多语化的系统，让用户在每个页面中可以切换语言，并允许某些资料以额外的两种语言进行输入。<br /><br />如果一个受到CLA支持的语言没有列在下表，请您的网站管理员从网站管理介面来安装该项语系。新增支持新语系的指引说明，请见CLA的文件。]]></message>
 	<message key="manager.languages.noneAvailable">抱歉，没有额外的语言可供使用。如果您希望在这份期刊中使用额外的语系，请联系您的网站管理者。</message>
 	<message key="manager.languages.primaryLocaleInstructions">这将会是期刊网站的预设语言</message>
 	<message key="manager.managementPages">网页管理</message>
@@ -39,7 +39,7 @@
 	<message key="manager.payment.authorFees">作者费用管理</message>
 	<message key="manager.payment.authorFeesDescription">选择的选项，连同它们的说明和费用(可以在下面进行编辑),将出现在投稿流程的第一步和投稿下面的关于期刊,以及在哪里需要支付点.</message>
 	<message key="manager.payment.currency">支付货币</message>
-	<message key="manager.payment.currencymessage">OJS不执行任何货币转换.  如果接受付款订阅, 你必须确定订阅货币与这里指定的一个匹配.</message>
+	<message key="manager.payment.currencymessage">CLA不执行任何货币转换.  如果接受付款订阅, 你必须确定订阅货币与这里指定的一个匹配.</message>
 	<message key="manager.payment.description">描述</message>
 	<message key="manager.payment.details">详细</message>
 	<message key="manager.payment.editSubscription">编辑订阅</message>
@@ -241,7 +241,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">各期刊设有编辑顾问监督期刊的编辑方针，提供编辑建言，并基于顾问成员的学术声望赋予该期刊某些学术地位。审稿委员会则扮演一个类似但额外的角色：他们负责审稿的过程。审稿委员会成员将不会进入期刊的管理系统，不过会被加入到可以进行审稿工作的人员清单中。</message>
 	<message key="manager.setup.emailBounceAddress">退信邮箱</message>
 	<message key="manager.setup.emailBounceAddressDescription">如有任何退回的电子邮件，都会发送一封错误信息到这个地址。</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>注意：</strong>要启用这个选项，网站管理员必须启用OJS配置文件中的 <tt>allow_envelope_sender</tt>选项。可能会需要额外的服务器配置才能支持使用这个功能（可能不是所有服务器上都能用），请见上述的OJS文件。]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>注意：</strong>要启用这个选项，网站管理员必须启用CLA配置文件中的 <tt>allow_envelope_sender</tt>选项。可能会需要额外的服务器配置才能支持使用这个功能（可能不是所有服务器上都能用），请见上述的CLA文件。]]></message>
 	<message key="manager.setup.emails">电子邮件认证</message>
 	<message key="manager.setup.emailSignature">签名</message>
 	<message key="manager.setup.emailSignatureDescription">系统代表这份期刊所寄发的预备电子邮件会具有下面的签名列在信末。预备电子邮件的正文部分允许「期刊管理员」进行编辑。</message>
@@ -263,7 +263,7 @@
 	<message key="manager.setup.focusScope">焦点和范围</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>HTML资料范例</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">为作者作品建立索引</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS支持 <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative(OAI )开放存档计划</a> 协定来编写元数据，其显示标准提供了完善的索引，以存取全球规模的电子研究资源。作者会使用一个类似的模版来提供其投稿稿件的元数据。「期刊管理员」应该选择索引的领域，并请以相干的范例请作者索引他们的作品，用分号来分隔多个项目（例如，项目1; 项目2）。这些项目的前面应该要加上「例如，」或者「比方说：」来介绍。]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA支持 <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative(OAI )开放存档计划</a> 协定来编写元数据，其显示标准提供了完善的索引，以存取全球规模的电子研究资源。作者会使用一个类似的模版来提供其投稿稿件的元数据。「期刊管理员」应该选择索引的领域，并请以相干的范例请作者索引他们的作品，用分号来分隔多个项目（例如，项目1; 项目2）。这些项目的前面应该要加上「例如，」或者「比方说：」来介绍。]]></message>
 	<message key="manager.setup.form.contactEmailRequired">需要主要联系人的电子信箱。</message>
 	<message key="manager.setup.form.contactNameRequired">需要主要联系人的姓名。</message>
 	<message key="manager.setup.form.journalInitialsRequired">需要期刊起首字母名称。</message>
@@ -286,7 +286,7 @@
 	<message key="manager.setup.information.forLibrarians">给图书馆员</message>
 	<message key="manager.setup.information.forReaders">给读者</message>
 	<message key="manager.setup.initialIssue">创刊号</message>
-	<message key="manager.setup.initialIssueDescription">依照所选的格式，指认被OJS所出刊的第一期的期数、卷数、和/或年份：</message>
+	<message key="manager.setup.initialIssueDescription">依照所选的格式，指认被CLA所出刊的第一期的期数、卷数、和/或年份：</message>
 	<message key="manager.setup.institution">机构</message>
 	<message key="manager.setup.issnDescription"><![CDATA[ISSN (International Standard Serial Number 国际标准序列号码)是一个八位数字，用以识别定期出版之出版品，包括电子期刊。其由一个国家中心的世界性网路所管理，与位在巴黎的一个由联合国教科文组织(Unesco)和法国政府所支持的国际中心合作。您可以从<a href="http://www.issn.org" target="_blank">ISSN 网站</a>获得一组号码。在期刊运作的任何一个阶段都可以取得这样的号码。]]></message>
 	<message key="manager.setup.issuePerVolume">期/卷</message>
@@ -401,8 +401,8 @@
 	<message key="manager.setup.reviewGuidelines">审稿须知</message>
 	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[「审稿须知」提供审稿人评判一份投稿是否适合在本期刊出版的判准，这就像是一个特殊的指南手册，用以进行有效的和协助性的审稿工作。]]></message>
 	<message key="manager.setup.reviewOptions">审稿选项</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">自动电子邮件备忘录 (可从 OJS 的预设电子邮件取得) 可以在两个时间点送给审稿人 (而编辑也随时可以直接电邮审稿人)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用OJS配置文件中的<tt>scheduled_tasks</tt> 选项。（可能无法在所有的服务器上面执行），就在上面指出的OJS文件当中]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">自动电子邮件备忘录 (可从 CLA 的预设电子邮件取得) 可以在两个时间点送给审稿人 (而编辑也随时可以直接电邮审稿人)</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用CLA配置文件中的<tt>scheduled_tasks</tt> 选项。（可能无法在所有的服务器上面执行），就在上面指出的CLA文件当中]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">盲审</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">可在编辑过程中修订。</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">一般审稿时间</message>
@@ -421,7 +421,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[在作者与审稿人上传文件的位置提供一个指向 <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">确认盲审</a>的链接。]]></message>
 	<message key="manager.setup.reviewPolicy">审稿方针</message>
 	<message key="manager.setup.reviewProcess">审稿程序</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[.OJS支持两种管理审稿程序的模式。建议使用「标准审稿程序」，因为其透过各项步骤引导审稿人，确保每份投稿都会有一份完整审稿历史纪录，还有方便的自动提醒通知，以及给投稿稿件的标准建议（接受刊登；修改后接受刊登；重新审稿；投稿他处；婉谢退稿；见审稿意见）。<br /><br />请在下面选择一个选项：]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[.CLA支持两种管理审稿程序的模式。建议使用「标准审稿程序」，因为其透过各项步骤引导审稿人，确保每份投稿都会有一份完整审稿历史纪录，还有方便的自动提醒通知，以及给投稿稿件的标准建议（接受刊登；修改后接受刊登；重新审稿；投稿他处；婉谢退稿；见审稿意见）。<br /><br />请在下面选择一个选项：]]></message>
 	<message key="manager.setup.reviewProcessEmail">电子邮件附件审稿程序</message>
 	<message key="manager.setup.reviewProcessStandard">标准审稿程序</message>
 	<message key="manager.setup.reviewProcessStandardDescription">编辑会将投稿文章的标题和摘要电邮给选中的审稿人，同时以邀请函的形式请审稿人登入这个期刊网站，以完成审稿工作。审稿人进入期刊网站以同意进行审稿工作，之后下载投稿稿件，上传他们的审稿意见书，并选择一个审稿建议。</message>
@@ -431,7 +431,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">（如果没有加入任何栏目，那么投稿项目预设将是「论文」栏目。）</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[进入「栏目管理」以建立或修改本期刊的文章栏目（例如论文、书评等等）。<br /><br />在投稿给本期刊之后，作者将会指派其文章为...]]></message>
 	<message key="manager.setup.securitySettings">开放阅读与安全性配置</message>
-	<message key="manager.setup.securitySettingsDescription">OJS提供一个与安全性相关的数字选项，能够用来限制期刊的内容，并且基于日后审核结算的目的来维护额外的投稿稿件信息。</message>
+	<message key="manager.setup.securitySettingsDescription">CLA提供一个与安全性相关的数字选项，能够用来限制期刊的内容，并且基于日后审核结算的目的来维护额外的投稿稿件信息。</message>
 	<message key="manager.setup.selectEditorDescription">将会全程监控处理过程的期刊编辑</message>
 	<message key="manager.setup.selectSectionDescription">将会考虑纳入此项目的期刊栏目。</message>
 	<message key="manager.setup.showGalleyLinksDescription">总是显示相关文档链接以及明示的受限存取。</message>
@@ -470,7 +470,7 @@
 	<message key="manager.setup.useTextTitle">标题文字</message>
 	<message key="manager.setup.volumePerYear">卷/年</message>
 	<message key="manager.statistics.reports">报告产生器</message>
-	<message key="manager.statistics.reports.description">OJS建立报告，从投稿人、编辑、审稿人和栏目编辑的眼光，追踪在一段时间中进行之投稿的相关细节。报告生成为CSV文件格式，需要一个有试算表的应用程序(如Excel)才能查看。</message>
+	<message key="manager.statistics.reports.description">CLA建立报告，从投稿人、编辑、审稿人和栏目编辑的眼光，追踪在一段时间中进行之投稿的相关细节。报告生成为CSV文件格式，需要一个有试算表的应用程序(如Excel)才能查看。</message>
 	<message key="manager.statistics.statistics">期刊统计</message>
 	<message key="manager.statistics.statistics.articleViews">文章阅读统计(for Authors only)</message>
 	<message key="manager.statistics.statistics.count.accept">接受刊出</message>
@@ -478,7 +478,7 @@
 	<message key="manager.statistics.statistics.count.revise">重新投稿</message>
 	<message key="manager.statistics.statistics.daysPerReview">审稿天数</message>
 	<message key="manager.statistics.statistics.daysToPublication">出版天数</message>
-	<message key="manager.statistics.statistics.description">OJS为每一份期刊计算下列的统计数据。「审稿天数」计算从投稿日（或指派审稿版本的日期）开始，到做出最初的编辑决策之间的天数；而「出版日数」则计算从收到上传初稿到出版之间的天数。</message>
+	<message key="manager.statistics.statistics.description">CLA为每一份期刊计算下列的统计数据。「审稿天数」计算从投稿日（或指派审稿版本的日期）开始，到做出最初的编辑决策之间的天数；而「出版日数」则计算从收到上传初稿到出版之间的天数。</message>
 	<message key="manager.statistics.statistics.itemsPublished">已出版项目</message>
 	<message key="manager.statistics.statistics.makePublic">点选读者在「关于本期刊」之中可以使用的项目。</message>
 	<message key="manager.statistics.statistics.note">注意已审阅的稿件不可能加到百分日，因为重新投稿的页目不是接受、退稿就是还在处理中。</message>
@@ -513,15 +513,15 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">以电子邮件通知订阅者</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">订阅期满前几周</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">订阅期满提醒函</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">可以在订阅期满之前和之后寄发自动电子邮件提醒函（期刊管理员可在OJS的预备电子邮件中编辑）</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用OJS配置文件中的<tt>scheduled_tasks</tt> 选项。（可能无法在所有的服务器上面执行），就在上面指出的OJS文件当中]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">可以在订阅期满之前和之后寄发自动电子邮件提醒函（期刊管理员可在CLA的预备电子邮件中编辑）</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用CLA配置文件中的<tt>scheduled_tasks</tt> 选项。（可能无法在所有的服务器上面执行），就在上面指出的CLA文件当中]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">选择下列之一：</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[HTML能够被使用在文字区域中（配置字形大小和字体色彩等等）， 按下"Enter"会被视为插入<tt>&lt;br&gt;</tt>标签；HTML编辑器能在Firefox浏览器中执行。]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">请选择一个订阅期满之后有多少月数的有效值。</message>
 	<message key="manager.subscriptionPolicies.numMonthsBeforeSubscriptionExpiryReminderValid">请选择一个订阅期满之前有多少月数的有效值。</message>
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">.请选择一个订阅期满之后有多少周数的有效值。</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">已注册之读者将可以选择在一期期刊开放阅读之时，透过电子邮件收到目录通知。</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用OJS配置文件中的<tt>scheduled_tasks</tt> 选项。（可能无法在所有的服务器上面执行），就在上面指出的OJS文件当中]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用CLA配置文件中的<tt>scheduled_tasks</tt> 选项。（可能无法在所有的服务器上面执行），就在上面指出的CLA文件当中]]></message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">在线支付通知</message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">开放阅读选项来订阅期刊</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">需订阅之期刊可以提供「稍后开放阅读」以及＼或者「作者自行存档」（增加读者和内容的引用数）两种方式。被选择的方案会出现在「期刊介绍」之中。</message>

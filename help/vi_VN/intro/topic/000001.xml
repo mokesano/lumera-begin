@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -16,9 +16,9 @@
 	<section>
 		<![CDATA[
 <ol>
-	<li><a href="#section1">Làm thế nào để bắt đầu xuất bản một tạp chí bằng OJS?</a></li>
-	<li><a href="#section2">Tôi có thể tìm kiếm hỗ trợ kỹ thuật, báo lỗi và đề xuất cải tiến ở đâu khi sử dụng OJS?</a></li>
-	<li><a href="#section3">Làm thế nào tôi có thể dịch OJS sang một ngôn ngữ khác?</a></li>
+	<li><a href="#section1">Làm thế nào để bắt đầu xuất bản một tạp chí bằng CLA?</a></li>
+	<li><a href="#section2">Tôi có thể tìm kiếm hỗ trợ kỹ thuật, báo lỗi và đề xuất cải tiến ở đâu khi sử dụng CLA?</a></li>
+	<li><a href="#section3">Làm thế nào tôi có thể dịch CLA sang một ngôn ngữ khác?</a></li>
 	<li><a href="#section4">Tại sao các tác giả nhận được thông báo rằng tạp chí "hiện không nhận bài nộp"?</a></li>
 	<li><a href="#section5">Chúng tôi có thể làm gì nếu muốn cho phép truy cập vào bản thảo đang được phản biện hoặc đang ở giai đoạn "chế bản" trước khi xuất bản?</a></li>
 	<li><a href="#section6">Làm thế nào tôi có thể quảng báo tạp chí của mình trên Internet?</a></li>
@@ -29,26 +29,26 @@
 </ol>
 		]]>	
 	</section>
-	<section title="1. Làm thế nào để bắt đầu xuất bản một tạp chí bằng OJS?">
+	<section title="1. Làm thế nào để bắt đầu xuất bản một tạp chí bằng CLA?">
 		<![CDATA[
 <ol type="a">
-	<li><a href="http://pkp.sfu.ca/ojs/ojs_download" target="_blank">Tải xuống</a> và cài đặt phần mềm OJS, theo các tập lệnh cài đặt của phần mềm, trên một máy chủ web đáp ứng những yêu cầu của phần mềm này.</li>
-	<li>Sử dụng bí danh và mật khẩu được tạo ra trong quá trình cài đặt OJS để đăng nhập vào hệ thống.</li>
+	<li><a href="http://lumera.sangia.org/cla/cla_download" target="_blank">Tải xuống</a> và cài đặt phần mềm CLA, theo các tập lệnh cài đặt của phần mềm, trên một máy chủ web đáp ứng những yêu cầu của phần mềm này.</li>
+	<li>Sử dụng bí danh và mật khẩu được tạo ra trong quá trình cài đặt CLA để đăng nhập vào hệ thống.</li>
 	<li>Tạo một tạp chí mới trong mục Các tạp chí trên website.</li>
 	<li>Người quản trị website sẽ được tự động bổ nhiệm làm Tổng biên tập cho tạp chí mới, nhưng nếu cần thiết, có thể tạo thêm một hoặc nhiều người dùng mới với vai trò Tổng biên tập.</li>
 	<li>Tổng biên tập sau đó vào phần Thiết lập và tuần thự theo năm bước (mặc dù không nhất thiết hoàn thành tất cả cùng một lúc), và kết quả là một website đã sẵn sàng tiếp nhận bài nộp, quản lý quá trình biên tập và xuất bản tạp chí trên website.</li>
-	<li>Tham khảo<a href="http://pkp.sfu.ca/ojs/OJSinanHour.pdf" target="_blank">Dùng OJS trong một giờ </a> để biết thêm thông tin về cách khởi sự với OJS</li>
+	<li>Tham khảo<a href="http://lumera.sangia.org/cla/CLAinanHour.pdf" target="_blank">Dùng CLA trong một giờ </a> để biết thêm thông tin về cách khởi sự với CLA</li>
 </ol>
 		]]>
 	</section>
-	<section title="2. Tôi có thể tìm kiếm hỗ trợ kỹ thuật, báo lỗi và đề xuất cải tiến ở đâu khi sử dụng OJS?">
+	<section title="2. Tôi có thể tìm kiếm hỗ trợ kỹ thuật, báo lỗi và đề xuất cải tiến ở đâu khi sử dụng CLA?">
 		<![CDATA[
-<p>Dự án Tri thức Công cộng (PKP) vận hành một <a href="http://forum.pkp.sfu.ca/" target="_blank">Diễn đàn hỗ trợ</a> với hơn một ngàn câu trao đổi, nơi mà người dùng có thể tìm kiếm câu trả lời và có thể đặt câu hỏi với chuyên gia và cộng đồng người dùng. Chẳng hạn, người dùng có thể tìm kiếm dựa trên các thông báo lỗi để được dẫn đến các giải pháp đề xuất cho những vấn đề đã được xác định. Nếu không được, người dùng có thể gửi câu hỏi tới địa chỉ email <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>. Các báo lỗi cần được gửi cho hệ thống ghi báo lỗi của PKP <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a>.</p>
+<p>Dự án Tri thức Công cộng (SEP) vận hành một <a href="http://forum.lumera.sangia.org/" target="_blank">Diễn đàn hỗ trợ</a> với hơn một ngàn câu trao đổi, nơi mà người dùng có thể tìm kiếm câu trả lời và có thể đặt câu hỏi với chuyên gia và cộng đồng người dùng. Chẳng hạn, người dùng có thể tìm kiếm dựa trên các thông báo lỗi để được dẫn đến các giải pháp đề xuất cho những vấn đề đã được xác định. Nếu không được, người dùng có thể gửi câu hỏi tới địa chỉ email <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>. Các báo lỗi cần được gửi cho hệ thống ghi báo lỗi của SEP <a href="https://github.com/sep/sep-lib#issues" target="_blank">Github.com issues</a>.</p>
 		]]>
 	</section>
-	<section title="3. Làm thế nào tôi có thể dịch OJS sang một ngôn ngữ khác?">
+	<section title="3. Làm thế nào tôi có thể dịch CLA sang một ngôn ngữ khác?">
 		<![CDATA[
-<p>Hướng dẫn được cung cấp trong file docs/README kèm theo trong gói OJS được tải xuống. Thông tin thêm về những vấn đề thường gặp khi dịch cũng có thể tìm thấy trên <a href="http://forum.pkp.sfu.ca/" target="_blank">Diễn đàn hỗ trợ của PKP</a>.</p>
+<p>Hướng dẫn được cung cấp trong file docs/README kèm theo trong gói CLA được tải xuống. Thông tin thêm về những vấn đề thường gặp khi dịch cũng có thể tìm thấy trên <a href="http://forum.lumera.sangia.org/" target="_blank">Diễn đàn hỗ trợ của SEP</a>.</p>
 		]]>
 	</section>
 	<section title='4. Tại sao các tác giả nhận được thông báo rằng tạp chí "hiện không nhận bài nộp"?'>
@@ -58,12 +58,12 @@
 	</section>
 	<section title='5. Chúng tôi có thể làm gì nếu muốn cho phép truy cập vào bản thảo đang được phản biện hoặc đang ở giai đoạn "chế bản" trước khi xuất bản?'>
 		<![CDATA[
-<p>Hiện tại chưa có một giải pháp chính thức để cho phép truy cập vào các bài viết tiền chế bản hoặc tiền xuất bản. Tuy nhiên, tất cả những gì BTV cần làm đối với bài viết đang đề cập là sử dụng đường dẫn URL để Xem bản soát lỗi trong bước Trình bày trên trang Biên tập của bài viết. Đường dẫn này sẽ cho phép xem trước bài viết (chỉ dành cho những người dùng được cấp quyền) trước khi bài viết được xuất bản trong một số nào đó của tạp chí. Hiện tại, PKP đang tiếp tục theo dõi sự quan tâm đến tính năng này và có thể cân nhắc đưa nó thành một tính năng rõ ràng hơn trong OJS.</p>
+<p>Hiện tại chưa có một giải pháp chính thức để cho phép truy cập vào các bài viết tiền chế bản hoặc tiền xuất bản. Tuy nhiên, tất cả những gì BTV cần làm đối với bài viết đang đề cập là sử dụng đường dẫn URL để Xem bản soát lỗi trong bước Trình bày trên trang Biên tập của bài viết. Đường dẫn này sẽ cho phép xem trước bài viết (chỉ dành cho những người dùng được cấp quyền) trước khi bài viết được xuất bản trong một số nào đó của tạp chí. Hiện tại, SEP đang tiếp tục theo dõi sự quan tâm đến tính năng này và có thể cân nhắc đưa nó thành một tính năng rõ ràng hơn trong CLA.</p>
 		]]>
 	</section>
 	<section title="6. Làm thế nào tôi có thể quảng báo tạp chí của mình trên Internet?">
 		<![CDATA[
-<p>Tạp chí của quý vị sẽ dần dần hiện diện trên Google và các mạng tìm kiếm khác theo thời gian, tuy nhiên quý vị cũng có thể thực hiện những giải pháp khác. Hãy chắc chắn là đã đăng ký tạp chí của quý vị với Công cụ gặt hái siêu dữ liệu PKP Harvester trong Bước Thiết lập 3, một lựa chọn sẽ giúp cho tạp chí của quý vị được đưa vào các chỉ mục theo chuẩn Open Archives Initiative, bao gồm cả <a href="http://pkp.sfu.ca/harvester/" target="_blank">PKP Harvester</a> and <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Nếu tạp chí của quý vị truy cập tự do, hãy hỏi Giám đốc Thư viện Đại học của quý vị cách có thể đưa tạp chí của quý vị vào danh mục các tạp chí điện tử mà thư viện đang cung cấp và hỏi cách liên lạc với các thư viện nghiên cứu khác thông qua nhóm thảo luận thư của các cán bộ thư viện. Hãy xem liệu quý vị có thể sử dụng website hoặc nhóm thảo luận thư của các hiệp hội nghề nghiệp để gửi thông báo "Kêu gọi viết bài" hoặc thông báo khai trương tạp chí hay không. Cuối cùng, khi Thiết lập tạp chí, dưới mục Tham số An ninh và Truy cập (2.7), Tổng biên tập nên cho phép người dùng đăng ký với tư cách Bạn đọc để họ có thể thường xuyên nhận được thông tin về số mới ra.</p>
+<p>Tạp chí của quý vị sẽ dần dần hiện diện trên Google và các mạng tìm kiếm khác theo thời gian, tuy nhiên quý vị cũng có thể thực hiện những giải pháp khác. Hãy chắc chắn là đã đăng ký tạp chí của quý vị với Công cụ gặt hái siêu dữ liệu SEP Harvester trong Bước Thiết lập 3, một lựa chọn sẽ giúp cho tạp chí của quý vị được đưa vào các chỉ mục theo chuẩn Open Archives Initiative, bao gồm cả <a href="http://lumera.sangia.org/harvester/" target="_blank">SEP Harvester</a> and <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Nếu tạp chí của quý vị truy cập tự do, hãy hỏi Giám đốc Thư viện Đại học của quý vị cách có thể đưa tạp chí của quý vị vào danh mục các tạp chí điện tử mà thư viện đang cung cấp và hỏi cách liên lạc với các thư viện nghiên cứu khác thông qua nhóm thảo luận thư của các cán bộ thư viện. Hãy xem liệu quý vị có thể sử dụng website hoặc nhóm thảo luận thư của các hiệp hội nghề nghiệp để gửi thông báo "Kêu gọi viết bài" hoặc thông báo khai trương tạp chí hay không. Cuối cùng, khi Thiết lập tạp chí, dưới mục Tham số An ninh và Truy cập (2.7), Tổng biên tập nên cho phép người dùng đăng ký với tư cách Bạn đọc để họ có thể thường xuyên nhận được thông tin về số mới ra.</p>
 		]]>
 	</section>
 	<section title="7. Làm thế nào tạp chí có thể cung cấp hồ sơ lịch sử của thành viên trong Ban biên tập?">

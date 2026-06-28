@@ -149,7 +149,7 @@ class DepositObjectDAO extends DAO {
 	}
 
 	/**
-	 * Create a new deposit object for OJS content that doesn't yet have one
+	 * Create a new deposit object for CLA content that doesn't yet have one
 	 * @return array DepositObject ordered by sequence
 	 */
 	function &createNew($journalId, $objectType) {

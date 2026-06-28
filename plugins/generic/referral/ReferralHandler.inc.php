@@ -131,7 +131,7 @@ class ReferralHandler extends Handler {
 	/**
 	 * Perform a batch action on a set of referrals.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function bulkAction($args, $request) {
 		$referralIds = (array) $request->getUserVar('referralId');

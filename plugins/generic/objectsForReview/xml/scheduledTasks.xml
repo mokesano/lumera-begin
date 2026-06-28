@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE scheduled_tasks SYSTEM "../../../../lib/pkp/dtd/scheduledTasks.dtd">
+<!DOCTYPE scheduled_tasks SYSTEM "../../../../lib/sep/dtd/scheduledTasks.dtd">
 
 <!--
   * @file plugins/generic/objectsForReview/xml/scheduledTasks.xml

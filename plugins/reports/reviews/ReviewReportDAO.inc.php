@@ -15,7 +15,7 @@
  */
 
 import('classes.article.ArticleComment');
-import('lib.pkp.classes.db.DBRowIterator');
+import('lib.sep.classes.db.DBRowIterator');
 
 class ReviewReportDAO extends DAO {
 	/**
@@ -37,7 +37,7 @@ class ReviewReportDAO extends DAO {
 				COMMENT_TYPE_PEER_REVIEW
 			)
 		);
-		import('lib.pkp.classes.db.DBRowIterator');
+		import('lib.sep.classes.db.DBRowIterator');
 		$commentsReturner = new DBRowIterator($result);
 
 		$result =& $this->retrieve(

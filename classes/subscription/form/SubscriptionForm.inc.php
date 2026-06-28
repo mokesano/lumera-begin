@@ -17,7 +17,7 @@
  * @brief Base form class for subscription create/edits.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class SubscriptionForm extends Form {
 

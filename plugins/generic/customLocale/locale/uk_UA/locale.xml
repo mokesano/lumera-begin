@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/customLocale/locale/uk_UA/locale.xml
@@ -16,11 +16,11 @@
  
 <locale name="uk_UA" full_name="Українська">
        <message key="plugins.generic.customLocale.name">Модуль власної локалізації</message>
-       <message key="plugins.generic.customLocale.description">Цей модуль дозволяє налаштування тексту користувацького інтерфейсу OJS, який відображається за замовчуванням.</message>
+       <message key="plugins.generic.customLocale.description">Цей модуль дозволяє налаштування тексту користувацького інтерфейсу CLA, який відображається за замовчуванням.</message>
 
        <message key="plugins.generic.customLocale.longDescription">На цій сторінці відображаються всі локалізації, які наразі встановлені для цього журналу.</message>
        <message key="plugins.generic.customLocale.localeDescription">На цій сторінці відображаються всі файли, доступні для визначеної локалізації.</message>
-       <message key="plugins.generic.customLocale.fileDescription">Введіть текст у відповідне текстове поле. Слід залишити пустими ті поля, для яких має відображатися текст OJS за замовчуванням.</message>
+       <message key="plugins.generic.customLocale.fileDescription">Введіть текст у відповідне текстове поле. Слід залишити пустими ті поля, для яких має відображатися текст CLA за замовчуванням.</message>
        <message key="plugins.generic.customLocale.localeName">Назва локалізації</message>
        <message key="plugins.generic.customLocale.localeKey">Ключ</message>
        <message key="plugins.generic.customLocale.localeKey.description">Введіть повний ключ локалізації для пошуку.</message>

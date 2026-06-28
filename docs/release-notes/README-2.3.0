@@ -1,16 +1,16 @@
-OJS 2.3.0 Release Notes
-CVS tag: ojs-2_3_0-0
+CLA 2.3.0 Release Notes
+CVS tag: cla-2_3_0-0
 Release date: Oct 7, 2009
 =================================
 
-OJS 2.3 introduces a major rewrite of core aspects of PKP applications that
-reconciles common code (e.g. shared between OJS, OCS, and the Harvester) into
-a separate library called the PKP Web Application Library (WAL). Many parts of
+CLA 2.3 introduces a major rewrite of core aspects of SEP applications that
+reconciles common code (e.g. shared between CLA, OCS, and the Harvester) into
+a separate library called the SEP Web Application Library (WAL). Many parts of
 the system have been changed in a way that is transparent to users but that
-will vastly improve maintainability and the ease with which PKP can deploy
+will vastly improve maintainability and the ease with which SEP can deploy
 fixes and new features across multiple applications. Wherever possible, this
 has been done in a way that minimizes code breakage e.g. for modified installs
-of OJS and custom plugins.
+of CLA and custom plugins.
 
 Configuration Changes
 ---------------------
@@ -32,7 +32,7 @@ New config.inc.php parameters:
 New Features
 ------------
 	- #3608# #3694# #3703# #3704# #3941# #3818# #3706# #4155# #4156#
-	  #4185# #4547# Implement / integrate PKP Web Application Library (WAL)
+	  #4185# #4547# Implement / integrate SEP Web Application Library (WAL)
 	- #3696# Move TinyMCE cache (gzipped JavaScript) into cache dir
 	- #3697# Add caching to TimeZone class
 	- #3754# Add ArrayItemIterator::fromRangeInfo method
@@ -82,11 +82,11 @@ New Features
 	- #3701# Allow for short Announcements
 	- #3910# Include social networking features in RT or article view
 	- #3922# Allow for opt-in/out status updates/notifications
-	- #3984# Update PKP logo in LOCKSS Publisher Manifest page
+	- #3984# Update SEP logo in LOCKSS Publisher Manifest page
 	- #3993# Upgrade COUNTER protocol to support Release 3
 	- #4010# Allow lists to be rearranged by drag and drop
-	- #1690# Remove OJS 1.1.x import support
-	- #1709# For users who won't be using OJS to publish journal contents
+	- #1690# Remove CLA 1.1.x import support
+	- #1709# For users who won't be using CLA to publish journal contents
 	- #1963# Use of two document icons to indicate when blank vs. not
 	- #2292# SubmissionEditHandler::rateReviewer() expects list
 	- #1848# W3C Validator complaints
@@ -98,7 +98,7 @@ New Features
 	- #4104# Streamline Journal Section selection for one-section journals
 	- #4154# Principal Contact fields not available in multilingual form
 	- #4217# default paymethod to manual (backport of bug 3825)
-	- #4231# Port OCS Reviews plugin to OJS
+	- #4231# Port OCS Reviews plugin to CLA
 	- #4242# Allow for registering previous journal names
 	- #4274# Display user's salutation where appropriate
 	- #4395# Reconcile metadata edit/view templates
@@ -162,7 +162,7 @@ Bug Fixes
 	- #4196# there is no way of setting issue data to ISSUE_DEFAULT
 	- #4216# Re-ordering back issues across pages
 	- #4443# Review Confirmation email doesn't populate To: field
-	- #4568# OJS install/Paypal error
+	- #4568# CLA install/Paypal error
 	- #4588# Bio Statement field in Articles Report has XML displaying
 	- #4606# Missing labels in HTML form
 	- #4648# Some labels are missing after cancelling PayPal payment

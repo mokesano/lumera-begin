@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.file.EditableFile');
+import('lib.sep.classes.file.EditableFile');
 
 class EditableEmailFile {
 	var $locale;

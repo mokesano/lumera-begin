@@ -5,13 +5,13 @@
  */
 
 /**
- * @file plugins/citationParser/regex/PKPRegexCitationParserPlugin.inc.php
+ * @file plugins/citationParser/regex/SEPRegexCitationParserPlugin.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPRegexCitationParserPlugin
+ * @class SEPRegexCitationParserPlugin
  * @ingroup plugins_citationParser_regex
  *
  * @brief Cross-application regular expression based citation parser
@@ -20,20 +20,20 @@
 
 import('classes.plugins.Plugin');
 
-class PKPRegexCitationParserPlugin extends Plugin {
+class SEPRegexCitationParserPlugin extends Plugin {
 	/**
 	 * Constructor
 	 */
-	function PKPRegexCitationParserPlugin() {
+	function SEPRegexCitationParserPlugin() {
 		parent::Plugin();
 	}
 
 
 	//
-	// Override protected template methods from PKPPlugin
+	// Override protected template methods from SEPPlugin
 	//
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		if (!parent::register($category, $path)) return false;
@@ -42,21 +42,21 @@ class PKPRegexCitationParserPlugin extends Plugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'RegexCitationParserPlugin';
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.citationParser.regex.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.citationParser.regex.description');

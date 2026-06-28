@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/ro_RO/admin.xml
@@ -22,21 +22,21 @@
 	<message key="admin.languages.supportedLocalesInstructions">Selectează toate localizările care trebuie să fie suportate de site. Localizările selectate vor fi disponibile pentru a fi utilizate de către toate revistele găzduite pe site şi astfel, aparând, de asemenea într-un meniu de selecţie al limbilor existent pe fiecare pagină (care pot fi selectate pe diferitele pagini ale revistei). Dacă nu sunt selectate multiple localizări, meniul nu va apărea iar setările de limbă nu vor fi disponibile revistelor.</message>
 	<message key="admin.locale.maybeIncomplete">Localizarea bifată poate să nu fie completă.</message>
 	<message key="admin.languages.confirmUninstall">Eşti sigur că doreşti să dezinstalezi această localizare? Acest lucru poate afecta revistele găzduite şi care folosesc această localizare.</message>
-	<message key="admin.languages.installNewLocalesInstructions">Selectează localizări suplimentare pentru a instala suport în cadrul sistemului. Localizările trebuie să fie înstalate înainte de a fi utilizate de revistele găzduite. Vezi documentaţia OJS pentru informaţii privind suportul pentru limbi noi.</message>
+	<message key="admin.languages.installNewLocalesInstructions">Selectează localizări suplimentare pentru a instala suport în cadrul sistemului. Localizările trebuie să fie înstalate înainte de a fi utilizate de revistele găzduite. Vezi documentaţia CLA pentru informaţii privind suportul pentru limbi noi.</message>
 	<message key="admin.languages.downloadLocales">Descarcă localizări</message>
 	<message key="admin.languages.downloadFailed">Descărcarea localizării a dat eroare. Mesajul(ele) de mai jos descriu ce s-a întâmplat.</message>
 	<message key="admin.languages.localeInstalled">Localizarea "{$locale}" a fost instalată. </message>
 	<message key="admin.languages.download">Descarcă localizări</message>
 	<message key="admin.languages.reloadDefaultEmailTemplates">Reîncarcă template-uri prestabilite de e-mail</message>
-	<message key="admin.languages.download.cannotOpen">Nu pot deschide descriptorul de limbă de pe siteul PKP.</message>
+	<message key="admin.languages.download.cannotOpen">Nu pot deschide descriptorul de limbă de pe siteul SEP.</message>
 	<message key="admin.languages.download.cannotModifyRegistry">Nu pot adăuga noul fişier registru al localizării, de regulă "registry/locales.xml".</message>
-	<message key="admin.auth.ojs">Baza de de date cu utilizatori OJS</message>
-	<message key="admin.auth.enableSyncProfiles">Permiteţi sincronizarea profilului utilizatorului (dacă acest lucru este permis de modulul de autentificare). Informaţiile privind profilul utilizatorului vor fi actualizate automat din sursa externă atunci când un utilizator se autentifică iar modificările de profil (incluzând modificările parolei) făcute în cadrul OJS vor fi actualizate automat din sursa externă. Dacă această opţiune nu este activată din profilul OJS, informaţia va fi ţinută separat de profilul informaţional al sursei externe.</message>
-	<message key="admin.auth.enableSyncPasswords">Permite modificarea parolei utilizatorului (dacă acest lucru este permis de modulul de autentificare). Activarea acestei opţiuni permite utilizatorilor să-şi modifice parolele din cadrul OJS şi să folosească opţiunea de „parolă pierdută” din OJS pentru a reseta o parolă uitată. Aceste funcţii nu vor mai fi disponibile utilizatorilor având această sursă de autentificare dacă această opţiune nu este activată.</message>
-	<message key="admin.auth.enableCreateUsers">Permite crearea de utilizatori (dacă acest lucru este permis de modulul de autentificare). Utilizatorii generaţi în cadrul OJS având această sursă de autentificare vor fi adăugaţi automat la sursele de autentificare externe dacă nu există deja. În plus, dacă această sursă este sursa de autentificare implicită, conturile OJS create prin intermediul înregistrării vor fi, de asemenea adăugate la sursele externe de autentificare.</message>
-	<message key="admin.systemVersion">Versiunea OJS</message>
-	<message key="admin.systemConfiguration">Configurarea OJS</message>
-	<message key="admin.systemConfigurationDescription"><![CDATA[setările pentru configurarea OJS extrase din fişierul <tt>config.inc.php</tt>]]></message>
+	<message key="admin.auth.cla">Baza de de date cu utilizatori CLA</message>
+	<message key="admin.auth.enableSyncProfiles">Permiteţi sincronizarea profilului utilizatorului (dacă acest lucru este permis de modulul de autentificare). Informaţiile privind profilul utilizatorului vor fi actualizate automat din sursa externă atunci când un utilizator se autentifică iar modificările de profil (incluzând modificările parolei) făcute în cadrul CLA vor fi actualizate automat din sursa externă. Dacă această opţiune nu este activată din profilul CLA, informaţia va fi ţinută separat de profilul informaţional al sursei externe.</message>
+	<message key="admin.auth.enableSyncPasswords">Permite modificarea parolei utilizatorului (dacă acest lucru este permis de modulul de autentificare). Activarea acestei opţiuni permite utilizatorilor să-şi modifice parolele din cadrul CLA şi să folosească opţiunea de „parolă pierdută” din CLA pentru a reseta o parolă uitată. Aceste funcţii nu vor mai fi disponibile utilizatorilor având această sursă de autentificare dacă această opţiune nu este activată.</message>
+	<message key="admin.auth.enableCreateUsers">Permite crearea de utilizatori (dacă acest lucru este permis de modulul de autentificare). Utilizatorii generaţi în cadrul CLA având această sursă de autentificare vor fi adăugaţi automat la sursele de autentificare externe dacă nu există deja. În plus, dacă această sursă este sursa de autentificare implicită, conturile CLA create prin intermediul înregistrării vor fi, de asemenea adăugate la sursele externe de autentificare.</message>
+	<message key="admin.systemVersion">Versiunea CLA</message>
+	<message key="admin.systemConfiguration">Configurarea CLA</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[setările pentru configurarea CLA extrase din fişierul <tt>config.inc.php</tt>]]></message>
 	<message key="admin.journals.journalSettings">Setările revistei</message>
 	<message key="admin.journals.noneCreated">Nu a fost creată nicio revistă.</message>
 	<message key="admin.journals.confirmDelete">Eşti sigur că vrei să ştergi permanent această revistă şi întreg conţinutul său?</message>
@@ -49,10 +49,10 @@
 	<message key="admin.journals.form.pathExists">Calea selectată este deja folosită de o altă revistă.</message>
 	<message key="admin.journals.enableJournalInstructions">Permiteţi ca această revistă să apară public pe site</message>
 	<message key="admin.journals.journalDescription">Descrierea revistei</message>
-	<message key="admin.journal.pathImportInstructions">Calea existentă către revistă sau calea care urmează a fi creată (de ex. „ojs”).</message>
+	<message key="admin.journal.pathImportInstructions">Calea existentă către revistă sau calea care urmează a fi creată (de ex. „cla”).</message>
 	<message key="admin.journals.importSubscriptions">Importă abonamentele</message>
 	<message key="admin.journals.transcode">Tansformă metadatele articolelor din ISO8859-1</message>
-	<message key="admin.journals.redirect">Generează cod pentru maparea URL-urilor OJS 1 în URL-uri OJS 2</message>
+	<message key="admin.journals.redirect">Generează cod pentru maparea URL-urilor CLA 1 în URL-uri CLA 2</message>
 	<message key="admin.journals.form.importPathRequired">Este necesară calea pentru import.</message>
 	<message key="admin.journals.importErrors">Importul a eşuat</message>
 	<message key="admin.mergeUsers">Unește utilizatorii</message>

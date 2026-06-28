@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.core.ItemIterator');
+import('lib.sep.classes.core.ItemIterator');
 
 class DAOResultFactory extends ItemIterator {
 	/** The DAO used to create objects */
@@ -244,7 +244,7 @@ class DAOResultFactory extends ItemIterator {
 	 * @return object
 	 */
 	function &getLastPageRangeInfo() {
-		import('lib.pkp.classes.db.DBResultRange');
+		import('lib.sep.classes.db.DBResultRange');
 		$returner = new DBResultRange($this->count, $this->pageCount);
 		return $returner;
 	}

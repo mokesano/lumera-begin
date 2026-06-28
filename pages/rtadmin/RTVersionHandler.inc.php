@@ -30,7 +30,7 @@ class RTVersionHandler extends RTAdminHandler {
 
 		$journal = Request::getJournal();
 
-		import('classes.rt.ojs.form.VersionForm');
+		import('classes.rt.cla.form.VersionForm');
 		$versionForm = new VersionForm(null, $journal->getId());
 
 		if (isset($args[0]) && $args[0]=='save') {
@@ -118,7 +118,7 @@ class RTVersionHandler extends RTAdminHandler {
 		$version =& $rtDao->getVersion($versionId, $journal->getId());
 
 		if (isset($version)) {
-			import('classes.rt.ojs.form.VersionForm');
+			import('classes.rt.cla.form.VersionForm');
 			$this->setupTemplate(true, $version);
 			$versionForm = new VersionForm($versionId, $journal->getId());
 			$versionForm->initData();
@@ -150,7 +150,7 @@ class RTVersionHandler extends RTAdminHandler {
 		$version =& $rtDao->getVersion($versionId, $journal->getId());
 
 		if (isset($version)) {
-			import('classes.rt.ojs.form.VersionForm');
+			import('classes.rt.cla.form.VersionForm');
 			$versionForm = new VersionForm($versionId, $journal->getId());
 			$versionForm->readInputData();
 			$versionForm->execute();

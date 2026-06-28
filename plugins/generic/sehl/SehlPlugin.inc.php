@@ -13,7 +13,7 @@
  * @brief Search Engine HighLighting plugin
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class SehlPlugin extends GenericPlugin {
 	/** @var $queryTerms string */

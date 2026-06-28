@@ -4,8 +4,8 @@
 # USAGE:
 # runAllTests.sh [options]
 #  -b	Include data build tests in application.
-#  -C	Include class tests in lib/pkp.
-#  -P	Include plugin tests in lib/pkp.
+#  -C	Include class tests in lib/sep.
+#  -P	Include plugin tests in lib/sep.
 #  -c	Include class tests in application.
 #  -p	Include plugin tests in application.
 #  -f	Include functional tests in application.
@@ -16,7 +16,7 @@
 set -e # Fail on first error
 
 # Before executing tests for the first time please execute the
-# following commands from the main ojs directory to install
+# following commands from the main cla directory to install
 # the default test environment.
 # 
 # NB: This will replace your database and files directory, so
@@ -60,7 +60,7 @@ set -e # Fail on first error
 # 3) Install external dependencies
 #
 #    - If you want to execute ConfigTest you'll have to make local copies
-#      of lib/pkp/tests/config/*.TEMPLATE.* without the "TEMPLATE" extension
+#      of lib/sep/tests/config/*.TEMPLATE.* without the "TEMPLATE" extension
 #      (similarly to what you do in a new installation). In most
 #      cases it should be enough to just adapt the database access data in
 #      there.
@@ -84,7 +84,7 @@ set -e # Fail on first error
 
 
 # Identify the tests directory.
-TESTS_DIR=`readlink -f "lib/pkp/tests"`
+TESTS_DIR=`readlink -f "lib/sep/tests"`
 
 # Shortcuts to the test environments.
 TEST_CONF1="--configuration $TESTS_DIR/phpunit-env1.xml"
@@ -97,8 +97,8 @@ DO_ALL=1
 
 # Various types of tests
 DO_APP_DATA=0
-DO_PKP_CLASSES=0
-DO_PKP_PLUGINS=0
+DO_SEP_CLASSES=0
+DO_SEP_PLUGINS=0
 DO_APP_CLASSES=0
 DO_APP_PLUGINS=0
 DO_APP_FUNCTIONAL=0
@@ -111,10 +111,10 @@ while getopts "bCPcpfd" opt; do
 			DO_APP_DATA=1
 			;;
 		C)	DO_ALL=0
-			DO_PKP_CLASSES=1
+			DO_SEP_CLASSES=1
 			;;
 		P)	DO_ALL=0
-			DO_PKP_PLUGINS=1
+			DO_SEP_PLUGINS=1
 			;;
 		c)	DO_ALL=0
 			DO_APP_CLASSES=1
@@ -134,12 +134,12 @@ if [ \( "$DO_ALL" -eq 1 \) -o \( "$DO_APP_DATA" -eq 1 \) ]; then
 	phpunit $DEBUG $TEST_CONF1 --debug -v --stop-on-failure --stop-on-skipped tests/data
 fi
 
-if [ \( "$DO_ALL" -eq 1 \) -o \( "$DO_PKP_CLASSES" -eq 1 \) ]; then
-	phpunit $DEBUG $TEST_CONF1 lib/pkp/tests/classes
+if [ \( "$DO_ALL" -eq 1 \) -o \( "$DO_SEP_CLASSES" -eq 1 \) ]; then
+	phpunit $DEBUG $TEST_CONF1 lib/sep/tests/classes
 fi
 
-if [ \( "$DO_ALL" -eq 1 \) -o \( "$DO_PKP_PLUGINS" -eq 1 \) ]; then
-	phpunit $DEBUG $TEST_CONF2 lib/pkp/tests/plugins
+if [ \( "$DO_ALL" -eq 1 \) -o \( "$DO_SEP_PLUGINS" -eq 1 \) ]; then
+	phpunit $DEBUG $TEST_CONF2 lib/sep/tests/plugins
 fi
 
 if [ \( "$DO_ALL" -eq 1 \) -o \( "$DO_APP_CLASSES" -eq 1 \) ]; then

@@ -13,7 +13,7 @@
  */
 
 
-import('lib.pkp.classes.linkAction.request.Modal');
+import('lib.sep.classes.linkAction.request.Modal');
 
 class AjaxModal extends Modal {
 	/** @var string The URL to be loaded into the modal. */
@@ -53,7 +53,7 @@ class AjaxModal extends Modal {
 	 */
 	function getLocalizedOptions() {
 		return array_merge(parent::getLocalizedOptions(), array(
-				'modalHandler' => '$.pkp.controllers.modal.AjaxModalHandler',
+				'modalHandler' => '$.sep.controllers.modal.AjaxModalHandler',
 				'url' => $this->getUrl()));
 	}
 }

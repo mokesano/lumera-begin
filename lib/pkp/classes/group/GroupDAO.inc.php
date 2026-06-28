@@ -15,7 +15,7 @@
  */
 
 
-import ('lib.pkp.classes.group.Group');
+import ('lib.sep.classes.group.Group');
 
 class GroupDAO extends DAO {
 	/**
@@ -88,7 +88,7 @@ class GroupDAO extends DAO {
 
 	/**
 	 * Instantiate a new DataObject.
-	 * @return PKPGroup
+	 * @return SEPGroup
 	 */
 	function newDataObject() {
 		return new Group();

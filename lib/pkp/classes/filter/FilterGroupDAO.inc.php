@@ -14,7 +14,7 @@
  * @brief Operations for retrieving and modifying FilterGroup objects.
  */
 
-import('lib.pkp.classes.filter.FilterGroup');
+import('lib.sep.classes.filter.FilterGroup');
 
 class FilterGroupDAO extends DAO {
 	/**

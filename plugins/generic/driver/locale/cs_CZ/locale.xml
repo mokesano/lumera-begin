@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/driver/locale/cs_CZ/locale.xml
@@ -13,5 +13,5 @@
  
 <locale name="cs_CZ" full_name="Čeština">
 	<message key="plugins.generic.driver.displayName">DRIVER</message>
-	<message key="plugins.generic.driver.description">Plugin DRIVER rozšiřuje rozhraní OAI-PMH podle DRIVER Guidelines 2.0, a umožňuje časopisům OJS vyhovět standardům DRIVER.</message>
+	<message key="plugins.generic.driver.description">Plugin DRIVER rozšiřuje rozhraní OAI-PMH podle DRIVER Guidelines 2.0, a umožňuje časopisům CLA vyhovět standardům DRIVER.</message>
 </locale>

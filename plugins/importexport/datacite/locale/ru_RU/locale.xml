@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/datacite/locale/ru_RU/locale.xml
@@ -24,7 +24,7 @@
 		доступ к службе DataCite для выдачи постоянных идентификаторов (DOI)
 		и регистрации связанных с ними метаданных. Если у вас нет вашего собственного имени пользователя и
 		пароля, вы все равно сможете экспортировать в формат DataCite XML, но вы
-		не сможете зарегистрировать ваши DOI в DataCite из системы OJS.
+		не сможете зарегистрировать ваши DOI в DataCite из системы CLA.
 		Пожалуйста, обратие внимание, что пароль будет сохраняться как простой текст, то есть не будет шифроваться,
 		это требования службы регистрации DataCite.
 	]]></message>
@@ -36,7 +36,7 @@
 	<message key="plugins.importexport.datacite.settings.form.usernameRequired">Пожалуйста, введите имя пользователя (символ), который вы получили от DataCite. Имя пользователя не может содержать двоеточие.</message>
 	<message key="plugins.importexport.datacite.settings.form.passwordRequired">Пожалуйста, введите пароль, который вы получили от DataCite.</message>
 	<message key="plugins.importexport.datacite.settings.form.automaticRegistration">Регистрировать DOI автоматически</message>
-	<message key="plugins.importexport.datacite.settings.form.automaticRegistration.description"><![CDATA[OJS будет автоматически передавать DOI в DataCite после опубликования статей. Пожалуйста, обратите внимание, что обработка может занять некоторое время после публикации. Вы можете проверить все незарегистрированные DOI в <a href="{$unregisteredURL}">списке незарегистрированных статей</a>.]]></message>
+	<message key="plugins.importexport.datacite.settings.form.automaticRegistration.description"><![CDATA[CLA будет автоматически передавать DOI в DataCite после опубликования статей. Пожалуйста, обратите внимание, что обработка может занять некоторое время после публикации. Вы можете проверить все незарегистрированные DOI в <a href="{$unregisteredURL}">списке незарегистрированных статей</a>.]]></message>
  
 	<message key="plugins.importexport.datacite.export.suppFiles">Экспортировать дополнительные файлы</message>
 	<message key="plugins.importexport.datacite.export.selectSuppFile">Выбрать дополнительные файлы</message>

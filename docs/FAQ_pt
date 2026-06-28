@@ -1,9 +1,9 @@
 Perguntas e Respostas Frequentes
 --------------------------------
 
-Este documento contém perguntas frequentes sobre o SEER/OJS, que lidam 
+Este documento contém perguntas frequentes sobre o SEER/CLA, que lidam 
 incialmente com questões técnicas e de suporte mais comuns. Para informações 
-sobre uso ou interação com o SEER/OJS - Sistema de Editoração de Revistas -, 
+sobre uso ou interação com o SEER/CLA - Sistema de Editoração de Revistas -, 
 consulte a ajuda do sistema.
 
 =================
@@ -12,25 +12,25 @@ Questões Gerais
 
 1) Quem eu posso contactar para suporte?
 
-A: Um forum de apoio do SEER/OJS em inglês está disponível em 
-   <http://forum.pkp.sfu.ca/>.
+A: Um forum de apoio do SEER/CLA em inglês está disponível em 
+   <http://forum.lumera.sangia.org/>.
    Erros de sistema (bugs) ou solicitação de melhorias ou funcionalidades podem 
-   ser postadas em <https://github.com/pkp/pkp-lib#issues>.
-   Perguntas sobre o SEER/OJS podem ser enviadas para:
-   equipe PKP: <pkp-support@sfu.ca>.
+   ser postadas em <https://github.com/sep/sep-lib#issues>.
+   Perguntas sobre o SEER/CLA podem ser enviadas para:
+   equipe SEP: <sep-support@sfu.ca>.
    equipe Ibict: <ramon@ibict.br;meinert@ibict.br;miguel@ibict.br>
    
    Embora o esforço seja o máximo para assistir e resolver erros encontrados no 
-   sistema, note que o SEER/OJS não possui garantia de suporte.
+   sistema, note que o SEER/CLA não possui garantia de suporte.
 
    -----------------------------------------------------------------------------
    
-2) Posso modificar o código fonte do SEER/OJS?
+2) Posso modificar o código fonte do SEER/CLA?
    
-A: Sendo o SEER/OJS um sistema de código aberto, os usuários têm liberdade para 
+A: Sendo o SEER/CLA um sistema de código aberto, os usuários têm liberdade para 
    modificar o sistema que forem consideradas pertinentes. Códigos com novas 
    funcionalidades ou correções são bem-vindos, e sugere-se enviá-las a 
-   <pkp-support@sfu.ca>, caso considere as modificações benéficas a outros usuários 
+   <sep-support@sfu.ca>, caso considere as modificações benéficas a outros usuários 
    do sistema.
 
    Note que em caso de redistribuição do sistema (seja o original ou versões 
@@ -42,7 +42,7 @@ A: Sendo o SEER/OJS um sistema de código aberto, os usuários têm liberdade pa
 Perguntas/Problemas Técnicos
 ============================
 
-   1) Quando tento acessar o site SEER/OJS o sistema exibe uma mensagem de erro:
+   1) Quando tento acessar o site SEER/CLA o sistema exibe uma mensagem de erro:
       "Warning: Smarty error: problem creating directory '/./templates' in
       ./lib/smarty/Smarty.class.php"
 
@@ -83,7 +83,7 @@ A: No Windows você deve configurar o PHP para enviar mensagens através de um
 
    -----------------------------------------------------------------------------
 
-   4) Estou usando Apache 2.0.x, e as páginas do SEER/OJS não são carregadas, 
+   4) Estou usando Apache 2.0.x, e as páginas do SEER/CLA não são carregadas, 
       gerando um erro do tipo "File does not exist: .../index.php/index/...".
 
 A: Em algumas versões ou configurações do Apache 2.0.x, pode ser necessário 
@@ -96,23 +96,23 @@ A: Em algumas versões ou configurações do Apache 2.0.x, pode ser necessário
    -----------------------------------------------------------------------------
 
    5) Grande quantidade de avisos "Warning: Call-time pass-by-reference has been 
-      deprecated" aparecem quando executo o instalador do SEER/OJS.
+      deprecated" aparecem quando executo o instalador do SEER/CLA.
 
 A: Estes avisos podem ser removidos setando a variável 
    allow_call_time_pass_reference para "On" no arquivo php.ini; este é o valor 
    padrão em versões atuais do PHP, porém algumas distribuições podem setar a 
    variável para "Off" inicialmente.   
    Está prevista a remoção do requisito que obriga ter 
-   allow_call_time_pass_reference em "On" em futuras versões do SEER/OJS.
+   allow_call_time_pass_reference em "On" em futuras versões do SEER/CLA.
 
    -----------------------------------------------------------------------------
 
-   6) O SEER/OJS funciona em ambiente PHP-CGI?
-      O SEER/OJS funciona em ambiente Microsoft IIS?
+   6) O SEER/CLA funciona em ambiente PHP-CGI?
+      O SEER/CLA funciona em ambiente Microsoft IIS?
 
-A: Testes limitados do PKP indicam que o SEER/OJS não funcionará corretamente 
+A: Testes limitados do SEP indicam que o SEER/CLA não funcionará corretamente 
    nesses ambientes. Não se sabe qual o impacto de modificações necessárias para 
-   que o SEER/OJS funcione nessse ambientes, porém solicitamos a desenvolvedores 
+   que o SEER/CLA funcione nessse ambientes, porém solicitamos a desenvolvedores 
    experientes nos ambientes em questão que contribuam com soluções para este 
    problema.
    
@@ -122,7 +122,7 @@ A: Testes limitados do PKP indicam que o SEER/OJS não funcionará corretamente
 
    -----------------------------------------------------------------------------
 
-   7) A instalação do SEER/OJS falha, exibindo a mensagem de erro do MySQL "Client does not 
+   7) A instalação do SEER/CLA falha, exibindo a mensagem de erro do MySQL "Client does not 
       support authentication protocol requested by server; consider upgrading MySQL client".
 
 A: Este problema é causado por uma mudança no protocolo de autenticação do MySQL 4.1, e pode 
@@ -133,7 +133,7 @@ A: Este problema é causado por uma mudança no protocolo de autenticação do M
 
    -----------------------------------------------------------------------------
 
-   8) Como faço para criar uma cópia de segurança (backup) do site SEER/OJS?
+   8) Como faço para criar uma cópia de segurança (backup) do site SEER/CLA?
 
 A: É altamente recomendado que o sistema seja feita uma cópia de segurança regularmente para
    prevenir contra falhas no sisetma, no servidor ou no hardware que possam causar perda de dados.
@@ -141,14 +141,14 @@ A: É altamente recomendado que o sistema seja feita uma cópia de segurança re
    Para executar uma cópia de segurança corretamente, execute os seguintes passos:
      - A base de dados, utilizando as ferramentas do DBMS (ex.: mysqldump for MySQL, 
        pg_dump for PostgreSQL)
-     - O diretório base do SEER/OJS
+     - O diretório base do SEER/CLA
      - Os diretórios de arquivos não-públicos (o diretório especificado na opção de configuração "files_dir")
        
    Este procedimento pode ser facilmente integrado com qualquer mecanismo automático de backup.
 
    -----------------------------------------------------------------------------
 
-   9) Como faço para migrar uma instalação existente do SEER/OJS para um servidor diferente?
+   9) Como faço para migrar uma instalação existente do SEER/CLA para um servidor diferente?
 
 A: Para migrar o sistema para outro servidor, é necessário:
 
@@ -169,7 +169,7 @@ Opções de Configuração Avançadas
 
 A: Para controlar o endereço para o envio de emails retornados, é necessário setar o 
    endereço do envelope de destino. Habilite a opção "allow_envelope_sender" na seção
-   [email] do arquivo de configuração do SEER/OJS 2.x; quando habilitada, um campo para
+   [email] do arquivo de configuração do SEER/CLA 2.x; quando habilitada, um campo para
    "Endereço de Emails Retornados" aparece na Página 2 das Configurações da Revista.
 
    Note que esta opção pode requerer modificações nas configurações do servidor de email
@@ -179,7 +179,7 @@ A: Para controlar o endereço para o envio de emails retornados, é necessário 
    
    Por exemplo, o Sendmail mantém uma lista de usuários confiáveis no arquivo 
    "/etc/mail/trusted-users";  outros sistemas possuem arquivos similares.
-   A opção de linha de comando utilizada pelo SEER/OJS 2.x que seta o envelope 
+   A opção de linha de comando utilizada pelo SEER/CLA 2.x que seta o envelope 
    de envio é "-f".
 
    -----------------------------------------------------------------------------
@@ -187,7 +187,7 @@ A: Para controlar o endereço para o envio de emails retornados, é necessário 
    2) Como posso permitir busca em arquivos fechados que não são de texto, como o 
       PDF ou MS Word?
 
-A: O SEER/OJS suporta a indexação de arquivos fechados através de aplicações de 
+A: O SEER/CLA suporta a indexação de arquivos fechados através de aplicações de 
    conversão externa. Na seção "Opções de Busca" do arquivo de configuração 
    config.inc.php pode ser modificado para permitir a indexação de alguns formatos
    binários de arquivo, setando o índice "index_XXX" para o conversor externo específico

@@ -20,7 +20,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Display objects for review listing pages.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function reviewObjectTypes($args, &$request) {
 		$journal =& $request->getJournal();
@@ -31,7 +31,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 		$types =& $reviewObjectTypeDao->getTypeIdsAlphabetizedByContext($journalId);
 		$totalResults = count($types);
 		$types = array_slice($types, $rangeInfo->getCount() * ($rangeInfo->getPage()-1), $rangeInfo->getCount());
-		import('lib.pkp.classes.core.VirtualArrayIterator');
+		import('lib.sep.classes.core.VirtualArrayIterator');
 		$results = new VirtualArrayIterator($types, $totalResults, $rangeInfo->getPage(), $rangeInfo->getCount());
 
 		$this->setupTemplate($request);
@@ -49,7 +49,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Create a new review object type.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createReviewObjectType($args, &$request) {
 		$this->editReviewObjectType($args, $request);
@@ -58,7 +58,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Create/edit a review object type.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editReviewObjectType($args, &$request) {
 		$typeId = array_shift($args);
@@ -94,7 +94,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Update a review object type.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateReviewObjectType($args, &$request) {
 		$typeId = (int) $request->getUserVar('typeId');
@@ -171,7 +171,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Preview a review object type.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function previewReviewObjectType($args, &$request) {
 		$typeId = array_shift($args);
@@ -208,7 +208,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Delete a review object type.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteReviewObjectType($args, &$request) {
 		$typeId = array_shift($args);
@@ -229,7 +229,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Activate a review object type to be used.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function activateReviewObjectType($args, &$request) {
 		$typeId = array_shift($args);
@@ -252,7 +252,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Deactivate a review object type.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deactivateReviewObjectType($args, &$request) {
 		$typeId = array_shift($args);
@@ -275,7 +275,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Update review object locale data.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateOrInstallReviewObjectTypes($args, &$request) {
 		$journal =& $request->getJournal();
@@ -299,7 +299,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Display a list of the metadata within a review object type.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function reviewObjectMetadata($args, &$request) {
 		$typeId = array_shift($args);
@@ -323,8 +323,8 @@ class ReviewObjectTypesEditorHandler extends Handler {
 		}
 		$this->setupTemplate($request, true, $reviewObjectType);
 		$templateMgr =& TemplateManager::getManager($request);
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 		$templateMgr->assign_by_ref('reviewObjectMetadata', $reviewObjectMetadata);
 		$templateMgr->assign_by_ref('typeOptions', $typeOptions);
 		$templateMgr->assign('typeId', $typeId);
@@ -335,7 +335,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Create a new review object metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createReviewObjectMetadata($args, &$request) {
 		$this->editReviewObjectMetadata($args, $request);
@@ -344,7 +344,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Create/edit a review object metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editReviewObjectMetadata($args, &$request) {
 		$typeId = array_shift($args);
@@ -382,7 +382,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Update a review object metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateReviewObjectMetadata($args, &$request) {
 		$journal =& $request->getJournal();
@@ -454,7 +454,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Delete a review object metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteReviewObjectMetadata($args, &$request) {
 		$journal =& $request->getJournal();
@@ -474,7 +474,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Change the sequence of a review object metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function moveReviewObjectMetadata($args, &$request) {
 		$journal =& $request->getJournal();
@@ -520,7 +520,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Copy review object metadata to another review object.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function copyOrUpdateReviewObjectMetadata($args, &$request) {
 		$typeId = array_shift($args);
@@ -569,7 +569,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 
 	/**
 	 * Ensure that we have a journal, plugin is enabled, and user is editor.
-	 * @see PKPHandler::authorize()
+	 * @see SEPHandler::authorize()
 	 */
 	function authorize(&$request, &$args, $roleAssignments) {
 		$journal =& $request->getJournal();
@@ -588,7 +588,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 
 	/**
 	 * Setup common template variables.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $subclass boolean (optional) set to true if caller is below this handler in the hierarchy
 	 * @param $reviewObjectType ReviewObjectType (optional)
 	 */
@@ -832,7 +832,7 @@ class ReviewObjectTypesEditorHandler extends Handler {
 	/**
 	 * Create trivial notification
 	 * @param $notificationType int
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _createTrivialNotification($notificationType, &$request) {
 		$user =& $request->getUser();

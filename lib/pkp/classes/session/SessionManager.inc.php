@@ -27,7 +27,7 @@ class SessionManager {
 	 * Initialize session configuration and set PHP session handlers.
 	 * Attempts to rejoin a user's session if it exists, or create a new session otherwise.
 	 * @param $sessionDao SessionDAO
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function SessionManager(&$sessionDao, &$request) {
 		$this->sessionDao =& $sessionDao;
@@ -108,7 +108,7 @@ class SessionManager {
 		// Adding session_write_close as a shutdown function. This is a PHP
 		// space workaround for the "Class '...' not found" bug in installations
 		// having the APC opcode cache installed
-		// Bugzilla: http://pkp.sfu.ca/bugzilla/show_bug.cgi?id=8151
+		// Bugzilla: http://lumera.sangia.org/bugzilla/show_bug.cgi?id=8151
 		// PHP Bug tracker: https://bugs.php.net/bug.php?id=58739
 		register_shutdown_function('session_write_close');
 	}

@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 import('plugins.generic.lucene.classes.SolrWebService');
 
 define('LUCENE_PLUGIN_DEFAULT_RANKING_BOOST', 1.0); // Default: No boost (=weight factor one).
@@ -101,10 +101,10 @@ class LucenePlugin extends GenericPlugin {
 
 
 	//
-	// Implement template methods from PKPPlugin.
+	// Implement template methods from SEPPlugin.
 	//
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		$success = parent::register($category, $path);
@@ -171,49 +171,49 @@ class LucenePlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.generic.lucene.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.generic.lucene.description');
 	}
 
 	/**
-	 * @see PKPPlugin::getInstallSitePluginSettingsFile()
+	 * @see SEPPlugin::getInstallSitePluginSettingsFile()
 	 */
 	function getInstallSitePluginSettingsFile() {
 		return $this->getPluginPath() . '/settings.xml';
 	}
 
 	/**
-	 * @see PKPPlugin::getInstallEmailTemplatesFile()
+	 * @see SEPPlugin::getInstallEmailTemplatesFile()
 	 */
 	function getInstallEmailTemplatesFile() {
 		return ($this->getPluginPath() . '/emailTemplates.xml');
 	}
 
 	/**
-	 * @see PKPPlugin::getInstallEmailTemplateDataFile()
+	 * @see SEPPlugin::getInstallEmailTemplateDataFile()
 	 */
 	function getInstallEmailTemplateDataFile() {
 		return ($this->getPluginPath() . '/locale/{$installedLocale}/emailTemplates.xml');
 	}
 
 	/**
-	 * @see PKPPlugin::isSitePlugin()
+	 * @see SEPPlugin::isSitePlugin()
 	 */
 	function isSitePlugin() {
 		return true;
 	}
 
 	/**
-	 * @see PKPPlugin::getTemplatePath()
+	 * @see SEPPlugin::getTemplatePath()
 	 */
 	function getTemplatePath() {
 		return parent::getTemplatePath() . 'templates/';
@@ -300,7 +300,7 @@ class LucenePlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPageRouter::route()
+	 * @see SEPPageRouter::route()
 	 */
 	function callbackLoadHandler($hookName, $args) {
 		// Check the page.
@@ -720,7 +720,7 @@ class LucenePlugin extends GenericPlugin {
 		if ($template != 'search/search.tpl') return false;
 
 		// Get request and context.
-		$request =& PKPApplication::getRequest();
+		$request =& SEPApplication::getRequest();
 		$journal =& $request->getContext();
 
 		// Assign our private stylesheet.
@@ -787,7 +787,7 @@ class LucenePlugin extends GenericPlugin {
 		);
 
 		// Create a URL that links to "similar documents".
-		$request =& PKPApplication::getRequest();
+		$request =& SEPApplication::getRequest();
 		$router =& $request->getRouter();
 		$simdocsUrl = $router->url(
 			$request, null, 'lucene', 'similarDocuments', null, $urlParams
@@ -1011,7 +1011,7 @@ class LucenePlugin extends GenericPlugin {
 		}
 
 		// Assign parameters.
-		$request =& PKPApplication::getRequest();
+		$request =& SEPApplication::getRequest();
 		$site =& $request->getSite();
 		$mail->assignParams(
 			array('siteName' => $site->getLocalizedTitle(), 'error' => $error)

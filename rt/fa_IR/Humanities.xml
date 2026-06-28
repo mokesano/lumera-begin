@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<!DOCTYPE version SYSTEM "../../lib/pkp/dtd/rtVersion.dtd">
+<!DOCTYPE version SYSTEM "../../lib/sep/dtd/rtVersion.dtd">
 <!--
   * Humanities.xml
   *
@@ -38,9 +38,9 @@
     </search>
     <search>
       <search_title>جمع آوری کننده آرشیوهای عمومی در قالب پروژه اطلاع رسانی عمومی .</search_title>
-      <search_description>جمع آوری کننده آرشیوهای باز PKP یک سیستم رایگان فهرست برداری از اطلاعات جانبی است که توسط تیم پروژه اطلاع رسانی عمومی در جهت گسترش وبهبود دسترسی به منابع تحقیقاتی ایجاد شده است .این سیستم به شما امکان می دهد فهرستی با قابلیت جستجو از آرشیوهای باز مانند سایت های استفاده کننده از سیستم OJS یا OCS تهیه کنید .</search_description>
-      <url>http://pkp.sfu.ca/harvester/</url>
-      <search_url>http://pkp.sfu.ca/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
+      <search_description>جمع آوری کننده آرشیوهای باز SEP یک سیستم رایگان فهرست برداری از اطلاعات جانبی است که توسط تیم پروژه اطلاع رسانی عمومی در جهت گسترش وبهبود دسترسی به منابع تحقیقاتی ایجاد شده است .این سیستم به شما امکان می دهد فهرستی با قابلیت جستجو از آرشیوهای باز مانند سایت های استفاده کننده از سیستم CLA یا OCS تهیه کنید .</search_description>
+      <url>http://lumera.sangia.org/harvester/</url>
+      <search_url>http://lumera.sangia.org/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
     </search>
     <search>
       <search_title>فهرست انسان شناسی</search_title>

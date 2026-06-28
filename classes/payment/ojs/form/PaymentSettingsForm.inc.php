@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file classes/payments/ojs/form/PaymentSettingsForm.inc.php
+ * @file classes/payments/cla/form/PaymentSettingsForm.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2006-2009 Gunther Eysenbach, Juan Pablo Alperin
@@ -14,7 +14,7 @@
  *
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class PaymentSettingsForm extends Form {
 	/** @var validCurrencies array keys are valid subscription type currencies */

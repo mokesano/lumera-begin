@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 // Our own and OA-S classification types.
 define('USAGE_EVENT_PLUGIN_CLASSIFICATION_BOT', 'bot');
@@ -23,7 +23,7 @@ define('USAGE_EVENT_PLUGIN_CLASSIFICATION_ADMIN', 'administrative');
 class UsageEventPlugin extends GenericPlugin {
 
 	//
-	// Implement methods from PKPPlugin.
+	// Implement methods from SEPPlugin.
 	//
 	/**
 	* @see LazyLoadPlugin::register()
@@ -46,14 +46,14 @@ class UsageEventPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.generic.usageEvent.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.generic.usageEvent.description');
@@ -67,7 +67,7 @@ class UsageEventPlugin extends GenericPlugin {
 	}
 
 	/**
-	* @see PKPPlugin::isSitePlugin()
+	* @see SEPPlugin::isSitePlugin()
 	*/
 	function isSitePlugin() {
 		return true;
@@ -305,7 +305,7 @@ class UsageEventPlugin extends GenericPlugin {
 		}
 
 		// Public identifiers.
-		// 1) A unique OJS-internal ID that will help us to easily attribute
+		// 1) A unique CLA-internal ID that will help us to easily attribute
 		//    statistics to a specific publication object.
 		array_unshift($idParams, 'j' . $journal->getId());
 		$siteId = $this->getUniqueSiteId();
@@ -318,8 +318,8 @@ class UsageEventPlugin extends GenericPlugin {
 			$this->updateSetting(0, 'uniqueSiteId', $siteId);
 		}
 		array_unshift($idParams, $siteId);
-		$ojsId = 'ojs:' . implode('-', $idParams);
-		$identifiers = array('other::ojs' => $ojsId);
+		$claId = 'cla:' . implode('-', $idParams);
+		$identifiers = array('other::cla' => $claId);
 
 		// 2) Standardized public identifiers, e.g. DOI, URN, etc.
 		if (!is_a($pubObject, 'IssueGalley') && !is_a($pubObject, 'Journal')) {

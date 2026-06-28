@@ -40,7 +40,7 @@ class CustomLocaleHandler extends Handler {
 		$rangeInfo = Handler::getRangeInfo('locales');
 
 		$templateMgr =& TemplateManager::getManager();
-		import('lib.pkp.classes.core.ArrayItemIterator');
+		import('lib.sep.classes.core.ArrayItemIterator');
 		$templateMgr->assign('locales', new ArrayItemIterator($journal->getSupportedLocaleNames(), $rangeInfo->getPage(), $rangeInfo->getCount()));
 		$templateMgr->assign('masterLocale', MASTER_LOCALE);
 
@@ -65,7 +65,7 @@ class CustomLocaleHandler extends Handler {
 
 		$localeFilesRangeInfo = Handler::getRangeInfo('localeFiles');
 
-		import('lib.pkp.classes.core.ArrayItemIterator');
+		import('lib.sep.classes.core.ArrayItemIterator');
 		$templateMgr->assign('localeFiles', new ArrayItemIterator($localeFiles, $localeFilesRangeInfo->getPage(), $localeFilesRangeInfo->getCount()));
 
 		$templateMgr->assign('locale', $locale);
@@ -93,10 +93,10 @@ class CustomLocaleHandler extends Handler {
 
 		$templateMgr =& TemplateManager::getManager();
 
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 
-		import('lib.pkp.classes.file.EditableLocaleFile');
+		import('lib.sep.classes.file.EditableLocaleFile');
 		$journal = Request::getJournal();
 		$journalId = $journal->getId();
 		$publicFilesDir = Config::getVar('files', 'public_files_dir');
@@ -132,7 +132,7 @@ class CustomLocaleHandler extends Handler {
 
 		$templateMgr->assign('filename', $filename);
 		$templateMgr->assign('locale', $locale);
-		import('lib.pkp.classes.core.ArrayItemIterator');
+		import('lib.sep.classes.core.ArrayItemIterator');
 		$templateMgr->assign_by_ref('referenceLocaleContents', new ArrayItemIterator($referenceLocaleContents, $referenceLocaleContentsRangeInfo->getPage(), $referenceLocaleContentsRangeInfo->getCount()));
 		$templateMgr->assign('localeContents', $localeContents);
 
@@ -163,10 +163,10 @@ class CustomLocaleHandler extends Handler {
 		$customFilePath = $customFilesDir . DIRECTORY_SEPARATOR . $filename;
 
 		// Create empty custom locale file if it doesn't exist
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 
-		import('lib.pkp.classes.file.EditableLocaleFile');
+		import('lib.sep.classes.file.EditableLocaleFile');
 		if (!$fileManager->fileExists($customFilePath)) {
 			$numParentDirs = substr_count($customFilePath, DIRECTORY_SEPARATOR); 
 			$parentDirs = '';
@@ -175,7 +175,7 @@ class CustomLocaleHandler extends Handler {
 			}
 
 			$newFileContents = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
-			$newFileContents .= '<!DOCTYPE locale SYSTEM "' . $parentDirs . 'lib' . DIRECTORY_SEPARATOR . 'pkp' . DIRECTORY_SEPARATOR . 'dtd' . DIRECTORY_SEPARATOR . 'locale.dtd' . '">' . "\n";
+			$newFileContents .= '<!DOCTYPE locale SYSTEM "' . $parentDirs . 'lib' . DIRECTORY_SEPARATOR . 'sep' . DIRECTORY_SEPARATOR . 'dtd' . DIRECTORY_SEPARATOR . 'locale.dtd' . '">' . "\n";
 			$newFileContents .= '<locale name="' . $locale . '">' . "\n";
 			$newFileContents .= '</locale>';
 			$fileManager->writeFile($customFilePath, $newFileContents);

@@ -140,10 +140,10 @@ class String {
 	 */
 	function strlen($string) {
 		if (defined('ENABLE_MBSTRING')) {
-			require_once './lib/pkp/lib/phputf8/mbstring/core.php';
+			require_once './lib/sep/lib/phputf8/mbstring/core.php';
 		} else {
-			require_once './lib/pkp/lib/phputf8/utils/unicode.php';
-			require_once './lib/pkp/lib/phputf8/native/core.php';
+			require_once './lib/sep/lib/phputf8/utils/unicode.php';
+			require_once './lib/sep/lib/phputf8/native/core.php';
 		}
 		return utf8_strlen($string);
 	}
@@ -153,10 +153,10 @@ class String {
 	 */
 	function strpos($haystack, $needle, $offset = 0) {
 		if (defined('ENABLE_MBSTRING')) {
-			require_once './lib/pkp/lib/phputf8/mbstring/core.php';
+			require_once './lib/sep/lib/phputf8/mbstring/core.php';
 		} else {
-			require_once './lib/pkp/lib/phputf8/utils/unicode.php';
-			require_once './lib/pkp/lib/phputf8/native/core.php';
+			require_once './lib/sep/lib/phputf8/utils/unicode.php';
+			require_once './lib/sep/lib/phputf8/native/core.php';
 		}
 		return utf8_strpos($haystack, $needle, $offset);
 	}
@@ -166,10 +166,10 @@ class String {
 	 */
 	function strrpos($haystack, $needle) {
 		if (defined('ENABLE_MBSTRING')) {
-			require_once './lib/pkp/lib/phputf8/mbstring/core.php';
+			require_once './lib/sep/lib/phputf8/mbstring/core.php';
 		} else {
-			require_once './lib/pkp/lib/phputf8/utils/unicode.php';
-			require_once './lib/pkp/lib/phputf8/native/core.php';
+			require_once './lib/sep/lib/phputf8/utils/unicode.php';
+			require_once './lib/sep/lib/phputf8/native/core.php';
 		}
 		return utf8_strrpos($haystack, $needle, $offset);
 	}
@@ -179,10 +179,10 @@ class String {
 	 */
 	function substr($string, $start, $length = false) {
 		if (defined('ENABLE_MBSTRING')) {
-			require_once './lib/pkp/lib/phputf8/mbstring/core.php';
+			require_once './lib/sep/lib/phputf8/mbstring/core.php';
 		} else {
-			require_once './lib/pkp/lib/phputf8/utils/unicode.php';
-			require_once './lib/pkp/lib/phputf8/native/core.php';
+			require_once './lib/sep/lib/phputf8/utils/unicode.php';
+			require_once './lib/sep/lib/phputf8/native/core.php';
 			// The default length value for the native implementation
 			// differs
 			if ($length === false) $length = null;
@@ -229,10 +229,10 @@ class String {
 	 */
 	function strtolower($string) {
 		if (defined('ENABLE_MBSTRING')) {
-			require_once './lib/pkp/lib/phputf8/mbstring/core.php';
+			require_once './lib/sep/lib/phputf8/mbstring/core.php';
 		} else {
-			require_once './lib/pkp/lib/phputf8/utils/unicode.php';
-			require_once './lib/pkp/lib/phputf8/native/core.php';
+			require_once './lib/sep/lib/phputf8/utils/unicode.php';
+			require_once './lib/sep/lib/phputf8/native/core.php';
 		}
 		return utf8_strtolower($string);
 	}
@@ -242,10 +242,10 @@ class String {
 	 */
 	function strtoupper($string) {
 		if (defined('ENABLE_MBSTRING')) {
-			require_once './lib/pkp/lib/phputf8/mbstring/core.php';
+			require_once './lib/sep/lib/phputf8/mbstring/core.php';
 		} else {
-			require_once './lib/pkp/lib/phputf8/utils/unicode.php';
-			require_once './lib/pkp/lib/phputf8/native/core.php';
+			require_once './lib/sep/lib/phputf8/utils/unicode.php';
+			require_once './lib/sep/lib/phputf8/native/core.php';
 		}
 		return utf8_strtoupper($string);
 	}
@@ -255,12 +255,12 @@ class String {
 	 */
 	function ucfirst($string) {
 		if (defined('ENABLE_MBSTRING')) {
-			require_once './lib/pkp/lib/phputf8/mbstring/core.php';
-			require_once './lib/pkp/lib/phputf8/ucfirst.php';
+			require_once './lib/sep/lib/phputf8/mbstring/core.php';
+			require_once './lib/sep/lib/phputf8/ucfirst.php';
 		} else {
-			require_once './lib/pkp/lib/phputf8/utils/unicode.php';
-			require_once './lib/pkp/lib/phputf8/native/core.php';
-			require_once './lib/pkp/lib/phputf8/ucfirst.php';
+			require_once './lib/sep/lib/phputf8/utils/unicode.php';
+			require_once './lib/sep/lib/phputf8/native/core.php';
+			require_once './lib/sep/lib/phputf8/ucfirst.php';
 		}
 		return utf8_ucfirst($string);
 	}
@@ -436,7 +436,7 @@ class String {
 	function stripUnsafeHtml($input) {
 		// If possible, use the HTML purifier.
 		if (defined('USE_HTML_PURIFIER')) {
-			require_once('lib/pkp/lib/htmlpurifier/library/HTMLPurifier.path.php');
+			require_once('lib/sep/lib/htmlpurifier/library/HTMLPurifier.path.php');
 			require_once('HTMLPurifier.includes.php');
 			static $purifier;
 			if (!isset($purifier)) {
@@ -500,20 +500,20 @@ class String {
 			. '(p|&#0*80;?|&#x0*50;?|&#0*112;?|&#x0*70;?)\s*'
 			. '(t|&#0*84;?|&#x0*54;?|&#0*116;?|&#x0*74;?)\s*'
 			. '(:|&#0*58;?|&#x0*3a;?)/i';
-		$html = preg_replace($preg, '\1\8PKPCleaned', $html);
+		$html = preg_replace($preg, '\1\8SEPCleaned', $html);
 
 		/* Get all on<foo>="bar()". NEVER allow these. */
 		$html =	preg_replace('/([\s"\']+'
 			. '(o|&#0*79;?|&#0*4f;?|&#0*111;?|&#0*6f;?)'
 			. '(n|&#0*78;?|&#0*4e;?|&#0*110;?|&#0*6e;?)'
-			. '\w+)\s*=/i', '\1PKPCleaned=', $html);
+			. '\w+)\s*=/i', '\1SEPCleaned=', $html);
 
 		$pattern = array(
 			'|<([^>]*)&{.*}([^>]*)>|',
 			'|<([^>]*)mocha:([^>]*)>|i',
 			'|<([^>]*)binding:([^>]*)>|i'
 		);
-		$replace = array('<&{;}\3>', '<\1PKPCleaned:\2>', '<\1PKPCleaned:\2>');
+		$replace = array('<&{;}\3>', '<\1SEPCleaned:\2>', '<\1SEPCleaned:\2>');
 		$html = preg_replace($pattern, $replace, $html);
 
 		return $html;
@@ -544,7 +544,7 @@ class String {
 	 * @return boolean
 	 */
 	function utf8_is_valid($str) {
-		require_once './lib/pkp/lib/phputf8/utils/validation.php';
+		require_once './lib/sep/lib/phputf8/utils/validation.php';
 		return utf8_is_valid($str);
 	}
 
@@ -555,7 +555,7 @@ class String {
 	 * @return boolean
 	 */
 	function utf8_compliant($str) {
-		require_once './lib/pkp/lib/phputf8/utils/validation.php';
+		require_once './lib/sep/lib/phputf8/utils/validation.php';
 		return utf8_compliant($str);
 	}
 
@@ -565,7 +565,7 @@ class String {
 	 * @return string
 	 */
 	function utf8_bad_find($str) {
-		require_once './lib/pkp/lib/phputf8/utils/bad.php';
+		require_once './lib/sep/lib/phputf8/utils/bad.php';
 		return utf8_bad_find($str);
 	}
 
@@ -575,7 +575,7 @@ class String {
 	 * @return string
 	 */
 	function utf8_bad_strip($str) {
-		require_once './lib/pkp/lib/phputf8/utils/bad.php';
+		require_once './lib/sep/lib/phputf8/utils/bad.php';
 		return utf8_bad_strip($str);
 	}
 
@@ -586,7 +586,7 @@ class String {
 	 * @return string
 	 */
 	function utf8_bad_replace($str, $replace = '?') {
-		require_once './lib/pkp/lib/phputf8/utils/bad.php';
+		require_once './lib/sep/lib/phputf8/utils/bad.php';
 		return utf8_bad_replace($str, $replace);
 	}
 
@@ -596,7 +596,7 @@ class String {
 	 * @return string
 	 */
 	function utf8_strip_ascii_ctrl($str) {
-		require_once './lib/pkp/lib/phputf8/utils/ascii.php';
+		require_once './lib/sep/lib/phputf8/utils/ascii.php';
 		return utf8_strip_ascii_ctrl($str);
 	}
 
@@ -606,7 +606,7 @@ class String {
 	 * @return string
 	 */
 	function utf8_normalize($str) {
-		import('lib.pkp.classes.core.Transcoder');
+		import('lib.sep.classes.core.Transcoder');
 
 		if (String::hasMBString()) {
 			// NB: CP-1252 often segfaults; we've left it out here but it will detect as 'ISO-8859-1'
@@ -645,7 +645,7 @@ class String {
 	 * @return string
 	 */
 	function utf8_to_ascii($str) {
-		require_once('./lib/pkp/lib/phputf8/utf8_to_ascii.php');
+		require_once('./lib/sep/lib/phputf8/utf8_to_ascii.php');
 		return utf8_to_ascii($str);
 	}
 
@@ -878,7 +878,7 @@ class String {
 	 * @return string
 	 */
 	function titleCase($title) {
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_COMMON);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_COMMON);
 		$smallWords = explode(' ', __('common.titleSmallWords'));
 
 		$words = explode(' ', $title);

@@ -15,7 +15,7 @@
 
 <script type="text/javascript">
 	$(function() {ldelim}
-		$('#{$gridId|escape:javascript}').pkpHandler(
+		$('#{$gridId|escape:javascript}').sepHandler(
 			'{$grid->getJSHandler()|escape:javascript}',
 			{ldelim}
 				gridId: '{$grid->getId()|escape:javascript}',
@@ -34,7 +34,7 @@
 	{rdelim});
 </script>
 
-<div id="{$gridId|escape}" class="pkp_controllers_grid">
+<div id="{$gridId|escape}" class="sep_controllers_grid">
 	{if !$grid->getIsSubcomponent()}<div class="wrapper">{/if}
 		{include file="controllers/grid/gridHeader.tpl"}
 		<table id="{$gridTableId|escape}">
@@ -54,7 +54,7 @@
 							{$column->getLocalizedTitle()}
 							{* TODO: Remove this stuff.  Actions should not ever appear in the TH of a grid. *}
 							{if $smarty.foreach.columns.last && $grid->getActions($smarty.const.GRID_ACTION_POSITION_LASTCOL)}
-								<span class="options pkp_linkActions">
+								<span class="options sep_linkActions">
 									{foreach from=$grid->getActions($smarty.const.GRID_ACTION_POSITION_LASTCOL) item=action}
 										{if is_a($action, 'LegacyLinkAction')}
 											{if $action->getMode() eq $smarty.const.LINK_ACTION_MODE_AJAX}
@@ -101,8 +101,8 @@
 		{/if}
 		{include file="controllers/grid/gridActionsBelow.tpl" actions=$grid->getActions($smarty.const.GRID_ACTION_POSITION_BELOW) gridId=$staticId}
 		{if $grid->getFootNote()}
-			<p class="pkp_grid_description">{translate key=$grid->getFootNote()}</p>
+			<p class="sep_grid_description">{translate key=$grid->getFootNote()}</p>
 		{/if}
 	{if !$grid->getIsSubcomponent()}</div>{/if}
-	<div class="pkp_helpers_clear"></div>
+	<div class="sep_helpers_clear"></div>
 </div>

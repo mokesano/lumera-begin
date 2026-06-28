@@ -13,7 +13,7 @@
  * @brief Form for journal managers to modify referral plugin settings
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ReferralPluginSettingsForm extends Form {
 

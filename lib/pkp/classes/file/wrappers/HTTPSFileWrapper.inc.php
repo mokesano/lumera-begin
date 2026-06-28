@@ -16,7 +16,7 @@
  */
 
 
-import('lib.pkp.classes.file.wrappers.HTTPFileWrapper');
+import('lib.sep.classes.file.wrappers.HTTPFileWrapper');
 
 class HTTPSFileWrapper extends HTTPFileWrapper {
 	function HTTPSFileWrapper($url, &$info) {

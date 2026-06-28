@@ -29,7 +29,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Displays the listings of future (unpublished) issues
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function futureIssues($args, $request) {
 		$this->validate(null, true);
@@ -47,7 +47,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Displays the listings of back (published) issues
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function backIssues($args, $request) {
 		$this->validate();
@@ -60,8 +60,8 @@ class IssueManagementHandler extends EditorHandler {
 
 		$templateMgr =& TemplateManager::getManager();
 
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 
 		$templateMgr->assign_by_ref('issues', $issueDao->getPublishedIssues($journal->getId(), $rangeInfo));
 
@@ -86,7 +86,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Removes an issue
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function removeIssue($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -134,7 +134,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Displays the create issue form
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createIssue($args, $request) {
 		$this->validate();
@@ -164,7 +164,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Saves the new issue form
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveIssue($args, $request) {
 		$this->validate();
@@ -194,7 +194,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Displays the issue data page
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function issueData($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -230,7 +230,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Edit the current issue form
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editIssue($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -274,7 +274,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Remove cover page from issue
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function removeIssueCoverPage($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -305,7 +305,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Remove style file from issue
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function removeStyleFile($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -328,7 +328,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Displays the issue galleys page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function issueGalleys($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -354,7 +354,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Create a new issue galley with the uploaded file.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function uploadIssueGalley($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -374,7 +374,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Edit an issue galley.
 	 * @param $args array ($issueId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editIssueGalley($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -401,7 +401,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Save changes to an issue galley.
 	 * @param $args array ($issueId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveIssueGalley($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -429,7 +429,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Change the sequence order of an issue galley.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function orderIssueGalley($args, $request) {
 		$issueId = (int) $request->getUserVar('issueId');
@@ -452,7 +452,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Delete an issue galley.
 	 * @param $args array ($issueId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteIssueGalley($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -478,7 +478,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Preview an issue galley.
 	 * @param $args array ($issueId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofIssueGalley($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -496,7 +496,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Proof issue galley (shows frame header).
 	 * @param $args array ($issueId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofIssueGalleyTop($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -514,7 +514,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Preview an issue galley (outputs file contents).
 	 * @param $args array ($issueId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofIssueGalleyFile($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -538,7 +538,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Download an issue file.
 	 * @param $args array ($issueId, $fileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function downloadIssueFile($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -556,7 +556,7 @@ class IssueManagementHandler extends EditorHandler {
 
 	/**
 	 * Display the table of contents
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function issueToc($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -629,8 +629,8 @@ class IssueManagementHandler extends EditorHandler {
 		$templateMgr->assign('issueOptions', IssueAction::getIssueOptions());
 		$templateMgr->assign('helpTopicId', 'publishing.tableOfContents');
 
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 
 		$templateMgr->display('editor/issues/issueToc.tpl');
 	}
@@ -638,7 +638,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Updates issue table of contents with selected changes and article removals.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateIssueToc($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -680,7 +680,7 @@ class IssueManagementHandler extends EditorHandler {
 						// to the user.
 						import('classes.notification.NotificationManager');
 						$notificationManager = new NotificationManager();
-						AppLocale::requireComponents(array(LOCALE_COMPONENT_OJS_EDITOR));
+						AppLocale::requireComponents(array(LOCALE_COMPONENT_CLA_EDITOR));
 						$message = 'editor.publicIdentificationExists';
 						$params = array('publicIdentifier' => $publicArticleId);
 						$user =& $request->getUser();
@@ -721,7 +721,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Change the sequence of an issue.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function setCurrentIssue($args, $request) {
 		$issueId = $request->getUserVar('issueId');
@@ -742,7 +742,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Change the sequence of an issue.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function moveIssue($args, $request) {
 		$issueId = (int) $request->getUserVar('id');
@@ -784,7 +784,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Reset issue ordering to defaults.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function resetIssueOrder($args, $request) {
 		$this->validate();
@@ -800,7 +800,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Change the sequence of a section.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function moveSectionToc($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -826,7 +826,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Reset section ordering to section defaults.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function resetSectionOrder($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -842,7 +842,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Change the sequence of the articles.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function moveArticleToc($args, $request) {
 		$this->validate(null, true);
@@ -999,7 +999,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Unpublish a previously-published issue
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function unpublishIssue($args, $request) {
 		$issueId = (int) array_shift($args);
@@ -1029,7 +1029,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Allows editors to write emails to users associated with the journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyUsers($args, $request) {
 		$this->validate((int) $request->getUserVar('issue'));
@@ -1047,7 +1047,7 @@ class IssueManagementHandler extends EditorHandler {
 		$user =& $request->getUser();
 		$templateMgr =& TemplateManager::getManager();
 
-		import('lib.pkp.classes.mail.MassMail');
+		import('lib.sep.classes.mail.MassMail');
 		$email = new MassMail('PUBLISH_NOTIFY');
 
 		if ($request->getUserVar('send') && !$email->hasErrors()) {
@@ -1078,7 +1078,7 @@ class IssueManagementHandler extends EditorHandler {
 					$recipients = null;
 			}
 
-			import('lib.pkp.classes.validation.ValidatorEmail');
+			import('lib.sep.classes.validation.ValidatorEmail');
 			$emails = array();
 			while ($recipients && !$recipients->eof()) {
 				$recipient =& $recipients->next();
@@ -1172,7 +1172,7 @@ class IssueManagementHandler extends EditorHandler {
 	/**
 	 * Validate that user is an editor in the selected journal and if the issue id is valid
 	 * Redirects to issue create issue page if not properly authenticated.
-	 * NOTE: As of OJS 2.2, Layout Editors are allowed if specified in args.
+	 * NOTE: As of CLA 2.2, Layout Editors are allowed if specified in args.
 	 */
 	function validate($issueId = null, $allowLayoutEditor = false) {
 		$issue = null;

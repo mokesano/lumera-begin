@@ -20,8 +20,8 @@
  *  by plug-ins via the filter registry.
  */
 
-import('lib.pkp.classes.filter.PersistableFilter');
-import('lib.pkp.classes.metadata.MetadataDescription');
+import('lib.sep.classes.filter.PersistableFilter');
+import('lib.sep.classes.metadata.MetadataDescription');
 
 class MetadataDataObjectAdapter extends PersistableFilter {
 	/** @var MetadataSchema */

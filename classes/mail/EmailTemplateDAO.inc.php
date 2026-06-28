@@ -14,10 +14,10 @@
  * @brief Operations for retrieving and modifying Email Template objects.
  */
 
-import('lib.pkp.classes.mail.PKPEmailTemplateDAO');
-import('lib.pkp.classes.mail.EmailTemplate');
+import('lib.sep.classes.mail.SEPEmailTemplateDAO');
+import('lib.sep.classes.mail.EmailTemplate');
 
-class EmailTemplateDAO extends PKPEmailTemplateDAO {
+class EmailTemplateDAO extends SEPEmailTemplateDAO {
 	/**
 	 * Retrieve a base email template by key.
 	 * @param $emailKey string

@@ -26,7 +26,7 @@
 	    <language>{$journal->getPrimaryLocale()|replace:'_':'-'|strip|escape:"html"}</language>
 	    {/if}
 		<pubDate>{$dateUpdated|date_format:"%a, %d %b %Y %T %z"}</pubDate>
-		<generator>OJS {$ojsVersion|escape}</generator>
+		<generator>CLA {$claVersion|escape}</generator>
 		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
 		<ttl>60</ttl>
 

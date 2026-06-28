@@ -17,7 +17,7 @@
  */
 
 
-import('lib.pkp.classes.xml.XMLNode');
+import('lib.sep.classes.xml.XMLNode');
 
 class XMLParserDOMHandler extends XMLParserHandler {
 

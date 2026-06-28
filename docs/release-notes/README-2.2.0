@@ -1,5 +1,5 @@
-OJS 2.2.0 Release Notes
-CVS tag: ojs-2_2_0-0
+CLA 2.2.0 Release Notes
+CVS tag: cla-2_2_0-0
 Release date: Dec 11, 2007
 =================================
 
@@ -187,7 +187,7 @@ New Features
 	- #2898# Use Site Title text on site TOC
 	- #2900# Add Google Analytics plugin
 	- #2902# Conflict of Interest statement for co-authors
-	- #2903# Update TinyMCE plugin and include in OJS core
+	- #2903# Update TinyMCE plugin and include in CLA core
 	- #2904# Add unique div IDs to standard page elements
 	- #2905# Extend custom footer to article view
 	- #2906# Add phpMyVisites plugin
@@ -227,7 +227,7 @@ Bug Fixes
 	- #2325# Back-port Harvester2 indexing stupidity check for databases
 	- #2339# It should not be possible to send a submission to copyedi...
 	- #2340# Section Editor (Review) is being emailed in Proofing stage
-	- #2341# OJS should be reporting an error message if a galley imag...
+	- #2341# CLA should be reporting an error message if a galley imag...
 	- #2343# Schema upgrade does not disable null checking if necessary
 	- #2344# Paging error in Editor's Select Reviewer
 	- #2345# Installer help text for database settings is incorrect
@@ -263,7 +263,7 @@ Bug Fixes
 	- #2429# Under "For Authors" bad link to Author Guidelines
 	- #2431# Envelope Sender does not apply to automated emails
 	- #2432# Merge Users should also merge roles.
-	- #2433# French translation refers to OJS as PRESTO
+	- #2433# French translation refers to CLA as PRESTO
 	- #2434# Layout editors unable to access CSS when proofing unpubli...
 	- #2437# Declined reviews are considered incomplete
 	- #2438# Submission lists & counts don't work well with editor-fre...
@@ -294,7 +294,7 @@ Bug Fixes
 	- #2647# Author's complete email in Proofreading should not go to ...
 	- #2668# Ensure that it's not possible to lodge an article in Copy...
 	- #2673# Submission email log unnecessarily applies remove_unsafe_...
-	- #2676# Imported papers from OJS1 cannot be declined properly
+	- #2676# Imported papers from CLA1 cannot be declined properly
 	- #2686# Domain-based subscription check always appears to be sati...
 	- #2695# Email link in user profile is incorrect
 	- #2699# Editors and Section Editors experience different "Decline...
@@ -335,7 +335,7 @@ Bug Fixes
 	- #2042# Editing User Profile
 	- #2084# Error moving from step 2 to step 3
 	- #2939# TinyMCE plugin should enable specific fields only
-	- #2931# OJS1 Import Fails from Undefined Method
+	- #2931# CLA1 Import Fails from Undefined Method
 	- #2945# Locale key typo: "gallery" should be "galley"
 	- #2940# Submission status change date stamped too often
 	- #2924# Apply setup page updates before displaying "Saved" message

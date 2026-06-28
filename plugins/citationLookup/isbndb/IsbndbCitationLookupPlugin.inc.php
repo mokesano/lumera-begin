@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationLookup.isbndb.PKPIsbndbCitationLookupPlugin');
+import('lib.sep.plugins.citationLookup.isbndb.SEPIsbndbCitationLookupPlugin');
 
-class IsbndbCitationLookupPlugin extends PKPIsbndbCitationLookupPlugin {
+class IsbndbCitationLookupPlugin extends SEPIsbndbCitationLookupPlugin {
 	/**
 	 * Constructor
 	 */
 	function IsbndbCitationLookupPlugin() {
-		parent::PKPIsbndbCitationLookupPlugin();
+		parent::SEPIsbndbCitationLookupPlugin();
 	}
 }
 

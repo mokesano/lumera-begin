@@ -8,7 +8,7 @@
  * Grid actions in bottom position
  *}
 
-<div class="actions pkp_linkActions grid_link_actions_below">
+<div class="actions sep_linkActions grid_link_actions_below">
 	{foreach from=$grid->getActions($smarty.const.GRID_ACTION_POSITION_BELOW) item=action}
 		{if is_a($action, 'LegacyLinkAction')}
 			{if $action->getMode() eq $smarty.const.LINK_ACTION_MODE_AJAX}
@@ -21,5 +21,5 @@
 			{include file="linkAction/linkAction.tpl" action=$action contextId=$gridId}
 		{/if}
 	{/foreach}
-	<div class="pkp_helpers_clear"></div>
+	<div class="sep_helpers_clear"></div>
 </div>

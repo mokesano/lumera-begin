@@ -334,7 +334,7 @@ span.mendeley:before {
     line-height: 1.45;
     font-size: 1.12em;
 }
-.pkp_controllers_extrasOnDemand .toggleExtras {
+.sep_controllers_extrasOnDemand .toggleExtras {
     float: right;
 }
 .metrics ul {

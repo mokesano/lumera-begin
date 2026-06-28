@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/ja_JP/default.xml
@@ -104,7 +104,7 @@
     <![CDATA[この雑誌に論文を投稿することに興味はありませんか。この雑誌のセクションポリシーを示す<a href="{$indexUrl}/{$journalPath}/about">この雑誌について</a>および<a href="{$indexUrl}/{$journalPath}/about/submissions#authorGuidelines">執筆要項</a>をご覧になることをお薦めします。論文を投稿するにはあらかじめこの雑誌に<a href="{$indexUrl}/{$journalPath}/user/register">登録</a>する必要があります。登録済みの方は<a href="{$indexUrl}/{$journalPath}/login">ログイン</a>して、5ステップの投稿処理を開始するだけです。]]>
   </message>
   <message key="default.journalSettings.forLibrarians">
-    <![CDATA[研究図書館の方には、この雑誌を電子ジャーナルリストに追加することをお薦めします。また、この雑誌が使用しているオープンソースの出版システムが、図書館が所属の教員が編集委員をしている雑誌を運用するために提供するシステムとしてふさわしいことも注目に値するでしょう（<a href="http://pkp.sfu.ca/ojs">オープン･ジャーナル･システム</a>のホームページを参照してください）。]]>
+    <![CDATA[研究図書館の方には、この雑誌を電子ジャーナルリストに追加することをお薦めします。また、この雑誌が使用しているオープンソースの出版システムが、図書館が所属の教員が編集委員をしている雑誌を運用するために提供するシステムとしてふさわしいことも注目に値するでしょう（<a href="http://lumera.sangia.org/cla">オープン･ジャーナル･システム</a>のホームページを参照してください）。]]>
   </message>
   <message key="default.journalSettings.lockssLicense">
     <![CDATA[この雑誌は、参加図書館による分散型アーカイブシステムを構築するLOCKSSシステムを使用しています。このシステムの参加図書館が保存および障害復旧の目的でこの雑誌の恒久的アーカイブを作成することを許可します。<a href="http://www.lockss.org/">さらなる情報</a>はここを参照してください。]]>

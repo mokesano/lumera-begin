@@ -18,7 +18,7 @@
  *  OpenURL schemas.
  */
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30Openurl10CrosswalkFilter');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30Openurl10CrosswalkFilter');
 
 class Nlm30CitationSchemaOpenurl10CrosswalkFilter extends Nlm30Openurl10CrosswalkFilter {
 	/**
@@ -26,8 +26,8 @@ class Nlm30CitationSchemaOpenurl10CrosswalkFilter extends Nlm30Openurl10Crosswal
 	 */
 	function Nlm30CitationSchemaOpenurl10CrosswalkFilter() {
 		$this->setDisplayName('Crosswalk from NLM Citation to Open URL');
-		parent::Nlm30Openurl10CrosswalkFilter('lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema',
-				'lib.pkp.plugins.metadata.openurl10.schema.Openurl10BaseSchema');
+		parent::Nlm30Openurl10CrosswalkFilter('lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema',
+				'lib.sep.plugins.metadata.openurl10.schema.Openurl10BaseSchema');
 	}
 
 
@@ -50,15 +50,15 @@ class Nlm30CitationSchemaOpenurl10CrosswalkFilter extends Nlm30Openurl10Crosswal
 		switch($publicationType) {
 			case NLM30_PUBLICATION_TYPE_JOURNAL:
 			case NLM30_PUBLICATION_TYPE_CONFPROC:
-				$outputSchemaName = 'lib.pkp.plugins.metadata.openurl10.schema.Openurl10JournalSchema';
+				$outputSchemaName = 'lib.sep.plugins.metadata.openurl10.schema.Openurl10JournalSchema';
 				break;
 
 			case NLM30_PUBLICATION_TYPE_BOOK:
-				$outputSchemaName = 'lib.pkp.plugins.metadata.openurl10.schema.Openurl10BookSchema';
+				$outputSchemaName = 'lib.sep.plugins.metadata.openurl10.schema.Openurl10BookSchema';
 				break;
 
 			case NLM30_PUBLICATION_TYPE_THESIS:
-				$outputSchemaName = 'lib.pkp.plugins.metadata.openurl10.schema.Openurl10DissertationSchema';
+				$outputSchemaName = 'lib.sep.plugins.metadata.openurl10.schema.Openurl10DissertationSchema';
 				break;
 
 			default:
@@ -70,7 +70,7 @@ class Nlm30CitationSchemaOpenurl10CrosswalkFilter extends Nlm30Openurl10Crosswal
 		$output = new MetadataDescription($outputSchemaName, $input->getAssocType());
 
 		// Transform authors
-		import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30NameSchemaPersonStringFilter');
+		import('lib.sep.plugins.metadata.nlm30.filter.Nlm30NameSchemaPersonStringFilter');
 		$personStringFilter = new Nlm30NameSchemaPersonStringFilter();
 		$authors =& $input->getStatement('person-group[@person-group-type="author"]');
 		if (is_array($authors) && count($authors)) {

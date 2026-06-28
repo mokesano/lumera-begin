@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000010.xml
@@ -17,4 +17,3 @@
 		<![CDATA[<p>Författaren har möjlighet att följa manuskriptets gång genom granskningsprocessen och ladda upp reviderade versioner efter önskemål från den Sektionsredaktör som hanterar granskningsprocessen.</p>]]>	
 	</section>
 </topic>
-

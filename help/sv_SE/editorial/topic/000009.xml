@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000009.xml
@@ -17,5 +17,3 @@
 		<![CDATA[<p>Författaren kan logga in på tidskriftens webbsida för att följa manuskriptets gång och delta i den redaktionella processen. Om det är fler än en Författare, ombeds den inskickande Författaren ange den Författare med vilken all korrespondens ska ske och som därmed får tillgång till webbsidan.</p>]]>	
 	</section>
 </topic>
-
-

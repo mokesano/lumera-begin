@@ -1,25 +1,25 @@
 <?php
 
 /**
- * @file plugins/oaiMetadata/dc/PKPOAIMetadataFormatPlugin_DC.inc.php
+ * @file plugins/oaiMetadata/dc/SEPOAIMetadataFormatPlugin_DC.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPOAIMetadataFormatPlugin_DC
+ * @class SEPOAIMetadataFormatPlugin_DC
  * @see OAI
  *
  * @brief dc metadata format plugin for OAI.
  */
 
-import('lib.pkp.classes.plugins.OAIMetadataFormatPlugin');
+import('lib.sep.classes.plugins.OAIMetadataFormatPlugin');
 
-class PKPOAIMetadataFormatPlugin_DC extends OAIMetadataFormatPlugin {
+class SEPOAIMetadataFormatPlugin_DC extends OAIMetadataFormatPlugin {
 	/**
 	 * Constructor
 	 */
-	function PKPOAIMetadataFormatPlugin_DC() {
+	function SEPOAIMetadataFormatPlugin_DC() {
 		parent::OAIMetadataFormatPlugin();
 	}
 	/**

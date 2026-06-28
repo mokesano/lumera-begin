@@ -358,7 +358,7 @@ class MetadataProperty {
 
 							if (is_integer($value)) {
 								// Validate with controlled vocabulary validator
-								import('lib.pkp.classes.validation.ValidatorControlledVocab');
+								import('lib.sep.classes.validation.ValidatorControlledVocab');
 								$validator = new ValidatorControlledVocab($symbolic, $assocType, $assocId);
 								if ($validator->isValid($value)) {
 									return array(METADATA_PROPERTY_TYPE_VOCABULARY => $allowedTypeParam);
@@ -369,7 +369,7 @@ class MetadataProperty {
 
 						case METADATA_PROPERTY_TYPE_URI:
 							// Validate with the URI validator
-							import('lib.pkp.classes.validation.ValidatorUri');
+							import('lib.sep.classes.validation.ValidatorUri');
 							$validator = new ValidatorUri();
 							if ($validator->isValid($value)) return array(METADATA_PROPERTY_TYPE_URI => null);
 							break;

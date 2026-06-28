@@ -14,7 +14,7 @@
  *
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class FontSizeBlockPlugin extends BlockPlugin {
 

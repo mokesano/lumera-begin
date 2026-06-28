@@ -13,7 +13,7 @@
  * @brief Class for block component of thesis feed plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class ThesisFeedBlockPlugin extends BlockPlugin {
 	/** @var $parentPluginName string Name of parent plugin */
@@ -95,7 +95,7 @@ class ThesisFeedBlockPlugin extends BlockPlugin {
 		if (!$journal) return '';
 
 		// If the thesis plugin isn't enabled, don't do anything.
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$products =& $application->getEnabledProducts('plugins.generic');
 		if (!isset($products['thesis'])) return '';
 

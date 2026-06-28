@@ -39,7 +39,7 @@
  * 3) The DAO implementation must be scalable, fast and memory efficient.
  */
 
-import('lib.pkp.classes.filter.Filter');
+import('lib.sep.classes.filter.Filter');
 
 class FilterDAO extends DAO {
 	/** @var array names of additional settings for the currently persisted/retrieved filter */

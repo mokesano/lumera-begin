@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file classes/notification/PKPNotificationManager.inc.php
+ * @file classes/notification/SEPNotificationManager.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPNotificationManager
+ * @class SEPNotificationManager
  * @ingroup notification
  * @see NotificationDAO
  * @see Notification
@@ -17,16 +17,16 @@
 
 import('classes.notification.Notification');
 
-class PKPNotificationManager {
+class SEPNotificationManager {
 	/**
 	 * Constructor.
 	 */
-	function PKPNotificationManager() {
+	function SEPNotificationManager() {
 	}
 
 	/**
 	 * Construct a set of notifications and return them as a formatted string
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $userId int
 	 * @param $level int optional
 	 * @param $contextId int optional
@@ -43,7 +43,7 @@ class PKPNotificationManager {
 
 	/*
 	 * Return a string of formatted notifications for display
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $notifications object DAOResultFactory
 	 * @param $notificationTemplate string optional Template to use for constructing an individual notification for display
 	 * @return string
@@ -62,7 +62,7 @@ class PKPNotificationManager {
 
 	/**
 	 * Return a fully formatted notification for display
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $notification object Notification
 	 * @return string
 	 */
@@ -95,7 +95,7 @@ class PKPNotificationManager {
 
 	/**
 	 * Construct a URL for the notification based on its type and associated object
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $notification Notification
 	 * @return string
 	 */
@@ -106,7 +106,7 @@ class PKPNotificationManager {
 	/**
 	 * Return a message string for the notification based on its type
 	 * and associated object.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $notification Notification
 	 * @return string
 	 */
@@ -304,7 +304,7 @@ class PKPNotificationManager {
 	/**
 	 * Create a new notification with the specified arguments and insert into DB
 	 * This is a static method
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $userId int (optional)
 	 * @param $notificationType int
 	 * @param $contextId int
@@ -396,7 +396,7 @@ class PKPNotificationManager {
 
 	/**
 	 * General notification data formating.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param array $notifications
 	 * @return array
 	 */
@@ -416,7 +416,7 @@ class PKPNotificationManager {
 
 	/**
 	 * In place notification data formating.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $notifications array
 	 * @return array
 	 */
@@ -435,7 +435,7 @@ class PKPNotificationManager {
 
 	/**
 	 * Send an email to a user regarding the notification
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $notification object Notification
 	 */
 	function sendNotificationEmail(&$request, $notification) {
@@ -454,14 +454,14 @@ class PKPNotificationManager {
 			'siteTitle' => $site->getLocalizedTitle()
 		));
 		$mail->addRecipient($user->getEmail(), $user->getFullName());
-		if (!HookRegistry::call('PKPNotificationManager::sendNotificationEmail', array($notification))) {
+		if (!HookRegistry::call('SEPNotificationManager::sendNotificationEmail', array($notification))) {
 			$mail->send();
 		}
 	}
 
 	/**
 	 * Send an update to all users on the mailing list
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $notification object Notification
 	 */
 	function sendToMailingList(&$request, $notification) {
@@ -491,7 +491,7 @@ class PKPNotificationManager {
 
 	/**
 	 * Static function to send an email to a mailing list user e.g. regarding signup
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $email string
 	 * @param $token string the user's token (for confirming and unsubscribing)
 	 * @param $template string The mail template to use

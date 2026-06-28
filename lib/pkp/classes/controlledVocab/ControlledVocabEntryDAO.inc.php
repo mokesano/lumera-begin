@@ -14,7 +14,7 @@
  * @brief Operations for retrieving and modifying ControlledVocabEntry objects
  */
 
-import('lib.pkp.classes.controlledVocab.ControlledVocabEntry');
+import('lib.sep.classes.controlledVocab.ControlledVocabEntry');
 
 class ControlledVocabEntryDAO extends DAO {
 	/**

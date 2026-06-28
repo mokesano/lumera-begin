@@ -39,9 +39,9 @@
             {if is_a($article, 'PublishedArticle')}{assign var=galleys value=$article->getGalleys()}{/if}
             {if $galleys && $subscriptionRequired && $showGalleyLinks}
                 <div id="accessKey" class="articleType" style="float: center;">
-                    <img src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
+                    <img src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
                     {translate key="reader.openAccess"}&nbsp;
-                    <img src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+                    <img src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
                 {if $purchaseArticleEnabled}
                     {translate key="reader.subscriptionOrFeeAccess"}
                 {else}
@@ -69,7 +69,7 @@
             <li>{if $section.title}<h7 class="tocSectionTitle">{$section.title|escape}</h7>{/if}</li>
             {/foreach}{* articles *}
             {/foreach}{* sections *}
-            <li><h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.pkp.peerReviewed"}{/if}</h7></li>
+            <li><h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.sep.peerReviewed"}{/if}</h7></li>
             </ul>
         </div>
         <h2 class="title u-font-serif">{$article->getLocalizedTitle()|strip_unsafe_html}</h2>
@@ -183,17 +183,17 @@
                     
                     {if $subscriptionRequired && $showGalleyLinks && $restrictOnlyPdf}
                     {if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}
-                        <img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
+                        <img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
                     {else}
-                        <img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+                        <img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
                         {/if}
                     {/if}
                     {/foreach}
                     {if $subscriptionRequired && $showGalleyLinks && !$restrictOnlyPdf}
                     {if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN}
-                        <img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
+                        <img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
                     {else}
-                        <img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+                        <img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
                     {/if}
                 {/if}
                 {else}
@@ -365,13 +365,13 @@
         <ul class="c-bibliographic-information__list">
             {if $article->getLocalizedDiscipline()}    
             <li class="c-bibliographic-information__item">
-                <h5 class="strong u-font-serif">{translate key="rt.metadata.pkp.discipline"}</h5>
+                <h5 class="strong u-font-serif">{translate key="rt.metadata.sep.discipline"}</h5>
                 <span class="c-bibliographic-information__value u-font-sans">{$article->getLocalizedDiscipline()|escape}</span>
             </li>{/if}
             
             {if $article->getLocalizedSubjectClass()}
             <li class="c-bibliographic-information__item">
-                <h5 class="strong u-font-serif">Sub-{translate key="rt.metadata.pkp.discipline"}</h5>
+                <h5 class="strong u-font-serif">Sub-{translate key="rt.metadata.sep.discipline"}</h5>
                 <span class="c-bibliographic-information__value u-font-sans">{$article->getLocalizedSubjectClass()|escape}</span>
             </li>{/if}
         </ul>

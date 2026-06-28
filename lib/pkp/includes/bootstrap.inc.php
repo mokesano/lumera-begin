@@ -38,23 +38,23 @@ chdir(BASE_SYS_DIR);
 ini_set('include_path', '.'
 	. ENV_SEPARATOR . BASE_SYS_DIR . '/classes'
 	. ENV_SEPARATOR . BASE_SYS_DIR . '/pages'
-	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/pkp'
-	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/pkp/classes'
-	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/pkp/pages'
-	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/pkp/lib/adodb'
-	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/pkp/lib/phputf8'
-	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/pkp/lib/pqp/classes'
-	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/pkp/lib/smarty'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/sep'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/sep/classes'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/sep/pages'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/sep/lib/adodb'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/sep/lib/phputf8'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/sep/lib/pqp/classes'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/sep/lib/smarty'
 	. ENV_SEPARATOR . ini_get('include_path')
 );
 
 // System-wide functions
-require('./lib/pkp/includes/functions.inc.php');
+require('./lib/sep/includes/functions.inc.php');
 
 // Initialize the application environment
 import('classes.core.Application');
 // FIXME: As long as we support PHP4 we cannot use the return
-// value from the new statement directly. See http://pkp.sfu.ca/wiki/index.php/Information_for_Developers#Use_of_.24this_in_the_constructor
+// value from the new statement directly. See http://lumera.sangia.org/wiki/index.php/Information_for_Developers#Use_of_.24this_in_the_constructor
 // We rather retrieve the application instance by-ref from the registry.
 new Application();
 ?>

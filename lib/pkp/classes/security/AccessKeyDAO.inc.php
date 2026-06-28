@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.security.AccessKey');
+import('lib.sep.classes.security.AccessKey');
 
 class AccessKeyDAO extends DAO {
 	/**

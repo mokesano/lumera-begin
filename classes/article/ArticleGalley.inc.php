@@ -84,7 +84,7 @@ class ArticleGalley extends ArticleFile {
 	 * @return int
 	 */
 	function getViews() {
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		return $application->getPrimaryMetricByAssoc(ASSOC_TYPE_GALLEY, $this->getId());
 	}
 

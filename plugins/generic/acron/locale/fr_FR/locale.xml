@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale.xml
@@ -14,7 +14,7 @@
 
 <locale name="fr_FR" full_name="Français (France)">
 	<message key="plugins.generic.acron.name">Plugin Acron</message>
-	<message key="plugins.generic.acron.description"><![CDATA[This plugin attempts to reduce the dependance of OJS on periodic scheduling tools such as 'cron.']]></message>
+	<message key="plugins.generic.acron.description"><![CDATA[This plugin attempts to reduce the dependance of CLA on periodic scheduling tools such as 'cron.']]></message>
 
 	<message key="plugins.generic.acron.reload">Recharger des tâches programmées</message>
 	<message key="plugins.generic.acron.disabled">Le plugiciel Acron a été activé.</message>

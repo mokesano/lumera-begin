@@ -13,7 +13,7 @@
  * @brief Native import/export plugin DOM functions for import
  */
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
 class NativeImportDom {
 	function importArticles(&$journal, &$nodes, &$issue, &$section, &$articles, &$errors, &$user, $isCommandLine) {

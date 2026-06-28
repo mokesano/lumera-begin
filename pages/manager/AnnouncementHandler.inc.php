@@ -13,21 +13,21 @@
  * @brief Handle requests for announcement management functions.
  */
 
-import('lib.pkp.pages.manager.PKPAnnouncementHandler');
+import('lib.sep.pages.manager.SEPAnnouncementHandler');
 
-class AnnouncementHandler extends PKPAnnouncementHandler {
+class AnnouncementHandler extends SEPAnnouncementHandler {
 	/**
 	 * Constructor
 	 */
 	function AnnouncementHandler() {
-		parent::PKPAnnouncementHandler();
+		parent::SEPAnnouncementHandler();
 	}
 
 	/**
 	 * Display a list of announcements for the current journal.
-	 * @see PKPAnnouncementHandler::announcements
+	 * @see SEPAnnouncementHandler::announcements
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function announcements($args, &$request) {
 		$templateMgr =& TemplateManager::getManager();
@@ -37,9 +37,9 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 
 	/**
 	 * Display a list of announcement types for the current journal.
-	 * @see PKPAnnouncementHandler::announcementTypes
+	 * @see SEPAnnouncementHandler::announcementTypes
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function announcementTypes($args, &$request) {
 		$templateMgr =& TemplateManager::getManager();
@@ -48,7 +48,7 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 	}
 
 	/**
-	 * @see PKPAnnouncementHandler::getContextId()
+	 * @see SEPAnnouncementHandler::getContextId()
 	 */
 	function getContextId(&$request) {
 		$journal =& $request->getJournal();
@@ -61,8 +61,8 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 	}
 
 	/**
-	 * @see PKPAnnouncementHandler::_getAnnouncements
-	 * @param $request PKPRequest
+	 * @see SEPAnnouncementHandler::_getAnnouncements
+	 * @param $request SEPRequest
 	 * @param $rangeInfo Object optional
 	 */
 	function &_getAnnouncements($request, $rangeInfo = null) {
@@ -74,8 +74,8 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 	}
 
 	/**
-	 * @see PKPAnnouncementHandler::_getAnnouncementTypes
-	 * @param $request PKPRequest
+	 * @see SEPAnnouncementHandler::_getAnnouncementTypes
+	 * @param $request SEPRequest
 	 * @param $rangeInfo object optional
 	 */
 	function &_getAnnouncementTypes(&$request, $rangeInfo = null) {
@@ -88,7 +88,7 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 
 	/**
 	 * Checks the announcement to see if it belongs to this journal or scheduled journal
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $announcementId int
 	 * return bool
 	 */
@@ -109,7 +109,7 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 
 	/**
 	 * Checks the announcement type to see if it belongs to this journal.  All announcement types are set at the journal level.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $typeId int
 	 * return bool
 	 */

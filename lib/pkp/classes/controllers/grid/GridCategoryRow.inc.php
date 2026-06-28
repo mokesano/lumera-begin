@@ -13,8 +13,8 @@
  * @brief Class defining basic operations for handling the category row in a grid
  *
  */
-import('lib.pkp.classes.controllers.grid.GridRow');
-import('lib.pkp.classes.controllers.grid.GridCategoryRowCellProvider');
+import('lib.sep.classes.controllers.grid.GridRow');
+import('lib.sep.classes.controllers.grid.GridCategoryRowCellProvider');
 
 class GridCategoryRow extends GridRow {
 	/** @var string empty row locale key */

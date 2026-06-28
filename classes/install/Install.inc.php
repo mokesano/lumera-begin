@@ -23,9 +23,9 @@
 define('INSTALLER_DEFAULT_SITE_TITLE', 'common.openJournalSystems');
 define('INSTALLER_DEFAULT_MIN_PASSWORD_LENGTH', 6);
 
-import('lib.pkp.classes.install.PKPInstall');
+import('lib.sep.classes.install.SEPInstall');
 
-class Install extends PKPInstall {
+class Install extends SEPInstall {
 
 	/**
 	 * Constructor.
@@ -35,7 +35,7 @@ class Install extends PKPInstall {
 	 * @param $isPlugin boolean true iff a plugin is being installed
 	 */
 	function Install($params, $descriptor = 'install.xml', $isPlugin = false) {
-		parent::PKPInstall($descriptor, $params, $isPlugin);
+		parent::SEPInstall($descriptor, $params, $isPlugin);
 	}
 
 	//

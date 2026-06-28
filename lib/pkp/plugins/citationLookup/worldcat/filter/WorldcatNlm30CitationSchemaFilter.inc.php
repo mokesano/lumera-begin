@@ -20,8 +20,8 @@
  */
 
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
-import('lib.pkp.classes.filter.FilterSetting');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
+import('lib.sep.classes.filter.FilterSetting');
 
 // TODO: Might wish to change this if the publication type is NLM30_PUBLICATION_TYPE_BOOK, etc. for advanced search
 define('WORLDCAT_WEBSERVICE_SEARCH', 'http://www.worldcat.org/search');
@@ -68,7 +68,7 @@ class WorldcatNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationLookup.worldcat.filter.WorldcatNlm30CitationSchemaFilter';
+		return 'lib.sep.plugins.citationLookup.worldcat.filter.WorldcatNlm30CitationSchemaFilter';
 	}
 
 

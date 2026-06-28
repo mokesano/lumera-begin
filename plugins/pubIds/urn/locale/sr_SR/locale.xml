@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/pubIds/urn/locale/sr_SR/locale.xml
@@ -16,17 +16,17 @@
 
 	<!-- plugin -->
 	<message key="plugins.pubIds.urn.displayName">URN</message>
-	<message key="plugins.pubIds.urn.description">Ovaj dodatak omogućuje dodeljivanje jedinstvenih imena resursa (Uniform Resource Names) objektima (jedinicama, člancima, prikazima i dodatnim fajlovima) u OJS-u.</message>
+	<message key="plugins.pubIds.urn.description">Ovaj dodatak omogućuje dodeljivanje jedinstvenih imena resursa (Uniform Resource Names) objektima (jedinicama, člancima, prikazima i dodatnim fajlovima) u CLA-u.</message>
 
 	<!-- URN manager options, setting -->
-	<message key="plugins.pubIds.urn.manager.settings.description">Uradite sledeće korake podešavanja da bi bili u mogućnosti da upravljate i koristite URN-ove u OJS-u:</message>
+	<message key="plugins.pubIds.urn.manager.settings.description">Uradite sledeće korake podešavanja da bi bili u mogućnosti da upravljate i koristite URN-ove u CLA-u:</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSettings">URN podešavanja</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnPrefix">URN prefiks</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnPrefix.description">URN prefiks je fiksan, nepromenjiv deo URN-a (npr. "urn:nbn:de:0000-").</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix">URN sufiks</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.default">Koristi predefinisane obrasce.</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.default.description"><![CDATA[%j.v%vi%i za jedinice<br />%j.v%vi%i.%a za članke<br />%j.v%vi%i.%a.g%g za prikaze <br />%j.v%vi%i.%a.s%s za dodatne fajlove.]]></message>
-	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern">Koristi obrasce unešene niže za kreiranje URN sufiksa. Koristi %j za inicijale časopisa, %v za vol., %i za broj, %Y za godinu, %a za OJS ID članka, %g za OJS ID prikaza, %s za OJS ID dodatnog fajla i %p za broj strane.</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern">Koristi obrasce unešene niže za kreiranje URN sufiksa. Koristi %j za inicijale časopisa, %v za vol., %i za broj, %Y za godinu, %a za CLA ID članka, %g za CLA ID prikaza, %s za CLA ID dodatnog fajla i %p za broj strane.</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern.issues">za jedinicu (broj)</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern.articles">za članak</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern.galleys">za prikaz</message>

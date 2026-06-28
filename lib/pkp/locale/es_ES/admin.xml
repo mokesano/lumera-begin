@@ -8,7 +8,7 @@
   * Copyright (c) 2000-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the 
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Spanish_(es_ES)
   * Localization strings.
   -->
 
@@ -44,7 +44,7 @@
 	<message key="admin.scheduledTask.stopTime">Se ha detenido la tarea.</message>
 	<message key="admin.scheduledTask.noLog">La tarea no ha generado ningún registro.</message>
 	<message key="admin.scheduledTask.openAccessNotification">Notificación de acceso abierto</message>
-	<message key="admin.scheduledTask.downloadLog">Su OJS ha ejecutado y finalizado automáticamente esta tarea y puede descargar el registro aquí: {$url}</message>
+	<message key="admin.scheduledTask.downloadLog">Su CLA ha ejecutado y finalizado automáticamente esta tarea y puede descargar el registro aquí: {$url}</message>
 	<message key="admin.scheduledTask.confirmClearLogs">¿Está seguro de borrar todos los registros de las tareas programadas?</message>
 	<message key="admin.scheduledTask.clearLogs">Borrar registros de ejecución las tareas programadas</message>
 	<message key="admin.scheduledTask.reviewReminder">Recordatorio de revisión</message>

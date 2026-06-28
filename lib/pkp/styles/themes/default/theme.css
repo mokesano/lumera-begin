@@ -17,25 +17,25 @@
 
 /* @group Structure Overrides */
 
-.pkp_structure_head {
+.sep_structure_head {
 	background-color: #a2c6dc;
 }
 
-.pkp_structure_body {
+.sep_structure_body {
 	border-bottom: 1px dotted #999;
 	margin-bottom: 3px;
 	min-height: 400px;
 }
 
-.pkp_structure_footer {
+.sep_structure_footer {
 	background-color: #c1bbaf;
 }
 
-.pkp_structure_masthead {
+.sep_structure_masthead {
 	background-color: #fff;
 }
 
-.pkp_structure_head_siteNav {
+.sep_structure_head_siteNav {
 	border-color: #B9D5E3;
 }
 
@@ -43,41 +43,41 @@
 
 /* @group Content Overrides */
 
-.pkp_structure_head_siteNav a {
+.sep_structure_head_siteNav a {
 	color: #fff;
 }
 
 /* @group Grid */
 
-.pkp_controllers_grid a {
+.sep_controllers_grid a {
 	color: #569bbe;
 }
 
-div.pkp_controllers_grid table {
+div.sep_controllers_grid table {
 	background-color: #fff;
 }
 
-div.pkp_controllers_grid tr.alternate_row, div.pkp_controllers_grid tr.alternate_row .row_file {
+div.sep_controllers_grid tr.alternate_row, div.sep_controllers_grid tr.alternate_row .row_file {
 	background-color: #f8f8f8;
 }
 
-div.pkp_controllers_grid th {
+div.sep_controllers_grid th {
 	color: #000000;
 }
 
-div.pkp_controllers_grid .my_role {
+div.sep_controllers_grid .my_role {
 	border: 1px solid #ACA9A6;
 }
 
-div.pkp_controllers_grid .row_actions {
+div.sep_controllers_grid .row_actions {
 	background-color: #f9f6f3;
 }
 
-div.pkp_controllers_grid .default_category_style td {
+div.sep_controllers_grid .default_category_style td {
 	background-color: #f3f8fa !important;
 }
 
-div.pkp_controllers_grid .default_category_style .row_actions {
+div.sep_controllers_grid .default_category_style .row_actions {
 	background-color: transparent;
 }
 

@@ -104,7 +104,7 @@ class IssueHandler extends Handler {
 	/**
 	 * Display the issue archive listings
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function archive($args, $request) {
 		$this->validate($request);
@@ -257,7 +257,7 @@ class IssueHandler extends Handler {
 
 	/**
 	 * Validation
-	 * @see lib/pkp/classes/handler/PKPHandler#validate()
+	 * @see lib/sep/classes/handler/SEPHandler#validate()
 	 * @param $request Request
 	 * @param $issueId int
 	 * @param $galleyId int
@@ -334,8 +334,8 @@ class IssueHandler extends Handler {
 
 				if (!$subscribedUser) {
 					// Check if payments are enabled,
-					import('classes.payment.ojs.OJSPaymentManager');
-					$paymentManager = new OJSPaymentManager($request);
+					import('classes.payment.cla.CLAPaymentManager');
+					$paymentManager = new CLAPaymentManager($request);
 
 					if ($paymentManager->purchaseIssueEnabled() || $paymentManager->membershipEnabled() ) {
 						// If only pdf files are being restricted, then approve all non-pdf galleys
@@ -347,7 +347,7 @@ class IssueHandler extends Handler {
 						}
 
 						// If the issue galley has been purchased, then allow reader access
-						$completedPaymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+						$completedPaymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 						$dateEndMembership = $user->getSetting('dateEndMembership', 0);
 						if ($completedPaymentDao->hasPaidPurchaseIssue($userId, $issueId) || (!is_null($dateEndMembership) && $dateEndMembership > time())) {
 							return true;
@@ -376,7 +376,7 @@ class IssueHandler extends Handler {
 
 	function setupTemplate() {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_OJS_EDITOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_READER, LOCALE_COMPONENT_CLA_EDITOR);
 	}
 
 	/**
@@ -499,8 +499,8 @@ class IssueHandler extends Handler {
 			$templateMgr->assign('subscribedDomain', $subscribedDomain);
 			$templateMgr->assign('showGalleyLinks', $journal->getSetting('showGalleyLinks'));
 
-			import('classes.payment.ojs.OJSPaymentManager');
-			$paymentManager = new OJSPaymentManager($request);
+			import('classes.payment.cla.CLAPaymentManager');
+			$paymentManager = new CLAPaymentManager($request);
 			if ( $paymentManager->onlyPdfEnabled() ) {
 				$templateMgr->assign('restrictOnlyPdf', true);
 			}

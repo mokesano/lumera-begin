@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/ja_JP/manager.xml
@@ -20,7 +20,7 @@
 	<message key="manager.groups.context.editorialTeam.short">編集委員会</message>
 	<message key="manager.groups.context.people">担当はユーザ項目にカテゴリ（編集委員会など）として表示されます。</message>
 	<message key="manager.groups.create">担当の作成</message>
-	<message key="manager.groups.disableBoard">OJSは割り当てられた役割（雑誌管理者、コピーエディタなど）の元にユーザをリストアップします。</message>
+	<message key="manager.groups.disableBoard">CLAは割り当てられた役割（雑誌管理者、コピーエディタなど）の元にユーザをリストアップします。</message>
 	<message key="manager.groups.enableBoard">雑誌管理者は担当を作成し、各担当にユーザを割り当てます。</message>
 	<message key="manager.groups.noneCreated">編集委員会の担当は作成されていません。</message>
 	<message key="manager.journalManagement">雑誌管理</message>
@@ -33,7 +33,7 @@
 	<message key="manager.payment.authorFees">著者に課す料金</message>
 	<message key="manager.payment.authorFeesDescription">選択された料金項目は、その説明と金額と共に（これは以下で編集可能）、支払い項目が必要な場所だけでなく、投稿プロセスのステップ1や「この雑誌について」ページの「投稿」にも表示されます。</message>
 	<message key="manager.payment.currency">通貨</message>
-	<message key="manager.payment.currencymessage">OJSは通貨の換算は行いません。購読の支払いを受け付ける場合は、購読の支払い通貨がここで指定した通貨に一致していることを確認する必要があります。</message>
+	<message key="manager.payment.currencymessage">CLAは通貨の換算は行いません。購読の支払いを受け付ける場合は、購読の支払い通貨がここで指定した通貨に一致していることを確認する必要があります。</message>
 	<message key="manager.payment.description">記述</message>
 	<message key="manager.payment.details">詳細</message>
 	<message key="manager.payment.editSubscription">購読の修正</message>
@@ -208,7 +208,7 @@
 	<message key="manager.setup.information.forLibrarians">図書館員向け</message>
 	<message key="manager.setup.information.forReaders">読者向け</message>
 	<message key="manager.setup.initialIssue">創刊号</message>
-	<message key="manager.setup.initialIssueDescription">選択した形式によっては、OJSで出版する最初の号、巻、年を特定する必要があります:</message>
+	<message key="manager.setup.initialIssueDescription">選択した形式によっては、CLAで出版する最初の号、巻、年を特定する必要があります:</message>
 	<message key="manager.setup.institution">名称</message>
 	<message key="manager.setup.issuePerVolume">巻当たり号数</message>
 	<message key="manager.setup.itemsDescription">ページの上部に表示される現行のナビゲーションバー（ホーム、このサイトについて、ユーザホームなど）にアイテム追加することができます。</message>
@@ -311,7 +311,7 @@
 	<message key="manager.setup.reviewGuidelines">査読の手引き</message>
 	<message key="manager.setup.reviewGuidelinesDescription">査読の手引きは、投稿物がこの雑誌で発表することがふさわしいかどうかを判断するための基準や、効果的で参考になる査読をするための特別な指示を査読者に提供します。</message>
 	<message key="manager.setup.reviewOptions">査読オプション</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">2つの時点で査読者に査読を督促するメールが自動的に送付されます（OJSのデフォルトメール機能で可能。もちろん、編集はいつでも査読者に直接メールを送ることもできます）。</message>
+	<message key="manager.setup.reviewOptions.automatedReminders">2つの時点で査読者に査読を督促するメールが自動的に送付されます（CLAのデフォルトメール機能で可能。もちろん、編集はいつでも査読者に直接メールを送ることもできます）。</message>
 	<message key="manager.setup.reviewOptions.blindReview">ブラインド審査</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">編集プロセス中に変更が可能です。</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">査読に許される標準的な時間</message>
@@ -337,7 +337,7 @@
 	<message key="manager.setup.sectionsAndSectionEditors">セクションとセクションエディタ</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">（セクションが追加されない場合、アイテムはデフォルトで用意されている論文（Articles）セクションに投稿されます。）</message>
 	<message key="manager.setup.securitySettings">アクセスとセキュリティの設定</message>
-	<message key="manager.setup.securitySettingsDescription">OJSは数多くのセキュリティ関連のオプションを提供しており、雑誌コンテンツの制限や、監査目的の投稿物に関する追加情報の保守に使用できます。</message>
+	<message key="manager.setup.securitySettingsDescription">CLAは数多くのセキュリティ関連のオプションを提供しており、雑誌コンテンツの制限や、監査目的の投稿物に関する追加情報の保守に使用できます。</message>
 	<message key="manager.setup.selectEditorDescription">編集プロセスで投稿物を担当する雑誌編集者。</message>
 	<message key="manager.setup.selectSectionDescription">このアイテムの掲載対象となる雑誌セクション。</message>
 	<message key="manager.setup.showGalleyLinksDescription">常にゲラリンクを示し、アクセスが制限されることを示す。</message>
@@ -377,7 +377,7 @@
 	<message key="manager.setup.useTextTitle">誌名テキスト</message>
 	<message key="manager.setup.volumePerYear">1年当たり巻数</message>
 	<message key="manager.statistics.reports">報告書作成</message>
-	<message key="manager.statistics.reports.description">OJSは、指定された期間における投稿物、編集者、査読者、セクションに関して投稿から出版に至る処理に関する情報を追跡して、報告書を作成します。報告書は、スプレットシートアプリケーションで読み込むことができるようにCSVフォーマットで作成されます。</message>
+	<message key="manager.statistics.reports.description">CLAは、指定された期間における投稿物、編集者、査読者、セクションに関して投稿から出版に至る処理に関する情報を追跡して、報告書を作成します。報告書は、スプレットシートアプリケーションで読み込むことができるようにCSVフォーマットで作成されます。</message>
 	<message key="manager.statistics.statistics">統計</message>
 	<message key="manager.statistics.statistics.articleViews">論文閲覧回数（著者のみ）</message>
 	<message key="manager.statistics.statistics.count.accept">アクセプト数</message>
@@ -385,7 +385,7 @@
 	<message key="manager.statistics.statistics.count.revise">再投稿数</message>
 	<message key="manager.statistics.statistics.daysPerReview">査読に要した日数</message>
 	<message key="manager.statistics.statistics.daysToPublication">出版に要した日数</message>
-	<message key="manager.statistics.statistics.description">OJSは雑誌ごとに以下の統計を作成します。「査読に要した日数」は投稿日（または、査読版の指定）から最初の編集者判断までを計算します。一方、「出版に要した日数」はアクセプトした投稿について、最初にアップロードされた日から出版された日までを数えています。</message>
+	<message key="manager.statistics.statistics.description">CLAは雑誌ごとに以下の統計を作成します。「査読に要した日数」は投稿日（または、査読版の指定）から最初の編集者判断までを計算します。一方、「出版に要した日数」はアクセプトした投稿について、最初にアップロードされた日から出版された日までを数えています。</message>
 	<message key="manager.statistics.statistics.itemsPublished">出版アイテム数</message>
 	<message key="manager.statistics.statistics.makePublic">「この雑誌について」で読者に公開する項目を指定してください。</message>
 	<message key="manager.statistics.statistics.note">注: 査読した投稿物の比率は100%にならない場合があります。これは、投稿されたアイテムはアクセプト、リジェクト、査読中のいずれかであるからです。</message>
@@ -581,7 +581,7 @@
 	<message key="manager.setup.doiPrefixDescription">DOI(Digital Object Identifier) プレフィックスは，CrossRefによって与えられる10.xxxxという形式の値です。(例: 10.1234)</message>
 	<message key="manager.setup.doiSuffix">DOI サフィックス</message>
 	<message key="manager.setup.doiSuffixDefault">デフォルトパターンを使用する (%j.v%vi%i.%a)。</message>
-	<message key="manager.setup.doiSuffixPattern">下記に入力されたパターンを使用してDOIサフィックスを生成します。%jは雑誌の略称，%vは巻，%iは号，%aはOJSの論文ID，%pはページ数を意味します。</message>
+	<message key="manager.setup.doiSuffixPattern">下記に入力されたパターンを使用してDOIサフィックスを生成します。%jは雑誌の略称，%vは巻，%iは号，%aはCLAの論文ID，%pはページ数を意味します。</message>
 	<message key="manager.setup.doiSuffixPattern.example">例えば，vol%viss%ipp%p は 10.1234/vol3iss2pp230 という DOI を生成します。</message>
 	<message key="manager.setup.doiSuffixDescription">DOI サフィックスはどのような形式でも構いませんが，出版アイテムごとにユニークなものでなければなりません。</message>
 	<message key="manager.setup.doiSuffixPublisherId">出版アイテムに対してDOI サフィックスのような「カスタム識別子」を使用することができます（Step 4で有効にする必要があります）。</message>
@@ -601,12 +601,12 @@
 	<message key="manager.language.ui">ユーザインターフェース</message>
 	<message key="manager.language.forms">フォーム</message>
 	<message key="manager.sections.wordCount">字数カウント</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJSはサポートしている言語のうち任意の言語で利用者にサービスを提供することができます。また、OJSは一部、多言語システムとして運用することもできます。その結果、ユーザはページごとに言語を切り替えることができ、また、デフォルト言語に加えてさらに2つの言語でデータを入力することができます。<br /><br />OJSがサポートしている言語が以下に表示されていない場合は、サイト管理用のインターフェースを使って言語をインストールするようサイト管理者に依頼してください。サポート言語を追加する方法については、システムに添付されているOJS文書をご覧ください。]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLAはサポートしている言語のうち任意の言語で利用者にサービスを提供することができます。また、CLAは一部、多言語システムとして運用することもできます。その結果、ユーザはページごとに言語を切り替えることができ、また、デフォルト言語に加えてさらに2つの言語でデータを入力することができます。<br /><br />CLAがサポートしている言語が以下に表示されていない場合は、サイト管理用のインターフェースを使って言語をインストールするようサイト管理者に依頼してください。サポート言語を追加する方法については、システムに添付されているCLA文書をご覧ください。]]></message>
 	<message key="manager.setup.form.doiPrefixPattern">DOI は 10.xxxx という形式でなければなりません。</message>
 	<message key="manager.setup.issnDescription"><![CDATA[ISSN（国際標準逐次刊行物番号）は逐次刊行物（電子版を含む）を識別する8桁の数字です。ISSNは、本部を置くユネスコとフランス政府による支援を受けた国際センターの調整の元、各国の国内センターの世界的なネットワークにより管理されています。ISSN番号は、<a href="http://www.issn.org" target="_new">ISSN Webサイト</a>で入手することができます。ISSNの入手は、雑誌運営のいつの時点で行っても構いません。]]></message>
 	<message key="manager.setup.publisherNoteDescription">この文章は「この雑誌について」ページの「雑誌スポンサー」の「出版者」ヘッダと出版者名/URLの間に表示されます。</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[この欄ではHTMLを使用できます（フォントサイズや色など）。また、「改行」は<tt>&lt;br&gt;</tt>として扱われます。ブラウザーFirefoxではHTMLエディターが使用できます。]]></message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>注意:</strong> このオプションを使用するには、OJS設定ファイルのこのオプションを使用するには、OJS設定ファイルの<tt>scheduled_tasks</tt>オプションを有効にする必要があります。また、OJS説明書で示したように、（この機能はすべてのサーバで利用できるわけではありませんので）この機能を使用するために、さらにサーバの設定を行う必要があるかもしれません。]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>注意:</strong> このオプションを使用するには、CLA設定ファイルのこのオプションを使用するには、CLA設定ファイルの<tt>scheduled_tasks</tt>オプションを有効にする必要があります。また、CLA説明書で示したように、（この機能はすべてのサーバで利用できるわけではありませんので）この機能を使用するために、さらにサーバの設定を行う必要があるかもしれません。]]></message>
 	<message key="manager.subscriptions.allStatus">すべて</message>
 	<message key="manager.subscriptions.form.userCountryValid">有効な国を選択してください。</message>
 	<message key="manager.subscriptions.institutionName">機関名</message>
@@ -620,7 +620,7 @@
 	<message key="manager.subscriptionTypes.form.subscriptions">購読者</message>
 	<message key="manager.subscriptionTypes.form.options">オプション</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">オンライン支払通知</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">オンライン支払が完了次第，購読管理者に自動的にメールが送信されます（雑誌管理者はOJSのメールテンプレートを編集することができます）。</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">オンライン支払が完了次第，購読管理者に自動的にメールが送信されます（雑誌管理者はCLAのメールテンプレートを編集することができます）。</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">個人購読のオンライン支払について購読管理者にメールで通知する。</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseInstitutional">機関購読のオンライン支払について購読管理者にメールで通知する（推奨）。</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">個人購読のオンライン更新について購読管理者にメールで通知する。</message>
@@ -646,15 +646,15 @@
 	<message key="manager.setup.historyDescription">この文章は雑誌ページの「この雑誌について」に表示され，タイトル，編集委員会，その他の事項など雑誌の出版履歴に関する変更を記述しておくために使用することができます。</message>
 	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[ここで入力された著作権表示は「この雑誌について」および出版される各アイテムのメタデータに表示されます。著者との著作権契約の内容は各雑誌が決定することですが、パブリック･ナレッジ･プロジェクトでは、<a href="https://creativecommons.org" target="_new" class="action">クリエイティブ･コモンズ</a>ライセンスの使用を推奨しています。そのため、(a) オープンアクセスを提供する、(b) エンバーゴ付きオープンアクセスを提供する、(c) オープンアクセスを提供しない、雑誌が以下の入力欄にコピー&ペースできる<a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">著作権表示案</a>を提供しています。]]></message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[雑誌に投稿するアイテムに関して著者が従うべき書誌･書式標準（例: <em>Publication Manual of the American Psychological Association</em>, 5th edition, 2001）を設定してください。投稿に使用すべき雑誌および図書の一般的な引用書式例の提供も役に立つでしょう。さらに、読者による研究の再現を容易にするために、著者にアップロードを推奨する投稿物以外の適当な補足ファイル（データセットや研究機器など）の種類を指定してください。]]></message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJSは、<a href="http://www.openarchives.org/" target="_blank">オープン･アーカイブズ・イニシアティブ</a>のメタデータハーベスティングプロトコル（OAI-PMH）に準拠しています。このプロトコルは、世界規模の電子的研究情報資源へのインデックス化アクセスを提供する標準です。著者は以下に示すテンプレートを使って、投稿物に関するメタデータを提供することになります。雑誌管理者は、インデックス化するカテゴリを選択し、付与すべきインデックスの例や複数の検索語の入力法（例: インデックス1;インデックス2のようにセミコロンで区切る）を著者に示すべきです。記入例は「例:」や「例えば」を使って示すべきです。]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLAは、<a href="http://www.openarchives.org/" target="_blank">オープン･アーカイブズ・イニシアティブ</a>のメタデータハーベスティングプロトコル（OAI-PMH）に準拠しています。このプロトコルは、世界規模の電子的研究情報資源へのインデックス化アクセスを提供する標準です。著者は以下に示すテンプレートを使って、投稿物に関するメタデータを提供することになります。雑誌管理者は、インデックス化するカテゴリを選択し、付与すべきインデックスの例や複数の検索語の入力法（例: インデックス1;インデックス2のようにセミコロンで区切る）を著者に示すべきです。記入例は「例:」や「例えば」を使って示すべきです。]]></message>
 	<message key="manager.setup.publicationScheduleDescription">雑誌アイテムは、ある巻号の一部として目次と共にまとめて出版することができます。また、準備ができたアイテムを「最新号」の目次に追加することにより直ちに出版することもできます。この雑誌がどちらの方式を採用するか、また、予定する出版頻度を読書に示してください（これは、「この雑誌について」に表示されます）。</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>注意:</strong> このオプションを有効にするには，サイト管理者がOJS設定ファイルで <tt>scheduled_tasks</tt> オプションを有効にしなければなりません。また，システム説明書で示したように（この機能はすべてのサーバで利用できるわけではありませんので）この機能を使用するために，これとは別にサーバの設定を行う必要があるかもしれません。]]></message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>注意:</strong> このオプションを有効にするには，サイト管理者がCLA設定ファイルで <tt>scheduled_tasks</tt> オプションを有効にしなければなりません。また，システム説明書で示したように（この機能はすべてのサーバで利用できるわけではありませんので）この機能を使用するために，これとは別にサーバの設定を行う必要があるかもしれません。]]></message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>注意:</strong> 査読を依頼するメールに投稿物の審査ページに直接リンクする特別なURLを含めます（その他のページへのアクセスはログインが必要です）。なお、このオプションを使用する場合は、セキュリティ上の理由により、編集者は査読依頼メールを送る際にメールアドレスを変更したり、CCやBCCを追加したりすることができません。]]></message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJSは、審査プロセスを管理する以下の2つのモデルをサポートしていますが、標準的審査プロセスの使用を推奨します。このプロセスは、査読者に処理を段階的に進めさせ、各投稿物について完全な審査履歴を残し、自動督促通知や投稿物に対する標準的な審査結果（採用、改訂の上採用、再投稿で審査、別の雑誌に投稿、不採用、コメント参照）を利用することができるからです。<br /><br />次の選択肢から1つを選択してください：]]></message>
-	<message key="manager.setup.noPublishing">OJSを雑誌のコンテンツをオンラインで公開するために使用しない。</message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLAは、審査プロセスを管理する以下の2つのモデルをサポートしていますが、標準的審査プロセスの使用を推奨します。このプロセスは、査読者に処理を段階的に進めさせ、各投稿物について完全な審査履歴を残し、自動督促通知や投稿物に対する標準的な審査結果（採用、改訂の上採用、再投稿で審査、別の雑誌に投稿、不採用、コメント参照）を利用することができるからです。<br /><br />次の選択肢から1つを選択してください：]]></message>
+	<message key="manager.setup.noPublishing">CLAを雑誌のコンテンツをオンラインで公開するために使用しない。</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[「この雑誌について」の「<a href="{$aboutEditorialTeamUrl}">編集委員会</a>」欄に表示する担当一覧:]]></message>
 	<message key="manager.setup.contributorNoteDescription">この文章は，「この雑誌について」ページの「雑誌スポンサー」の下にある「支援者」ヘッダーと支援組織名・URLリストの間に表示されます。</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>注意:</strong> このオプションを有効にするには，サイト管理者がOJS設定ファイルでallow_envelope_senderオプションを有効にしている必要があります。また，システム説明書で示したように（この機能はすべてのサーバで利用できるわけではありませんので）この機能を使用するために，これとは別にサーバの設定を行う必要があるかもしれません。]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>注意:</strong> このオプションを有効にするには，サイト管理者がCLA設定ファイルでallow_envelope_senderオプションを有効にしている必要があります。また，システム説明書で示したように（この機能はすべてのサーバで利用できるわけではありませんので）この機能を使用するために，これとは別にサーバの設定を行う必要があるかもしれません。]]></message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>HTML 記述例</strong>]]></message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>注意:</strong> 投稿のお礼メールは現在無効です。これを使用するためには<a class="action" href="{$preparedEmailsUrl}">メールテンプレート</a>のSUBMISSION_ACK メールを有効にしてください。]]></message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[雑誌のセクション (例: Articles, Book Reviews など)の作成および修正は，「雑誌セクション」で行うことができます。<br /><br />雑誌へ投稿する著者が指定できます...]]></message>
@@ -665,7 +665,7 @@
 	<message key="manager.subscriptionTypes.form.nonExpiring.neverExpires">期間なし</message>
 	<message key="manager.subscriptionTypes.form.nonExpiringValid">オプションを選択してください。</message>
 	<message key="manager.subscriptionTypes.form.individual">個人 (ユーザはログイン認証)</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>注意:</strong> このオプションを有効にするには，サイト管理者がOJS設定ファイルで <tt>scheduled_tasks</tt> オプションを有効にしている必要があります。また，システム説明書で示したように（この機能はすべてのサーバで利用できるわけではありませんので）この機能を使用するために，これとは別にサーバの設定を行う必要があるかもしれません。]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>注意:</strong> このオプションを有効にするには，サイト管理者がCLA設定ファイルで <tt>scheduled_tasks</tt> オプションを有効にしている必要があります。また，システム説明書で示したように（この機能はすべてのサーバで利用できるわけではありませんので）この機能を使用するために，これとは別にサーバの設定を行う必要があるかもしれません。]]></message>
 	<message key="manager.subscriptionPolicies.onlinePaymentPurchaseInstitutionalDescription"><![CDATA[<strong>注意:</strong> 機関のオンライン購読では提供されたドメイン名とIPアドレスの承認と購読管理者の購読のアクティベーションが必要です。]]></message>
 	<message key="manager.subscriptions.withStatus">状態</message>
 	<message key="manager.subscriptions.form.userContact">連絡担当者</message>

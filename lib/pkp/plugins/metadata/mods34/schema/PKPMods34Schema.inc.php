@@ -5,13 +5,13 @@
  */
 
 /**
- * @file plugins/metadata/mods34/schema/PKPMods34Schema.inc.php
+ * @file plugins/metadata/mods34/schema/SEPMods34Schema.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPMods34Schema
+ * @class SEPMods34Schema
  * @ingroup plugins_metadata_mods34_schema
  * @see MetadataSchema
  *
@@ -41,16 +41,16 @@
  */
 
 
-import('lib.pkp.classes.metadata.MetadataSchema');
+import('lib.sep.classes.metadata.MetadataSchema');
 
-class PKPMods34Schema extends MetadataSchema {
+class SEPMods34Schema extends MetadataSchema {
 	/**
 	 * Constructor
 	 * @param $appSpecificAssocType integer
 	 * @param $useAuthoritiesForSubject boolean whether the subject is
 	 *  free text or controlled by vocabularies.
 	 */
-	function PKPMods34Schema($appSpecificAssocType = null, $useAuthoritiesForSubject = false) {
+	function SEPMods34Schema($appSpecificAssocType = null, $useAuthoritiesForSubject = false) {
 		// Configure the meta-data schema.
 		$assocTypes = array(ASSOC_TYPE_CITATION);
 		if (!is_null($appSpecificAssocType)) array_push($assocTypes, $appSpecificAssocType);
@@ -393,7 +393,7 @@ class PKPMods34Schema extends MetadataSchema {
 		// are likely to rely on the identifier in the OAI header, rather than the recordIdentifier.
 		// If recordIdentifier is used, the guidelines recommend the use of the source attribute
 		// if possible.
-		$this->addProperty('recordInfo/recordIdentifier[@source="pkp"]');
+		$this->addProperty('recordInfo/recordIdentifier[@source="sep"]');
 
 		// Use languageOfCataloging to record the language of the text of the cataloging in the
 		// MODS record. If additional language(s) are used this will be indicated with the $locale

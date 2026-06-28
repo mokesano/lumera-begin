@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationLookup.crossref.PKPCrossrefCitationLookupPlugin');
+import('lib.sep.plugins.citationLookup.crossref.SEPCrossrefCitationLookupPlugin');
 
-class CrossrefCitationLookupPlugin extends PKPCrossrefCitationLookupPlugin {
+class CrossrefCitationLookupPlugin extends SEPCrossrefCitationLookupPlugin {
 	/**
 	 * Constructor
 	 */
 	function CrossrefCitationLookupPlugin() {
-		parent::PKPCrossrefCitationLookupPlugin();
+		parent::SEPCrossrefCitationLookupPlugin();
 	}
 }
 

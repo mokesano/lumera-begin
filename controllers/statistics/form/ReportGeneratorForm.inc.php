@@ -14,7 +14,7 @@
  * @brief Form to generate custom statistics reports.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 define('TIME_FILTER_OPTION_YESTERDAY', 0);
 define('TIME_FILTER_OPTION_CURRENT_MONTH', 1);

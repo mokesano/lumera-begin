@@ -13,7 +13,7 @@
  * @brief Class for block component of announcement feed plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class AnnouncementFeedBlockPlugin extends BlockPlugin {
 	var $parentPluginName;

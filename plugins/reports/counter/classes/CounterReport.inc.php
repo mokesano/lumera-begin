@@ -97,7 +97,7 @@ class CounterReport {
 	}
 
 	/*
-	 * Convert an OJS metrics request to COUNTER ReportItems
+	 * Convert an CLA metrics request to COUNTER ReportItems
 	 * Abstract method must be implemented by subclass
 	 * @param $columns string|array column (aggregation level) selection
 	 * @param $filters array report-level filter selection
@@ -119,7 +119,7 @@ class CounterReport {
 	}
 
 	/**
-	 * Set an errors condition; Proper Exception handling is deferred until the OJS 3.0 Release
+	 * Set an errors condition; Proper Exception handling is deferred until the CLA 3.0 Release
 	 * @param $error Exception
 	 */
 	function setError($error) {
@@ -135,7 +135,7 @@ class CounterReport {
 	 * @return array()
 	 */
 	protected function filterForContext($filters) {
-		$request = PKPApplication::getRequest();
+		$request = SEPApplication::getRequest();
 		$journal = $request->getJournal();
 		$journalId = $journal ? $journal->getJournalId() : '';
 		// If the request context is at the journal level, the dimension context id must be that same journal id
@@ -263,7 +263,7 @@ class CounterReport {
 	 * @return mixed
 	 */
 	function _getVendorComponent($key) {
-		$request = PKPApplication::getRequest();
+		$request = SEPApplication::getRequest();
 		$site = $request->getSite();
 		switch ($key) {
 			case 'name':

@@ -1,22 +1,22 @@
 <?php
 
 /**
- * @file classes/payment/ojs/OJSQueuedPayment.inc.php
+ * @file classes/payment/cla/CLAQueuedPayment.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class OJSQueuedPayment
+ * @class CLAQueuedPayment
  * @ingroup payment
  *
- * @brief Queued payment data structure for OJS
+ * @brief Queued payment data structure for CLA
  *
  */
 
-import('lib.pkp.classes.payment.QueuedPayment');
+import('lib.sep.classes.payment.QueuedPayment');
 
-class OJSQueuedPayment extends QueuedPayment {
+class CLAQueuedPayment extends QueuedPayment {
 	/** @var $journalId int journal ID this payment applies to */
 	var $journalId;
 

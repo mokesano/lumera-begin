@@ -129,7 +129,7 @@ class AnnouncementFeedGatewayPlugin extends GatewayPlugin {
 		$announcementDao =& DAORegistry::getDAO('AnnouncementDAO');
 		$journalId = $journal->getId();
 		if ($limitRecentItems && $recentItems > 0) {
-			import('lib.pkp.classes.db.DBResultRange');
+			import('lib.sep.classes.db.DBResultRange');
 			$rangeInfo = new DBResultRange($recentItems, 1);
 			$announcements =& $announcementDao->getAnnouncementsNotExpiredByAssocId(ASSOC_TYPE_JOURNAL, $journalId, $rangeInfo);
 		} else {
@@ -157,7 +157,7 @@ class AnnouncementFeedGatewayPlugin extends GatewayPlugin {
 		$version =& $versionDao->getCurrentVersion();
 
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->assign('ojsVersion', $version->getVersionString());
+		$templateMgr->assign('claVersion', $version->getVersionString());
 		$templateMgr->assign('selfUrl', Request::getCompleteUrl()); 
 		$templateMgr->assign('dateUpdated', $dateUpdated);
 		$templateMgr->assign_by_ref('announcements', $announcements->toArray());

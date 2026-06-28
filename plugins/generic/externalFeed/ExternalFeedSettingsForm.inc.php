@@ -13,7 +13,7 @@
  * @brief Form for journal managers to modify External Feed plugin settings
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ExternalFeedSettingsForm extends Form {
 

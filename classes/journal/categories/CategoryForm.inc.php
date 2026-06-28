@@ -14,7 +14,7 @@
  * @brief Form for site admins to create/edit categories.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class CategoryForm extends Form {
 	/** @var groupId int the ID of the group being edited */

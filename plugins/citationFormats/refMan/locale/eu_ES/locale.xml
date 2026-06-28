@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/citationFormats/refMan/locale/eu_ES/locale.xml
@@ -17,4 +17,3 @@
 	<message key="plugins.citationFormats.refMan.citationFormatName">Reference Manager - RIS formatua (Windows soilik)</message>
 	<message key="plugins.citationFormats.refMan.description">Plugin honek Reference Manager aipamenen formatua inplementatzen du.</message>
 </locale>
-

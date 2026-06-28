@@ -36,7 +36,7 @@
 	{call_hook name="Templates::Article::Header::Metadata"}
 
 	{if $journalRt && $journalRt->getEnabled()}
-		<link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/rtEmbedded.css" type="text/css" />
+		<link rel="stylesheet" href="{$baseUrl}/lib/sep/styles/rtEmbedded.css" type="text/css" />
 	{/if}
 
 	{call_hook|assign:"leftSidebarCode" name="Templates::Common::LeftSidebar"}
@@ -47,16 +47,16 @@
 	<script type="text/javascript">{literal}
 		// Provide a local fallback if the CDN cannot be reached
 		if (typeof google == 'undefined') {
-			document.write(unescape("%3Cscript src='{/literal}{$baseUrl}{literal}/lib/pkp/js/lib/jquery/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
-			document.write(unescape("%3Cscript src='{/literal}{$baseUrl}{literal}/lib/pkp/js/lib/jquery/plugins/jqueryUi.min.js' type='text/javascript'%3E%3C/script%3E"));
+			document.write(unescape("%3Cscript src='{/literal}{$baseUrl}{literal}/lib/sep/js/lib/jquery/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+			document.write(unescape("%3Cscript src='{/literal}{$baseUrl}{literal}/lib/sep/js/lib/jquery/plugins/jqueryUi.min.js' type='text/javascript'%3E%3C/script%3E"));
 		} else {
 			google.load("jquery", "{/literal}{$smarty.const.CDN_JQUERY_VERSION}{literal}");
 			google.load("jqueryui", "{/literal}{$smarty.const.CDN_JQUERY_UI_VERSION}{literal}");
 		}
 	{/literal}</script>
 	{else}
-	<script type="text/javascript" src="{$baseUrl}/lib/pkp/js/lib/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="{$baseUrl}/lib/pkp/js/lib/jquery/plugins/jqueryUi.min.js"></script>
+	<script type="text/javascript" src="{$baseUrl}/lib/sep/js/lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="{$baseUrl}/lib/sep/js/lib/jquery/plugins/jqueryUi.min.js"></script>
 	{/if}
 
 <!-- Begin for PDF Galley -->
@@ -96,13 +96,13 @@
 
 	<!-- Compiled scripts -->
 	{if $useMinifiedJavaScript}
-		<script type="text/javascript" src="{$baseUrl}/js/pkp.min.js"></script>
+		<script type="text/javascript" src="{$baseUrl}/js/sep.min.js"></script>
 	{else}
 		{include file="common/minifiedScripts.tpl"}
 	{/if}
 
 	{foreach from=$stylesheets name="testUrl" item=cssUrl}
-		{if $cssUrl == "$baseUrl/styles/ojs.css"}
+		{if $cssUrl == "$baseUrl/styles/cla.css"}
 			<link rel="stylesheet" href="{$cssUrl}" type="text/css" />
 		{/if}
 	{/foreach}
@@ -126,7 +126,7 @@
 	<link rel="stylesheet" href="{$baseUrl}/plugins/themes/eserem-classical/css/summary.css" type="text/css" />
 
 	{foreach from=$stylesheets name="testUrl" item=cssUrl}
-		{if $cssUrl != "$baseUrl/styles/ojs.css"}
+		{if $cssUrl != "$baseUrl/styles/cla.css"}
 			<link rel="stylesheet" href="{$cssUrl}" type="text/css" />
 		{/if}
 	{/foreach}

@@ -10,12 +10,12 @@
  * @class PageRouter
  * @ingroup core
  *
- * @brief Class providing OJS-specific page routing.
+ * @brief Class providing CLA-specific page routing.
  */
 
-import('lib.pkp.classes.core.PKPPageRouter');
+import('lib.sep.classes.core.SEPPageRouter');
 
-class PageRouter extends PKPPageRouter {
+class PageRouter extends SEPPageRouter {
 	/**
 	 * get the cacheable pages
 	 * @return array
@@ -26,7 +26,7 @@ class PageRouter extends PKPPageRouter {
 
 	/**
 	 * Redirect to user home page (or the role home page if the user has one role).
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 */
 	function redirectHome(&$request) {
 		$roleDao =& DAORegistry::getDAO('RoleDAO');

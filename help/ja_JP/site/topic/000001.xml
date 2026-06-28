@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -18,7 +18,7 @@
 	</section>
 	
 	<section title="ライセンス">
-		<![CDATA[<p>OJSは、<a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU一般公衆利用許諾契約書</a>の条件で配布されています。OJSコードをオリジナル形態または変更した形態で再配布するためのライセンス条項のコピーは、ダウンロードしたOJSに含まれています。</p>]]>
+		<![CDATA[<p>CLAは、<a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU一般公衆利用許諾契約書</a>の条件で配布されています。CLAコードをオリジナル形態または変更した形態で再配布するためのライセンス条項のコピーは、ダウンロードしたCLAに含まれています。</p>]]>
 	</section>
 	
 	<section title="システム要件">
@@ -29,24 +29,24 @@
 			<li><a href="http://httpd.apache.org/" target="_blank">Apache</a> 1.3.2x以降、または、2.0.4x以降。または、Microsoft IIS 6以降</li>
 			<li>オペレーティングシステム: 上記ソフトウェアをサポートする任意のOS。<a href="http://www.linux.org/" target="_blank">Linux</a>、<a href="http://www.bsd.org/" target="_blank">BSD</a>、<a href="http://www.oracle.com/sun/" target="_blank">Solaris</a>、<a href="http://www.apple.com/" target="_blank">Mac OS X</a>、<a href="http://www.microsoft.com/">Windows</a>など。</li>
 		</ul>
-		<p>OJSは現在のところ、MySQLとPostgreSQL上でしかテストを行っていません。しかし、<a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a>によりサポートされている他のデータベース管理システムでも（完全に、または部分的に）稼動すると思われます。他のDBMSによる稼動報告やパッチを歓迎します。</p>
+		<p>CLAは現在のところ、MySQLとPostgreSQL上でしかテストを行っていません。しかし、<a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a>によりサポートされている他のデータベース管理システムでも（完全に、または部分的に）稼動すると思われます。他のDBMSによる稼動報告やパッチを歓迎します。</p>
 		]]>
 	</section>
 	
 	<section title="ダウンロード">
-		<![CDATA[<p>OJSはPublic Knowledgeプロジェクトの<a href="http://pkp.sfu.ca/ojs/" target="_blank">Webサイト</a>からダウンロードすることができます。</p>]]>
+		<![CDATA[<p>CLAはPublic Knowledgeプロジェクトの<a href="http://lumera.sangia.org/cla/" target="_blank">Webサイト</a>からダウンロードすることができます。</p>]]>
 	</section>
 	
 	<section title="インストール">
-		<![CDATA[<p>OJSにはWebベースのインストールスクリプトが用意されています。このスクリプトがシステム管理者をインストールの全プロセスにわたって案内します。別法として、コマンドラインのインストールツールも利用できます。</p>
+		<![CDATA[<p>CLAにはWebベースのインストールスクリプトが用意されています。このスクリプトがシステム管理者をインストールの全プロセスにわたって案内します。別法として、コマンドラインのインストールツールも利用できます。</p>
 		<ol>
 			<li>
-				OJSアーカイブをダウンロードします。
+				CLAアーカイブをダウンロードします。
 			</li>
 			<li>
-				Webサーバ上でOJSアーカイブを解凍し、Webドキュメントツリーの適当な場所に置きます。<br />
-				<tt>$ tar -zxf ojs-2.*.tar.gz<br />
-				$ mv ojs-* /var/www/myjournal</tt>
+				Webサーバ上でCLAアーカイブを解凍し、Webドキュメントツリーの適当な場所に置きます。<br />
+				<tt>$ tar -zxf cla-2.*.tar.gz<br />
+				$ mv cla-* /var/www/myjournal</tt>
 			</li>
 			<li>
 				以下のファイルおよびディレクトリを（chownあるいはchmodコマンドを使用して）書き込み可能にします。<br />
@@ -59,7 +59,7 @@
 				- cache/_db
 			</li>
 			<li>
-				WebブラウザでOJSをインストールしたURL（例えば、http://www.mydomain.com/myjournal/）を開き、画面上の指示に従いインストールを実行します。インストール処理に関する詳細は、docs/READMEファイルを参照してください。
+				WebブラウザでCLAをインストールしたURL（例えば、http://www.mydomain.com/myjournal/）を開き、画面上の指示に従いインストールを実行します。インストール処理に関する詳細は、docs/READMEファイルを参照してください。
 			</li>
 		</ol>
 		]]>

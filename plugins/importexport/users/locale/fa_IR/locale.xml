@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 <!--
   * plugins/importexport/users/locale/fa_IR/locale.xml
   *
@@ -48,7 +48,7 @@ Optional flags:
 	<message key="plugins.importexport.users.import.errorsOccurred" >خطا هنگام انتقال</message>
 	<message key="plugins.importexport.users.import.confirmUsers" >تایید کنید که این کاربران را میخواهید منتقل کنید.</message>
 	<message key="plugins.importexport.users.import.warning" >هشدار</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch" >رمزهای عبور کد گذاری شده به {$importHash} را نمیتواند منتقل کند. تنظیم این نصب او جی اس به نحوی بوده است که فقط از {$ojsHash} استفاده میکند.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch" >رمزهای عبور کد گذاری شده به {$importHash} را نمیتواند منتقل کند. تنظیم این نصب او جی اس به نحوی بوده است که فقط از {$claHash} استفاده میکند.</message>
 	<message key="plugins.importexport.users.unknownJournal" >مسیر مجله داده شده &quot;{$journalPath}&quot; نامعلوم است.</message>
 	<message key="plugins.importexport.users.export.exportUsers" >استخراج کاربران</message>
 	<message key="plugins.importexport.users.export.exportByRole" >استخراج بر حسب رل</message>

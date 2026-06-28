@@ -16,18 +16,18 @@
 
 import('classes.plugins.ImportExportPlugin');
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
-define('PID_DTD_URL', 'http://pkp.sfu.ca/ojs/dtds/2.3/pubIds.dtd');
-define('PID_DTD_ID', '-//PKP//OJS PubIds XML//EN');
+define('PID_DTD_URL', 'http://lumera.sangia.org/cla/dtds/2.3/pubIds.dtd');
+define('PID_DTD_ID', '-//SEP//CLA PubIds XML//EN');
 
 class PubIdImportExportPlugin extends ImportExportPlugin {
 
 	//
-	// Implement template methods from ImportExportPlugin and PKPPlugin.
+	// Implement template methods from ImportExportPlugin and SEPPlugin.
 	//
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		$success = parent::register($category, $path);
@@ -57,7 +57,7 @@ class PubIdImportExportPlugin extends ImportExportPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getTemplatePath()
+	 * @see SEPPlugin::getTemplatePath()
 	 */
 	function getTemplatePath() {
 		return parent::getTemplatePath() . 'templates/';
@@ -96,7 +96,7 @@ class PubIdImportExportPlugin extends ImportExportPlugin {
 			case 'selectIssue':
 				// Display a list of issues for export
 				$this->setBreadcrumbs(array(), true);
-				AppLocale::requireComponents(array(LOCALE_COMPONENT_OJS_EDITOR));
+				AppLocale::requireComponents(array(LOCALE_COMPONENT_CLA_EDITOR));
 				$issueDao =& DAORegistry::getDAO('IssueDAO');
 				$issues =& $issueDao->getIssues($journal->getId(), Handler::getRangeInfo('issues'));
 				$templateMgr->assign_by_ref('issues', $issues);

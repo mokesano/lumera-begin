@@ -49,11 +49,11 @@ class AuthorSubmitStep5Form extends AuthorSubmitForm {
 		$templateMgr->assign_by_ref('journal', $journal);
 
 		// Set up required Payment Related Information
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($this->request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($this->request);
 		if ( $paymentManager->submissionEnabled() || $paymentManager->fastTrackEnabled() || $paymentManager->publicationEnabled()) {
 			$templateMgr->assign('authorFees', true);
-			$completedPaymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+			$completedPaymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 			$articleId = $this->articleId;
 
 			if ($paymentManager->submissionEnabled()) {
@@ -91,8 +91,8 @@ class AuthorSubmitStep5Form extends AuthorSubmitForm {
 	 * Validate the form
 	 */
 	function validate() {
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($this->request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($this->request);
 		if ( $paymentManager->submissionEnabled() ) {
 			if (!parent::validate()) return false;
 
@@ -101,7 +101,7 @@ class AuthorSubmitStep5Form extends AuthorSubmitForm {
 			$articleId = $this->articleId;
 			$user =& $this->request->getUser();
 
-			$completedPaymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+			$completedPaymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 			if ($completedPaymentDao->hasPaidSubmission($journalId, $articleId)) {
 				return parent::validate();
 			} elseif ($this->request->getUserVar('qualifyForWaiver') && $this->request->getUserVar('commentsToEditor') != '') {

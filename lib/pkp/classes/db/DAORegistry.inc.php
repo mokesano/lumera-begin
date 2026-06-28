@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.db.DAO');
+import('lib.sep.classes.db.DAO');
 
 class DAORegistry {
 
@@ -59,7 +59,7 @@ class DAORegistry {
 
 		if (!isset($daos[$name])) {
 			// Import the required DAO class.
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			$className = $application->getQualifiedDAOName($name);
 			if (!$className) {
 				fatalError('Unrecognized DAO ' . $name . '!');

@@ -1,29 +1,29 @@
 <?php
 
 /**
- * @file classes/submission/reviewAssignment/PKPReviewAssignmentDAO.inc.php
+ * @file classes/submission/reviewAssignment/SEPReviewAssignmentDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPReviewAssignmentDAO
+ * @class SEPReviewAssignmentDAO
  * @ingroup submission
- * @see PKPReviewAssignment
+ * @see SEPReviewAssignment
  *
  * @brief Class for DAO relating reviewers to submissions.
  */
 
 
-import('lib.pkp.classes.submission.reviewAssignment.PKPReviewAssignment');
+import('lib.sep.classes.submission.reviewAssignment.SEPReviewAssignment');
 
-class PKPReviewAssignmentDAO extends DAO {
+class SEPReviewAssignmentDAO extends DAO {
 	var $userDao;
 
 	/**
 	 * Constructor.
 	 */
-	function PKPReviewAssignmentDAO() {
+	function SEPReviewAssignmentDAO() {
 		parent::DAO();
 		$this->userDao =& DAORegistry::getDAO('UserDAO');
 	}

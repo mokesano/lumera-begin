@@ -13,7 +13,7 @@
  * @brief Class for block component of external feed plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class ExternalFeedBlockPlugin extends BlockPlugin {
 	/** @var $parentPluginName string Name of parent plugin */

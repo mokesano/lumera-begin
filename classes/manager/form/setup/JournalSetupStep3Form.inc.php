@@ -81,14 +81,14 @@ class JournalSetupStep3Form extends JournalSetupForm {
 	function display($request, $dispatcher) {
 		$templateMgr =& TemplateManager::getManager($request);
 		// Add extra style sheets required for ajax components
-		// FIXME: Must be removed after OMP->OJS backporting
-		$templateMgr->addStyleSheet($request->getBaseUrl().'/styles/ojs.css');
+		// FIXME: Must be removed after OMP->CLA backporting
+		$templateMgr->addStyleSheet($request->getBaseUrl().'/styles/cla.css');
 
 		// Add extra java script required for ajax components
-		// FIXME: Must be removed after OMP->OJS backporting
-		$templateMgr->addJavaScript('lib/pkp/js/functions/modal.js');
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/validate/jquery.validate.min.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/jqueryValidatorI18n.js');
+		// FIXME: Must be removed after OMP->CLA backporting
+		$templateMgr->addJavaScript('lib/sep/js/functions/modal.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/validate/jquery.validate.min.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/jqueryValidatorI18n.js');
 
 		import('classes.mail.MailTemplate');
 		$mail = new MailTemplate('SUBMISSION_ACK');
@@ -100,7 +100,7 @@ class JournalSetupStep3Form extends JournalSetupForm {
 		//
 		// 1) Check whether PHP5 is available.
 		if (!checkPhpVersion('5.0.0')) {
-			AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION);
+			AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION);
 			$citationEditorError = 'submission.citations.editor.php5Required';
 		} else {
 			$citationEditorError = null;

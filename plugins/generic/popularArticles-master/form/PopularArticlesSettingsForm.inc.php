@@ -13,7 +13,7 @@
  * @brief Form for journal managers to modify popular articles plugin settings.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class PopularArticlesSettingsForm extends Form {
 
@@ -25,7 +25,7 @@ class PopularArticlesSettingsForm extends Form {
 
 	/**
 	 * Constructor
-	 * @param $plugin PKPPlugin
+	 * @param $plugin SEPPlugin
 	 * @param $journal Journal
 	 */
 	function PopularArticlesSettingsForm(&$plugin, &$journal) {

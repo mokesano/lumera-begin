@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.metadata.openurl10.PKPOpenurl10MetadataPlugin');
+import('lib.sep.plugins.metadata.openurl10.SEPOpenurl10MetadataPlugin');
 
-class Openurl10MetadataPlugin extends PKPOpenurl10MetadataPlugin {
+class Openurl10MetadataPlugin extends SEPOpenurl10MetadataPlugin {
 	/**
 	 * Constructor
 	 */
 	function Openurl10MetadataPlugin() {
-		parent::PKPOpenurl10MetadataPlugin();
+		parent::SEPOpenurl10MetadataPlugin();
 	}
 }
 

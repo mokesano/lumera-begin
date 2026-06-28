@@ -32,7 +32,7 @@
  */
 
 
-import('lib.pkp.classes.metadata.MetadataSchema');
+import('lib.sep.classes.metadata.MetadataSchema');
 
 class Mods34NameSchema extends MetadataSchema {
 	/**
@@ -43,7 +43,7 @@ class Mods34NameSchema extends MetadataSchema {
 		parent::MetadataSchema(
 			'mods-3.4-name',
 			'mods34',
-			'lib.pkp.plugins.metadata.mods34.schema.Mods34NameSchema',
+			'lib.sep.plugins.metadata.mods34.schema.Mods34NameSchema',
 			array(ASSOC_TYPE_AUTHOR, ASSOC_TYPE_EDITOR)
 		);
 

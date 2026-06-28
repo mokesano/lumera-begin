@@ -14,10 +14,10 @@
  */
 
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 // Define TinyMCE paths with unix-style separators for inclusion in browser.
-define('TINYMCE_INSTALL_PATH', 'lib/pkp/lib/tinymce');
+define('TINYMCE_INSTALL_PATH', 'lib/sep/lib/tinymce');
 define('TINYMCE_JS_PATH', TINYMCE_INSTALL_PATH . '/jscripts/tiny_mce');
 
 class TinyMCEPlugin extends GenericPlugin {
@@ -49,7 +49,7 @@ class TinyMCEPlugin extends GenericPlugin {
 
 	/**
 	 * Get the name of the settings file to be installed site-wide when
-	 * OJS is installed.
+	 * CLA is installed.
 	 * @return string
 	 */
 	function getInstallSitePluginSettingsFile() {
@@ -341,7 +341,7 @@ class TinyMCEPlugin extends GenericPlugin {
 	function callback($hookName, $args) {
 		// Only pages requests interest us here
 		$request =& Registry::get('request');
-		if (!is_a($request->getRouter(), 'PKPPageRouter')) return null;
+		if (!is_a($request->getRouter(), 'SEPPageRouter')) return null;
 
 		$templateManager =& $args[0];
 

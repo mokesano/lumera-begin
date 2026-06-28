@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/sv_SE/locale.xml
@@ -64,7 +64,7 @@
 
 
 	<!-- Common Messages -->
-	<message key="common.openJournalSystems">Open Journal Systems</message>
+	<message key="common.openJournalSystems">Code Lumera Editorial</message>
 	<message key="common.confirmComplete"> Är du säker på att du vill markera händelsen som avslutad? Du kommer inte att kunna ändra i efterhand.</message>
 	<message key="common.payment">Betalning</message>
 	<message key="common.payments">Betalningar</message>
@@ -304,26 +304,26 @@
 
 	<!-- Site Administration -->
 
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[För att innehållet i de tidskrifter som tillhör den här sidan ska indexeras och distribueras globalt till forskningsdatabaser, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registrera</a> din sidas URL med the Public Knowledge Project metadata <a href="http://pkp.sfu.ca/harvester/" target="_blank">harvester</a>. Det här verkyget samlar metadata från allt indexerat material i tidskriften, vilket innebär korrekta sökvägar från forskningssidor som knutits till <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[För att innehållet i de tidskrifter som tillhör den här sidan ska indexeras och distribueras globalt till forskningsdatabaser, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">registrera</a> din sidas URL med the Sangia Editorial Project metadata <a href="http://lumera.sangia.org/harvester/" target="_blank">harvester</a>. Det här verkyget samlar metadata från allt indexerat material i tidskriften, vilket innebär korrekta sökvägar från forskningssidor som knutits till <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Klicka här</a> and skriv in <span class="highlight">{$siteUrl}</span> under <b>Site URL</b>, och <span class="highlight">{$oaiUrl}</span> under <b>Base URL för OAI Archive</b>.
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Klicka här</a> and skriv in <span class="highlight">{$siteUrl}</span> under <b>Site URL</b>, och <span class="highlight">{$oaiUrl}</span> under <b>Base URL för OAI Archive</b>.
 <br /><br />
-Observera att OAI-gränssnittet kan avaktiveras från sidan om man redigerar OJS systemkonfiguration. Framtida versioner av OJS kommer stödja OAI-gränssnittet på tidskriftsnivå.]]></message>
+Observera att OAI-gränssnittet kan avaktiveras från sidan om man redigerar CLA systemkonfiguration. Framtida versioner av CLA kommer stödja OAI-gränssnittet på tidskriftsnivå.]]></message>
 
 	
 	
 	<!-- Languages -->
-	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Nedladdning av språkfiler från Public Knowledge Project web server är inte tillgängligt för tillfället:</p>
+	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Nedladdning av språkfiler från Sangia Editorial Project web server är inte tillgängligt för tillfället:</p>
 	<ul>
 		<li>Din server stöder inte GNU "tar" applikationen</li>
-		<li>OJS kan inte modifiera språkregistreringsfiler, ex. "registry/locales.xml".</li>
+		<li>CLA kan inte modifiera språkregistreringsfiler, ex. "registry/locales.xml".</li>
 	</ul>
-<p>Språkfiler kan laddas ner manuellt från:<a href="http://pkp.sfu.ca">PKP hemsida</a>.</p>]]></message>
+<p>Språkfiler kan laddas ner manuellt från:<a href="http://sep.sfu.ca">SEP hemsida</a>.</p>]]></message>
 
 	<message key="admin.auth.defaultSourceDescription">
-		<![CDATA[<p>Att välja en annan förvald valideringskälla än OJS får följande effekter:</p>
+		<![CDATA[<p>Att välja en annan förvald valideringskälla än CLA får följande effekter:</p>
 <ul>
-	<li>Om en användare försöker att registrera ett nytt konto på den här sidan med ett användarnamn som redan finns på valideringskällan (Men alltså inte i OJS-databasen), så kommer registreringen bara godkännas om det valda lösenordet överensstämmer med det aktuella användarkontot.</li>
+	<li>Om en användare försöker att registrera ett nytt konto på den här sidan med ett användarnamn som redan finns på valideringskällan (Men alltså inte i CLA-databasen), så kommer registreringen bara godkännas om det valda lösenordet överensstämmer med det aktuella användarkontot.</li>
 </ul>]]></message>
 	
 	<!-- System Information -->
@@ -376,8 +376,8 @@ Observera att OAI-gränssnittet kan avaktiveras från sidan om man redigerar OJS
 
 
 	<!-- General plugin information -->
-	<message key="plugins.categories.generic.description">Generiska Plugins används för utveckling av Open Journal Systems på de områden som inte stöds av andra Plugin-kategorier.</message>
-	<message key="plugins.categories.auth.description">Validerings-Plugins tillåter Open Journal Systems att delegera användaridentiteter till andra system, t.ex. LDAP servers.</message>
+	<message key="plugins.categories.generic.description">Generiska Plugins används för utveckling av Code Lumera Editorial på de områden som inte stöds av andra Plugin-kategorier.</message>
+	<message key="plugins.categories.auth.description">Validerings-Plugins tillåter Code Lumera Editorial att delegera användaridentiteter till andra system, t.ex. LDAP servers.</message>
 
 
 
@@ -398,7 +398,7 @@ Observera att OAI-gränssnittet kan avaktiveras från sidan om man redigerar OJS
 
 
 	<message key="manager.setup.lockssDescription">
-		<![CDATA[Open Journal Systems stöder <a href="http://lockss.stanford.edu/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe)för att säkra permanent arkivering för tidskriften. LOCKSS är en Open Source-programvara utvecklad vid Stanford University Library. Programvaran möjliggör för bibliotek att bevara tidskriftshemsidor genom att göra automatiska sökningar i andra registrerade tidskrifter efter nyligen inlagt material, för att sedan hämta hem materialet för arkivering. Varje arkiv valideras kontinuerligt mot andra biblioteks cacher, och om innehållet visar sig innehålla felaktigheter kan andras cacher eller tidskrifter reparera felen.
+		<![CDATA[Code Lumera Editorial stöder <a href="http://lockss.stanford.edu/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe)för att säkra permanent arkivering för tidskriften. LOCKSS är en Open Source-programvara utvecklad vid Stanford University Library. Programvaran möjliggör för bibliotek att bevara tidskriftshemsidor genom att göra automatiska sökningar i andra registrerade tidskrifter efter nyligen inlagt material, för att sedan hämta hem materialet för arkivering. Varje arkiv valideras kontinuerligt mot andra biblioteks cacher, och om innehållet visar sig innehålla felaktigheter kan andras cacher eller tidskrifter reparera felen.
 <br /><br />
 Du behöver inte installera LOCKSS förrän publiceringen är i full gång. Installationen sker enligt följande två steg:]]></message>
 	
@@ -420,11 +420,11 @@ Författare som publicerar i den här tidskriften accepterar följande villkor:
 	 <li>Authors are permitted and encouraged to post their work online (e.g., in institutional repositories or on their website) prior to and during the submission process, as it can lead to productive exchanges, as well as earlier and greater citation of published work (See <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html"> The Effect of Open Access</a>).</li>
 </ol>]]></message>
 	<message key="manager.setup.registerJournalForIndexingDescription">
-		<![CDATA[För att innehållet i den här tidskriften ska indexeras och tillgängliggöras globalt via forskningsdatabaser <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registrera</a> din tidskrifts url hos the Public Knowledge Project metadata <a href="http://pkp.sfu.ca/harvester/" Det här verktyget samlar metadata från varje indexerad del av tidskriften och distribuerar innehållet till forskningsdatabaser som stöds av <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
+		<![CDATA[För att innehållet i den här tidskriften ska indexeras och tillgängliggöras globalt via forskningsdatabaser <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">registrera</a> din tidskrifts url hos the Sangia Editorial Project metadata <a href="http://lumera.sangia.org/harvester/" Det här verktyget samlar metadata från varje indexerad del av tidskriften och distribuerar innehållet till forskningsdatabaser som stöds av <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
 <br /><br />
-OBS! Om huvudaministratören redan har registrerat tidskriften hos PKP Harvester så kommer tidskriften automatiskt att indexeras och du behöver då inte registrera tidskriften.
+OBS! Om huvudaministratören redan har registrerat tidskriften hos SEP Harvester så kommer tidskriften automatiskt att indexeras och du behöver då inte registrera tidskriften.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Klicka här</a> och lägg till <span class="highlight">{$siteUrl}</span> under <b>Site URL</b>, och <span class="highlight">{$oaiUrl}</span> under <b>Base URL for OAI Archive</b>.]]></message>
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Klicka här</a> och lägg till <span class="highlight">{$siteUrl}</span> under <b>Site URL</b>, och <span class="highlight">{$oaiUrl}</span> under <b>Base URL for OAI Archive</b>.]]></message>
 
 	<!-- Setup Step 4 -->
 	<message key="manager.setup.basicEditorialStepsDescription"><![CDATA[Steg: Manuskriptprocess &gt; Manuskriptgranskning &gt; Behandling av manuskript &gt; Innehållsförteckning.<br /><br />
@@ -784,14 +784,14 @@ Aktiva visar antalet granskare som för tillfället arbetar med granskning.]]></
 	<message key="about.memberships">Medlemskap</message>
 	<message key="about.journalSponsorship">Tidskriftssponsorer</message>
 	<message key="about.aboutThisPublishingSystem">Om det här publiceringssystemet</message>
-	<message key="about.aboutOJSJournal"><![CDATA[Den här tidskriften använder Open Journal Systems {$ojsVersion}, ett open source-system för tidskriftshantering och programvara för publicering utvecklad, stöttat och fritt distribuerat av <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> under GNU General Public License.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[Den här sidan använder Open Journal Systems {$ojsVersion}, ett open source-system för tidskriftshantering och programvara för publicering utvecklad, stöttat och fritt distribuerat av <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> under GNU General Public License.]]></message>
+	<message key="about.aboutCLAJournal"><![CDATA[Den här tidskriften använder Code Lumera Editorial {$claVersion}, ett open source-system för tidskriftshantering och programvara för publicering utvecklad, stöttat och fritt distribuerat av <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> under GNU General Public License.]]></message>
+	<message key="about.aboutCLASite"><![CDATA[Den här sidan använder Code Lumera Editorial {$claVersion}, ett open source-system för tidskriftshantering och programvara för publicering utvecklad, stöttat och fritt distribuerat av <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> under GNU General Public License.]]></message>
 	
 	<!-- Announcement -->
 
 	<!-- Help -->
-	<message key="help.ojsHelp">Open Journal Systems Hjälp</message>
-	<message key="help.ojsHelpAbbrev">OJS Hjälp</message>	
+	<message key="help.claHelp">Code Lumera Editorial Hjälp</message>
+	<message key="help.claHelpAbbrev">CLA Hjälp</message>	
 
 	<!-- Donations -->
 	<message key="donations.thankYou">Tack</message>
@@ -833,16 +833,16 @@ Aktiva visar antalet granskare som för tillfället arbetar med granskning.]]></
 	<message key="payment.subscription.expires">Upphör</message>	
 
 	<!-- Installer -->
-	<message key="installer.ojsInstallation">OJS installation</message>
-	<message key="installer.ojsUpgrade">OJS Uppgradering</message>
+	<message key="installer.claInstallation">CLA installation</message>
+	<message key="installer.claUpgrade">CLA Uppgradering</message>
 	<message key="installer.installationInstructions">
-	<![CDATA[<h4>OJS Version {$version}</h4>
+	<![CDATA[<h4>CLA Version {$version}</h4>
 
-<p>Tack för att du laddar ned Public Knowledge Project's <strong>Open Journal Systems</strong>. Innan du fortsätter, läs <a href="{$baseUrl}/docs/README">README</a> filen som medföljer mjukvaran. För ytterligare information om the Public Knowledge Project, vänligen se <a href="http://pkp.sfu.ca/" target="_blank">PKP-hemsida</a>. Om du vill rapportera buggar eller behöver teknisk support, se<a href="http://forum.pkp.sfu.ca">supportforum</a> eller besök PKP's online <a href="https://github.com/pkp/pkp-lib#issues" target="_blank"> system för buggrapportering</a>. Vi rekommenderar I första hand supportforumet om ni har frågor men det går också bra att maila supporten på: <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>Tack för att du laddar ned Sangia Editorial Project's <strong>Code Lumera Editorial</strong>. Innan du fortsätter, läs <a href="{$baseUrl}/docs/README">README</a> filen som medföljer mjukvaran. För ytterligare information om the Sangia Editorial Project, vänligen se <a href="http://lumera.sangia.org/" target="_blank">SEP-hemsida</a>. Om du vill rapportera buggar eller behöver teknisk support, se<a href="http://forum.sep.sfu.ca">supportforum</a> eller besök SEP's online <a href="https://github.com/sep/sep-lib#issues" target="_blank"> system för buggrapportering</a>. Vi rekommenderar I första hand supportforumet om ni har frågor men det går också bra att maila supporten på: <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
 
 <h4>Uppgradera</h4>
 
-<p>Om du uppgraderar en existerande version av OJS 2.x, <a href="{$upgradeUrl}">klicka här</a> för att gå vidare.</p>
+<p>Om du uppgraderar en existerande version av CLA 2.x, <a href="{$upgradeUrl}">klicka här</a> för att gå vidare.</p>
 
 <h4>Nödvändiga systemkrav</h4>
 
@@ -853,13 +853,13 @@ Aktiva visar antalet granskare som för tillfället arbetar med granskning.]]></
 	<li>Operativsystem: Alla OS som stöder ovan nämnda programvara, även <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.sun.com/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, <a href="http://www.microsoft.com/">Windows</a></li>
 </ul>
 
-<p>Eftersom PKP inte har resurser att testa alla möjliga kombinationer och versioner av programvaror och plattformar, kan vi inte garantera 100% funktionalitet och support.</p>
+<p>Eftersom SEP inte har resurser att testa alla möjliga kombinationer och versioner av programvaror och plattformar, kan vi inte garantera 100% funktionalitet och support.</p>
 
-<p>Ändringar till de här inställningarna kan göras först efter installationen genom att redigera <tt>config.inc.php</tt> OJS basmapp, eller i gränssnittet för nätadministratören.</p>
+<p>Ändringar till de här inställningarna kan göras först efter installationen genom att redigera <tt>config.inc.php</tt> CLA basmapp, eller i gränssnittet för nätadministratören.</p>
 
 <h4>Stöttade databassystem</h4>
 
-<p>OJS har för tillfället endast testats på MySQL och PostgreSQL, även om andra databasadministrationssystem stöttade av <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> kan fungera (helt eller delvis). Kompatibilitetsrapporter och/eller code patcher för alternativa DBMSs kan skickas til OJS teamet..</p>
+<p>CLA har för tillfället endast testats på MySQL och PostgreSQL, även om andra databasadministrationssystem stöttade av <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> kan fungera (helt eller delvis). Kompatibilitetsrapporter och/eller code patcher för alternativa DBMSs kan skickas til CLA teamet..</p>
 
 <h4>Innan installationen</h4>
 
@@ -877,33 +877,33 @@ Aktiva visar antalet granskare som för tillfället arbetar med granskning.]]></
 
 <h4>Manuel installation</h4>
 
-<p>Välj <strong>Manuell installation</strong> för SQL-frågor som krävs för att skapa OJS-databasens schema och grunddata så att databasinstallationen kan utföras manuellt. Denna valmöjligheten är nyttig för debugging av installationsproblem, särskilt för plattformar som systemet inte har stöd för. Observera att den här installationsmetoden varken kommer att laga databasen eller tabeller, även om konfigurationsfilen kommer att skrivas med de medföljande databasinställningarna.</p>]]></message>
+<p>Välj <strong>Manuell installation</strong> för SQL-frågor som krävs för att skapa CLA-databasens schema och grunddata så att databasinstallationen kan utföras manuellt. Denna valmöjligheten är nyttig för debugging av installationsproblem, särskilt för plattformar som systemet inte har stöd för. Observera att den här installationsmetoden varken kommer att laga databasen eller tabeller, även om konfigurationsfilen kommer att skrivas med de medföljande databasinställningarna.</p>]]></message>
 	<message key="installer.upgradeInstructions">
-		<![CDATA[<h4>OJS Version {$version}</h4>
+		<![CDATA[<h4>CLA Version {$version}</h4>
 	
-<p>Tack för att du laddar ned the Public Knowledge Project's <strong>Open Journal Systems</strong>. Innan du fortsätter, vänligen läs <a href="{$baseUrl}/docs/README">README</a> och <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> filerna som medföljer programvaran. För ytterligare information om the Public Knowledge Project, se <a href="http://pkp.sfu.ca/" target="_blank">PKP:s hemsida</a>. Om du vill rapportera buggar eller behöver teknisk support, se<a href="http://forum.pkp.sfu.ca">supportforum</a> eller besök PKP's <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">system för buggraportering</a>. Vi rekommenderar I första hand supportforumet om ni har frågor men det går också bra att maila supporten på: <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
-<p>Det rekommenderas <strong>kraftigt</strong> att du gör backup på din databas, filmappen, och OJS installationsmapp innan du fortsätter.</p>
+<p>Tack för att du laddar ned the Sangia Editorial Project's <strong>Code Lumera Editorial</strong>. Innan du fortsätter, vänligen läs <a href="{$baseUrl}/docs/README">README</a> och <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> filerna som medföljer programvaran. För ytterligare information om the Sangia Editorial Project, se <a href="http://lumera.sangia.org/" target="_blank">SEP:s hemsida</a>. Om du vill rapportera buggar eller behöver teknisk support, se<a href="http://forum.sep.sfu.ca">supportforum</a> eller besök SEP's <a href="https://github.com/sep/sep-lib#issues" target="_blank">system för buggraportering</a>. Vi rekommenderar I första hand supportforumet om ni har frågor men det går också bra att maila supporten på: <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
+<p>Det rekommenderas <strong>kraftigt</strong> att du gör backup på din databas, filmappen, och CLA installationsmapp innan du fortsätter.</p>
 <p>Om du kör installationen i <a href="http://www.php.net/features.safe-mode" target="_blank">PHP Safe Mode</a>, vänligen försäkra dig om att the max_execution_time directive i din php.ini konfigurationsfil är satt till ett högt gränsvärde. Om denna eller annan tidsbegränsning (ex. Apache's "Timeout" direktiv) överskrids och uppgraderingsprocessen avbryts, så måste arbetet hanteras manuellt.</p>]]></message>
 	<message key="installer.localeSettingsInstructions"><![CDATA[För fullständig Unicode (UTF-8) support, välj UTF-8 för samtliga teckeninställningar. Observera att denna support för tillfället kräver en MySQL >= 4.1.1 or PostgreSQL >= 7.1 databasserver. Observera även att en fullständig Unicode support kräver PHP >= 4.3.0 med support för<a href="http://www.php.net/mbstring" target="_blank">mbstring</a> bibliotek (aktiverad som default i de senaste PHPinstallationerna). Det kan uppstå problem med utökade teckeninställningar om inte servern uppfyller dessa krav.
 <br /><br />
 Din server stöttas för tillfället av mbstring: <strong>{$supportsMBString}</strong>]]></message>
-	<message key="installer.localeInstructions">Primärspråket som ska användas i det här systemet. Se OJS-dokumentationen om du är intresserad av att använda språk som inte listas här.</message>
+	<message key="installer.localeInstructions">Primärspråket som ska användas i det här systemet. Se CLA-dokumentationen om du är intresserad av att använda språk som inte listas här.</message>
 	<message key="installer.additionalLocalesInstructions">Välj andra språk som ska stödjas av systemet. De här språken kommer finnas tillgängliga för användning i tidskrifter som sidan är värd för. Ytterligare språk kan installeras när som helst av Sidadministratören.</message>
 	<message key="installer.filesDirInstructions"><![CDATA[Lägg till fullständigt söknamn på en existerande mapp där uppladdade filer kan sparas. Mappen bör inte vara direkttillgänglig från webben. <strong>Vänligen försäkra dig om att mappen existerar och är överskrivningsbar, före installation.</strong> Windows sökvägar ska innehålla omvända snedstreck, ex. "C:/myjournal/files".]]></message>
-	<message key="installer.databaseSettingsInstructions">OJS behöver tillgång till en SQL-databas för att lagra data. Se systemkrav ovan för en lista över databaser som stöds. I fälten nedan, ange inställningar som ska användas för uppkoppling till databasen.</message>
-	<message key="installer.installOJS">Installera Open Journal Systems</message>
-	<message key="installer.upgradeOJS">Uppgradera Open Journal Systems</message>
-	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<b>Varning:</b> Om installationen misslyckades under själva installationen kan du tvingas 'släppa' din OJS-databas eller dina databastabellerna innan du kan försöka att återinstallera databasen.]]></message>
+	<message key="installer.databaseSettingsInstructions">CLA behöver tillgång till en SQL-databas för att lagra data. Se systemkrav ovan för en lista över databaser som stöds. I fälten nedan, ange inställningar som ska användas för uppkoppling till databasen.</message>
+	<message key="installer.installCLA">Installera Code Lumera Editorial</message>
+	<message key="installer.upgradeCLA">Uppgradera Code Lumera Editorial</message>
+	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<b>Varning:</b> Om installationen misslyckades under själva installationen kan du tvingas 'släppa' din CLA-databas eller dina databastabellerna innan du kan försöka att återinstallera databasen.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>VIKTIGT!</h4>
 <p>Installationen kunde inte skriva över konfigurationsfilen automatiskt. Innan du försöker använda systemet, vänligen öppna <tt>config.inc.php</tt> i en lämplig textredigerare och ersät innehållet med texten nedan.</p>]]></message>
 	<message key="installer.manualSQLInstructions"><![CDATA[<h4>Manuell installation</h4>
-<p>SQL-frågorna för att skapa OJS-databasens schema och grunddata visas nedan. Notera att systemet inte kan fungera förrän dessa frågor har körts manuellt. Du behöver också redigera konfigurationsfilen <tt>config.inc.php</tt> manuellt.</p>]]></message>
-	<message key="installer.installationComplete"><![CDATA[<p>Installationen av OJS är klar utan rapporterade problem.</p>
+<p>SQL-frågorna för att skapa CLA-databasens schema och grunddata visas nedan. Notera att systemet inte kan fungera förrän dessa frågor har körts manuellt. Du behöver också redigera konfigurationsfilen <tt>config.inc.php</tt> manuellt.</p>]]></message>
+	<message key="installer.installationComplete"><![CDATA[<p>Installationen av CLA är klar utan rapporterade problem.</p>
 <p>För att använda systemet, <a href="{$loginUrl}">logga in </a> med det användarnamn och lösenord som du angivit på föregående sida.</p>
-<p>Om du vill ta emot nyheter och uppdateringar, <strong>vänligen registrera på <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a>.</strong> Om du har frågor eller kommentarer, gå till <a href="http://forum.pkp.sfu.ca" target="_new">supportforum</a>.</p>]]></message>
-	<message key="installer.upgradeComplete"><![CDATA[<p>Uppgradering av OJS till version {$version} är klar utan rapporterade problem.</p>
+<p>Om du vill ta emot nyheter och uppdateringar, <strong>vänligen registrera på <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a>.</strong> Om du har frågor eller kommentarer, gå till <a href="http://forum.sep.sfu.ca" target="_new">supportforum</a>.</p>]]></message>
+	<message key="installer.upgradeComplete"><![CDATA[<p>Uppgradering av CLA till version {$version} är klar utan rapporterade problem.</p>
 <p>Glöm inte att ändra "installed"-inställningen i din config.inc.php konfigurationsfil till <i>On</i>.</p>
-<p>Om du ännu inte har registrerat dig och önskar ta emot nyheter och uppdateringar, <strong>vänligen registrera dig på <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a>.</strong> Om du har frågor eller kommentarer, gå till <a href="http://forum.pkp.sfu.ca" target="_new">supportforum</a>.</p>]]></message>
+<p>Om du ännu inte har registrerat dig och önskar ta emot nyheter och uppdateringar, <strong>vänligen registrera dig på <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a>.</strong> Om du har frågor eller kommentarer, gå till <a href="http://forum.sep.sfu.ca" target="_new">supportforum</a>.</p>]]></message>
 
 
 	<!-- Article Logs -->
@@ -991,9 +991,9 @@ Validering av URL:er kan misslyckas på sökningar som kräver inskickad data.]]
 
 	<message key="rt.metadata.dublinCore.primaryAuthor">Skapare</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">Författarens namn, tillhörighet, land</message>
-	<message key="rt.metadata.pkp.peerReviewed">Granskad Artikel</message>
-	<message key="rt.metadata.pkp.doi">Digital Object Identifier</message>
+	<message key="rt.metadata.sep.primaryAuthor">Författarens namn, tillhörighet, land</message>
+	<message key="rt.metadata.sep.peerReviewed">Granskad Artikel</message>
+	<message key="rt.metadata.sep.doi">Digital Object Identifier</message>
 
 
 
@@ -1152,7 +1152,7 @@ The paragraph that begins "This last topic..." is not indented.</pre>]]></messag
 ]]></message>
 	<message key="default.journalSettings.forReaders"><![CDATA[Vi uppmuntrar läsare att abbonera på nyhetsmeddelanden från tidskriften. Använd<a href="{$indexUrl}/{$journalPath}/user/register">Registrera</a> längst upp på tidskriftens hemsida. Registrering innebär att du får E-post med innehållsförteckning varje gång ett nytt nummer publiceras. Se tidskriftens <a href="{$indexUrl}/{$journalPath}/about/submissions#privacyStatement">Sekretesspolicy</a> som försäkrar att läsarens namn och E-Post inte kommer att användas för andra ändamål.]]></message>
 	<message key="default.journalSettings.forAuthors"><![CDATA[Intreserad av att skicka manuskript till den här tidskriften? Vi rekommenderar att du läser <a href="{$indexUrl}/{$journalPath}/about">Om Tidskriften</a> för tidskriftens olika sektionspolicies, liksom<a href="{$indexUrl}/{$journalPath}/about/submissions#authorGuidelines">Författarinstruktioner</a>. Författare måste <a href="{$indexUrl}/{$journalPath}/user/register">registrera</a> sig i tidskiften innan inskickande av manuskript, eller, om du du redan är registrerad, klicka <a href="{$indexUrl}/index/login">logga in</a> och påbörja manusinlämningens 5 steg.]]></message>
-	<message key="default.journalSettings.forLibrarians"><![CDATA[Vi uppmuntrar forskningsbibliotekarier att lista den här tidskriften bland bibliotekets elektronsika resurser. Vi uppmuntrar även att information om OJS öppna publiceringssystem sprids till fakulteter som publicerar forskningsmaterial (se <a href="http://pkp.sfu.ca/ojs">Open Journal Systems</a>).]]></message>
+	<message key="default.journalSettings.forLibrarians"><![CDATA[Vi uppmuntrar forskningsbibliotekarier att lista den här tidskriften bland bibliotekets elektronsika resurser. Vi uppmuntrar även att information om CLA öppna publiceringssystem sprids till fakulteter som publicerar forskningsmaterial (se <a href="http://lumera.sangia.org/cla">Code Lumera Editorial</a>).]]></message>
 	<message key="default.journalSettings.lockssLicense"><![CDATA[Den här tidskriften tillämpar LOCKSS-principen för en effektivare spridning och arkivering bland de deltagande biblioteken. <a href="http://lockss.stanford.edu/">Mer...</a>]]></message>
 	
 	<!-- Default settings for payment items. -->
@@ -1209,8 +1209,8 @@ The paragraph that begins "This last topic..." is not indented.</pre>]]></messag
 	<message key="user.subscriptions.form.institutionName">Institutionens namn</message>
 	<message key="about.subscriptions.individual">Individuella abonnemang</message>
 	<message key="about.subscriptions.institutional">Institutionella abonnemang</message>
-	<message key="installer.installApplication">Installera Open Journal Systems</message>
-	<message key="installer.upgradeApplication">Uppgradera Open Journal Systems</message>
+	<message key="installer.installApplication">Installera Code Lumera Editorial</message>
+	<message key="installer.upgradeApplication">Uppgradera Code Lumera Editorial</message>
 	<message key="default.journalSettings.submissionFeeDescription">Författare måste betala en publiceringsavgift för finansiering av sakkunnigbedömning/granskning.</message>
 	<message key="default.journalSettings.fastTrackFeeDescription">Med den här avgiften garanteras att granskning och besked från redaktören sker inom fyra veckor.</message>
 	<message key="default.journalSettings.publicationFeeDescription">Om artikeln accepteras för publicering, kommer du ombedjas att betala en publiceringsavgift för att täcka publiceringskostnaderna.</message>

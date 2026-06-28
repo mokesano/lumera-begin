@@ -16,16 +16,16 @@
  */
 
 
-import('lib.pkp.classes.core.PKPRequest');
+import('lib.sep.classes.core.SEPRequest');
 
-class Request extends PKPRequest {
+class Request extends SEPRequest {
 	/**
 	 * Deprecated
-	 * @see PKPPageRouter::getRequestedContextPath()
+	 * @see SEPPageRouter::getRequestedContextPath()
 	 */
 	function getRequestedJournalPath() {
 		static $journal;
-		$_this =& PKPRequest::_checkThis();
+		$_this =& SEPRequest::_checkThis();
 
 		if (!isset($journal)) {
 			$journal = $_this->_delegateToRouter('getRequestedContextPath', 1);
@@ -37,20 +37,20 @@ class Request extends PKPRequest {
 
 	/**
 	 * Deprecated
-	 * @see PKPPageRouter::getContext()
+	 * @see SEPPageRouter::getContext()
 	 */
 	function &getJournal() {
-		$_this =& PKPRequest::_checkThis();
+		$_this =& SEPRequest::_checkThis();
 		$returner = $_this->_delegateToRouter('getContext', 1);
 		return $returner;
 	}
 
 	/**
 	 * Deprecated
-	 * @see PKPPageRouter::getRequestedContextPath()
+	 * @see SEPPageRouter::getRequestedContextPath()
 	 */
 	function getRequestedContextPath($contextLevel = null) {
-		$_this =& PKPRequest::_checkThis();
+		$_this =& SEPRequest::_checkThis();
 
 		// Emulate the old behavior of getRequestedContextPath for
 		// backwards compatibility.
@@ -63,31 +63,31 @@ class Request extends PKPRequest {
 
 	/**
 	 * Deprecated
-	 * @see PKPPageRouter::getContext()
+	 * @see SEPPageRouter::getContext()
 	 */
 	function &getContext($level = 1) {
-		$_this =& PKPRequest::_checkThis();
+		$_this =& SEPRequest::_checkThis();
 		$returner = $_this->_delegateToRouter('getContext', $level);
 		return $returner;
 	}
 
 	/**
 	 * Deprecated
-	 * @see PKPPageRouter::getContextByName()
+	 * @see SEPPageRouter::getContextByName()
 	 */
 	function &getContextByName($contextName) {
-		$_this =& PKPRequest::_checkThis();
+		$_this =& SEPRequest::_checkThis();
 		$returner = $_this->_delegateToRouter('getContextByName', $contextName);
 		return $returner;
 	}
 
 	/**
 	 * Deprecated
-	 * @see PKPPageRouter::url()
+	 * @see SEPPageRouter::url()
 	 */
 	function url($journalPath = null, $page = null, $op = null, $path = null,
 			$params = null, $anchor = null, $escape = false) {
-		$_this =& PKPRequest::_checkThis();
+		$_this =& SEPRequest::_checkThis();
 		return $_this->_delegateToRouter('url', $journalPath, $page, $op, $path,
 			$params, $anchor, $escape);
 	}
@@ -97,7 +97,7 @@ class Request extends PKPRequest {
 	 * @see PageRouter::redirectHome()
 	 */
 	function redirectHome() {
-		$_this =& PKPRequest::_checkThis();
+		$_this =& SEPRequest::_checkThis();
 		return $_this->_delegateToRouter('redirectHome');
 	}
 }

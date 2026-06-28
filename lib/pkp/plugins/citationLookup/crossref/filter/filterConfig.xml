@@ -14,7 +14,7 @@
 	<filters>
 		<filter
 			inGroup="nlm30-element-citation=>nlm30-element-citation"
-			class="lib.pkp.plugins.citationLookup.crossref.filter.CrossrefNlm30CitationSchemaFilter"
+			class="lib.sep.plugins.citationLookup.crossref.filter.CrossrefNlm30CitationSchemaFilter"
 			isTemplate="1" />
 	</filters>
 </filterConfig>

@@ -14,7 +14,7 @@
  * @brief Operations for retrieving and modifying a user's review interests.
  */
 
-import('lib.pkp.classes.controlledVocab.ControlledVocabDAO');
+import('lib.sep.classes.controlledVocab.ControlledVocabDAO');
 
 define('CONTROLLED_VOCAB_INTEREST', 'interest');
 
@@ -91,7 +91,7 @@ class InterestDAO extends ControlledVocabDAO {
 		usort($interests, create_function('$s1, $s2', 'return strcmp($s1->getInterest(), $s2->getInterest());'));
 
 		// Turn back into an iterator.
-		import('lib.pkp.classes.core.ArrayItemIterator');
+		import('lib.sep.classes.core.ArrayItemIterator');
 		return new ArrayItemIterator($interests);
 	}
 

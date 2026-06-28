@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.file.EditableFile');
+import('lib.sep.classes.file.EditableFile');
 
 class EditableLocaleFile extends LocaleFile {
 	var $editableFile;

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 <!--
   * 000028.xml
   *
@@ -29,7 +29,7 @@
 </p><p><samp class="code">http://www.google.ca/search?hl=en&q=FOOBAR&meta=</samp></p><p>
 کلمه مورد جستجو یعنی FOOBARرا با این متغیر جایگزین کنید 
 &#123;$formKeywords&#125;
-وقتی OJSبا این متغیر روبه رو می شود آن را با متغیر مناسبی که در اطلاعات جانبی آیتم وجود دارد جایگزین میکند اینکار به ما URLذیل را برایRT میدهد  
+وقتی CLAبا این متغیر روبه رو می شود آن را با متغیر مناسبی که در اطلاعات جانبی آیتم وجود دارد جایگزین میکند اینکار به ما URLذیل را برایRT میدهد  
 </p><p><samp class="code">http://www.google.ca/search?hl=en&q=&#123;$formKeywords&#125;&meta=</samp></p><p>
 با این حال از آنجا که در این مورد سایر پارامتر ها ضروری نیستند لذا میتوانیم از URLساده شده زیر برای RTاستفاده کنیم
 </p><p><samp class="code">http://www.google.ca/search?q=&#123;$formKeywords&#125;</samp></p><p>

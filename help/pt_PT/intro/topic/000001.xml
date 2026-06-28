@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -32,23 +32,23 @@
 	<section title="1. Como criar revista no sistema?">
 		<![CDATA[
 <ol type="a">
-	<li><a href="http://pkp.sfu.ca/ojs/ojs_download" target="_blank">Transfira</a> o sistema e instale o programa, seguindo as suas instruções de instalação, num servidor que atenda aos requisitos de software.</li>
+	<li><a href="http://lumera.sangia.org/cla/cla_download" target="_blank">Transfira</a> o sistema e instale o programa, seguindo as suas instruções de instalação, num servidor que atenda aos requisitos de software.</li>
 	<li>Use o nome de utilizador e a senha de Administrador fornecidos durante a instalação para aceder ao sistema.</li>
 	<li>Crie uma nova revista em Revistas Hospedadas. </li>
 	<li>O Administrador do Sistema será automaticamente registado como Director da nova revista, mas podem ser criados outros utilizadores com Função de Director, se necessário.</li>
 	<li>O Director entra em Configuração e preenche os cinco passos (não necessariamente todos de uma vez), cujo resultado será um portal pronto para receber submissões, gerir o processo editorial e publicar a revista on-line.</li>
-	<li>Consulte <a href="http://pkp.sfu.ca/ojs/OJSinanHour.pdf" target="_blank">OJS numa Hora</a> para mais informações sobre como utilizar o sistema.</li>
+	<li>Consulte <a href="http://lumera.sangia.org/cla/CLAinanHour.pdf" target="_blank">CLA numa Hora</a> para mais informações sobre como utilizar o sistema.</li>
 </ol>
 		]]>
 	</section>
 	<section title="2. Onde eu posso encontrar suporte técnico, informar bugs e sugerir melhorias no sistema?">
 		<![CDATA[
-<p>O Public Knowledge Project opera um <a href="http://forum.pkp.sfu.ca/" target="_blank">Fórum de Suporte</a> onde pode-se pesquisar por muitas respostas e colocar novas perguntas. Por exemplo, mensagens de erro podem ser pesquisadas, levando a soluções propostas para os assuntos mais comuns. Caso não encontre o que precisa, o utilizador pode perguntar para <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>. Informação sobre Bugs devem ser submetidos para o <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a> do PKP.</p>
+<p>O Sangia Editorial Project opera um <a href="http://forum.lumera.sangia.org/" target="_blank">Fórum de Suporte</a> onde pode-se pesquisar por muitas respostas e colocar novas perguntas. Por exemplo, mensagens de erro podem ser pesquisadas, levando a soluções propostas para os assuntos mais comuns. Caso não encontre o que precisa, o utilizador pode perguntar para <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>. Informação sobre Bugs devem ser submetidos para o <a href="https://github.com/sep/sep-lib#issues" target="_blank">Github.com issues</a> do SEP.</p>
 		]]>
 	</section>
 	<section title="3. Como traduzir o sistema para outros idiomas?">
 		<![CDATA[
-<p>Instruções para tradução estão disponíveis no ficheiro docs/README que está incluído com o código fonte do sistema. Informações adicionais sobre tradução podem ser encontradas no <a href="http://forum.pkp.sfu.ca/" target="_blank">Fórum de Suporte do PKP</a>.</p>
+<p>Instruções para tradução estão disponíveis no ficheiro docs/README que está incluído com o código fonte do sistema. Informações adicionais sobre tradução podem ser encontradas no <a href="http://forum.lumera.sangia.org/" target="_blank">Fórum de Suporte do SEP</a>.</p>
 		]]>
 	</section>
 	<section title='4. Por que aparece a mensagem "Esta revista não aceita submissões neste momento"?'>
@@ -58,11 +58,11 @@
 	</section>
 	<section title='5. Como disponibilizar acesso a manuscritos que estão no estágio "em revisão" ou em "pré-impressão" antes de serem publicados pela revista?'>
 		<![CDATA[
-			<p>O sistema oferece a Editores duas opções para "acesso a pré-impressos (pré-prints)". Pode ser criada uma secção na edição actual, na qual são inseridos aprovados para uma futura edição ainda por definir e publicar. O artigo pré-impresso é incluído no Sumário da edição actual. Quando a próxima edição estiver pronta para publicação, basta remover os artigos da edição actual e agendá-los na próxima edição. Outra opção, mais restrita, é o Editor pode fazer uso da URL criada em "Leitura de Provas" na Edição da submissão, possibilitando o acesso da "pré-visualização" do artigo (para utilizadores privilegiados) antes de ser publicado numa edição da revista. Enquanto isso, o PKP avalia o interesse nesta funcionalidade para considerar a criação de uma opção formal para tal funcionallidade.</p>]]>
+			<p>O sistema oferece a Editores duas opções para "acesso a pré-impressos (pré-prints)". Pode ser criada uma secção na edição actual, na qual são inseridos aprovados para uma futura edição ainda por definir e publicar. O artigo pré-impresso é incluído no Sumário da edição actual. Quando a próxima edição estiver pronta para publicação, basta remover os artigos da edição actual e agendá-los na próxima edição. Outra opção, mais restrita, é o Editor pode fazer uso da URL criada em "Leitura de Provas" na Edição da submissão, possibilitando o acesso da "pré-visualização" do artigo (para utilizadores privilegiados) antes de ser publicado numa edição da revista. Enquanto isso, o SEP avalia o interesse nesta funcionalidade para considerar a criação de uma opção formal para tal funcionallidade.</p>]]>
 	</section>
 	<section title="6. Como informar o público que a revista está disponível na Web?">
 		<![CDATA[
-<p>A sua revista deverá ser indexada pelo Google e outros grandes sistemas de busca sem muito esforço, porém é importante tomar algumas atitudes pró-activas. Certifique-se de registar a revista no Colectador de Metadados PKP Harvester em Configuração Passo 3, o que leverá  sua revista a ser indexada noutros motores de busca da Open Archives Initiative, incluindo o <a href="http://pkp.sfu.ca/harvester/" target="_blank">PKP Harvester</a> e o <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Se a sua revista publica em Acesso Livre, entre em contcato com a biblioteca da sua instituição para saber como listar a sua revista entre as revistas eletrónicas e como entrar em contacto com uma série de listas de bibliotecas com ferramentas de pesquisa on-line. Verifique a possibilidade de usar listas de discussão ou portais na web de grupos relevantes para anunciar uma "chamada para submissão de artigos" ou o lançamento da revista. Finalmente, em Configurações de Segurança/Accesso sob Configuração (2.5), o Director deve permitir o registo de Leitores para que estes recebam a notificação de nova edição publicada, entre outras informações relevantes.</p>
+<p>A sua revista deverá ser indexada pelo Google e outros grandes sistemas de busca sem muito esforço, porém é importante tomar algumas atitudes pró-activas. Certifique-se de registar a revista no Colectador de Metadados SEP Harvester em Configuração Passo 3, o que leverá  sua revista a ser indexada noutros motores de busca da Open Archives Initiative, incluindo o <a href="http://lumera.sangia.org/harvester/" target="_blank">SEP Harvester</a> e o <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Se a sua revista publica em Acesso Livre, entre em contcato com a biblioteca da sua instituição para saber como listar a sua revista entre as revistas eletrónicas e como entrar em contacto com uma série de listas de bibliotecas com ferramentas de pesquisa on-line. Verifique a possibilidade de usar listas de discussão ou portais na web de grupos relevantes para anunciar uma "chamada para submissão de artigos" ou o lançamento da revista. Finalmente, em Configurações de Segurança/Accesso sob Configuração (2.5), o Director deve permitir o registo de Leitores para que estes recebam a notificação de nova edição publicada, entre outras informações relevantes.</p>
 		]]>
 	</section>
 	<section title="7. Como apresentar um histórico do Expediente da revista?">

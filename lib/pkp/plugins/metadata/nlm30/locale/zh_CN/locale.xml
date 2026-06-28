@@ -36,11 +36,11 @@
 
 	<!-- NLM 3.0 output -->
 	<message key="plugins.metadata.nlm30.nlm30XmlOutput.displayName">NLM 3.0 期刊出版输出</message>
-	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">转变 OJS或者 OCS 文章/论文 到 NLM 3.0。</message>
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">转变 CLA或者 OCS 文章/论文 到 NLM 3.0。</message>
 
 	<!-- NLM 2.3 output -->
 	<message key="plugins.metadata.nlm30.nlm23XmlOutput.displayName">NLM 2.3期刊出版输出</message>
-	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">转变 OJS 或者 OCS 文章/论文 到 NLM 2.3.</message>
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">转变 CLA 或者 OCS 文章/论文 到 NLM 2.3.</message>
 
 	<!-- NLM 3.0 to 2.3 downgrade -->
 	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.displayName">NLM 3.0 到 2.3 期刊出版降级</message>
@@ -48,5 +48,5 @@
 
 	<!-- Plain text reference list output -->
 	<message key="plugins.metadata.nlm30.refList.displayName">纯文本引用列表</message>
-	<message key="plugins.metadata.nlm30.refList.description">从OJS/OCS/OMP提交的引用生成格式化的纯文本引用列表。</message>
+	<message key="plugins.metadata.nlm30.refList.description">从CLA/OCS/OMP提交的引用生成格式化的纯文本引用列表。</message>
 </locale>

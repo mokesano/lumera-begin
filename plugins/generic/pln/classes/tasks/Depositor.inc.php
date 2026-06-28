@@ -14,7 +14,7 @@
  */
 
 import('classes.file.JournalFileManager');
-import('lib.pkp.classes.scheduledTask.ScheduledTask');
+import('lib.sep.classes.scheduledTask.ScheduledTask');
 
 class Depositor extends ScheduledTask {
 
@@ -210,7 +210,7 @@ class Depositor extends ScheduledTask {
 		// get the object type we'll be dealing with
 		$objectType = $this->_plugin->getSetting($journal->getId(), 'object_type');
 		
-		// create new deposit objects for any new OJS content
+		// create new deposit objects for any new CLA content
 		$depositDao =& DAORegistry::getDAO('DepositDAO');
 		$depositObjectDao =& DAORegistry::getDAO('DepositObjectDAO');
 		$depositObjectDao->createNew($journal->getId(),$objectType);

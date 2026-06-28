@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/users/locale/ja_JP/locale.xml
@@ -56,5 +56,5 @@
 	<message key="plugins.importexport.users.export.errorsOccurred">エクスポート処理中にエラーが発生しました</message>
 	<message key="plugins.importexport.users.export.couldNotWriteFile">ファイル "{$fileName}" に書き込むことができませんでした。</message>
 	<message key="plugins.importexport.users.import.warning">警告</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">{$importHash}でハッシュされたパスワードは使用できません。この雑誌は{$ojsHash}を使用するよう設定されています。処理を継続する場合は、インポートしたユーザパスワードを再設定する必要があります。</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">{$importHash}でハッシュされたパスワードは使用できません。この雑誌は{$claHash}を使用するよう設定されています。処理を継続する場合は、インポートしたユーザパスワードを再設定する必要があります。</message>
 </locale>

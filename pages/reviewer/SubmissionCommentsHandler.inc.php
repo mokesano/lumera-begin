@@ -29,7 +29,7 @@ class SubmissionCommentsHandler extends ReviewerHandler {
 	/**
 	 * View peer review comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewPeerReviewComments($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -43,7 +43,7 @@ class SubmissionCommentsHandler extends ReviewerHandler {
 	/**
 	 * Post peer review comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function postPeerReviewComment($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -63,7 +63,7 @@ class SubmissionCommentsHandler extends ReviewerHandler {
 	/**
 	 * Edit comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editComment($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -115,7 +115,7 @@ class SubmissionCommentsHandler extends ReviewerHandler {
 	/**
 	 * Delete comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteComment($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -135,7 +135,7 @@ class SubmissionCommentsHandler extends ReviewerHandler {
 
 	/**
 	 * Handle validation of incoming requests.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $reviewId int
 	 * @param $commentId int optional
 	 */

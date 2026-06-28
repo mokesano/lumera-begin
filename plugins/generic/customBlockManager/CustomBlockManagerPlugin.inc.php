@@ -14,7 +14,7 @@
  *
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class CustomBlockManagerPlugin extends GenericPlugin {
 	function getDisplayName() {

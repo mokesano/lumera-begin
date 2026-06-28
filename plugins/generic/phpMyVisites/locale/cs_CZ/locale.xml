@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/phpMyVisites/locale/cs_CZ/locale.xml
@@ -16,7 +16,7 @@
 
 	<!-- phpMyVisites -->
 	<message key="plugins.generic.phpmv.displayName">Plugin phpMyVisites</message>
-	<message key="plugins.generic.phpmv.description"><![CDATA[Integruje OJS s phpMyVisites - volně dostupnou a open source aplikací pro analýzu provozu webových stránek. Vyžaduje, aby již byla nainstalována aplikace phpMyVisites. Prosím viz <a href="http://www.phpmyvisites.us/" title="stránka phpMyVisites">stránku phpMyVisites</a> pro více informací.]]></message>
+	<message key="plugins.generic.phpmv.description"><![CDATA[Integruje CLA s phpMyVisites - volně dostupnou a open source aplikací pro analýzu provozu webových stránek. Vyžaduje, aby již byla nainstalována aplikace phpMyVisites. Prosím viz <a href="http://www.phpmyvisites.us/" title="stránka phpMyVisites">stránku phpMyVisites</a> pro více informací.]]></message>
 
 	<!-- phpMyVisites Settings Management -->
 	<message key="plugins.generic.phpmv.manager.settings">Nastavení</message>

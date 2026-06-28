@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
-  * ojs2-devel/locale/es_AR/admin.xml
+  * cla2-devel/locale/es_AR/admin.xml
   *
   * Copyright (c) 2013-2017 Simon Fraser University
   * Copyright (c) 2003-2016 John Willinsky
@@ -20,21 +20,21 @@
 	<message key="admin.languages.primaryLocaleInstructions">Este será el idioma por defecto para el sitio y cualquier revista alojada.</message>
 	<message key="admin.languages.supportedLocalesInstructions">Seleccione todas las localizaciones que soportará el sitio. Las localizaciones seleccionados estarán disponibles para cualquier revista, también aparecerán en un menú de selección de idioma en todas las páginas (puede ser eliminado en páginas específicas de una revista). Si no se seleccionan múltiples localizaciones, el menú de selección de idioma no aparecerá y no se estarán disponibles las funciones de idiomas adicionales para las revistas.</message>
 	<message key="admin.languages.confirmUninstall">¿Seguro que quiere desinstalar esta localización? Esta acción puede afectar a cualquier revista que use este localización.</message>
-	<message key="admin.languages.installNewLocalesInstructions">Seleccione localizaciones adicionales a las que quiere dar soporte en este sistema. Es necesario instalar las localizaciones antes de poder ser usadas por las revistas. Consulte la documentación de OJS para obtener información acerca de cómo añadir soporte a nuevos idiomas.</message>
+	<message key="admin.languages.installNewLocalesInstructions">Seleccione localizaciones adicionales a las que quiere dar soporte en este sistema. Es necesario instalar las localizaciones antes de poder ser usadas por las revistas. Consulte la documentación de CLA para obtener información acerca de cómo añadir soporte a nuevos idiomas.</message>
 	<message key="admin.languages.downloadLocales">Descargar localizaciones</message>
 	<message key="admin.languages.downloadFailed">Falló la descarga del archivo de localizaciones. El mensaje de error siguiente describe el fallo.</message>
 	<message key="admin.languages.localeInstalled">El archivo de localización "{$locale}" ha sido instalado.</message>
 	<message key="admin.languages.download">Descargar archivo de localización</message>
 	<message key="admin.languages.reloadDefaultEmailTemplates">Actualizar Defecto Plantillas de correo electrónico</message>
-	<message key="admin.languages.download.cannotOpen">No es posible abrir el descriptor del idioma desde la web de PKP.</message>
+	<message key="admin.languages.download.cannotOpen">No es posible abrir el descriptor del idioma desde la web de SEP.</message>
 	<message key="admin.languages.download.cannotModifyRegistry">No se puede añadir el nuevo archivo de traducción al directorio de registro de idiomas, normalmente en "registry/locales.xml".</message>
-	<message key="admin.auth.ojs">Base de datos usuarios/as OJS</message>
-	<message key="admin.auth.enableSyncProfiles">Activar la sincronización de perfiles de usuario/a (si está soportado por este plugin de autentificación). La información del perfil de usuario se actualizará automáticamente desde la fuente remota cuando un/a usuario/a se identifica, y los cambios en el perfil (incluyendo cambios en la contraseña) realizados en OJS se actualizarán automáticamente en la fuente remota. Si no se activa esta opción, la información del perfil de OJS se mantendrá separada del perfil remoto.</message>
-	<message key="admin.auth.enableSyncPasswords">Permitir la modificación de contraseñas de usuarios/as (si está soportado por este plugin de autentificación). Al activar esta opción se permite a las/os usuarias/os modificar su contraseña de OJS y usar la opción "he olvidado mi contraseña" para restablecer una contraseña olvidada. Estas funciones no estarán disponibles para las/os usuarias/os con esta fuente de autentificación si no está activada esta opción.</message>
-	<message key="admin.auth.enableCreateUsers">Permitir la creación de usuarias/os (si está soportada por este plugin de autentificación). Los/as usuarios/as creados dentro de OJS con esta fuente de autentificación se añadirán automáticamente a la fuente de autentificación remota si no existen ya. Además, si esta es la fuente de autentificación por defecto, también se añadirán a la fuente de autentificación remota las cuentas de OJS creadas a través del registro de usuaria/o.</message>
-	<message key="admin.systemVersion">Versión de OJS</message>
-	<message key="admin.systemConfiguration">Configuración de OJS</message>
-	<message key="admin.systemConfigurationDescription"><![CDATA[Configuración de OJS de <tt>config.inc.php</tt>.]]></message>
+	<message key="admin.auth.cla">Base de datos usuarios/as CLA</message>
+	<message key="admin.auth.enableSyncProfiles">Activar la sincronización de perfiles de usuario/a (si está soportado por este plugin de autentificación). La información del perfil de usuario se actualizará automáticamente desde la fuente remota cuando un/a usuario/a se identifica, y los cambios en el perfil (incluyendo cambios en la contraseña) realizados en CLA se actualizarán automáticamente en la fuente remota. Si no se activa esta opción, la información del perfil de CLA se mantendrá separada del perfil remoto.</message>
+	<message key="admin.auth.enableSyncPasswords">Permitir la modificación de contraseñas de usuarios/as (si está soportado por este plugin de autentificación). Al activar esta opción se permite a las/os usuarias/os modificar su contraseña de CLA y usar la opción "he olvidado mi contraseña" para restablecer una contraseña olvidada. Estas funciones no estarán disponibles para las/os usuarias/os con esta fuente de autentificación si no está activada esta opción.</message>
+	<message key="admin.auth.enableCreateUsers">Permitir la creación de usuarias/os (si está soportada por este plugin de autentificación). Los/as usuarios/as creados dentro de CLA con esta fuente de autentificación se añadirán automáticamente a la fuente de autentificación remota si no existen ya. Además, si esta es la fuente de autentificación por defecto, también se añadirán a la fuente de autentificación remota las cuentas de CLA creadas a través del registro de usuaria/o.</message>
+	<message key="admin.systemVersion">Versión de CLA</message>
+	<message key="admin.systemConfiguration">Configuración de CLA</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[Configuración de CLA de <tt>config.inc.php</tt>.]]></message>
 	<message key="admin.journals.journalSettings">Configuración de la revista</message>
 	<message key="admin.journals.noneCreated">No se han creado revistas.</message>
 	<message key="admin.journals.confirmDelete">¿Seguro que quiere eliminar permanentemente esta revista y todos sus contenidos?</message>
@@ -47,10 +47,10 @@
 	<message key="admin.journals.form.pathExists">Ha seleccionado una ruta que ya usa otra revista.</message>
 	<message key="admin.journals.enableJournalInstructions">Permitir que esta revista aparezca públicamente en el sitio</message>
 	<message key="admin.journals.journalDescription">Descripción de la revista</message>
-	<message key="admin.journal.pathImportInstructions">Ruta de la revista existente o ruta a crear (p.e., "ojs").</message>
+	<message key="admin.journal.pathImportInstructions">Ruta de la revista existente o ruta a crear (p.e., "cla").</message>
 	<message key="admin.journals.importSubscriptions">Importar suscripciones</message>
 	<message key="admin.journals.transcode">Artículos transcode de metadatos de ISO8859-1</message>
-	<message key="admin.journals.redirect">Generar código para mapear los URL de OJS 1 con os URLs de OJS 2</message>
+	<message key="admin.journals.redirect">Generar código para mapear los URL de CLA 1 con os URLs de CLA 2</message>
 	<message key="admin.journals.form.importPathRequired">La ruta de importación es necesaria.</message>
 	<message key="admin.journals.importErrors">La importación no se ha podido completar.</message>
 	<message key="admin.mergeUsers">Combinar usuarios</message>
@@ -80,7 +80,7 @@
 	<message key="admin.categories.confirmDelete">¿Está seguro de querer eliminar esta categoría?</message>
 	<message key="admin.categories.name">Nombre</message>
 	<message key="admin.categories.nameRequired">Un nombre de categoría es requerido</message>
-	<message key="admin.settings.defaultMetricDescription">Su instalación de OJS está configurada para registrar más de una estadística de uso. Las estadísticas de uso serán mostradas en numerosos contextos. 
+	<message key="admin.settings.defaultMetricDescription">Su instalación de CLA está configurada para registrar más de una estadística de uso. Las estadísticas de uso serán mostradas en numerosos contextos. 
 Hay casos en los que una sola estadísitica de uso debe ser usada, por ej. para mostrar una lista ordenada de los artículos más usados o para rankear resultados de búsqueda. Por favor seleccione una de la métricas como por defecto.</message>
 	<message key="admin.copyAccessLogFileTool.usage">Copiar el archivo de log de acceso de apache, filtrando las entradas relacionadas con esta instalación, hacia el directorio de archivos actual, dentro del directorio UsageStatsPlugin. Debe ejecutarse con un usuario con suficientes privilegios para leer archivos de logs de accesos de apache.
 Esta herramiente sólo copiará archivos que no están ya dentro del directorio cargador de archivos usageStast (etapa, procesamiento, archiviado, rechazado)

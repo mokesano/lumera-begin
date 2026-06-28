@@ -1,23 +1,23 @@
 <?php
 
 /**
- * @file classes/payment/ojs/OJSCompletedPaymentDAO.inc.php
+ * @file classes/payment/cla/CLACompletedPaymentDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class OJSCompletedPaymentDAO
+ * @class CLACompletedPaymentDAO
  * @ingroup payment
- * @see OJSCompletedPayment, Payment
+ * @see CLACompletedPayment, Payment
  *
  * @brief Operations for retrieving and querying past payments
  *
  */
 
-import('classes.payment.ojs.OJSCompletedPayment');
+import('classes.payment.cla.CLACompletedPayment');
 
-class OJSCompletedPaymentDAO extends DAO {
+class CLACompletedPaymentDAO extends DAO {
 	/**
 	 * Retrieve a ComplatedPayment by its ID.
 	 * @param $completedPaymentId int
@@ -45,7 +45,7 @@ class OJSCompletedPaymentDAO extends DAO {
 
 	/**
 	 * Insert a new completed payment.
-	 * @param $completedPayment OJSCompletedPayment
+	 * @param $completedPayment CLACompletedPayment
 	 */
 	function insertCompletedPayment(&$completedPayment) {
 		$this->update(
@@ -70,7 +70,7 @@ class OJSCompletedPaymentDAO extends DAO {
 
 	/**
 	 * Update an existing completed payment.
-	 * @param $completedPayment OJSCompletedPayment
+	 * @param $completedPayment CLACompletedPayment
 	 * @return boolean
 	 */
 	function updateObject(&$completedPayment) {
@@ -341,14 +341,14 @@ class OJSCompletedPaymentDAO extends DAO {
 
 	/**
 	 * Return a new data object.
-	 * @return OJSCompletedPayment
+	 * @return CLACompletedPayment
 	 */
 	function newDataObject() {
-		return new OJSCompletedPayment();
+		return new CLACompletedPayment();
 	}
 
 	/**
-	 * Internal function to return a OJSCompletedPayment object from a row.
+	 * Internal function to return a CLACompletedPayment object from a row.
 	 * @param $row array
 	 * @return CompletedPayment
 	 */

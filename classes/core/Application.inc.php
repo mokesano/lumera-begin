@@ -9,14 +9,14 @@
  *
  * @class Application
  * @ingroup core
- * @see PKPApplication
+ * @see SEPApplication
  *
  * @brief Class describing this application.
  *
  */
 
 
-import('lib.pkp.classes.core.PKPApplication');
+import('lib.sep.classes.core.SEPApplication');
 import('classes.statistics.StatisticsHelper');
 
 define('PHP_REQUIRED_VERSION', '4.2.0');
@@ -33,9 +33,9 @@ define('ASSOC_TYPE_SUPP_FILE', 0x0000106);
 define('CONTEXT_JOURNAL', 1);
 
 
-class Application extends PKPApplication {
+class Application extends SEPApplication {
 	function Application() {
-		parent::PKPApplication();
+		parent::SEPApplication();
 	}
 
 	/**
@@ -57,7 +57,7 @@ class Application extends PKPApplication {
 	 * @return string
 	 */
 	function getName() {
-		return 'ojs2';
+		return 'cla2';
 	}
 
 	/**
@@ -74,7 +74,7 @@ class Application extends PKPApplication {
 	 * @return string
 	 */
 	function getVersionDescriptorUrl() {
-		return('http://pkp.sfu.ca/ojs/xml/ojs-version.xml');
+		return('http://lumera.sangia.org/cla/xml/cla-version.xml');
 	}
 
 	/**
@@ -96,14 +96,14 @@ class Application extends PKPApplication {
 			'AuthorDAO' => 'classes.article.AuthorDAO',
 			'AuthorSubmissionDAO' => 'classes.submission.author.AuthorSubmissionDAO',
 			'CategoryDAO' => 'classes.journal.categories.CategoryDAO',
-			'CommentDAO' => 'lib.pkp.classes.comment.CommentDAO',
+			'CommentDAO' => 'lib.sep.classes.comment.CommentDAO',
 			'CopyeditorSubmissionDAO' => 'classes.submission.copyeditor.CopyeditorSubmissionDAO',
 			'EditAssignmentDAO' => 'classes.submission.editAssignment.EditAssignmentDAO',
 			'EditorSubmissionDAO' => 'classes.submission.editor.EditorSubmissionDAO',
 			'EmailTemplateDAO' => 'classes.mail.EmailTemplateDAO',
 			'GiftDAO' => 'classes.gift.GiftDAO',
-			'GroupDAO' => 'lib.pkp.classes.group.GroupDAO',
-			'GroupMembershipDAO' => 'lib.pkp.classes.group.GroupMembershipDAO',
+			'GroupDAO' => 'lib.sep.classes.group.GroupDAO',
+			'GroupMembershipDAO' => 'lib.sep.classes.group.GroupMembershipDAO',
 			'IndividualSubscriptionDAO' => 'classes.subscription.IndividualSubscriptionDAO',
 			'InstitutionalSubscriptionDAO' => 'classes.subscription.InstitutionalSubscriptionDAO',
 			'IssueDAO' => 'classes.issue.IssueDAO',
@@ -115,20 +115,20 @@ class Application extends PKPApplication {
 			'LayoutEditorSubmissionDAO' => 'classes.submission.layoutEditor.LayoutEditorSubmissionDAO',
 			'MetricsDAO' => 'classes.statistics.MetricsDAO',
 			'NoteDAO' => 'classes.note.NoteDAO',
-			'OAIDAO' => 'classes.oai.ojs.OAIDAO',
-			'OJSCompletedPaymentDAO' => 'classes.payment.ojs.OJSCompletedPaymentDAO',
+			'OAIDAO' => 'classes.oai.cla.OAIDAO',
+			'CLACompletedPaymentDAO' => 'classes.payment.cla.CLACompletedPaymentDAO',
 			'PluginSettingsDAO' => 'classes.plugins.PluginSettingsDAO',
 			'ProofreaderSubmissionDAO' => 'classes.submission.proofreader.ProofreaderSubmissionDAO',
 			'PublishedArticleDAO' => 'classes.article.PublishedArticleDAO',
-			'QueuedPaymentDAO' => 'lib.pkp.classes.payment.QueuedPaymentDAO',
+			'QueuedPaymentDAO' => 'lib.sep.classes.payment.QueuedPaymentDAO',
 			'ReviewAssignmentDAO' => 'classes.submission.reviewAssignment.ReviewAssignmentDAO',
 			'ReviewerSubmissionDAO' => 'classes.submission.reviewer.ReviewerSubmissionDAO',
-			'ReviewFormDAO' => 'lib.pkp.classes.reviewForm.ReviewFormDAO',
-			'ReviewFormElementDAO' => 'lib.pkp.classes.reviewForm.ReviewFormElementDAO',
-			'ReviewFormResponseDAO' => 'lib.pkp.classes.reviewForm.ReviewFormResponseDAO',
+			'ReviewFormDAO' => 'lib.sep.classes.reviewForm.ReviewFormDAO',
+			'ReviewFormElementDAO' => 'lib.sep.classes.reviewForm.ReviewFormElementDAO',
+			'ReviewFormResponseDAO' => 'lib.sep.classes.reviewForm.ReviewFormResponseDAO',
 			'RoleDAO' => 'classes.security.RoleDAO',
-			'RTDAO' => 'classes.rt.ojs.RTDAO',
-			'ScheduledTaskDAO' => 'lib.pkp.classes.scheduledTask.ScheduledTaskDAO',
+			'RTDAO' => 'classes.rt.cla.RTDAO',
+			'ScheduledTaskDAO' => 'lib.sep.classes.scheduledTask.ScheduledTaskDAO',
 			'SectionDAO' => 'classes.journal.SectionDAO',
 			'SectionEditorsDAO' => 'classes.journal.SectionEditorsDAO',
 			'SectionEditorSubmissionDAO' => 'classes.submission.sectionEditor.SectionEditorSubmissionDAO',
@@ -243,9 +243,9 @@ class Application extends PKPApplication {
 	}
 
 	/**
-	 * Main entry point for OJS statistics reports.
+	 * Main entry point for CLA statistics reports.
 	 *
-	 * @see <http://pkp.sfu.ca/wiki/index.php/OJSdeStatisticsConcept#Input_and_Output_Formats_.28Aggregation.2C_Filters.2C_Metrics_Data.29>
+	 * @see <http://lumera.sangia.org/wiki/index.php/CLAdeStatisticsConcept#Input_and_Output_Formats_.28Aggregation.2C_Filters.2C_Metrics_Data.29>
 	 * for a full specification of the input and output format of this method.
 	 *
 	 * @param $metricType null|string|array metrics selection

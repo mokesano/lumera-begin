@@ -9,24 +9,24 @@
  *
  * @class GiftDAO
  * @ingroup gift
- * @see PKPGiftDAO
+ * @see SEPGiftDAO
  *
- * @brief OJS extension of PKPGiftDAO
+ * @brief CLA extension of SEPGiftDAO
  */
 
-import('lib.pkp.classes.gift.PKPGiftDAO');
+import('lib.sep.classes.gift.SEPGiftDAO');
 import('classes.gift.Gift');
 
 define('GIFT_REDEEM_STATUS_ERROR_SUBSCRIPTION_TYPE_INVALID', 0x10);
 define('GIFT_REDEEM_STATUS_ERROR_SUBSCRIPTION_NON_EXPIRING', 0x11);
 
 
-class GiftDAO extends PKPGiftDAO {
+class GiftDAO extends SEPGiftDAO {
 	/**
 	 * Constructor
 	 */
 	function GiftDAO() {
-		parent::PKPGiftDAO();
+		parent::SEPGiftDAO();
 	}
 
 	/**

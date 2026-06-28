@@ -1,20 +1,20 @@
 <?php
 
 /**
- * @file classes/rt/ojs/form/VersionForm.inc.php
+ * @file classes/rt/cla/form/VersionForm.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class VersionForm
- * @ingroup rt_ojs_form
+ * @ingroup rt_cla_form
  * @see Version
  *
  * @brief Form to change metadata information for an RT version.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class VersionForm extends Form {
 

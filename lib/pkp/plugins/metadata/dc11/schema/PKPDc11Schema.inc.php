@@ -5,13 +5,13 @@
  */
 
 /**
- * @file plugins/metadata/dc11/schema/PKPDc11Schema.inc.php
+ * @file plugins/metadata/dc11/schema/SEPDc11Schema.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPDc11Schema
+ * @class SEPDc11Schema
  * @ingroup plugins_metadata_dc11_schema
  * @see MetadataSchema
  *
@@ -21,14 +21,14 @@
  *  For details see <http://dublincore.org/documents/dces/>,
  */
 
-import('lib.pkp.classes.metadata.MetadataSchema');
+import('lib.sep.classes.metadata.MetadataSchema');
 
-class PKPDc11Schema extends MetadataSchema {
+class SEPDc11Schema extends MetadataSchema {
 	/**
 	 * Constructor
 	 * @param $appSpecificAssocType integer
 	 */
-	function PKPDc11Schema($appSpecificAssocType) {
+	function SEPDc11Schema($appSpecificAssocType) {
 		// Configure the meta-data schema.
 		parent::MetadataSchema(
 			'dc-1.1',

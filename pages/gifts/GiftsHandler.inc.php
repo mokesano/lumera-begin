@@ -30,14 +30,14 @@ class GiftsHandler extends Handler {
 	/**
 	 * Display payment form for buying a gift subscription
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */	
 	function purchaseGiftSubscription($args, $request) {
 		$journal =& $request->getJournal();
 		if (!$journal) $request->redirect(null, 'index');
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptSubscriptionPayments = $paymentManager->acceptGiftSubscriptionPayments();
 		if (!$acceptSubscriptionPayments) $request->redirect(null, 'index');
 
@@ -52,14 +52,14 @@ class GiftsHandler extends Handler {
 	/**
 	 * Process payment form for buying a gift subscription
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function payPurchaseGiftSubscription($args, $request) {
 		$journal =& $request->getJournal();
 		if (!$journal) $request->redirect(null, 'index');
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptSubscriptionPayments = $paymentManager->acceptGiftSubscriptionPayments();
 		if (!$acceptSubscriptionPayments) $request->redirect(null, 'index');
 
@@ -88,7 +88,7 @@ class GiftsHandler extends Handler {
 	/**
 	 * Display generic thank you message following payment
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankYou($args, $request) {
 		$templateMgr =& TemplateManager::getManager();

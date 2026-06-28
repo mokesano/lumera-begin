@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/implicitAuth/shibboleth/locale/nl_NL/locale.xml
@@ -18,5 +18,5 @@
  
 <locale name="nl_NL" full_name="Nederlands">
 	<message key="plugins.implicitAuth.shibboleth.displayName">ShibAuthPlugin</message>
-	<message key="plugins.implicitAuth.shibboleth.description">ShibAuthPlugin. Dit is een plugin voor de hele site die ingeschakeld wordt in het OJS configuratiebestand.</message>
+	<message key="plugins.implicitAuth.shibboleth.description">ShibAuthPlugin. Dit is een plugin voor de hele site die ingeschakeld wordt in het CLA configuratiebestand.</message>
 </locale>

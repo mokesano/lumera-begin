@@ -1,25 +1,25 @@
 <?php
 
 /**
- * @file classes/controllers/grid/filter/PKPFilterGridRow.inc.php
+ * @file classes/controllers/grid/filter/SEPFilterGridRow.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPFilterGridRow
+ * @class SEPFilterGridRow
  * @ingroup classes_controllers_grid_filter
  *
  * @brief The filter grid row definition
  */
 
-import('lib.pkp.classes.controllers.grid.GridRow');
+import('lib.sep.classes.controllers.grid.GridRow');
 
-class PKPFilterGridRow extends GridRow {
+class SEPFilterGridRow extends GridRow {
 	/**
 	 * Constructor
 	 */
-	function PKPFilterGridRow() {
+	function SEPFilterGridRow() {
 		parent::GridRow();
 	}
 
@@ -28,7 +28,7 @@ class PKPFilterGridRow extends GridRow {
 	//
 	/**
 	 * @see GridRow::initialize()
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function initialize(&$request) {
 		// Do the default initialization

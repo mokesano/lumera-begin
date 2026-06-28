@@ -15,7 +15,7 @@
 	<message key="installer.additionalLocales">Дополнительные языки</message>
 	<message key="installer.administratorAccount">Учетная запись администратора</message>
 	<message key="installer.administratorAccountInstructions">Этот пользователь станет администратором сайта и получит полный доступ к системе. Дополнительные учетные записи пользователей можно будет создать после завершения установки.</message>
-	<message key="installer.checkNo"><![CDATA[<span class="pkp_form_error formError">НЕТ</span>]]></message>
+	<message key="installer.checkNo"><![CDATA[<span class="sep_form_error formError">НЕТ</span>]]></message>
 	<message key="installer.checkYes">Да</message>
 	<message key="installer.clientCharset">Кодировка клиента</message>
 	<message key="installer.clientCharsetInstructions">Кодировка, которая используется для обмена данными с браузерами.</message>
@@ -70,5 +70,5 @@
 	<message key="installer.securitySettings">Настройки безопасности</message>
 
 	<message key="installer.beacon">Маяк</message>
-	<message key="installer.beacon.enable">Задать уникальный ID сайта и базовый URL OAI для PKP, которые будут использоваться только для сбора статистики и предупреждений о безопасности.</message>
+	<message key="installer.beacon.enable">Задать уникальный ID сайта и базовый URL OAI для SEP, которые будут использоваться только для сбора статистики и предупреждений о безопасности.</message>
 </locale>

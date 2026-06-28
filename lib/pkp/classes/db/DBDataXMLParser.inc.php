@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.xml.XMLParser');
+import('lib.sep.classes.xml.XMLParser');
 
 class DBDataXMLParser {
 

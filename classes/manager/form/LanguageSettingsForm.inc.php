@@ -13,7 +13,7 @@
  * @brief Form for modifying journal language settings.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class LanguageSettingsForm extends Form {
 

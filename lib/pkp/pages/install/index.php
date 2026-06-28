@@ -21,8 +21,8 @@ switch ($op) {
 	case 'install':
 	case 'upgrade':
 	case 'installUpgrade':
-		define('HANDLER_CLASS', 'PKPInstallHandler');
-		import('lib.pkp.pages.install.PKPInstallHandler');
+		define('HANDLER_CLASS', 'SEPInstallHandler');
+		import('lib.sep.pages.install.SEPInstallHandler');
 		break;
 }
 

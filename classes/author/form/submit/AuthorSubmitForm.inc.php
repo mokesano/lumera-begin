@@ -17,7 +17,7 @@
  * @brief Base class for journal author submit forms.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class AuthorSubmitForm extends Form {
 	/** @var $request object */

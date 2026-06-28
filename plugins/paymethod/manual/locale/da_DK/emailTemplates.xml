@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * emailTemplateData.xml
   *
@@ -18,7 +18,7 @@
 Betalingen vedrører "{$itemName}".
 Prisen er {$itemCost} ({$itemCurrencyCode}).
 
-Denne e-mail blev genereret af Open Journal Systems' plugin for manuelle betalinger</body>
+Denne e-mail blev genereret af Code Lumera Editorial' plugin for manuelle betalinger</body>
 		<description>Denne e-mail-skabelon anvendes til at underrette en tidsskriftkontakt om, at der er blevet anmodet om en manuel betaling.</description>
 	</email_text>
 </email_texts>

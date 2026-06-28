@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # This script is used to pull article metadata XML files from
-# OJS installations. You should schedule it via cronjob. We
+# CLA installations. You should schedule it via cronjob. We
 # recommend running this script once a day during off-hours.
 #
 # Usage:

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/translator/locale/it_IT/locale.xml
@@ -15,8 +15,8 @@
 <locale name="it_IT" full_name="Italiano">
 	<message key="plugins.generic.translator.name">Traduzione dell'interfaccia</message>
 	<message key="plugins.generic.translator.description">Questo plugin permette la gestione della traduzione dell'interfaccia.</message>
-	<message key="plugins.generic.translator.longdescription">Questa sezione permette all'amministratore del sistema di costruire, modificare e controllare le traduzioni di OJS. E' globale per tutta la installazione e non può essere usato per personalizzare una singola rivista OJS. Se si corregge o si crea una traduzione, si prega di pensare di sottoporla al Public Knowledge Project per distribuirla con le versioni future di OJS.</message>
-	<message key="plugins.generic.translator.localeDescription">Questa pagina elenca tutti i contenuti dell'interfaccia di OJS e fornisce al traduttore l'opportunità di modificarla.</message>
+	<message key="plugins.generic.translator.longdescription">Questa sezione permette all'amministratore del sistema di costruire, modificare e controllare le traduzioni di CLA. E' globale per tutta la installazione e non può essere usato per personalizzare una singola rivista CLA. Se si corregge o si crea una traduzione, si prega di pensare di sottoporla al Sangia Editorial Project per distribuirla con le versioni future di CLA.</message>
+	<message key="plugins.generic.translator.localeDescription">Questa pagina elenca tutti i contenuti dell'interfaccia di CLA e fornisce al traduttore l'opportunità di modificarla.</message>
 
 	<message key="plugins.generic.translator.localeName">Localizzazione</message>
 	<message key="plugins.generic.translator.localeKey">Chiave</message>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/booksForReview/locale/sr_SR/locale.xml
@@ -125,7 +125,7 @@
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderBeforeDays2">day(s) before the review due date.</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays1">Send authors a reminder email</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays2">day(s) after the review due date.</message>
-	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Note:</strong> To activate these options, the site administrator must enable the <tt>scheduled_tasks</tt> option in the OJS configuration file. Additional server configuration may be required to support this functionality (which may not be possible on all servers), as indicated in the OJS documentation.]]></message>
+	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Note:</strong> To activate these options, the site administrator must enable the <tt>scheduled_tasks</tt> option in the CLA configuration file. Additional server configuration may be required to support this functionality (which may not be possible on all servers), as indicated in the CLA documentation.]]></message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformation">Additional Information</message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformationDescription">Additional information published along with the books for review.</message>
 	<message key="plugins.generic.booksForReview.settings.dueWeeksRequired">Please specify the number of weeks for when book reviews are due.</message>

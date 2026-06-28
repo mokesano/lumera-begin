@@ -544,7 +544,7 @@ form {
  padding-bottom:0em;
  margin-bottom:1.5em;
 }
-form[class~=pkp_form] {
+form[class~=sep_form] {
  margin:initial;
 }
 input {
@@ -708,8 +708,8 @@ div[class~=lineseparator] {
  margin:.25em 0;
 }
 [class~=heading],
-#setup [class~=pkp_controllers_grid] table th,
-#setup [class~=pkp_controllers_grid] table tr[class~=heading] {
+#setup [class~=sep_controllers_grid] table th,
+#setup [class~=sep_controllers_grid] table tr[class~=heading] {
  font-family:Lato;
  font-size:1.125em;
  line-height:1.33333em;
@@ -717,8 +717,8 @@ div[class~=lineseparator] {
  padding:.25em;
 }
 [class~=heading] td:last-child,
-#setup [class~=pkp_controllers_grid] table th td:last-child,
-#setup [class~=pkp_controllers_grid] table tr[class~=heading] td:last-child {
+#setup [class~=sep_controllers_grid] table th td:last-child,
+#setup [class~=sep_controllers_grid] table tr[class~=heading] td:last-child {
  text-align:center;
 }
 [class~=selectMenu] {
@@ -1517,8 +1517,8 @@ table[class~=nested] {
  margin:0;
 }
 table[class~=listing] [class~=heading] a,
-#setup [class~=pkp_controllers_grid] table[class~=listing] th a,
-#setup [class~=pkp_controllers_grid] table[class~=listing] tr[class~=heading] a {
+#setup [class~=sep_controllers_grid] table[class~=listing] th a,
+#setup [class~=sep_controllers_grid] table[class~=listing] tr[class~=heading] a {
  color:#000;
 }
 table[class~=listing] tr {
@@ -1658,10 +1658,10 @@ span[class~=instruct] {
  border:1px solid #D1D3D5;
 }
 #assignBlocksToSidebars [class~=heading],
-#assignBlocksToSidebars #setup [class~=pkp_controllers_grid] table th,
-#setup [class~=pkp_controllers_grid] table #assignBlocksToSidebars th,
-#assignBlocksToSidebars #setup [class~=pkp_controllers_grid] table tr[class~=heading],
-#setup [class~=pkp_controllers_grid] table #assignBlocksToSidebars tr[class~=heading] {
+#assignBlocksToSidebars #setup [class~=sep_controllers_grid] table th,
+#setup [class~=sep_controllers_grid] table #assignBlocksToSidebars th,
+#assignBlocksToSidebars #setup [class~=sep_controllers_grid] table tr[class~=heading],
+#setup [class~=sep_controllers_grid] table #assignBlocksToSidebars tr[class~=heading] {
  text-align:center;
  border:1px solid #87908F;
 }
@@ -1674,58 +1674,58 @@ span[class~=instruct] {
 #setup [class~=options] {
  margin-top:2em;
 }
-#setup [class~=pkp_controllers_grid] table {
+#setup [class~=sep_controllers_grid] table {
  margin-top:1.5em;
  padding-top:0em;
  padding-bottom:0em;
  margin-bottom:1.5em;
  border:1px solid #87908F;
 }
-#setup [class~=pkp_controllers_grid] table th,
-#setup [class~=pkp_controllers_grid] table tr[class~=heading],
-#setup [class~=pkp_controllers_grid] table td {
+#setup [class~=sep_controllers_grid] table th,
+#setup [class~=sep_controllers_grid] table tr[class~=heading],
+#setup [class~=sep_controllers_grid] table td {
  border-right:1px solid #D1D3D5;
  border-bottom:1px solid #D1D3D5;
  border-left-width:0;
  border-top-width:0;
 }
-#setup [class~=pkp_controllers_grid] table th:last-child,
-#setup [class~=pkp_controllers_grid] table tr[class~=heading]:last-child,
-#setup [class~=pkp_controllers_grid] table td:last-child {
+#setup [class~=sep_controllers_grid] table th:last-child,
+#setup [class~=sep_controllers_grid] table tr[class~=heading]:last-child,
+#setup [class~=sep_controllers_grid] table td:last-child {
  border-right-width:0;
 }
-#setup [class~=pkp_controllers_grid] table th[class~=last],
-#setup [class~=pkp_controllers_grid] table tr[class~=last][class~=heading],
-#setup [class~=pkp_controllers_grid] table td[class~=last] {
+#setup [class~=sep_controllers_grid] table th[class~=last],
+#setup [class~=sep_controllers_grid] table tr[class~=last][class~=heading],
+#setup [class~=sep_controllers_grid] table td[class~=last] {
  border-right-width:0;
 }
-#setup [class~=pkp_controllers_grid] table tbody tr:last-child th,
-#setup [class~=pkp_controllers_grid] table tbody tr:last-child tr[class~=heading],
-#setup [class~=pkp_controllers_grid] table tbody tr:last-child td,
-#setup [class~=pkp_controllers_grid] table tfoot tr:last-child th,
-#setup [class~=pkp_controllers_grid] table tfoot tr:last-child tr[class~=heading],
-#setup [class~=pkp_controllers_grid] table tfoot tr:last-child td {
+#setup [class~=sep_controllers_grid] table tbody tr:last-child th,
+#setup [class~=sep_controllers_grid] table tbody tr:last-child tr[class~=heading],
+#setup [class~=sep_controllers_grid] table tbody tr:last-child td,
+#setup [class~=sep_controllers_grid] table tfoot tr:last-child th,
+#setup [class~=sep_controllers_grid] table tfoot tr:last-child tr[class~=heading],
+#setup [class~=sep_controllers_grid] table tfoot tr:last-child td {
  border-bottom-width:0;
 }
-#setup [class~=pkp_controllers_grid] table tbody tr[class~=last] th,
-#setup [class~=pkp_controllers_grid] table tbody tr[class~=last] tr[class~=heading],
-#setup [class~=pkp_controllers_grid] table tbody tr[class~=last] td,
-#setup [class~=pkp_controllers_grid] table tfoot tr[class~=last] th,
-#setup [class~=pkp_controllers_grid] table tfoot tr[class~=last] tr[class~=heading],
-#setup [class~=pkp_controllers_grid] table tfoot tr[class~=last] td {
+#setup [class~=sep_controllers_grid] table tbody tr[class~=last] th,
+#setup [class~=sep_controllers_grid] table tbody tr[class~=last] tr[class~=heading],
+#setup [class~=sep_controllers_grid] table tbody tr[class~=last] td,
+#setup [class~=sep_controllers_grid] table tfoot tr[class~=last] th,
+#setup [class~=sep_controllers_grid] table tfoot tr[class~=last] tr[class~=heading],
+#setup [class~=sep_controllers_grid] table tfoot tr[class~=last] td {
  border-bottom-width:0;
 }
-#setup [class~=pkp_controllers_grid] table thead th,
-#setup [class~=pkp_controllers_grid] table thead tr[class~=heading] {
+#setup [class~=sep_controllers_grid] table thead th,
+#setup [class~=sep_controllers_grid] table thead tr[class~=heading] {
  border-bottom:1px solid #87908F;
 }
-#setup [class~=pkp_controllers_grid] table tfoot th,
-#setup [class~=pkp_controllers_grid] table tfoot tr[class~=heading],
-#setup [class~=pkp_controllers_grid] table tfoot td {
+#setup [class~=sep_controllers_grid] table tfoot th,
+#setup [class~=sep_controllers_grid] table tfoot tr[class~=heading],
+#setup [class~=sep_controllers_grid] table tfoot td {
  border-top:1px solid #87908F;
 }
-#setup [class~=pkp_controllers_grid] table th:first-child,
-#setup [class~=pkp_controllers_grid] table tr[class~=heading]:first-child {
+#setup [class~=sep_controllers_grid] table th:first-child,
+#setup [class~=sep_controllers_grid] table tr[class~=heading]:first-child {
  border-right:1px solid #87908F;
 }
 td form {
@@ -1751,7 +1751,7 @@ td form {
 [class~=composite-ui] > [class~=ui-tabs] ul[class~=main-tabs] a {
  font-size:1.25em;
 }
-[class~=pkp_controllers_grid] h3 {
+[class~=sep_controllers_grid] h3 {
  background-color:initial;
 } /* Author Submission Pages */
 [class~=steplist] {

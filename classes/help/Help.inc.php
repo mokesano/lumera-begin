@@ -14,16 +14,16 @@
  * help ids.
  */
 
-import('lib.pkp.classes.help.PKPHelp');
+import('lib.sep.classes.help.SEPHelp');
 
-class Help extends PKPHelp {
+class Help extends SEPHelp {
 	/**
 	 * Constructor.
 	 */
 	function Help() {
-		parent::PKPHelp();
-		import('classes.help.OJSHelpMappingFile');
-		$mainMappingFile = new OJSHelpMappingFile();
+		parent::SEPHelp();
+		import('classes.help.CLAHelpMappingFile');
+		$mainMappingFile = new CLAHelpMappingFile();
 		$this->addMappingFile($mainMappingFile);
 	}
 }

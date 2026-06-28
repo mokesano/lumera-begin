@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/paymethod/manual/locale/fr_CA/emailTemplateData.xml
   *
@@ -17,7 +17,7 @@
 L'élément facturé est "{$itemName}".
 Le coût est de {$itemCost} ({$itemCurrencyCode}).
 
-Ce courriel a été généré par le plugiciel de paiement manuel du Open Journal Systems.</body>
+Ce courriel a été généré par le plugiciel de paiement manuel du Code Lumera Editorial.</body>
 		<description>Ce modèle de courriel est utilisé pour aviser un directeur de revue que le paiement manuel a été demandé.</description>
 	</email_text>
 </email_texts>

@@ -13,7 +13,7 @@
  * @brief Form for journal managers to modify usage statistics plugin settings.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class UsageStatsSettingsForm extends Form {
 
@@ -105,7 +105,7 @@ class UsageStatsSettingsForm extends Form {
 	function getOptionalColumnsList() {
 		$plugin =& $this->plugin;
 		$reportPlugin = $plugin->getReportPlugin();
-		$optionalColumns = $reportPlugin->getOptionalColumns(OJS_METRIC_TYPE_COUNTER);
+		$optionalColumns = $reportPlugin->getOptionalColumns(CLA_METRIC_TYPE_COUNTER);
 		$columnsList = array();
 		foreach ($optionalColumns as $column) {
 			$columnsList[$column] = StatisticsHelper::getColumnNames($column);

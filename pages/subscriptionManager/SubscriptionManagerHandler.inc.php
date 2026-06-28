@@ -240,8 +240,8 @@ class SubscriptionManagerHandler extends Handler {
 		$this->setupTemplate();
 
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 
 		import('classes.subscription.SubscriptionAction');
 		SubscriptionAction::subscriptionTypes();
@@ -323,7 +323,7 @@ class SubscriptionManagerHandler extends Handler {
 	/**
 	 * Display subscription policies for the current journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function subscriptionPolicies($args, &$request) {
 		$this->validate();
@@ -336,7 +336,7 @@ class SubscriptionManagerHandler extends Handler {
 	/**
 	 * Save subscription policies for the current journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveSubscriptionPolicies($args, &$request) {
 		$this->validate();
@@ -429,8 +429,8 @@ class SubscriptionManagerHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate();
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		OJSPaymentAction::payments($args);
+		import('classes.payment.cla.CLAPaymentAction');
+		CLAPaymentAction::payments($args);
 	}
 
 	/**
@@ -440,8 +440,8 @@ class SubscriptionManagerHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate();
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		$success = OJSPaymentAction::savePaymentSettings($args);
+		import('classes.payment.cla.CLAPaymentAction');
+		$success = CLAPaymentAction::savePaymentSettings($args);
 
 		if ($success) {
 			$templateMgr =& TemplateManager::getManager();
@@ -463,8 +463,8 @@ class SubscriptionManagerHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate();
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		OJSPaymentAction::viewPayments($args);
+		import('classes.payment.cla.CLAPaymentAction');
+		CLAPaymentAction::viewPayments($args);
 	}
 
 	/**
@@ -474,8 +474,8 @@ class SubscriptionManagerHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate();
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		OJSPaymentAction::viewPayment($args);
+		import('classes.payment.cla.CLAPaymentAction');
+		CLAPaymentAction::viewPayment($args);
 	}
 
 	/**
@@ -485,8 +485,8 @@ class SubscriptionManagerHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate();
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		OJSPaymentAction::payMethodSettings();
+		import('classes.payment.cla.CLAPaymentAction');
+		CLAPaymentAction::payMethodSettings();
 	}
 
 	/**
@@ -496,8 +496,8 @@ class SubscriptionManagerHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate();
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		$success = OJSPaymentAction::savePayMethodSettings();
+		import('classes.payment.cla.CLAPaymentAction');
+		$success = CLAPaymentAction::savePayMethodSettings();
 
 		if ($success) {
 			$templateMgr =& TemplateManager::getManager();
@@ -577,7 +577,7 @@ class SubscriptionManagerHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $institutional = false) {
 		parent::setupTemplate(true);
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_OJS_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_MANAGER, LOCALE_COMPONENT_CLA_MANAGER);
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('pageHierarchy', array(array(Request::url(null, 'user'), 'navigation.user'), array(Request::url(null, 'subscriptionManager'), 'subscriptionManager.subscriptionManagement')));
 		if ($subclass) {

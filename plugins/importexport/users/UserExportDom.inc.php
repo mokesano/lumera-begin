@@ -13,10 +13,10 @@
  * @brief User plugin DOM functions for export
  */
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
-define('USERS_DTD_URL', 'http://pkp.sfu.ca/ojs/dtds/users.dtd');
-define('USERS_DTD_ID', '-//PKP/OJS Users XML//EN');
+define('USERS_DTD_URL', 'http://lumera.sangia.org/cla/dtds/users.dtd');
+define('USERS_DTD_ID', '-//SEP/CLA Users XML//EN');
 
 class UserExportDom {
 
@@ -66,7 +66,7 @@ class UserExportDom {
 					unset($signatureNode);
 				}
 			}
-			import('lib.pkp.classes.user.InterestManager');
+			import('lib.sep.classes.user.InterestManager');
 			$interestManager = new InterestManager();
 			$interests = $interestManager->getInterestsForUser($user);
 			if (is_array($interests)) {

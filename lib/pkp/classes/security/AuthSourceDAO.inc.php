@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.security.AuthSource');
+import('lib.sep.classes.security.AuthSource');
 
 class AuthSourceDAO extends DAO {
 	var $plugins;

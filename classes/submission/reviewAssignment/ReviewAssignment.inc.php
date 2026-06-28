@@ -14,14 +14,14 @@
  * @brief Describes review assignment properties.
  */
 
-import('lib.pkp.classes.submission.reviewAssignment.PKPReviewAssignment');
+import('lib.sep.classes.submission.reviewAssignment.SEPReviewAssignment');
 
-class ReviewAssignment extends PKPReviewAssignment {
+class ReviewAssignment extends SEPReviewAssignment {
 	/**
 	 * Constructor.
 	 */
 	function ReviewAssignment() {
-		parent::PKPReviewAssignment();
+		parent::SEPReviewAssignment();
 	}
 
 	//

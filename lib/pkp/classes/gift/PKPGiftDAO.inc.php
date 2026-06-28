@@ -1,20 +1,20 @@
 <?php
 
 /**
- * @file classes/gift/PKPGiftDAO.inc.php
+ * @file classes/gift/SEPGiftDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPGiftDAO
+ * @class SEPGiftDAO
  * @ingroup gift
- * @see Gift, PKPGift
+ * @see Gift, SEPGift
  *
  * @brief Operations for retrieving and modifying Gift objects.
  */
 
-import('lib.pkp.classes.gift.PKPGift');
+import('lib.sep.classes.gift.SEPGift');
 
 define('GIFT_REDEEM_STATUS_SUCCESS', 0x01);
 define('GIFT_REDEEM_STATUS_ERROR_GIFT_INVALID', 0x2);
@@ -22,11 +22,11 @@ define('GIFT_REDEEM_STATUS_ERROR_NO_GIFT_TO_REDEEM', 0x3);
 define('GIFT_REDEEM_STATUS_ERROR_GIFT_ALREADY_REDEEMED', 0x4);
 
 
-class PKPGiftDAO extends DAO {
+class SEPGiftDAO extends DAO {
 	/**
 	 * Constructor
 	 */
-	function PKPGiftDAO() {
+	function SEPGiftDAO() {
 		parent::DAO();
 	}
 
@@ -103,7 +103,7 @@ class PKPGiftDAO extends DAO {
 		$gift->setGiftNote($row['gift_note']);
 		$gift->setNotes($row['notes']);
 
-		HookRegistry::call('PKPNoteDAO::_returnGiftFromRow', array(&$gift, &$row));
+		HookRegistry::call('SEPNoteDAO::_returnGiftFromRow', array(&$gift, &$row));
 
 		return $gift;
 	}

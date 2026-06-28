@@ -14,7 +14,7 @@
  */
 
 import('classes.plugins.AuthPlugin');
-import('lib.pkp.classes.security.AuthSourceDAO');
+import('lib.sep.classes.security.AuthSourceDAO');
 import('pages.admin.AdminHandler');
 
 class AuthSourcesHandler extends AdminHandler {
@@ -51,7 +51,7 @@ class AuthSourcesHandler extends AdminHandler {
 	/**
 	 * Update the default authentication source.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateAuthSources($args, &$request) {
 		$this->validate();
@@ -65,7 +65,7 @@ class AuthSourcesHandler extends AdminHandler {
 	/**
 	 * Create an authentication source.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createAuthSource($args, &$request) {
 		$this->validate();
@@ -84,7 +84,7 @@ class AuthSourcesHandler extends AdminHandler {
 	/**
 	 * Display form to edit an authentication source.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editAuthSource($args, &$request) {
 		$this->validate();
@@ -99,7 +99,7 @@ class AuthSourcesHandler extends AdminHandler {
 	/**
 	 * Update an authentication source.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateAuthSource($args, &$request) {
 		$this->validate();
@@ -114,7 +114,7 @@ class AuthSourcesHandler extends AdminHandler {
 	/**
 	 * Delete an authentication source.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteAuthSource($args, &$request) {
 		$this->validate();

@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
 define('DOI_EXPORT_FILETYPE_PDF', 'PDF');
 define('DOI_EXPORT_FILETYPE_HTML', 'HTML');
@@ -231,7 +231,7 @@ class DOIExportDom {
 	/**
 	 * Create an XML element with a text node.
 	 *
-	 * FIXME: Move this to XMLCustomWriter? I leave the decision up to PKP...
+	 * FIXME: Move this to XMLCustomWriter? I leave the decision up to SEP...
 	 *
 	 * @param $name string
 	 * @param $value string
@@ -251,12 +251,12 @@ class DOIExportDom {
 	}
 
 	/**
-	 * Retrieve all the OJS publication objects containing the
+	 * Retrieve all the CLA publication objects containing the
 	 * data required to generate the given O4DOI schema.
 	 *
 	 * @param $object Issue|PublishedArticle|ArticleGalley The object to export.
 	 *
-	 * @return array An array with the required OJS objects.
+	 * @return array An array with the required CLA objects.
 	 */
 	function &retrievePublicationObjects(&$object) {
 		// Initialize local variables.
@@ -373,7 +373,7 @@ class DOIExportDom {
 	 * Identify the locale precedence for this export.
 	 * @param $article PublishedArticle
 	 * @param $galley ArticleGalley
-	 * @return array A list of valid PKP locales in descending
+	 * @return array A list of valid SEP locales in descending
 	 *  order of priority.
 	 */
 	function getObjectLocalePrecedence(&$article, &$galley) {
@@ -414,9 +414,9 @@ class DOIExportDom {
 	}
 
 	/**
-	 * Try to translate an ISO language code to an OJS locale.
+	 * Try to translate an ISO language code to an CLA locale.
 	 * @param $language string 2- or 3-letter ISO language code
-	 * @return string|null An OJS locale or null if no matching
+	 * @return string|null An CLA locale or null if no matching
 	 *  locale could be found.
 	 */
 	function translateLanguageToLocale($language) {
@@ -499,7 +499,7 @@ class DOIExportDom {
 	 * Generate a proprietary ID for the given objects.
 	 *
 	 * The idea is to produce an idea that is globally unique within
-	 * an OJS installation so that we can uniquely identify the exported
+	 * an CLA installation so that we can uniquely identify the exported
 	 * object just by knowing the proprietary ID.
 	 *
 	 * We're using the internal ID rather than the "best ID" as the

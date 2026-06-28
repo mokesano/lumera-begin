@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 <!-- 
   * plugins/generic/thesis/locale/hr_HR/locale.xml
   *
@@ -69,7 +69,7 @@
 	<message key="plugins.generic.thesis.manager.form.supervisorEmailValid">Ispravna adresa e-pošte je obavezna.</message>
 	<message key="plugins.generic.thesis.manager.form.saveAndCreateAnother">Spremi i kreiraj novog</message>
 
-	<!--  Thesis Abstract Settings Management  --><message key="plugins.generic.thesis.settings.description"><![CDATA[<p>Ovaj dodatak omogućuje studentima online prijavu sažetaka svojih diplomskih i drugih radnji  pomoću OJS sustava.</p><p> Studenti vrše prijavu online pomoću obrazasca prijave priloga. Po predaji prijave mentor e-poštom zaprima obavijest o sažetku radnje. Mentor potom treba potvrditi vjerodostojnost podataka o prijavljenoj radnji slanjem e-pošte kontakt-osobi za sažetke radnji (koja treba imati ulogu "urednik časopisa"). Po zaprimanju potvrde od mentora kontakt-osoba može aktivirati prijavu sažetka radnje, mijenjajući njezin status iz "neaktivan" u "aktivan". Time sažetak radnje postaje dostupan javnosti odnosno korisnicima sustava.]]></message>
+	<!--  Thesis Abstract Settings Management  --><message key="plugins.generic.thesis.settings.description"><![CDATA[<p>Ovaj dodatak omogućuje studentima online prijavu sažetaka svojih diplomskih i drugih radnji  pomoću CLA sustava.</p><p> Studenti vrše prijavu online pomoću obrazasca prijave priloga. Po predaji prijave mentor e-poštom zaprima obavijest o sažetku radnje. Mentor potom treba potvrditi vjerodostojnost podataka o prijavljenoj radnji slanjem e-pošte kontakt-osobi za sažetke radnji (koja treba imati ulogu "urednik časopisa"). Po zaprimanju potvrde od mentora kontakt-osoba može aktivirati prijavu sažetka radnje, mijenjajući njezin status iz "neaktivan" u "aktivan". Time sažetak radnje postaje dostupan javnosti odnosno korisnicima sustava.]]></message>
 	<message key="plugins.generic.thesis.settings.thesisContact">Kontakt-osoba za sažetak radnje</message>
 	<message key="plugins.generic.thesis.settings.thesisIntroduction">Uvod</message>
 	<message key="plugins.generic.thesis.settings.thesisIntroductionDescription">Uvod koji će se pojaviti na vrhu stranice "sažeci radnji".</message>

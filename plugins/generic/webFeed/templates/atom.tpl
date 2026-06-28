@@ -43,7 +43,7 @@
 	{* <category/> *}
 	{* <contributor/> *}
 
-	<generator uri="http://pkp.sfu.ca/ojs/" version="{$ojsVersion|escape}">Open Journal Systems</generator>
+	<generator uri="http://lumera.sangia.org/cla/" version="{$claVersion|escape}">Code Lumera Editorial</generator>
 	{if $journal->getLocalizedDescription()}
 		{assign var="description" value=$journal->getLocalizedDescription()}
 	{elseif $journal->getLocalizedSetting('searchDescription')}

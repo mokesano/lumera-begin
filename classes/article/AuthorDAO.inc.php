@@ -16,14 +16,14 @@
 
 import('classes.article.Author');
 import('classes.article.Article');
-import('lib.pkp.classes.submission.PKPAuthorDAO');
+import('lib.sep.classes.submission.SEPAuthorDAO');
 
-class AuthorDAO extends PKPAuthorDAO {
+class AuthorDAO extends SEPAuthorDAO {
 	/**
 	 * Constructor
 	 */
 	function AuthorDAO() {
-		parent::PKPAuthorDAO();
+		parent::SEPAuthorDAO();
 	}
 
 	/**

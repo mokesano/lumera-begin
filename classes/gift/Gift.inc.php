@@ -11,19 +11,19 @@
  * @ingroup gift
  * @see GiftDAO
  *
- * @brief Class for an OJS Gift.
+ * @brief Class for an CLA Gift.
  */
 
-import('lib.pkp.classes.gift.PKPGift');
+import('lib.sep.classes.gift.SEPGift');
 
 define('GIFT_TYPE_SUBSCRIPTION', 0x01);
 
-class Gift extends PKPGift {
+class Gift extends SEPGift {
 	/**
 	 * Constructor.
 	 */
 	function Gift() {
-		parent::PKPGift();
+		parent::SEPGift();
 	}
 
 	/**

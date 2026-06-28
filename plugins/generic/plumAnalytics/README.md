@@ -1,18 +1,18 @@
-# Plum Analytics Artifact Widget plugin for OJS
+# Plum Analytics Artifact Widget plugin for CLA
 
-This plugin provides display of PlumX Metrics from [Plum Analytics](http://plumanalytics.com/) on the article level for PKP Open Journal Systems.
+This plugin provides display of PlumX Metrics from [Plum Analytics](http://plumanalytics.com/) on the article level for SEP Code Lumera Editorial.
 
 ## Requirements
 
-* OJS 2.4 or a later release of OJS 2.x
+* CLA 2.4 or a later release of CLA 2.x
 * Article level DOIs
   * see: User Home -> Journal Manager -> System Plugins -> Public Identifier Plugins -> DOI
 * PlumX subscription
-  * see: [Plum Analytics OJS Integration](http://plumanalytics.com/ojs_integration/)
+  * see: [Plum Analytics CLA Integration](http://plumanalytics.com/cla_integration/)
 
 ## Configuration
 
-Install this as a "generic" plugin in OJS.  To install manually via the filesystem, extract the contents of this archive to a directory (e.g. "plumAnalytics") under "plugins/generic" in your OJS root.  To install via Git submodule, target that same directory path: `git submodule add https://github.com/ulsdevteam/ojs-plum-plugin plugins/generic/plumAnalytics` and `git submodule update --init --recursive plugins/generic/plumAnalytics`.  Run the upgrade script to register this plugin, e.g.: `php tools/upgrade.php upgrade`
+Install this as a "generic" plugin in CLA.  To install manually via the filesystem, extract the contents of this archive to a directory (e.g. "plumAnalytics") under "plugins/generic" in your CLA root.  To install via Git submodule, target that same directory path: `git submodule add https://github.com/ulsdevteam/cla-plum-plugin plugins/generic/plumAnalytics` and `git submodule update --init --recursive plugins/generic/plumAnalytics`.  Run the upgrade script to register this plugin, e.g.: `php tools/upgrade.php upgrade`
 
 Login as a Journal Manger and navigate to the Journal for which you wish to use the Widget.  Enable the plugin via User Home -> Journal Manger -> System Plugins -> Generic Plugins -> Plum Analytics Artifact Widget -> Enable.
 

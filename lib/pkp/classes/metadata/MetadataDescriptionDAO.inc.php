@@ -14,7 +14,7 @@
  * @brief Operations for retrieving and modifying MetadataDescription objects.
  */
 
-import('lib.pkp.classes.metadata.MetadataDescription');
+import('lib.sep.classes.metadata.MetadataDescription');
 
 
 class MetadataDescriptionDAO extends DAO {
@@ -183,11 +183,11 @@ class MetadataDescriptionDAO extends DAO {
 	 */
 	function &_resolveSchemaIdentifierToMetadataSchemaName($metadataSchemaId) {
 		static $metadataSchemaMapping = array(
-			'nlm30:nlm-3.0-element-citation' => 'lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema',
-			'nlm30:nlm-3.0-name' => 'lib.pkp.plugins.metadata.nlm30.schema.Nlm30NameSchema',
-			'openurl10:openurl-1.0-journal' => 'lib.pkp.plugins.metadata.nlm30.schema.Openurl10JournalSchema',
-			'openurl10:openurl-1.0-book' => 'lib.pkp.plugins.metadata.nlm30.schema.Openurl10BookSchema',
-			'openurl10:openurl-1.0-dissertation' => 'lib.pkp.plugins.metadata.nlm30.schema.Openurl10DissertationSchema'
+			'nlm30:nlm-3.0-element-citation' => 'lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema',
+			'nlm30:nlm-3.0-name' => 'lib.sep.plugins.metadata.nlm30.schema.Nlm30NameSchema',
+			'openurl10:openurl-1.0-journal' => 'lib.sep.plugins.metadata.nlm30.schema.Openurl10JournalSchema',
+			'openurl10:openurl-1.0-book' => 'lib.sep.plugins.metadata.nlm30.schema.Openurl10BookSchema',
+			'openurl10:openurl-1.0-dissertation' => 'lib.sep.plugins.metadata.nlm30.schema.Openurl10DissertationSchema'
 		);
 
 		// Map the metadata schema identifier to a metadata schema class name.
@@ -237,7 +237,7 @@ class MetadataDescriptionDAO extends DAO {
 		// use the meta-data persistence infrastructure of the
 		// DAO and DataObject classes to persist our meta-data
 		// description.
-		import('lib.pkp.classes.metadata.MetadataDescriptionDummyAdapter');
+		import('lib.sep.classes.metadata.MetadataDescriptionDummyAdapter');
 		$metadataAdapter = new MetadataDescriptionDummyAdapter($metadataDescription);
 		$metadataDescription->addSupportedMetadataAdapter($metadataAdapter);
 

@@ -10,18 +10,18 @@
  * @class UsageStatsReportPlugin
  * @ingroup plugins_generic_usageStats
  *
- * @brief OJS default statistics report plugin (and metrics provider)
+ * @brief CLA default statistics report plugin (and metrics provider)
  */
 
 
 import('classes.plugins.ReportPlugin');
 
-define('OJS_METRIC_TYPE_COUNTER', 'ojs::counter');
+define('CLA_METRIC_TYPE_COUNTER', 'cla::counter');
 
 class UsageStatsReportPlugin extends ReportPlugin {
 
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		$success = parent::register($category, $path);
@@ -30,21 +30,21 @@ class UsageStatsReportPlugin extends ReportPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'UsageStatsReportPlugin';
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.reports.usageStats.report.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.reports.usageStats.report.description');
@@ -58,7 +58,7 @@ class UsageStatsReportPlugin extends ReportPlugin {
 		$journal =& Request::getJournal();
 
 		$reportArgs = array(
-			'metricType' => OJS_METRIC_TYPE_COUNTER,
+			'metricType' => CLA_METRIC_TYPE_COUNTER,
 			'columns' => array(
 				STATISTICS_DIMENSION_ASSOC_ID, STATISTICS_DIMENSION_ASSOC_TYPE, STATISTICS_DIMENSION_CONTEXT_ID,
 				STATISTICS_DIMENSION_ISSUE_ID, STATISTICS_DIMENSION_MONTH, STATISTICS_DIMENSION_COUNTRY),
@@ -75,7 +75,7 @@ class UsageStatsReportPlugin extends ReportPlugin {
 		// Validate the metric type.
 		if (!(is_scalar($metricType) || count($metricType) === 1)) return null;
 		if (is_array($metricType)) $metricType = array_pop($metricType);
-		if ($metricType !== OJS_METRIC_TYPE_COUNTER) return null;
+		if ($metricType !== CLA_METRIC_TYPE_COUNTER) return null;
 
 		// This plug-in uses the MetricsDAO to store metrics. So we simply
 		// delegate there.
@@ -87,14 +87,14 @@ class UsageStatsReportPlugin extends ReportPlugin {
 	 * @see ReportPlugin::getMetricTypes()
 	 */
 	function getMetricTypes() {
-		return array(OJS_METRIC_TYPE_COUNTER);
+		return array(CLA_METRIC_TYPE_COUNTER);
 	}
 
 	/**
 	 * @see ReportPlugin::getMetricDisplayType()
 	 */
 	function getMetricDisplayType($metricType) {
-		if ($metricType !== OJS_METRIC_TYPE_COUNTER) return null;
+		if ($metricType !== CLA_METRIC_TYPE_COUNTER) return null;
 		return __('plugins.reports.usageStats.metricType');
 	}
 
@@ -110,7 +110,7 @@ class UsageStatsReportPlugin extends ReportPlugin {
 	 * @see ReportPlugin::getColumns()
 	 */
 	function getColumns($metricType) {
-		if ($metricType !== OJS_METRIC_TYPE_COUNTER) return array();
+		if ($metricType !== CLA_METRIC_TYPE_COUNTER) return array();
 		return array(
 			STATISTICS_DIMENSION_ASSOC_ID,
 			STATISTICS_DIMENSION_ASSOC_TYPE,
@@ -131,7 +131,7 @@ class UsageStatsReportPlugin extends ReportPlugin {
 	 * @see ReportPlugin::getObjectTypes()
 	 */
 	function getObjectTypes($metricType) {
-		if ($metricType !== OJS_METRIC_TYPE_COUNTER) return array();
+		if ($metricType !== CLA_METRIC_TYPE_COUNTER) return array();
 		return array(
 			ASSOC_TYPE_JOURNAL,
 			ASSOC_TYPE_ISSUE,
@@ -145,7 +145,7 @@ class UsageStatsReportPlugin extends ReportPlugin {
 	 * @see ReportPlugin::getOptionalColumns()
 	 */
 	function getOptionalColumns($metricType) {
-		if ($metricType !== OJS_METRIC_TYPE_COUNTER) return array();
+		if ($metricType !== CLA_METRIC_TYPE_COUNTER) return array();
 		return array(
 			STATISTICS_DIMENSION_CITY,
 			STATISTICS_DIMENSION_REGION

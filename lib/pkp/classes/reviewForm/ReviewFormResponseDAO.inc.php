@@ -15,7 +15,7 @@
  *
  */
 
-import ('lib.pkp.classes.reviewForm.ReviewFormResponse');
+import ('lib.sep.classes.reviewForm.ReviewFormResponse');
 
 class ReviewFormResponseDAO extends DAO {
 

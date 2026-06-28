@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/ar_IQ/admin.xml
@@ -43,13 +43,13 @@
 	<message key="admin.languages.reloadDefaultEmailTemplates">إستعادة قوالب المراسلة الإفتراضية</message>
 	<message key="admin.languages.download.cannotOpen">تعذر فتح موَصِّف اللغة من موقع النظام</message>
 	<message key="admin.languages.download.cannotModifyRegistry">تعذر إضافة اللغة الجديدة إلى سجل اللغات الفعالة، وهو مبدئياً ضمن حافظة الملفات: "registry/locales.xml".</message>
-	<message key="admin.auth.ojs">قاعدة بيانات النظام</message>
+	<message key="admin.auth.cla">قاعدة بيانات النظام</message>
 	<message key="admin.auth.enableSyncProfiles">تمكين مزامنة ملف تعريف المستخدم (إن كانت هذه الوظيفة الإضافية تدعمها). معلومات ملف تعريف المستخدم ستكون عرضة للتحديث تلقائياً من المصدر الخارجي بمجرد ولوج ذلك المستخدم إلى هذا الموقع، وبالمقابل، فإن التحديثات عليه هنا (من ضمنها تعديل كلمة المرور) ستنعكس أيضاً على المصدر الخارجي. فيما لو تم تعطيل هذا الخيار، فإن معلومات ملف تعريف المستخدم ستكون مستقلة عن أي مصدر خارجي</message>
 	<message key="admin.auth.enableSyncPasswords">إسمح بتعديل كلمة مرور المستخدم (إن كانت هذه الوظيفة الإضافية تدعمه). تمكين هذه الوظيفة يسمح لمستعملي النظام بتعديل كلمات مرورهم عبره مستفيدين من آلية استعادة (كلمة المرور المفقودة) والتي تقوم بإعادة ضبطها لهم. هذه الوظيفة لن تكون متاحة لهم من مستوى المصادقة هذا فيما لو تم تعطيل هذا الخيار</message>
 	<message key="admin.auth.enableCreateUsers">إسمح بإضافة مستخدمين (إن كانت هذه الوظيفة الإضافية تدعمه). المستخدمون المسجلون حديثاً ضمن هذا النظام بمستوى المصادقة هذا، ستتم إضافتهم أيضاً إلى مصدر المصادقة الخارجي إن لم يكونوا مضافين إليه سابقاً. فضلاً عن ذلك، إن كان هذا النظام هو مصدر المصادقة الإفتراضي، فإن حسابات المستخدمين المسجلين عبره ستضاف أيضاً إلى مصدر المصادقة الخارجي بمجرد تسجيلهم هنا</message>
 	<message key="admin.systemVersion">نسخة النظام</message>
 	<message key="admin.systemConfiguration">تهيئة النظام</message>
-	<message key="admin.systemConfigurationDescription"><![CDATA[OJS configuration settings from <tt>config.inc.php</tt>.]]></message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[CLA configuration settings from <tt>config.inc.php</tt>.]]></message>
 	<message key="admin.journals.journalSettings">إعدادات المجلة</message>
 	<message key="admin.journals.noneCreated">لم تتم استضافة أي مجلة بعد</message>
 	<message key="admin.journals.confirmDelete">هل أنت متأكد من رغبتك في إزالة هذه المجلة من الموقع ومحو جميع متعلقاتها؟</message>
@@ -62,7 +62,7 @@
 	<message key="admin.journals.form.pathExists">المسار الذي اخترته سبق وأن استُعمل لمجلة أخرى</message>
 	<message key="admin.journals.enableJournalInstructions">إسمح لهذه المجلة بالظهور علانية في الموقع</message>
 	<message key="admin.journals.journalDescription">وصف المجلة</message>
-	<message key="admin.journal.pathImportInstructions">المسار الحالي للمجلة، أو المسار المزمع إنشاؤه، مثلاً: "ojs"</message>
+	<message key="admin.journal.pathImportInstructions">المسار الحالي للمجلة، أو المسار المزمع إنشاؤه، مثلاً: "cla"</message>
 	<message key="admin.journals.importSubscriptions">استورد إشتراكات</message>
 	<message key="admin.journals.transcode">حول ترميز البيانات الوصفية من صيغة ISO8859-1</message>
 	<message key="admin.journals.redirect">ولِّد ترميزاً لنقل روابط النظام من شكلها في الإصدار الأول إلى شكلها في الإصدار الثاني</message>

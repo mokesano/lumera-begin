@@ -7,7 +7,7 @@
   * Copyright (c) 2000-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_(ca_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Catalan_(ca_ES)
   *
   * Localization strings for the ca_ES (Català) locale.
   *
@@ -17,7 +17,7 @@
 	<message key="installer.additionalLocales">Configuracions regionals addicionals</message>
 	<message key="installer.administratorAccount">Compte de l’administrador/a</message>
 	<message key="installer.administratorAccountInstructions">Aquest compte d’usuari/ària esdevé l’administrador/a del lloc web i té accés complet al sistema. Una vegada finalitzada la instal·lació és possible crear comptes d’usuari/ària addicionals.</message>
-	<message key="installer.checkNo"><![CDATA[<span class="pkp_form_error formError">NO</span>]]></message>
+	<message key="installer.checkNo"><![CDATA[<span class="sep_form_error formError">NO</span>]]></message>
 	<message key="installer.checkYes">Sí</message>
 	<message key="installer.clientCharset">Joc de caràcters del client</message>
 	<message key="installer.clientCharsetInstructions">Codificació que s’utilitza per a les dades que s’envien i que es reben dels navegadors.</message>
@@ -71,5 +71,5 @@
 	<message key="installer.releaseNotes">Notes de la versió</message>
 	<message key="installer.securitySettings">Paràmetres de seguretat</message>
 	<message key="installer.beacon">Beacon</message>
-	<message key="installer.beacon.enable">Proporciona a PKP un identificador únic del lloc i una URL base OAI per finalitats estadístiques i de seguretat.</message>
+	<message key="installer.beacon.enable">Proporciona a SEP un identificador únic del lloc i una URL base OAI per finalitats estadístiques i de seguretat.</message>
 </locale>

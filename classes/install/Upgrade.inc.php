@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.install.Installer');
+import('lib.sep.classes.install.Installer');
 
 class Upgrade extends Installer {
 	/**
@@ -93,9 +93,9 @@ class Upgrade extends Installer {
 			$journalId = $row['journal_id'];
 			$journal =& $journalDao->getById($journalId);
 			$rt = new JournalRT($journalId);
-			$rt->setEnabled(true); // No toggle in prior OJS; assume true
+			$rt->setEnabled(true); // No toggle in prior CLA; assume true
 			$rt->setVersion($row['version_id']);
-			$rt->setAbstract(true); // No toggle in prior OJS; assume true
+			$rt->setAbstract(true); // No toggle in prior CLA; assume true
 			$rt->setCaptureCite($row['capture_cite']);
 			$rt->setViewMetadata($row['view_metadata']);
 			$rt->setSupplementaryFiles($row['supplementary_files']);
@@ -120,7 +120,7 @@ class Upgrade extends Installer {
 	}
 
 	/**
-	 * For upgrade to OJS 2.2.0: Migrate the currency settings so the
+	 * For upgrade to CLA 2.2.0: Migrate the currency settings so the
 	 * currencies table can be dropped in favour of XML.
 	 * @return boolean
 	 */
@@ -461,7 +461,7 @@ class Upgrade extends Installer {
 	 * syntax in schema descriptors in cases where AUTONUM columns were not
 	 * used, in favour of specifically-named indexes using the <index ...>
 	 * syntax. For this, all indexes (including potentially duplicated
-	 * indexes from before) on OJS tables should be dropped prior to the new
+	 * indexes from before) on CLA tables should be dropped prior to the new
 	 * schema being applied.
 	 * @return boolean
 	 */
@@ -1058,7 +1058,7 @@ class Upgrade extends Installer {
 							'load_id' => $loadId,
 							'assoc_type' => ASSOC_TYPE_JOURNAL,
 							'assoc_id' => $row['journal_id'],
-							'metric_type' => OJS_METRIC_TYPE_LEGACY_COUNTER,
+							'metric_type' => CLA_METRIC_TYPE_LEGACY_COUNTER,
 							'metric' => $row[$countType],
 							'file_type' => $fileType,
 							'month' => $row['year'] . $month
@@ -1137,7 +1137,7 @@ class Upgrade extends Installer {
 		}
 
 		// Articles.
-		$params = array(OJS_METRIC_TYPE_TIMED_VIEWS, $loadId, ASSOC_TYPE_ARTICLE);
+		$params = array(CLA_METRIC_TYPE_TIMED_VIEWS, $loadId, ASSOC_TYPE_ARTICLE);
 		$tempStatsDao->update(
 			'INSERT INTO metrics (load_id, metric_type, assoc_type, assoc_id, day, month, country_id, region, city, submission_id, metric, context_id, issue_id)
 			SELECT tr.load_id, ?, tr.assoc_type, tr.assoc_id, tr.day, ' . $monthSql . ', tr.country_id, tr.region, tr.city, tr.assoc_id, COUNT(tr.metric), a.journal_id, pa.issue_id
@@ -1149,7 +1149,7 @@ class Upgrade extends Installer {
 		);
 
 		// Galleys.
-		$params = array(OJS_METRIC_TYPE_TIMED_VIEWS, $loadId, ASSOC_TYPE_GALLEY);
+		$params = array(CLA_METRIC_TYPE_TIMED_VIEWS, $loadId, ASSOC_TYPE_GALLEY);
 		$tempStatsDao->update(
 			'INSERT INTO metrics (load_id, metric_type, assoc_type, assoc_id, day, month, country_id, region, city, submission_id, metric, context_id, issue_id, file_type)
 			SELECT tr.load_id, ?, tr.assoc_type, tr.assoc_id, tr.day, ' . $monthSql . ', tr.country_id, tr.region, tr.city, ag.article_id, COUNT(tr.metric), a.journal_id, pa.issue_id, tr.file_type
@@ -1170,10 +1170,10 @@ class Upgrade extends Installer {
 	}
 
 	/**
-	 * For 2.4 upgrade: migrate OJS default statistics to the metrics table.
+	 * For 2.4 upgrade: migrate CLA default statistics to the metrics table.
 	 */
 	function migrateDefaultUsageStatistics() {
-		$loadId = '2.4.2-upgrade-ojsViews';
+		$loadId = '2.4.2-upgrade-claViews';
 		$metricsDao =& DAORegistry::getDAO('MetricsDAO');
 		$insertIntoClause = 'INSERT INTO metrics (file_type, load_id, metric_type, assoc_type, assoc_id, submission_id, metric, context_id, issue_id)';
 
@@ -1197,7 +1197,7 @@ class Upgrade extends Installer {
 				$pdfFileTypeWhereCheck = 'NOT IN';
 			}
 
-			$params = array($case['fileType'], $loadId, OJS_METRIC_TYPE_LEGACY_DEFAULT, $case['assocType']);
+			$params = array($case['fileType'], $loadId, CLA_METRIC_TYPE_LEGACY_DEFAULT, $case['assocType']);
 
 			if ($case['assocType'] == ASSOC_TYPE_GALLEY) {
 				array_push($params, (int) $case['isHtml']);
@@ -1222,7 +1222,7 @@ class Upgrade extends Installer {
 		}
 
 		// Published articles.
-		$params = array(null, $loadId, OJS_METRIC_TYPE_LEGACY_DEFAULT, ASSOC_TYPE_ARTICLE);
+		$params = array(null, $loadId, CLA_METRIC_TYPE_LEGACY_DEFAULT, ASSOC_TYPE_ARTICLE);
 		$metricsDao->update($insertIntoClause .
 				' SELECT ?, ?, ?, ?, pa.article_id, pa.article_id, pa.views, i.journal_id, pa.issue_id
 				FROM published_articles_stats_migration as pa
@@ -1231,7 +1231,7 @@ class Upgrade extends Installer {
 
 		// Set the site default metric type.
 		$siteSettingsDao =& DAORegistry::getDAO('SiteSettingsDAO'); /* @var $siteSettingsDao SiteSettingsDAO */
-		$siteSettingsDao->updateSetting('defaultMetricType', OJS_METRIC_TYPE_COUNTER);
+		$siteSettingsDao->updateSetting('defaultMetricType', CLA_METRIC_TYPE_COUNTER);
 
 		return true;
 	}
@@ -1318,7 +1318,7 @@ class Upgrade extends Installer {
 	 * @return boolean
 	 */
 	function deleteOrphanedCompletedPayments() {
-		$paymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+		$paymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 		$result =& $paymentDao->retrieve('SELECT DISTINCT cp.user_id FROM completed_payments AS cp LEFT JOIN users AS u ON cp.user_id = u.user_id WHERE u.user_id IS NULL');
 
 		while(!$result->EOF) {

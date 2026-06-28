@@ -13,7 +13,7 @@
  * @brief Thesis Feed plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class ThesisFeedPlugin extends GenericPlugin {
 	function register($category, $path) {
@@ -71,13 +71,13 @@ class ThesisFeedPlugin extends GenericPlugin {
 		if ($this->getEnabled()) {
 			// Only pages requests interest us here
 			$request =& Registry::get('request');
-			if (!is_a($request->getRouter(), 'PKPPageRouter')) return false;
+			if (!is_a($request->getRouter(), 'SEPPageRouter')) return false;
 
 			$templateManager =& $args[0];
 			$currentJournal =& $templateManager->get_template_vars('currentJournal');
 
 			// Determine whether the thesis plugin is enabled
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			$products = $application->getEnabledProducts('plugins.generic');
 			$thesisEnabled = isset($products['thesis'])?$products['thesis']:false;
 
@@ -126,7 +126,7 @@ class ThesisFeedPlugin extends GenericPlugin {
 			case 'settings':
 				$journal =& Request::getJournal();
 
-				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_PKP_MANAGER);
+				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_SEP_MANAGER);
 				$templateMgr =& TemplateManager::getManager();
 				$templateMgr->register_function('plugin_url', array(&$this, 'smartyPluginUrl'));
 

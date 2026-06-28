@@ -9,7 +9,7 @@
  * @class TimedViewReportForm
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class TimedViewReportForm extends Form {
 
@@ -77,12 +77,12 @@ class TimedViewReportForm extends Form {
 		$dateStart = $this->getData('dateStart');
 		$dateEnd = $this->getData('dateEnd');
 		if ($this->getData('useTimedViewRecords')) {
-			$metricType = OJS_METRIC_TYPE_TIMED_VIEWS;
+			$metricType = CLA_METRIC_TYPE_TIMED_VIEWS;
 		} else {
-			$metricType = OJS_METRIC_TYPE_COUNTER;
+			$metricType = CLA_METRIC_TYPE_COUNTER;
 		}
 
-		import('lib.pkp.classes.db.DBResultRange');
+		import('lib.sep.classes.db.DBResultRange');
 		$dbResultRange = new DBResultRange(STATISTICS_MAX_ROWS);
 
 		$metricsDao = DAORegistry::getDAO('MetricsDAO'); /* @var $metricsDao MetricsDAO */

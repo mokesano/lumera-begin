@@ -15,7 +15,7 @@
  *
  */
 
-import('lib.pkp.classes.language.Language');
+import('lib.sep.classes.language.Language');
 
 class LanguageDAO extends DAO {
 
@@ -92,7 +92,7 @@ class LanguageDAO extends DAO {
 	 * @return string
 	 */
 	function getLanguageFilename($locale) {
-		return "lib/pkp/locale/$locale/languages.xml";
+		return "lib/sep/locale/$locale/languages.xml";
 	}
 
 	/**

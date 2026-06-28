@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/oaiMetadataFormats/nlm/locale/id_ID/locale.xml
@@ -15,4 +15,3 @@
 <message key="plugins.oaiMetadata.nlm.displayName"> Format Metadata NLM </message> 
 	<message key="plugins.oaiMetadata.nlm.description">> Menyusun metadata agar konsisten dengan format Artikel Jurnal NLM.</message>
 </locale>
-

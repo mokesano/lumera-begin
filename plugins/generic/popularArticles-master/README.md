@@ -1,18 +1,18 @@
 popularArticles
 ===============
 
-Popular Articles block plugin for OJS 2.4.5
-Adapted based on work originally done by Juan Pablo Alperin <pkp@alperin.ca>
+Popular Articles block plugin for CLA 2.4.5
+Adapted based on work originally done by Juan Pablo Alperin <sep@alperin.ca>
 
 About
 -----
-This plugin for OJS 2 provides a sidebar block with the most popular articles publishes.  The plugin works on a per-journal basis.
+This plugin for CLA 2 provides a sidebar block with the most popular articles publishes.  The plugin works on a per-journal basis.
 
 System Requirements
 -------------------
 
-Update OJS 2.4.5 with the latest patches listed here: http://pkp.sfu.ca/wiki/index.php?title=OJS_Recommended_Patches 
-Same requirements as the OJS 2.4.5 core. 
+Update CLA 2.4.5 with the latest patches listed here: http://lumera.sangia.org/wiki/index.php?title=CLA_Recommended_Patches 
+Same requirements as the CLA 2.4.5 core. 
 
 Installation
 ------------
@@ -24,7 +24,7 @@ Configuration
 ------------
 You can control how many articles are displayed and if only the most recent months are used to determine popularity. You can also
 define if the statistics used to rank the articles popularity will be mixed or just the journal default metric type will be used. 
-This is useful if you want to consider the old stats (before ojs 2.4.2 version), but also consider the newer statistics data. 
+This is useful if you want to consider the old stats (before cla 2.4.2 version), but also consider the newer statistics data. 
 
 Contact/Support
 ---------------

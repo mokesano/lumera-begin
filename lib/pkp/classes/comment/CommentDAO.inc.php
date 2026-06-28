@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.comment.Comment');
+import('lib.sep.classes.comment.Comment');
 
 define ('SUBMISSION_COMMENT_RECURSE_ALL', -1);
 

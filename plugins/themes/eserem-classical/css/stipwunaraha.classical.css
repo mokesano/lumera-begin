@@ -19665,7 +19665,7 @@ ol#results-list {
     word-break: break-word;
     display: inline-block;
 }
-.pkp_controllers_extrasOnDemand .toggleExtras {
+.sep_controllers_extrasOnDemand .toggleExtras {
     float: left;
     margin: 0;
     font-family: Georgia,Arial,sans-serif;
@@ -20118,7 +20118,7 @@ ul.sidemenu li a:hover {
 #breadcrumb a.current:hover {
   color: #d83b5b;
 }
-#pkp-search-titleIndex #main>h2 {
+#sep-search-titleIndex #main>h2 {
     padding: 0px;
     font-size: 100%;
     font-family: Georgia,serif;
@@ -22258,7 +22258,7 @@ query for retina AND a certain size if you want. Go Nuts.
         max-width: 100%;
         margin: 0;
     }
-    #pkp-search-titleIndex #main > h2 {
+    #sep-search-titleIndex #main > h2 {
         width: 100%;
         padding: 0;
     }
@@ -22320,7 +22320,7 @@ query for retina AND a certain size if you want. Go Nuts.
         width: 100%;
         max-width: 100%;
     }
-    #pkp-search-authorIndex #main h2, #pkp-search-authorIndex #content {
+    #sep-search-authorIndex #main h2, #sep-search-authorIndex #content {
         margin: 0 2.7% 0 5%;
         padding: 1% 0;
     }
@@ -22544,7 +22544,7 @@ Responsive Structure end from OpenS
         width: auto;
         max-width: 100%;
     }
-    #pkp-search-titleIndex #main h2 {
+    #sep-search-titleIndex #main h2 {
         width: 100%;
         margin: 0;
         padding: 0 10px;

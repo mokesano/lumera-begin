@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000030.xml
@@ -16,6 +16,6 @@
 
 <topic id="journal/topic/000030" locale="gl_ES" title="Plugins do Sistema" toc="journal/toc/000001" key="journal.managementPages.plugins">
 	<section>
-		<![CDATA[<p>A páxina de plugins do sistema permite ao administrador da revista ver a listaxe de plugins instalados en OJS e realizar calquera tarefa administrativa dispoñíbel por cada plugin. Para máis información, diríxete á documentación que acompaña a cada plugin,e  que se atopa dentro do directorio de plugin de OJS (/path/to/install/plugins).</p>]]>
+		<![CDATA[<p>A páxina de plugins do sistema permite ao administrador da revista ver a listaxe de plugins instalados en CLA e realizar calquera tarefa administrativa dispoñíbel por cada plugin. Para máis información, diríxete á documentación que acompaña a cada plugin,e  que se atopa dentro do directorio de plugin de CLA (/path/to/install/plugins).</p>]]>
 	</section>
 </topic>

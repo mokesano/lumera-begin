@@ -16,8 +16,8 @@
  *  meta-data into/from a Citation object.
  */
 
-import('lib.pkp.classes.metadata.MetadataDataObjectAdapter');
-import('lib.pkp.plugins.metadata.nlm30.schema.Nlm30NameSchema');
+import('lib.sep.classes.metadata.MetadataDataObjectAdapter');
+import('lib.sep.plugins.metadata.nlm30.schema.Nlm30NameSchema');
 
 class Nlm30CitationSchemaCitationAdapter extends MetadataDataObjectAdapter {
 	/**
@@ -35,7 +35,7 @@ class Nlm30CitationSchemaCitationAdapter extends MetadataDataObjectAdapter {
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaCitationAdapter';
+		return 'lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaCitationAdapter';
 	}
 
 
@@ -136,14 +136,14 @@ class Nlm30CitationSchemaCitationAdapter extends MetadataDataObjectAdapter {
 									$assocType = ASSOC_TYPE_EDITOR;
 									break;
 							}
-							$nameDescription = new MetadataDescription('lib.pkp.plugins.metadata.nlm30.schema.Nlm30NameSchema', $assocType);
+							$nameDescription = new MetadataDescription('lib.sep.plugins.metadata.nlm30.schema.Nlm30NameSchema', $assocType);
 							$nameDescription->setStatements($name);
 							$names[$key] =& $nameDescription;
 							unset($nameDescription);
 						} else {
 							// The only non-structured data allowed here
 							// is the et-al string.
-							import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30PersonStringFilter');
+							import('lib.sep.plugins.metadata.nlm30.filter.Nlm30PersonStringFilter');
 							assert($name == PERSON_STRING_FILTER_ETAL);
 						}
 					}

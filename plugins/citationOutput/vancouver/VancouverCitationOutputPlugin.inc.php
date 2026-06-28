@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationOutput.vancouver.PKPVancouverCitationOutputPlugin');
+import('lib.sep.plugins.citationOutput.vancouver.SEPVancouverCitationOutputPlugin');
 
-class VancouverCitationOutputPlugin extends PKPVancouverCitationOutputPlugin {
+class VancouverCitationOutputPlugin extends SEPVancouverCitationOutputPlugin {
 	/**
 	 * Constructor
 	 */
 	function VancouverCitationOutputPlugin() {
-		parent::PKPVancouverCitationOutputPlugin();
+		parent::SEPVancouverCitationOutputPlugin();
 	}
 }
 

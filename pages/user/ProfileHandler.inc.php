@@ -26,7 +26,7 @@ class ProfileHandler extends UserHandler {
 	/**
 	 * Display form to edit user's profile.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function profile($args, &$request) {
 		$this->validate();
@@ -46,7 +46,7 @@ class ProfileHandler extends UserHandler {
 	/**
 	 * Validate and save changes to user's profile.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveProfile($args, &$request) {
 		$this->validate();
@@ -80,7 +80,7 @@ class ProfileHandler extends UserHandler {
 	/**
 	 * Display form to change user's password.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function changePassword($args, &$request) {
 		$this->validate();
@@ -100,7 +100,7 @@ class ProfileHandler extends UserHandler {
 	/**
 	 * Save user's new password.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function savePassword($args, &$request) {
 		$this->validate();

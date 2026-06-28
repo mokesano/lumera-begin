@@ -14,7 +14,7 @@
  * @brief Operations for retrieving and modifying BookForReview objects.
  */
 
-import('lib.pkp.classes.db.DAO');
+import('lib.sep.classes.db.DAO');
 
 /* These constants are used for user-selectable search fields. */
 define('BFR_FIELD_PUBLISHER',	'publisher');

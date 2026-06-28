@@ -1,22 +1,22 @@
 <?php
 
 /**
- * @file classes/oai/PKPOAIDAO.inc.php
+ * @file classes/oai/SEPOAIDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPOAIDAO
+ * @class SEPOAIDAO
  * @ingroup oai
  * @see OAI
  *
  * @brief Base class for DAO operations for the OAI interface.
  */
 
-import('lib.pkp.classes.oai.OAI');
+import('lib.sep.classes.oai.OAI');
 
-class PKPOAIDAO extends DAO {
+class SEPOAIDAO extends DAO {
 
 	/** @var $oai OAI parent OAI object */
 	var $oai;
@@ -24,7 +24,7 @@ class PKPOAIDAO extends DAO {
 	/**
 	 * Constructor.
 	 */
-	function PKPOAIDAO() {
+	function SEPOAIDAO() {
 		parent::DAO();
 	}
 

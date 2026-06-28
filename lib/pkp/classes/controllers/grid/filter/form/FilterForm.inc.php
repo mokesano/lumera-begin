@@ -14,7 +14,7 @@
  * New filter instances are based on filter templates.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class FilterForm extends Form {
 	/** @var Filter the filter being edited */
@@ -219,7 +219,7 @@ class FilterForm extends Form {
 
 	/**
 	 * Save filter
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function execute(&$request) {
 		$filter =& $this->getFilter();

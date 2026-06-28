@@ -7,7 +7,7 @@
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPNotificationManager
+ * @class SEPNotificationManager
  * @ingroup notification
  * @see NotificationDAO
  * @see Notification
@@ -15,9 +15,9 @@
  */
 
 
-import('lib.pkp.classes.notification.PKPNotificationManager');
+import('lib.sep.classes.notification.SEPNotificationManager');
 
-class NotificationManager extends PKPNotificationManager {
+class NotificationManager extends SEPNotificationManager {
 	/* @var $privilegedRoles array Cache each user's most privileged role for each article */
 	var $privilegedRoles;
 
@@ -25,13 +25,13 @@ class NotificationManager extends PKPNotificationManager {
 	 * Constructor.
 	 */
 	function NotificationManager() {
-		parent::PKPNotificationManager();
+		parent::SEPNotificationManager();
 	}
 
 
 	/**
 	 * Construct a URL for the notification based on its type and associated object
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $notification Notification
 	 * @return string
 	 */
@@ -162,7 +162,7 @@ class NotificationManager extends PKPNotificationManager {
 
 	/**
 	 * Construct the contents for the notification based on its type and associated object
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $notification Notification
 	 * @return string
 	 */
@@ -338,8 +338,8 @@ class NotificationManager extends PKPNotificationManager {
 		$journal = $request->getJournal();
 		if (!$journal) return array();
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 
 		$settings = array('subscriptionsEnabled' => $paymentManager->acceptSubscriptionPayments(),
 				'allowRegReviewer' => $journal->getSetting('allowRegReviewer'),

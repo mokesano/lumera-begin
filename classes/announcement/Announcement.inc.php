@@ -19,14 +19,14 @@
  *
  */
 
-import('lib.pkp.classes.announcement.PKPAnnouncement');
+import('lib.sep.classes.announcement.SEPAnnouncement');
 
-class Announcement extends PKPAnnouncement {
+class Announcement extends SEPAnnouncement {
 	/**
 	 * Constructor
 	 */
 	function Announcement() {
-		parent::PKPAnnouncement();
+		parent::SEPAnnouncement();
 	}
 }
 

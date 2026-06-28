@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale.xml
@@ -16,5 +16,5 @@
  
 <locale name="fr_FR" full_name="Français (France)">
 	<message key="plugins.implicitAuth.shibboleth.displayName">Plugiciel ShibAuth</message>
-	<message key="plugins.implicitAuth.shibboleth.description">Plugiciel ShibAuth. Il s'agit d'un plugiciel global pour l'ensemble du site et qui est activé dans le fichier de configuration OJS.</message>
+	<message key="plugins.implicitAuth.shibboleth.description">Plugiciel ShibAuth. Il s'agit d'un plugiciel global pour l'ensemble du site et qui est activé dans le fichier de configuration CLA.</message>
 </locale>

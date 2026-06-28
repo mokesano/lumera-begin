@@ -2,7 +2,7 @@
 <!DOCTYPE locale SYSTEM "../../dtd/locale.dtd">
 
 <!--
-  * ../pkp//locale/es_AR/reader.xml
+  * ../sep//locale/es_AR/reader.xml
   *
   * Copyright (c) 2013-2017 Simon Fraser University
   * Copyright (c) 2000-2016 John Willinsky
@@ -108,24 +108,24 @@
 	<message key="rt.metadata.dublinCore.title">Título</message>
 	<message key="rt.metadata.dublinCore.type">Tipo</message>
 	<message key="rt.metadata.forThisDocument">Metadatos de este documento</message>
-	<message key="rt.metadata.pkp.abstract">Resumen</message>
-	<message key="rt.metadata.pkp.copyright">Copyright y permisos</message>
-	<message key="rt.metadata.pkp.coverage">Localización geo-espacial, periodo cronológico, muestra de la investigación (género, edad, etc.)</message>
-	<message key="rt.metadata.pkp.date">(YYYY-MM-DD)</message>
-	<message key="rt.metadata.pkp.discipline">Disciplina(s)</message>
-	<message key="rt.metadata.pkp.format">Formato del archivo</message>
-	<message key="rt.metadata.pkp.genre">Estado &amp; genero</message>
-	<message key="rt.metadata.pkpItem">Metadatos PKP</message>
-	<message key="rt.metadata.pkp.language">Inglés=en</message>
-	<message key="rt.metadata.pkp.publisher">Institución/entidad organizadora, localización</message>
-	<message key="rt.metadata.pkp.source">Revista/título de la conferencia; vol, no. (año)</message>
-	<message key="rt.metadata.pkp.sponsors">Patrocinadores</message>
-	<message key="rt.metadata.pkp.subjectClass">Clasificación por materias</message>
-	<message key="rt.metadata.pkp.subject">Palabras clave</message>
-	<message key="rt.metadata.pkp.suppFiles">Archivos Supp.</message>
-	<message key="rt.metadata.pkp.title">Título del documento</message>
-	<message key="rt.metadata.pkp.type">Tipo</message>
-	<message key="rt.metadata.pkp.uri">URI (Universal Resource Indicator)</message>
+	<message key="rt.metadata.sep.abstract">Resumen</message>
+	<message key="rt.metadata.sep.copyright">Copyright y permisos</message>
+	<message key="rt.metadata.sep.coverage">Localización geo-espacial, periodo cronológico, muestra de la investigación (género, edad, etc.)</message>
+	<message key="rt.metadata.sep.date">(YYYY-MM-DD)</message>
+	<message key="rt.metadata.sep.discipline">Disciplina(s)</message>
+	<message key="rt.metadata.sep.format">Formato del archivo</message>
+	<message key="rt.metadata.sep.genre">Estado &amp; genero</message>
+	<message key="rt.metadata.sepItem">Metadatos SEP</message>
+	<message key="rt.metadata.sep.language">Inglés=en</message>
+	<message key="rt.metadata.sep.publisher">Institución/entidad organizadora, localización</message>
+	<message key="rt.metadata.sep.source">Revista/título de la conferencia; vol, no. (año)</message>
+	<message key="rt.metadata.sep.sponsors">Patrocinadores</message>
+	<message key="rt.metadata.sep.subjectClass">Clasificación por materias</message>
+	<message key="rt.metadata.sep.subject">Palabras clave</message>
+	<message key="rt.metadata.sep.suppFiles">Archivos Supp.</message>
+	<message key="rt.metadata.sep.title">Título del documento</message>
+	<message key="rt.metadata.sep.type">Tipo</message>
+	<message key="rt.metadata.sep.uri">URI (Universal Resource Indicator)</message>
 	<message key="rt.printVersion">Versión para imprimir</message>
 	<message key="rt.readingTools">Herramientas de Lectura</message>
 	<message key="rt.relatedItems">Artículos relacionados</message>

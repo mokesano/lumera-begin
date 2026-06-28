@@ -1,25 +1,25 @@
 <?php
 
 /**
- * @file classes/mail/PKPEmailTemplateDAO.inc.php
+ * @file classes/mail/SEPEmailTemplateDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPEmailTemplateDAO
+ * @class SEPEmailTemplateDAO
  * @ingroup mail
- * @see PKPEmailTemplate
+ * @see SEPEmailTemplate
  *
  * @brief Operations for retrieving and modifying Email Template objects.
  */
 
 
-class PKPEmailTemplateDAO extends DAO {
+class SEPEmailTemplateDAO extends DAO {
 	/**
 	 * Constructor
 	 */
-	function PKPEmailTemplateDAO() {
+	function SEPEmailTemplateDAO() {
 		parent::DAO();
 	}
 
@@ -652,7 +652,7 @@ class PKPEmailTemplateDAO extends DAO {
 	}
 
 	function getMainEmailTemplateDataFilename($locale = null) {
-		if ($locale !== null && !PKPLocale::isLocaleValid($locale)) return null;
+		if ($locale !== null && !SEPLocale::isLocaleValid($locale)) return null;
 		if ($locale === null) $locale = '{$installedLocale}';
 		return "locale/$locale/emailTemplates.xml";
 	}

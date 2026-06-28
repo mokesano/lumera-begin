@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 
 <!--
-  * plugins/importexport/native/ojs1-to-ojs2.xsl
+  * plugins/importexport/native/cla1-to-cla2.xsl
   *
   * Copyright (c) 2013-2017 Simon Fraser University
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * This XSL stylesheet transforms OJS 1.x import XML into OJS 2.x import XML.
+  * This XSL stylesheet transforms CLA 1.x import XML into CLA 2.x import XML.
   * It is currently functional but incomplete and unlikely to receive much
   * attention; please feel free to contribute additions and updates by
-  * contacting the OJS team at pkp.contact@gmail.com.
+  * contacting the CLA team at sep.contact@gmail.com.
   *
   -->
 

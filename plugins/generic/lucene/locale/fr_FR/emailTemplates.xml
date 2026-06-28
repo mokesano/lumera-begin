@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/generic/lucene/locale/fr_FR/emailTemplateData.xml
   *
@@ -16,7 +16,7 @@
 
 Message d’erreur généré par le service web (le cas échéant) : "{$error}"
 
-Ce courriel est généré par le plugiciel de recherche Lucene d’Open Journal Systems.</body>
+Ce courriel est généré par le plugiciel de recherche Lucene d’Code Lumera Editorial.</body>
 		<description>Ce modèle de courriel est utilisé pour notifier au contact technique de la revue qu'une erreur s’est produite lors de l'indexation de l'article.</description>
 	</email_text>
 	<email_text key="LUCENE_JOURNAL_INDEXING_ERROR_NOTIFICATION">
@@ -25,7 +25,7 @@ Ce courriel est généré par le plugiciel de recherche Lucene d’Open Journal 
 
 Message d'erreur généré par le service Web (le cas échéant): "{$error}"
 
-Ce courriel est généré par le plugiciel de recherche Lucene d’Open Journal Systems.</body>
+Ce courriel est généré par le plugiciel de recherche Lucene d’Code Lumera Editorial.</body>
 		<description>Ce modèle de courriel est utilisé pour notifier au contact technique de la revue qu'une erreur s’est produite lors de l'indexation de la revue.</description>
 	</email_text>
 	<email_text key="LUCENE_SEARCH_SERVICE_ERROR_NOTIFICATION">
@@ -34,7 +34,7 @@ Ce courriel est généré par le plugiciel de recherche Lucene d’Open Journal 
 
 Message d'erreur généré par le service Web (le cas échéant): "{$error}"
 
-Ce courriel est généré par le plugiciel Lucene recherche d’Open Journal Systems.</body>
+Ce courriel est généré par le plugiciel Lucene recherche d’Code Lumera Editorial.</body>
 		<description>Ce modèle de courriel est utilisé pour notifier au contact technique de la revue qu’une erreur s’est produite au cours d’une action sur le service de recherche Solr.</description>
 	</email_text>
 </email_texts>

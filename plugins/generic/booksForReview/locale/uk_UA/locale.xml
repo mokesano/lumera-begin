@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/booksForReview/locale/uk_UA/locale.xml
@@ -129,7 +129,7 @@
        <message key="plugins.generic.booksForReview.settings.enableDueReminderBeforeDays2">днів перед кінцевою датою рецензування.</message>
        <message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays1">Надсилати авторам нагадування поштою через</message>
        <message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays2">днів після кінцевої дати рецензування.</message>
-       <message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію, адміністратор сайту повинен дозволити директиву <tt>scheduled_tasks</tt> у файлі конфігурації OJS. Крім того, як зазначено у документації OJS, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
+       <message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію, адміністратор сайту повинен дозволити директиву <tt>scheduled_tasks</tt> у файлі конфігурації CLA. Крім того, як зазначено у документації CLA, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
        <message key="plugins.generic.booksForReview.settings.additionalInformation">Додаткова інформація</message>
        <message key="plugins.generic.booksForReview.settings.additionalInformationDescription">Додаткова інформація, яка повинна публікуватися разом з книгами до рецензії.</message>
        <message key="plugins.generic.booksForReview.settings.dueWeeksRequired">Будь ласка, вкажіть кількість тижнів до настання кінцевої дати рецензування книг.</message>

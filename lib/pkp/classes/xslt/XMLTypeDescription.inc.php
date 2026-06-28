@@ -22,8 +22,8 @@
  *  NB: XML validation currently requires PHP5
  */
 
-import('lib.pkp.classes.filter.TypeDescription');
-import('lib.pkp.classes.filter.TypeDescriptionFactory');
+import('lib.sep.classes.filter.TypeDescription');
+import('lib.sep.classes.filter.TypeDescriptionFactory');
 
 define('XML_TYPE_DESCRIPTION_VALIDATE_NONE', '*');
 define('XML_TYPE_DESCRIPTION_VALIDATE_SCHEMA', 'schema');

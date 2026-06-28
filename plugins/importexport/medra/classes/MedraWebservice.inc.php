@@ -17,7 +17,7 @@
  */
 
 
-import('lib.pkp.classes.xml.XMLNode');
+import('lib.sep.classes.xml.XMLNode');
 
 define('MEDRA_WS_ENDPOINT_DEV', 'https://medra.dev.cineca.it/servlet/ws/medraWS');
 define('MEDRA_WS_ENDPOINT', 'https://www.medra.org/servlet/ws/medraWS');
@@ -128,7 +128,7 @@ class MedraWebservice {
 		$extraHeaders = array(
 			'SOAPAction: "' . $action . '"',
 			'Content-Type: ' . $contentType,
-			'UserAgent: OJS-mEDRA'
+			'UserAgent: CLA-mEDRA'
 		);
 		curl_setopt($curlCh, CURLOPT_HTTPHEADER, $extraHeaders);
 		curl_setopt($curlCh, CURLOPT_POSTFIELDS, $request);
@@ -139,11 +139,11 @@ class MedraWebservice {
 		// We do not localize our error messages as they are all
 		// fatal errors anyway and must be analyzed by technical staff.
 		if ($response === false) {
-			$result = 'OJS-mEDRA: Expected string response.';
+			$result = 'CLA-mEDRA: Expected string response.';
 		}
 
 		if ($result === true && ($status = curl_getinfo($curlCh, CURLINFO_HTTP_CODE)) != MEDRA_WS_RESPONSE_OK) {
-			$result = 'OJS-mEDRA: Expected ' . MEDRA_WS_RESPONSE_OK . ' response code, got ' . $status . ' instead.';
+			$result = 'CLA-mEDRA: Expected ' . MEDRA_WS_RESPONSE_OK . ' response code, got ' . $status . ' instead.';
 		}
 
 		curl_close($curlCh);
@@ -165,7 +165,7 @@ class MedraWebservice {
 				$result = 'mEDRA: ' . $status . ' - ' . $matches[1];
 			}
 		} else {
-			$result = 'OJS-mEDRA: Expected string response.';
+			$result = 'CLA-mEDRA: Expected string response.';
 		}
 
 		return $result;

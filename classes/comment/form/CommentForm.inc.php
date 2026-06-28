@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @defgroup rt_ojs_form
+ * @defgroup rt_cla_form
  */
 
 /**
@@ -12,13 +12,13 @@
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class CommentForm
- * @ingroup rt_ojs_form
+ * @ingroup rt_cla_form
  * @see Comment, CommentDAO
  *
  * @brief Form to change metadata information for an RT comment.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class CommentForm extends Form {
 
@@ -54,7 +54,7 @@ class CommentForm extends Form {
 		$commentDao =& DAORegistry::getDAO('CommentDAO');
 		$this->comment =& $commentDao->getById($commentId, $articleId);
 
-		import('lib.pkp.classes.captcha.CaptchaManager');
+		import('lib.sep.classes.captcha.CaptchaManager');
 		$captchaManager = new CaptchaManager();
 		$this->captchaEnabled = ($captchaManager->isEnabled() && Config::getVar('captcha', 'captcha_on_comments'))?true:false;
 		if ($this->captchaEnabled) {
@@ -126,14 +126,14 @@ class CommentForm extends Form {
 		if ($this->captchaEnabled) {
 			$templateMgr->assign('reCaptchaEnabled', $this->reCaptchaEnabled);
 			if ($this->reCaptchaEnabled) {
-				import('lib.pkp.lib.recaptcha.recaptchalib');
+				import('lib.sep.lib.recaptcha.recaptchalib');
 				$publicKey = Config::getVar('captcha', 'recaptcha_public_key');
 				$useSSL = Config::getVar('security', 'force_ssl')||Request::getProtocol()=='https'?true:false;
 				$reCaptchaHtml = recaptcha_get_html($publicKey, null, $useSSL);
 				$templateMgr->assign('reCaptchaHtml', $reCaptchaHtml);
 				$templateMgr->assign('captchaEnabled', $this->captchaEnabled);
 			} else {
-				import('lib.pkp.classes.captcha.CaptchaManager');
+				import('lib.sep.classes.captcha.CaptchaManager');
 				$captchaManager = new CaptchaManager();
 				$captcha =& $captchaManager->createCaptcha();
 				if ($captcha) {

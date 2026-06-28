@@ -68,7 +68,7 @@ class GridDataProvider {
 	//
 	/**
 	 * Get the authorization policy.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $args array
 	 * @param $roleAssignments array
 	 * @return PolicySet

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/lucene/locale/sr_SR/locale.xml
@@ -8,7 +8,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * OJS solr/lucene search plugin localization strings
+  * CLA solr/lucene search plugin localization strings
   -->
  
 <locale name="sr_SR" full_name="Cрпски">
@@ -19,8 +19,8 @@
 		<p><strong>Molimo Vas da pročitate README fajl (plugins/generic/lucene/README) pre no što pokušate da promenite zadatu konfiguraciju.</strong></p>
 		<p>Ako koristite ugrađeni scenario iza firewall-a, kao što je objašnjeno u README fajlu onda je najbolje da ostavite konfiguracijske parametre nepromenjene.</p>]]></message>
 	<message key="plugins.generic.lucene.settings.instId">Jedinstveni instalacioni ID</message>
-	<message key="plugins.generic.lucene.settings.instIdRequired">Unesite ID koji jedinstveno identifikuje ovu instalaciju OJS-a na solr serveru.</message>
-	<message key="plugins.generic.lucene.settings.instIdInstructions">Ako koristite centralni server za pretragu onda ćete morati obezbediti jedinstveni ID instalacije za svaku OJS instalaciju koja koristi indeks pretrage. To može biti bilo koji proizvoljni tekst, ali to mora da bude drugačiji za svaki OJS server (npr. statičku serversku IP adresu ako imate jednu OJS instalaciju po serveru).</message>
+	<message key="plugins.generic.lucene.settings.instIdRequired">Unesite ID koji jedinstveno identifikuje ovu instalaciju CLA-a na solr serveru.</message>
+	<message key="plugins.generic.lucene.settings.instIdInstructions">Ako koristite centralni server za pretragu onda ćete morati obezbediti jedinstveni ID instalacije za svaku CLA instalaciju koja koristi indeks pretrage. To može biti bilo koji proizvoljni tekst, ali to mora da bude drugačiji za svaki CLA server (npr. statičku serversku IP adresu ako imate jednu CLA instalaciju po serveru).</message>
 	<message key="plugins.generic.lucene.settings.luceneSettings">Lucene dodatak: Solr server podešavanja</message>
 	<message key="plugins.generic.lucene.settings.password">Lozinka</message>
 	<message key="plugins.generic.lucene.settings.passwordInstructions">Unesite lozinku za solr server.</message>
@@ -53,7 +53,7 @@
 <li> Koristite zagrade da kreirate složenije upite, npr. <em>arhiva ((časopis I konferencija) NE teze)</em></p>
 </p>]]></message>
 	
-	<message key="plugins.generic.lucene.error.searchServiceOffline">Na žalost OJS sistem pretrage trenutno ne radi, administrator sistema je obavešten o ovome.</message>
+	<message key="plugins.generic.lucene.error.searchServiceOffline">Na žalost CLA sistem pretrage trenutno ne radi, administrator sistema je obavešten o ovome.</message>
 	<message key="plugins.generic.lucene.error.coreNotFound">Traženo jezgro '{$core}' nije pronađeno na solr serveru, da li ste sigurni da je server online?</message>
 	<message key="plugins.generic.lucene.message.indexOnline">Indeksiraj sa {$numDocs} dokumentima onlajn.</message>
 </locale>

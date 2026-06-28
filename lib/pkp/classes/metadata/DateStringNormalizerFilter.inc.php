@@ -14,8 +14,8 @@
  *  YYYY[-MM[-DD]].
  */
 
-import('lib.pkp.classes.filter.Filter');
-import('lib.pkp.classes.validation.ValidatorDate');
+import('lib.sep.classes.filter.Filter');
+import('lib.sep.classes.validation.ValidatorDate');
 
 class DateStringNormalizerFilter extends Filter {
 	/**

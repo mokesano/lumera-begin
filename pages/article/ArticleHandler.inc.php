@@ -15,10 +15,10 @@
  */
 
 
-import('classes.rt.ojs.RTDAO');
-import('classes.rt.ojs.JournalRT');
+import('classes.rt.cla.RTDAO');
+import('classes.rt.cla.JournalRT');
 import('classes.handler.Handler');
-import('classes.rt.ojs.SharingRT');
+import('classes.rt.cla.SharingRT');
 
 class ArticleHandler extends Handler {
 	/** journal associated with the request **/
@@ -130,8 +130,8 @@ class ArticleHandler extends Handler {
 
 			$templateMgr->assign('showGalleyLinks', $journal->getSetting('showGalleyLinks'));
 
-			import('classes.payment.ojs.OJSPaymentManager');
-			$paymentManager = new OJSPaymentManager($request);
+			import('classes.payment.cla.CLAPaymentManager');
+			$paymentManager = new CLAPaymentManager($request);
 			if ( $paymentManager->onlyPdfEnabled() ) {
 				$templateMgr->assign('restrictOnlyPdf', true);
 			}
@@ -404,7 +404,7 @@ class ArticleHandler extends Handler {
 
 	/**
 	 * Validation
-	 * @see lib/pkp/classes/handler/PKPHandler#validate()
+	 * @see lib/sep/classes/handler/SEPHandler#validate()
 	 * @param $request Request
 	 * @param $articleId string
 	 * @param $galleyId int or string
@@ -466,12 +466,12 @@ class ArticleHandler extends Handler {
 				// Subscription Access
 				$subscribedUser = IssueAction::subscribedUser($journal, $issue->getId(), $publishedArticle->getId());
 
-				import('classes.payment.ojs.OJSPaymentManager');
-				$paymentManager = new OJSPaymentManager($request);
+				import('classes.payment.cla.CLAPaymentManager');
+				$paymentManager = new CLAPaymentManager($request);
 
 				$purchasedIssue = false;
 				if (!$subscribedUser && $paymentManager->purchaseIssueEnabled()) {
-					$completedPaymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+					$completedPaymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 					$purchasedIssue = $completedPaymentDao->hasPaidPurchaseIssue($userId, $issue->getId());
 				}
 
@@ -501,7 +501,7 @@ class ArticleHandler extends Handler {
 
 						/* if the article has been paid for then forget about everything else
 						 * and just let them access the article */
-						$completedPaymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+						$completedPaymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 						$dateEndMembership = $user->getSetting('dateEndMembership', 0);
 						if ($completedPaymentDao->hasPaidPurchaseArticle($userId, $publishedArticle->getId())
 							|| (!is_null($dateEndMembership) && $dateEndMembership > time())) {
@@ -537,11 +537,11 @@ class ArticleHandler extends Handler {
 
 	/**
 	 * Set up the template
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function setupTemplate($request) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_PKP_SUBMISSION);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_READER, LOCALE_COMPONENT_SEP_SUBMISSION);
 		if ($this->article) {
 			$templateMgr =& TemplateManager::getManager($request);
 			$templateMgr->assign('ccLicenseBadge', Application::getCCLicenseBadge($this->article->getLicenseURL()));

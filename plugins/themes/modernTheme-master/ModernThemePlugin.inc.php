@@ -18,7 +18,7 @@ import('classes.plugins.ThemePlugin');
 class ModernThemePlugin extends ThemePlugin {
 
 	/**
-	 * @see PKPPlugin::register($category, $path)
+	 * @see SEPPlugin::register($category, $path)
 	 */
 	function register($category, $path) {
 		HookRegistry::register ('TemplateManager::display', array(&$this, 'callbackDisplay'));
@@ -58,7 +58,7 @@ class ModernThemePlugin extends ThemePlugin {
 		$markupToBeReplaced = '<body';
 		$replaceMarkup = '<script type="text/javascript"> 
 				$(function() {ldelim} 
-					$("body").pkpHandler("$.pkp.plugins.themes.modern.ModernThemeSiteHandler"); 
+					$("body").sepHandler("$.sep.plugins.themes.modern.ModernThemeSiteHandler"); 
 				{rdelim}); 
 			</script>' . $markupToBeReplaced;
 		$output = str_replace($markupToBeReplaced, $replaceMarkup, $output);	
@@ -83,7 +83,7 @@ class ModernThemePlugin extends ThemePlugin {
 	 * @see ThemePlugin::getDescription()
 	 */
 	function getDescription() {
-		return 'Modern OJS appearance.';
+		return 'Modern CLA appearance.';
 	}
 
 	/**

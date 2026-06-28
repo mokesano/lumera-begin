@@ -21,7 +21,7 @@
 define('CITATION_PARSER_FILTER_GROUP', 'plaintext=>nlm30-element-citation');
 define('CITATION_LOOKUP_FILTER_GROUP', 'nlm30-element-citation=>nlm30-element-citation');
 
-import('lib.pkp.classes.citation.Citation');
+import('lib.sep.classes.citation.Citation');
 
 class CitationDAO extends DAO {
 	/**
@@ -114,7 +114,7 @@ class CitationDAO extends DAO {
 		$this->deleteObjectsByAssocId($assocType, $assocId);
 
 		// Tokenize raw citations
-		import('lib.pkp.classes.citation.CitationListTokenizerFilter');
+		import('lib.sep.classes.citation.CitationListTokenizerFilter');
 		$citationTokenizer = new CitationListTokenizerFilter();
 		$citationStrings = $citationTokenizer->execute($rawCitationList);
 
@@ -623,7 +623,7 @@ class CitationDAO extends DAO {
 			$filterGroup->setOutputType($filterGroup->getOutputType().'[]');
 
 			// Instantiate the citation multiplexer filter.
-			import('lib.pkp.classes.filter.GenericMultiplexerFilter');
+			import('lib.sep.classes.filter.GenericMultiplexerFilter');
 			$citationMultiplexer = new GenericMultiplexerFilter($filterGroup, $transformationDefinition['displayName']);
 
 			// Don't fail just because one of the web services
@@ -642,7 +642,7 @@ class CitationDAO extends DAO {
 			// Instantiate the citation de-multiplexer filter.
 			// FIXME: This must be configurable if we want to support other
 			// meta-data schemas.
-			import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationDemultiplexerFilter');
+			import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationDemultiplexerFilter');
 			$citationDemultiplexer = new Nlm30CitationDemultiplexerFilter();
 			$citationDemultiplexer->setOriginalDescription($originalDescription);
 			$citationDemultiplexer->setOriginalRawCitation($citation->getRawCitation());
@@ -650,11 +650,11 @@ class CitationDAO extends DAO {
 
 			// Combine multiplexer and de-multiplexer to form the
 			// final citation filter network.
-			import('lib.pkp.classes.filter.GenericSequencerFilter');
+			import('lib.sep.classes.filter.GenericSequencerFilter');
 			$citationFilterNet = new GenericSequencerFilter(
 					PersistableFilter::tempGroup(
 							$filterGroup->getInputType(),
-							'class::lib.pkp.classes.citation.Citation'),
+							'class::lib.sep.classes.citation.Citation'),
 					'Citation Filter Network');
 			$citationFilterNet->addFilter($citationMultiplexer);
 			$citationFilterNet->addFilter($citationDemultiplexer);

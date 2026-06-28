@@ -33,10 +33,10 @@ class MetadataPlugin extends Plugin {
 
 
 	//
-	// Override public methods from PKPPlugin
+	// Override public methods from SEPPlugin
 	//
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		$success = parent::register($category, $path);
@@ -47,7 +47,7 @@ class MetadataPlugin extends Plugin {
 	/**
 	 * This implementation looks for files that contain controlled
 	 * vocabulary data. It can discover and return more than one file.
-	 * @see PKPPlugin::getInstallDataFile()
+	 * @see SEPPlugin::getInstallDataFile()
 	 * @return array|null
 	 */
 	function getInstallDataFile() {
@@ -60,7 +60,7 @@ class MetadataPlugin extends Plugin {
 		$pluginPath = $this->getPluginPath();
 		$wellKnownVocabLocations = array(
 			'./'.$pluginPath.'/schema/'.METADATA_PLUGIN_VOCAB_DATAFILE,
-			'./lib/pkp/'.$pluginPath.'/schema/'.METADATA_PLUGIN_VOCAB_DATAFILE
+			'./lib/sep/'.$pluginPath.'/schema/'.METADATA_PLUGIN_VOCAB_DATAFILE
 		);
 
 		$dataFiles = array();
@@ -77,7 +77,7 @@ class MetadataPlugin extends Plugin {
 
 	/**
 	 * This implementation marks the vocabulary data as installed.
-	 * @see PKPPlugin::installData()
+	 * @see SEPPlugin::installData()
 	 */
 	function installData($hookName, $args) {
 		parent::installData($hookName, $args);

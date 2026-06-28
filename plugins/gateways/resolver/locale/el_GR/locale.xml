@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/gateways/resolver/locale/el_GR/locale.xml
@@ -22,6 +22,6 @@
 <locale name="el_GR" full_name="ελληνικά">	
 	<message key="plugins.gateways.resolver.displayName">Πρόσθετο Αναλυτή Παραπομπών</message>
 	<message key="plugins.gateways.resolver.description">Το πρόσθετο αυτό αναλύει τεύχη και άρθρα σύμφωνα με τις πληροφορίες παραπομπής.</message>
-	<message key="plugins.gateways.resolver.errors.errorMessage">Δεν ειναι δυνατή η ανάλυση μιας μοναδικής οντότητας με την χρήση των συγκεκριμένων πληροφοριών παραπομπής. Σιγουρευτείτε ότι οι σχετικές πληροφορίες είναι αναλυτικές και αναφέρονται σε μια οντότητα της συγκεκριμένης εγκατάστασης του OJS.</message>
+	<message key="plugins.gateways.resolver.errors.errorMessage">Δεν ειναι δυνατή η ανάλυση μιας μοναδικής οντότητας με την χρήση των συγκεκριμένων πληροφοριών παραπομπής. Σιγουρευτείτε ότι οι σχετικές πληροφορίες είναι αναλυτικές και αναφέρονται σε μια οντότητα της συγκεκριμένης εγκατάστασης του CLA.</message>
 	<message key="plugins.gateways.resolver.exportHoldings">Εξαγωγή Πληροφοριών</message>
 </locale>

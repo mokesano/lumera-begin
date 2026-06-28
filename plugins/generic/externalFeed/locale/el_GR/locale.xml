@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/externalFeed/locale/el_GR/locale.xml
@@ -58,7 +58,7 @@
 	<message key="plugins.generic.externalFeed.form.titleRequired">Παρακαλούμε δώστε έναν τίτλο για αυτή τη ροή</message>
 	<message key="plugins.generic.externalFeed.form.feedUrl">URL</message>
 	<message key="plugins.generic.externalFeed.form.feedUrlValid">Παρακαλώ εισάγεται ένα έγκυροURL ροής (συμπεριλάβετε το http://)</message>
-	<message key="plugins.generic.externalFeed.form.feedUrlDescription">Το URL της εξωτερικής Atom/RSS ροής (π.χ. http://pkp.sfu.ca/blog/feed)</message>
+	<message key="plugins.generic.externalFeed.form.feedUrlDescription">Το URL της εξωτερικής Atom/RSS ροής (π.χ. http://lumera.sangia.org/blog/feed)</message>
 	<message key="plugins.generic.externalFeed.form.display">Εμφάνιση</message>
 	<message key="plugins.generic.externalFeed.form.displayHomepage">Εμφάνιση στην αρχική σελίδα</message>
 	<message key="plugins.generic.externalFeed.form.displayBlockNone">Να μην εμφανίζεται σε δομική μονάδα</message>

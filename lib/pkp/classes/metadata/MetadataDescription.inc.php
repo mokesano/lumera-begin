@@ -16,7 +16,7 @@
  * @brief Class modeling a description (DCMI abstract model) or subject-
  *  predicate-object graph (RDF). This class and its children provide
  *  meta-data (DCMI abstract model: statements of property-value pairs,
- *  RDF: assertions of predicate-object pairs) about a given PKP application
+ *  RDF: assertions of predicate-object pairs) about a given SEP application
  *  entity instance (DCMI abstract model: described resource, RDF: subject).
  *
  *  This class has primarily been designed to describe journals, journal
@@ -53,7 +53,7 @@
  *    users to implement and use other schemes as an internal meta-data
  *    standard.
  *  * We have to make sure that we can easily extract/inject meta-data
- *    from/to PKP application objects.
+ *    from/to SEP application objects.
  *  * We have to avoid code duplication to keep maintenance cost under
  *    control.
  *  * We have to minimize the "impedance mismatch" between our own
@@ -74,7 +74,7 @@
  *  * We only implement properties that are justified by strong real-world
  *    use-cases. We recognize that the limiting factor is not the data that
  *    we could represent but the data we actually have. This is not determined
- *    by the chosen standard but by the PKP application objects we want to
+ *    by the chosen standard but by the SEP application objects we want to
  *    represent. Additional meta-data properties/predicates can be added as
  *    required.
  *  * We do adapt data structures as long as we can make sure that a
@@ -98,7 +98,7 @@
  */
 
 
-import('lib.pkp.classes.core.DataObject');
+import('lib.sep.classes.core.DataObject');
 
 define('METADATA_DESCRIPTION_REPLACE_ALL', 0x01);
 define('METADATA_DESCRIPTION_REPLACE_PROPERTIES', 0x02);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/users/locale/cs_CZ/locale.xml
@@ -47,7 +47,7 @@ Příklady:
 	<message key="plugins.importexport.users.import.errorsOccurred">Během importu došlo k chybám</message>
 	<message key="plugins.importexport.users.import.confirmUsers">Potvrďte, že toto jsou uživatelé, které chcete importovat do systému</message>
 	<message key="plugins.importexport.users.import.warning">Varování</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">Nelze použít hesla šifrovaná pomocí {$importHash}; OJS je nakofigurováno pro použití {$ojsHash}. Pokud budete pokračovat, budete muset resetovat hesla importovaných uživatelů.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">Nelze použít hesla šifrovaná pomocí {$importHash}; CLA je nakofigurováno pro použití {$claHash}. Pokud budete pokračovat, budete muset resetovat hesla importovaných uživatelů.</message>
 	<message key="plugins.importexport.users.unknownJournal">Byla specifikována neznámá cesta k časopisu "{$journalPath}".</message>
 
 	<message key="plugins.importexport.users.export.exportUsers">Exportovat uživatele</message>

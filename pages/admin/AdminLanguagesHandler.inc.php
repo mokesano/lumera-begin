@@ -241,7 +241,7 @@ class AdminLanguagesHandler extends AdminHandler {
 	}
 
 	/**
-	 * Download a locale from the PKP web site.
+	 * Download a locale from the SEP web site.
 	 * @param $args array
 	 * @param $request object
 	 */

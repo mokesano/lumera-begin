@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * @file plugins/pubIds/doi/locale/fr_CA/locale.xml
@@ -13,11 +13,11 @@
 
 <locale name="fr_CA" full_name="Français (Canada)">
 	<message key="plugins.pubIds.doi.displayName">DOI</message>
-	<message key="plugins.pubIds.doi.description">Ce plugiciel permet l'assignation d'identifiants d'objets numériques aux numéros, articles, épreuves et fichiers supplémentaires dans OJS.</message>
+	<message key="plugins.pubIds.doi.description">Ce plugiciel permet l'assignation d'identifiants d'objets numériques aux numéros, articles, épreuves et fichiers supplémentaires dans CLA.</message>
 
 	<!-- settings form -->
 	<message key="plugins.pubIds.doi.manager.settings.doiSettings">Configuration du plugiciel DOI</message>
-	<message key="plugins.pubIds.doi.manager.settings.description">Veuillez configurer le plugiciel DOI pour pouvoir gérer et utiliser les DOIs dans OJS:</message>
+	<message key="plugins.pubIds.doi.manager.settings.description">Veuillez configurer le plugiciel DOI pour pouvoir gérer et utiliser les DOIs dans CLA:</message>
 	
 	<message key="plugins.pubIds.doi.manager.settings.doiObjects">Contenu de la revue</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiObjectsRequired">Veuillez choisir les objets auxquels des DOIs devraient être assignés.</message>
@@ -33,7 +33,7 @@
 
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffix">Suffixe DOI</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixDescription">Un suffixe DOI peut prendre n'importe quelle forme, mais doit être unique parmi tout les objets publiés avec le même préfixe DOI:</message>
-	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern">Utilisez les modèle suivants pour générer des suffixes DOI. Utilisez %j pour des initiales de revues, %v pour le numéro du volume, %i pour le numéro du numéro, %Y pour l'année, %a pour l'ID de l'article OJS, %g Pour l'ID de l'épreuve OJS, %s pour l'ID du fichier OJS supplémentaire et %p pour le numéro de page.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern">Utilisez les modèle suivants pour générer des suffixes DOI. Utilisez %j pour des initiales de revues, %v pour le numéro du volume, %i pour le numéro du numéro, %Y pour l'année, %a pour l'ID de l'article CLA, %g Pour l'ID de l'épreuve CLA, %s pour l'ID du fichier CLA supplémentaire et %p pour le numéro de page.</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.issues">pour les numéros</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.articles">pour les articles</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.galleys">pour les épreuves</message>

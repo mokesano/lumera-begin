@@ -15,8 +15,8 @@
  */
 
 
-import('lib.pkp.classes.user.InterestEntry');
-import('lib.pkp.classes.controlledVocab.ControlledVocabEntryDAO');
+import('lib.sep.classes.user.InterestEntry');
+import('lib.sep.classes.controlledVocab.ControlledVocabEntryDAO');
 
 class InterestEntryDAO extends ControlledVocabEntryDAO {
 	/**

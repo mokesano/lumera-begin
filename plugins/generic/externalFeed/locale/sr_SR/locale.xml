@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/externalFeed/locale/sr_SR/locale.xml
@@ -58,7 +58,7 @@
 	<message key="plugins.generic.externalFeed.form.titleRequired">Upišite naslov za ovaj link</message>
 	<message key="plugins.generic.externalFeed.form.feedUrl">URL</message>
 	<message key="plugins.generic.externalFeed.form.feedUrlValid">Unesite ispravan URL linka (uključite http://)</message>
-	<message key="plugins.generic.externalFeed.form.feedUrlDescription">URL Atom/RSS linka (npr. http://pkp.sfu.ca/blog/feed)</message>
+	<message key="plugins.generic.externalFeed.form.feedUrlDescription">URL Atom/RSS linka (npr. http://lumera.sangia.org/blog/feed)</message>
 	<message key="plugins.generic.externalFeed.form.display">Prilaz</message>
 	<message key="plugins.generic.externalFeed.form.displayHomepage">Prikaži na početnoj stranici</message>
 	<message key="plugins.generic.externalFeed.form.displayBlockNone">Ne prikazuj u bloku</message>

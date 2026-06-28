@@ -1,37 +1,37 @@
 <?php
 /**
- * @file classes/security/authorization/PKPProcessAccessPolicy.inc.php
+ * @file classes/security/authorization/SEPProcessAccessPolicy.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPProcessAccessPolicy
+ * @class SEPProcessAccessPolicy
  * @ingroup security_authorization
  *
  * @brief Class to control access to handler operations based on a one time key
  *  that authorizes a process to execute.
  */
 
-import('lib.pkp.classes.security.authorization.PKPPublicAccessPolicy');
+import('lib.sep.classes.security.authorization.SEPPublicAccessPolicy');
 
-class PKPProcessAccessPolicy extends PKPPublicAccessPolicy {
+class SEPProcessAccessPolicy extends SEPPublicAccessPolicy {
 	/** @var string the process authorization token */
 	var $authToken;
 
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $operations array|string either a single operation or a list of operations that
 	 *  this policy is targeting.
 	 * @param $message string a message to be displayed if the authorization fails
 	 */
-	function PKPProcessAccessPolicy(&$request, $args, $operations, $message = 'user.authorization.processAuthenticationTokenRequired') {
+	function SEPProcessAccessPolicy(&$request, $args, $operations, $message = 'user.authorization.processAuthenticationTokenRequired') {
 		if (isset($args['authToken'])) {
 			$this->authToken = $args['authToken'];
 		}
 
-		parent::PKPPublicAccessPolicy($request, $operations, $message);
+		parent::SEPPublicAccessPolicy($request, $operations, $message);
 	}
 
 

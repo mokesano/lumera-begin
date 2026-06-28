@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/medra/locale/it_IT/locale.xml
@@ -17,7 +17,7 @@
 
 	<message key="plugins.importexport.medra.intro"><![CDATA[Se vuoi registrare DOI con mEDRA, segui le istruzioni riportate nella
 		<a href="http://www.medra.org/en/guide.htm" target="_blank">mEDRA homepage</a>
-		per ricevere username e password. Se non hai le credenziali potrai comunque esportare i metadati in ONIX ma non registrare DOI con mEDRA da OJS. 
+		per ricevere username e password. Se non hai le credenziali potrai comunque esportare i metadati in ONIX ma non registrare DOI con mEDRA da CLA. 
 		Nota che la password sarà registrata in testo semplice, non crittografata, secondo le indicazioni di mEDRA.]]></message>
 
 	<message key="plugins.importexport.medra.settings.description"><![CDATA[<a href="{$settingsUrl}">Configura</a> il plugin  mEDRA prima del primo utilizzo.]]></message>
@@ -27,7 +27,7 @@
 	<message key="plugins.importexport.medra.settings.form.usernameRequired">Inserisci il tuo username mEDRA.</message>
 	<message key="plugins.importexport.medra.settings.form.passwordRequired">Inserisci la password ricevuta da mEDRA.</message>
 	<message key="plugins.importexport.medra.settings.form.automaticRegistration">Registra DOI automaticamente</message>
-	<message key="plugins.importexport.medra.settings.form.automaticRegistration.description"><![CDATA[OJS depositerà i DOI automaticamente su mEDRA dopo la pubblicazione degli articoli. Potrebbe occorrere un certo tempo dopo la pubblicazione degli articoli. Puoi verificare i DOI in attesa di essere registrati nella <a href="{$unregisteredURL}">lista degli articoli non registrati</a>.]]></message>
+	<message key="plugins.importexport.medra.settings.form.automaticRegistration.description"><![CDATA[CLA depositerà i DOI automaticamente su mEDRA dopo la pubblicazione degli articoli. Potrebbe occorrere un certo tempo dopo la pubblicazione degli articoli. Puoi verificare i DOI in attesa di essere registrati nella <a href="{$unregisteredURL}">lista degli articoli non registrati</a>.]]></message>
 	<message key="plugins.importexport.medra.settings.form.registrantName">Istituzione registrata con mEDRA</message>	
 	<message key="plugins.importexport.medra.settings.form.registrantNameRequired">Inserisci il nome dell'istituzione registrata con mEDRA</message>
 	<message key="plugins.importexport.medra.settings.form.fromFields">Persona che verrà contattata da mEDRA in caso di problemi tecnici</message>

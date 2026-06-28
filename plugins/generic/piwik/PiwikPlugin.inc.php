@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class PiwikPlugin extends GenericPlugin {
 

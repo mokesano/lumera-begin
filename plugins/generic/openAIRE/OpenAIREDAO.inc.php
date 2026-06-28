@@ -13,7 +13,7 @@
  * @brief DAO operations for OpenAIRE.
  */
 
-import('classes.oai.ojs.OAIDAO');
+import('classes.oai.cla.OAIDAO');
 
 
 class OpenAIREDAO extends OAIDAO {

@@ -13,7 +13,7 @@
  * @brief This plugin helps with translation maintenance.
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class TranslatorPlugin extends GenericPlugin {
 	function register($category, $path) {

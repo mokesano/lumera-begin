@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/usageStats/locale/el_GR/locale.xml
@@ -31,9 +31,9 @@
 	<message key="plugins.generic.usageStats.noCounterBotList">Η λίστα COUNTER bot δεν ήταν δυνατόν να βρεθεί ή περισσότερες από μια λίστες είναι παρούσες. Tο αρχείο  {$file} δεν ήταν δυνατόν να επεξεργαστεί.</message>
 	<message key="plugins.generic.usageStats.failedCounterBotList">Η λίστα COUNTER bot {$botlist} δεν ήταν δυνατόν να ανοιχτεί. Το αρχείο  {$file} δεν ήταν δυνατόν να επεξεργαστεί.</message>
 	
-	<message key="plugins.reports.usageStats.report.displayName">OJS αναφορά στατιστικών χρήσης</message>
-	<message key="plugins.reports.usageStats.report.description">OJS προκαθορισμένη αναφορά στατιστικών χρήσης (COUNTER ready)</message>
+	<message key="plugins.reports.usageStats.report.displayName">CLA αναφορά στατιστικών χρήσης</message>
+	<message key="plugins.reports.usageStats.report.description">CLA προκαθορισμένη αναφορά στατιστικών χρήσης (COUNTER ready)</message>
 	
-	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
-	<message key="plugins.reports.usageStats.metricType.full">Open Journal Systems statistics (COUNTER ready)</message>
+	<message key="plugins.reports.usageStats.metricType">CLA/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Code Lumera Editorial statistics (COUNTER ready)</message>
 </locale>

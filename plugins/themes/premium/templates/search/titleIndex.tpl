@@ -45,7 +45,7 @@
                         {foreach from=$section.articles item=article}
                         <li>{if $section.title}<h7 class="tocSectionTitle">{$section.title|escape}</h7>{/if}</li>
                         {/foreach}{* articles *}{/foreach}{* sections *}
-                        <li><h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.pkp.peerReviewed"}{/if}</h7></li>
+                        <li><h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.sep.peerReviewed"}{/if}</h7></li>
 
                     <div class="ArtType">Open Access</div></ul>
 

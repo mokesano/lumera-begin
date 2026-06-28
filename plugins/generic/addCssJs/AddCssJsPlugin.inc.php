@@ -13,11 +13,11 @@
  * @brief Makes possible to add new CSS and JS 
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class AddCssJsPlugin extends GenericPlugin {
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		if (parent::register($category, $path)) {

@@ -14,7 +14,7 @@
  * @brief Form for authors to create/edit referrals.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ReferralForm extends Form {
 	/** @var referralId int the ID of the referral being edited */

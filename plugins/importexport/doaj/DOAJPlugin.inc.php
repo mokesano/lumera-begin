@@ -13,7 +13,7 @@
  * @brief DOAJ import/export plugin
  */
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
 import('classes.plugins.ImportExportPlugin');
 
@@ -53,7 +53,7 @@ class DOAJPlugin extends ImportExportPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getTemplatePath()
+	 * @see SEPPlugin::getTemplatePath()
 	 */
 	function getTemplatePath() {
 		return parent::getTemplatePath().'templates/';
@@ -147,7 +147,7 @@ class DOAJPlugin extends ImportExportPlugin {
 
 	/**
 	 * Label articles (on article or issue level) with a 'doaj::registered' flag
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $selectedObjects array
 	 */
 	function _markRegistered($request, $selectedObjects) {
@@ -208,7 +208,7 @@ class DOAJPlugin extends ImportExportPlugin {
 		$this->setBreadcrumbs(array(), true);
 
 		// Retrieve all published issues.
-		AppLocale::requireComponents(array(LOCALE_COMPONENT_OJS_EDITOR));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_CLA_EDITOR));
 		$issueDao = DAORegistry::getDAO('IssueDAO'); /* @var $issueDao IssueDAO */
 		$issueIterator = $issueDao->getPublishedIssues($journal->getId());
 
@@ -233,7 +233,7 @@ class DOAJPlugin extends ImportExportPlugin {
 		unset($issueIterator);
 
 		// Instantiate issue iterator.
-		import('lib.pkp.classes.core.ArrayItemIterator');
+		import('lib.sep.classes.core.ArrayItemIterator');
 		$rangeInfo = Handler::getRangeInfo('issues');
 		$iterator = new ArrayItemIterator($issues, $rangeInfo->getPage(), $rangeInfo->getCount());
 
@@ -266,7 +266,7 @@ class DOAJPlugin extends ImportExportPlugin {
 			$paginatedArticles = array_slice($articles, $rangeInfo->getCount() * ($rangeInfo->getPage()-1), $rangeInfo->getCount());
 			
 			// Instantiate article iterator.
-			import('lib.pkp.classes.core.VirtualArrayIterator');
+			import('lib.sep.classes.core.VirtualArrayIterator');
 			$iterator = new VirtualArrayIterator($paginatedArticles, $totalArticles, $rangeInfo->getPage(), $rangeInfo->getCount());
 
 			// Prepare and display the article template.
@@ -389,7 +389,7 @@ class DOAJPlugin extends ImportExportPlugin {
 
 	/**
 	 * Process a request.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $journal Journal
 	 */
 	function _process($request, $journal) {

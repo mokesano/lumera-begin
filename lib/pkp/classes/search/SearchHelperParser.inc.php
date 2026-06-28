@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.search.SearchFileParser');
+import('lib.sep.classes.search.SearchFileParser');
 
 class SearchHelperParser extends SearchFileParser {
 

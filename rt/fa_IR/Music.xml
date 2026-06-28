@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE version SYSTEM "../../lib/pkp/dtd/rtVersion.dtd">
+<!DOCTYPE version SYSTEM "../../lib/sep/dtd/rtVersion.dtd">
 <!--
   * Music.xml
   *
@@ -38,17 +38,17 @@ OAlSster
 			<search_url>http://oaister.umdl.umich.edu/cgi/b/bib/bib-idx?type=boolean&amp;size=10&amp;c=oaister&amp;q1=&amp;rgn1=entire+record&amp;op2=and&amp;q2=&amp;rgn2=entire+record&amp;op3=And&amp;q3=&amp;rgn3=title&amp;op4=And&amp;rgn4=author&amp;op5=And&amp;q5=&amp;rgn5=subject&amp;op6=And&amp;rgn6=norm&amp;q6=all+types&amp;sort=author%2Fcreator&amp;submit2=search&amp;q4={$formKeywords}</search_url>
 		</search>
 		<search>
-			<search_title>Public Knowledge Project Open Archives Harvester:پروژه آگاهی عمومی از آرشیو باز 
+			<search_title>Sangia Editorial Project Open Archives Harvester:پروژه آگاهی عمومی از آرشیو باز 
 پابلیک نالج پراجکت اپن آرشیو هاروستر
 </search_title>
 			<search_description>آرشیو کامل و باز 
-PKP
+SEP
 یک سیستم نمایه سازی آزاد از متا دیتا ها می باشد که با پروژه ی آگاهی عمومی از طریق کوشش های انجام شده توسط فدرال گسترش یافته تا دسترسی به جستجو را وسیع تر و بهتر سازد. 
 منابع اطلاعاتی 
-PKP OAI
+SEP OAI
 به شما این امکان را می دهد تا یک نمایه ی قابل جستجو از متا دیتا  ها را از آرشیو های باز و کامل اولیه مانندسایت های مورد استفاده در سیستم مجلات باز یا سیستم های کنفرانس باز ایجاد کنید</search_description>
-			<url>http://pkp.sfu.ca/harvester/</url>
-			<search_url>http://pkp.sfu.ca/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
+			<url>http://lumera.sangia.org/harvester/</url>
+			<search_url>http://lumera.sangia.org/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
 		</search>
 		<search>
 			<search_title>تئوری موسیقی آنلاین</search_title>

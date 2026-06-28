@@ -1,17 +1,17 @@
 <?php
 
 /**
- * @file classes/submission/reviewAssignment/PKPReviewAssignment.inc.php
+ * @file classes/submission/reviewAssignment/SEPReviewAssignment.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPReviewAssignment
+ * @class SEPReviewAssignment
  * @ingroup submission
  * @see ReviewAssignmentDAO
  *
- * @brief Describes review assignment properties (abstracted for PKP library).
+ * @brief Describes review assignment properties (abstracted for SEP library).
  */
 
 define('SUBMISSION_REVIEWER_RECOMMENDATION_ACCEPT', 1);
@@ -35,14 +35,14 @@ define('REVIEW_ASSIGNMENT_NOT_UNCONSIDERED', 0);
 define('REVIEW_ASSIGNMENT_UNCONSIDERED', 1);
 define('REVIEW_ASSIGNMENT_UNCONSIDERED_READ', 2);
 
-class PKPReviewAssignment extends DataObject {
+class SEPReviewAssignment extends DataObject {
 	/** @var array The revisions of the reviewer file */
 	var $reviewerFileRevisions;
 
 	/**
 	 * Constructor.
 	 */
-	function PKPReviewAssignment() {
+	function SEPReviewAssignment() {
 		parent::DataObject();
 	}
 

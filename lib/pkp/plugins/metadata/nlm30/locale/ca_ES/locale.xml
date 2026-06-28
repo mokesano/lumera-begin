@@ -7,7 +7,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_(ca_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Catalan_(ca_ES)
   *
   * Localization strings for the ca_ES (Català) locale.
   -->
@@ -37,11 +37,11 @@
 
 	<!-- NLM 3.0 output -->
 	<message key="plugins.metadata.nlm30.nlm30XmlOutput.displayName">Sortida de Publicació de revistes NLM 3.0</message>
-	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Transforma un article/document OJS o OCS a NLM 3.0.</message>
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Transforma un article/document CLA o OCS a NLM 3.0.</message>
 
 	<!-- NLM 2.3 output -->
 	<message key="plugins.metadata.nlm30.nlm23XmlOutput.displayName">Sortida de Publicació de revistes NLM 2.3</message>
-	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Transforma un article/document OJS o OCS a NLM 2.3.</message>
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Transforma un article/document CLA o OCS a NLM 2.3.</message>
 
 	<!-- NLM 3.0 to 2.3 downgrade -->
 	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.displayName">Actualitzar Publicació de revistes NLM 3.0 a la versió anterior 2.3</message>
@@ -49,5 +49,5 @@
 
 	<!-- Plain text reference list output -->
 	<message key="plugins.metadata.nlm30.refList.displayName">Generació d'una llista de referències en text net</message>
-	<message key="plugins.metadata.nlm30.refList.description">Genera una llista de referències formatada en text net des d'una tramesa de referències OJS, OCS o OMP</message>
+	<message key="plugins.metadata.nlm30.refList.description">Genera una llista de referències formatada en text net des d'una tramesa de referències CLA, OCS o OMP</message>
 </locale>

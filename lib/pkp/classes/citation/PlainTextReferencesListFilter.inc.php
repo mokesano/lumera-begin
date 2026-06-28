@@ -15,8 +15,8 @@
  */
 
 
-import('lib.pkp.classes.citation.TemplateBasedReferencesListFilter');
-import('lib.pkp.classes.citation.PlainTextReferencesList');
+import('lib.sep.classes.citation.TemplateBasedReferencesListFilter');
+import('lib.sep.classes.citation.PlainTextReferencesList');
 
 class PlainTextReferencesListFilter extends TemplateBasedReferencesListFilter {
 	/**
@@ -25,7 +25,7 @@ class PlainTextReferencesListFilter extends TemplateBasedReferencesListFilter {
 	 */
 	function PlainTextReferencesListFilter(&$filterGroup) {
 		// Add the persistable filter settings.
-		import('lib.pkp.classes.filter.SetFilterSetting');
+		import('lib.sep.classes.filter.SetFilterSetting');
 		$this->addSetting(new SetFilterSetting('ordering', null, null,
 				array(REFERENCES_LIST_ORDERING_ALPHABETICAL, REFERENCES_LIST_ORDERING_NUMERICAL)));
 
@@ -41,7 +41,7 @@ class PlainTextReferencesListFilter extends TemplateBasedReferencesListFilter {
 	 */
 	function getCitationOutputFilterTypeDescriptions() {
 		return array(
-				'metadata::lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema(CITATION)',
+				'metadata::lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema(CITATION)',
 				'primitive::string');
 	}
 
@@ -53,7 +53,7 @@ class PlainTextReferencesListFilter extends TemplateBasedReferencesListFilter {
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.classes.citation.PlainTextReferencesListFilter';
+		return 'lib.sep.classes.citation.PlainTextReferencesListFilter';
 	}
 
 

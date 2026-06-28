@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/ro_RO/manager.xml
@@ -21,7 +21,7 @@
 	<message key="manager.groups.context.editorialTeam.short">Colectivul de redacție</message>
 	<message key="manager.groups.context.people">Vezi ca titulatura să apară ca fiind propria categorie sub colectiv (de ex: Colectivul de redacţie)</message>
 	<message key="manager.groups.create">Introdu o titulatură pentru poziția deținută</message>
-	<message key="manager.groups.disableBoard">OJS afişează membrii colectivului redacţional sub secţiunile aferente rolurilor atribuite (Manager de revistă, Redactor, etc.)</message>
+	<message key="manager.groups.disableBoard">CLA afişează membrii colectivului redacţional sub secţiunile aferente rolurilor atribuite (Manager de revistă, Redactor, etc.)</message>
 	<message key="manager.groups.enableBoard">Managerul revistei creează titulaturile şi adaugă colectivul sub fiecare dintre acestea.</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[Sub <a href="{$aboutEditorialTeamUrl}">Colectiv</a> în secțiunea „despre”:]]></message>
 	<message key="manager.groups.noneCreated">Nu au fost create poziții în echipa editorială.</message>
@@ -30,7 +30,7 @@
 	<message key="manager.language.forms">Formulare</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Va avea ca efect înlocuirea oricăror setări specifice unei localizări pe care le-ai avut cât timp ai utilizat respectiva localizare</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Reîncarcă setările implicite specifice localizării</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS poate fi utilizat în mai multe limbi implementate în pachete de localizare. De asemenea, OJS poate opera  ca şi sistem multilingv, oferindu-le  utilizatorilor posibilitatea să aleagă limba dorită pentru oricare dintre pagini, fiind permis ca anumite date să fie întroduse în câteva limbi suplimentare.<br /><br />Dacă o limbă suportată de OJS nu este menţionată mai jos, cereţi administratorului să instaleze limba din interfaţa de administrare a siteului. Pentru instrucţiuni privind adăugarea suportului pentru noi limbi, te rog consultă documentaţia OJS.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA poate fi utilizat în mai multe limbi implementate în pachete de localizare. De asemenea, CLA poate opera  ca şi sistem multilingv, oferindu-le  utilizatorilor posibilitatea să aleagă limba dorită pentru oricare dintre pagini, fiind permis ca anumite date să fie întroduse în câteva limbi suplimentare.<br /><br />Dacă o limbă suportată de CLA nu este menţionată mai jos, cereţi administratorului să instaleze limba din interfaţa de administrare a siteului. Pentru instrucţiuni privind adăugarea suportului pentru noi limbi, te rog consultă documentaţia CLA.]]></message>
 	<message key="manager.languages.noneAvailable">Scuze, nu sunt disponibile limbi suplimentare. Contactaţi administratorul siteului dacă doreşti să foloseşti limbi suplimentare pentru această revistă.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Aceasta va fi limba aleasă implicit pentru siteul revistei.</message>
 	<message key="manager.managementPages">Pagini pentru management</message>
@@ -40,7 +40,7 @@
 	<message key="manager.payment.authorFees">Taxe pentru autori</message>
 	<message key="manager.payment.authorFeesDescription">Opţiunile selectate împreună cu descrierile şi taxele (care pot fi editate mai jos), vor apărea la Pasul 1 al procesului de propunere şi în secţiunea „despre” revistă sub secţiunea propuneri, precum şi în punctele unde este necesară plata.</message>
 	<message key="manager.payment.currency">Monedă</message>
-	<message key="manager.payment.currencymessage">OJS nu face convertiri valutare. Dacă se acceptă plată pentru abonamente, trebuie să te asiguri că moneda pentru abonament se potriveşte cu cea specificată aici.</message>
+	<message key="manager.payment.currencymessage">CLA nu face convertiri valutare. Dacă se acceptă plată pentru abonamente, trebuie să te asiguri că moneda pentru abonament se potriveşte cu cea specificată aici.</message>
 	<message key="manager.payment.description">Descriere</message>
 	<message key="manager.payment.details">Detalii</message>
 	<message key="manager.payment.editSubscription">Editează Abonamentele</message>
@@ -197,7 +197,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Trebuie să apară în secţiunea „despre revistă”) </message>
 	<message key="manager.setup.authorCopyrightNotice">Notă privind drepturile de autor</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Solicitați autorilor să aprobe nota privind drepturile de autor ca parte a procesului de depunere a propunerii.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Notificarea privind drepturile de autor introdusă mai jos va apărea în secţiunea „despre revistă” şi în metadatele fiecărui articol publicat. Ţine de fiecare revistă să-şi determine natura condiţiilor stipulate prin drepturile de autor, dar Public Knowledge Project recomandă utilizarea licenţelor <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. În acest sens sunt formulate <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">exemple de note privind drepturile de autor</a> care nu pot fi copiate în spaţiul de mai jos pentru revistele care a) oferă acces deschis sau b) oferă acces deschis cu embargo sau care c) nu oferă acces deschis.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Notificarea privind drepturile de autor introdusă mai jos va apărea în secţiunea „despre revistă” şi în metadatele fiecărui articol publicat. Ţine de fiecare revistă să-şi determine natura condiţiilor stipulate prin drepturile de autor, dar Sangia Editorial Project recomandă utilizarea licenţelor <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. În acest sens sunt formulate <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">exemple de note privind drepturile de autor</a> care nu pot fi copiate în spaţiul de mai jos pentru revistele care a) oferă acces deschis sau b) oferă acces deschis cu embargo sau care c) nu oferă acces deschis.]]></message>
 	<message key="manager.setup.authorGuidelines">Îndrumări pentru autori</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Menționează standardele bibliografice pentru autori şi standardele de redactare şi formatare utilizate pentru articolele propuse revistei (ex. <em>Publication Manual of the American Psychological Association</em>, a V-a ediţie, 2001). Este de mare ajutor, să oferi exemple de referinţe bibliografice pentru seriale şi cărţi care ar putea fi folosite la elaborarea propunerilor. De asemenea, identificarea tipurilor de fişiere adiţionale (ex. seturi de date, instrumente de cercetare, etc.) pe care autorii ar trebui să fie încurajaţi să le încarce suplimentar propunerii pentru a mări implicarea cititorilor în lucrarea respectivă.]]></message>
 	<message key="manager.setup.competingInterests">Conflictul de interese</message>
@@ -239,7 +239,7 @@
 	<message key="manager.setup.doiPrefixDescription"><![CDATA[Prefixul DOI (Digital Object Identifier) este atribuit de <a href="http://www.crossref.org" target="_new">CrossRef</a> şi are formatul 10.xxxx (e.g. 10.1234).]]></message>
 	<message key="manager.setup.doiSuffix">Sufix DOI</message>
 	<message key="manager.setup.doiSuffixDefault">Folosește formatul implicit (%j.v%vi%i.%a).</message>
-	<message key="manager.setup.doiSuffixPattern">Folosește formatul introdus mai pentru a genera sufixe DOI. Folosește %j pentru inițialele revistei, %v pentru numărul de volum, %i pentru numărul de revistă, %a pentru identificatorul de articol al articolului prezent în sistemul OJS și %p pentru numărul paginii.</message>
+	<message key="manager.setup.doiSuffixPattern">Folosește formatul introdus mai pentru a genera sufixe DOI. Folosește %j pentru inițialele revistei, %v pentru numărul de volum, %i pentru numărul de revistă, %a pentru identificatorul de articol al articolului prezent în sistemul CLA și %p pentru numărul paginii.</message>
 	<message key="manager.setup.doiSuffixPattern.example">De exemplu: vol%viss%ipp%p poate genera un DOI astfel: 10.1234/vol3iss2pp230</message>
 	<message key="manager.setup.doiSuffixDescription">Un sufix DOI poate avea orice formă, dar trebuie să fie unic pentru fiecare articol publicat.</message>
 	<message key="manager.setup.doiSuffixPublisherId">Folosește „identificator particularizat” pentru articolele publicate ca fiind un sufix DOI (acesta trebuie activat la Pasul 4).</message>
@@ -252,7 +252,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Revistele au un colectiv editorial care îngrijeşte la direcţiile redacţionale ale revistei, participă în numirea redactorilor iar prin calitatea membrilor acestui colectiv dau o poziţie revistei în sfera domeniului. Colectivul de evaluare joacă un rol similar, dar, în plus, conduc procesele de evaluare. Membrii colectivului de evaluare nu vor avea acces la sistemul administrativ al revistei, dar vor fi adăugaţi la lista celor care sunt disponibili pentru a face evaluări.</message>
 	<message key="manager.setup.emailBounceAddress">Adresă de salt</message>
 	<message key="manager.setup.emailBounceAddressDescription">Orice email care nu poate fi trimis va avea ca rezultat o eroare trimisă la această adresă.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Notă:</strong> Pentru a folosi această opţiune, administratorul trebuie să activeze opţiunea <tt>allow_envelope_sender</tt> din fişierul de configurare al OJS. Poate să fie nevoie de configurări suplimentare pentru server pentru a suporta această funcţie (ceea ce nu se poate aplica pentru toate serverele), după cum este precizat şi în documentaţia OJS.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Notă:</strong> Pentru a folosi această opţiune, administratorul trebuie să activeze opţiunea <tt>allow_envelope_sender</tt> din fişierul de configurare al CLA. Poate să fie nevoie de configurări suplimentare pentru server pentru a suporta această funcţie (ceea ce nu se poate aplica pentru toate serverele), după cum este precizat şi în documentaţia CLA.]]></message>
 	<message key="manager.setup.emails">Identificare emailuri</message>
 	<message key="manager.setup.emailSignature">Semnătură</message>
 	<message key="manager.setup.emailSignatureDescription">Emailurile care sunt trimise de sistem din partea revistei vor avea următoarea semnătură ataşată la final. Textele șablon ale emailurilor care sunt deja pregătite sunt disponibile pentru editare la secţiunea de management a revistei.</message>
@@ -274,7 +274,7 @@
 	<message key="manager.setup.focusScope">Obiectivele şi domeniul acoperit</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>EXEMPLU DE DATE HTML</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Pentru autori pentru a-şi indexa opera</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS susţine <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> Protocol for Metadata Harvesting, care este standardul emergent pentru furnizarea accesului la resurse electronice indexate corespunzător în toată lumea. Autorii vor folosi un model similar pentru a introduce metadatele corespondente propunerii lor. Managerul revistei ar trebui să selecteze categoriile pentru indexare şi să prezinte autorilor exemple relevante care să-i ajute în indexarea articolelor lor, separând termenii cu punct şi virgulă (de ex. termen1; termen2). Intrările ar trebui introduse ca exemplificări prin folosirea formulărilor „Ex:” sau „De exemplu,”.]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA susţine <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> Protocol for Metadata Harvesting, care este standardul emergent pentru furnizarea accesului la resurse electronice indexate corespunzător în toată lumea. Autorii vor folosi un model similar pentru a introduce metadatele corespondente propunerii lor. Managerul revistei ar trebui să selecteze categoriile pentru indexare şi să prezinte autorilor exemple relevante care să-i ajute în indexarea articolelor lor, separând termenii cu punct şi virgulă (de ex. termen1; termen2). Intrările ar trebui introduse ca exemplificări prin folosirea formulărilor „Ex:” sau „De exemplu,”.]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Este necesar emailul contactului primar.</message>
 	<message key="manager.setup.form.contactNameRequired">Este necesar numele pentru contactul primar.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Sunt necesare iniţialele revistei.</message>
@@ -298,7 +298,7 @@
 	<message key="manager.setup.information.forLibrarians">Pentru bibliotecari</message>
 	<message key="manager.setup.information.forReaders">Pentru cititori</message>
 	<message key="manager.setup.initialIssue">Primul număr</message>
-	<message key="manager.setup.initialIssueDescription">În funcţie de formatul selectat, identificaţi numărul, volumul, şi/sau anul primului număr care va fi publicat cu OJS:</message>
+	<message key="manager.setup.initialIssueDescription">În funcţie de formatul selectat, identificaţi numărul, volumul, şi/sau anul primului număr care va fi publicat cu CLA:</message>
 	<message key="manager.setup.institution">Instituţie</message>
 	<message key="manager.setup.issnDescription"><![CDATA[ISSN (International Standard Serial Number) este un număr cu 8 digiţi care identifică un periodic incluzând periodicele electronice. Aceste numere sunt gestionate de o reţea globală de centre naţionale coordonate de un Centru Internaţional aflat la Paris susţinut de UNESCO şi Guvernul Francez. Un număr poate fi obţinut de la <a href="http://www.issn.org" target="_new">siteul ISSN</a>. Acest lucru poate fi făcut în orice moment al existenței unei reviste.]]></message>
 	<message key="manager.setup.issuePerVolume">Numere per volum</message>
@@ -414,7 +414,7 @@
 	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Îndrumările pentru evaluare oferă criteriile pentru a vedea dacă o lucrare se pretează pentru a fi publicată şi poate cuprinde instrucţiuni specifice pregătirii unei evaluări eficiente şi de ajutor. În efectuarea evaluării, evaluatorilor li se oferă două căsuţe de text, prima „pentru autor şi redactor”, iar a doua „pentru redactor”. Ca alternativă, managerul revistei poate crea un formular de peer review la <a href="{$reviewFormsUrl}" class="action">Formulare pentru evaluare</a>. În orice caz, redactorii vor avea opţiunea de a include evaluările în corespondenţă cu autorul.]]></message>
 	<message key="manager.setup.reviewOptions">Opţiunile pentru evaluare</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Emailuri automate de notificare (disponibile din emailurile șablon) pot fi trimise către evaluatori în două puncte (redactorul poate oricând să trimită un email direct către evaluator)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Notă:</strong> Pentru a folosi aceste opţiuni, administratorul siteului trebuie să activeze opţiunea <tt>scheduled_tasks</tt> din fişierul de configurare al OJS. Pot fi necesare configurări suplimentare pentru server pentru a suporta această funcţie (care nu poate fi activată pe toate serverele), după cum este indicat în documentaţia OJS.]]></message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Notă:</strong> Pentru a folosi aceste opţiuni, administratorul siteului trebuie să activeze opţiunea <tt>scheduled_tasks</tt> din fişierul de configurare al CLA. Pot fi necesare configurări suplimentare pentru server pentru a suporta această funcţie (care nu poate fi activată pe toate serverele), după cum este indicat în documentaţia CLA.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Evaluare oarbă</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Poate fi modificată în timpul procesului editorial.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Durata tipică a timpului alocat pentru evaluatori</message>
@@ -433,7 +433,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Oferă linkuri către <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">asigurarea unei evaluări oarbe</a> pe paginile în care autorii şi evaluatorii încarcă fişierele.]]></message>
 	<message key="manager.setup.reviewPolicy">Regulamentul de evaluare</message>
 	<message key="manager.setup.reviewProcess">Procesul de evaluare</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS are două modele pentru managementul procesului de evaluare. Procesul de evaluare standard este recomandat deoarece îl conduce pe evaluator prin tot procesul, asigurând un istoric complet al fiecărei propuneri şi beneficiind de avantajul notificărilor automate şi al recomandărilor standard pentru propuneri (Acceptat; Acceptat cu revizuire; Propus pentru evaluare; Propune în altă parte; Respins; Vezi comentarii).<br /><br />Selectează una din următoarele:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA are două modele pentru managementul procesului de evaluare. Procesul de evaluare standard este recomandat deoarece îl conduce pe evaluator prin tot procesul, asigurând un istoric complet al fiecărei propuneri şi beneficiind de avantajul notificărilor automate şi al recomandărilor standard pentru propuneri (Acceptat; Acceptat cu revizuire; Propus pentru evaluare; Propune în altă parte; Respins; Vezi comentarii).<br /><br />Selectează una din următoarele:]]></message>
 	<message key="manager.setup.reviewProcessEmail">Proces de evaluare ataşat la email</message>
 	<message key="manager.setup.reviewProcessStandard">Procesul de evaluare standard</message>
 	<message key="manager.setup.reviewProcessStandardDescription">Redactorii vor trimite un email către evaluatorii selectaţi care conţine titlul şi abstractul propunerii, precum şi o invitaţie de autentificare la siteul revistei pentru a face evaluarea. Evaluatorii intră pe siteul revistei pentru a-şi da acordul pentru evaluare, pentru a descărca propunerile, pentru a trimite comentariile şi pentru a selecta o recomandare.</message>
@@ -443,7 +443,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Dacă nu sunt adăugate secţiuni, atunci articolele sunt trimise către secţiunea articolelor implicit.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Pentru a creea sau modifica secţiuni ale revistei (ex. articole, evaluări pentru cărţi, etc.), mergi la secţiunea de management a secţiunilor.<br /><br />Pentru a propune articole revistei, autorii vor desemna...]]></message>
 	<message key="manager.setup.securitySettings">Setările pentru acces şi de securitate</message>
-	<message key="manager.setup.securitySettingsDescription">OJS oferă un număr de opţiuni legate de securitate, care pot fi utilizate pentru a restricţiona conţinutul revistei şi de a menţine informaţii suplimentare privind propunerile în scop de auditare.</message>
+	<message key="manager.setup.securitySettingsDescription">CLA oferă un număr de opţiuni legate de securitate, care pot fi utilizate pentru a restricţiona conţinutul revistei şi de a menţine informaţii suplimentare privind propunerile în scop de auditare.</message>
 	<message key="manager.setup.selectEditorDescription">Redactorul șef al revistei care se va îngriji de procesul editorial.</message>
 	<message key="manager.setup.selectSectionDescription">Secţiunea revistei pentru care articolul va fi luat în considerare.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Arată întotdeauna linkuri căte zona de asamblare şi indică accesul restricţionat.</message>
@@ -466,7 +466,7 @@
 	<message key="manager.setup.submissions.description">Îndrumări pentru autor, drepturi de autor şi indexare (incluzând înregistrarea).</message>
 	<message key="manager.setup.subscription">Revista necesită abonarea pentru a fi accesibilă o parte a conţinutului său.</message>
 	<message key="manager.setup.subscriptionDescription">Acest lucru necesită desemnarea unui manager pentru abonamente care are acces la modulul de abonamente, ce include opţiuni suplimentare privind accesul deschis, auto-arhivarea şi notificările prin email.</message>
-	<message key="manager.setup.noPublishing">OJS nu va fi folosit pentru a publica conținutul revistei online.</message>
+	<message key="manager.setup.noPublishing">CLA nu va fi folosit pentru a publica conținutul revistei online.</message>
 	<message key="manager.setup.technicalSupportContact">Contact suport tehnic</message>
 	<message key="manager.setup.technicalSupportContactDescription">Această persoană va fi afişată în pagina de contacte în folosul redactorilor, autorilor, evaluatorilor şi ar trebui să aibe experienţă în lucrul cu sistemul din toate perspectivele rolurilor existente. Pentru că acest sistem de management al revistelor necesită suport tehnic redus, acest rol poate fi dat cu jumătate de normă. Pot apărea ocazii, de exemplu, când autorii şi evaluatorii au dificultăţi cu instrucţiunile sau cu formatele de fişiere sau există o necesitatea asigurării faptul că revistei i se fac copii de siguranţă regulat pe server.</message>
 	<message key="manager.setup.typeExamples">(Ex. Cercetare istorică; Cvasi-experimental; Analiză literară; Sondaj/Interviu)</message>
@@ -485,7 +485,7 @@
 	<message key="manager.setup.useTextTitle">Textul pentru titlu</message>
 	<message key="manager.setup.volumePerYear">Volume pe an</message>
 	<message key="manager.statistics.reports">Generator de rapoarte</message>
-	<message key="manager.statistics.reports.description">OJS generează rapoarte care urmăresc detaliile asociate cu procesarea propunerilor către revistă din perspectiva propunerilor, a redactorilor, evaluatorilor şi a secţiunilor într-o anumită perioadă de timp. Rapoartele sunt generate în format CSV, care necesită o aplicaţie de calcul tabelar (Excel sau Calc) pentru a fi vizualizate.</message>
+	<message key="manager.statistics.reports.description">CLA generează rapoarte care urmăresc detaliile asociate cu procesarea propunerilor către revistă din perspectiva propunerilor, a redactorilor, evaluatorilor şi a secţiunilor într-o anumită perioadă de timp. Rapoartele sunt generate în format CSV, care necesită o aplicaţie de calcul tabelar (Excel sau Calc) pentru a fi vizualizate.</message>
 	<message key="manager.statistics.statistics">Statisticile revistei</message>
 	<message key="manager.statistics.statistics.articleViews">Numărul de vizualizări ale articolului (doar pentru autor)</message>
 	<message key="manager.statistics.statistics.count.accept">Acceptat</message>
@@ -493,7 +493,7 @@
 	<message key="manager.statistics.statistics.count.revise">Trimite din nou</message>
 	<message key="manager.statistics.statistics.daysPerReview">Numărul zilelor pentru evaluare</message>
 	<message key="manager.statistics.statistics.daysToPublication">Numărul de zile până la momentul publicării</message>
-	<message key="manager.statistics.statistics.description">OJS calculează următoarele statistici pentru fiecare revistă: „numărul zilelor pentru evaluare” sunt calculate de la data propunerii (sau de la momentul trimiterii Versiunii de Evaluare) până la decizia iniţială a redactorului, în timp ce „numărul de zile până la momentul publicării” se măsoară pentru propunerile acceptate de la încărcarea iniţială până la momentul publicării.</message>
+	<message key="manager.statistics.statistics.description">CLA calculează următoarele statistici pentru fiecare revistă: „numărul zilelor pentru evaluare” sunt calculate de la data propunerii (sau de la momentul trimiterii Versiunii de Evaluare) până la decizia iniţială a redactorului, în timp ce „numărul de zile până la momentul publicării” se măsoară pentru propunerile acceptate de la încărcarea iniţială până la momentul publicării.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Articolele publicate</message>
 	<message key="manager.statistics.statistics.makePublic">Verifică articolele să fie disponibile cititorilor din secţiunea „despre revistă”.</message>
 	<message key="manager.statistics.statistics.note">Notă: Procentele pentru propunerile spre evaluare pot să nu atingă 100%, de vreme ce articolele retrimise sunt fie acceptate, respinse sau se află încă în procesare.</message>
@@ -528,8 +528,8 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">Anunţă abonaţii prin email</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">săptămână(i) înainte de expirarea abonamentului.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Înștiințări privind expirarea abonamentului</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Emailurile automate pentru înștiințare (ce pot fi editate de către managerii de revistă din secțiunea emailurilurilor șablon existente în OJS) pot fi trimise abonaţilor înainte cât şi după expirarea unui abonament.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Notă:</strong> Pentru a folosi această opţiune, administratorul trebuie să activeze opţiunea <tt>scheduled_tasks</tt> din fişierul de configurare al OJS. Poate să fie nevoie de configurări suplimentare pentru server pentru a suporta această funcţie (ceea ce nu se poate aplica pentru toate serverele), după cum este precizat şi în documentaţia OJS.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Emailurile automate pentru înștiințare (ce pot fi editate de către managerii de revistă din secțiunea emailurilurilor șablon existente în CLA) pot fi trimise abonaţilor înainte cât şi după expirarea unui abonament.</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Notă:</strong> Pentru a folosi această opţiune, administratorul trebuie să activeze opţiunea <tt>scheduled_tasks</tt> din fişierul de configurare al CLA. Poate să fie nevoie de configurări suplimentare pentru server pentru a suporta această funcţie (ceea ce nu se poate aplica pentru toate serverele), după cum este precizat şi în documentaţia CLA.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Selectează una din următoarele:</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[HTML-ul poate fi utilizat în zona de text (pentru dimensiunea fontului, culoare, etc.), tratând „enterul - carriage return” astfel: <tt>&lt;br&gt;</tt>; editorul HTML funcţionează cu browserele Firefox.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Selectează o valoare validă pentru numărul de luni după expirarea abonamentului.</message>
@@ -537,9 +537,9 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Selectează o valoare validă pentru numărul de săptămâni după expirarea abonamentului.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Selectează o valoare validă pentru numărul de săptămâni înainte de expirarea abonamentului.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Utilizatorii înregistraţi vor avea opţiunea de a primi cuprinsul prin email atunci când un număr al revistei intră în regim de acces deschis.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Notă:</strong> Pentru a folosi această opţiune, administratorul siteului trebuie să activeze opţiunea <tt>scheduled_tasks</tt> din fişierul de configurare al OJS. Poate să fie nevoie de configurări suplimentare pentru server pentru a suporta această funcţie (ceea ce nu se poate aplica pentru toate serverele), după cum este precizat şi în documentaţia OJS.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Notă:</strong> Pentru a folosi această opţiune, administratorul siteului trebuie să activeze opţiunea <tt>scheduled_tasks</tt> din fişierul de configurare al CLA. Poate să fie nevoie de configurări suplimentare pentru server pentru a suporta această funcţie (ceea ce nu se poate aplica pentru toate serverele), după cum este precizat şi în documentaţia CLA.]]></message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Înștiințări privind plățile online</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Emailurile automate pentru înștiințare (ce pot fi editate de către managerii de revistă din secțiunea emailurilurilor șablon existente în OJS) pot fi trimise managerului pentru abonamente la finalizarea plăților online.</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Emailurile automate pentru înștiințare (ce pot fi editate de către managerii de revistă din secțiunea emailurilurilor șablon existente în CLA) pot fi trimise managerului pentru abonamente la finalizarea plăților online.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Anunță-l pe managerul pentru abonamente printr-un email la momentul achitării online a unui abonament individual.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseInstitutional">Anunță-l pe managerul pentru abonamente printr-un email la momentul achitării online a unui abonament făcut de o instituție (recomandat).</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">Anunță-l pe managerul pentru abonamente printr-un email la momentul reînnoirii online a unui abonament individual.</message>

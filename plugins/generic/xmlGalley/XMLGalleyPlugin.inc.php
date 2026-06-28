@@ -13,7 +13,7 @@
  * @brief XML Galley Plugin
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class XMLGalleyPlugin extends GenericPlugin {
 	function register($category, $path) {
@@ -236,14 +236,14 @@ class XMLGalleyPlugin extends GenericPlugin {
 					$result = $xmlGalley->transformXSLT($xmlFile, $xslFile, $xsltCommand);
 
 					// check the result
-					if (trim(preg_replace("/\s+/", " ", $result)) != "Open Journal Systems Success" ) {
+					if (trim(preg_replace("/\s+/", " ", $result)) != "Code Lumera Editorial Success" ) {
 						$form->addError('content', __('plugins.generic.xmlGalley.settings.externalXSLTFailure'));
 					} else $templateMgr->assign('testSuccess', true);
 
 				}
 
 			case 'settings':
-				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_PKP_MANAGER);
+				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_SEP_MANAGER);
 				// if we are updating XSLT settings or switching XSL sheets
 				if (Request::getUserVar('save')) {
 					$form->readInputData();

@@ -13,7 +13,7 @@
  * @brief Web Feeds plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class WebFeedPlugin extends GenericPlugin {
 	/**
@@ -85,7 +85,7 @@ class WebFeedPlugin extends GenericPlugin {
 		if ($this->getEnabled()) {
 			// Only page requests will be handled
 			$request =& Registry::get('request');
-			if (!is_a($request->getRouter(), 'PKPPageRouter')) return false;
+			if (!is_a($request->getRouter(), 'SEPPageRouter')) return false;
 
 			$templateManager =& $args[0];
 
@@ -167,7 +167,7 @@ class WebFeedPlugin extends GenericPlugin {
 			case 'settings':
 				$journal =& Request::getJournal();
 
-				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_PKP_MANAGER);
+				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_SEP_MANAGER);
 				$templateMgr =& TemplateManager::getManager();
 				$templateMgr->register_function('plugin_url', array(&$this, 'smartyPluginUrl'));
 

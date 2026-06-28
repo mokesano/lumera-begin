@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/translator/locale/eu_ES/locale.xml
@@ -15,8 +15,8 @@
 <locale name="eu_ES" full_name="Euskara">
 	<message key="plugins.generic.translator.name">Itzultzailearen plugina</message>
 	<message key="plugins.generic.translator.description">Plugin honek itzulitako fitxategiak webean oinarritutako mantentzeko aukera ematen du.</message>
-	<message key="plugins.generic.translator.longdescription">Area honetan Gune-administratzaileak OJSren itzulpena eraiki, aldatu eta kontrolatu dezake. Gune osokoa da, eta ez da komeni OJS aldizkari bakar bat pertsonalizatzeko erabiltzea. Itzulpen bat sortzen edo zuzentzen baduzu, bidal ezazu mesedez Public Knowledge Project-era, hurrengo bertsioekin batera bana dezaten.</message>
-	<message key="plugins.generic.translator.localeDescription">Orri honetan zerrendatzen dira OJSren itzulpenaren osagai guztiak, eta horietako bakoitza editatzeko aukera ematen dio itzultzaileari. Itzulpen osoak osagai guztien itzulpen osoa eduki beharko luke.</message>
+	<message key="plugins.generic.translator.longdescription">Area honetan Gune-administratzaileak CLAren itzulpena eraiki, aldatu eta kontrolatu dezake. Gune osokoa da, eta ez da komeni CLA aldizkari bakar bat pertsonalizatzeko erabiltzea. Itzulpen bat sortzen edo zuzentzen baduzu, bidal ezazu mesedez Sangia Editorial Project-era, hurrengo bertsioekin batera bana dezaten.</message>
+	<message key="plugins.generic.translator.localeDescription">Orri honetan zerrendatzen dira CLAren itzulpenaren osagai guztiak, eta horietako bakoitza editatzeko aukera ematen dio itzultzaileari. Itzulpen osoak osagai guztien itzulpen osoa eduki beharko luke.</message>
 
 	<message key="plugins.generic.translator.localeName">Localearen izena</message>
 	<message key="plugins.generic.translator.localeKey">Gakoa</message>

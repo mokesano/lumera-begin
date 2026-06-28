@@ -13,7 +13,7 @@
  * @brief Form validation check that checks if value is within a certain set.
  */
 
-import('lib.pkp.classes.form.validation.FormValidator');
+import('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorControlledVocab extends FormValidator {
 	/**
@@ -27,7 +27,7 @@ class FormValidatorControlledVocab extends FormValidator {
 	 * @param $assocId int
 	 */
 	function FormValidatorControlledVocab(&$form, $field, $type, $message, $symbolic, $assocType, $assocId) {
-		import('lib.pkp.classes.validation.ValidatorControlledVocab');
+		import('lib.sep.classes.validation.ValidatorControlledVocab');
 		$validator = new ValidatorControlledVocab($symbolic, $assocType, $assocId);
 		parent::FormValidator($form, $field, $type, $message, $validator);
 	}

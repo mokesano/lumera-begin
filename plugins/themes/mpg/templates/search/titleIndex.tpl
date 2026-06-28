@@ -40,7 +40,7 @@
                     <ul id="articleInfoList" class="tocMenuArticle">
                         {foreach name=sections from=$publishedArticles item=section key=sectionId}
                         {foreach from=$section.articles item=article}
-                        <li>{if $section.title}<h7 class="tocSectionTitle">{$section.title|escape} | </h7>{/if} {/foreach}{* articles *}{/foreach}{* sections *} <h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.pkp.peerReviewed"} | {/if}</h7><span class="ArtType">Open Access</span></li>
+                        <li>{if $section.title}<h7 class="tocSectionTitle">{$section.title|escape} | </h7>{/if} {/foreach}{* articles *}{/foreach}{* sections *} <h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.sep.peerReviewed"} | {/if}</h7><span class="ArtType">Open Access</span></li>
                     </ul>
 
                     <div class="tocTitle"><a href="{url journal=$journal->getPath() page="article" op="view" path=$article->getBestArticleId()}">{$article->getLocalizedTitle()|strip_unsafe_html}</a></div>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 <!-- 
   * plugins/importexport/users/locale/hr_HR/locale.xml
   *
@@ -55,5 +55,5 @@ Primjeri:
 	<message key="plugins.importexport.users.export.errorsOccurred">Pogreške koje su se pojavile prilikom iznošenja</message>
 	<message key="plugins.importexport.users.export.couldNotWriteFile">Nije moguće pisati po datoteci "{$fileName}".</message>
 	<message key="plugins.importexport.users.import.warning">Upozorenje</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">Nije moguće koristiti lozinke pohranjene hash funkcijom {$importHash}; OJS je podešen da koristi {$ojsHash}. Ukoliko nastavite, morat ćete ponovno postaviti lozinke ovako unesenih korisnika.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">Nije moguće koristiti lozinke pohranjene hash funkcijom {$importHash}; CLA je podešen da koristi {$claHash}. Ukoliko nastavite, morat ćete ponovno postaviti lozinke ovako unesenih korisnika.</message>
 </locale>

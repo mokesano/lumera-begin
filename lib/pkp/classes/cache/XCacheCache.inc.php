@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.cache.GenericCache');
+import('lib.sep.classes.cache.GenericCache');
 
 class XCacheCache extends GenericCache {
 	/**

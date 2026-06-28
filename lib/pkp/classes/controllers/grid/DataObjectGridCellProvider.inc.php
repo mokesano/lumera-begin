@@ -17,7 +17,7 @@
  * @see ColumnBasedGridCellProvider
  */
 
-import('lib.pkp.classes.controllers.grid.GridCellProvider');
+import('lib.sep.classes.controllers.grid.GridCellProvider');
 
 class DataObjectGridCellProvider extends GridCellProvider {
 	/** @var string the locale to be retrieved. */

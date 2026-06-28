@@ -15,18 +15,18 @@
  */
 
 import('classes.announcement.AnnouncementType');
-import('lib.pkp.classes.announcement.PKPAnnouncementTypeDAO');
+import('lib.sep.classes.announcement.SEPAnnouncementTypeDAO');
 
-class AnnouncementTypeDAO extends PKPAnnouncementTypeDAO {
+class AnnouncementTypeDAO extends SEPAnnouncementTypeDAO {
 	/**
 	 * Constructor
 	 */
 	function AnnouncementTypeDAO() {
-		parent::PKPAnnouncementTypeDAO();
+		parent::SEPAnnouncementTypeDAO();
 	}
 
 	/**
-	 * @see PKPAnnouncementTypeDAO::newDataObject
+	 * @see SEPAnnouncementTypeDAO::newDataObject
 	 */
 	function newDataObject() {
 		return new AnnouncementType();

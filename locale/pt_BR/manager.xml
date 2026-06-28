@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/pt_BR/manager.xml
@@ -8,7 +8,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization strings for the pt_BR (Português (Brasil)) locale.
-  * locale information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Portuguese_%28pt_BR%29
+  * locale information: https://lumera.sangia.org/wiki/index.php?title=CLA:_Portuguese_%28pt_BR%29
   -->
 
 <locale name="pt_BR" full_name="Português (Brasil)">
@@ -164,7 +164,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Para inclusão na página Sobre a revista)</message>
 	<message key="manager.setup.authorCopyrightNotice">Declaração de Direito Autoral</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Obrigar autores a aceitar a Declaração de Direito Autoral como parte do processo de submissão.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[A declaração de direito autoral informada aqui aparecerá na página  Sobre a revista e nos metadados de cada documento publicado. Embora seja de responsabilidade da revista definir a natureza do acordo de direito autoral, o Public Knowledge Project recomenda o uso de uma licença <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. São oferecidas para este fim <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">propostas de Declaração de Direito Autoral</a> que podem ser editadas e inseridas no campo a seguir para periódicos que oferecem (a) acesso livre, (b) acesso livre adiado, ou (c) não oferecem acesso livre.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[A declaração de direito autoral informada aqui aparecerá na página  Sobre a revista e nos metadados de cada documento publicado. Embora seja de responsabilidade da revista definir a natureza do acordo de direito autoral, o Sangia Editorial Project recomenda o uso de uma licença <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. São oferecidas para este fim <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">propostas de Declaração de Direito Autoral</a> que podem ser editadas e inseridas no campo a seguir para periódicos que oferecem (a) acesso livre, (b) acesso livre adiado, ou (c) não oferecem acesso livre.]]></message>
 	<message key="manager.setup.authorGuidelines">Diretrizes para autores</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Definição dos padrões bibliográficos e padrões de formatação de texto da revista (Ex.: <em>Publication Manual of the American Psychological Association</em>, 5th edition, 2001). Recomenda-se oferecer exemplos de formatos de citação comuns para revistas e livros para uso nas submissões. É importante também identificar os tipos apropriados de Documentos Suplementares (Ex.: conjuntos de dados, instrumentos de pesquisas, entre outros) que os autores deveriam ser estimulados a enviar, além do documento de submissão, para aumentar o interesse dos leitores com o trabalho.]]></message>
 	<message key="manager.setup.competingInterests">Conflito de interesses</message>
@@ -739,7 +739,7 @@ Poderão ser usados estatísticas individuais de uso, por exemplo, para exibir u
 	<message key="manager.setup.copyrightYearBasis.Issue">O ano padrão será deduzido da data de publicação da edição.</message>
 	<message key="manager.setup.emailHeader">Cabeçalho do email</message>
 	<message key="manager.setup.emailHeaderDescription">Os e-mails predefinidos que são enviados pelo sistema em nome da revista começarão com este cabeçalho. Esses e-mails serão endereçados a partir do contato principal, por isso é importante esclarecer que o contato principal não é necessariamente o responsável pelo conteúdo da mensagem, que pode ser enviado em nome de um usuário diferente.</message>
-	<message key="manager.statistics.reports.optionalColumns.description">Itens em itálico e marcados com asterísco (*) representam dados opcionais à forma atual de contagem de estatísticas no OJS (tipo de métrica). Os dados podem ou não existir, dependendo das configurações do plugin de estatísticas.</message>
+	<message key="manager.statistics.reports.optionalColumns.description">Itens em itálico e marcados com asterísco (*) representam dados opcionais à forma atual de contagem de estatísticas no CLA (tipo de métrica). Os dados podem ou não existir, dependendo das configurações do plugin de estatísticas.</message>
 	<message key="manager.statistics.reports.yesterday">Ontem</message>
 
 	<!-- Categories -->

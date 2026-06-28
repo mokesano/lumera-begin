@@ -14,8 +14,8 @@
  * @brief Form validation check for email addresses.
  */
 
-import('lib.pkp.classes.form.validation.FormValidatorLocale');
-import('lib.pkp.classes.validation.ValidatorEmail');
+import('lib.sep.classes.form.validation.FormValidatorLocale');
+import('lib.sep.classes.validation.ValidatorEmail');
 
 class FormValidatorLocaleEmail extends FormValidatorLocale {
 	/**

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/generic/lucene/locale/nl_NL/emailTemplateData.xml
   *
@@ -15,14 +15,14 @@
 		<subject>Tijdschrif zoekservice fout</subject>
 		<body>Er is een fout opgetreden toen iemand probeerde te zoeken in "{$siteName}".
 
-Deze e-mail is gegenereerd door de Lucene zoekplugin van Open Journal Systems.</body>
+Deze e-mail is gegenereerd door de Lucene zoekplugin van Code Lumera Editorial.</body>
 		<description>Dit e-mail sjabloon wordt gebruikt om de technische contactpersoon van een tijdschrift op de hoogte te brengen van een fout toen iemand de solr zoekdienst probeerde te gebruiken</description>
 	</email_text>
 	<email_text key="LUCENE_JOURNAL_INDEXING_ERROR_NOTIFICATION">
 		<subject>Indexeerfout bij tijdschrift</subject>
 		<body>Er is een indexeerfout opgetreden bij het indexeren van het tijdschrift "{$journalName}".
 
-Deze e-mail is gegenereerd door de Lucene zoekplugin van Open Journal Systems.</body>
+Deze e-mail is gegenereerd door de Lucene zoekplugin van Code Lumera Editorial.</body>
 		<description>Dit e-mail sjabloon wordt gebruikt om de technische contactpersoon op de hoogte te brengen van een fout bij het indexeren van het tijdschrift.</description>
 	</email_text>
 	<email_text key="LUCENE_ARTICLE_INDEXING_ERROR_NOTIFICATION">
@@ -31,7 +31,7 @@ Deze e-mail is gegenereerd door de Lucene zoekplugin van Open Journal Systems.</
 
 De foutboodschap die de webservice teruggaf is: "{$error}"
 
-Deze e-mail is gegenereerd door de Lucene zoekplugin van Open Journal Systems.</body>
+Deze e-mail is gegenereerd door de Lucene zoekplugin van Code Lumera Editorial.</body>
 		<description>Dit e-mailsjabloon wordt gebruikt voor het op de hoogte brengen van  de technische contactpersoon van een tijdschrift van een indexeerfout van een artikel.</description>
 	</email_text>
 </email_texts>

@@ -12,16 +12,16 @@
  * @brief Policy to deny access if a context cannot be found in the request.
  */
 
-import('lib.pkp.classes.security.authorization.AuthorizationPolicy');
+import('lib.sep.classes.security.authorization.AuthorizationPolicy');
 
 class UserRequiredPolicy extends AuthorizationPolicy {
-	/** @var PKPRouter */
+	/** @var SEPRouter */
 	var $_request;
 
 	/**
 	 * Constructor
 	 *
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function UserRequiredPolicy(&$request, $message = 'user.authorization.userRequired') {
 		parent::AuthorizationPolicy($message);

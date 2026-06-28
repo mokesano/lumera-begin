@@ -51,7 +51,7 @@ class ScheduledTaskHelper {
 	 */
 	function getMail() {
 		// Instantiate a mail object.
-		import('lib.pkp.classes.mail.Mail');
+		import('lib.sep.classes.mail.Mail');
 		return new Mail();
 	}
 
@@ -179,7 +179,7 @@ class ScheduledTaskHelper {
 	 * Clear tasks execution log files.
 	 */
 	function clearExecutionLogs() {
-		import('lib.pkp.classes.file.PrivateFileManager');
+		import('lib.sep.classes.file.PrivateFileManager');
 		$fileMgr = new PrivateFileManager();
 	
 		$fileMgr->rmtree($fileMgr->getBasePath() . DIRECTORY_SEPARATOR . SCHEDULED_TASK_EXECUTION_LOG_DIR);	
@@ -190,7 +190,7 @@ class ScheduledTaskHelper {
 	 * @param $file string
 	 */
 	function downloadExecutionLog($file) {
-		import('lib.pkp.classes.file.PrivateFileManager');
+		import('lib.sep.classes.file.PrivateFileManager');
 		$fileMgr = new PrivateFileManager();
 
 		$fileMgr->downloadFile($fileMgr->getBasePath() . DIRECTORY_SEPARATOR . SCHEDULED_TASK_EXECUTION_LOG_DIR . DIRECTORY_SEPARATOR . $file);	

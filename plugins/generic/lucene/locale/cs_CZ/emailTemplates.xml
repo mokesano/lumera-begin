@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/generic/lucene/locale/cs_CZ/emailTemplateData.xml
   *
@@ -16,7 +16,7 @@
 
 Webová služba vygenerovala zprávu (pokud ji vygenerovala): "{$error}"
 
-Tento email vygeneroval plugin Open Journal Systems' Lucene</body>
+Tento email vygeneroval plugin Code Lumera Editorial' Lucene</body>
 		<description>Tento e-mail upozorňuje technický kontakt na chybu během používání Solr vyhledávací služby</description>
 	</email_text>
 	<email_text key="LUCENE_JOURNAL_INDEXING_ERROR_NOTIFICATION">
@@ -25,7 +25,7 @@ Tento email vygeneroval plugin Open Journal Systems' Lucene</body>
 
 Pokud vygeneroval systém nějakou chybovou hlášku, je její obsah: "{$error}"
 
-Tuto zprávu vygeneroval automaticky plugin Open Journal Systems' Lucene</body>
+Tuto zprávu vygeneroval automaticky plugin Code Lumera Editorial' Lucene</body>
 		<description>Tato šablona emailu je používána pro upozornění technického kontaktu časopisu na chybu, která vznikla během indexace časopisu.</description>
 	</email_text>
 	<email_text key="LUCENE_ARTICLE_INDEXING_ERROR_NOTIFICATION">
@@ -34,7 +34,7 @@ Tuto zprávu vygeneroval automaticky plugin Open Journal Systems' Lucene</body>
 
 Pokud vygeneroval systém nějakou chybovou hlášku, je její obsah: "{$error}"
 
-Tuto zprávu vygeneroval automaticky plugin Open Journal Systems' Lucene</body>
+Tuto zprávu vygeneroval automaticky plugin Code Lumera Editorial' Lucene</body>
 		<description>Tato šablona e-mailu je používána na upozornění technického kontaktu časopisu na chybu, která vznikla během indexování článků.</description>
 	</email_text>
 </email_texts>

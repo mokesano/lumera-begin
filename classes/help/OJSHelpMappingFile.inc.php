@@ -1,30 +1,30 @@
 <?php
 
 /**
- * @file classes/help/OJSHelpMappingFile.inc.php
+ * @file classes/help/CLAHelpMappingFile.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class OJSHelpMappingFile
+ * @class CLAHelpMappingFile
  * @ingroup help
  *
  * @brief Abstracts the built-in help mapping XML file.
  */
 
-import('lib.pkp.classes.help.HelpMappingFile');
+import('lib.sep.classes.help.HelpMappingFile');
 
-class OJSHelpMappingFile extends HelpMappingFile {
+class CLAHelpMappingFile extends HelpMappingFile {
 	/**
 	 * Constructor
 	 */
-	function OJSHelpMappingFile() {
+	function CLAHelpMappingFile() {
 		parent::HelpMappingFile('help/help.xml');
 	}
 
 	/**
-	 * Return the filename for a built-in OJS help TOC filename.
+	 * Return the filename for a built-in CLA help TOC filename.
 	 */
 	function getTocFilename($tocId) {
 		$help =& Help::getHelp();
@@ -32,7 +32,7 @@ class OJSHelpMappingFile extends HelpMappingFile {
 	}
 
 	/**
-	 * Return the filename for a built-in OJS help topic filename.
+	 * Return the filename for a built-in CLA help topic filename.
 	 */
 	function getTopicFilename($topicId) {
 		$help =& Help::getHelp();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000000.xml
@@ -17,5 +17,3 @@
 		<![CDATA[<p>La procédure éditoriale pour la soumission au journal consiste en une révision anonyme, habituellement par un pair, suivie de la décision de l’éditeur de la rubrique de l’accepter ou non. Si accepté à l’étape de la révision éditoriale, la soumission passe alors à l’étape d’édition qui consiste en une révision, la mise en page et la correction d’épreuves. Alors, la soumission est envoyée pour être inscrite au calendrier pour publication dans un prochain numéro du journal. Dépendant de comment le journal a été organise, le processus éditorial peut être fait par un éditeur ou un groupe d’éditeurs, d’éditeurs de rubriques, un reviseur, les éditeurs de mise en page et les correcteurs d’épreuves.</p>]]>	
 	</section>
 </topic>
-
-

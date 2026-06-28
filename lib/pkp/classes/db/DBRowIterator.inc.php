@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.core.ItemIterator');
+import('lib.sep.classes.core.ItemIterator');
 
 class DBRowIterator extends ItemIterator {
 	/** The ADORecordSet to be wrapped around */

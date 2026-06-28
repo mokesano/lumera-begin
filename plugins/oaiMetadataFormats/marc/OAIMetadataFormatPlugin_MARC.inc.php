@@ -14,7 +14,7 @@
  * @brief marc metadata format plugin for OAI.
  */
 
-import('lib.pkp.classes.plugins.OAIMetadataFormatPlugin');
+import('lib.sep.classes.plugins.OAIMetadataFormatPlugin');
 
 class OAIMetadataFormatPlugin_MARC extends OAIMetadataFormatPlugin {
 

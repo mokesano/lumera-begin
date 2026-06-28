@@ -17,15 +17,15 @@
  * @brief Form for journal managers to create/edit announcements.
  */
 
-import('lib.pkp.classes.manager.form.PKPAnnouncementForm');
+import('lib.sep.classes.manager.form.SEPAnnouncementForm');
 
-class AnnouncementForm extends PKPAnnouncementForm {
+class AnnouncementForm extends SEPAnnouncementForm {
 	/**
 	 * Constructor
 	 * @param announcementId int leave as default for new announcement
 	 */
 	function AnnouncementForm($journalId, $announcementId = null) {
-		parent::PKPAnnouncementForm($journalId, $announcementId);
+		parent::SEPAnnouncementForm($journalId, $announcementId);
 
 		// If provided, announcement type is valid
 		$this->addCheck(new FormValidatorCustom($this, 'typeId', 'optional', 'manager.announcements.form.typeIdValid', create_function('$typeId, $journalId', '$announcementTypeDao =& DAORegistry::getDAO(\'AnnouncementTypeDAO\'); return $announcementTypeDao->announcementTypeExistsByTypeId($typeId, ASSOC_TYPE_JOURNAL, $journalId);'), array($journalId)));

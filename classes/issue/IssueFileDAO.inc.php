@@ -14,11 +14,11 @@
  * @brief Operations for retrieving and modifying IssueFile objects.
  */
 
-import('lib.pkp.classes.file.PKPFileDAO');
+import('lib.sep.classes.file.SEPFileDAO');
 import('classes.issue.IssueFile');
 
 
-class IssueFileDAO extends PKPFileDAO {
+class IssueFileDAO extends SEPFileDAO {
 
 	 /* @var array MIME types that can be displayed inline in a browser */
 	var $_inlineableTypes = null;

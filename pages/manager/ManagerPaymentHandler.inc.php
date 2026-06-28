@@ -31,8 +31,8 @@ class ManagerPaymentHandler extends ManagerHandler {
 		$this->validate();
 		$this->setupTemplate(true);
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		OJSPaymentAction::payments($args);
+		import('classes.payment.cla.CLAPaymentAction');
+		CLAPaymentAction::payments($args);
 	 }
 	 
 	 /**
@@ -42,8 +42,8 @@ class ManagerPaymentHandler extends ManagerHandler {
 		$this->validate();
 		$this->setupTemplate(true);
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		$success = OJSPaymentAction::savePaymentSettings($args);
+		import('classes.payment.cla.CLAPaymentAction');
+		$success = CLAPaymentAction::savePaymentSettings($args);
 
 		if ($success) {
 			$templateMgr =& TemplateManager::getManager();
@@ -65,8 +65,8 @@ class ManagerPaymentHandler extends ManagerHandler {
 		$this->validate();
 		$this->setupTemplate(true);
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		OJSPaymentAction::viewPayments($args);
+		import('classes.payment.cla.CLAPaymentAction');
+		CLAPaymentAction::viewPayments($args);
 	 }
 
 	 /** 
@@ -76,8 +76,8 @@ class ManagerPaymentHandler extends ManagerHandler {
 		$this->validate();
 		$this->setupTemplate(true);
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		OJSPaymentAction::viewPayment($args);
+		import('classes.payment.cla.CLAPaymentAction');
+		CLAPaymentAction::viewPayment($args);
 	 }
 
 	/**
@@ -87,8 +87,8 @@ class ManagerPaymentHandler extends ManagerHandler {
 		$this->validate();
 		$this->setupTemplate(true);
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		OJSPaymentAction::payMethodSettings();
+		import('classes.payment.cla.CLAPaymentAction');
+		CLAPaymentAction::payMethodSettings();
 	}
 	
 	/**
@@ -98,8 +98,8 @@ class ManagerPaymentHandler extends ManagerHandler {
 		$this->validate();
 		$this->setupTemplate(true);
 
-		import('classes.payment.ojs.OJSPaymentAction');
-		$success = OJSPaymentAction::savePayMethodSettings();
+		import('classes.payment.cla.CLAPaymentAction');
+		$success = CLAPaymentAction::savePayMethodSettings();
 
 		if ($success) {
 			$templateMgr =& TemplateManager::getManager();

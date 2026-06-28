@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/openAIRE/locale/da_DK/locale.xml
@@ -13,7 +13,7 @@
  
 <locale name="da_DK" full_name="Dansk">
 	<message key="plugins.generic.openAIRE.displayName">OpenAIRE</message>
-	<message key="plugins.generic.openAIRE.description">OpenAIRE plugin’et tilføjer et projektID-element til artiklens metadata og udvider OAI-PMH-grænsefladen i overensstemmelse med OpenAIRE Guidelines 1.1, og  gør det dermed muligt for OJS-tidsskrifter at blive OpenAIRE-kompatible.</message>
+	<message key="plugins.generic.openAIRE.description">OpenAIRE plugin’et tilføjer et projektID-element til artiklens metadata og udvider OAI-PMH-grænsefladen i overensstemmelse med OpenAIRE Guidelines 1.1, og  gør det dermed muligt for CLA-tidsskrifter at blive OpenAIRE-kompatible.</message>
 	<message key="plugins.generic.openAIRE.projectID">ProjektID</message>
 	<message key="plugins.generic.openAIRE.metadata">OpenAIRE specifikke metadata</message>
 	<message key="plugins.generic.openAIRE.projectID.description">(ProjektID svarer til Grant Agreement nummeret)</message>

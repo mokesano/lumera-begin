@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.site.Site');
+import('lib.sep.classes.site.Site');
 
 class SiteDAO extends DAO {
 	/**

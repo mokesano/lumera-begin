@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/driver/locale/en_US/locale.xml
@@ -13,5 +13,5 @@
  
 <locale name="en_US" full_name="U.S. English">
 	<message key="plugins.generic.driver.displayName">DRIVER</message>
-	<message key="plugins.generic.driver.description">The DRIVER plugin extends the OAI-PMH interface according to the DRIVER Guidelines 2.0, helping OJS journals to become DRIVER compliant.</message>
+	<message key="plugins.generic.driver.description">The DRIVER plugin extends the OAI-PMH interface according to the DRIVER Guidelines 2.0, helping CLA journals to become DRIVER compliant.</message>
 </locale>

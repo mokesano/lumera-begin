@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../lib/sep/dtd/emailTemplateData.dtd">
 
 <!--
   * locale/ml_IN/emailTemplateData.xml
@@ -952,4 +952,3 @@ Copy-Editor, {$journalName}
 		<description>This email allows copyeditors to request additional information about references from authors.</description>
 	</email_text>
 </email_texts>
-

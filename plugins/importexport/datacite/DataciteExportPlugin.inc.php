@@ -156,7 +156,7 @@ class DataciteExportPlugin extends DOIExportPlugin {
 		unset($suppFiles);
 
 		// Instantiate supp file iterator.
-		import('lib.pkp.classes.core.VirtualArrayIterator');
+		import('lib.sep.classes.core.VirtualArrayIterator');
 		$iterator = new VirtualArrayIterator($suppFileData, $totalSuppFiles, $rangeInfo->getPage(), $rangeInfo->getCount());
 
 		// Prepare and display the supp file template.
@@ -169,7 +169,7 @@ class DataciteExportPlugin extends DOIExportPlugin {
 	 */
 	function generateExportFiles(&$request, $exportType, &$objects, $targetPath, &$journal, &$errors) {
 		// Additional locale file.
-		AppLocale::requireComponents(array(LOCALE_COMPONENT_OJS_EDITOR));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_CLA_EDITOR));
 
 		// Export objects one by one (DataCite does not allow
 		// multiple objects per file).

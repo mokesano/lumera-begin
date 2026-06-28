@@ -12,10 +12,10 @@
  * @brief dataverse plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 import('plugins.generic.dataverse.classes.DataversePackager');
 
-require('lib/pkp/lib/swordappv2/swordappclient.php');
+require('lib/sep/lib/swordappv2/swordappclient.php');
 
 // HTTP status codes
 define('DATAVERSE_PLUGIN_HTTP_STATUS_OK',         200);
@@ -116,21 +116,21 @@ class DataversePlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.generic.dataverse.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.generic.dataverse.description');
 	}
 
 	/**
-	 * @see PKPPlugin::getInstallSchemaFile()
+	 * @see SEPPlugin::getInstallSchemaFile()
 	 */
 	function getInstallSchemaFile() {
 		return $this->getPluginPath() . '/schema.xml';
@@ -145,7 +145,7 @@ class DataversePlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @see PKPPlugin::getTemplatePath()
+	 * @see SEPPlugin::getTemplatePath()
 	 */
 	function getTemplatePath() {
 		return parent::getTemplatePath() . 'templates/';
@@ -235,7 +235,7 @@ class DataversePlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::smartyPluginUrl()
+	 * @see SEPPlugin::smartyPluginUrl()
 	 */
 	function smartyPluginUrl($params, &$smarty) {
 		$path = array($this->getCategory(), $this->getName());
@@ -256,7 +256,7 @@ class DataversePlugin extends GenericPlugin {
 	
 	/**
 	 * Hook callback: register pages to display terms of use & data policy
-	 * @see PKPPageRouter::route()
+	 * @see SEPPageRouter::route()
 	 */
 	function setupPublicHandler($hookName, $params) {
 		$page =& $params[0];
@@ -351,7 +351,7 @@ class DataversePlugin extends GenericPlugin {
 						$article->getLocalizedData('externalDataCitation');
 		
 		if ($dataCitation) {
-			$suppFileLabel = '<td>'. __('rt.metadata.pkp.suppFiles') .'</td>';
+			$suppFileLabel = '<td>'. __('rt.metadata.sep.suppFiles') .'</td>';
 			$suppFileLabelIndex = strpos($output, $suppFileLabel);
 			if ($suppFileLabelIndex !== false) {
 				$newOutput = substr($output, 0, $suppFileLabelIndex);
@@ -396,7 +396,7 @@ class DataversePlugin extends GenericPlugin {
 			$preMatch = '<tr valign="top">\s*';
 			$preMatch .= '<td>13.<\/td>\s*';
 			$preMatch .= '<td>'. preg_quote(__('rt.metadata.dublinCore.relation'), '/') .'<\/td>\s*';
-			$preMatch .= '<td>'. preg_quote(__('rt.metadata.pkp.suppFiles'), '/') .'<\/td>\s*';
+			$preMatch .= '<td>'. preg_quote(__('rt.metadata.sep.suppFiles'), '/') .'<\/td>\s*';
 			$preMatch .= '<td>';
 
 			// Match table row following suppfile list
@@ -417,7 +417,7 @@ class DataversePlugin extends GenericPlugin {
 	
 	/**
 	 * Output filter. If suppfile is in Dataverse, filter replaces link to view
-	 * or download suppfiles from OJS with link to dataset in Dataverse.
+	 * or download suppfiles from CLA with link to dataset in Dataverse.
 	 * @param $output string
 	 * @param $templateMgr TemplateManager
 	 * @return string Filtered output
@@ -1242,7 +1242,7 @@ class DataversePlugin extends GenericPlugin {
 				$pubIdAttributes['IDNo'] = $article->getPubId($pubIdPlugin->getPubIdType());
 				$pubIdAttributes['holdingsURI'] = $pubIdPlugin->getResolvingUrl($article->getJournalId(), $pubIdAttributes['IDNo']);
 			}
-			// If no pubIdP plugin selected or enabled, provide OJS URL
+			// If no pubIdP plugin selected or enabled, provide CLA URL
 			if(!array_key_exists('holdingsURI', $pubIdAttributes)) {
 				$pubIdAttributes['holdingsURI'] = Request::url($journal->getPath(), 'article', 'view', array($article->getId()));
 			}
@@ -1397,7 +1397,7 @@ class DataversePlugin extends GenericPlugin {
 							'' // on behalf of
 				);
 				if ($studyStatement) {
-					// Associate Dataverse-side file with OJS-side file
+					// Associate Dataverse-side file with CLA-side file
 					$dvFileIndex = array();
 					foreach ($studyStatement->sac_entries as $entry) {
 						if (strrpos($entry->sac_content_source, '/')) {
@@ -1430,7 +1430,7 @@ class DataversePlugin extends GenericPlugin {
 				}
 			}
 			catch (Exception $e) {
-				$application =& PKPApplication::getApplication();
+				$application =& SEPApplication::getApplication();
 				error_log($application->getName() .': '. $e->getMessage() .': '. $e->getFile() . ': '. $e->getLine());
 			}
 		}
@@ -1521,7 +1521,7 @@ class DataversePlugin extends GenericPlugin {
 			}
 		}
 		catch (Exception $e) {
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			error_log($application->getName() .': '. $e->getMessage() .': '. $e->getFile() . ': '. $e->getLine());
 		}
 		return $studyReleased;
@@ -1753,7 +1753,7 @@ class DataversePlugin extends GenericPlugin {
 			}
 		}
 		catch (Exception $e) {
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			error_log($application->getName() .': '. $e->getMessage() .': '. $e->getFile() . ': '. $e->getLine());
 		}			 
 		return $locked;

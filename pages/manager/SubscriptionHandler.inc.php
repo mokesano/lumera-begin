@@ -235,8 +235,8 @@ class SubscriptionHandler extends ManagerHandler {
 		$this->setupTemplate();
 
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 
 		import('classes.subscription.SubscriptionAction');
 		SubscriptionAction::subscriptionTypes();
@@ -318,7 +318,7 @@ class SubscriptionHandler extends ManagerHandler {
 	/**
 	 * Display subscription policies for the current journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function subscriptionPolicies($args, &$request) {
 		$this->validate();
@@ -331,7 +331,7 @@ class SubscriptionHandler extends ManagerHandler {
 	/**
 	 * Save subscription policies for the current journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveSubscriptionPolicies($args, $request) {
 		$this->validate();

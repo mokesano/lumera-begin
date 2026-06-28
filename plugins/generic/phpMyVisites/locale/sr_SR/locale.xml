@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/phpMyVisites/locale/sr_SR/locale.xml
@@ -16,7 +16,7 @@
 
 	<!-- phpMyVisites -->
 	<message key="plugins.generic.phpmv.displayName">phpMyVisites dodatak</message>
-	<message key="plugins.generic.phpmv.description"><![CDATA[Integriše OJS sa phpMyVisites, besplatnim i  open source servisom za analitiku prometa na web sajtovima. Zahteva da je phpMyVisites već instaliran. Pogledajte <a href="http://www.phpmyvisites.us/" title="phpMyVisites site">phpMyVisites sajt</a> za više informacija.]]></message>
+	<message key="plugins.generic.phpmv.description"><![CDATA[Integriše CLA sa phpMyVisites, besplatnim i  open source servisom za analitiku prometa na web sajtovima. Zahteva da je phpMyVisites već instaliran. Pogledajte <a href="http://www.phpmyvisites.us/" title="phpMyVisites site">phpMyVisites sajt</a> za više informacija.]]></message>
 	<!-- phpMyVisites Settings Management -->
 	<message key="plugins.generic.phpmv.manager.settings">Podešavanja</message>
 	<message key="plugins.generic.phpmv.manager.phpmvSettings">phpMyVisites podešavanja</message>

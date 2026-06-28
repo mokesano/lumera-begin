@@ -20,7 +20,7 @@ define('COLUMN_ALIGNMENT_LEFT', 'left');
 define('COLUMN_ALIGNMENT_CENTER', 'center');
 define('COLUMN_ALIGNMENT_RIGHT', 'right');
 
-import('lib.pkp.classes.controllers.grid.GridBodyElement');
+import('lib.sep.classes.controllers.grid.GridBodyElement');
 
 class GridColumn extends GridBodyElement {
 	/** @var string the column title i18n key */
@@ -103,7 +103,7 @@ class GridColumn extends GridBodyElement {
 	function getCellProvider() {
 		if (is_null(parent::getCellProvider())) {
 			// provide a sensible default cell provider
-			import('lib.pkp.classes.controllers.grid.ArrayGridCellProvider');
+			import('lib.sep.classes.controllers.grid.ArrayGridCellProvider');
 			$cellProvider = new ArrayGridCellProvider();
 			$this->setCellProvider($cellProvider);
 		}

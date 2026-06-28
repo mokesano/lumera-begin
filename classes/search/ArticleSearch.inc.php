@@ -462,7 +462,7 @@ class ArticleSearch {
 		$results =& ArticleSearch::formatResults($results);
 
 		// Return the appropriate iterator.
-		import('lib.pkp.classes.core.VirtualArrayIterator');
+		import('lib.sep.classes.core.VirtualArrayIterator');
 		$returner = new VirtualArrayIterator($results, $totalResults, $page, $itemsPerPage);
 		return $returner;
 	}

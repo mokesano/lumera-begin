@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.plugins.citationLookup.isbndb.filter.IsbndbNlm30CitationSchemaFilter');
+import('lib.sep.plugins.citationLookup.isbndb.filter.IsbndbNlm30CitationSchemaFilter');
 
 class IsbndbIsbnNlm30CitationSchemaFilter extends IsbndbNlm30CitationSchemaFilter {
 	/*
@@ -35,7 +35,7 @@ class IsbndbIsbnNlm30CitationSchemaFilter extends IsbndbNlm30CitationSchemaFilte
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationLookup.isbndb.filter.IsbndbIsbnNlm30CitationSchemaFilter';
+		return 'lib.sep.plugins.citationLookup.isbndb.filter.IsbndbIsbnNlm30CitationSchemaFilter';
 	}
 
 

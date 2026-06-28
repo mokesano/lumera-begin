@@ -24,7 +24,7 @@ class EditableFile {
 	}
 
 	function EditableFile($filename) {
-		import('lib.pkp.classes.file.FileWrapper');
+		import('lib.sep.classes.file.FileWrapper');
 		$this->filename = $filename;
 		$wrapper =& FileWrapper::wrapper($this->filename);
 		$this->setContents($wrapper->contents());

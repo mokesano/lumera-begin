@@ -15,7 +15,7 @@
  *
  */
 
-import('lib.pkp.classes.codelist.CodelistItem');
+import('lib.sep.classes.codelist.CodelistItem');
 
 class CodelistItemDAO extends DAO {
 

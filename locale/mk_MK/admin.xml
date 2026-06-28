@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/mk_MK/admin.xml
@@ -28,21 +28,21 @@
 	<message key="admin.languages.supportedLocalesInstructions">Изберете ги сите локации за подршка на страницата. Избраните локации ќе бидат достапни за употреба од страна на сите списанија поставени на оваа страница, и исто така ќе се појавуваат во избирачкото мени за јазик на секоја страница. Ако не се избрани повеќе локации, менито за јазик нема да се појавува и проширените јазични подесувања нема да бидат достапни за списанијата.</message>
 	<message key="admin.locale.maybeIncomplete">Означените локации може да се нецелосни.</message>
 	<message key="admin.languages.confirmUninstall">Дали сте сигурни дека сакате да ја деинсталирате оваа локација?Ова може да влијае на било кое моментално поставено списание кое ја користи оваа локација.</message>
-	<message key="admin.languages.installNewLocalesInstructions">Одберете ги додатните локации за да инсталирате подршка за овој систем. Локациите мора да бидат инсталирани пред да може да се користат од страна на поставените списанија. Види ја OJS документацијата за информации за додавање на поддршка за новите јазици.</message>
+	<message key="admin.languages.installNewLocalesInstructions">Одберете ги додатните локации за да инсталирате подршка за овој систем. Локациите мора да бидат инсталирани пред да може да се користат од страна на поставените списанија. Види ја CLA документацијата за информации за додавање на поддршка за новите јазици.</message>
 	<message key="admin.languages.downloadLocales">Преземи ја локацијата</message>
 	<message key="admin.languages.downloadFailed">Преземањето на локацијата не е успешно.Пораката за грешка подолу го опишува неуспехот.</message>
 	<message key="admin.languages.localeInstalled"> "{$locale}" локацијата е инсталирана.</message>
 	<message key="admin.languages.download">Преземи ја локацијата</message>
 	<message key="admin.languages.reloadDefaultEmailTemplates">Вчитај стандардно е-мејл шаблони</message>
-	<message key="admin.languages.download.cannotOpen">Не може да се отвори опишувачот за јазик од PKP веб страната.</message>
+	<message key="admin.languages.download.cannotOpen">Не може да се отвори опишувачот за јазик од SEP веб страната.</message>
 	<message key="admin.languages.download.cannotModifyRegistry">Не можете да вметнете нова локација во локалниот регистар на датотеки, вообичаено "registry/locales.xml".</message>
-	<message key="admin.auth.ojs">OJS корисник на базата на податоци</message>
-	<message key="admin.auth.enableSyncProfiles">Овозможете синхронизација на корисничкиот профил(ако е подржано од додатокот за проверка). Информациите за профилот на корисникот ќе се ажурираат автоматски од далечински извор кога корисникот се најавува, и промени на профилот(вклучувајќи и промена на лозинка) направени во рамките на OJS ќе бидат автоматски ажурирани  на далечински извор. Ако оваа опција не е овозможена OJS профилот на информации ќе се чува одделно од далечинскиот извор на профилот на информации.</message>
-	<message key="admin.auth.enableSyncPasswords">Овозможете промена на лозинката на корисникот(ако е подржано од додатокот за проверка). Овозможувањето на оваа опција им овозможува на корисниците да ги променат нивните лозинки внатре во OJS и да ја користат OJS "изгубена лозинка" функцијата за да ги ресетираат заборавените лозинки. Овие функции ќе бидат недостапни за корисниците со овој код за проверка ако оваа опција не е овозможена.</message>
-	<message key="admin.auth.enableCreateUsers">Овозможете му на корисникот да создава(ако е подржано од додатокот за проверка). Корисниците создадени во рамките на OJS со овој код за проверка ќе бидат автоматски додадени на далечински код за проверка ако тие веќе не постојат. Покрај тоа, ако овој код е стандарден код за проверка, OJS профилите создадени преку регистрација на корисниците ќе бидат додадени на далечински код за проверка.</message>
-	<message key="admin.systemVersion">OJS верзија</message>
-	<message key="admin.systemConfiguration">OJS конфигурација </message>
-	<message key="admin.systemConfigurationDescription"><![CDATA[OJS конфигурациски поставки од<tt>config.inc.php</tt>.]]></message>
+	<message key="admin.auth.cla">CLA корисник на базата на податоци</message>
+	<message key="admin.auth.enableSyncProfiles">Овозможете синхронизација на корисничкиот профил(ако е подржано од додатокот за проверка). Информациите за профилот на корисникот ќе се ажурираат автоматски од далечински извор кога корисникот се најавува, и промени на профилот(вклучувајќи и промена на лозинка) направени во рамките на CLA ќе бидат автоматски ажурирани  на далечински извор. Ако оваа опција не е овозможена CLA профилот на информации ќе се чува одделно од далечинскиот извор на профилот на информации.</message>
+	<message key="admin.auth.enableSyncPasswords">Овозможете промена на лозинката на корисникот(ако е подржано од додатокот за проверка). Овозможувањето на оваа опција им овозможува на корисниците да ги променат нивните лозинки внатре во CLA и да ја користат CLA "изгубена лозинка" функцијата за да ги ресетираат заборавените лозинки. Овие функции ќе бидат недостапни за корисниците со овој код за проверка ако оваа опција не е овозможена.</message>
+	<message key="admin.auth.enableCreateUsers">Овозможете му на корисникот да создава(ако е подржано од додатокот за проверка). Корисниците создадени во рамките на CLA со овој код за проверка ќе бидат автоматски додадени на далечински код за проверка ако тие веќе не постојат. Покрај тоа, ако овој код е стандарден код за проверка, CLA профилите создадени преку регистрација на корисниците ќе бидат додадени на далечински код за проверка.</message>
+	<message key="admin.systemVersion">CLA верзија</message>
+	<message key="admin.systemConfiguration">CLA конфигурација </message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[CLA конфигурациски поставки од<tt>config.inc.php</tt>.]]></message>
 	<message key="admin.journals.journalSettings">Подесувања на списание</message>
 	<message key="admin.journals.noneCreated">Не се креирани списанија.</message>
 	<message key="admin.journals.confirmDelete">Дали сте сигурни дека сакате трајно да го избришете ова списание и целата негова содржина?</message>
@@ -55,10 +55,10 @@
 	<message key="admin.journals.form.pathExists">Селектираната патека е веќе во употреба од друго списание.</message>
 	<message key="admin.journals.enableJournalInstructions">Овозможи му на ова списание да се појави јавно на страната.</message>
 	<message key="admin.journals.journalDescription">Опис на списанието</message>
-	<message key="admin.journal.pathImportInstructions">Постоечка патека на списание или креирање на патека(e.g., "ojs").</message>
+	<message key="admin.journal.pathImportInstructions">Постоечка патека на списание или креирање на патека(e.g., "cla").</message>
 	<message key="admin.journals.importSubscriptions">Вметни членови</message>
 	<message key="admin.journals.transcode">Префрлање на мета податоци за статија од ISO8859-1</message>
-	<message key="admin.journals.redirect">Генерирај код на страната OJS 1 URLs до OJS 2 URLs</message>
+	<message key="admin.journals.redirect">Генерирај код на страната CLA 1 URLs до CLA 2 URLs</message>
 	<message key="admin.journals.form.importPathRequired">Влезната патека е потребна.</message>
 	<message key="admin.journals.importErrors">Внесувањето не успеа да се изврши успешно</message>
 	<message key="admin.mergeUsers">Логирани корисници</message>

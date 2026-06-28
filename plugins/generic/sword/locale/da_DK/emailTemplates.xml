@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * emailTemplateData.xml
   *
@@ -17,7 +17,7 @@
 
 Gå til {$swordDepositUrl} for at fortsætte.
 
-Denne e-mail blev genereret af SWORD-deponerings-plugin i Open Journal Systems.</body>
+Denne e-mail blev genereret af SWORD-deponerings-plugin i Code Lumera Editorial.</body>
 		<description>Denne e-mail-skabelon anvendes til at underrette en forfatter om deponeringssteder til valgfri SWORD-deponeringer.</description>
 	</email_text>
 </email_texts>

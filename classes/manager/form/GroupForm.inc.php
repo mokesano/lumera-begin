@@ -14,8 +14,8 @@
  * @brief Form for journal managers to create/edit groups.
  */
 
-import('lib.pkp.classes.form.Form');
-import('lib.pkp.classes.group.Group');
+import('lib.sep.classes.form.Form');
+import('lib.sep.classes.group.Group');
 
 class GroupForm extends Form {
 	/** @var groupId int the ID of the group being edited */

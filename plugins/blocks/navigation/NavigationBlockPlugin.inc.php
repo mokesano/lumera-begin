@@ -13,7 +13,7 @@
  * @brief Class for navigation block plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class NavigationBlockPlugin extends BlockPlugin {
 	/**

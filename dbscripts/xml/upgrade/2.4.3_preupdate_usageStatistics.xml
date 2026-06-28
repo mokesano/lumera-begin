@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE data SYSTEM "../../../lib/pkp/dtd/xmlData.dtd">
+<!DOCTYPE data SYSTEM "../../../lib/sep/dtd/xmlData.dtd">
 
 <!--
   * dbscripts/xml/upgrade/2.4.3_preupdate_usageStatistics.xml
@@ -9,7 +9,7 @@
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * 2.4.3 database updates XML file; Make a copy of article galleys and published articles
-  * tables that has ojs default usage statistics.
+  * tables that has cla default usage statistics.
   *
   -->
 

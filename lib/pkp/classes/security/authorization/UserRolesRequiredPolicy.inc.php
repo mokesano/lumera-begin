@@ -13,7 +13,7 @@
  * users with no roles, we don't deny access when no user roles are found.
  */
 
-import('lib.pkp.classes.security.authorization.AuthorizationPolicy');
+import('lib.sep.classes.security.authorization.AuthorizationPolicy');
 
 class UserRolesRequiredPolicy extends AuthorizationPolicy {
 	/** @var Request */
@@ -22,7 +22,7 @@ class UserRolesRequiredPolicy extends AuthorizationPolicy {
 	/**
 	 * Constructor
 	 *
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function UserRolesRequiredPolicy(&$request) {
 		parent::AuthorizationPolicy();
@@ -49,7 +49,7 @@ class UserRolesRequiredPolicy extends AuthorizationPolicy {
 		$userRoles = $roleDao->getByUserIdGroupedByContext($user->getId());
 
 		// Prepare an array with the context ids of the request.
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$contextDepth = $application->getContextDepth();
 		$router =& $request->getRouter();
 		$roleContext = array();

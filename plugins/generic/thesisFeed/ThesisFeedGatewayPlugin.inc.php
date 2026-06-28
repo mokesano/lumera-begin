@@ -99,7 +99,7 @@ class ThesisFeedGatewayPlugin extends GatewayPlugin {
 		if (!$journal) return false;
 
 		// Make sure thesis abstracts and feed plugin are enabled
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$products = $application->getEnabledProducts('plugins.generic');
 		$thesisEnabled = $products['thesis'];
 		$thesisFeedPlugin =& $this->getThesisFeedPlugin();
@@ -128,7 +128,7 @@ class ThesisFeedGatewayPlugin extends GatewayPlugin {
 		$thesisDao =& DAORegistry::getDAO('ThesisDAO');
 		$journalId = $journal->getId();
 		if ($limitRecentItems && $recentItems > 0) {
-			import('lib.pkp.classes.db.DBResultRange');
+			import('lib.sep.classes.db.DBResultRange');
 			$rangeInfo = new DBResultRange($recentItems, 1);
 			$theses =& $thesisDao->getActiveThesesByJournalId($journalId, null, null, null, null, null, null, $rangeInfo);
 		} else {
@@ -156,7 +156,7 @@ class ThesisFeedGatewayPlugin extends GatewayPlugin {
 		$version =& $versionDao->getCurrentVersion();
 
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->assign('ojsVersion', $version->getVersionString());
+		$templateMgr->assign('claVersion', $version->getVersionString());
 		$templateMgr->assign('selfUrl', Request::getCompleteUrl()); 
 		$templateMgr->assign('dateUpdated', $dateUpdated);
 		$templateMgr->assign_by_ref('theses', $theses->toArray());

@@ -36,8 +36,8 @@
  * child relationships. See CompositeFilter for more details.
  */
 
-import('lib.pkp.classes.filter.Filter');
-import('lib.pkp.classes.filter.FilterGroup');
+import('lib.sep.classes.filter.Filter');
+import('lib.sep.classes.filter.FilterGroup');
 
 define('FILTER_GROUP_TEMPORARY_ONLY', '$$$temporary$$$');
 

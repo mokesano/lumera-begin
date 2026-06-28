@@ -14,9 +14,9 @@
  */
 
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
-class PKPAnnouncementForm extends Form {
+class SEPAnnouncementForm extends Form {
 	/** @var announcementId int the ID of the announcement being edited */
 	var $announcementId;
 
@@ -28,7 +28,7 @@ class PKPAnnouncementForm extends Form {
 	 * @param $contextId int
 	 * @param announcementId int leave as default for new announcement
 	 */
-	function PKPAnnouncementForm($contextId, $announcementId = null) {
+	function SEPAnnouncementForm($contextId, $announcementId = null) {
 
 		$this->_contextId = $contextId;
 		$this->announcementId = isset($announcementId) ? (int) $announcementId : null;

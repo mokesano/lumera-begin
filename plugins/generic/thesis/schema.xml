@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE schema SYSTEM "../../../lib/pkp/dtd/xmlSchema.dtd">
+<!DOCTYPE schema SYSTEM "../../../lib/sep/dtd/xmlSchema.dtd">
 
 <!--
   * plugins/generic/thesis/schema.xml

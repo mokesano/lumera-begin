@@ -13,7 +13,7 @@
   *
   -->
 
-<!DOCTYPE scheduled_tasks SYSTEM "../../../lib/pkp/dtd/scheduledTasks.dtd">
+<!DOCTYPE scheduled_tasks SYSTEM "../../../lib/sep/dtd/scheduledTasks.dtd">
 
 <scheduled_tasks>
 	<task class="plugins.importexport.medra.MedraInfoSender">

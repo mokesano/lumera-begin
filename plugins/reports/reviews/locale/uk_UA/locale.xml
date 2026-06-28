@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/reports/reviews/locale/uk_UA/locale.xml
@@ -26,4 +26,3 @@
        <message key="plugins.reports.reviews.dateCompleted">Дата завершення</message>
        <message key="plugins.reports.reviews.dateReminded">Дата нагадування</message>
 </locale>
-

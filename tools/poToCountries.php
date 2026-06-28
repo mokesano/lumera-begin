@@ -11,7 +11,7 @@
  * @ingroup tools
  *
  * @brief CLI tool to convert a .PO file for ISO3166 into the countries.xml format
- * supported by the PKP suite.
+ * supported by the SEP suite.
  */
 
 require(dirname(__FILE__) . '/bootstrap.inc.php');
@@ -49,7 +49,7 @@ class poToCountries extends CommandLineTool {
 	 * Print command usage information.
 	 */
 	function usage() {
-		echo "Script to convert PO file to OJS's ISO3166 XML format\n"
+		echo "Script to convert PO file to CLA's ISO3166 XML format\n"
 			. "Usage: {$this->scriptName} locale /path/to/translation.po\n";
 	}
 

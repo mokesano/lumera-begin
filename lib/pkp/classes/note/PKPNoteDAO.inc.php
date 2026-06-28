@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file classes/note/PKPNoteDAO.inc.php
+ * @file classes/note/SEPNoteDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
@@ -15,11 +15,11 @@
  */
 
 
-class PKPNoteDAO extends DAO {
+class SEPNoteDAO extends DAO {
 	/**
 	 * Constructor.
 	 */
-	function PKPNoteDAO() {
+	function SEPNoteDAO() {
 		parent::DAO();
 	}
 
@@ -121,7 +121,7 @@ class PKPNoteDAO extends DAO {
 		$note->setAssocType($row['assoc_type']);
 		$note->setAssocId($row['assoc_id']);
 
-		HookRegistry::call('PKPNoteDAO::_returnNoteFromRow', array(&$note, &$row));
+		HookRegistry::call('SEPNoteDAO::_returnNoteFromRow', array(&$note, &$row));
 
 		return $note;
 	}

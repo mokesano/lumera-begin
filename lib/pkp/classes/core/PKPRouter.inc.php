@@ -1,15 +1,15 @@
 <?php
 
 /**
- * @file classes/core/PKPRouter.inc.php
+ * @file classes/core/SEPRouter.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPRouter
- * @see PKPPageRouter
- * @see PKPComponentRouter
+ * @class SEPRouter
+ * @see SEPPageRouter
+ * @see SEPComponentRouter
  * @ingroup core
  *
  * @brief Basic router class that has functionality common to all routers.
@@ -19,7 +19,7 @@
  * 1) constructor:
  *       Handlers should establish a mapping of remote
  *       operations to roles that may access them. They do
- *       so by calling PKPHandler::addRoleAssignment().
+ *       so by calling SEPHandler::addRoleAssignment().
  * 2) authorize():
  *       Authorizes the request, among other things based
  *       on the result of the role assignment created
@@ -54,13 +54,13 @@
  */
 
 
-class PKPRouter {
+class SEPRouter {
 	//
 	// Internal state cache variables
 	// NB: Please do not access directly but
 	// only via their respective getters/setters
 	//
-	/** @var PKPApplication */
+	/** @var SEPApplication */
 	var $_application;
 	/** @var Dispatcher */
 	var $_dispatcher;
@@ -78,16 +78,16 @@ class PKPRouter {
 
 	/**
 	 * get the application
-	 * @return PKPApplication
+	 * @return SEPApplication
 	 */
 	function &getApplication() {
-		assert(is_a($this->_application, 'PKPApplication'));
+		assert(is_a($this->_application, 'SEPApplication'));
 		return $this->_application;
 	}
 
 	/**
 	 * set the application
-	 * @param $application PKPApplication
+	 * @param $application SEPApplication
 	 */
 	function setApplication(&$application) {
 		$this->_application =& $application;
@@ -109,7 +109,7 @@ class PKPRouter {
 
 	/**
 	 * set the dispatcher
-	 * @param $dispatcher PKPDispatcher
+	 * @param $dispatcher SEPDispatcher
 	 */
 	function setDispatcher(&$dispatcher) {
 		$this->_dispatcher =& $dispatcher;
@@ -117,7 +117,7 @@ class PKPRouter {
 
 	/**
 	 * Determines whether this router can route the given request.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return boolean true, if the router supports this request, otherwise false
 	 */
 	function supports(&$request) {
@@ -127,7 +127,7 @@ class PKPRouter {
 
 	/**
 	 * Determine whether or not this request is cacheable
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return boolean
 	 */
 	function isCacheable(&$request) {
@@ -137,7 +137,7 @@ class PKPRouter {
 
 	/**
 	 * A generic method to return an array of context paths (e.g. a Press or a Conference/SchedConf paths)
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @param $requestedContextLevel int (optional) the context level to return in the path
 	 * @return array of string (each element the path to one context element)
 	 */
@@ -175,7 +175,7 @@ class PKPRouter {
 
 	/**
 	 * A generic method to return a single context path (e.g. a Press or a SchedConf path)
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @param $requestedContextLevel int (optional) the context level to return
 	 * @return string
 	 */
@@ -195,7 +195,7 @@ class PKPRouter {
 
 	/**
 	 * A Generic call to a context defining object (e.g. a Press, a Conference, or a SchedConf)
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @param $requestedContextLevel int (optional) the desired context level
 	 * @return object
 	 */
@@ -234,7 +234,7 @@ class PKPRouter {
 
 	/**
 	 * Get the object that represents the desired context (e.g. Conference or Press)
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @param $requestedContextName string page context
 	 * @return object
 	 */
@@ -255,7 +255,7 @@ class PKPRouter {
 
 	/**
 	 * Get the URL to the index script.
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @return string
 	 */
 	function getIndexUrl(&$request) {
@@ -277,7 +277,7 @@ class PKPRouter {
 	//
 	/**
 	 * Determine the filename to use for a local cache file.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string
 	 */
 	function getCacheFilename(&$request) {
@@ -287,7 +287,7 @@ class PKPRouter {
 
 	/**
 	 * Routes a given request to a handler operation
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function route(&$request) {
 		// Must be implemented by sub-classes.
@@ -295,8 +295,8 @@ class PKPRouter {
 	}
 
 	/**
-	 * Build a handler request URL into PKPApplication.
-	 * @param $request PKPRequest the request to be routed
+	 * Build a handler request URL into SEPApplication.
+	 * @param $request SEPRequest the request to be routed
 	 * @param $newContext mixed Optional contextual paths
 	 * @param $handler string Optional name of the handler to invoke
 	 * @param $op string Optional name of operation to invoke
@@ -337,7 +337,7 @@ class PKPRouter {
 	 * 5) client response
 	 *
 	 * @param $serviceEndpoint callable the handler operation
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $args array
 	 * @param $validate boolean whether or not to execute the
 	 *  validation step.
@@ -421,7 +421,7 @@ class PKPRouter {
 	 * in the config file using the 'base_url[context]' syntax in the
 	 * config file's 'general' section.
 	 *
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @param $newContext mixed (optional) context that differs from
 	 *  the current request's context
 	 * @return array An array consisting of the base url as the first
@@ -480,7 +480,7 @@ class PKPRouter {
 
 	/**
 	 * Build the additional parameters part of the URL.
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @param $params array (optional) the parameter list to be
 	 *  transformed to a url part.
 	 * @param $escape boolean (optional) Whether or not to escape structural elements

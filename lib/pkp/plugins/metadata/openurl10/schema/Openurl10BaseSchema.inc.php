@@ -20,7 +20,7 @@
  */
 
 
-import('lib.pkp.classes.metadata.MetadataSchema');
+import('lib.sep.classes.metadata.MetadataSchema');
 
 class Openurl10BaseSchema extends MetadataSchema {
 	/**

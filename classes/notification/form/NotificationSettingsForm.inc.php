@@ -16,14 +16,14 @@
  * @brief Form to edit notification settings.
  */
 
-import('lib.pkp.classes.notification.form.PKPNotificationSettingsForm');
+import('lib.sep.classes.notification.form.SEPNotificationSettingsForm');
 
-class NotificationSettingsForm extends PKPNotificationSettingsForm {
+class NotificationSettingsForm extends SEPNotificationSettingsForm {
 	/**
 	 * Constructor.
 	 */
 	function NotificationSettingsForm() {
-		parent::PKPNotificationSettingsForm();
+		parent::SEPNotificationSettingsForm();
 	}
 
 	/**

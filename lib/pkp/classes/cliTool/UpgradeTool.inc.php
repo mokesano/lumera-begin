@@ -10,7 +10,7 @@
  * @class upgradeTool
  * @ingroup tools
  *
- * @brief CLI tool for upgrading OJS.
+ * @brief CLI tool for upgrading CLA.
  *
  * Note: Some functions require fopen wrappers to be enabled.
  */
@@ -19,8 +19,8 @@
 define('RUNNING_UPGRADE', 1);
 
 import('classes.install.Upgrade');
-import('lib.pkp.classes.site.Version');
-import('lib.pkp.classes.site.VersionCheck');
+import('lib.sep.classes.site.Version');
+import('lib.sep.classes.site.VersionCheck');
 
 class UpgradeTool extends CommandLineTool {
 
@@ -170,7 +170,7 @@ class UpgradeTool extends CommandLineTool {
 	function download() {
 		$versionInfo = VersionCheck::getLatestVersion();
 		if (!$versionInfo) {
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			printf("Failed to load version info from %s\n", $application->getVersionDescriptorUrl());
 			exit(1);
 		}
@@ -227,7 +227,7 @@ class UpgradeTool extends CommandLineTool {
 	 */
 	function checkVersion($versionInfo, $displayInfo = false) {
 		if (!$versionInfo) {
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			printf("Failed to load version info from %s\n", $application->getVersionDescriptorUrl());
 			exit(1);
 		}

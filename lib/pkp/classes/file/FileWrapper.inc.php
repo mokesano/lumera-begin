@@ -113,7 +113,7 @@ class FileWrapper {
 			$wrapper = new FileWrapper($source, $info);
 		} elseif (is_resource($source)) {
 			// $source is an already-opened file descriptor.
-			import('lib.pkp.classes.file.wrappers.ResourceWrapper');
+			import('lib.sep.classes.file.wrappers.ResourceWrapper');
 			$wrapper = new ResourceWrapper($source);
 		} else {
 			// $source should be a URL.
@@ -134,17 +134,17 @@ class FileWrapper {
 
 			switch ($scheme) {
 				case 'http':
-					import('lib.pkp.classes.file.wrappers.HTTPFileWrapper');
+					import('lib.sep.classes.file.wrappers.HTTPFileWrapper');
 					$wrapper = new HTTPFileWrapper($source, $info);
 					$wrapper->addHeader('User-Agent', $userAgent);
 					break;
 				case 'https':
-					import('lib.pkp.classes.file.wrappers.HTTPSFileWrapper');
+					import('lib.sep.classes.file.wrappers.HTTPSFileWrapper');
 					$wrapper = new HTTPSFileWrapper($source, $info);
 					$wrapper->addHeader('User-Agent', $userAgent);
 					break;
 				case 'ftp':
-					import('lib.pkp.classes.file.wrappers.FTPFileWrapper');
+					import('lib.sep.classes.file.wrappers.FTPFileWrapper');
 					$wrapper = new FTPFileWrapper($source, $info);
 					break;
 				default:

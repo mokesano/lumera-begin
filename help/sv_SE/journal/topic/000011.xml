@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000011.xml
@@ -14,7 +14,7 @@
 
 <topic id="journal/topic/000011" locale="en_US" title="Användare i tidskriften" toc="journal/toc/000002" key="journal.users.allUsers">
 	<section>
-		<![CDATA[<p>Denna lista inkluderar alla som är registrerade i någon roll i tidskriften. Tidskriftsansvarig har möjlighet att anta vilken användares roll som helst. Detta kan vara väldigt användbart när användaren behöver assistans på avstånd, eftersom Tidskriftsansvarig därmed får en bättre uppfattning om vad som gått fel.</p><p> Härifrån kan Tidskriftsansvarig även lägga till en användare som finns knuten till en annan tidskrift i samma installation i OJS, skapa nya användare, och synkronisera användare mellan tidskrifter.</p>]]>	
+		<![CDATA[<p>Denna lista inkluderar alla som är registrerade i någon roll i tidskriften. Tidskriftsansvarig har möjlighet att anta vilken användares roll som helst. Detta kan vara väldigt användbart när användaren behöver assistans på avstånd, eftersom Tidskriftsansvarig därmed får en bättre uppfattning om vad som gått fel.</p><p> Härifrån kan Tidskriftsansvarig även lägga till en användare som finns knuten till en annan tidskrift i samma installation i CLA, skapa nya användare, och synkronisera användare mellan tidskrifter.</p>]]>	
 	</section>
 	
 </topic>

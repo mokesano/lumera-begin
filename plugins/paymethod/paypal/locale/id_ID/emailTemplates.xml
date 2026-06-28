@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 
 <!--
   * plugins/paymethod/paypal/locale/id_ID/emailTemplates.xml
@@ -13,7 +13,7 @@
 <email_texts locale="id_ID"> 
 	<email_text key="PAYPAL_INVESTIGATE_PAYMENT">		
 	<subject> Kegiatan pembayaran paypal yang tidak biasa </subject> 
-		<body> IOJS telah menemukan kegiatan yang tidak biasa yang berhubungan dengan bantuan pembayaran paypal untuk jurnal {$journalName}. Kegiatan ini mungkin dibutuhkan investigasi yang lebih lanjut atau intervensi manual. Emai ini diciptakan oleh OJS PayPal plugin.
+		<body> ICLA telah menemukan kegiatan yang tidak biasa yang berhubungan dengan bantuan pembayaran paypal untuk jurnal {$journalName}. Kegiatan ini mungkin dibutuhkan investigasi yang lebih lanjut atau intervensi manual. Emai ini diciptakan oleh CLA PayPal plugin.
 Informasi posting penuh untuk permohonan:
 {$postInfo}
 Informasi tambahan (jika tersedia):

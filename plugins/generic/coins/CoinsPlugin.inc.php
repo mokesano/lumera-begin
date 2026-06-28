@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class CoinsPlugin extends GenericPlugin {
 	/**
@@ -43,7 +43,7 @@ class CoinsPlugin extends GenericPlugin {
 
 	/**
 	 * Get the name of the settings file to be installed site-wide when
-	 * OJS is installed.
+	 * CLA is installed.
 	 * @return string
 	 */
 	function getInstallSitePluginSettingsFile() {

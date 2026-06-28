@@ -42,7 +42,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View the submission page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submission($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -52,7 +52,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 
 		// FIXME? For comments.readerComments under Status and
 		// author.submit.selectPrincipalContact under Metadata
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_OJS_AUTHOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_READER, LOCALE_COMPONENT_CLA_AUTHOR);
 
 		$this->setupTemplate(true, $articleId);
 
@@ -110,11 +110,11 @@ class SubmissionEditHandler extends SectionEditorHandler {
 		}
 
 		// Set up required Payment Related Information
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		if ( $paymentManager->submissionEnabled() || $paymentManager->fastTrackEnabled() || $paymentManager->publicationEnabled()) {
 			$templateMgr->assign('authorFees', true);
-			$completedPaymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+			$completedPaymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 
 			if ( $paymentManager->submissionEnabled() ) {
 				$templateMgr->assign_by_ref('submissionPayment', $completedPaymentDao->getSubmissionCompletedPayment ( $journal->getId(), $articleId ));
@@ -137,7 +137,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View the submission regrets page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissionRegrets($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -185,7 +185,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View the submission review page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissionReview($args, &$request) {
 		$articleId = isset($args[0]) ? (int) $args[0] : 0;
@@ -194,7 +194,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 		$submission =& $this->submission;
 		$this->setupTemplate(true, $articleId);
 
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_MANAGER);
 
 		$sectionEditorSubmissionDao =& DAORegistry::getDAO('SectionEditorSubmissionDAO');
 		$reviewAssignmentDao =& DAORegistry::getDAO('ReviewAssignmentDAO');
@@ -283,7 +283,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View the submission editing page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissionEditing($args, $request) {
 		$articleId = isset($args[0]) ? (int) $args[0] : 0;
@@ -330,9 +330,9 @@ class SubmissionEditHandler extends SectionEditorHandler {
 		$templateMgr->assign('templates', $journal->getSetting('templates'));
 
 		// Set up required Payment Related Information
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
-		$completedPaymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
+		$completedPaymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 
 		$publicationFeeEnabled = $paymentManager->publicationEnabled();
 		$templateMgr->assign('publicationFeeEnabled',  $publicationFeeEnabled);
@@ -347,7 +347,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View submission history
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissionHistory($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -405,7 +405,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Change an article's section.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function changeSection($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -450,7 +450,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Select a reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function selectReviewer($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -531,7 +531,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Create a new user as a reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createReviewer($args, &$request) {
 		$articleId = isset($args[0]) ? (int) $args[0] : 0;
@@ -566,7 +566,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	 * Get a suggested username, making sure it's not
 	 * already used by the system. (Poor-man's AJAX.)
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function suggestUsername($args, &$request) {
 		parent::validate();
@@ -580,12 +580,12 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Search for users to enroll as reviewers.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function enrollSearch($args, $request) {
 		$articleId = isset($args[0]) ? (int) $args[0] : 0;
 		$this->validate($articleId, SECTION_EDITOR_ACCESS_REVIEW);
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER); // manager.people.enrollment, manager.people.enroll
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_MANAGER); // manager.people.enrollment, manager.people.enroll
 		$submission =& $this->submission;
 
 		$roleDao =& DAORegistry::getDAO('RoleDAO');
@@ -638,7 +638,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Enroll a reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function enroll($args, &$request) {
 		$articleId = isset($args[0]) ? (int) $args[0] : 0;
@@ -669,7 +669,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Notify an assigned reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyReviewer($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -689,7 +689,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Clear an assigned review.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function clearReview($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -705,7 +705,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Cancel a review.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function cancelReview($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -725,7 +725,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Remind a reviewer.
 	 * @param $args aray
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function remindReviewer($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -771,7 +771,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Thank a reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankReviewer($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -791,7 +791,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Rate a reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function rateReviewer($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -809,7 +809,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Confirm a review for a reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function confirmReviewForReviewer($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -826,7 +826,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Upload a review on behalf of a reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function uploadReviewForReviewer($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -842,7 +842,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Make a reviewer file viewable to the author.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function makeReviewerFileViewable($args, &$request) {
 		$articleId = $request->getUserVar('articleId');
@@ -862,7 +862,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Set the review due date.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function setDueDate($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -908,7 +908,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Enter a reviewer recommendation on behalf of a reviewer
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function enterReviewerRecommendation($args, &$request) {
 		$articleId = $request->getUserVar('articleId');
@@ -940,7 +940,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Display a user's profile.
 	 * @param $args array first parameter is the ID or username of the user to display
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function userProfile($args, &$request) {
 		parent::validate();
@@ -988,14 +988,14 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View article metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewMetadata($args, &$request) {
 		$articleId = (int) array_shift($args);
 		$journal =& $request->getJournal();
 
 		$this->validate($articleId);
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_AUTHOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_AUTHOR);
 		$submission =& $this->submission;
 		$this->setupTemplate(true, $articleId, 'summary');
 
@@ -1005,12 +1005,12 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Save modified metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveMetadata($args, &$request) {
 		$articleId = $request->getUserVar('articleId');
 		$this->validate($articleId);
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_AUTHOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_AUTHOR);
 		$submission =& $this->submission;
 		$this->setupTemplate(true, $articleId, 'summary');
 
@@ -1022,7 +1022,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Remove cover page from article
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function removeArticleCoverPage($args, &$request) {
 		$articleId = isset($args[0]) ? (int)$args[0] : 0;
@@ -1046,7 +1046,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Preview a review form.
 	 * @param $args array ($reviewId, $reviewFormId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function previewReviewForm($args, &$request) {
 		parent::validate();
@@ -1076,7 +1076,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Clear a review form, i.e. remove review form assignment to the review.
 	 * @param $args array ($articleId, $reviewId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function clearReviewForm($args, &$request) {
 		$articleId = isset($args[0]) ? (int) $args[0] : 0;
@@ -1092,7 +1092,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Select a review form
 	 * @param $args array ($articleId, $reviewId, $reviewFormId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function selectReviewForm($args, &$request) {
 		$articleId = isset($args[0]) ? (int) $args[0] : 0;
@@ -1128,7 +1128,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View review form response.
 	 * @param $args array ($articleId, $reviewId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewReviewFormResponse($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -1147,7 +1147,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Perform a review on behalf of the reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editorReview($args, $request) {
 		$articleId = $request->getUserVar('articleId');
@@ -1195,7 +1195,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Select a copyeditor.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
  	 */
 	function selectCopyeditor($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -1262,7 +1262,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Notify a copyeditor of their assignment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyCopyeditor($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1280,7 +1280,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Initiate the copyediting process when the editor does the copyediting
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function initiateCopyedit($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1293,7 +1293,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Thank the copyeditor.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankCopyeditor($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1309,7 +1309,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Notify the author of their copyediting task.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyAuthorCopyedit($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1325,7 +1325,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Thank the author for completing their copyediting task.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankAuthorCopyedit($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1341,7 +1341,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Notify the copyeditor of the final copyediting round.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyFinalCopyedit($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1357,7 +1357,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Complete copyediting.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function completeCopyedit($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1369,7 +1369,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Complete the final copyedit.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function completeFinalCopyedit($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1381,7 +1381,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Thank the copyeditor for the final copyedit.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankFinalCopyedit($args, $request) {
 		$articleId = $request->getUserVar('articleId');
@@ -1397,7 +1397,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Upload a review version.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function uploadReviewVersion($args, $request) {
 		$articleId = $request->getUserVar('articleId');
@@ -1409,7 +1409,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Upload a copyedit version.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function uploadCopyeditVersion($args, $request) {
 		$articleId = $request->getUserVar('articleId');
@@ -1423,7 +1423,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Add a supplementary file.
 	 * @param $args array ($articleId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function addSuppFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -1448,7 +1448,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Edit a supplementary file.
 	 * @param $args array ($articleId, $suppFileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editSuppFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -1479,7 +1479,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Set reviewer visibility for a supplementary file.
 	 * @param $args array ($suppFileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function setSuppFileVisibility($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1541,7 +1541,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Delete an editor version file.
 	 * @param $args array ($articleId, $fileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteArticleFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -1557,7 +1557,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Delete a supplementary file.
 	 * @param $args array ($articleId, $suppFileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteSuppFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -1570,7 +1570,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Archive a submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function archiveSubmission($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -1582,7 +1582,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Restore an archived submission to the queue.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function restoreToQueue($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -1594,7 +1594,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Notify the author of an unsuitable submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function unsuitableSubmission($args, $request) {
 		$articleId = $request->getUserVar('articleId');
@@ -1621,7 +1621,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Set RT comments status for article.
 	 * @param $args array ($articleId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateCommentsStatus($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -1637,7 +1637,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Upload a layout file (either layout version, galley, or supp. file).
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function uploadLayoutFile($args, &$request) {
 		$layoutFileType = $request->getUserVar('layoutFileType');
@@ -1657,7 +1657,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 
 	/**
 	 * Upload the layout version of the submission file
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _uploadLayoutVersion(&$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1669,7 +1669,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Delete an article image.
 	 * @param $args array ($articleId, $fileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteArticleImage($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -1755,7 +1755,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Notify the layout editor.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyLayoutEditor($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1770,7 +1770,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Thank the layout editor.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankLayoutEditor($args, $request) {
 		$articleId = $request->getUserVar('articleId');
@@ -1788,7 +1788,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Create a new galley with the uploaded file.
 	 * @param $fileName string
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _uploadGalley($fileName = null, $request) {
 		$articleId = $request->getUserVar('articleId');
@@ -1804,7 +1804,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Edit a galley.
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editGalley($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -1879,7 +1879,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Change the sequence order of a galley.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function orderGalley($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -1891,7 +1891,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Delete a galley file.
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteGalley($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -1904,7 +1904,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Proof / "preview" a galley.
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalley($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -1921,7 +1921,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Proof galley (shows frame header).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyTop($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -1939,7 +1939,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Proof galley (outputs file contents).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -1972,7 +1972,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Helper to upload a new supplementary file.
 	 * @param $fileName string
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _uploadSuppFile($fileName = null, $request) {
 		$articleId = $request->getUserVar('articleId');
@@ -1992,7 +1992,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Change the sequence order of a supplementary file.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function orderSuppFile($args, &$request) {
 		$articleId = $request->getUserVar('articleId');
@@ -2009,7 +2009,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View submission event log.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissionEventLog($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -2044,7 +2044,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Clear submission event log entries.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function clearSubmissionEventLog($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -2062,7 +2062,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View submission email log.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissionEmailLog($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -2102,7 +2102,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Clear submission email log entries.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function clearSubmissionEmailLog($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -2125,7 +2125,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Create a submission note and redirect to submission notes list
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function addSubmissionNote($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -2165,7 +2165,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Clear all submission notes and redirect to submission notes list
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function clearAllSubmissionNotes($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -2177,7 +2177,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View submission notes.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissionNotes($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -2223,7 +2223,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Download a file.
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function downloadFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -2239,7 +2239,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * View a file (inlines file).
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -2260,7 +2260,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Select Proofreader.
 	 * @param $args array ($articleId, $userId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function selectProofreader($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -2332,7 +2332,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Notify author for proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyAuthorProofreader($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -2349,7 +2349,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Thank author for proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankAuthorProofreader($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -2366,7 +2366,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Editor initiates proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editorInitiateProofreader($args, &$request) {
 		$articleId = $request->getUserVar('articleId');
@@ -2387,7 +2387,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Editor completes proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editorCompleteProofreader($args, &$request) {
 		$articleId = $request->getUserVar('articleId');
@@ -2402,7 +2402,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Notify proofreader for proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyProofreader($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -2419,7 +2419,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Thank proofreader for proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankProofreader($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -2436,7 +2436,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Editor initiates layout editor proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editorInitiateLayoutEditor($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -2460,7 +2460,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Editor completes layout editor proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editorCompleteLayoutEditor($args, &$request) {
 		$articleId = $request->getUserVar('articleId');
@@ -2477,7 +2477,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Notify layout editor for proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyLayoutEditorProofreader($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -2502,7 +2502,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Thank layout editor for proofreading
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankLayoutEditorProofreader($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -2662,7 +2662,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Waive a submission fee.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function waiveSubmissionFee($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -2670,8 +2670,8 @@ class SubmissionEditHandler extends SectionEditorHandler {
 
 		$this->validate($articleId, SECTION_EDITOR_ACCESS_EDIT);
 		$submission =& $this->submission;
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$user =& $request->getUser();
 		$journal =& $request->getJournal();
 
@@ -2694,7 +2694,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Waive the fast track fee.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function waiveFastTrackFee($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -2703,8 +2703,8 @@ class SubmissionEditHandler extends SectionEditorHandler {
 		$journal =& $request->getJournal();
 		$submission =& $this->submission;
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$user =& $request->getUser();
 
 		$queuedPayment =& $paymentManager->createQueuedPayment(
@@ -2726,7 +2726,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Waive the publication fee.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function waivePublicationFee($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -2737,8 +2737,8 @@ class SubmissionEditHandler extends SectionEditorHandler {
 		$journal =& Request::getJournal();
 		$submission =& $this->submission;
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$user =& $request->getUser();
 
 		$queuedPayment =& $paymentManager->createQueuedPayment(
@@ -2765,7 +2765,7 @@ class SubmissionEditHandler extends SectionEditorHandler {
 	/**
 	 * Download a layout template.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function downloadLayoutTemplate($args, &$request) {
 		$articleId = (int) array_shift($args);

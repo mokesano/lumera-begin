@@ -1,27 +1,27 @@
 <?php
 
 /**
- * @file classes/submission/PKPAuthorDAO.inc.php
+ * @file classes/submission/SEPAuthorDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPAuthorDAO
+ * @class SEPAuthorDAO
  * @ingroup submission
- * @see PKPAuthor
+ * @see SEPAuthor
  *
- * @brief Operations for retrieving and modifying PKPAuthor objects.
+ * @brief Operations for retrieving and modifying SEPAuthor objects.
  */
 
 
-import('lib.pkp.classes.submission.PKPAuthor');
+import('lib.sep.classes.submission.SEPAuthor');
 
-class PKPAuthorDAO extends DAO {
+class SEPAuthorDAO extends DAO {
 	/**
 	 * Constructor
 	 */
-	function PKPAuthorDAO() {
+	function SEPAuthorDAO() {
 		parent::DAO();
 	}
 

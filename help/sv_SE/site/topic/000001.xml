@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -14,12 +14,12 @@
 
 <topic id="site/topic/000001" locale="en_US" title="Installation" toc="site/toc/000000" key="site.installation">
 	<section>
-		<![CDATA[<p>OJS är en applikation som är baserad på en öppen källkod och som fritt kan laddas ner och installeras på nästan vilken dator eller server som helst.</p>]]>	
+		<![CDATA[<p>CLA är en applikation som är baserad på en öppen källkod och som fritt kan laddas ner och installeras på nästan vilken dator eller server som helst.</p>]]>	
 	</section>
 	
 	
 	<section title="Licens">
-		<![CDATA[<p>OJS distribueras under <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU General Public License</a>. En kopia av licensvillkoren som reglerar re-distribution av OJS-koden i original eller modfierad form finns inkluderad i OJS' nedladdningsfiler.</p>]]>
+		<![CDATA[<p>CLA distribueras under <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU General Public License</a>. En kopia av licensvillkoren som reglerar re-distribution av CLA-koden i original eller modfierad form finns inkluderad i CLA' nedladdningsfiler.</p>]]>
 	</section>
 	
 	
@@ -36,7 +36,7 @@
 		
 		
 		
-		<p>OJS har än så länge enbart testats på MySQL och PostgreSQL, även om andra databassystem som understöds av <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> kan fungera (helt eller delvis). Kompatibilitetsrapporter och/eller code patches för alternativa DBMSs är välkomna.</p>
+		<p>CLA har än så länge enbart testats på MySQL och PostgreSQL, även om andra databassystem som understöds av <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> kan fungera (helt eller delvis). Kompatibilitetsrapporter och/eller code patches för alternativa DBMSs är välkomna.</p>
 		]]>
 		
 	</section>
@@ -44,25 +44,25 @@
 	
 	
 	<section title="Nedladdning">
-		<![CDATA[<p>OJS kan laddas ner från the Public Knowledge Project <a href="http://pkp.sfu.ca/ojs/" target="_blank">webbsida</a>.</p>]]>
+		<![CDATA[<p>CLA kan laddas ner från the Sangia Editorial Project <a href="http://lumera.sangia.org/cla/" target="_blank">webbsida</a>.</p>]]>
 	</section>
 	
 	
 	
 	
 	<section title="Installation">
-		<![CDATA[<p>Med OJS följer ett webbaserat installationsscript som guidar Huvudadministratören genom installationsprocessen. Alternativt finns en command-line installationsverktyg tillgängligt.</p>
+		<![CDATA[<p>Med CLA följer ett webbaserat installationsscript som guidar Huvudadministratören genom installationsprocessen. Alternativt finns en command-line installationsverktyg tillgängligt.</p>
 		<ol>
 		
 			
 			
 			<li>
-				Ladda ner OJS arkiv.
+				Ladda ner CLA arkiv.
 			</li>
 			<li>
-				Packa upp OJS arkiv på din webbserver och placera det på önskad plats i ditt bibliotek/dokumentträd:<br />
-				<tt>$ tar -zxf ojs-2.*.tar.gz<br />
-				$ mv ojs-* /var/www/myjournal</tt>
+				Packa upp CLA arkiv på din webbserver och placera det på önskad plats i ditt bibliotek/dokumentträd:<br />
+				<tt>$ tar -zxf cla-2.*.tar.gz<br />
+				$ mv cla-* /var/www/myjournal</tt>
 			</li>
 			<li>
 				Gör följande filer och mappar skrivbara (t ex genom att använda chown or chmod):<br />
@@ -75,7 +75,7 @@
 				- cache/_db
 			</li>
 			<li>
-				Öppna en webbläsare till plastsen för din OJS-installation (t ex http://www.mydomain.com/myjournal/) och följ instruktionerna på skärm för att fullfölja installationen. Se docs/README för mer information omkring installationsprocessen.
+				Öppna en webbläsare till plastsen för din CLA-installation (t ex http://www.mydomain.com/myjournal/) och följ instruktionerna på skärm för att fullfölja installationen. Se docs/README för mer information omkring installationsprocessen.
 			</li>
 		</ol>
 		]]>

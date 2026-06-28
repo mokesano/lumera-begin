@@ -13,7 +13,7 @@
  * @brief Class for "notification" block plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class NotificationBlockPlugin extends BlockPlugin {
 	/**

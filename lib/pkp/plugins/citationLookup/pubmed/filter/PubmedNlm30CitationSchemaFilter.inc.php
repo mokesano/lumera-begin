@@ -20,8 +20,8 @@
  */
 
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
-import('lib.pkp.classes.filter.EmailFilterSetting');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
+import('lib.sep.classes.filter.EmailFilterSetting');
 
 define('PUBMED_WEBSERVICE_ESEARCH', 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi');
 define('PUBMED_WEBSERVICE_EFETCH', 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi');
@@ -70,7 +70,7 @@ class PubmedNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationLookup.pubmed.filter.PubmedNlm30CitationSchemaFilter';
+		return 'lib.sep.plugins.citationLookup.pubmed.filter.PubmedNlm30CitationSchemaFilter';
 	}
 
 
@@ -95,7 +95,7 @@ class PubmedNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 			//    (This works surprisingly well for pubmed.)
 			$authors =& $citationDescription->getStatement('person-group[@person-group-type="author"]');
 			if (is_array($authors)) {
-				import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30NameSchemaPersonStringFilter');
+				import('lib.sep.plugins.metadata.nlm30.filter.Nlm30NameSchemaPersonStringFilter');
 				$personNameFilter = new Nlm30NameSchemaPersonStringFilter(PERSON_STRING_FILTER_MULTIPLE, '%firstname%%initials%%prefix% %surname%%suffix%', ', ');
 				$authorsString = (string)$personNameFilter->execute($authors);
 				if (!empty($authorsString)) {
@@ -216,7 +216,7 @@ class PubmedNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 	function &_search($searchTerms) {
 		$searchParams = array(
 			'db' => 'pubmed',
-			'tool' => 'pkp-wal',
+			'tool' => 'sep-wal',
 			'term' => $searchTerms
 		);
 		if (!is_null($this->getEmail())) $searchParams['email'] = $this->getEmail();
@@ -249,7 +249,7 @@ class PubmedNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 		$lookupParams = array(
 			'db' => 'pubmed',
 			'mode' => 'xml',
-			'tool' => 'pkp-wal',
+			'tool' => 'sep-wal',
 			'id' => $pmid
 		);
 		if (!is_null($this->getEmail())) $lookupParams['email'] = $this->getEmail();
@@ -282,7 +282,7 @@ class PubmedNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 				$metadata['person-group[@person-group-type="author"]'] = array();
 
 			// Instantiate an NLM name description
-			$authorDescription = new MetadataDescription('lib.pkp.plugins.metadata.nlm30.schema.Nlm30NameSchema', ASSOC_TYPE_AUTHOR);
+			$authorDescription = new MetadataDescription('lib.sep.plugins.metadata.nlm30.schema.Nlm30NameSchema', ASSOC_TYPE_AUTHOR);
 
 			// Surname
 			$lastNameNodes =& $authorNode->getElementsByTagName("LastName");
@@ -402,7 +402,7 @@ class PubmedNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 		$lookupParams = array(
 			'dbfrom' => 'pubmed',
 			'cmd' => 'llinks',
-			'tool' => 'pkp-wal',
+			'tool' => 'sep-wal',
 			'id' => $pmid
 		);
 		if(!is_null($resultDOM = $this->callWebService(PUBMED_WEBSERVICE_ELINK, $lookupParams))) {

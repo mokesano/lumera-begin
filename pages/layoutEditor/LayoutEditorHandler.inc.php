@@ -34,7 +34,7 @@ class LayoutEditorHandler extends Handler {
 	/**
 	 * Display layout editor index page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$this->validate($request);
@@ -48,7 +48,7 @@ class LayoutEditorHandler extends Handler {
 	/**
 	 * Display layout editor submissions page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissions($args, &$request) {
 		$this->validate($request);
@@ -133,7 +133,7 @@ class LayoutEditorHandler extends Handler {
 	/**
 	 * Display Future Isshes page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function futureIssues($args, &$request) {
 		$this->validate($request);
@@ -151,7 +151,7 @@ class LayoutEditorHandler extends Handler {
 	/**
 	 * Displays the listings of back (published) issues
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function backIssues($args, &$request) {
 		$this->validate($request);
@@ -190,7 +190,7 @@ class LayoutEditorHandler extends Handler {
 	/**
 	 * Sets proofreader completion date
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function completeProofreader($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -221,7 +221,7 @@ class LayoutEditorHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $articleId = 0, $parentPage = null) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_OJS_EDITOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION, LOCALE_COMPONENT_CLA_EDITOR);
 		$templateMgr =& TemplateManager::getManager();
 		$pageHierarchy = $subclass ? array(array(Request::url(null, 'user'), 'navigation.user'), array(Request::url(null, 'layoutEditor'), 'user.role.layoutEditor'))
 				: array(array(Request::url(null, 'user'), 'navigation.user'));
@@ -237,7 +237,7 @@ class LayoutEditorHandler extends Handler {
 	/**
 	 * Display submission management instructions.
 	 * @param $args (type)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function instructions($args, &$request) {
 		$this->setupTemplate();
@@ -256,7 +256,7 @@ class LayoutEditorHandler extends Handler {
 	/**
 	 * Validate that the user is the assigned layout editor for the submission.
 	 * Redirects to layoutEditor index page if validation fails.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $articleId int optional the submission being edited
 	 * @param $checkEdit boolean check if editor has editing permissions
 	 */

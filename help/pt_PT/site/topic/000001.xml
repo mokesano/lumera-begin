@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -34,19 +34,19 @@
 	</section>
 	
 	<section title="Download">
-		<![CDATA[<p>O sistema pode ser transferido do <a href="http://pkp.sfu.ca/ojs/" target="_blank">portal web</a> do Public Knowledge Project.</p>]]>
+		<![CDATA[<p>O sistema pode ser transferido do <a href="http://lumera.sangia.org/cla/" target="_blank">portal web</a> do Sangia Editorial Project.</p>]]>
 	</section>
 	
 	<section title="Instalação">
 		<![CDATA[<p>O sistema possui um script de instalação web que guiará o administrador do portal através do processo de instalação.</p>
 		<ol>
 			<li>
-				Transfira o pacote OJS.
+				Transfira o pacote CLA.
 			</li>
 			<li>
-				Descompacte o pacote OJS no seu servidor web e coloque-o no local desejado da árvore de documentos web:<br />
-				<tt>$ tar -zxf ojs-2.1.tar.gz<br />
-				$ mv ojs-2.1 /var/www/minharevista</tt>
+				Descompacte o pacote CLA no seu servidor web e coloque-o no local desejado da árvore de documentos web:<br />
+				<tt>$ tar -zxf cla-2.1.tar.gz<br />
+				$ mv cla-2.1 /var/www/minharevista</tt>
 			</li>
 			<li>
 				Altere as permissões dos seguintes ficheiros e directórios para escrita (por ex., usando chown ou chmod):<br />
@@ -59,7 +59,7 @@
 				- cache/_db
 			</li>
 			<li>
-				Aceda via o navegador web de sua preferência o endereço da instalação do seu OJS (por ex., http://www.meudominio.pt/minharevista/) e siga as instruções na ecrã para concluir a instalação. Leia o docs/README para mais informações sobre o processo de instalação.
+				Aceda via o navegador web de sua preferência o endereço da instalação do seu CLA (por ex., http://www.meudominio.pt/minharevista/) e siga as instruções na ecrã para concluir a instalação. Leia o docs/README para mais informações sobre o processo de instalação.
 			</li>
 		</ol>
 		]]>

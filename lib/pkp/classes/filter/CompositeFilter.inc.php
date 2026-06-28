@@ -13,7 +13,7 @@
  *  filters into filter networks.
  */
 
-import('lib.pkp.classes.filter.PersistableFilter');
+import('lib.sep.classes.filter.PersistableFilter');
 
 class CompositeFilter extends PersistableFilter {
 	/** @var array An ordered array of sub-filters */

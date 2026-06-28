@@ -14,7 +14,7 @@
 	<filters>
 		<filter
 			inGroup="plaintext=>nlm30-element-citation"
-			class="lib.pkp.plugins.citationParser.parscit.filter.ParscitRawCitationNlm30CitationSchemaFilter"
+			class="lib.sep.plugins.citationParser.parscit.filter.ParscitRawCitationNlm30CitationSchemaFilter"
 			isTemplate="1" />
 	</filters>
 </filterConfig>

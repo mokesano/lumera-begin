@@ -14,7 +14,7 @@
  * @brief Validation check for URLs.
  */
 
-import('lib.pkp.classes.validation.ValidatorUri');
+import('lib.sep.classes.validation.ValidatorUri');
 
 class ValidatorUrl extends ValidatorUri {
 	/**

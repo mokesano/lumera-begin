@@ -14,14 +14,14 @@
  */
 
 
-import('lib.pkp.classes.file.PKPPublicFileManager');
+import('lib.sep.classes.file.SEPPublicFileManager');
 
-class PublicFileManager extends PKPPublicFileManager {
+class PublicFileManager extends SEPPublicFileManager {
 	/**
 	 * Constructor
 	 */
 	function PublicFileManager() {
-		parent::PKPPublicFileManager();
+		parent::SEPPublicFileManager();
 	}
 
 	/**

@@ -42,7 +42,7 @@ class SectionEditorHandler extends Handler {
 	/**
 	 * Display section editor index page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$this->validate();
@@ -177,7 +177,7 @@ class SectionEditorHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $articleId = 0, $parentPage = null, $showSidebar = true) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_OJS_EDITOR, LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_OJS_AUTHOR, LOCALE_COMPONENT_OJS_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION, LOCALE_COMPONENT_CLA_EDITOR, LOCALE_COMPONENT_SEP_MANAGER, LOCALE_COMPONENT_CLA_AUTHOR, LOCALE_COMPONENT_CLA_MANAGER);
 		$templateMgr =& TemplateManager::getManager();
 		$isEditor = Validation::isEditor();
 
@@ -204,7 +204,7 @@ class SectionEditorHandler extends Handler {
 	/**
 	 * Display submission management instructions.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function instructions($args, &$request) {
 		$this->setupTemplate();

@@ -26,7 +26,7 @@
  */
 
 
-import('lib.pkp.classes.file.FileManager');
+import('lib.sep.classes.file.FileManager');
 import('classes.article.ArticleFile');
 
 class ArticleFileManager extends FileManager {

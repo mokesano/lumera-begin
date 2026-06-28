@@ -217,7 +217,7 @@ class DataciteExportDom extends DOIExportDom {
 		$journal =& $this->getJournal();
 		$cache =& $this->getCache();
 
-		// Retrieve basic OJS objects.
+		// Retrieve basic CLA objects.
 		$publicationObjects = parent::retrievePublicationObjects($object);
 		if (is_a($object, 'SuppFile')) {
 			assert(isset($publicationObjects['article']));
@@ -251,7 +251,7 @@ class DataciteExportDom extends DOIExportDom {
 	function getObjectLocalePrecedence(&$article, &$galley, &$suppFile) {
 		$locales = array();
 		if (is_a($suppFile, 'SuppFile')) {
-			// Try to map the supp-file language to a PKP locale.
+			// Try to map the supp-file language to a SEP locale.
 			$suppFileLocale = $this->translateLanguageToLocale($suppFile->getLanguage());
 			if (!is_null($suppFileLocale)) {
 				$locales[] = $suppFileLocale;
@@ -776,7 +776,7 @@ class DataciteExportDom extends DOIExportDom {
 		if (!empty($pages)) {
 			$sizes[] = $pages . ' ' . __('editor.issues.pages');
 		}
-		foreach($files as $file) { /* @var $file PKPFile */
+		foreach($files as $file) { /* @var $file SEPFile */
 			$fileSize = round(((int)$file->getFileSize()) / 1024);
 			if ($fileSize >= 1024) {
 				$fileSize = round($fileSize / 1024, 2);

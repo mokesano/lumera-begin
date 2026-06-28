@@ -13,7 +13,7 @@
  *  additional validation (via standard validator classes).
  */
 
-import('lib.pkp.classes.filter.PrimitiveTypeDescription');
+import('lib.sep.classes.filter.PrimitiveTypeDescription');
 
 class ValidatorTypeDescription extends PrimitiveTypeDescription {
 	/** @var string the validator class name */
@@ -88,7 +88,7 @@ class ValidatorTypeDescription extends PrimitiveTypeDescription {
 		if (!parent::checkType($object)) return false;
 
 		// Instantiate and call validator
-		import('lib.pkp.classes.validation.'.$this->_validatorClassName);
+		import('lib.sep.classes.validation.'.$this->_validatorClassName);
 		assert(class_exists($this->_validatorClassName));
 		$validatorConstructorCode = 'return new '.$this->_validatorClassName.'('.$this->_validatorArgs.');';
 		$validator = eval($validatorConstructorCode);

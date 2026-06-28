@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -16,9 +16,9 @@
 	<section>
 		<![CDATA[
 <ol>
-	<li><a href="#section1">Hur startar jag en tidskrift med hjälp av OJS?</a></li>
+	<li><a href="#section1">Hur startar jag en tidskrift med hjälp av CLA?</a></li>
 	<li><a href="#section2">Var finner jag teknisk support, skickar in buggar och föreslår förbättringar?</a></li>
-	<li><a href="#section3">Hur gör jag för att översätta OJS till ett annat språk?</a></li>
+	<li><a href="#section3">Hur gör jag för att översätta CLA till ett annat språk?</a></li>
 	<li><a href="#section4">Varför får författare meddelande att tidskriften 'inte f n tar emot manuskript'?</a></li>
 	<li><a href="#section5">Vad kan man göra för att ett manuskript, som är under granskning eller under 'pre-print' stadiet, ska bli tillgängligt?</a></li>
 	<li><a href="#section6">Hur kan jag informera om tidskriften på nätet?</a></li>
@@ -29,26 +29,26 @@
 </ol>
 		]]>	
 	</section>
-	<section title="1. Hur startar jag en tidskrift med hjälp av OJS?">
+	<section title="1. Hur startar jag en tidskrift med hjälp av CLA?">
 		<![CDATA[
 <ol type="a">
-	<li><a href="http://pkp.sfu.ca/ojs_download" target="_blank">Ladda hem</a> OJS och installera programvaran, i enlighet med installationsskriptet, på en webbserver som uppfyller programvarens krav.</li>
-	<li>För att logga in, använd användarnamn och lösenord för administratör, som genererats vid installationen av OJS</li>
+	<li><a href="http://lumera.sangia.org/cla_download" target="_blank">Ladda hem</a> CLA och installera programvaran, i enlighet med installationsskriptet, på en webbserver som uppfyller programvarens krav.</li>
+	<li>För att logga in, använd användarnamn och lösenord för administratör, som genererats vid installationen av CLA</li>
 	<li>Skapa en ny tidskrift under Plattformens Tidskrifter.</li>
 	<li>Webbplatsens administratör kommer automatiskt att få rollen som Tidskriftsansvarig för den nya tidskriften men, om nödvändigt, kan han/hon skapa en ny användare (eller flera användare) med rollen som Tidskriftsansvarig.</li>
 	<li>Tidskriftsansvarig går sedan in i Setup och arbetar igenom de fem stegen (även om det inte är nödvändigt att göra alla på en gång) som resulterar i en färdig webbsida redo att ta emot manuskript, hantera den redaktionella processen och publicera tidskriften online.</li>
-	<li>Konsultera <a href="http://pkp.sfu.ca/files/OJSinanHour.pdf" target="_blank">OJS på en timme </a> för mer info om hur man kommer igång med OJS.</li>
+	<li>Konsultera <a href="http://lumera.sangia.org/files/CLAinanHour.pdf" target="_blank">CLA på en timme </a> för mer info om hur man kommer igång med CLA.</li>
 </ol>
 		]]>
 	</section>
 	<section title="2. Var finner jag teknisk support, skickar in buggar och föreslår förbättringar?">
 		<![CDATA[
-<p>The Public Knowledge Project tillhandahåller ett <a href="http://forum.pkp.sfu.ca/" target="_blank">Support-forum</a> med över tusen frågor och svar, där man kan söka och lägga in frågor. T ex kan man söka efter felmeddelanden och få förslag på lösningar. Om man inte finner lösningen där kan man skicka frågor till <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>. Rapporter om buggar ska gå via PKP's <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a>.</p>
+<p>The Sangia Editorial Project tillhandahåller ett <a href="http://forum.lumera.sangia.org/" target="_blank">Support-forum</a> med över tusen frågor och svar, där man kan söka och lägga in frågor. T ex kan man söka efter felmeddelanden och få förslag på lösningar. Om man inte finner lösningen där kan man skicka frågor till <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>. Rapporter om buggar ska gå via SEP's <a href="https://github.com/sep/sep-lib#issues" target="_blank">Github.com issues</a>.</p>
 		]]>
 	</section>
-	<section title="3. Hur gör jag för att översätta OJS till något annat språk?">
+	<section title="3. Hur gör jag för att översätta CLA till något annat språk?">
 		<![CDATA[
-<p>Instruktioner är tillgängliga i docs/README filen som är inkluderad i programfilen som laddats hem. Ytterligare information om vanliga översättningsfrågor finns på <a href="http://forum.pkp.sfu.ca/" target="_blank">PKP Support-forum</a>.</p>
+<p>Instruktioner är tillgängliga i docs/README filen som är inkluderad i programfilen som laddats hem. Ytterligare information om vanliga översättningsfrågor finns på <a href="http://forum.lumera.sangia.org/" target="_blank">SEP Support-forum</a>.</p>
 		]]>
 	</section>
 	
@@ -59,13 +59,13 @@
 	</section>
 <section title="5. Vad kan man göra för att ett manuskript, som är under granskning eller under 'pre-print' stadiet, ska bli tillgängligt?">
 		<![CDATA[
-	<p>Redaktörer har två alternativ för att erbjuda pre-print tillgänglihet. De kan skapa en pre-print sektion i vilken artiklar som är schemalagda för ett senare häfte kan läggas. Pre-print artiklar läggs till innehållsförteckningen för det aktuella häftet. Så snart det nya häftet är klart för publicering flyttar Redaktören bort artiklarna från det föregående häftet till det nya. Alternativt kan Redaktörerna använda URL för Läsa korrektur, på ett manuskript från layout-stadiet på artikelns Redigeringssida för att skapa en pre-print version. Den URL ger tillgång till artikeln (för utvalda läsare) innan den publiceras i ett häfte av tidskriften. PKP undersöker om det finns intresse för denna funktion och kommer eventuellt att utveckla en process för detta. </p>
+	<p>Redaktörer har två alternativ för att erbjuda pre-print tillgänglihet. De kan skapa en pre-print sektion i vilken artiklar som är schemalagda för ett senare häfte kan läggas. Pre-print artiklar läggs till innehållsförteckningen för det aktuella häftet. Så snart det nya häftet är klart för publicering flyttar Redaktören bort artiklarna från det föregående häftet till det nya. Alternativt kan Redaktörerna använda URL för Läsa korrektur, på ett manuskript från layout-stadiet på artikelns Redigeringssida för att skapa en pre-print version. Den URL ger tillgång till artikeln (för utvalda läsare) innan den publiceras i ett häfte av tidskriften. SEP undersöker om det finns intresse för denna funktion och kommer eventuellt att utveckla en process för detta. </p>
 		]]>
 	</section>
 	
 	<section title="6. Hur kan jag informera om tidskriften på nätet?">
 		<![CDATA[
-<p>Inom kort kommer tidskriften dyka upp i Google och andra sökmotorer men man kan själv ta ytterligare steg. Kom ihåg att registrera tidskriften hos PKP Harvester i Setup steg 3. Detta leder till att din tidskrift blir indexerad i Open Archives Initiative's indexeringsorgan som inkluderar <a href="http://pkp.sfu.ca/harvester/" target="_blank">PKP Harvester</a> och <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Om din tidskrift är open access, tala med en bibliotekarie om hur den kan komma med i bibliotekets elektroniska samling och hur du kan kontakta andra forskningsbibliotek genom en distributionskanal som studeras av bibliotekarier som har hand om tidskriftssamlingar. Undersök om du kan använda webbsidan eller distributionskanalen för att nå relevanta professionella organisationer och annonsera ett Call for Papers eller lansera tidskriften. Slutligen, i Setup under Säkerhet och inställningar för Tillgång (2.7) finns det möjlighet för Tidskrifsansvarig att registrera Läsare så att de regelbundet får information när nya häften publiceras.</p>
+<p>Inom kort kommer tidskriften dyka upp i Google och andra sökmotorer men man kan själv ta ytterligare steg. Kom ihåg att registrera tidskriften hos SEP Harvester i Setup steg 3. Detta leder till att din tidskrift blir indexerad i Open Archives Initiative's indexeringsorgan som inkluderar <a href="http://lumera.sangia.org/harvester/" target="_blank">SEP Harvester</a> och <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Om din tidskrift är open access, tala med en bibliotekarie om hur den kan komma med i bibliotekets elektroniska samling och hur du kan kontakta andra forskningsbibliotek genom en distributionskanal som studeras av bibliotekarier som har hand om tidskriftssamlingar. Undersök om du kan använda webbsidan eller distributionskanalen för att nå relevanta professionella organisationer och annonsera ett Call for Papers eller lansera tidskriften. Slutligen, i Setup under Säkerhet och inställningar för Tillgång (2.7) finns det möjlighet för Tidskrifsansvarig att registrera Läsare så att de regelbundet får information när nya häften publiceras.</p>
 		]]>
 	</section>
 	<section title="7. Hur kan tidskriften presentera historiken över vilka som varit medlemmar i redaktionsrådet?">

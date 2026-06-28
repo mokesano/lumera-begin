@@ -33,7 +33,7 @@ class ProofreaderHandler extends Handler {
 	/**
 	 * Display proofreader index page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$this->validate($request);
@@ -116,7 +116,7 @@ class ProofreaderHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $articleId = 0, $parentPage = null, $showSidebar = true) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_OJS_EDITOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION, LOCALE_COMPONENT_CLA_EDITOR);
 		$templateMgr =& TemplateManager::getManager();
 		$pageHierarchy = $subclass ? array(array(Request::url(null, 'user'), 'navigation.user'), array(Request::url(null, 'proofreader'), 'user.role.proofreader'))
 				: array(array(Request::url(null, 'user'), 'navigation.user'), array(Request::url(null, 'proofreader'), 'user.role.proofreader'));
@@ -132,7 +132,7 @@ class ProofreaderHandler extends Handler {
 	/**
 	 * Display submission management instructions.
 	 * @param $args array
-	 * @param $requet PKPRequest
+	 * @param $requet SEPRequest
 	 */
 	function instructions($args, &$request) {
 		$this->setupTemplate();

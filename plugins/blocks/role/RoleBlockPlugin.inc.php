@@ -13,7 +13,7 @@
  * @brief Class for role block plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class RoleBlockPlugin extends BlockPlugin {
 	/**

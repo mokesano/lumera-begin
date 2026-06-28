@@ -14,8 +14,8 @@
  */
 
 
-import ('lib.pkp.classes.xml.XMLNode');
-import ('lib.pkp.classes.xml.XMLComment');
+import ('lib.sep.classes.xml.XMLNode');
+import ('lib.sep.classes.xml.XMLComment');
 
 class XMLCustomWriter {
 	/**

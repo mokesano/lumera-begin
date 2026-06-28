@@ -16,7 +16,7 @@ define('GOOGLE_ANALYTICS_SITE_ENABLE', 1);
 define('GOOGLE_ANALYTICS_SITE_DISABLE', -1);
 define('GOOGLE_ANALYTICS_SITE_UNCHANGED', 0);
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class GoogleAnalyticsSettingsForm extends Form {
 

@@ -13,7 +13,7 @@
  * @brief Form validation check for ISSNs.
  */
 
-import('lib.pkp.classes.form.validation.FormValidator');
+import('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorISSN extends FormValidator {
 	/**
@@ -24,7 +24,7 @@ class FormValidatorISSN extends FormValidator {
 	 * @param $message string the error message for validation failures (i18n key)
 	 */
 	function FormValidatorISSN($form, $field, $type, $message) {
-		import('lib.pkp.classes.validation.ValidatorISSN');
+		import('lib.sep.classes.validation.ValidatorISSN');
 		$validator = new ValidatorISSN();
 		parent::FormValidator($form, $field, $type, $message, $validator);
 	}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/citationFormats/abnt/locale/sv_SE/locale.xml
@@ -18,6 +18,6 @@
 <locale name="sv_SE" full_name="Svenska">
 	<message key="plugins.citationFormats.abnt.displayName">ABNT citationsformatstillägg (the Brazilian Association of Technical Standards, Associação Brasileira de Normas Técnicas)</message>
 	<message key="plugins.citationFormats.abnt.citationFormatName">ABNT</message>
-	<message key="plugins.citationFormats.abnt.description">Det här tillägget implementerar ABNT citationsformat. Om det finns problem med formatet kontrollera bugrapport på adressen http://pkp.sfu.ca/bugzilla/show_bug.cgi?id=4645</message>
+	<message key="plugins.citationFormats.abnt.description">Det här tillägget implementerar ABNT citationsformat. Om det finns problem med formatet kontrollera bugrapport på adressen http://lumera.sangia.org/bugzilla/show_bug.cgi?id=4645</message>
 	<message key="plugins.citationFormats.abnt.retrieved"><![CDATA[Tillgänglig på: &lt;<a href="{$url}" target="_new">{$url}</a>&gt;. Senaste access: {$retrievedDate}]]></message>
 </locale>

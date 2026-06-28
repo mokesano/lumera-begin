@@ -18,8 +18,8 @@
  */
 
 
-import('lib.pkp.classes.filter.PersistableFilter');
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.filter.PersistableFilter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
 class Mods34DescriptionXmlFilter extends PersistableFilter {
 	/**
@@ -39,7 +39,7 @@ class Mods34DescriptionXmlFilter extends PersistableFilter {
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.metadata.mods34.filter.Mods34DescriptionXmlFilter';
+		return 'lib.sep.plugins.metadata.mods34.filter.Mods34DescriptionXmlFilter';
 	}
 
 
@@ -170,7 +170,7 @@ class Mods34DescriptionXmlFilter extends PersistableFilter {
 					// Retrieve the translated values of the statement.
 					$localizedValues =& $mods34Description->getStatementTranslations($propertyName);
 
-					// Translate the PKP locale into ISO639-2b 3-letter codes.
+					// Translate the SEP locale into ISO639-2b 3-letter codes.
 					$translatedValues = array();
 					foreach($localizedValues as $locale => $translatedValue) {
 						$isoLanguage = AppLocale::get3LetterIsoFromLocale($locale);

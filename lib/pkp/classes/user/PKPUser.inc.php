@@ -5,24 +5,24 @@
  */
 
 /**
- * @file classes/user/PKPUser.inc.php
+ * @file classes/user/SEPUser.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPUser
+ * @class SEPUser
  * @ingroup user
  * @see UserDAO
  *
  * @brief Basic class describing users existing in the system.
  */
 
-class PKPUser extends DataObject {
+class SEPUser extends DataObject {
 	/**
 	 * Constructor
 	 */
-	function PKPUser() {
+	function SEPUser() {
 		parent::DataObject();
 	}
 
@@ -412,7 +412,7 @@ class PKPUser extends DataObject {
 	 */
 	function getUserInterests() {
 		if (Config::getVar('debug', 'deprecation_warnings')) trigger_error('Deprecated function.');
-		import('lib.pkp.classes.user.InterestManager');
+		import('lib.sep.classes.user.InterestManager');
 		$interestManager = new InterestManager();
 		return $interestManager->getInterestsForUser($this);
 	}
@@ -422,7 +422,7 @@ class PKPUser extends DataObject {
 	 * @return string
 	 */
 	function getInterestString() {
-		import('lib.pkp.classes.user.InterestManager');
+		import('lib.sep.classes.user.InterestManager');
 		$interestManager = new InterestManager();
 		return $interestManager->getInterestsString($this);
 	}
@@ -635,7 +635,7 @@ class PKPUser extends DataObject {
 
 	function getContactSignature() {
 		$signature = $this->getFullName();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_USER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_USER);
 		if ($a = $this->getLocalizedAffiliation()) $signature .= "\n" . $a;
 		if ($p = $this->getPhone()) $signature .= "\n" . __('user.phone') . ' ' . $p;
 		if ($f = $this->getFax()) $signature .= "\n" . __('user.fax') . ' ' . $f;

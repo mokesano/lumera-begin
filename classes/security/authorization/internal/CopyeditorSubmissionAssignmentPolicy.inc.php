@@ -15,15 +15,15 @@
  * authorization context.
  */
 
-import('lib.pkp.classes.security.authorization.AuthorizationPolicy');
+import('lib.sep.classes.security.authorization.AuthorizationPolicy');
 
 class CopyeditorSubmissionAssignmentPolicy extends AuthorizationPolicy {
-	/** @var PKPRequest */
+	/** @var SEPRequest */
 	var $_request;
 
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function CopyeditorSubmissionAssignmentPolicy(&$request) {
 		parent::AuthorizationPolicy('user.authorization.copyeditorAssignmentMissing');
@@ -39,7 +39,7 @@ class CopyeditorSubmissionAssignmentPolicy extends AuthorizationPolicy {
 	function effect() {
 		// Get the user
 		$user =& $this->_request->getUser();
-		if (!is_a($user, 'PKPUser')) return AUTHORIZATION_DENY;
+		if (!is_a($user, 'SEPUser')) return AUTHORIZATION_DENY;
 
 		// Get the copyeditor submission
 		$copyeditorSubmission =& $this->getAuthorizedContextObject(ASSOC_TYPE_ARTICLE);

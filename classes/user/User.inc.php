@@ -14,12 +14,12 @@
  * @brief Basic class describing users existing in the system.
  */
 
-import('lib.pkp.classes.user.PKPUser');
+import('lib.sep.classes.user.SEPUser');
 
-class User extends PKPUser {
+class User extends SEPUser {
 
 	function User() {
-		parent::PKPUser();
+		parent::SEPUser();
 	}
 
 	/**

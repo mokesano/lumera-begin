@@ -7,7 +7,7 @@
   * Copyright (c) 2000-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Spanish_(es_ES)
   *
   * Localization strings for the es_ES (Español (España)) locale.
   *
@@ -17,7 +17,7 @@
 	<message key="installer.additionalLocales">Más configuraciones regionales</message>
 	<message key="installer.administratorAccount">Cuenta de administrador/a</message>
 	<message key="installer.administratorAccountInstructions">Esta cuenta de usuario/a será el administrador/a del sitio y tendrá total acceso al sistema. Tras la instalación se pueden crear cuentas de usuario/a adicionales.</message>
-	<message key="installer.checkNo"><![CDATA[<span class="pkp_form_error formError">NO</span>]]></message>
+	<message key="installer.checkNo"><![CDATA[<span class="sep_form_error formError">NO</span>]]></message>
 	<message key="installer.checkYes">Sí</message>
 	<message key="installer.clientCharset">Juego de caracteres del cliente</message>
 	<message key="installer.clientCharsetInstructions">La codificación que debe utilizarse para los datos enviados y recibidos desde los navegadores.</message>

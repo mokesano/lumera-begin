@@ -36,11 +36,11 @@
 
 	<!-- NLM 3.0 output -->
 	<message key="plugins.metadata.nlm30.nlm30XmlOutput.displayName">Відображення журналу NLM 3.0</message>
-	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Конвертувати статтю OJS або доповідь OCS у формат NLM 3.0.</message>
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Конвертувати статтю CLA або доповідь OCS у формат NLM 3.0.</message>
 
 	<!-- NLM 2.3 output -->
 	<message key="plugins.metadata.nlm30.nlm23XmlOutput.displayName">Відображення журналу NLM 2.3</message>
-	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Конвертувати статтю OJS або доповідь OCS у формат NLM 2.3.</message>
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Конвертувати статтю CLA або доповідь OCS у формат NLM 2.3.</message>
 
 	<!-- NLM 3.0 to 2.3 downgrade -->
 	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.displayName">Зниження версії відображення журналу з NLM 3.0 до 2.3</message>
@@ -48,5 +48,5 @@
 
 	<!-- Plain text reference list output -->
 	<message key="plugins.metadata.nlm30.refList.displayName">Генерація списку пристатейної бібліографії у текстовому форматі</message>
-	<message key="plugins.metadata.nlm30.refList.description">Дозволяє генерувати форматований текстовий список пристатейної бібліографії з бібліографії подання OJS/OCS/OMP</message>
+	<message key="plugins.metadata.nlm30.refList.description">Дозволяє генерувати форматований текстовий список пристатейної бібліографії з бібліографії подання CLA/OCS/OMP</message>
 </locale>

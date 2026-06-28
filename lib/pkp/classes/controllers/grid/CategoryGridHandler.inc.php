@@ -14,8 +14,8 @@
  */
 
 // import grid classes
-import('lib.pkp.classes.controllers.grid.GridHandler');
-import('lib.pkp.classes.controllers.grid.GridCategoryRow');
+import('lib.sep.classes.controllers.grid.GridHandler');
+import('lib.sep.classes.controllers.grid.GridCategoryRow');
 
 // empty category constant
 define('GRID_CATEGORY_NONE', 'NONE');
@@ -34,7 +34,7 @@ class CategoryGridHandler extends GridHandler {
 	function CategoryGridHandler($dataProvider = null) {
 		parent::GridHandler($dataProvider);
 
-		import('lib.pkp.classes.controllers.grid.NullGridCellProvider');
+		import('lib.sep.classes.controllers.grid.NullGridCellProvider');
 		$this->addColumn(new GridColumn('indent', null, null, 'controllers/grid/gridCell.tpl',
 			new NullGridCellProvider(), array('indent' => true)));
 	}
@@ -124,7 +124,7 @@ class CategoryGridHandler extends GridHandler {
 	 * @see GridHandler::getJSHandler()
 	 */
 	function getJSHandler() {
-		return '$.pkp.controllers.grid.CategoryGridHandler';
+		return '$.sep.controllers.grid.CategoryGridHandler';
 	}
 
 	/**
@@ -230,7 +230,7 @@ class CategoryGridHandler extends GridHandler {
 	 * data source that corresponds to the requested row id.
 	 * Raises a fatal error if such an element cannot be
 	 * found.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $args array
 	 * @return GridRow the requested grid row, already
 	 *  configured with id and data or null if the row
@@ -328,7 +328,7 @@ class CategoryGridHandler extends GridHandler {
 
 	/**
 	 * Render all the categories internally
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _renderCategoriesInternally(&$request) {
 		// Iterate through the rows and render them according
@@ -351,7 +351,7 @@ class CategoryGridHandler extends GridHandler {
 
 	/**
 	 * Render a category row and its data.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $categoryRow GridCategoryRow
 	 * @return String HTML for all the rows (including category)
 	 */

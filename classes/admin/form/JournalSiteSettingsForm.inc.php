@@ -13,8 +13,8 @@
  * @brief Form for site administrator to edit basic journal settings.
  */
 
-import('lib.pkp.classes.db.DBDataXMLParser');
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.db.DBDataXMLParser');
+import('lib.sep.classes.form.Form');
 
 class JournalSiteSettingsForm extends Form {
 
@@ -142,7 +142,7 @@ class JournalSiteSettingsForm extends Form {
 			}
 
 			// Make the file directories for the journal
-			import('lib.pkp.classes.file.FileManager');
+			import('lib.sep.classes.file.FileManager');
 			$fileManager = new FileManager();
 			$fileManager->mkdir(Config::getVar('files', 'files_dir') . '/journals/' . $journalId);
 			$fileManager->mkdir(Config::getVar('files', 'files_dir'). '/journals/' . $journalId . '/articles');
@@ -152,7 +152,7 @@ class JournalSiteSettingsForm extends Form {
 			// Install default journal settings
 			$journalSettingsDao =& DAORegistry::getDAO('JournalSettingsDAO');
 			$titles = $this->getData('title');
-			AppLocale::requireComponents(LOCALE_COMPONENT_OJS_DEFAULT, LOCALE_COMPONENT_APPLICATION_COMMON);
+			AppLocale::requireComponents(LOCALE_COMPONENT_CLA_DEFAULT, LOCALE_COMPONENT_APPLICATION_COMMON);
 			$journalSettingsDao->installSettings($journalId, 'registry/journalSettings.xml', array(
 				'indexUrl' => Request::getIndexUrl(),
 				'journalPath' => $this->getData('journalPath'),
@@ -161,7 +161,7 @@ class JournalSiteSettingsForm extends Form {
 			));
 
 			// Install the default RT versions.
-			import('classes.rt.ojs.JournalRTAdmin');
+			import('classes.rt.cla.JournalRTAdmin');
 			$journalRtAdmin = new JournalRTAdmin($journalId);
 			$journalRtAdmin->restoreVersions(false);
 

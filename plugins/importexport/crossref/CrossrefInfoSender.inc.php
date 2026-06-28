@@ -13,7 +13,7 @@
  * @brief Scheduled task to send article information to the ALM server.
  */
 
-import('lib.pkp.classes.scheduledTask.ScheduledTask');
+import('lib.sep.classes.scheduledTask.ScheduledTask');
 
 
 class CrossrefInfoSender extends ScheduledTask {

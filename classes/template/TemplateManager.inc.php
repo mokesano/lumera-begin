@@ -18,20 +18,20 @@
 
 import('classes.search.ArticleSearch');
 import('classes.file.PublicFileManager');
-import('lib.pkp.classes.template.PKPTemplateManager');
+import('lib.sep.classes.template.SEPTemplateManager');
 
-class TemplateManager extends PKPTemplateManager {
+class TemplateManager extends SEPTemplateManager {
 	/**
 	 * Constructor.
 	 * Initialize template engine and assign basic template variables.
-	 * @param $request PKPRequest FIXME: is optional for backwards compatibility only - make mandatory
+	 * @param $request SEPRequest FIXME: is optional for backwards compatibility only - make mandatory
 	 */
 	function TemplateManager($request = null) {
-		parent::PKPTemplateManager($request);
+		parent::SEPTemplateManager($request);
 
 		// Retrieve the router
 		$router =& $this->request->getRouter();
-		assert(is_a($router, 'PKPRouter'));
+		assert(is_a($router, 'SEPRouter'));
 
 		// Are we using implicit authentication?
 		$this->assign('implicitAuth', strtolower(Config::getVar('security', 'implicit_auth')));
@@ -107,8 +107,8 @@ class TemplateManager extends PKPTemplateManager {
 					$this->addStyleSheet($this->request->getBaseUrl() . '/' . $publicFileManager->getJournalFilesPath($journal->getId()) . '/' . $journalStyleSheet['uploadName']);
 				}
 
-				import('classes.payment.ojs.OJSPaymentManager');
-				$paymentManager = new OJSPaymentManager($this->request);
+				import('classes.payment.cla.CLAPaymentManager');
+				$paymentManager = new CLAPaymentManager($this->request);
 				$this->assign('journalPaymentsEnabled', $paymentManager->isConfigured());
 
 				$this->assign('pageFooter', $journal->getLocalizedSetting('journalPageFooter'));
@@ -135,7 +135,7 @@ class TemplateManager extends PKPTemplateManager {
 
 			// Add java script for notifications
 			$user =& $this->request->getUser();
-			if ($user) $this->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.pnotify.js');
+			if ($user) $this->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.pnotify.js');
 		}
 	}
 

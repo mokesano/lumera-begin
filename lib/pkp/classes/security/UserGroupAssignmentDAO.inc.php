@@ -17,7 +17,7 @@
  * are ported over to them.
  */
 
-import('lib.pkp.classes.security.UserGroupAssignment');
+import('lib.sep.classes.security.UserGroupAssignment');
 
 class UserGroupAssignmentDAO extends DAO {
 	/**

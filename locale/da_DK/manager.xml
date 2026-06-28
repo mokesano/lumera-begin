@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/da_DK/manager.xml
@@ -20,14 +20,14 @@
 	<message key="manager.groups.context.editorialTeam.short">Redaktionsgruppe</message>
 	<message key="manager.groups.context.people">Vis titel som selvstændig kategori under Personer (f.eks. Redaktionsudvalg)</message>
 	<message key="manager.groups.create">Opret stillingstitel</message>
-	<message key="manager.groups.disableBoard">I OJS vises en liste over personer under Redaktionsgruppe under de tildelte roller (Tidsskriftschef, Manuskriptredaktør osv.)</message>
+	<message key="manager.groups.disableBoard">I CLA vises en liste over personer under Redaktionsgruppe under de tildelte roller (Tidsskriftschef, Manuskriptredaktør osv.)</message>
 	<message key="manager.groups.enableBoard">Tidsskriftschefen opretter titler og tilføjer personer under hver titel.</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[Under <a href="{$aboutEditorialTeamUrl}">Personer</a> under Om tidsskriftet:]]></message>
 	<message key="manager.groups.noneCreated">Der er ikke oprettet nogen redaktionsgruppestillinger.</message>
 	<message key="manager.journalManagement">Administration af tidsskrifter</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Dette vil erstatte enhver lokaliseringsspecifik tidsskriftsindstilling, som du har oprettet for denne lokalisering</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Reload lokaliseringspecifikke standardindstillinger</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS er tilgængeligt for brugere på mange understøttede sprog. Derudover kan OJS fungere som et flersproget system, hvor brugere har mulighed for at skifte mellem de forskellige sprog på hver side, hvilket gør det muligt at indtaste data på flere sprog.<br /><br />Hvis et sprog, der understøttes af OJS, ikke er anført nedenfor, skal du bede webstedsadministratoren om at installere sproget fra webstedsadministratorens grænseflade. Se dokumentationen til OJS for at få oplysninger om, hvordan du tilføjer understøttelse af nye sprog.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA er tilgængeligt for brugere på mange understøttede sprog. Derudover kan CLA fungere som et flersproget system, hvor brugere har mulighed for at skifte mellem de forskellige sprog på hver side, hvilket gør det muligt at indtaste data på flere sprog.<br /><br />Hvis et sprog, der understøttes af CLA, ikke er anført nedenfor, skal du bede webstedsadministratoren om at installere sproget fra webstedsadministratorens grænseflade. Se dokumentationen til CLA for at få oplysninger om, hvordan du tilføjer understøttelse af nye sprog.]]></message>
 	<message key="manager.languages.noneAvailable">Der findes desværre ingen andre sprog. Kontakt webstedsadministratoren, hvis du vil benytte andre sprog i forbindelse med dette tidsskrift.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Dette er standardsproget for tidsskriftets websted.</message>
 	<message key="manager.managementPages">Administrationssider</message>
@@ -37,7 +37,7 @@
 	<message key="manager.payment.authorFees">Forfattergebyrer</message>
 	<message key="manager.payment.authorFeesDescription">De valgte indstillinger samt deres beskrivelser og gebyrer (som kan redigeres nedenfor) vises i trin 1 i manuskriptprocessen og under Om tidsskriftet under Manuskripter samt i de situationer, hvor der kræves betaling.</message>
 	<message key="manager.payment.currency">Valuta</message>
-	<message key="manager.payment.currencymessage">OJS foretager ingen valutakonverteringer. Hvis du accepterer betalinger for abonnementer, skal du sikre, at abonnementsvalutaen svarer til den, der er angivet her.</message>
+	<message key="manager.payment.currencymessage">CLA foretager ingen valutakonverteringer. Hvis du accepterer betalinger for abonnementer, skal du sikre, at abonnementsvalutaen svarer til den, der er angivet her.</message>
 	<message key="manager.payment.description">Beskrivelse</message>
 	<message key="manager.payment.details">Detaljer</message>
 	<message key="manager.payment.editSubscription">Rediger abonnement</message>
@@ -169,7 +169,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Vises under Om tidsskriftet)</message>
 	<message key="manager.setup.authorCopyrightNotice">Oplysninger om ophavsret</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Kræv, at forfattere accepterer Oplysninger om ophavsret som en del af manuskriptprocessen.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[De oplysninger om ophavsret, der er angivet nedenfor, vises under Om tidsskriftet og i alle publicerede elementers metadata. Mens det er op til tidsskriftet at beslutte karakteren af dets ophavsretsaftale med forfattere, anbefaler Public Knowledge Project brug af licensen <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. Licensen indeholder <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">eksempler på formuleringer til Oplysninger om ophavsret</a>, som kan kopieres og indsættes på pladsen nedenfor for tidsskrifter, der (a) tilbyder open access, (b) tilbyder forsinket open access eller (c) ikke tilbyder open access.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[De oplysninger om ophavsret, der er angivet nedenfor, vises under Om tidsskriftet og i alle publicerede elementers metadata. Mens det er op til tidsskriftet at beslutte karakteren af dets ophavsretsaftale med forfattere, anbefaler Sangia Editorial Project brug af licensen <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a>. Licensen indeholder <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">eksempler på formuleringer til Oplysninger om ophavsret</a>, som kan kopieres og indsættes på pladsen nedenfor for tidsskrifter, der (a) tilbyder open access, (b) tilbyder forsinket open access eller (c) ikke tilbyder open access.]]></message>
 	<message key="manager.setup.authorGuidelines">Retningslinjer for forfattere</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Oplys forfattere om de bibliografiske standarder og formateringsstandarder, der benyttes for artikler fremsendt til tidsskriftet (f.eks. <i>Publication Manual fra American Psychological Association</i>, 5. udgave, 2001). Det er ofte nyttigt at angive eksempler på de almindelige citatformater for tidsskrifter og bøger, der anvendes i manuskripter. Angiv også, hvilke typer relevante supplerende filer (f.eks. datasæt, forskningsinstrumenter osv.) forfattere bør overføre, ud over deres manuskript, for at styrke læsernes interesse for deres værker.]]></message>
 	<message key="manager.setup.competingInterests">Konkurrerende interesser</message>
@@ -213,7 +213,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Tidsskrifter har redaktionsudvalg, som fører tilsyn med tidsskriftets redaktionelle linje, som deltager i udnævnelsen af redaktører, og som i kraft af udvalgsmedlemmernes renommé giver tidsskriftet en vis status inden for det pågældende felt. Bedømmelsesudvalget spiller en lignende rolle, men leder derudover peer review-processen. Medlemmer af bedømmelsesudvalget har ikke adgang til tidsskriftets administrative system, men står anført på listen over de personer, der kan foretage peer review.</message>
 	<message key="manager.setup.emailBounceAddress">Returadresse</message>
 	<message key="manager.setup.emailBounceAddressDescription">Alle e-mails, der ikke kan leveres, resulterer i en fejlmeddelelse til denne adresse.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere denne indstilling, skal webstedsadministratoren aktivere indstillingen <tt>allow_envelope_sender</tt> i OJS-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til OJS.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere denne indstilling, skal webstedsadministratoren aktivere indstillingen <tt>allow_envelope_sender</tt> i CLA-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til CLA.]]></message>
 	<message key="manager.setup.emails">E-mail-identifikation</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
 	<message key="manager.setup.emailSignatureDescription">De forberedte e-mails, der sendes af systemet på vegne af tidsskriftet, får følgende signatur tilføjet nederst. Brødteksten til de forberedte e-mails kan redigeres under Administration af tidsskrifter.</message>
@@ -235,7 +235,7 @@
 	<message key="manager.setup.focusScope">Fokus og område</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<b>EKSEMPEL PÅ HTML-DATA</b>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Til forfattere til indeksering af deres værker</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS overholder protokollen <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> Protocol for Metadata Harvesting, som er udviklingsstandarden for oprettelse af velindekseret adgang til elektroniske forskningsressourcer på et globalt plan. Forfatterne benytter en lignende skabelon til angivelse af metadata til deres manuskript. Tidsskriftschefen vælger de kategorier, der skal indekseres, og præsenterer forfatterne for relevante eksempler med henblik på at hjælpe dem med at indeksere deres værker. Termer adskilles med et semikolon (f.eks. term1; term2). Posterne skal introduceres som eksempler ved hjælp af "F.eks." eller "For eksempel".]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA overholder protokollen <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> Protocol for Metadata Harvesting, som er udviklingsstandarden for oprettelse af velindekseret adgang til elektroniske forskningsressourcer på et globalt plan. Forfatterne benytter en lignende skabelon til angivelse af metadata til deres manuskript. Tidsskriftschefen vælger de kategorier, der skal indekseres, og præsenterer forfatterne for relevante eksempler med henblik på at hjælpe dem med at indeksere deres værker. Termer adskilles med et semikolon (f.eks. term1; term2). Posterne skal introduceres som eksempler ved hjælp af "F.eks." eller "For eksempel".]]></message>
 	<message key="manager.setup.form.contactEmailRequired">E-mail-adressen på den primære kontaktperson er påkrævet.</message>
 	<message key="manager.setup.form.contactNameRequired">Navnet på den primære kontaktperson er påkrævet.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Tidsskriftets initialer er påkrævet.</message>
@@ -258,7 +258,7 @@
 	<message key="manager.setup.information.forLibrarians">Til bibliotekarer</message>
 	<message key="manager.setup.information.forReaders">Til læsere</message>
 	<message key="manager.setup.initialIssue">Første nummer</message>
-	<message key="manager.setup.initialIssueDescription">Angiv nummer, årgang og/eller år for det første nummer, der skal publiceres med OJS, på baggrund af det valgte format:</message>
+	<message key="manager.setup.initialIssueDescription">Angiv nummer, årgang og/eller år for det første nummer, der skal publiceres med CLA, på baggrund af det valgte format:</message>
 	<message key="manager.setup.institution">Institution</message>
 	<message key="manager.setup.issnDescription"><![CDATA[Det internationale standardserienummer, ISSN (International Standard Serial Number), er et ottecifret tal, der identificerer tidsskriftspublikationer, herunder elektroniske tidsskrifter. Det administreres af et verdensomspændende netværk af nationale centre koordineret af et internationalt center i Paris og støttes af Unesco og den franske regering. Du kan få fat på et nummer på <a href="http://www.issn.org" target="_new">ISSN-webstedet</a>. Det kan du gøre på et hvilket som helst tidspunkt under driften af tidsskriftet.]]></message>
 	<message key="manager.setup.issuePerVolume">Numre pr. årgang</message>
@@ -370,8 +370,8 @@
 	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Retningslinjer for bedømmelser indeholder kriterier, som bedømmere skal bruge til at vurdere, om et manuskript egner sig til at blive publiceret i tidsskriftet, samt specielle instruktioner til udarbejdelse af en effektiv og konstruktiv bedømmelse. Ved bedømmelsen kan bedømmeren skrive kommentarer i to tekstbokse, den første ”til forfatter og redaktør”, den anden ”til redaktør”. Som et alternativ kan Tidsskriftschefen udforme sin egen bedømmelsesformular under <a href="{$reviewFormsUrl}" class="action">Review formular</a>.
 I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommentarerne i kommunikationen med forfatteren.]]></message>
 	<message key="manager.setup.reviewOptions">Bedømmelsesindstillinger</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">Det er muligt at sende automatiske e-mail-påmindelser (tilgængelige i OJS-systemets standard-e-mails) til bedømmere på to tidspunkter (redaktøren kan desuden altid sende en e-mail direkte til bedømmeren)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere disse indstillinger, skal webstedsadministratoren aktivere indstillingen <tt>scheduled_tasks</tt> i OJS-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til OJS.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">Det er muligt at sende automatiske e-mail-påmindelser (tilgængelige i CLA-systemets standard-e-mails) til bedømmere på to tidspunkter (redaktøren kan desuden altid sende en e-mail direkte til bedømmeren)</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere disse indstillinger, skal webstedsadministratoren aktivere indstillingen <tt>scheduled_tasks</tt> i CLA-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til CLA.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Blindbedømmelse</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Kan ændres under den redaktionelle proces.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Det normale tidsforbrug, der er tilladt til bedømmelser</message>
@@ -390,7 +390,7 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Indeholder links til <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Sikring af en blindbedømmelse</a> på sider, hvor forfattere og bedømmere overfører filer.]]></message>
 	<message key="manager.setup.reviewPolicy">Bedømmelsespolitik</message>
 	<message key="manager.setup.reviewProcess">Bedømmelsesproces</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS understøtter to modeller til håndtering af bedømmelsesprocessen. Standardbedømmelsesprocessen anbefales, fordi den ved hjælp af trin leder bedømmere igennem processen, sikrer en komplet bedømmelsesoversigt for hvert manuskript og benytter automatisk påmindelse samt standardanbefalinger for manuskripter (Accepter, Accepter med rettelser, Fremsend til bedømmelse, Fremsend til andet sted, Afvis, Se kommentarer).<br /><br />Vælg en af følgende:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA understøtter to modeller til håndtering af bedømmelsesprocessen. Standardbedømmelsesprocessen anbefales, fordi den ved hjælp af trin leder bedømmere igennem processen, sikrer en komplet bedømmelsesoversigt for hvert manuskript og benytter automatisk påmindelse samt standardanbefalinger for manuskripter (Accepter, Accepter med rettelser, Fremsend til bedømmelse, Fremsend til andet sted, Afvis, Se kommentarer).<br /><br />Vælg en af følgende:]]></message>
 	<message key="manager.setup.reviewProcessEmail">Bedømmelsesproces, hvor manuskript er vedhæftet e-mail</message>
 	<message key="manager.setup.reviewProcessStandard">Standardbedømmelsesproces</message>
 	<message key="manager.setup.reviewProcessStandardDescription">Redaktører sender en e-mail til udvalgte bedømmere med titlen på og et resumé af manuskriptet samt med en invitation til at logge på tidsskriftets websted for at fuldføre bedømmelsen. Bedømmerne går ind på tidsskriftets websted for at acceptere at foretage bedømmelsen, hente manuskripter, fremsende deres kommentarer og vælge en anbefaling.</message>
@@ -400,7 +400,7 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Hvis der ikke er angivet sektioner, sendes elementer som standard til sektionen Artikler).</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Hvis du vil oprette eller ændre sektioner for tidsskriftet (f.eks. artikler, boganmeldelser osv.), skal du gå til Administration af sektioner.<br /><br />Ved fremsendelse af elementer til tidsskriftet skal forfattere angive...]]></message>
 	<message key="manager.setup.securitySettings">Adgangs- og sikkerhedsindstillinger</message>
-	<message key="manager.setup.securitySettingsDescription">OJS indeholder en række sikkerhedsrelaterede indstillinger, der kan bruges til at begrænse tidsskriftets indhold og bevare yderligere oplysninger om manuskripter til kontrolformål.</message>
+	<message key="manager.setup.securitySettingsDescription">CLA indeholder en række sikkerhedsrelaterede indstillinger, der kan bruges til at begrænse tidsskriftets indhold og bevare yderligere oplysninger om manuskripter til kontrolformål.</message>
 	<message key="manager.setup.selectEditorDescription">Hvilken tidsskriftsredaktør, der skal føre elementet igennem den redaktionelle proces.</message>
 	<message key="manager.setup.selectSectionDescription">Hvilken tidsskriftssektion, elementet skal tages i betragtning til.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Vis altid links til publiceringsversioner, og angiv begrænset adgang.</message>
@@ -438,7 +438,7 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.setup.useTextTitle">Titeltekst</message>
 	<message key="manager.setup.volumePerYear">Årgange pr. år</message>
 	<message key="manager.statistics.reports">Rapportgenerator</message>
-	<message key="manager.statistics.reports.description">OJS genererer rapporter, som registrerer de oplysninger, der er forbundet med behandling af manuskripter til tidsskriftet set på baggrund af manuskripter, redaktører, bedømmere og sektioner, over en given tidsperiode. Der genereres rapporter i CSV-format, og der kræves et regnearksprogram for at få vist disse rapporter.</message>
+	<message key="manager.statistics.reports.description">CLA genererer rapporter, som registrerer de oplysninger, der er forbundet med behandling af manuskripter til tidsskriftet set på baggrund af manuskripter, redaktører, bedømmere og sektioner, over en given tidsperiode. Der genereres rapporter i CSV-format, og der kræves et regnearksprogram for at få vist disse rapporter.</message>
 	<message key="manager.statistics.statistics">Tidsskriftsstatistikker</message>
 	<message key="manager.statistics.statistics.articleViews">Antal visninger af artikel (kun for forfattere)</message>
 	<message key="manager.statistics.statistics.count.accept">Accepter</message>
@@ -446,7 +446,7 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.statistics.statistics.count.revise">Send igen</message>
 	<message key="manager.statistics.statistics.daysPerReview">Dage til bedømmelse</message>
 	<message key="manager.statistics.statistics.daysToPublication">Dage til publicering</message>
-	<message key="manager.statistics.statistics.description">OJS beregner følgende statistikker for hvert tidsskrift. "Dage til bedømmelse" beregnes fra manuskriptdatoen (eller angivelsen af bedømmelsesversion) til den første redaktørbeslutning, mens "dage til publicering" måles for accepterede manuskripter fra den oprindelige overførsel til publiceringen.</message>
+	<message key="manager.statistics.statistics.description">CLA beregner følgende statistikker for hvert tidsskrift. "Dage til bedømmelse" beregnes fra manuskriptdatoen (eller angivelsen af bedømmelsesversion) til den første redaktørbeslutning, mens "dage til publicering" måles for accepterede manuskripter fra den oprindelige overførsel til publiceringen.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Publicerede elementer</message>
 	<message key="manager.statistics.statistics.makePublic">Kontroller de elementer, der skal gøres tilgængelige for læserne under Om tidsskriftet.</message>
 	<message key="manager.statistics.statistics.note">Bemærk! Procentsatser for manuskripter, der har undergået peer review, må sammenlagt ikke udgøre 100%, da genfremsendte elementer enten accepteres, afvises eller stadig er under bedømmelse.</message>
@@ -481,8 +481,8 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">Underret abonnenter via e-mail</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">uge(r) før abonnementets udløb.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Påmindelser om udløb af abonnement</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Det er muligt at sende automatiske e-mail-påmindelser (kan redigeres af tidsskriftschefter under Forberedte e-mails i OJS) til abonnenter både før og efter et abonnements udløb.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere disse indstillinger, skal webstedsadministratoren aktivere indstillingen <tt>scheduled_tasks</tt> i OJS-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til OJS.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Det er muligt at sende automatiske e-mail-påmindelser (kan redigeres af tidsskriftschefter under Forberedte e-mails i CLA) til abonnenter både før og efter et abonnements udløb.</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere disse indstillinger, skal webstedsadministratoren aktivere indstillingen <tt>scheduled_tasks</tt> i CLA-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til CLA.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Vælge en af følgende:</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[HTML kan benyttes i tekstområdet (til skriftstørrelse, farve osv.), og "linjeskift" behandles som <tt>&lt;br&gt;</tt>. HTML-editor fungerer sammen med Firefox-browsere.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Vælg en gyldig værdi for antallet af måneder efter abonnementets udløb.</message>
@@ -490,7 +490,7 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Vælg en gyldig værdi for antallet af uger efter abonnementets udløb.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Vælg en gyldig værdi for antallet af uger før abonnementets udløb.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Registrerede læsere har mulighed for at modtage indholdsfortegnelsen via e-mail, når et nummer bliver tilgængeligt via Open Access.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere denne indstilling, skal webstedsadministratoren aktivere indstillingen <tt>scheduled_tasks</tt> i OJS-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til OJS.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere denne indstilling, skal webstedsadministratoren aktivere indstillingen <tt>scheduled_tasks</tt> i CLA-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til CLA.]]></message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">Open Access -indstillinger for abonnementstidsskrifter</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">Abonnementstidsskrifter kan tilbyde "forsinket open access" til deres publiceret indhold samt tillade "selvarkivering for forfatter" (begge øger antallet af læsere og citering af indhold).</message>
 	<message key="manager.subscriptionPolicies.subscriptionAdditionalInformation">Abonnementsoplysninger</message>
@@ -623,9 +623,9 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.setup.journalFaviconInvalid">Ugyldigt favicon-format. Tilladte formater er .ico, .png og .gif.</message>
 	<message key="manager.setup.publisherNoteDescription">Teksten vil blive vist under overskriften "Udgiver" og over udgiverens navn/url under "Tidsskriftsponsorer" på siden "Om".</message>
 	<message key="manager.setup.sponsorNoteDescription">Teksten vil blive vist under overskriften "Sponsorer" og over listen med sponsornavne/url'er under "Tidsskriftsponsorer" på siden "Om".</message>
-	<message key="manager.setup.noPublishing">OJS vil ikke blive anvendt til at udgive tidsskriftets indhold online.</message>
+	<message key="manager.setup.noPublishing">CLA vil ikke blive anvendt til at udgive tidsskriftets indhold online.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Meddelelser vedrørende online-betalinger</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Der kan sendes automatiske e-mail-meddelelser (kan redigeres af tidsskriftschefer i OJS's e-mail-skabeloner) til abonnementschefen, når der er gennemført abonnementsbetalinger online.</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Der kan sendes automatiske e-mail-meddelelser (kan redigeres af tidsskriftschefer i CLA's e-mail-skabeloner) til abonnementschefen, når der er gennemført abonnementsbetalinger online.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Underret abonnementschefen via e-mail ved online-køb af et individuelt abonnement.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseInstitutional">Underret abonnementschefen via e-mail ved online-køb af et institutionsabonnement (anbefales).</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">Underret abonnementschefen via e-mail ved online-fornyelse af et individuelt abonnement.</message>

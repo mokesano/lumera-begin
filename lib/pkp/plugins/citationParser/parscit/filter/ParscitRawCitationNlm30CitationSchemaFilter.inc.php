@@ -19,7 +19,7 @@
  */
 
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
 
 define('PARSCIT_WEBSERVICE', 'http://aye.comp.nus.edu.sg/parsCit/parsCit.cgi');
 
@@ -41,7 +41,7 @@ class ParscitRawCitationNlm30CitationSchemaFilter extends Nlm30CitationSchemaFil
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationParser.parscit.filter.ParscitRawCitationNlm30CitationSchemaFilter';
+		return 'lib.sep.plugins.citationParser.parscit.filter.ParscitRawCitationNlm30CitationSchemaFilter';
 	}
 
 

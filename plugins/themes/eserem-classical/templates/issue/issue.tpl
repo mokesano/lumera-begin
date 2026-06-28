@@ -86,9 +86,9 @@
 					<a id="toc-pdf-link" class="webtrekk-track pdf-link" title="{$article->getLocalizedTitle()|strip_unsafe_html}" href="{url page="article" op="view" path=$articlePath|to_array:$galley->getBestGalleyId($currentJournal)}" target="_blank" {if $galley->getRemoteURL()}target="_blank" {/if}class="file">Download {$galley->getGalleyLabel()|escape} <span class="fileSize">({$galley->getNiceFileSize()})</a> <span>{$galley->getViews()} views</span>
 					
 					{if $subscriptionRequired && $showGalleyLinks && $restrictOnlyPdf}
-					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />{else}<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />{/if}{/if}
+					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />{else}<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />{/if}{/if}
 					{if $subscriptionRequired && $showGalleyLinks && !$restrictOnlyPdf}
-					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN}<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />{else}<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />{/if}{/if}
+					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN}<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />{else}<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />{/if}{/if}
 				</span>
 				{/if}
 				{/foreach}
@@ -158,10 +158,10 @@
 					<a id="toc-pdf-link" class="webtrekk-track pdf-link" title="{$article->getLocalizedTitle()|strip_unsafe_html}" href="{url page="article" op="view" path=$articlePath|to_array:$galley->getBestGalleyId($currentJournal)}" target="_blank" {if $galley->getRemoteURL()}target="_blank" {/if}class="file">Download {$galley->getGalleyLabel()|escape} <span class="fileSize">({$galley->getNiceFileSize()})</a> <span>{$galley->getViews()} views</span>
 					
 					{if $subscriptionRequired && $showGalleyLinks && $restrictOnlyPdf}
-					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />{else}<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />{/if}{/if}
+					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />{else}<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />{/if}{/if}
 					
 					{if $subscriptionRequired && $showGalleyLinks && !$restrictOnlyPdf}
-					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN}<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />{else}<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />{/if}{/if}
+					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN}<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />{else}<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />{/if}{/if}
 				</span>
 				{/if}
 				{/foreach}
@@ -211,17 +211,17 @@
 					{/if}
 					{if $subscriptionRequired && $showGalleyLinks && $restrictOnlyPdf}
 						{if $issue->getAccessStatus() == $smarty.const.ISSUE_ACCESS_OPEN || !$issueGalley->isPdfGalley()}
-							<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
+							<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
 						{else}
-							<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+							<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
 						{/if}
 					{/if}
 				{/foreach}
 				{if $subscriptionRequired && $showGalleyLinks && !$restrictOnlyPdf}
 					{if $issue->getAccessStatus() == $smarty.const.ISSUE_ACCESS_OPEN}
-						<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
+						<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
 					{else}
-						<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+						<img class="accessLogo" src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
 					{/if}
 				{/if}
 			{/if}

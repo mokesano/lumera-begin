@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.session.Session');
+import('lib.sep.classes.session.Session');
 
 class SessionDAO extends DAO {
 	/**

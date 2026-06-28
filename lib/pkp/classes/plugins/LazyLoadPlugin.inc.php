@@ -25,13 +25,13 @@ class LazyLoadPlugin extends Plugin {
 	}
 
 	/*
-	 * Override public methods from PKPPlugin
+	 * Override public methods from SEPPlugin
 	 */
 	/**
-	 * Extends the definition of PKPPlugin's register()
+	 * Extends the definition of SEPPlugin's register()
 	 * method to support lazy load.
 	 *
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 *
 	 * @param lazyLoad
 	 */
@@ -44,10 +44,10 @@ class LazyLoadPlugin extends Plugin {
 	}
 
 	/*
-	 * Override protected methods from PKPPlugin
+	 * Override protected methods from SEPPlugin
 	 */
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		// Lazy load enabled plug-ins always use the plugin's class name

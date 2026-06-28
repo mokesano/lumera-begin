@@ -16,18 +16,18 @@
 (function($) {
 
         /** @type {Object} */
-        $.pkp.plugins = $.pkp.plugins || {};
+        $.sep.plugins = $.sep.plugins || {};
 	/** @type {Object} */
-	$.pkp.plugins.themes = $.pkp.plugins.themes || {};
+	$.sep.plugins.themes = $.sep.plugins.themes || {};
 	/** @type {Object} */
-	$.pkp.plugins.themes.modern = $.pkp.plugins.themes.modern || {};
+	$.sep.plugins.themes.modern = $.sep.plugins.themes.modern || {};
 
 	/**
          * @constructor
          *
-         * @extends $.pkp.classes.Handler
+         * @extends $.sep.classes.Handler
          */
-        $.pkp.plugins.themes.modern.ModernThemeSiteHandler = function($site, options) {
+        $.sep.plugins.themes.modern.ModernThemeSiteHandler = function($site, options) {
 		this.parent($site, options);
 		
 		$("#navbar").insertAfter("#headerTitle");
@@ -47,9 +47,9 @@
 		$('#breadcrumb').insertBefore('#sidebar');
 		$('#topBar').remove();
 	};
-	$.pkp.classes.Helper.inherits(
-			$.pkp.plugins.themes.modern.ModernThemeSiteHandler, 
-			$.pkp.controllers.SiteHandler);
+	$.sep.classes.Helper.inherits(
+			$.sep.plugins.themes.modern.ModernThemeSiteHandler, 
+			$.sep.controllers.SiteHandler);
 
 
 /** @param {jQuery} $ jQuery closure. */

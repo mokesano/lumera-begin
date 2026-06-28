@@ -5,13 +5,13 @@
  */
 
 /**
- * @file classes/plugins/PKPPlugin.inc.php
+ * @file classes/plugins/SEPPlugin.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPPlugin
+ * @class SEPPlugin
  * @ingroup plugins
  * @see PluginRegistry, PluginSettingsDAO
  *
@@ -22,7 +22,7 @@
  * functionality.
  *
  * Newer plug-ins support enable/disable and request filter settings that
- * enable the PKP library plug-in framework to lazy-load plug-ins only
+ * enable the SEP library plug-in framework to lazy-load plug-ins only
  * when their functionality is actually being required for a request.
  *
  * For backwards compatibility we need to assume that older plug-ins
@@ -45,7 +45,7 @@
 // Define the well-known file name for filter configuration data.
 define('PLUGIN_FILTER_DATAFILE', 'filterConfig.xml');
 
-class PKPPlugin {
+class SEPPlugin {
 	/** @var $pluginPath string Path name to files for this plugin */
 	var $pluginPath;
 
@@ -55,7 +55,7 @@ class PKPPlugin {
 	/**
 	 * Constructor
 	 */
-	function PKPPlugin() {
+	function SEPPlugin() {
 	}
 
 	/*
@@ -90,7 +90,7 @@ class PKPPlugin {
 		}
 		if ($this->getInstallEmailTemplateDataFile()) {
 			HookRegistry::register ('Installer::postInstall', array(&$this, 'installEmailTemplateData'));
-			HookRegistry::register ('PKPLocale::installLocale', array(&$this, 'installLocale'));
+			HookRegistry::register ('SEPLocale::installLocale', array(&$this, 'installLocale'));
 		}
 		if ($this->getInstallDataFile()) {
 			HookRegistry::register ('Installer::postInstall', array(&$this, 'installData'));
@@ -284,7 +284,7 @@ class PKPPlugin {
 		// Construct the well-known filter configuration file names.
 		$filterConfigFile = $this->getPluginPath().'/filter/'.PLUGIN_FILTER_DATAFILE;
 		$filterConfigFiles = array(
-			'./lib/pkp/'.$filterConfigFile,
+			'./lib/sep/'.$filterConfigFile,
 			'./'.$filterConfigFile
 		);
 		return $filterConfigFiles;
@@ -349,7 +349,7 @@ class PKPPlugin {
 		if ($locale == '') $locale = AppLocale::getLocale();
 		import('classes.help.Help');
 		$help =& Help::getHelp();
-		import('lib.pkp.classes.help.PluginHelpMappingFile');
+		import('lib.sep.classes.help.PluginHelpMappingFile');
 		$pluginHelpMapping = new PluginHelpMappingFile($this);
 		$help->addMappingFile($pluginHelpMapping);
 		return true;
@@ -365,7 +365,7 @@ class PKPPlugin {
 		if (!Config::getVar('general', 'installed')) return null;
 
 		// Check that the context has the correct depth
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		assert(is_array($context) && $application->getContextDepth() == count($context));
 
 		// Construct the argument list and call the plug-in settings DAO
@@ -386,7 +386,7 @@ class PKPPlugin {
 	 */
 	function updateContextSpecificSetting($context, $name, $value, $type = null) {
 		// Check that the context has the correct depth
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		assert(is_array($context) && $application->getContextDepth() == count($context));
 
 		// Construct the argument list and call the plug-in settings DAO
@@ -427,7 +427,7 @@ class PKPPlugin {
 	 * @return array
 	 */
 	function getSettingMainContext() {
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$contextDepth = $application->getContextDepth();
 
 		$settingContext = array();
@@ -460,11 +460,11 @@ class PKPPlugin {
 		$masterLocale = MASTER_LOCALE;
 		$baseLocaleFilename = $this->getPluginPath() . "/locale/$locale/locale.xml";
 		$baseMasterLocaleFilename = $this->getPluginPath() . "/locale/$masterLocale/locale.xml";
-		$libPkpFilename = "lib/pkp/$baseLocaleFilename";
-		$masterLibPkpFilename = "lib/pkp/$baseMasterLocaleFilename";
+		$libSEPFilename = "lib/sep/$baseLocaleFilename";
+		$masterLibSEPFilename = "lib/sep/$baseMasterLocaleFilename";
 		$filenames = array();
 		if (file_exists($baseMasterLocaleFilename)) $filenames[] = $baseLocaleFilename;
-		if (file_exists($masterLibPkpFilename)) $filenames[] = $libPkpFilename;
+		if (file_exists($masterLibSEPFilename)) $filenames[] = $libSEPFilename;
 		return $filenames;
 	}
 
@@ -499,7 +499,7 @@ class PKPPlugin {
 			if ($sql) {
 				$result = $installer->executeSQL($sql);
 			} else {
-				AppLocale::requireComponents(LOCALE_COMPONENT_PKP_INSTALLER);
+				AppLocale::requireComponents(LOCALE_COMPONENT_SEP_INSTALLER);
 				$installer->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $this->getInstallDataFile(), __('installer.installParseDBFileError')));
 				$result = false;
 			}
@@ -520,7 +520,7 @@ class PKPPlugin {
 		$result =& $args[1];
 
 		// All contexts are set to zero for site-wide plug-in settings
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$contextDepth = $application->getContextDepth();
 		if ($contextDepth >0) {
 			$arguments = array_fill(0, $contextDepth, 0);
@@ -546,7 +546,7 @@ class PKPPlugin {
 	function installContextSpecificSettings($hookName, $args) {
 		// Only applications that have at least one context can
 		// install context specific settings.
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$contextDepth = $application->getContextDepth();
 		if ($contextDepth > 0) {
 			$context =& $args[1];
@@ -747,7 +747,7 @@ class PKPPlugin {
 	 * @return string
 	 */
 	function _getContextSpecificInstallationHook() {
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 
 		if ($application->getContextDepth() == 0) return null;
 

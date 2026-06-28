@@ -34,7 +34,7 @@ class CounterReportJR1 extends CounterReport {
 	}
 
 	/*
-	 * Convert an OJS metrics request to COUNTER ReportItems
+	 * Convert an CLA metrics request to COUNTER ReportItems
 	 * @param $columns string|array column (aggregation level) selection
 	 * @param $filters array report-level filter selection
 	 * @param $orderBy array order criteria
@@ -75,8 +75,8 @@ class CounterReportJR1 extends CounterReport {
 		if (array_keys($filters)) {
 			$this->setError(new Exception(__('plugins.reports.counter.exception.filter'), COUNTER_EXCEPTION_WARNING | COUNTER_EXCEPTION_BAD_FILTERS));
 		}
-		// Metric type is ojs::counter
-		$metricType = OJS_METRIC_TYPE_COUNTER;
+		// Metric type is cla::counter
+		$metricType = CLA_METRIC_TYPE_COUNTER;
 		// Ordering must be by Journal (ReportItem), and by Month (ItemPerformance) for JR1
 		$validOrder = array(STATISTICS_DIMENSION_CONTEXT_ID => STATISTICS_ORDER_DESC, STATISTICS_DIMENSION_MONTH => STATISTICS_ORDER_ASC);
 		// TODO: range

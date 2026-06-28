@@ -19,8 +19,8 @@
  */
 
 
-import('lib.pkp.classes.oai.OAIStruct');
-import('lib.pkp.classes.oai.OAIUtils');
+import('lib.sep.classes.oai.OAIStruct');
+import('lib.sep.classes.oai.OAIUtils');
 
 class OAI {
 	/** @var $config OAIConfig configuration parameters */
@@ -308,8 +308,8 @@ class OAI {
 			"\t\t\t\t\thttp://oai.dlib.vt.edu/OAI/metadata/toolkit.xsd\">\n" .
 			"\t\t\t\t<title>" . $info->toolkitTitle . "</title>\n" .
 			"\t\t\t\t<author>\n" .
-			"\t\t\t\t\t<name>Public Knowledge Project</name>\n" .
-			"\t\t\t\t\t<email>pkp.contact@gmail.com</email>\n" .
+			"\t\t\t\t\t<name>Sangia Editorial Project</name>\n" .
+			"\t\t\t\t\t<email>sep.contact@gmail.com</email>\n" .
 			"\t\t\t\t</author>\n" .
 			"\t\t\t\t<version>" . $info->toolkitVersion . "</version>\n" .
 			"\t\t\t\t<URL>" . $info->toolkitURL . "</URL>\n" .
@@ -679,7 +679,7 @@ class OAI {
 		header('Content-Type: text/xml');
 
 		echo	"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" .
-			"<?xml-stylesheet type=\"text/xsl\" href=\"" . PKPRequest::getBaseUrl() . "/lib/pkp/xml/oai2.xsl\" ?>\n" .
+			"<?xml-stylesheet type=\"text/xsl\" href=\"" . SEPRequest::getBaseUrl() . "/lib/sep/xml/oai2.xsl\" ?>\n" .
 			"<OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"\n" .
 			"\txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n" .
 			"\txsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/\n" .

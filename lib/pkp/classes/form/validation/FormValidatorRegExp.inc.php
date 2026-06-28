@@ -13,7 +13,7 @@
  * @brief Form validation check using a regular expression.
  */
 
-import('lib.pkp.classes.form.validation.FormValidator');
+import('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorRegExp extends FormValidator {
 	/**
@@ -25,7 +25,7 @@ class FormValidatorRegExp extends FormValidator {
 	 * @param $regExp string the regular expression (PCRE form)
 	 */
 	function FormValidatorRegExp(&$form, $field, $type, $message, $regExp) {
-		import('lib.pkp.classes.validation.ValidatorRegExp');
+		import('lib.sep.classes.validation.ValidatorRegExp');
 		$validator = new ValidatorRegExp($regExp);
 		parent::FormValidator($form, $field, $type, $message, $validator);
 	}

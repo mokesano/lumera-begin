@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/customLocale/locale/eu_ES/locale.xml
@@ -14,11 +14,11 @@
  
 <locale name="eu_ES" full_name="Euskara">
 	<message key="plugins.generic.customLocale.name">Hizkuntza-paketea pertsonalizatzeko plugina</message>
-	<message key="plugins.generic.customLocale.description">Plugin honekin OJSn erabiltzen den erabiltzaile-interfazearen testu lehenetsia pertsonalizatzen da.</message>
+	<message key="plugins.generic.customLocale.description">Plugin honekin CLAn erabiltzen den erabiltzaile-interfazearen testu lehenetsia pertsonalizatzen da.</message>
 
 	<message key="plugins.generic.customLocale.longDescription">Orri honetan azaltzen dira aldizkarian instalatuta dauden locale hizkuntza-pakete guztiak.</message>
 	<message key="plugins.generic.customLocale.localeDescription">Orri honetan zerrendatzen dira hautatutako localean erabilgarri dauden fitxategi guztiak.</message>
-	<message key="plugins.generic.customLocale.fileDescription">Sartu testua testu-eremu pertsonalizatu egokian. OJSren testu lehenetsia erabiltzea nahi baduzu, utzi eremua hutsik.</message>
+	<message key="plugins.generic.customLocale.fileDescription">Sartu testua testu-eremu pertsonalizatu egokian. CLAren testu lehenetsia erabiltzea nahi baduzu, utzi eremua hutsik.</message>
 	<message key="plugins.generic.customLocale.localeName">Localearen izena</message>
 	<message key="plugins.generic.customLocale.localeKey">Gakoa</message>
 	<message key="plugins.generic.customLocale.localeKey.description">Idatzi bilatu nahi duzun localearen gako osoa.</message>
@@ -33,4 +33,3 @@
 	<message key="plugins.generic.customLocale.file.reference">Testu lehenetsia</message>
 	<message key="plugins.generic.customLocale.file.custom">Testu pertsonalizatua</message>
 </locale>
-

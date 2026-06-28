@@ -14,13 +14,13 @@
  */
 
 
-import('lib.pkp.pages.login.PKPLoginHandler');
+import('lib.sep.pages.login.SEPLoginHandler');
 
-class LoginHandler extends PKPLoginHandler {
+class LoginHandler extends SEPLoginHandler {
 	/**
 	 * Sign in as another user. 
 	 * @param $args array ($userId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function signInAsUser($args, &$request) {
 		$this->addCheck(new HandlerValidatorJournal($this));
@@ -63,7 +63,7 @@ class LoginHandler extends PKPLoginHandler {
 	/**
 	 * Restore original user account after signing in as a user.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function signOutAsUser($args, &$request) {
 		$this->validate();
@@ -91,7 +91,7 @@ class LoginHandler extends PKPLoginHandler {
 
 	/**
 	 * Get the log in URL.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _getLoginUrl($request) {
 		return $request->url(null, 'login', 'signIn');
@@ -99,7 +99,7 @@ class LoginHandler extends PKPLoginHandler {
 
 	/**
 	 * Helper Function - set mail from address
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $mail MailTemplate
 	 */
 	function _setMailFrom($request, &$mail) {
@@ -116,10 +116,10 @@ class LoginHandler extends PKPLoginHandler {
 
 	/**
 	 * Configure the template for display.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function setupTemplate($request) {
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_MANAGER, LOCALE_COMPONENT_PKP_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_MANAGER, LOCALE_COMPONENT_SEP_MANAGER);
 		parent::setupTemplate($request);
 	}
 }

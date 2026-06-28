@@ -1,5 +1,5 @@
 ================================
-=== OJS PubMed Export Plugin
+=== CLA PubMed Export Plugin
 === Version: 1.0.1
 === Release date: May 10, 2006
 === Author: MJ Suhonos <mj@robotninja.com>
@@ -7,7 +7,7 @@
 
 About
 -----
-This plugin for OJS 2 provides an import/export plugin to generate bibliographic information for articles in the current issue in PubMed standard publisher data format XML for indexing in NLM PubMed/MEDLINE.  Details on the XML format and data requirements is available at: http://www.ncbi.nlm.nih.gov/entrez/query/static/spec.html
+This plugin for CLA 2 provides an import/export plugin to generate bibliographic information for articles in the current issue in PubMed standard publisher data format XML for indexing in NLM PubMed/MEDLINE.  Details on the XML format and data requirements is available at: http://www.ncbi.nlm.nih.gov/entrez/query/static/spec.html
 
 License
 -------
@@ -15,21 +15,21 @@ This plugin is licensed under the GNU General Public License v2. See the file CO
 
 System Requirements
 -------------------
-Same requirements as the OJS 2.1.x core.
+Same requirements as the CLA 2.1.x core.
 
 Installation
 ------------
 To install the plugin:
- - copy the pubmed folder into OJS/plugins/importexport
+ - copy the pubmed folder into CLA/plugins/importexport
 
 The export functionality can then be accessed through: 
  - Home > User > Journal Management > Import/Export Data > PubMed XML Export Plugin
 
 Known Issues/Limitations
 ---------
-- the <Replaces/> tag is not used as OJS does not contain PMID metadata
-- because of ambiguity in the pagination functionality in OJS, <FirstPage/> and <LastPage/> tags may potentially be generated incorrectly
-- article IDs are limited to internal ("pii") identifiers; DOIs are not handled because of limitations in the current version of OJS (including forward-slash escaping)
+- the <Replaces/> tag is not used as CLA does not contain PMID metadata
+- because of ambiguity in the pagination functionality in CLA, <FirstPage/> and <LastPage/> tags may potentially be generated incorrectly
+- article IDs are limited to internal ("pii") identifiers; DOIs are not handled because of limitations in the current version of CLA (including forward-slash escaping)
 
 Localization
 ------------

@@ -15,7 +15,7 @@
 
 define('SWORD_PASSWORD_SLUG', '******');
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class DepositPointForm extends Form {
 

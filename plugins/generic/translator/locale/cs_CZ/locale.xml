@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/translator/locale/cs_CZ/locale.xml
@@ -17,8 +17,8 @@
 <locale name="cs_CZ" full_name="Čeština">
 	<message key="plugins.generic.translator.name">Překladový Plugin</message>
 	<message key="plugins.generic.translator.description">Tento plugin umožňuje přes web spravovat soubory překladu.</message>
-	<message key="plugins.generic.translator.longdescription"><![CDATA[Tato část umožňuje správcovi stránek vytvářet, upravovat a kontrolovat překlady OJS. Změny jsou aplikovány na všechny stránky a neměly by být použity pro přizpůsobení jednoho OJS časopisu. Pokud upravíte nebo vytvoříte překlad, zvažte, prosím, jeho zaslání do Public Knowledge Project pro možnost distribuce s budoucím vydáním. Na stránkách PKP najdete <a href="http://pkp.sfu.ca/wiki/index.php?title=OJS:_Czech_%28cs_CZ%29">kontakt na národního koordinátora překladů</a>, se kterým můžete překlady zkoordinovat.]]></message>
-	<message key="plugins.generic.translator.localeDescription">Tato stránka ukazuje všechny součásti OJS překladu a dává překladateli možnost každou z nich editovat. Kompletní překlad by měl obsahovat překlad všech součástí.</message>
+	<message key="plugins.generic.translator.longdescription"><![CDATA[Tato část umožňuje správcovi stránek vytvářet, upravovat a kontrolovat překlady CLA. Změny jsou aplikovány na všechny stránky a neměly by být použity pro přizpůsobení jednoho CLA časopisu. Pokud upravíte nebo vytvoříte překlad, zvažte, prosím, jeho zaslání do Sangia Editorial Project pro možnost distribuce s budoucím vydáním. Na stránkách SEP najdete <a href="http://lumera.sangia.org/wiki/index.php?title=CLA:_Czech_%28cs_CZ%29">kontakt na národního koordinátora překladů</a>, se kterým můžete překlady zkoordinovat.]]></message>
+	<message key="plugins.generic.translator.localeDescription">Tato stránka ukazuje všechny součásti CLA překladu a dává překladateli možnost každou z nich editovat. Kompletní překlad by měl obsahovat překlad všech součástí.</message>
 
 	<message key="plugins.generic.translator.localeName">Název jazykové lokalizace</message>
 	<message key="plugins.generic.translator.localeKey">Klíč</message>

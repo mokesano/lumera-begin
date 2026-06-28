@@ -13,7 +13,7 @@
  */
 
 define('CUSTOM_LOCALE_DIR', 'customLocale');
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class CustomLocalePlugin extends GenericPlugin {
 	function register($category, $path) {
@@ -27,7 +27,7 @@ class CustomLocalePlugin extends GenericPlugin {
 				$publicFilesDir = Config::getVar('files', 'public_files_dir');
 				$customLocalePathBase = $publicFilesDir . DIRECTORY_SEPARATOR . 'journals' . DIRECTORY_SEPARATOR . $journalId . DIRECTORY_SEPARATOR . CUSTOM_LOCALE_DIR . DIRECTORY_SEPARATOR . $locale . DIRECTORY_SEPARATOR;
 
-				import('lib.pkp.classes.file.FileManager');
+				import('lib.sep.classes.file.FileManager');
 				$fileManager = new FileManager();
 				foreach ($localeFiles as $localeFile) {
 					$customLocalePath = $customLocalePathBase . $localeFile->getFilename();
@@ -37,7 +37,7 @@ class CustomLocalePlugin extends GenericPlugin {
 				}
 
 				// Add custom locale data for all locale files registered after this plugin
-				HookRegistry::register('PKPLocale::registerLocaleFile', array(&$this, 'addCustomLocale'));
+				HookRegistry::register('SEPLocale::registerLocaleFile', array(&$this, 'addCustomLocale'));
 			}
 
 			return true;
@@ -54,7 +54,7 @@ class CustomLocalePlugin extends GenericPlugin {
 		$publicFilesDir = Config::getVar('files', 'public_files_dir');
 		$customLocalePath = $publicFilesDir . DIRECTORY_SEPARATOR . 'journals' . DIRECTORY_SEPARATOR . $journalId . DIRECTORY_SEPARATOR . CUSTOM_LOCALE_DIR . DIRECTORY_SEPARATOR . $locale . DIRECTORY_SEPARATOR . $localeFilename;
 
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 		if ($fileManager->fileExists($customLocalePath)) {
 			AppLocale::registerLocaleFile($locale, $customLocalePath, false);

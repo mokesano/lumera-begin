@@ -14,7 +14,7 @@
  * @brief Validation check for dates.  Accepts truncated dates, such as year, or year and month.
  */
 
-import('lib.pkp.classes.validation.ValidatorRegExp');
+import('lib.sep.classes.validation.ValidatorRegExp');
 
 define('DATE_FORMAT_ISO', 0x01);
 define('VALIDATOR_DATE_SCOPE_DAY', 1);

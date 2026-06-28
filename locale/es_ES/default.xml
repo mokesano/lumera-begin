@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 <!--
   * locale/es_ES/default.xml
   *
@@ -7,7 +7,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Spanish_(es_ES)
   *
   * Localization strings.
   -->
@@ -44,7 +44,7 @@ al.</strong> El corrector/a de la revista editará el texto para mejorar la flui
 {$indexUrl}/{$journalPath}</message>
 	<message key="default.journalSettings.forReaders"><![CDATA[Animamos a los lectores/as a registrarse en el servicio de notificación de publicaciones de la revista. Utilice el enlace <a href="{$indexUrl}/{$journalPath}/user/register">Registro</a> de la parte superior de la página de inicio de la revista. Como resultado del registro, el lector/a recibirá por correo electrónico la Tabla de contenidos de cada número de la revista. Esta lista también permite que se le atribuya a la revista un cierto nivel de apoyo o número de lectores/as. Consulte la <a href="{$indexUrl}/{$journalPath}/about/submissions#privacyStatement">Declaración de privacidad</a> de la revista, que garantiza a los lectores/as que sus nombres y direcciones de correo electrónico no se usarán con otros fines.]]></message>
 	<message key="default.journalSettings.forAuthors"><![CDATA[¿Está interesado en publicar en la revista? Se recomienda revisar la página <a href="{$indexUrl}/{$journalPath}/about">Acerca de la revista</a> para consultar las políticas de sección de la revista, así como las <a href="{$indexUrl}/{$journalPath}/about/submissions#authorGuidelines">Directrices del autor/a</a>. Los autores/as deben <a href="{$indexUrl}/{$journalPath}/user/register">registrarse</a> en la revista antes de publicar o, si ya están registrados, pueden simplemente <a href="{$indexUrl}/index/login">iniciar sesión</a> y comenzar el proceso de cinco pasos.]]></message>
-	<message key="default.journalSettings.forLibrarians"><![CDATA[Se recomienda a los investigadores/as bibliotecarios/as que incluyan esta revista en su listado de revistas electrónicas. Asimismo, cabría destacar que el sistema de publicación de código abierto de esta revista es apto para bibliotecas con personal docente que desee editar sus propias revistas (ver <a href="http://pkp.sfu.ca/ojs">Open Journal Systems</a>).]]></message>
+	<message key="default.journalSettings.forLibrarians"><![CDATA[Se recomienda a los investigadores/as bibliotecarios/as que incluyan esta revista en su listado de revistas electrónicas. Asimismo, cabría destacar que el sistema de publicación de código abierto de esta revista es apto para bibliotecas con personal docente que desee editar sus propias revistas (ver <a href="http://lumera.sangia.org/cla">Code Lumera Editorial</a>).]]></message>
 	<message key="default.journalSettings.lockssLicense"><![CDATA[Esta revista utiliza el sistema LOCKSS para crear un sistema de archivo distribuido entre bibliotecas colaboradoras, a las que permite crear archivos permanentes de la revista con fines de conservación y restauración. <a href="http://lockss.org/">Más...</a>]]></message>
 
 	<!-- Default settings for payment items. -->

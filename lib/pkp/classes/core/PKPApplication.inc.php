@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file classes/core/PKPApplication.inc.php
+ * @file classes/core/SEPApplication.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPApplication
+ * @class SEPApplication
  * @ingroup core
  *
  * @brief Class describing this application.
@@ -36,11 +36,11 @@ define('ASSOC_TYPE_USER_ROLES', 0x0100007);
 define('ASSOC_TYPE_ACCESSIBLE_WORKFLOW_STAGES', 0x0100008);
 define('ASSOC_TYPE_PLUGIN', 0x0000211);
 
-class PKPApplication {
+class SEPApplication {
 	var $enabledProducts;
 	var $allProducts;
 
-	function PKPApplication() {
+	function SEPApplication() {
 		// Configure error reporting
 		// FIXME: Error logging needs to be suppressed for strict
 		// and deprecation errors in PHP5 as long as we support PHP 4.
@@ -53,21 +53,21 @@ class PKPApplication {
 		@error_reporting($errorReportingLevel);
 
 		// Instantiate the profiler
-		import('lib.pkp.classes.core.PKPProfiler');
-		$pkpProfiler = new PKPProfiler();
+		import('lib.sep.classes.core.SEPProfiler');
+		$sepProfiler = new SEPProfiler();
 
 		// Begin debug logging
-		Console::logMemory('', 'PKPApplication::construct');
-		Console::logSpeed('PKPApplication::construct');
+		Console::logMemory('', 'SEPApplication::construct');
+		Console::logSpeed('SEPApplication::construct');
 
 		// Seed random number generator
 		mt_srand(((double) microtime()) * 1000000);
 
-		import('lib.pkp.classes.core.Core');
-		import('lib.pkp.classes.core.String');
-		import('lib.pkp.classes.core.Registry');
+		import('lib.sep.classes.core.Core');
+		import('lib.sep.classes.core.String');
+		import('lib.sep.classes.core.Registry');
 
-		import('lib.pkp.classes.config.Config');
+		import('lib.sep.classes.config.Config');
 
 		if (Config::getVar('debug', 'display_errors')) {
 			// Try to switch off normal error display when error display
@@ -77,18 +77,18 @@ class PKPApplication {
 
 		Registry::set('application', $this);
 
-		import('lib.pkp.classes.db.DAORegistry');
-		import('lib.pkp.classes.db.XMLDAO');
+		import('lib.sep.classes.db.DAORegistry');
+		import('lib.sep.classes.db.XMLDAO');
 
-		import('lib.pkp.classes.cache.CacheManager');
+		import('lib.sep.classes.cache.CacheManager');
 
 		import('classes.security.Validation');
-		import('lib.pkp.classes.session.SessionManager');
+		import('lib.sep.classes.session.SessionManager');
 		import('classes.template.TemplateManager');
 		import('classes.notification.NotificationManager');
 
-		import('lib.pkp.classes.plugins.PluginRegistry');
-		import('lib.pkp.classes.plugins.HookRegistry');
+		import('lib.sep.classes.plugins.PluginRegistry');
+		import('lib.sep.classes.plugins.HookRegistry');
 
 		import('classes.i18n.AppLocale');
 
@@ -101,7 +101,7 @@ class PKPApplication {
 		$notes = array();
 		Registry::set('system.debug.notes', $notes);
 
-		Registry::set('system.debug.profiler', $pkpProfiler);
+		Registry::set('system.debug.profiler', $sepProfiler);
 
 		if (Config::getVar('general', 'installed')) {
 			// Initialize database connection
@@ -152,16 +152,16 @@ class PKPApplication {
 		$dispatcher =& Registry::get('dispatcher', true, null);
 
 		if (is_null($dispatcher)) {
-			import('lib.pkp.classes.core.Dispatcher');
+			import('lib.sep.classes.core.Dispatcher');
 
 			// Implicitly set dispatcher by ref in the registry
 			$dispatcher = new Dispatcher();
 
 			// Inject dependency
-			$dispatcher->setApplication(PKPApplication::getApplication());
+			$dispatcher->setApplication(SEPApplication::getApplication());
 
 			// Inject router configuration
-			$dispatcher->addRouterName('lib.pkp.classes.core.PKPComponentRouter', ROUTE_COMPONENT);
+			$dispatcher->addRouterName('lib.sep.classes.core.SEPComponentRouter', ROUTE_COMPONENT);
 			$dispatcher->addRouterName('classes.core.PageRouter', ROUTE_PAGE);
 		}
 
@@ -183,7 +183,7 @@ class PKPApplication {
 	 * @return string
 	 */
 	function getName() {
-		return 'pkp-lib';
+		return 'sep-lib';
 	}
 
 	/**
@@ -298,42 +298,42 @@ class PKPApplication {
 	 */
 	function getDAOMap() {
 		return array(
-			'AccessKeyDAO' => 'lib.pkp.classes.security.AccessKeyDAO',
-			'AuthSourceDAO' => 'lib.pkp.classes.security.AuthSourceDAO',
-			'CaptchaDAO' => 'lib.pkp.classes.captcha.CaptchaDAO',
-			'CitationDAO' => 'lib.pkp.classes.citation.CitationDAO',
-			'ControlledVocabDAO' => 'lib.pkp.classes.controlledVocab.ControlledVocabDAO',
-			'ControlledVocabEntryDAO' => 'lib.pkp.classes.controlledVocab.ControlledVocabEntryDAO',
-			'CountryDAO' => 'lib.pkp.classes.i18n.CountryDAO',
-			'CurrencyDAO' => 'lib.pkp.classes.currency.CurrencyDAO',
-			'DataObjectTombstoneDAO' => 'lib.pkp.classes.tombstone.DataObjectTombstoneDAO',
-			'DataObjectTombstoneSettingsDAO' => 'lib.pkp.classes.tombstone.DataObjectTombstoneSettingsDAO',
-			'FilterDAO' => 'lib.pkp.classes.filter.FilterDAO',
-			'FilterGroupDAO' => 'lib.pkp.classes.filter.FilterGroupDAO',
-			'GroupDAO' => 'lib.pkp.classes.group.GroupDAO',
-			'GroupMembershipDAO' => 'lib.pkp.classes.group.GroupMembershipDAO',
-			'HelpTocDAO' => 'lib.pkp.classes.help.HelpTocDAO',
-			'HelpTopicDAO' => 'lib.pkp.classes.help.HelpTopicDAO',
-			'InterestDAO' => 'lib.pkp.classes.user.InterestDAO',
-			'InterestEntryDAO' => 'lib.pkp.classes.user.InterestEntryDAO',
-			'LanguageDAO' => 'lib.pkp.classes.language.LanguageDAO',
-			'MetadataDescriptionDAO' => 'lib.pkp.classes.metadata.MetadataDescriptionDAO',
-			'NotificationDAO' => 'lib.pkp.classes.notification.NotificationDAO',
-			'NotificationMailListDAO' => 'lib.pkp.classes.notification.NotificationMailListDAO',
-			'NotificationSettingsDAO' => 'lib.pkp.classes.notification.NotificationSettingsDAO',
-			'NotificationSubscriptionSettingsDAO' => 'lib.pkp.classes.notification.NotificationSubscriptionSettingsDAO',
-			'ONIXCodelistItemDAO' => 'lib.pkp.classes.codelist.ONIXCodelistItemDAO',
-			'ProcessDAO' => 'lib.pkp.classes.process.ProcessDAO',
-			'QualifierDAO' => 'lib.pkp.classes.codelist.QualifierDAO',
-			'ScheduledTaskDAO' => 'lib.pkp.classes.scheduledTask.ScheduledTaskDAO',
-			'SessionDAO' => 'lib.pkp.classes.session.SessionDAO',
-			'SiteDAO' => 'lib.pkp.classes.site.SiteDAO',
-			'SiteSettingsDAO' => 'lib.pkp.classes.site.SiteSettingsDAO',
-			'SubjectDAO' => 'lib.pkp.classes.codelist.SubjectDAO',
-			'TimeZoneDAO' => 'lib.pkp.classes.i18n.TimeZoneDAO',
-			'TemporaryFileDAO' => 'lib.pkp.classes.file.TemporaryFileDAO',
-			'VersionDAO' => 'lib.pkp.classes.site.VersionDAO',
-			'XMLDAO' => 'lib.pkp.classes.db.XMLDAO'
+			'AccessKeyDAO' => 'lib.sep.classes.security.AccessKeyDAO',
+			'AuthSourceDAO' => 'lib.sep.classes.security.AuthSourceDAO',
+			'CaptchaDAO' => 'lib.sep.classes.captcha.CaptchaDAO',
+			'CitationDAO' => 'lib.sep.classes.citation.CitationDAO',
+			'ControlledVocabDAO' => 'lib.sep.classes.controlledVocab.ControlledVocabDAO',
+			'ControlledVocabEntryDAO' => 'lib.sep.classes.controlledVocab.ControlledVocabEntryDAO',
+			'CountryDAO' => 'lib.sep.classes.i18n.CountryDAO',
+			'CurrencyDAO' => 'lib.sep.classes.currency.CurrencyDAO',
+			'DataObjectTombstoneDAO' => 'lib.sep.classes.tombstone.DataObjectTombstoneDAO',
+			'DataObjectTombstoneSettingsDAO' => 'lib.sep.classes.tombstone.DataObjectTombstoneSettingsDAO',
+			'FilterDAO' => 'lib.sep.classes.filter.FilterDAO',
+			'FilterGroupDAO' => 'lib.sep.classes.filter.FilterGroupDAO',
+			'GroupDAO' => 'lib.sep.classes.group.GroupDAO',
+			'GroupMembershipDAO' => 'lib.sep.classes.group.GroupMembershipDAO',
+			'HelpTocDAO' => 'lib.sep.classes.help.HelpTocDAO',
+			'HelpTopicDAO' => 'lib.sep.classes.help.HelpTopicDAO',
+			'InterestDAO' => 'lib.sep.classes.user.InterestDAO',
+			'InterestEntryDAO' => 'lib.sep.classes.user.InterestEntryDAO',
+			'LanguageDAO' => 'lib.sep.classes.language.LanguageDAO',
+			'MetadataDescriptionDAO' => 'lib.sep.classes.metadata.MetadataDescriptionDAO',
+			'NotificationDAO' => 'lib.sep.classes.notification.NotificationDAO',
+			'NotificationMailListDAO' => 'lib.sep.classes.notification.NotificationMailListDAO',
+			'NotificationSettingsDAO' => 'lib.sep.classes.notification.NotificationSettingsDAO',
+			'NotificationSubscriptionSettingsDAO' => 'lib.sep.classes.notification.NotificationSubscriptionSettingsDAO',
+			'ONIXCodelistItemDAO' => 'lib.sep.classes.codelist.ONIXCodelistItemDAO',
+			'ProcessDAO' => 'lib.sep.classes.process.ProcessDAO',
+			'QualifierDAO' => 'lib.sep.classes.codelist.QualifierDAO',
+			'ScheduledTaskDAO' => 'lib.sep.classes.scheduledTask.ScheduledTaskDAO',
+			'SessionDAO' => 'lib.sep.classes.session.SessionDAO',
+			'SiteDAO' => 'lib.sep.classes.site.SiteDAO',
+			'SiteSettingsDAO' => 'lib.sep.classes.site.SiteSettingsDAO',
+			'SubjectDAO' => 'lib.sep.classes.codelist.SubjectDAO',
+			'TimeZoneDAO' => 'lib.sep.classes.i18n.TimeZoneDAO',
+			'TemporaryFileDAO' => 'lib.sep.classes.file.TemporaryFileDAO',
+			'VersionDAO' => 'lib.sep.classes.site.VersionDAO',
+			'XMLDAO' => 'lib.sep.classes.db.XMLDAO'
 		);
 	}
 
@@ -510,7 +510,7 @@ class PKPApplication {
 	function defineExposedConstant($name, $value) {
 		define($name, $value);
 		assert(preg_match('/^[a-zA-Z_]+$/', $name));
-		$constants =& PKPApplication::getExposedConstants();
+		$constants =& SEPApplication::getExposedConstants();
 		$constants[$name] = $value;
 	}
 
@@ -536,13 +536,13 @@ class PKPApplication {
 }
 
 /**
- * @see PKPApplication::defineExposed
+ * @see SEPApplication::defineExposed
  */
 function define_exposed($name, $value) {
 	$errorReportingLevel = E_ALL;
 	if (defined('E_STRICT')) $errorReportingLevel &= ~E_STRICT;
 	@error_reporting($errorReportingLevel);
-	PKPApplication::defineExposedConstant($name, $value);
+	SEPApplication::defineExposedConstant($name, $value);
 	@error_reporting(E_ALL);
 }
 

@@ -1,23 +1,23 @@
 <?php
 
 /**
- * @file classes/file/PKPFileDAO.inc.php
+ * @file classes/file/SEPFileDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPFileDAO
+ * @class SEPFileDAO
  * @ingroup file
- * @see PKPFile
+ * @see SEPFile
  *
- * @brief Abstract base class for retrieving and modifying PKPFile
+ * @brief Abstract base class for retrieving and modifying SEPFile
  * objects and their decendents
  */
 
-define('INLINEABLE_TYPES_FILE', Core::getBaseDir() . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'pkp' . DIRECTORY_SEPARATOR . 'registry' . DIRECTORY_SEPARATOR . 'inlineTypes.txt');
+define('INLINEABLE_TYPES_FILE', Core::getBaseDir() . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'sep' . DIRECTORY_SEPARATOR . 'registry' . DIRECTORY_SEPARATOR . 'inlineTypes.txt');
 
-class PKPFileDAO extends DAO {
+class SEPFileDAO extends DAO {
 	/**
 	 * @var array a private list of MIME types that can be shown inline
 	 *  in the browser
@@ -27,7 +27,7 @@ class PKPFileDAO extends DAO {
 	/**
 	 * Constructor
 	 */
-	function PKPFileDAO() {
+	function SEPFileDAO() {
 		return parent::DAO();
 	}
 
@@ -37,7 +37,7 @@ class PKPFileDAO extends DAO {
 	//
 	/**
 	 * Check whether a file may be displayed inline.
-	 * @param $pkpFile PKPFile
+	 * @param $sepFile SEPFile
 	 * @return boolean
 	 */
 	function isInlineable($file) {

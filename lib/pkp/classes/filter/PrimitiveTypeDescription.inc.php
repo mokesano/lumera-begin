@@ -12,8 +12,8 @@
  * @brief Class that describes a primitive input/output type.
  */
 
-import('lib.pkp.classes.filter.TypeDescription');
-import('lib.pkp.classes.filter.TypeDescriptionFactory');
+import('lib.sep.classes.filter.TypeDescription');
+import('lib.sep.classes.filter.TypeDescriptionFactory');
 
 class PrimitiveTypeDescription extends TypeDescription {
 	/** @var string a PHP primitive type, e.g. 'string' */

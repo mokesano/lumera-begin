@@ -29,7 +29,7 @@ class LegacyJR1 {
 
 	/**
 	 * Display the JR1 (R3) report
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function display(&$request) {
 		$oldStats = (boolean) $request->getUserVar('useOldCounterStats');
@@ -47,7 +47,7 @@ class LegacyJR1 {
 
 	/**
 	 * Generate a report file.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $year string
 	 */
 	function _report(&$request, $year, $useLegacyStats) {
@@ -151,7 +151,7 @@ class LegacyJR1 {
 
 	/**
 	 * Internal function to assign information for the Counter part of a report
-	 * @param $templateManager PKPTemplateManager
+	 * @param $templateManager SEPTemplateManager
 	 * @param $begin string
 	 * @param $end string
 	 * @param $useLegacyStats boolean
@@ -269,11 +269,11 @@ class LegacyJR1 {
 	function _getJournalIds($useLegacyStats = false) {
 		$metricsDao =& DAORegistry::getDAO('MetricsDAO'); /* @var $metricsDao MetricsDAO */
 		if ($useLegacyStats) {
-			$results = $metricsDao->getMetrics(OJS_METRIC_TYPE_LEGACY_COUNTER, array(STATISTICS_DIMENSION_ASSOC_ID));
+			$results = $metricsDao->getMetrics(CLA_METRIC_TYPE_LEGACY_COUNTER, array(STATISTICS_DIMENSION_ASSOC_ID));
 			$fieldId = STATISTICS_DIMENSION_ASSOC_ID;
 		} else {
 			$filter = array(STATISTICS_DIMENSION_ASSOC_TYPE => ASSOC_TYPE_GALLEY);
-			$results = $metricsDao->getMetrics(OJS_METRIC_TYPE_COUNTER, array(STATISTICS_DIMENSION_CONTEXT_ID), $filter);
+			$results = $metricsDao->getMetrics(CLA_METRIC_TYPE_COUNTER, array(STATISTICS_DIMENSION_CONTEXT_ID), $filter);
 			$fieldId = STATISTICS_DIMENSION_CONTEXT_ID;
 		}
 		$journalIds = array();
@@ -303,10 +303,10 @@ class LegacyJR1 {
 
 		if ($useLegacyStats) {
 			$dimension = STATISTICS_DIMENSION_ASSOC_ID;
-			$metricType = OJS_METRIC_TYPE_LEGACY_COUNTER;
+			$metricType = CLA_METRIC_TYPE_LEGACY_COUNTER;
 		} else {
 			$dimension = STATISTICS_DIMENSION_CONTEXT_ID;
-			$metricType = OJS_METRIC_TYPE_COUNTER;
+			$metricType = CLA_METRIC_TYPE_COUNTER;
 			$filter[STATISTICS_DIMENSION_ASSOC_TYPE] = ASSOC_TYPE_GALLEY;
 		}
 
@@ -333,7 +333,7 @@ class LegacyJR1 {
 	/**
 	 *
 	 * Counter report in XML
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $year string
 	 * @param $useLegacyStats boolean
 	 */

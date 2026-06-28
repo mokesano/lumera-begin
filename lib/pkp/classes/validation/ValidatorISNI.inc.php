@@ -14,7 +14,7 @@
  * @brief Validation check for ISNIs.
  */
 
-import('lib.pkp.classes.validation.ValidatorRegExp');
+import('lib.sep.classes.validation.ValidatorRegExp');
 
 class ValidatorISNI extends ValidatorRegExp {
 	/**

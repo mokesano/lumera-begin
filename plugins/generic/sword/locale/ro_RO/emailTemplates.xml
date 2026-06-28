@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * emailTemplateData.xml
   *
@@ -17,6 +17,6 @@
 
 Mergi la {$swordDepositUrl} pentru a proceda.
 
-Acest email a fost generat de modulul OJS pentru depozitare prin SWORD.</body>
+Acest email a fost generat de modulul CLA pentru depozitare prin SWORD.</body>
 	</email_text>
 </email_texts>

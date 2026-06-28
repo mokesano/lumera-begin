@@ -14,7 +14,7 @@
  *
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class DonationBlockPlugin extends BlockPlugin {
 	/**
@@ -73,8 +73,8 @@ class DonationBlockPlugin extends BlockPlugin {
 	function getContents(&$templateMgr, $request) {
 		$journal =& $request->getJournal();
 		if (!$journal) return '';
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$templateMgr->assign('donationEnabled', $paymentManager->donationEnabled());
 
 		return parent::getContents($templateMgr, $request);

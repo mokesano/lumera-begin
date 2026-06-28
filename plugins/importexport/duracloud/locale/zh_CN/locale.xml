@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/duracloud/locale/zh_CN/locale.xml
@@ -25,13 +25,13 @@
 	<message key="plugins.importexport.duracloud.configuration.space">空格</message>
 	<message key="plugins.importexport.duracloud.cliUsage">使用方法：{$scriptName} {$pluginName}
 	[base_url] [username] [password]
-	[ojs_journal_path] [duracloud_space_id] [command] ...
+	[cla_journal_path] [duracloud_space_id] [command] ...
 命令：
 导入期次[user_name] [issueId1] [issueId2]
 导出期次[user_name] [issueId1] [issueId2]
 举例：
 php {$scriptName} {$pluginName} \
-		https://pkp.duracloud.org myUsername myPassword \
+		https://sep.duracloud.org myUsername myPassword \
 		demojournal testspace \
 		exportIssues 1</message>
 	<message key="plugins.importexport.duracloud.export">导出数据</message>

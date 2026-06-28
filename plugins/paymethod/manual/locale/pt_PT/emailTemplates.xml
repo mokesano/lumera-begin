@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/paymethod/manual/locale/pt_PT/emailTemplateData.xml
   *
@@ -17,7 +17,7 @@
 O item adquirido é "{$itemName}".
 O custo é {$itemCost} ({$itemCurrencyCode}).
 
-Esta mensagem foi gerada pelo Plugin de Pagamento Manual do OJS.</body>
+Esta mensagem foi gerada pelo Plugin de Pagamento Manual do CLA.</body>
 		<description>Esta mensagem notifica o editor-gestor que um pagamento manual foi realizado e exige processamento.</description>
 	</email_text>
 </email_texts>

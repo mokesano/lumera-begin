@@ -10,20 +10,20 @@
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPNotificationSettingsForm
+ * @class SEPNotificationSettingsForm
  * @ingroup notification_form
  *
  * @brief Form to edit notification settings.
  */
 
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
-class PKPNotificationSettingsForm extends Form {
+class SEPNotificationSettingsForm extends Form {
 	/**
 	 * Constructor.
 	 */
-	function PKPNotificationSettingsForm() {
+	function SEPNotificationSettingsForm() {
 		parent::Form('notification/settings.tpl');
 
 		// Validation checks for this form

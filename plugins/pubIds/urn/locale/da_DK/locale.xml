@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/pubIds/urn/locale/da_DK/locale.xml
@@ -16,17 +16,17 @@
 
 	<!-- plugin -->
 	<message key="plugins.pubIds.urn.displayName">URN</message>
-	<message key="plugins.pubIds.urn.description">Dette plug-in gør det muligt at tildele Uniform Resource Names til emnerne (numre, artikler, satsskibe og supplerende filer) i OJS</message>
+	<message key="plugins.pubIds.urn.description">Dette plug-in gør det muligt at tildele Uniform Resource Names til emnerne (numre, artikler, satsskibe og supplerende filer) i CLA</message>
 
 	<!-- URN manager options, setting -->
-	<message key="plugins.pubIds.urn.manager.settings.description">Please do the following setup steps to be able to manage and use URNs in OJS:</message>
+	<message key="plugins.pubIds.urn.manager.settings.description">Please do the following setup steps to be able to manage and use URNs in CLA:</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSettings">URN Settings</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnPrefix">URN Prefix</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnPrefix.description">The URN prefix is the fix, never changing part of the URN (e.g. "urn:nbn:de:0000-").</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix">URN Suffix</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.default">Use default patterns.</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.default.description"><![CDATA[%j.v%vi%i for issues<br />%j.v%vi%i.%a for articles<br />%j.v%vi%i.%a.g%g for galleys <br />%j.v%vi%i.%a.s%s for supplementary files.]]></message>
-	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern">Use the pattern entered below to generate URN suffixes. Use %j for journal initials, %v for the volume number, %i for the issue number, %Y for the year, %a for the OJS article ID, %g for the OJS galley ID, %s for the OJS supplementary file ID and %p for the page number.</message>
+	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern">Use the pattern entered below to generate URN suffixes. Use %j for journal initials, %v for the volume number, %i for the issue number, %Y for the year, %a for the CLA article ID, %g for the CLA galley ID, %s for the CLA supplementary file ID and %p for the page number.</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern.issues">for issues</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern.articles">for articles</message>
 	<message key="plugins.pubIds.urn.manager.settings.urnSuffix.pattern.galleys">for galleys</message>

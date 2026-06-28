@@ -15,7 +15,7 @@
  *
  */
 
-import('lib.pkp.classes.payment.Payment');
+import('lib.sep.classes.payment.Payment');
 
 class QueuedPayment extends Payment {
 	/**

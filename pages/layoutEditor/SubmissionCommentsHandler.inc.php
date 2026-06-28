@@ -29,7 +29,7 @@ class SubmissionCommentsHandler extends LayoutEditorHandler {
 	/**
 	 * View layout comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewLayoutComments($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -42,7 +42,7 @@ class SubmissionCommentsHandler extends LayoutEditorHandler {
 	/**
 	 * Post layout comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function postLayoutComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -60,7 +60,7 @@ class SubmissionCommentsHandler extends LayoutEditorHandler {
 	/**
 	 * View proofread comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewProofreadComments($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -73,7 +73,7 @@ class SubmissionCommentsHandler extends LayoutEditorHandler {
 	/**
 	 * Post proofread comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function postProofreadComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -93,7 +93,7 @@ class SubmissionCommentsHandler extends LayoutEditorHandler {
 	/**
 	 * Edit comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editComment($args, &$request) {
 		$articleId = (int) array_shift($args);

@@ -10,7 +10,7 @@
   * goverened by the Apache License Version 2.0. See LICENSE-APACHE-2.0.txt in
   * the plugin's root directory.
   *
-  * OJS solr/lucene search plugin jetty default configuration.
+  * CLA solr/lucene search plugin jetty default configuration.
   * 
   * NB: You may have to customize this file for a secure central server
   * deployment.
@@ -425,10 +425,10 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>Solr Admin</web-resource-name>
-      <url-pattern>/ojs/admin/*</url-pattern>
-      <url-pattern>/ojs/admin</url-pattern>
-      <url-pattern>/ojs/select/*</url-pattern>
-      <url-pattern>/ojs/select</url-pattern>
+      <url-pattern>/cla/admin/*</url-pattern>
+      <url-pattern>/cla/admin</url-pattern>
+      <url-pattern>/cla/select/*</url-pattern>
+      <url-pattern>/cla/select</url-pattern>
       <url-pattern>/admin/*</url-pattern>
       <url-pattern>/admin</url-pattern>
       <url-pattern>/select/*</url-pattern>
@@ -443,12 +443,12 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>Solr Update</web-resource-name>
-      <url-pattern>/ojs/update/*</url-pattern>
-      <url-pattern>/ojs/update</url-pattern>
+      <url-pattern>/cla/update/*</url-pattern>
+      <url-pattern>/cla/update</url-pattern>
       <url-pattern>/update/*</url-pattern>
       <url-pattern>/update</url-pattern>
-      <url-pattern>/ojs/dih/*</url-pattern>
-      <url-pattern>/ojs/dih</url-pattern>
+      <url-pattern>/cla/dih/*</url-pattern>
+      <url-pattern>/cla/dih</url-pattern>
       <url-pattern>/dih/*</url-pattern>
       <url-pattern>/dih</url-pattern>
     </web-resource-collection>
@@ -463,4 +463,3 @@
     <realm-name>Solr Realm</realm-name>
   </login-config>
 </web-app>
-

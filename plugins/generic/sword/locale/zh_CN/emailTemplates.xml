@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * emailTemplateData.xml
   *
@@ -17,7 +17,7 @@
 
 进入{$swordDepositUrl}继续。
 
-这个邮件由Open Journal Systems' 的SWORD deposit 插件自动生成。</body>
+这个邮件由Code Lumera Editorial' 的SWORD deposit 插件自动生成。</body>
 		<description>本邮件模板用于通知作者关于SWORD存储的存入点选择</description>
 	</email_text>
 </email_texts>

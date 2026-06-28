@@ -31,7 +31,7 @@
  *  They also provide a framework to customize the processing applied in citation
  *  parsing and lookup (i.e. which parsers and lookup sources should be applied).
  *
- *  Filters can be used stand-alone outside PKP applications.
+ *  Filters can be used stand-alone outside SEP applications.
  *
  *  The following is a complete list of all use-cases that have been identified
  *  for filters:
@@ -72,8 +72,8 @@
  *    stem) to access the index
  */
 
-import('lib.pkp.classes.core.DataObject');
-import('lib.pkp.classes.filter.TypeDescriptionFactory');
+import('lib.sep.classes.core.DataObject');
+import('lib.sep.classes.filter.TypeDescriptionFactory');
 
 class Filter extends DataObject {
 	/** @var TypeDescription */
@@ -392,7 +392,7 @@ class Filter extends DataObject {
 			// If we found any runtime restrictions then construct a
 			// runtime environment from the settings.
 			if ($hasRuntimeSettings) {
-				import('lib.pkp.classes.core.RuntimeEnvironment');
+				import('lib.sep.classes.core.RuntimeEnvironment');
 				$this->_runtimeEnvironment = new RuntimeEnvironment($phpVersionMin, $phpVersionMax, $phpExtensions, $externalPrograms);
 			} else {
 				// Set null so that we don't try to construct

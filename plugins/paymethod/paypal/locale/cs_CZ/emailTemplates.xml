@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/paymethod/paypal/locale/cs_CZ/emailTemplateData.xml
   *
@@ -12,9 +12,9 @@
 <email_texts locale="cs_CZ">
 	<email_text key="PAYPAL_INVESTIGATE_PAYMENT">
 		<subject>Neobvyklá PayPal aktivita</subject>
-		<body>OJS zaznamenal neobvyklou aktivitu v souvislosti s podporou plateb přes PayPal pro časopis {$journalName}. Tato aktivita může vyžadovat další kontrolu nebo ruční zásah.
+		<body>CLA zaznamenal neobvyklou aktivitu v souvislosti s podporou plateb přes PayPal pro časopis {$journalName}. Tato aktivita může vyžadovat další kontrolu nebo ruční zásah.
                        
-Tento email byl vygenerován OJS pluginem pro PayPal.
+Tento email byl vygenerován CLA pluginem pro PayPal.
 
 Kompletní informace k požadavku:
 {$postInfo}

@@ -17,10 +17,10 @@
  * @brief Form class for purchase of individual subscription gift.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class GiftIndividualSubscriptionForm extends Form {
-	/** @var $request PKPRequest */
+	/** @var $request SEPRequest */
 	var $request;
 
 	/** @var userId int the buyer associated with the gift purchase */
@@ -123,8 +123,8 @@ class GiftIndividualSubscriptionForm extends Form {
 
 		// Create new gift and save details
 		import('classes.gift.Gift');
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($this->request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($this->request);
 		$paymentPlugin =& $paymentManager->getPaymentPlugin();
 
 		$gift = new Gift();

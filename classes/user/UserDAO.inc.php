@@ -9,15 +9,15 @@
  *
  * @class UserDAO
  * @ingroup user
- * @see PKPUserDAO
+ * @see SEPUserDAO
  *
  * @brief Basic class describing users existing in the system.
  */
 
 import('classes.user.User');
-import('lib.pkp.classes.user.PKPUserDAO');
+import('lib.sep.classes.user.SEPUserDAO');
 
-class UserDAO extends PKPUserDAO {
+class UserDAO extends SEPUserDAO {
 	/**
 	 * Renew a membership to dateEnd + 1 year
 	 * if the was expired, renew to current date + 1 year  

@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file pages/install/PKPInstallHandler.inc.php
+ * @file pages/install/SEPInstallHandler.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPInstallHandler
+ * @class SEPInstallHandler
  * @ingroup pages_install
  *
  * @brief Handle installation requests.
@@ -18,13 +18,13 @@ import('classes.install.form.InstallForm');
 import('classes.install.form.UpgradeForm');
 import('classes.handler.Handler');
 
-class PKPInstallHandler extends Handler {
+class SEPInstallHandler extends Handler {
 
 	/**
 	 * If no context is selected, list all.
 	 * Otherwise, display the index page for the selected context.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		// Make sure errors are displayed to the browser during install.
@@ -48,7 +48,7 @@ class PKPInstallHandler extends Handler {
 
 	/**
 	 * Redirect to index if system has already been installed.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function validate($request) {
 		if (Config::getVar('general', 'installed')) {
@@ -59,7 +59,7 @@ class PKPInstallHandler extends Handler {
 	/**
 	 * Execute installer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function install($args, &$request) {
 		$this->validate($request);
@@ -83,7 +83,7 @@ class PKPInstallHandler extends Handler {
 	/**
 	 * Display upgrade form.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function upgrade($args, &$request) {
 		$this->validate($request);
@@ -101,7 +101,7 @@ class PKPInstallHandler extends Handler {
 	/**
 	 * Execute upgrade.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function installUpgrade($args, &$request) {
 		$this->validate($request);
@@ -122,7 +122,7 @@ class PKPInstallHandler extends Handler {
 	 */
 	function setupTemplate() {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_INSTALLER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_INSTALLER);
 	}
 }
 

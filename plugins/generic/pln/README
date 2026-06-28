@@ -1,5 +1,5 @@
 ================================================================
-=== OJS Private LOCKSS Network Plugin
+=== CLA Private LOCKSS Network Plugin
 === Version: 1.0.2
 === Author: Chris MacDonald <chris@fcts.ca>
 === Author: Michael Joyce <ubermichael@gmail.com>
@@ -8,7 +8,7 @@
 
 About
 -----
-This plugin provides a means for OJS to preserve content on a private LOCKSS
+This plugin provides a means for CLA to preserve content on a private LOCKSS
 network. The plugin checks for new and modified content and provided the PLN's
 terms of use are met, will communicate with the PLN's staging server to preserve
 your published content automatically.
@@ -16,11 +16,11 @@ your published content automatically.
 License
 -------
 This plugin is licensed under the GNU General Public License v2. See the
-accompanying OJS file docs/COPYING for the complete terms of this license.
+accompanying CLA file docs/COPYING for the complete terms of this license.
 
 System Requirements
 -------------------
-OJS 2.4.5 or greater.
+CLA 2.4.5 or greater.
 PHP 5.2 or greater.
 CURL support for PHP.
 ZipArchive support for PHP.
@@ -28,21 +28,21 @@ ZipArchive support for PHP.
 Note
 ----
 The primary difference between this plugin and the existing LOCKSS preservation
-mechanism present in OJS is the PLN requires no registration or involvement with
+mechanism present in CLA is the PLN requires no registration or involvement with
 the network - as long as you agree with the network's terms of use, you can
 preserve your journal's content.
 
 Contact/Support
 ---------------
-Please use the PKP support forum (http://forum.pkp.sfu.ca/), PKP issue
-tracker (https://github.com/pkp/pkp-lib#issues) or email the authors for
+Please use the SEP support forum (http://forum.lumera.sangia.org/), SEP issue
+tracker (https://github.com/sep/sep-lib#issues) or email the authors for
 support, bugfixes, or comments.
 
 Setting a default
 -----------------
-By default, the PLN plugin deposits to http://pkp-pln.lib.sfu.ca. Journal
+By default, the PLN plugin deposits to http://sep-pln.lib.sfu.ca. Journal
 managers can change the URL on the plugin settings page. The default URL can
-also be set in the OJS config.inc.php file by adding this configuation:
+also be set in the CLA config.inc.php file by adding this configuation:
 
 ; Change the default PLN
 [lockss]

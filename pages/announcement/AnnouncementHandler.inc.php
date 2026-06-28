@@ -14,19 +14,19 @@
  */
 
 
-import('lib.pkp.pages.announcement.PKPAnnouncementHandler');
+import('lib.sep.pages.announcement.SEPAnnouncementHandler');
 
-class AnnouncementHandler extends PKPAnnouncementHandler {
+class AnnouncementHandler extends SEPAnnouncementHandler {
 	/**
 	 * Constructor
 	 **/
 	function AnnouncementHandler() {
-		parent::PKPAnnouncementHandler();
+		parent::SEPAnnouncementHandler();
 		$this->addCheck(new HandlerValidatorJournal($this));
 	}
 
 	/**
-	 * @see PKPAnnouncementHandler::_getAnnouncementsEnabled()
+	 * @see SEPAnnouncementHandler::_getAnnouncementsEnabled()
 	 */
 	function _getAnnouncementsEnabled($request) {
 		$journal =& $request->getJournal();
@@ -34,7 +34,7 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 	}
 
 	/**
-	 * @see PKPAnnouncementHandler::_getAnnouncements()
+	 * @see SEPAnnouncementHandler::_getAnnouncements()
 	 */
 	function &_getAnnouncements($request, $rangeInfo = null) {
 		$journal =& $request->getJournal();
@@ -46,7 +46,7 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 	}
 
 	/**
-	 * @see PKPAnnouncementHandler::_getAnnouncementsIntroduction()
+	 * @see SEPAnnouncementHandler::_getAnnouncementsIntroduction()
 	 */
 	function _getAnnouncementsIntroduction($request) {
 		$journal =& $request->getJournal();
@@ -54,7 +54,7 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 	}
 
 	/**
-	 * @see PKPAnnouncementHandler::_announcementIsValid()
+	 * @see SEPAnnouncementHandler::_announcementIsValid()
 	 */
 	function _announcementIsValid($request, $announcementId) {
 		$journal =& $request->getJournal();

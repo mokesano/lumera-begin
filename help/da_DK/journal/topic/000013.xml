@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000013.xml
@@ -14,6 +14,6 @@
 
 <topic id="journal/topic/000013" locale="da_DK" title="Importér brugere" toc="journal/toc/000002" key="journal.users.importUsers">
 	<section>
-		<![CDATA[<p>OJS indeholder en simpel funktion til import af brugerdata fra et XML-baseret format, som nemt kan genereres fra andre databaser med brugeroplysninger. Se dokumentationen til OJS, hvis du vil have flere oplysninger om XML-formatet og XML DTD for brugerdata.</p>]]>	
+		<![CDATA[<p>CLA indeholder en simpel funktion til import af brugerdata fra et XML-baseret format, som nemt kan genereres fra andre databaser med brugeroplysninger. Se dokumentationen til CLA, hvis du vil have flere oplysninger om XML-formatet og XML DTD for brugerdata.</p>]]>	
 	</section>
 </topic>

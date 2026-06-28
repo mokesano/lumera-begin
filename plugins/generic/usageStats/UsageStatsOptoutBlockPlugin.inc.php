@@ -13,7 +13,7 @@
  * @brief Opt-out component.
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class UsageStatsOptoutBlockPlugin extends BlockPlugin {
 
@@ -32,45 +32,45 @@ class UsageStatsOptoutBlockPlugin extends BlockPlugin {
 
 
 	//
-	// Implement template methods from PKPPlugin.
+	// Implement template methods from SEPPlugin.
 	//
 	/**
-	 * @see PKPPlugin::getHideManagement()
+	 * @see SEPPlugin::getHideManagement()
 	 */
 	function getHideManagement() {
 		return true;
 	}
 
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'UsageStatsOptoutBlockPlugin';
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.reports.usageStats.optout.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.generic.usageStats.optout.description');
 	}
 
 	/**
-	* @see PKPPlugin::isSitePlugin()
+	* @see SEPPlugin::isSitePlugin()
 	*/
 	function isSitePlugin() {
 		return false;
 	}
 
 	/**
-	 * @see PKPPlugin::getPluginPath()
+	 * @see SEPPlugin::getPluginPath()
 	 */
 	function getPluginPath() {
 		$plugin =& $this->_getPlugin();
@@ -78,7 +78,7 @@ class UsageStatsOptoutBlockPlugin extends BlockPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getTemplatePath()
+	 * @see SEPPlugin::getTemplatePath()
 	 */
 	function getTemplatePath() {
 		$plugin =& $this->_getPlugin();
@@ -86,7 +86,7 @@ class UsageStatsOptoutBlockPlugin extends BlockPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getSeq()
+	 * @see SEPPlugin::getSeq()
 	 */
 	function getSeq() {
 		// Identify the position of the faceting block.

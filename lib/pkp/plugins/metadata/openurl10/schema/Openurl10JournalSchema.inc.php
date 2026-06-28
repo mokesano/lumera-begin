@@ -16,7 +16,7 @@
  */
 
 
-import('lib.pkp.plugins.metadata.openurl10.schema.Openurl10JournalBookBaseSchema');
+import('lib.sep.plugins.metadata.openurl10.schema.Openurl10JournalBookBaseSchema');
 
 define('OPENURL10_GENRE_JOURNAL', 'journal');
 define('OPENURL10_GENRE_ISSUE', 'issue');
@@ -30,7 +30,7 @@ class Openurl10JournalSchema extends Openurl10JournalBookBaseSchema {
 	function Openurl10JournalSchema() {
 		parent::Openurl10JournalBookBaseSchema(
 			'openurl-1.0-journal',
-			'lib.pkp.plugins.metadata.openurl10.schema.Openurl10JournalSchema'
+			'lib.sep.plugins.metadata.openurl10.schema.Openurl10JournalSchema'
 		);
 
 		// Add meta-data properties that only appear in the OpenURL journal standard

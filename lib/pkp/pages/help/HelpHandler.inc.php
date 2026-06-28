@@ -18,11 +18,11 @@
 define('HELP_DEFAULT_TOPIC', 'index/topic/000000');
 define('HELP_DEFAULT_TOC', 'index/toc/000000');
 
-import('lib.pkp.classes.help.HelpToc');
-import('lib.pkp.classes.help.HelpTocDAO');
-import('lib.pkp.classes.help.HelpTopic');
-import('lib.pkp.classes.help.HelpTopicDAO');
-import('lib.pkp.classes.help.HelpTopicSection');
+import('lib.sep.classes.help.HelpToc');
+import('lib.sep.classes.help.HelpTocDAO');
+import('lib.sep.classes.help.HelpTopic');
+import('lib.sep.classes.help.HelpTopicDAO');
+import('lib.sep.classes.help.HelpTopicSection');
 import('classes.handler.Handler');
 
 class HelpHandler extends Handler {
@@ -36,7 +36,7 @@ class HelpHandler extends Handler {
 	/**
 	 * Display help table of contents.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$this->view(array('index', 'topic', '000000'), $request);
@@ -45,7 +45,7 @@ class HelpHandler extends Handler {
 	/**
 	 * Display help table of contents.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function toc($args, &$request) {
 		$this->validate();
@@ -61,7 +61,7 @@ class HelpHandler extends Handler {
 	/**
 	 * Display the selected help topic.
 	 * @param $args array first parameter is the ID of the topic to display
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function view($args, $request) {
 		$this->validate();
@@ -118,7 +118,7 @@ class HelpHandler extends Handler {
 	/**
 	 * Display search results for a topic search by keyword.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function search($args, &$request) {
 		$this->validate();

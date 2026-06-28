@@ -15,7 +15,7 @@
 
 
 class Dispatcher {
-	/** @var PKPApplication */
+	/** @var SEPApplication */
 	var $_application;
 
 	/** @var array an array of Router implementation class names */
@@ -24,15 +24,15 @@ class Dispatcher {
 	/** @var array an array of Router instances */
 	var $_routerInstances = array();
 
-	/** @var PKPRouter */
+	/** @var SEPRouter */
 	var $_router;
 
-	/** @var PKPRequest Used for a callback hack - NOT GENERALLY SET. */
+	/** @var SEPRequest Used for a callback hack - NOT GENERALLY SET. */
 	var $_requestCallbackHack;
 
 	/**
 	 * Get the application
-	 * @return PKPApplication
+	 * @return SEPApplication
 	 */
 	function &getApplication() {
 		return $this->_application;
@@ -40,7 +40,7 @@ class Dispatcher {
 
 	/**
 	 * Set the application
-	 * @param $application PKPApplication
+	 * @param $application SEPApplication
 	 */
 	function setApplication(&$application) {
 		$this->_application =& $application;
@@ -83,7 +83,7 @@ class Dispatcher {
 	 * Determine the correct router for this request. Then
 	 * let the router dispatch the request to the appropriate
 	 * handler method.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function dispatch(&$request) {
 		// Make sure that we have at least one router configured
@@ -135,8 +135,8 @@ class Dispatcher {
 	}
 
 	/**
-	 * Build a handler request URL into PKPApplication.
-	 * @param $request PKPRequest the request to be routed
+	 * Build a handler request URL into SEPApplication.
+	 * @param $request SEPRequest the request to be routed
 	 * @param $shortcut string the short name of the router that should be used to construct the URL
 	 * @param $newContext mixed Optional contextual paths
 	 * @param $handler string Optional name of the handler to invoke
@@ -168,17 +168,17 @@ class Dispatcher {
 	 */
 	function &_instantiateRouter($routerName, $shortcut) {
 		if (!isset($this->_routerInstances[$shortcut])) {
-			// Routers must belong to the classes.core or lib.pkp.classes.core package
+			// Routers must belong to the classes.core or lib.sep.classes.core package
 			// NB: This prevents code inclusion attacks.
 			$allowedRouterPackages = array(
 				'classes.core',
-				'lib.pkp.classes.core'
+				'lib.sep.classes.core'
 			);
 
 			// Instantiate the router
-			$router =& instantiate($routerName, 'PKPRouter', $allowedRouterPackages);
+			$router =& instantiate($routerName, 'SEPRouter', $allowedRouterPackages);
 			if (!is_object($router)) {
-				fatalError('Cannot instantiate requested router. Routers must belong to the core package and be of type "PKPRouter".');
+				fatalError('Cannot instantiate requested router. Routers must belong to the core package and be of type "SEPRouter".');
 			}
 			$router->setApplication($this->_application);
 			$router->setDispatcher($this);
@@ -192,7 +192,7 @@ class Dispatcher {
 
 	/**
 	 * Display the request contents from cache.
-	 * @param $router PKPRouter
+	 * @param $router SEPRouter
 	 */
 	function _displayCached(&$router, &$request) {
 		$filename = $router->getCacheFilename($request);
@@ -227,7 +227,7 @@ class Dispatcher {
 	 * @return string
 	 */
 	function _cacheContent($contents) {
-		assert(is_a($this->_router, 'PKPRouter'));
+		assert(is_a($this->_router, 'SEPRouter'));
 		if ($contents == '') return $contents; // Do not cache empties
 		$filename = $this->_router->getCacheFilename($this->_requestCallbackHack);
 		$fp = fopen($filename, 'w');
@@ -242,7 +242,7 @@ class Dispatcher {
 	 * Handle a 404 error (page not found).
 	 */
 	function handle404() {
-		PKPRequest::_checkThis();
+		SEPRequest::_checkThis();
 
 		header('HTTP/1.0 404 Not Found');
 		fatalError('404 Not Found');

@@ -13,7 +13,7 @@
  * @brief Form for journal managers to check PLN plugin status
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class PLNStatusForm extends Form {
 

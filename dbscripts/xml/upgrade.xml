@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE install SYSTEM "../../lib/pkp/dtd/install.dtd">
+<!DOCTYPE install SYSTEM "../../lib/sep/dtd/install.dtd">
 <!--
   * dbscripts/xml/upgrade.xml
   *
@@ -35,7 +35,7 @@
 
 	<!-- #2961: Stage 1 of 2.2 schema upgrade: Do not drop columns yet -->
 	<upgrade minversion="2.0.0.0" maxversion="2.1.1.0">
-		<schema file="dbscripts/xml/ojs_schema_stage1.xml" />
+		<schema file="dbscripts/xml/cla_schema_stage1.xml" />
 	</upgrade>
 
 	<!-- Various tasks for pre-2.2 versions that do not require DAOs -->
@@ -90,7 +90,7 @@
 	</upgrade>
 
 	<!-- Create signoffs table before migration occurs -->
-	<schema file="lib/pkp/xml/schema/signoff.xml" />
+	<schema file="lib/sep/xml/schema/signoff.xml" />
 
 	<upgrade minversion="2.0.0.0" maxversion="2.2.9.0">
 		<!-- 2.x to 2.3 -->
@@ -104,7 +104,7 @@
 
 	<!--
 	  - The 2.3.3 preupdate scripts have been broken into pieces because
-	  - the features they affect were added in different versions of OJS.
+	  - the features they affect were added in different versions of CLA.
 	  -->
 	<upgrade minversion="2.0.0.0" maxversion="2.3.2.9">
 		<data file="dbscripts/xml/upgrade/2.3.3_preupdate1.xml" />
@@ -157,27 +157,27 @@
 		<data file="dbscripts/xml/upgrade/2.4.0_notifications.xml" condition="return $installer->columnExists('notification_settings', 'setting_id');" />	
 	</upgrade>
 
-	<!-- PKP schema components -->
-	<schema file="lib/pkp/xml/schema/common.xml" />
-	<schema file="lib/pkp/xml/schema/groups.xml" />
-	<schema file="lib/pkp/xml/schema/log.xml" />
-	<schema file="lib/pkp/xml/schema/announcements.xml" />
-	<schema file="lib/pkp/xml/schema/scheduledTasks.xml" />
-	<schema file="lib/pkp/xml/schema/temporaryFiles.xml" />
-	<schema file="lib/pkp/xml/schema/metadata.xml" />
-	<schema file="lib/pkp/xml/schema/reviews.xml" />
-	<schema file="lib/pkp/xml/schema/reviewForms.xml" />
-	<schema file="lib/pkp/xml/schema/controlledVocab.xml" />
-	<schema file="lib/pkp/xml/schema/submissions.xml" />
-	<schema file="lib/pkp/xml/schema/comments.xml" />
-	<schema file="lib/pkp/xml/schema/notes.xml" />
-	<schema file="lib/pkp/xml/schema/gifts.xml" />
-	<schema file="lib/pkp/xml/schema/mutex.xml" />
-	<schema file="lib/pkp/xml/schema/tombstone.xml" />
-	<schema file="lib/pkp/xml/schema/metrics.xml" />
+	<!-- SEP schema components -->
+	<schema file="lib/sep/xml/schema/common.xml" />
+	<schema file="lib/sep/xml/schema/groups.xml" />
+	<schema file="lib/sep/xml/schema/log.xml" />
+	<schema file="lib/sep/xml/schema/announcements.xml" />
+	<schema file="lib/sep/xml/schema/scheduledTasks.xml" />
+	<schema file="lib/sep/xml/schema/temporaryFiles.xml" />
+	<schema file="lib/sep/xml/schema/metadata.xml" />
+	<schema file="lib/sep/xml/schema/reviews.xml" />
+	<schema file="lib/sep/xml/schema/reviewForms.xml" />
+	<schema file="lib/sep/xml/schema/controlledVocab.xml" />
+	<schema file="lib/sep/xml/schema/submissions.xml" />
+	<schema file="lib/sep/xml/schema/comments.xml" />
+	<schema file="lib/sep/xml/schema/notes.xml" />
+	<schema file="lib/sep/xml/schema/gifts.xml" />
+	<schema file="lib/sep/xml/schema/mutex.xml" />
+	<schema file="lib/sep/xml/schema/tombstone.xml" />
+	<schema file="lib/sep/xml/schema/metrics.xml" />
 
-	<!-- OJS schema -->
-	<schema file="dbscripts/xml/ojs_schema.xml" />
+	<!-- CLA schema -->
+	<schema file="dbscripts/xml/cla_schema.xml" />
 
 	<!-- CLOB/Text indexes handled differently for MySQL and PostgreSQL -->
 	<data file="dbscripts/xml/indexes.xml" />
@@ -315,7 +315,7 @@
 		<data file="dbscripts/xml/upgrade/2.4.0_idupgrade_article_galleys2.xml" condition="return $installer->tableExists('tmp_public_galley_ids');" />
 
 		<!-- Mutex helper table. -->
-		<data file="lib/pkp/xml/mutexData.xml" />
+		<data file="lib/sep/xml/mutexData.xml" />
 
 		<!-- Misc. 2.4.0 updates -->
 		<data file="dbscripts/xml/upgrade/2.4.0_update.xml" />

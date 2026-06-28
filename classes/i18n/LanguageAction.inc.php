@@ -18,8 +18,8 @@
  */
 
 
-define('LANGUAGE_PACK_DESCRIPTOR_URL', 'http://pkp.sfu.ca/ojs/xml/%s/locales.xml');
-define('LANGUAGE_PACK_TAR_URL', 'http://pkp.sfu.ca/ojs/xml/%s/%s.tar.gz');
+define('LANGUAGE_PACK_DESCRIPTOR_URL', 'http://lumera.sangia.org/cla/xml/%s/locales.xml');
+define('LANGUAGE_PACK_TAR_URL', 'http://lumera.sangia.org/cla/xml/%s/%s.tar.gz');
 
 class LanguageAction {
 	/**

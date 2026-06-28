@@ -15,7 +15,7 @@
  */
 
 import ('classes.journal.Journal');
-import('lib.pkp.classes.metadata.MetadataTypeDescription');
+import('lib.sep.classes.metadata.MetadataTypeDescription');
 
 define('JOURNAL_FIELD_TITLE', 1);
 define('JOURNAL_FIELD_SEQUENCE', 2);
@@ -420,7 +420,7 @@ class JournalDAO extends DAO {
 	}
 
 	/**
-	 * Get journals by setting.  Backported from master pkp-lib's ContextDAO.
+	 * Get journals by setting.  Backported from master sep-lib's ContextDAO.
 	 * @param $settingName string
 	 * @param $settingValue mixed
 	 * @param $contextId int

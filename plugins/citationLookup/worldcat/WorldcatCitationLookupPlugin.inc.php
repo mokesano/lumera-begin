@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationLookup.worldcat.PKPWorldcatCitationLookupPlugin');
+import('lib.sep.plugins.citationLookup.worldcat.SEPWorldcatCitationLookupPlugin');
 
-class WorldcatCitationLookupPlugin extends PKPWorldcatCitationLookupPlugin {
+class WorldcatCitationLookupPlugin extends SEPWorldcatCitationLookupPlugin {
 	/**
 	 * Constructor
 	 */
 	function WorldcatCitationLookupPlugin() {
-		parent::PKPWorldcatCitationLookupPlugin();
+		parent::SEPWorldcatCitationLookupPlugin();
 	}
 }
 

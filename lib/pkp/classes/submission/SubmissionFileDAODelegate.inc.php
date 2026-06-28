@@ -15,7 +15,7 @@
  *  to retrieve and modify SubmissionFile objects.
  */
 
-import('lib.pkp.classes.db.DAO');
+import('lib.sep.classes.db.DAO');
 
 class SubmissionFileDAODelegate extends DAO {
 	/**

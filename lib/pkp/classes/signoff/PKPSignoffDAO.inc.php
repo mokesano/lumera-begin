@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file classes/signoff/PKPSignoffDAO.inc.php
+ * @file classes/signoff/SEPSignoffDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPSignoffDAO
+ * @class SEPSignoffDAO
  * @ingroup signoff
  * @see Signoff
  *
@@ -15,13 +15,13 @@
  */
 
 
-import('lib.pkp.classes.signoff.Signoff');
+import('lib.sep.classes.signoff.Signoff');
 
-class PKPSignoffDAO extends DAO {
+class SEPSignoffDAO extends DAO {
 	/**
 	 * Constructor
 	 */
-	function PKPSignoffDAO() {
+	function SEPSignoffDAO() {
 		parent::DAO();
 	}
 

@@ -106,7 +106,7 @@ class Submission extends DataObject {
 	function getAuthorEmails() {
 		$authors = $this->getAuthors();
 
-		import('lib.pkp.classes.mail.Mail');
+		import('lib.sep.classes.mail.Mail');
 		$returner = array();
 		foreach($authors as $author) {
 			$returner[] = Mail::encodeDisplayName($author->getFullName()) . ' <' . $author->getEmail() . '>';

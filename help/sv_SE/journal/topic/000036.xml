@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000036.xml
@@ -14,7 +14,7 @@
 
 <topic id="journal/topic/000036" locale="en_US" title="Granskningsformulär" toc="journal/toc/000001" key="journal.managementPages.reviewForms">
 	<section>
-		<![CDATA[<p>Per automatik tillåter OJS Granskare att lägga in sina rapporter via ett enkelt formulär med två text-rutor: en fält bara för Redaktörens ögon och ett för både Författarens och Redaktörens ögon. Tidskriftsansvarig kan utöka denna funktion genom att skapa egna formulär. </p>
+		<![CDATA[<p>Per automatik tillåter CLA Granskare att lägga in sina rapporter via ett enkelt formulär med två text-rutor: en fält bara för Redaktörens ögon och ett för både Författarens och Redaktörens ögon. Tidskriftsansvarig kan utöka denna funktion genom att skapa egna formulär. </p>
 		<p>Tidskriftsansvarig kan skapa ett Sektionsrelaterat formulär så att det automatiskt genereras för den sektionen: om mer än ett formulär är aktivt kan Redaktören ändå bortse ifrån det automatiskt genererade formuläret när en Granskare är allokerad på ett manuskript</p>
 		
 		<p><strong>'Låsta' granskningsrapporter</strong> Hur många formulär som helst kan skapas, dock kan man bara redigera och ta bort tills dess att formuläret har aktiverats (speciellt när en Redaktör allokerar ett manuskript på en Granskare och kräver att han/hon använder ett skapat formulär). Så snart formuläret har aktiverats blir det 'låst'; detta för att garantera en permanent historik. Ett skapat formulär kan avaktiveras och flyttas från listan över de formulär som är tillgängliga; det kan också kopieras genom att använda funktione Kopiera. Båda funktionerna diskuteras nedan.</p>]]>	

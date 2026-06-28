@@ -13,7 +13,7 @@
  * @brief Form for journal managers to create/edit subscription types.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class SubscriptionTypeForm extends Form {
 	/** @var typeId int the ID of the subscription type being edited */

@@ -23,7 +23,7 @@
 #
 # - This tool expects to be run from the application's main directory.
 #
-# Usage: lib/pkp/tools/buildjs.sh [-n]
+# Usage: lib/sep/tools/buildjs.sh [-n]
 # ...where -n can be optionally specified to prevent caching.
 #
 
@@ -44,12 +44,12 @@ fi
 
 TOOL_PATH=~/bin
 
-JS_OUTPUT='js/pkp.min.js'
+JS_OUTPUT='js/sep.min.js'
 
 CLOSURE_EXTERNS='
-	--externs lib/pkp/tools/closure-externs.js
-	--externs lib/pkp/tools/closure-externs-check-only.js
-	--externs lib/pkp/tools/jquery-externs.js'
+	--externs lib/sep/tools/closure-externs.js
+	--externs lib/sep/tools/closure-externs-check-only.js
+	--externs lib/sep/tools/jquery-externs.js'
 
 
 ### Command Line Options ###
@@ -67,7 +67,7 @@ shift $((OPTIND-1))
 
 ### Start Processing ###
 echo >&2
-echo "Starting PKP JavaScript builder." >&2
+echo "Starting SEP JavaScript builder." >&2
 echo "Copyright (c) 2010-2016 John Willinsky" >&2
 
 
@@ -112,7 +112,7 @@ COMPILE_FILES=$(sed -n -$EXTENDED_REGEX_FLAG '/<script type="text\/javascript"/ 
 
 # FIXME: For now we only check classes as the other
 # files contain too many errors to be fixed right now.
-LINT_FILES=`echo "$COMPILE_FILES" | egrep -v '^lib/pkp/js/(lib|functions)'`
+LINT_FILES=`echo "$COMPILE_FILES" | egrep -v '^lib/sep/js/(lib|functions)'`
 
 # Create a working directory in the cache
 WORKDIR=`mktemp -dt tmp.XXXXXXXXXX` || { echo "The working directory could not be created\!"; exit 1; }

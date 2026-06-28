@@ -13,7 +13,7 @@
  * @brief PubMed XML export plugin DOM functions
  */
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
 define('PUBMED_DTD_URL', 'http://www.ncbi.nlm.nih.gov:80/entrez/query/static/PubMed.dtd');
 define('PUBMED_DTD_ID', '-//NLM//DTD PubMed 2.0//EN');
@@ -79,7 +79,7 @@ class PubMedExportDom {
 		}
 
 		/* --- Replaces --- */
-		// this creates a blank replaces tag since OJS doesn't contain PMID metadata
+		// this creates a blank replaces tag since CLA doesn't contain PMID metadata
 //		XMLCustomWriter::createChildWithText($doc, $root, 'Replaces', '');
 
 		/* --- ArticleTitle / VernacularTitle --- */
@@ -135,7 +135,7 @@ class PubMedExportDom {
 		// Pubmed will accept two types of article identifier: pii and doi
 		// how this is handled is journal-specific, and will require either
 		// configuration in the plugin, or an update to the core code.
-		// this is also related to DOI-handling within OJS
+		// this is also related to DOI-handling within CLA
 		if ($article->getPubId('publisher-id')) {
 			$articleIdListNode =& XMLCustomWriter::createElement($doc, 'ArticleIdList');
 			XMLCustomWriter::appendChild($root, $articleIdListNode);
@@ -201,7 +201,7 @@ class PubMedExportDom {
 	/**
 	 * Generate the Author node DOM for the specified author.
 	 * @param $doc DOMDocument
-	 * @param $author PKPAuthor
+	 * @param $author SEPAuthor
 	 * @param $article Article
 	 * @param $authorIndex 0-based index of current author
 	 */
@@ -213,7 +213,7 @@ class PubMedExportDom {
 		XMLCustomWriter::createChildWithText($doc, $root, 'LastName', ucfirst($author->getLastName()));
 
 		if ($authorIndex == 0) {
-			// See http://pkp.sfu.ca/bugzilla/show_bug.cgi?id=7774
+			// See http://lumera.sangia.org/bugzilla/show_bug.cgi?id=7774
 			XMLCustomWriter::createChildWithText($doc, $root, 'Affiliation', $author->getAffiliation($article->getLocale()) . '. ' . $author->getEmail(), false);
 		}
 

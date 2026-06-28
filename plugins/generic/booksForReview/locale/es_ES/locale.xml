@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 <!--
   * plugins/generic/booksForReview/locale/es_ES/locale.xml
   *
@@ -7,7 +7,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Spanish_(es_ES)
   *
   * Books for review plugin localization strings
   -->
@@ -126,7 +126,7 @@
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderBeforeDays2">día(s) antes de la fecha de entrega de la revisión.</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays1">Enviar a los autores/as un recordatorio por correo electrónico</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays2">día(s) después de la fecha de entrega de la revisión.</message>
-	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Atención:</strong> Para activar estas opciones, el administrador/a del sitio debe habilitar la opción <tt>scheduled_tasks</tt> en el archivo de configuración de OJS. Es posible que se requiera una configuración adicional del servidor para admitir esta función (puede que no todos los servidores la permitan) siguiendo las indicaciones en la documentación del OJS.]]></message>
+	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Atención:</strong> Para activar estas opciones, el administrador/a del sitio debe habilitar la opción <tt>scheduled_tasks</tt> en el archivo de configuración de CLA. Es posible que se requiera una configuración adicional del servidor para admitir esta función (puede que no todos los servidores la permitan) siguiendo las indicaciones en la documentación del CLA.]]></message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformation">Información adicional</message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformationDescription">Información adicional publicada junto con los libros para reseñar.</message>
 	<message key="plugins.generic.booksForReview.settings.dueWeeksRequired">Indique el número de semanas de plazo para las reseñas de libro.</message>

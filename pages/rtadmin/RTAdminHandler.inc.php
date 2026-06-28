@@ -13,7 +13,7 @@
  * @brief Handle Reading Tools administration requests.
  */
 
-import('classes.rt.ojs.JournalRTAdmin');
+import('classes.rt.cla.JournalRTAdmin');
 import('classes.handler.Handler');
 
 class RTAdminHandler extends Handler {
@@ -97,7 +97,7 @@ class RTAdminHandler extends Handler {
 		if ($version) {
 			// Validate the URLs for a single version
 			$versions = array(&$version);
-			import('lib.pkp.classes.core.ArrayItemIterator');
+			import('lib.sep.classes.core.ArrayItemIterator');
 			$versions = new ArrayItemIterator($versions, 1, 1);
 		} else {
 			// Validate all URLs for this journal
@@ -121,7 +121,7 @@ class RTAdminHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $version = null, $context = null, $search = null) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_OJS_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_READER, LOCALE_COMPONENT_CLA_MANAGER);
 		$templateMgr =& TemplateManager::getManager();
 
 		$pageHierarchy = array(array(Request::url(null, 'user'), 'navigation.user'), array(Request::url(null, 'manager'), 'manager.journalManagement'));

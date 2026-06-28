@@ -172,7 +172,7 @@ input, select, textarea {
 form {
 	@include rhythm();
 }
-form.pkp_form {
+form.sep_form {
 	margin: initial;
 }
 input {
@@ -769,7 +769,7 @@ span.instruct {
 		margin-top: 2em;
 	}
 
-	.pkp_controllers_grid table {
+	.sep_controllers_grid table {
 		@include rhythm();
 		@include inner-table-borders(1px, $grey-light);
 		@include outer-table-borders(1px, $grey-bold);
@@ -804,7 +804,7 @@ td form {
 .composite-ui>.ui-tabs ul.main-tabs a {
 	font-size: 1.25em;
 }
-.pkp_controllers_grid {
+.sep_controllers_grid {
 	h3 {background-color: initial;}
 }
 /* Author Submission Pages */

@@ -1,29 +1,29 @@
 <?php
 /**
- * @file classes/security/authorization/OjsSubmissionAccessPolicy.inc.php
+ * @file classes/security/authorization/CLASubmissionAccessPolicy.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class OjsSubmissionAccessPolicy
+ * @class CLASubmissionAccessPolicy
  * @ingroup security_authorization
  *
- * @brief Class to control access to OJS's submission editing components
+ * @brief Class to control access to CLA's submission editing components
  */
 
 import('classes.security.authorization.internal.JournalPolicy');
-import('lib.pkp.classes.security.authorization.RoleBasedHandlerOperationPolicy');
+import('lib.sep.classes.security.authorization.RoleBasedHandlerOperationPolicy');
 
-class OjsSubmissionAccessPolicy extends JournalPolicy {
+class CLASubmissionAccessPolicy extends JournalPolicy {
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $args array
 	 * @param $roleAssignments array
 	 * @param $submissionParameterName string
 	 */
-	function OjsSubmissionAccessPolicy(&$request, &$args, $roleAssignments, $submissionParameterName = 'articleId') {
+	function CLASubmissionAccessPolicy(&$request, &$args, $roleAssignments, $submissionParameterName = 'articleId') {
 		parent::JournalPolicy($request);
 
 		// Create a "permit overrides" policy set that specifies

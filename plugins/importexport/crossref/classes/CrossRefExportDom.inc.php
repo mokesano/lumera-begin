@@ -128,7 +128,7 @@ class CrossRefExportDom extends DOIExportDom {
 		$journal =& $this->getJournal();
 		$cache =& $this->getCache();
 
-		// Retrieve basic OJS objects.
+		// Retrieve basic CLA objects.
 		$publicationObjects = parent::retrievePublicationObjects($object);
 
 		// Retrieve additional related objects.

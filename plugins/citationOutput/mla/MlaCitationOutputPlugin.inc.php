@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationOutput.mla.PKPMlaCitationOutputPlugin');
+import('lib.sep.plugins.citationOutput.mla.SEPMlaCitationOutputPlugin');
 
-class MlaCitationOutputPlugin extends PKPMlaCitationOutputPlugin {
+class MlaCitationOutputPlugin extends SEPMlaCitationOutputPlugin {
 	/**
 	 * Constructor
 	 */
 	function MlaCitationOutputPlugin() {
-		parent::PKPMlaCitationOutputPlugin();
+		parent::SEPMlaCitationOutputPlugin();
 	}
 }
 

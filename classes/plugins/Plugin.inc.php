@@ -14,21 +14,21 @@
  */
 
 
-import('lib.pkp.classes.plugins.PKPPlugin');
+import('lib.sep.classes.plugins.SEPPlugin');
 
-class Plugin extends PKPPlugin {
+class Plugin extends SEPPlugin {
 	/**
 	 * Constructor
 	 */
 	function Plugin() {
-		parent::PKPPlugin();
+		parent::SEPPlugin();
 	}
 
 	/**
 	 * Backwards compatible convenience version of
 	 * the generic getContextSpecificSetting() method.
 	 *
-	 * @see PKPPlugin::getContextSpecificSetting()
+	 * @see SEPPlugin::getContextSpecificSetting()
 	 *
 	 * @param $journalId
 	 * @param $name
@@ -48,7 +48,7 @@ class Plugin extends PKPPlugin {
 	 * Backwards compatible convenience version of
 	 * the generic updateContextSpecificSetting() method.
 	 *
-	 * @see PKPPlugin::updateContextSpecificSetting()
+	 * @see SEPPlugin::updateContextSpecificSetting()
 	 *
 	 * @param $journalId int
 	 * @param $name string The name of the setting
@@ -77,7 +77,7 @@ class Plugin extends PKPPlugin {
 	 *
 	 * New plug-ins should override getContextSpecificPluginSettingsFile()
 	 *
-	 * @see PKPPlugin::getContextSpecificPluginSettingsFile()
+	 * @see SEPPlugin::getContextSpecificPluginSettingsFile()
 	 *
 	 * @return string
 	 */

@@ -15,9 +15,9 @@
 
 import('classes.plugins.ImportExportPlugin');
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
-define('NATIVE_DTD_ID', '-//PKP//OJS Articles and Issues XML//EN');
+define('NATIVE_DTD_ID', '-//SEP//CLA Articles and Issues XML//EN');
 
 class NativeImportExportPlugin extends ImportExportPlugin {
 	/**
@@ -34,7 +34,7 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 	function getDTDUrl() {
 		$versionDao =& DAORegistry::getDAO('VersionDAO');
 		$currentVersion =& $versionDao->getCurrentVersion();
-		return 'http://pkp.sfu.ca/ojs/dtds/' . urlencode($currentVersion->getMajor() . '.' . $currentVersion->getMinor() . '.' . $currentVersion->getRevision()) . '/native.dtd';
+		return 'http://lumera.sangia.org/cla/dtds/' . urlencode($currentVersion->getMajor() . '.' . $currentVersion->getMinor() . '.' . $currentVersion->getRevision()) . '/native.dtd';
 	}
 
 	/**
@@ -106,7 +106,7 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 			case 'issues':
 				// Display a list of issues for export
 				$this->setBreadcrumbs(array(), true);
-				AppLocale::requireComponents(LOCALE_COMPONENT_OJS_EDITOR);
+				AppLocale::requireComponents(LOCALE_COMPONENT_CLA_EDITOR);
 				$issueDao =& DAORegistry::getDAO('IssueDAO');
 				$issues =& $issueDao->getIssues($journal->getId(), Handler::getRangeInfo('issues'));
 
@@ -121,13 +121,13 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 				$articleIds = $publishedArticleDao->getPublishedArticleIdsAlphabetizedByJournal($journal->getId(), false);
 				$totalArticles = count($articleIds);
 				if ($rangeInfo->isValid()) $articleIds = array_slice($articleIds, $rangeInfo->getCount() * ($rangeInfo->getPage()-1), $rangeInfo->getCount());
-				import('lib.pkp.classes.core.VirtualArrayIterator');
+				import('lib.sep.classes.core.VirtualArrayIterator');
 				$iterator = new VirtualArrayIterator(ArticleSearch::formatResults($articleIds), $totalArticles, $rangeInfo->getPage(), $rangeInfo->getCount());
 				$templateMgr->assign_by_ref('articles', $iterator);
 				$templateMgr->display($this->getTemplatePath() . 'articles.tpl');
 				break;
 			case 'import':
-				AppLocale::requireComponents(LOCALE_COMPONENT_OJS_EDITOR, LOCALE_COMPONENT_OJS_AUTHOR);
+				AppLocale::requireComponents(LOCALE_COMPONENT_CLA_EDITOR, LOCALE_COMPONENT_CLA_AUTHOR);
 				import('classes.file.TemporaryFileManager');
 				$issueDao =& DAORegistry::getDAO('IssueDAO');
 				$sectionDao =& DAORegistry::getDAO('SectionDAO');

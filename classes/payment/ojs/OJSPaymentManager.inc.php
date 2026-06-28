@@ -1,22 +1,22 @@
 <?php
 
 /**
- * @file classes/payment/ojs/OJSPaymentManager.inc.php
+ * @file classes/payment/cla/CLAPaymentManager.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class OJSPaymentManager
+ * @class CLAPaymentManager
  * @ingroup payment
- * @see OJSQueuedPayment
+ * @see CLAQueuedPayment
  *
  * @brief Provides payment management functions.
  *
  */
 
-import('classes.payment.ojs.OJSQueuedPayment');
-import('lib.pkp.classes.payment.PaymentManager');
+import('classes.payment.cla.CLAQueuedPayment');
+import('lib.sep.classes.payment.PaymentManager');
 
 define('PAYMENT_TYPE_MEMBERSHIP',		0x000000001);
 define('PAYMENT_TYPE_RENEW_SUBSCRIPTION',	0x000000002);
@@ -29,12 +29,12 @@ define('PAYMENT_TYPE_PURCHASE_SUBSCRIPTION',	0x000000008);
 define('PAYMENT_TYPE_PURCHASE_ISSUE',		0x000000009);
 define('PAYMENT_TYPE_GIFT',			0x000000010);
 
-class OJSPaymentManager extends PaymentManager {
+class CLAPaymentManager extends PaymentManager {
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
-	function OJSPaymentManager(&$request) {
+	function CLAPaymentManager(&$request) {
 		parent::PaymentManager($request);
 	}
 
@@ -60,7 +60,7 @@ class OJSPaymentManager extends PaymentManager {
 	function &createQueuedPayment($journalId, $type, $userId, $assocId, $amount, $currencyCode = null) {
 		$journalSettingsDao =& DAORegistry::getDAO('JournalSettingsDAO');
 		if (is_null($currencyCode)) $currencyCode = $journalSettingsDao->getSetting($journalId, 'currency');
-		$payment = new OJSQueuedPayment($amount, $currencyCode, $userId, $assocId);
+		$payment = new CLAQueuedPayment($amount, $currencyCode, $userId, $assocId);
 		$payment->setJournalId($journalId);
 		$payment->setType($type);
 
@@ -108,11 +108,11 @@ class OJSPaymentManager extends PaymentManager {
 	 * Create a completed payment from a queued payment.
 	 * @param $queuedPayment QueuedPayment Payment to complete.
 	 * @param $payMethod string Name of payment plugin used.
-	 * @return OJSCompletedPayment
+	 * @return CLACompletedPayment
 	 */
 	function &createCompletedPayment($queuedPayment, $payMethod) {
-		import('classes.payment.ojs.OJSCompletedPayment');
-		$payment = new OJSCompletedPayment();
+		import('classes.payment.cla.CLACompletedPayment');
+		$payment = new CLACompletedPayment();
 		$payment->setJournalId($queuedPayment->getJournalId());
 		$payment->setType($queuedPayment->getType());
 		$payment->setAmount($queuedPayment->getAmount());
@@ -478,7 +478,7 @@ class OJSPaymentManager extends PaymentManager {
 				// Invalid payment type
 				assert(false);
 		}
-		$completedPaymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+		$completedPaymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 		$completedPayment =& $this->createCompletedPayment($queuedPayment, $payMethodPluginName);
 		$completedPaymentDao->insertCompletedPayment($completedPayment);
 

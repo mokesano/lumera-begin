@@ -12,7 +12,7 @@
  * @brief Class to validate that a comment exists (by id) and that the current user has access
  */
 
-import('lib.pkp.classes.handler.validation.HandlerValidator');
+import('lib.sep.classes.handler.validation.HandlerValidator');
 
 class HandlerValidatorSubmissionComment extends HandlerValidator {
 	var $commentId;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/sk_SK/locale.xml
@@ -330,7 +330,7 @@
 	<message key="about.subscriptionsContact">Kontakt na predplatné</message>
 	<message key="about.journalSponsorship">Finančná podpora časopisu</message>
 	<message key="about.aboutThisPublishingSystem">O tomto publikačnom systéme</message>
-	<message key="about.aboutOJSJournal"><![CDATA[Tento časopis používa Open Journal Systems {$ojsVersion}, teda open source software pre spravovanie a publikjovanie časopisov, ktorý bol vyvinutý, je podporovaný a voľne šírený v rámci projektu <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> pod licenciou GNU General Public License.]]></message>
+	<message key="about.aboutCLAJournal"><![CDATA[Tento časopis používa Code Lumera Editorial {$claVersion}, teda open source software pre spravovanie a publikjovanie časopisov, ktorý bol vyvinutý, je podporovaný a voľne šírený v rámci projektu <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> pod licenciou GNU General Public License.]]></message>
 
 	<!-- Announcement -->
 
@@ -362,8 +362,8 @@
 
 	<message key="rt.metadata.dublinCore.primaryAuthor">Tvorca</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">Meno autora, pracovisko, štát</message>
-	<message key="rt.metadata.pkp.peerReviewed">Recenzovaný článok</message>
+	<message key="rt.metadata.sep.primaryAuthor">Meno autora, pracovisko, štát</message>
+	<message key="rt.metadata.sep.peerReviewed">Recenzovaný článok</message>
 
 
 	<!-- Notification Types -->

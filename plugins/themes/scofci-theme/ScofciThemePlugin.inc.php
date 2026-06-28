@@ -3,7 +3,7 @@
 /**
  * @file plugins/themes/scofci/ScofciThemePlugin.inc.php
  *
- * Copyright (c) scofci.org | Open Journal Systems Premium Themes
+ * Copyright (c) scofci.org | Code Lumera Editorial Premium Themes
  * Studi Center of Coastal and Isle Indonesia
  *
  * Bacground Grid credit by toptal.com

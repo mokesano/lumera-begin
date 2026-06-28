@@ -29,7 +29,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * View peer review comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewPeerReviewComments($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -44,7 +44,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Post peer review comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function postPeerReviewComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -64,7 +64,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * View editor decision comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewEditorDecisionComments($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -78,7 +78,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Post peer review comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function postEditorDecisionComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -97,7 +97,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * View copyedit comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewCopyeditComments($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -111,7 +111,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Post copyedit comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function postCopyeditComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -130,7 +130,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * View layout comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewLayoutComments($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -144,7 +144,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Post layout comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function postLayoutComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -163,7 +163,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * View proofread comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewProofreadComments($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -177,7 +177,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Post proofread comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function postProofreadComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -196,7 +196,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Email an editor decision comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function emailEditorDecisionComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -215,7 +215,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Blind CC the editor decision email to reviewers.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function bccEditorDecisionCommentToReviewers($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -230,7 +230,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Edit comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editComment($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -253,7 +253,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Save comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -296,7 +296,7 @@ class SubmissionCommentsHandler extends SectionEditorHandler {
 	/**
 	 * Delete comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteComment($args, $request) {
 		$articleId = (int) array_shift($args);

@@ -60,7 +60,7 @@ define('PROCESS_MAX_PARALLELISM', 20);
 define('PROCESS_MAX_KEY_VALID', 10);
 
 
-import('lib.pkp.classes.process.Process');
+import('lib.sep.classes.process.Process');
 
 class ProcessDAO extends DAO {
 	/**
@@ -275,7 +275,7 @@ class ProcessDAO extends DAO {
 			$processRequest =
 				'GET '.$urlParts['path'].'?authToken='.urlencode($oneTimeKey)." HTTP/1.1\r\n"
 				.'Host: '.$urlParts['host']."\r\n"
-				."User-Agent: OJS\r\n"
+				."User-Agent: CLA\r\n"
 				."Connection: Close\r\n\r\n";
 			stream_set_blocking($stream, 0);
 			fwrite($stream, $processRequest);

@@ -1,24 +1,24 @@
 <?php
 
 /**
- * @file classes/mail/PKPMailTemplate.inc.php
+ * @file classes/mail/SEPMailTemplate.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPMailTemplate
+ * @class SEPMailTemplate
  * @ingroup mail
  *
  * @brief Subclass of Mail for mailing a template email.
  */
 
 
-import('lib.pkp.classes.mail.Mail');
+import('lib.sep.classes.mail.Mail');
 
 define('MAIL_ERROR_INVALID_EMAIL', 0x000001);
 
-class PKPMailTemplate extends Mail {
+class SEPMailTemplate extends Mail {
 
 	/** @var $emailKey string Key of the email template we are using */
 	var $emailKey;
@@ -55,7 +55,7 @@ class PKPMailTemplate extends Mail {
 	 * @param $enableAttachments boolean optional Whether or not to enable article attachments in the template
 	 * @param $includeSignature boolean optional
 	 */
-	function PKPMailTemplate($emailKey = null, $locale = null, $enableAttachments = null, $includeSignature = true) {
+	function SEPMailTemplate($emailKey = null, $locale = null, $enableAttachments = null, $includeSignature = true) {
 		parent::Mail();
 		$this->emailKey = isset($emailKey) ? $emailKey : null;
 
@@ -167,7 +167,7 @@ class PKPMailTemplate extends Mail {
 	 * @return void
 	 */
 	function displayEditForm($formActionUrl, $hiddenFormParams = null, $alternateTemplate = null, $additionalParameters = array()) {
-		import('lib.pkp.classes.form.Form');
+		import('lib.sep.classes.form.Form');
 		$form = new Form($alternateTemplate!=null?$alternateTemplate:'email/email.tpl');
 
 		$form->setData('formActionUrl', $formActionUrl);

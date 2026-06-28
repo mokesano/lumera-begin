@@ -113,7 +113,7 @@ class O4DOIExportDom extends DOIExportDom {
 	}
 
 	/**
-	 * The OJS object type represented by this DOM
+	 * The CLA object type represented by this DOM
 	 * @return string
 	 */
 	function _getObjectType() {
@@ -270,12 +270,12 @@ class O4DOIExportDom extends DOIExportDom {
 	}
 
 	/**
-	 * Retrieve all the OJS publication objects containing the
+	 * Retrieve all the CLA publication objects containing the
 	 * data required to generate the given O4DOI schema.
 	 *
 	 * @param $object Issue|PublishedArticle|ArticleGalley The object to export.
 	 *
-	 * @return array An array with the required OJS objects.
+	 * @return array An array with the required CLA objects.
 	 */
 	function &retrievePublicationObjects(&$object) {
 		// Initialize local variables.
@@ -283,7 +283,7 @@ class O4DOIExportDom extends DOIExportDom {
 		$journal =& $this->getJournal();
 		$cache =& $this->getCache();
 
-		// Retrieve basic OJS objects.
+		// Retrieve basic CLA objects.
 		$publicationObjects = parent::retrievePublicationObjects($object);
 
 		// Retrieve additional related objects.
@@ -386,7 +386,7 @@ class O4DOIExportDom extends DOIExportDom {
 		XMLCustomWriter::createChildWithText($this->getDoc(), $headerElement, 'SentDate', date('YmdHi'));
 
 		// Message note
-		$app =& PKPApplication::getApplication();
+		$app =& SEPApplication::getApplication();
 		$name = $app->getName();
 		$version = $app->getCurrentVersion();
 		$versionString = $version->getVersionString();
@@ -794,7 +794,7 @@ class O4DOIExportDom extends DOIExportDom {
 			XMLCustomWriter::createChildWithText($this->getDoc(), $serialVersionElement, 'EpubFormat', O4DOI_EPUB_FORMAT_HTML);
 
 			// ePublication Format Description
-			XMLCustomWriter::createChildWithText($this->getDoc(), $serialVersionElement, 'EpubFormatDescription', 'Open Journal Systems (OJS)');
+			XMLCustomWriter::createChildWithText($this->getDoc(), $serialVersionElement, 'EpubFormatDescription', 'Code Lumera Editorial (CLA)');
 		}
 
 		return $serialVersionElement;
@@ -896,7 +896,7 @@ class O4DOIExportDom extends DOIExportDom {
 	/**
 	 * Create an extent element.
 	 *
-	 * @param $file PKPFile
+	 * @param $file SEPFile
 	 *
 	 * @return XMLNode|DOMImplementation
 	 */

@@ -14,7 +14,7 @@
  * @brief Operations for retrieving and modifying Category objects
  */
 
-import('lib.pkp.classes.controlledVocab.ControlledVocabDAO');
+import('lib.sep.classes.controlledVocab.ControlledVocabDAO');
 
 define('CATEGORY_SYMBOLIC', 'category');
 

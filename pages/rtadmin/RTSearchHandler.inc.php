@@ -35,7 +35,7 @@ class RTSearchHandler extends RTAdminHandler {
 		$contextId = isset($args[1])?$args[1]:0;
 		$context =& $rtDao->getContext($contextId);
 
-		import('classes.rt.ojs.form.SearchForm');
+		import('classes.rt.cla.form.SearchForm');
 		$searchForm = new SearchForm(null, $contextId, $versionId);
 
 		if (isset($args[2]) && $args[2]=='save') {
@@ -67,12 +67,12 @@ class RTSearchHandler extends RTAdminHandler {
 
 			$templateMgr =& TemplateManager::getManager();
 
-			$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-			$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+			$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+			$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 
 			$templateMgr->assign_by_ref('version', $version);
 			$templateMgr->assign_by_ref('context', $context);
-			import('lib.pkp.classes.core.ArrayItemIterator');
+			import('lib.sep.classes.core.ArrayItemIterator');
 			$templateMgr->assign_by_ref('searches', new ArrayItemIterator($context->getSearches(), $rangeInfo->getPage(), $rangeInfo->getCount()));
 
 			$templateMgr->assign('helpTopicId', 'journal.managementPages.readingTools.contexts');
@@ -95,7 +95,7 @@ class RTSearchHandler extends RTAdminHandler {
 		$search =& $rtDao->getSearch($searchId);
 
 		if (isset($version) && isset($context) && isset($search) && $context->getVersionId() == $version->getVersionId() && $search->getContextId() == $context->getContextId()) {
-			import('classes.rt.ojs.form.SearchForm');
+			import('classes.rt.cla.form.SearchForm');
 			$this->setupTemplate(true, $version, $context, $search);
 			$searchForm = new SearchForm($searchId, $contextId, $versionId);
 			$searchForm->initData();
@@ -140,7 +140,7 @@ class RTSearchHandler extends RTAdminHandler {
 		$search =& $rtDao->getSearch($searchId);
 
 		if (isset($version) && isset($context) && isset($search) && $context->getVersionId() == $version->getVersionId() && $search->getContextId() == $context->getContextId()) {
-			import('classes.rt.ojs.form.SearchForm');
+			import('classes.rt.cla.form.SearchForm');
 			$searchForm = new SearchForm($searchId, $contextId, $versionId);
 			$searchForm->readInputData();
 			$searchForm->execute();

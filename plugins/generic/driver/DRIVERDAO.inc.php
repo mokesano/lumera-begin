@@ -13,7 +13,7 @@
  * @brief DAO operations for DRIVER.
  */
 
-import('classes.oai.ojs.OAIDAO');
+import('classes.oai.cla.OAIDAO');
 
 
 class DRIVERDAO extends OAIDAO {

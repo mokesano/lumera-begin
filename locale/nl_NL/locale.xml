@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/nl_NL/locale.xml
@@ -35,7 +35,7 @@
 	-->
 
 	<!-- Common Messages -->
-	<message key="common.openJournalSystems">Open Journal Systems</message>
+	<message key="common.openJournalSystems">Code Lumera Editorial</message>
 	<message key="common.confirmComplete">Weet u zeker dat u deze taak als voltooid wilt markeren? U kunt dan geen veranderingen meer aanbrengen.</message>
 	<message key="common.payment">Betaling</message>
 	<message key="common.payments">Betalingen</message>
@@ -257,24 +257,24 @@
 
 	<!-- Site Administration -->
 
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Als u de inhoud van de tijdschriften op deze site geïndexeerd wilt hebben in een wereldwijd netwerk van onderzoeksdatabases, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registreer</a> dan de url van uw site bij de Public Knowledge Project metadata <a href="http://pkp.sfu.ca/harvester/" target="_blank">harvester</a>. Die verzamelt de metadata van de geïndexeerde items van dit tijdschrift, waardoor accuraat en collectief zoeken mogelijk wordt binnen de sites die het <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a> gebruiken.
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Als u de inhoud van de tijdschriften op deze site geïndexeerd wilt hebben in een wereldwijd netwerk van onderzoeksdatabases, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">registreer</a> dan de url van uw site bij de Sangia Editorial Project metadata <a href="http://lumera.sangia.org/harvester/" target="_blank">harvester</a>. Die verzamelt de metadata van de geïndexeerde items van dit tijdschrift, waardoor accuraat en collectief zoeken mogelijk wordt binnen de sites die het <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a> gebruiken.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Klik hier</a> en geef <span class="highlight">{$siteUrl}</span> op bij <b>Site URL</b>, en <span class="highlight">{$oaiUrl}</span> bij <b>Base URL for OAI Archive</b>.
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Klik hier</a> en geef <span class="highlight">{$siteUrl}</span> op bij <b>Site URL</b>, en <span class="highlight">{$oaiUrl}</span> bij <b>Base URL for OAI Archive</b>.
 <br /><br />
-Merk op dat de OAI interface voor deze site uitgeschakeld kan worden door de configuratie van het OJS systeem te wijzigen. In toekomstige versies van het OJS systeem zal het mogelijk zijn de OAI interface voor afzonderlijke tijdschriften binnen de site aan of uit te zetten.]]></message>
+Merk op dat de OAI interface voor deze site uitgeschakeld kan worden door de configuratie van het CLA systeem te wijzigen. In toekomstige versies van het CLA systeem zal het mogelijk zijn de OAI interface voor afzonderlijke tijdschriften binnen de site aan of uit te zetten.]]></message>
 
 
 	<!-- Languages -->
-	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Het binnenhalen van taalbestanden van de Public Knowledge Project website is momenteel niet mogelijk omdat:</p>
+	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Het binnenhalen van taalbestanden van de Sangia Editorial Project website is momenteel niet mogelijk omdat:</p>
 	<ul>
 		<li>Uw server het GNU "tar" gereedschap niet heeft of het gebruik ervan niet toestaat.</li>
-		<li>OJS het taalbestandenregister niet kan aanpassen (meestal  "registry/locales.xml").</li>
+		<li>CLA het taalbestandenregister niet kan aanpassen (meestal  "registry/locales.xml").</li>
 	</ul>
-<p>Taalbestanden kunnen handmatig binnengehaald worden van de <a href="http://pkp.sfu.ca">PKP website</a>.</p>]]></message>
+<p>Taalbestanden kunnen handmatig binnengehaald worden van de <a href="http://sep.sfu.ca">SEP website</a>.</p>]]></message>
 
-	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>Een standaard authenticatiesysteem anders dan OJS heeft de volgende effecten:</p>
+	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>Een standaard authenticatiesysteem anders dan CLA heeft de volgende effecten:</p>
 <ul>
-	<li>Wanneer een gebruiker een nieuw account probeert te registreren  met een gebruikersnaam die al bestaat in het externe systeem (maar niet in OJS), zal de registratie alleen lukken als het wachtwoord geldig is voor dat account.</li>
+	<li>Wanneer een gebruiker een nieuw account probeert te registreren  met een gebruikersnaam die al bestaat in het externe systeem (maar niet in CLA), zal de registratie alleen lukken als het wachtwoord geldig is voor dat account.</li>
 </ul>]]></message>
 
 	<!-- System Information -->
@@ -288,16 +288,16 @@ Merk op dat de OAI interface voor deze site uitgeschakeld kan worden door de con
 	<message key="subscriptionManager.subscriptionManagement">Abonneebeheer</message>
 
 	<!-- General plugin information -->
-	<message key="plugins.categories.generic.description">Generieke plugins worden gebruikt om Open Journal Systems uit te breiden op manieren die niet ondersteund worden in de andere plugin-categorieën.</message>
-	<message key="plugins.categories.auth.description">Authenticatie plugins stellen Open Journal Systems in staat om authenticatie van gebruikers uit te besteden aan andere systemen zoals LDAP servers.</message>
+	<message key="plugins.categories.generic.description">Generieke plugins worden gebruikt om Code Lumera Editorial uit te breiden op manieren die niet ondersteund worden in de andere plugin-categorieën.</message>
+	<message key="plugins.categories.auth.description">Authenticatie plugins stellen Code Lumera Editorial in staat om authenticatie van gebruikers uit te besteden aan andere systemen zoals LDAP servers.</message>
 
 
 
 	<message key="plugins.categories.citationFormats.description">Citatieformaat plugins leveren de gebruikers verschillende formaten voor arikelcitaties.</message>
 
-	<message key="manager.setup.lockssDescription"><![CDATA[Open Journal Systems ondersteunt het <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) systeem om een permanent archief van het tijdschrift te verzekeren. LOCKSS is open source software, ontwikkeld door Stanford University Library, die bibliotheken in staat stelt om geselecteerde internet-tijdschriften te archiveren door die tijdschriften regelmatig  te onderzoeken op nieuwe inhoud en die dan te archiveren. Ieder archief wordt continue gevalideerd tegen archieven in andere bibliotheken. Verloren of beschadigd materiaal wordt uit de andere archieven hersteld.
+	<message key="manager.setup.lockssDescription"><![CDATA[Code Lumera Editorial ondersteunt het <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) systeem om een permanent archief van het tijdschrift te verzekeren. LOCKSS is open source software, ontwikkeld door Stanford University Library, die bibliotheken in staat stelt om geselecteerde internet-tijdschriften te archiveren door die tijdschriften regelmatig  te onderzoeken op nieuwe inhoud en die dan te archiveren. Ieder archief wordt continue gevalideerd tegen archieven in andere bibliotheken. Verloren of beschadigd materiaal wordt uit de andere archieven hersteld.
 <br /><br />
-Het inrichten van LOCKSS ondersteuning voor Open Journal Systems hoeft pas te gebeuren als publicatie plaatsvindt. Volg dan deze twee stappen:]]></message>
+Het inrichten van LOCKSS ondersteuning voor Code Lumera Editorial hoeft pas te gebeuren als publicatie plaatsvindt. Volg dan deze twee stappen:]]></message>
 
 	<!-- Setup Step 3 -->
 	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Voorgestelde Creative Commons auteursrecht verklaringen</h3>
@@ -318,11 +318,11 @@ Auteurs die publiceren bij dit tijdschrift onderschrijven de volgende voorwaarde
 </ol>]]></message>
 	<message key="manager.setup.subjectClassificationDescription"><![CDATA[[The tijdschrift gebruikt een onderwerpsclassificatie die beschikbaar is op het Internet.<br />
 Naam van het classificatiesysteem]]></message>
-	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Om de inhoud van het tijdschrift geïndexeerd te krijgen in een wereldwijd netwerk van onderzoeksdatabases, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registreert</a> u de URL van uw tijdschrift bij de Public Knowledge Project metadata <a href="http://pkp.sfu.ca/harvester/" target="_blank">harvester</a>. Dit systeem verzamelt metadata van ieder geïndexeerd item in het tijdschrift, waardoor het mogelijk is om accuraat te zoeken binnen de gegevens van onderzoeksinstellingen die gebruik maken van het <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
+	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Om de inhoud van het tijdschrift geïndexeerd te krijgen in een wereldwijd netwerk van onderzoeksdatabases, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">registreert</a> u de URL van uw tijdschrift bij de Sangia Editorial Project metadata <a href="http://lumera.sangia.org/harvester/" target="_blank">harvester</a>. Dit systeem verzamelt metadata van ieder geïndexeerd item in het tijdschrift, waardoor het mogelijk is om accuraat te zoeken binnen de gegevens van onderzoeksinstellingen die gebruik maken van het <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
 <br /><br />
-Merk op dat het tijdschrift automatisch geïndexeerd wordt als de sitebeheerder de site geregistreerd heeft bij de PKP Harvester. Het tijdschrift hoeft in dat geval niet apart geregistreerd te worden.
+Merk op dat het tijdschrift automatisch geïndexeerd wordt als de sitebeheerder de site geregistreerd heeft bij de SEP Harvester. Het tijdschrift hoeft in dat geval niet apart geregistreerd te worden.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Klik hier</a> en geef <span class="highlight">{$siteUrl}</span> bij <b>Site URL</b> en <span class="highlight">{$oaiUrl}</span> bij <b>Base URL for OAI Archive</b>.]]></message>
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Klik hier</a> en geef <span class="highlight">{$siteUrl}</span> bij <b>Site URL</b> en <span class="highlight">{$oaiUrl}</span> bij <b>Base URL for OAI Archive</b>.]]></message>
 
 	<!-- Setup Step 4 -->
 	<message key="manager.setup.basicEditorialStepsDescription"><![CDATA[Stappen: Wachtrij met inzendingen > Review van de inzending > Redactie van de inzending > Inhoudsopgave.<br /><br />
@@ -634,14 +634,14 @@ Actief is het aantal reviews die momenteel in overweging of behandeling zijn.]]>
 	<message key="about.memberships">Lidmaatschappen</message>
 	<message key="about.journalSponsorship">Sponsors</message>
 	<message key="about.aboutThisPublishingSystem">Over dit publicatiesysteem</message>
-	<message key="about.aboutOJSJournal"><![CDATA[Dit tijdschrift gebruikt Open Journal Systems {$ojsVersion}, open source software voor het beheren en publiceren van een tijdschrift, ondersteund en gratis geleverd door het <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> onder de GNU General Public License.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[Deze site gebruikt Open Journal Systems {$ojsVersion}, open source software voor het beheren en publiceren van een tijdschrift, ondersteund en gratis geleverd door het <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> onder de GNU General Public License.]]></message>
+	<message key="about.aboutCLAJournal"><![CDATA[Dit tijdschrift gebruikt Code Lumera Editorial {$claVersion}, open source software voor het beheren en publiceren van een tijdschrift, ondersteund en gratis geleverd door het <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> onder de GNU General Public License.]]></message>
+	<message key="about.aboutCLASite"><![CDATA[Deze site gebruikt Code Lumera Editorial {$claVersion}, open source software voor het beheren en publiceren van een tijdschrift, ondersteund en gratis geleverd door het <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> onder de GNU General Public License.]]></message>
 
 	<!-- Announcement -->
 
 	<!-- Help -->
-	<message key="help.ojsHelp">Open Journal Systems Help</message>
-	<message key="help.ojsHelpAbbrev">OJS Help</message>
+	<message key="help.claHelp">Code Lumera Editorial Help</message>
+	<message key="help.claHelpAbbrev">CLA Help</message>
 
 	<!-- Donations -->
 	<message key="donations.thankYou">Dank u</message>
@@ -682,15 +682,15 @@ Actief is het aantal reviews die momenteel in overweging of behandeling zijn.]]>
 	<message key="payment.subscription.expires">Verloopt</message>
 
 	<!-- Installer -->
-	<message key="installer.ojsInstallation">OJS Installatie</message>
-	<message key="installer.ojsUpgrade">OJS Upgrade</message>
-	<message key="installer.installationInstructions"><![CDATA[<h4>OJS Versie {$version}</h4>
+	<message key="installer.claInstallation">CLA Installatie</message>
+	<message key="installer.claUpgrade">CLA Upgrade</message>
+	<message key="installer.installationInstructions"><![CDATA[<h4>CLA Versie {$version}</h4>
 
-<p>Dank u voor het downloaden van <strong>Open Journal Systems</strong> van het Public Knowledge Project. Lees voor u verdergaat eerst het <a href="{$baseUrl}/docs/README">README</a> bestand van de software. Voor meer informatie over het Public Knowledge Project en zijn software projecten, zie de <a href="http://pkp.sfu.ca/" target="_blank">PKP web site</a>. Als u problemen wilt melden of technische vragen wilt stellen over Open Journal Systems, zie het <a href="http://forum.pkp.sfu.ca">support forum</a> of bezoek PKP's online <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">probleemrapportage systeem</a>. Hoewel het support forum de voorkeur heeft kun u het team ook e-mailen op <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>Dank u voor het downloaden van <strong>Code Lumera Editorial</strong> van het Sangia Editorial Project. Lees voor u verdergaat eerst het <a href="{$baseUrl}/docs/README">README</a> bestand van de software. Voor meer informatie over het Sangia Editorial Project en zijn software projecten, zie de <a href="http://lumera.sangia.org/" target="_blank">SEP web site</a>. Als u problemen wilt melden of technische vragen wilt stellen over Code Lumera Editorial, zie het <a href="http://forum.sep.sfu.ca">support forum</a> of bezoek SEP's online <a href="https://github.com/sep/sep-lib#issues" target="_blank">probleemrapportage systeem</a>. Hoewel het support forum de voorkeur heeft kun u het team ook e-mailen op <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
 
 <h4>Upgrade</h4>
 
-<p>Wanneer u een upgrade doet van een bestaande installatie van OJS 2.x, <a href="{$upgradeUrl}">klik hier</a> om verder te gaan.</p>
+<p>Wanneer u een upgrade doet van een bestaande installatie van CLA 2.x, <a href="{$upgradeUrl}">klik hier</a> om verder te gaan.</p>
 
 <h4>Systeemeisen</h4>
 
@@ -701,13 +701,13 @@ Actief is het aantal reviews die momenteel in overweging of behandeling zijn.]]>
 	<li>Operating system: Ieder OS dat de bovengenoemde software onderstent, inclusief <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.oracle.com/sun/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, <a href="http://www.microsoft.com/">Windows</a></li>
 </ul>
 
-<p>Aangezien PKP niet de middelen heeft om iedere combinatie van softwareversies en platforms te testen, impliceert dit geen garanties voor correcte werking of ondersteuning.</p>
+<p>Aangezien SEP niet de middelen heeft om iedere combinatie van softwareversies en platforms te testen, impliceert dit geen garanties voor correcte werking of ondersteuning.</p>
 
-<p>Deze instellingen kunnen na installatie gewijzigd worden door het bestand <tt>config.inc.php</tt> in de  OJS map aan te passen of met de sitebeheer web interface.</p>
+<p>Deze instellingen kunnen na installatie gewijzigd worden door het bestand <tt>config.inc.php</tt> in de  CLA map aan te passen of met de sitebeheer web interface.</p>
 
 <h4>Ondersteunde database systemen</h4>
 
-<p>OJS is momenteel alleen getest met MySQL en PostgreSQL, hoewel andere database management systemen die ondersteund worden door <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> kunnen werken (geheel of gedeeltelijk). Compatibiliteistrappporen en/of aanpassingen in de code voor alernatieve DBMS-en kunnen naar het OJS team gestuurd worden.</p>
+<p>CLA is momenteel alleen getest met MySQL en PostgreSQL, hoewel andere database management systemen die ondersteund worden door <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> kunnen werken (geheel of gedeeltelijk). Compatibiliteistrappporen en/of aanpassingen in de code voor alernatieve DBMS-en kunnen naar het CLA team gestuurd worden.</p>
 
 <h4>Pre-Installatie Stappen</h4>
 
@@ -725,28 +725,28 @@ Actief is het aantal reviews die momenteel in overweging of behandeling zijn.]]>
 
 <h4>Handmatige installatie</h4>
 
-<p>Kies <strong>Handmatige installatie</strong> om de  SQL commando's te tonen voor het aanmaken van het OJS database schema en de initiële gegevens zodat de database installatie met de hand uitgevoerd kan worden. Deze optie is handig voor het localiseren van installatieproblemen, in het bijzonder op niet-ondersteunde platforms. Merk op dat deze installatie niet probeert om de database of tabellen aan te maken, hoewel het configuratiebestand met de opgegeven database instellingen wel wordt weggeschreven.</p>]]></message>
-	<message key="installer.upgradeInstructions"><![CDATA[<h4>OJS Versie {$version}</h4>
+<p>Kies <strong>Handmatige installatie</strong> om de  SQL commando's te tonen voor het aanmaken van het CLA database schema en de initiële gegevens zodat de database installatie met de hand uitgevoerd kan worden. Deze optie is handig voor het localiseren van installatieproblemen, in het bijzonder op niet-ondersteunde platforms. Merk op dat deze installatie niet probeert om de database of tabellen aan te maken, hoewel het configuratiebestand met de opgegeven database instellingen wel wordt weggeschreven.</p>]]></message>
+	<message key="installer.upgradeInstructions"><![CDATA[<h4>CLA Versie {$version}</h4>
 
-<p>Dank u voor het downloaden van  Public Knowledge Project's <strong>Open Journal Systems</strong>. Lees voor u verdergaat de <a href="{$baseUrl}/docs/README">README</a> en <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> bestanden bij deze software. Bezoek voor meer informatie over het Public Knowledge Project en zijn software projecten de <a href="http://pkp.sfu.ca/" target="_blank">PKP web site</a>. Voor het melden van fouten  en het verkrijgen van technische ondersteuning voor Open Journal Systems kunt u terecht op het <a href="http://forum.pkp.sfu.ca">support forum</a> of bezoek PKP's online <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">fout rapportage systeem</a>. Hoewel het forum de voorkeur heeft kunt u het team ook e-mailen op <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
-<p>Het is <strong>sterk aanbevolen</strong> dat u een backup maakt van uw databank, bestanden-map en OJS installatiemap voor u verder gaat.</p>
+<p>Dank u voor het downloaden van  Sangia Editorial Project's <strong>Code Lumera Editorial</strong>. Lees voor u verdergaat de <a href="{$baseUrl}/docs/README">README</a> en <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> bestanden bij deze software. Bezoek voor meer informatie over het Sangia Editorial Project en zijn software projecten de <a href="http://lumera.sangia.org/" target="_blank">SEP web site</a>. Voor het melden van fouten  en het verkrijgen van technische ondersteuning voor Code Lumera Editorial kunt u terecht op het <a href="http://forum.sep.sfu.ca">support forum</a> of bezoek SEP's online <a href="https://github.com/sep/sep-lib#issues" target="_blank">fout rapportage systeem</a>. Hoewel het forum de voorkeur heeft kunt u het team ook e-mailen op <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
+<p>Het is <strong>sterk aanbevolen</strong> dat u een backup maakt van uw databank, bestanden-map en CLA installatiemap voor u verder gaat.</p>
 <p>Als u draait in <a href="http://www.php.net/features.safe-mode" target="_blank">PHP Safe Mode</a>, verzeker u er dan van dat de max_execution_timeout in uw php.ini op een hoge waarde staat. Als deze of een andere tijdslimiet (bv. Apache's "Timeout" waarde) bereikt wordt en het upgrade proces onderbroken wordt, is handmatige interventie noodzakelijk.</p>]]></message>
 	<message key="installer.localeSettingsInstructions"><![CDATA[Kies UTF-8 voor alle karakterset-instellingen als u volledige Unicode (UTF-8) ondersteuning wilt. Merk op dat dit momenteel een MySQL >= 4.1.1 of PostgreSQL >= 7.1 database vereist. Merk ook op dat volledige Unicode ondersteuning  PHP >= 4.3.0 gecompileerd met ondersteuning van de <a href="http://www.php.net/mbstring" target="_blank">mbstring</a> bibliotheek vereist (standaard ingeschakeld in de meeste recente PHP installaties). Als uw server niet aan deze eisen voldoet kunnen er problemen ontstaan met het gebruik van uitgebreide karaktersets.
 <br /><br />
 Uw server ondersteunt momenteel mbstring: <strong>{$supportsMBString}</strong>]]></message>
-	<message key="installer.localeInstructions">De primaire taal voor gebruik in dit systeem. Zie de OJS documentatie voor ondersteuning van hier niet genoemde talen.</message>
+	<message key="installer.localeInstructions">De primaire taal voor gebruik in dit systeem. Zie de CLA documentatie voor ondersteuning van hier niet genoemde talen.</message>
 	<message key="installer.additionalLocalesInstructions">Selecteer de additionele talen voor gebruik in dit systeem. Deze talen kunnen gebruikt worden door de tijdschriften in deze site. Additionele talen kunnen op ieder gewenst moment  geïnstalleerd worden bij sitebeheer.</message>
 	<message key="installer.filesDirInstructions"><![CDATA[Geef het volledige pad naar een bestaande map waar geladen bestanden bewaard moeten worden. Deze map moet niet direct vanaf het web benaderbaar zijn. <strong>Verzeker u ervan dat de map bestaat en erin geschreven mag worden.</strong> Gebruik voor Windows pad-namen voorwaartse schuine strepen, bv. "C:/myjournal/files".]]></message>
-	<message key="installer.databaseSettingsInstructions">OJS gebruikt een SQL database voor het opslaan van gegevens. Zie de systeemvereisten hierboven voor de lijst van ondersteunde databases. Geef in de velden hieronder de instellingen om de connectie met de database te maken.</message>
-	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<b>Waarschuwing:</b> Als de installatie tijdens de database-installatie misloop moet u de OJS database of de database-tabellen verwijderen voor u de installatie opnieuw probeert te doen.]]></message>
+	<message key="installer.databaseSettingsInstructions">CLA gebruikt een SQL database voor het opslaan van gegevens. Zie de systeemvereisten hierboven voor de lijst van ondersteunde databases. Geef in de velden hieronder de instellingen om de connectie met de database te maken.</message>
+	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<b>Waarschuwing:</b> Als de installatie tijdens de database-installatie misloop moet u de CLA database of de database-tabellen verwijderen voor u de installatie opnieuw probeert te doen.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>Belangrijk!</h4>
 <p>Het installatieprogramma kon het configuratiebestand niet overschrijven. Open alvorens het systeem te gebruiken <tt>config.inc.php</tt> in een geschikte teksteditor en vervang de inhoud ervan door de inhoud van het tekstveld hieronder.</p>]]></message>
-	<message key="installer.installationComplete"><![CDATA[<p>Installatie van OJS is succesvol afgerond.</p>
+	<message key="installer.installationComplete"><![CDATA[<p>Installatie van CLA is succesvol afgerond.</p>
 <p><a href="{$loginUrl}">Log in</a> met de gebruikersnaam en het wachtwoord van de vorige pagina om het systeem in gebruik te nemen.</p>
-<p>Als u nieuws en updates wilt ontvangen, <strong>registreer u dan op <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a>.</strong> Als u vragen of opmerkingen heeft, bezoek dan het <a href="http://forum.pkp.sfu.ca" target="_new">support forum</a>.</p>]]></message>
-	<message key="installer.upgradeComplete"><![CDATA[<p>Opwaarderen van OJS naar versie {$version} is succesvol afgerond.</p>
+<p>Als u nieuws en updates wilt ontvangen, <strong>registreer u dan op <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a>.</strong> Als u vragen of opmerkingen heeft, bezoek dan het <a href="http://forum.sep.sfu.ca" target="_new">support forum</a>.</p>]]></message>
+	<message key="installer.upgradeComplete"><![CDATA[<p>Opwaarderen van CLA naar versie {$version} is succesvol afgerond.</p>
 <p>Vergeet niet om de "installed" instelling in uw config.inc.php bestand terug te zetten op <i>On</i>.</p>
-<p>Als u nog niet geregistreerd bent en nieuws en updates wenst te ontvangen, <strong>registreeru dan op <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a>.</strong>  Als u vragen of opmerkingen heeft, bezoek dan het <a href="http://forum.pkp.sfu.ca" target="_new">support forum</a>.</p>]]></message>
+<p>Als u nog niet geregistreerd bent en nieuws en updates wenst te ontvangen, <strong>registreeru dan op <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a>.</strong>  Als u vragen of opmerkingen heeft, bezoek dan het <a href="http://forum.sep.sfu.ca" target="_new">support forum</a>.</p>]]></message>
 
 
 	<!-- Article Logs -->
@@ -833,8 +833,8 @@ Validatie kan falen op zoek-url's die formulier-invoer eisen.]]></message>
 
 	<message key="rt.metadata.dublinCore.primaryAuthor">Schepper</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">Autheursnaam, affiliatie, land</message>
-	<message key="rt.metadata.pkp.peerReviewed">Peer reviewed artikel</message>
+	<message key="rt.metadata.sep.primaryAuthor">Autheursnaam, affiliatie, land</message>
+	<message key="rt.metadata.sep.peerReviewed">Peer reviewed artikel</message>
 	<message key="rt.beNotifiedWhen">Bericht als...</message>
 
 	<message key="rt.thisJournal">Doorzoek tijdschrift</message>
@@ -859,7 +859,7 @@ Validatie kan falen op zoek-url's die formulier-invoer eisen.]]></message>
 	 *
 	-->
 	<!-- Default settings for payment items. -->
-	<message key="about.aboutThisPublishingSystem.altText">OJS Redactie- en publicatieproces</message>
+	<message key="about.aboutThisPublishingSystem.altText">CLA Redactie- en publicatieproces</message>
 	<message key="help.searchReturnResults">Terug naar zoekresultaten</message>
 	<message key="payment.type.purchaseArticle">Prijs van dit artikel</message>
 	<message key="submission.layout.publicGalleyId">Publieke proefdruk identiicatie</message>
@@ -947,8 +947,8 @@ Validatie kan falen op zoek-url's die formulier-invoer eisen.]]></message>
 	<message key="about.subscriptionTypes.duration">Duur</message>
 	<message key="about.subscriptionTypes.cost">Kosten</message>
 	<message key="payment.subscription.purchase">Koop abonnement</message>
-	<message key="installer.installApplication">Installeer Open Journal Systems</message>
-	<message key="installer.upgradeApplication">Upgrade Open Journal Systems</message>
+	<message key="installer.installApplication">Installeer Code Lumera Editorial</message>
+	<message key="installer.upgradeApplication">Upgrade Code Lumera Editorial</message>
 	<message key="subscriptions.institutionalOnlinePaymentDescription"><![CDATA[<strong>Noot:</strong> Institutionele abonnementen die online gekocht ziijn, worden pas actief na goedkeuring van het domein en de IP-reeksen.]]></message>
 	<message key="plugins.categories.oaiMetadataFormats.description">Deze format plugins drukken metadata uit in OAI communicatie.</message>
 	<message key="manager.setup.reviewProcessEmailDescription">Redacteuren sturen aan reviewers het verzoek om de inzending die wordt meegestuurd met de e-mail te reviewen. Reviewers e-mailen hun instemming (of verontschuldiging) en de review en aanbeveling. Redacteuren voeren de reactie van de reviewer en de review en aanbeveling in op de review-pagina van de inzending, om de review procedure te registreren.</message>
@@ -994,8 +994,8 @@ Validatie kan falen op zoek-url's die formulier-invoer eisen.]]></message>
 	<message key="payment.authorFees">Kosten auteurs</message>
 	<message key="user.register.reviewerInterests">Geef review-interesses (kennisgebieden en onderzoeksmethodes)</message>
 	<message key="article.pdf.pluginMissing"><![CDATA[<p>Het PDF bestand dat u gekozen hebt zal hier geladen worden als uw webbrowser een plugin voor het lezen  van PDF's geïnstalleerd heeft (bijvoorbeeld een recente versie van <a href="https://get.adobe.com/reader/">Adobe Acrobat Reader</a>).</p> <p>U kunt het PDF bestand ook direct naar uw computer downloaden en het openen in een PDF-lezer. Om een PDF de downloaden, klik op de download-link hieronder.</p> <p>Als u meer informatie wilt over het afdrukken, bewaren en werken met PDF's, Highwire Press heeft een handige <a href="http://highwire.stanford.edu/help/pdf-faq.dtl">Frequently Asked Questions about PDFs</a>.</p>]]></message>
-	<message key="site.upgradeAvailable.admin"><![CDATA[Er is een nieuwe versie van OJS beschikbaar! U gebruikt momenteel OJS versie {$currentVersion}. De meest recente versie is OJS {$latestVersion}. Bezoek <a href="http://pkp.sfu.ca/ojs_download" target="_new">deze pagina</a> om de meest recente versie op te halen en voor installatieinstructies.]]></message>
-	<message key="site.upgradeAvailable.manager"><![CDATA[Er is een nieuwe versie van OJS beschikbaar! U gebruikt momenteel OJS versie {$currentVersion}. De meest recente versie is OJS {$latestVersion}. Neem contact op met uw sitebeheerder ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) om die te wijzen op de nieuwe versie. Meer informatie <a href="http://pkp.sfu.ca/ojs_download" target="_new">hier</a>.]]></message>
+	<message key="site.upgradeAvailable.admin"><![CDATA[Er is een nieuwe versie van CLA beschikbaar! U gebruikt momenteel CLA versie {$currentVersion}. De meest recente versie is CLA {$latestVersion}. Bezoek <a href="http://lumera.sangia.org/cla_download" target="_new">deze pagina</a> om de meest recente versie op te halen en voor installatieinstructies.]]></message>
+	<message key="site.upgradeAvailable.manager"><![CDATA[Er is een nieuwe versie van CLA beschikbaar! U gebruikt momenteel CLA versie {$currentVersion}. De meest recente versie is CLA {$latestVersion}. Neem contact op met uw sitebeheerder ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) om die te wijzen op de nieuwe versie. Meer informatie <a href="http://lumera.sangia.org/cla_download" target="_new">hier</a>.]]></message>
 	<message key="user.authorization.copyeditorAssignmentMissing">Geen toegang! U bent niet de tekstredacteur voor dit artikel.</message>
 	<message key="user.authorization.noJournal">Niet in de context van een tijdschrift!</message>
 	<message key="user.authorization.sectionAssignment">U probeert een artikel uit een andere sectie te benaderen</message>
@@ -1084,5 +1084,5 @@ Validatie kan falen op zoek-url's die formulier-invoer eisen.]]></message>
 	<message key="submission.license.cc.by-sa4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//licensebuttons.net/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.]]></message>
 	<message key="user.profile.form.orcidInvalid">Het opgegeven ORCID ID is niet geldig</message>
 	<message key="user.orcid.description"><![CDATA[ORCID iDs kunnen alleen toegekend worden door <a href="http://orcid.org/" target="_blank">the ORCID Registry</a>. U moet hun standaarden voor het uitdrukken van ORCID iDs volgen, en de volledige URI opnemen (bv. <em>http://orcid.org/0000-0002-1825-0097</em>).]]></message>
-	<message key="manager.setup.preservationDescription"><![CDATA[Open Journal Systems ondersteunt het <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) systeem voor veilige en permanente beschikbaarheid van uw tijdschrift. Er zijn verschillende opties om uw tijdschrift op te nemen in een LOCKSS netwerk:]]></message>
+	<message key="manager.setup.preservationDescription"><![CDATA[Code Lumera Editorial ondersteunt het <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) systeem voor veilige en permanente beschikbaarheid van uw tijdschrift. Er zijn verschillende opties om uw tijdschrift op te nemen in een LOCKSS netwerk:]]></message>
 </locale>

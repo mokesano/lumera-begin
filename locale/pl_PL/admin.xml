@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * Copyright (c) 2013-2017 Simon Fraser University
@@ -25,15 +25,15 @@
 	<message key="admin.languages.localeInstalled">Język "{$locale}" został zainstalowany.</message>
 	<message key="admin.languages.download">Pobierz tłumaczenie</message>
 	<message key="admin.languages.reloadDefaultEmailTemplates">Odśwież domyślne szablony e-mail</message>
-	<message key="admin.languages.download.cannotOpen">Nie można otworzyć pliku opisu dostępnych języków ze strony PKP.</message>
+	<message key="admin.languages.download.cannotOpen">Nie można otworzyć pliku opisu dostępnych języków ze strony SEP.</message>
 	<message key="admin.languages.download.cannotModifyRegistry">Błąd, nie można dodać nowego języka do lokalnego rejestru.</message>
-	<message key="admin.auth.ojs">Baza danych użytkowników OJS</message>
+	<message key="admin.auth.cla">Baza danych użytkowników CLA</message>
 	<message key="admin.auth.enableSyncProfiles">Włącz synchronizowanie profili użytkowników.</message>
 	<message key="admin.auth.enableSyncPasswords">Włącz modyfikację haseł przez użytkowników.</message>
 	<message key="admin.auth.enableCreateUsers">Włącz tworzenie użytkowników.</message>
-	<message key="admin.systemVersion">Wersja OJS</message>
-	<message key="admin.systemConfiguration">Konfiguracja OJS</message>
-	<message key="admin.systemConfigurationDescription"><![CDATA[Konfiguracja OJS z pliku <tt>config.inc.php</tt>.]]></message>
+	<message key="admin.systemVersion">Wersja CLA</message>
+	<message key="admin.systemConfiguration">Konfiguracja CLA</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[Konfiguracja CLA z pliku <tt>config.inc.php</tt>.]]></message>
 	<message key="admin.journals.journalSettings">Ustawienia czasopisma</message>
 	<message key="admin.journals.noneCreated">Żadne czasopisma nie zostały utworzone.</message>
 	<message key="admin.journals.confirmDelete">Usunąć czasopismo wraz z całą zawartością?</message>
@@ -49,7 +49,7 @@
 	<message key="admin.journal.pathImportInstructions">Istniejąca ścieżka czasopisma lub ścieżka do utworzenia (np., "forum").</message>
 	<message key="admin.journals.importSubscriptions">Importuj subskrypcje</message>
 	<message key="admin.journals.transcode">Transkoduj dane artykułu z ISO8859-1</message>
-	<message key="admin.journals.redirect">Utwórz kod aby zmapować adresy OJS 1 na OJS 2</message>
+	<message key="admin.journals.redirect">Utwórz kod aby zmapować adresy CLA 1 na CLA 2</message>
 	<message key="admin.journals.form.importPathRequired">Ścieżka importu jest wymagana.</message>
 	<message key="admin.journals.importErrors">Błąd, importowanie nie powiodło się</message>
 	<message key="admin.mergeUsers">Scal użytkowników</message>

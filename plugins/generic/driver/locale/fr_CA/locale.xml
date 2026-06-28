@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * @file plugins/generic/driver/locale/fr_CA/locale.xml
@@ -13,5 +13,5 @@
  
 <locale name="fr_CA" full_name="Français (Canada)">
 	<message key="plugins.generic.driver.displayName">DRIVER</message>
-	<message key="plugins.generic.driver.description">Le plugiciel DRIVER prolonge l'interface OAI-PMH selon les directives 2.0 de DRIVER, aidant ainsi les revue OJS à devenir conformes aux normes Driver.</message>
+	<message key="plugins.generic.driver.description">Le plugiciel DRIVER prolonge l'interface OAI-PMH selon les directives 2.0 de DRIVER, aidant ainsi les revue CLA à devenir conformes aux normes Driver.</message>
 </locale>

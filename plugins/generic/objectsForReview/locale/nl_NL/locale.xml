@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * @file plugins/generic/objectsForReview/locale/nl_NL/locale.xml
@@ -85,7 +85,7 @@
 	<message key="plugins.generic.objectsForReview.settings.enableDueReminderBeforeDays2">dag(en) voor het review verwacht wordt.</message>
 	<message key="plugins.generic.objectsForReview.settings.enableDueReminderAfterDays1">Stuur auteurs een herinneringsmail</message>
 	<message key="plugins.generic.objectsForReview.settings.enableDueReminderAfterDays2">dag(en) nadat het review verwacht werd.</message>
-	<message key="plugins.generic.objectsForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Noot:</strong> Om deze opties te activeren moet de sitebeheerder de <tt>scheduled_tasks</tt> optie in het OJS configuratiebestand inschakelen. Additionele configuratie van de serveren nodig zijn om dit mogelijk te maken (wat wellicht niet op alle servers mogelijk is), zoals aangegeven in de OJS documentatie..]]></message>
+	<message key="plugins.generic.objectsForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Noot:</strong> Om deze opties te activeren moet de sitebeheerder de <tt>scheduled_tasks</tt> optie in het CLA configuratiebestand inschakelen. Additionele configuratie van de serveren nodig zijn om dit mogelijk te maken (wat wellicht niet op alle servers mogelijk is), zoals aangegeven in de CLA documentatie..]]></message>
 	<message key="plugins.generic.objectsForReview.settings.additionalInformation">Additionele informatie</message>
 	<message key="plugins.generic.objectsForReview.settings.additionalInformationDescription">Additionele informatie die bij de te reviewen objecten wordt gepubliceerd.</message>
 

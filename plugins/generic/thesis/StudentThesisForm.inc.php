@@ -13,7 +13,7 @@
  * @brief Form for students to submit thesis abstract.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class StudentThesisForm extends Form {
 
@@ -46,7 +46,7 @@ class StudentThesisForm extends Form {
 			THESIS_DEGREE_DOCTORATE => __('plugins.generic.thesis.manager.degree.doctorate')
 		);
 
-		import('lib.pkp.classes.captcha.CaptchaManager');
+		import('lib.sep.classes.captcha.CaptchaManager');
 		$captchaManager = new CaptchaManager();
 		$this->captchaEnabled = $captchaManager->isEnabled() ? true : false;
 
@@ -119,7 +119,7 @@ class StudentThesisForm extends Form {
 		$templateMgr =& TemplateManager::getManager();
 
 		if ($this->captchaEnabled) {
-			import('lib.pkp.classes.captcha.CaptchaManager');
+			import('lib.sep.classes.captcha.CaptchaManager');
 			$captchaManager = new CaptchaManager();
 			$captcha =& $captchaManager->createCaptcha();
 			if ($captcha) {

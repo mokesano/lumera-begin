@@ -14,15 +14,15 @@
  * @brief Form for journal managers to create/edit announcement types.
  */
 
-import('lib.pkp.classes.manager.form.PKPAnnouncementTypeForm');
+import('lib.sep.classes.manager.form.SEPAnnouncementTypeForm');
 
-class AnnouncementTypeForm extends PKPAnnouncementTypeForm {
+class AnnouncementTypeForm extends SEPAnnouncementTypeForm {
 	/**
 	 * Constructor
 	 * @param typeId int leave as default for new announcement type
 	 */
 	function AnnouncementTypeForm($typeId = null) {
-		parent::PKPAnnouncementTypeForm($typeId);
+		parent::SEPAnnouncementTypeForm($typeId);
 	}
 
 	/**

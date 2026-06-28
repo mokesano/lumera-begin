@@ -15,7 +15,7 @@
  *
  */
 
-import('lib.pkp.classes.currency.Currency');
+import('lib.sep.classes.currency.Currency');
 
 class CurrencyDAO extends DAO {
 
@@ -77,7 +77,7 @@ class CurrencyDAO extends DAO {
 	 * @return string
 	 */
 	function getCurrencyFilename($locale) {
-		return "lib/pkp/locale/$locale/currencies.xml";
+		return "lib/sep/locale/$locale/currencies.xml";
 	}
 
 	/**

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE version SYSTEM "../../lib/pkp/dtd/rtVersion.dtd">
+<!DOCTYPE version SYSTEM "../../lib/sep/dtd/rtVersion.dtd">
 
 <!--
   * Generic.xml
   *
-  * A tradución ao galego de OJS (versión 2.2.3) é de Gabriel Beceiro
+  * A tradución ao galego de CLA (versión 2.2.3) é de Gabriel Beceiro
   * co apoio de Miquel Rubirola e a Revista Olláparo (Cedeira-Galiza)
   * A tradución abranxe as ferramentas de lectura e de axuda.
   *
@@ -47,10 +47,10 @@
 			
 		</search>
 		<search>
-			<search_title>Open Archives Harvester do Public Knowledge Project</search_title>
-			<search_description>L&apos;Open Archives Harvester é un sistema libre de indexación de metadados desenvolvido polo Public Knowledge Project, unha iniciativa con financiamento do goberno federal do Canadà que quere promover e facer máis accessibel o àmbit da investigación.OAI Harvester permite crear un índice per a procurar os metadados dos arquivos admitidos pola Open Archives Initiative (por exemplo, os sitios web que treballan co Open Journal Systems ou co Open Conference Systems).</search_description>
-			<url>http://pkp.sfu.ca/harvester/</url>
-			<search_url>http://pkp.sfu.ca/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
+			<search_title>Open Archives Harvester do Sangia Editorial Project</search_title>
+			<search_description>L&apos;Open Archives Harvester é un sistema libre de indexación de metadados desenvolvido polo Sangia Editorial Project, unha iniciativa con financiamento do goberno federal do Canadà que quere promover e facer máis accessibel o àmbit da investigación.OAI Harvester permite crear un índice per a procurar os metadados dos arquivos admitidos pola Open Archives Initiative (por exemplo, os sitios web que treballan co Code Lumera Editorial ou co Open Conference Systems).</search_description>
+			<url>http://lumera.sangia.org/harvester/</url>
+			<search_url>http://lumera.sangia.org/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
 			
 		</search>
 	</context>

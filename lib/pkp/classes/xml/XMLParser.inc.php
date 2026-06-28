@@ -22,7 +22,7 @@
 define('XML_PARSER_SOURCE_ENCODING', Config::getVar('i18n', 'client_charset'));
 define('XML_PARSER_TARGET_ENCODING', Config::getVar('i18n', 'client_charset'));
 
-import('lib.pkp.classes.xml.XMLParserDOMHandler');
+import('lib.sep.classes.xml.XMLParserDOMHandler');
 
 class XMLParser {
 
@@ -107,7 +107,7 @@ class XMLParser {
 		xml_set_element_handler($parser, "startElement", "endElement");
 		xml_set_character_data_handler($parser, "characterData");
 
-		import('lib.pkp.classes.file.FileWrapper');
+		import('lib.sep.classes.file.FileWrapper');
 		$wrapper =& FileWrapper::wrapper($file);
 
 		// Handle responses of various types
@@ -253,7 +253,7 @@ class XMLParser {
 	 * @return array a struct of the form ($TAG => array('attributes' => array( ... ), 'value' => $VALUE), ... )
 	 */
 	function &parseStruct($file, $tagsToMatch = array()) {
-		import('lib.pkp.classes.file.FileWrapper');
+		import('lib.sep.classes.file.FileWrapper');
 		$wrapper =& FileWrapper::wrapper($file);
 		$fileContents = $wrapper->contents();
 		if (!$fileContents) {

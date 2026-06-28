@@ -16,9 +16,9 @@
  */
 
 
-import('lib.pkp.classes.filter.Filter');
-import('lib.pkp.classes.metadata.MetadataDescription');
-import('lib.pkp.plugins.metadata.nlm30.schema.Nlm30NameSchema');
+import('lib.sep.classes.filter.Filter');
+import('lib.sep.classes.metadata.MetadataDescription');
+import('lib.sep.plugins.metadata.nlm30.schema.Nlm30NameSchema');
 
 define('PERSON_STRING_FILTER_MULTIPLE', 0x01);
 define('PERSON_STRING_FILTER_SINGLE', 0x02);

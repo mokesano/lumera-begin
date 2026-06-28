@@ -14,7 +14,7 @@
  *
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class SubscriptionBlockPlugin extends BlockPlugin {
 	/**
@@ -43,7 +43,7 @@ class SubscriptionBlockPlugin extends BlockPlugin {
 	/**
 	 * Get the HTML contents for this block.
 	 * @param $templateMgr object
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return $string
 	 */
 	function getContents(&$templateMgr, $request) {
@@ -77,8 +77,8 @@ class SubscriptionBlockPlugin extends BlockPlugin {
 			}
 		}
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 
 		if (isset($individualSubscription) || isset($institutionalSubscription)) {
 			$acceptSubscriptionPayments = $paymentManager->acceptSubscriptionPayments();

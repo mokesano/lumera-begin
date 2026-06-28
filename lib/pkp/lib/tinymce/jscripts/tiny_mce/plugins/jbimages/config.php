@@ -24,11 +24,11 @@
 |
 -------------------------------------------------------------------*/
 
-	/* PKP Customization, 01/03/2012; Determine img_path from external file */
-	require_once('integratePKP.php');
-	$integratePKP = new IntegratePKP();
+	/* SEP Customization, 01/03/2012; Determine img_path from external file */
+	require_once('integrateSEP.php');
+	$integrateSEP = new IntegrateSEP();
 
-	$config['img_path'] = $integratePKP->getPKPImageUrl();
+	$config['img_path'] = $integrateSEP->getSEPImageUrl();
 
 
 /*-------------------------------------------------------------------
@@ -126,14 +126,14 @@
 |
 -------------------------------------------------------------------*/
 
-	/* PKP Customization, 01/03/2012; Specify upload path */
-	$config['upload_path'] = $integratePKP->getPKPImageUploadPath();
+	/* SEP Customization, 01/03/2012; Specify upload path */
+	$config['upload_path'] = $integrateSEP->getSEPImageUploadPath();
 
 
 /*-------------------------------------------------------------------
 |
 | Maximum size of upload directory in kilobytes (set to 0 for no limit)
-| PKP Customization, 01/03/2012
+| SEP Customization, 01/03/2012
 |
 -------------------------------------------------------------------*/
 
@@ -143,7 +143,7 @@
 /*-------------------------------------------------------------------
 |
 | Show uploaded images and allow for images to be deleted
-| PKP Customization, 01/03/2012
+| SEP Customization, 01/03/2012
 |
 -------------------------------------------------------------------*/
 

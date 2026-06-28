@@ -10,7 +10,7 @@
  * @class Dc11SchemaArticleAdapter
  * @ingroup plugins_metadata_dc11_filter
  * @see Article
- * @see PKPDc11Schema
+ * @see SEPDc11Schema
  *
  * @brief Abstract base class for meta-data adapters that
  *  injects/extracts Dublin Core schema compliant meta-data into/from
@@ -18,7 +18,7 @@
  */
 
 
-import('lib.pkp.classes.metadata.MetadataDataObjectAdapter');
+import('lib.sep.classes.metadata.MetadataDataObjectAdapter');
 
 class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 	/**
@@ -127,7 +127,7 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 		$dc11Description->addStatement('dc:type', $driverType, METADATA_DESCRIPTION_UNKNOWN_LOCALE);
 		$types = $section->getIdentifyType(null);
 		$types = array_merge_recursive(
-			empty($types)?array(AppLocale::getLocale() => __('rt.metadata.pkp.peerReviewed')):$types,
+			empty($types)?array(AppLocale::getLocale() => __('rt.metadata.sep.peerReviewed')):$types,
 			(array) $article->getType(null)
 		);
 		$this->_addLocalizedElements($dc11Description, 'dc:type', $types);

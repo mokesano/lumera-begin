@@ -36,7 +36,7 @@ class EmailHandler extends ManagerHandler {
 		$emailTemplateDao =& DAORegistry::getDAO('EmailTemplateDAO');
 		$emailTemplates =& $emailTemplateDao->getEmailTemplates(AppLocale::getLocale(), $journal->getId());
 
-		import('lib.pkp.classes.core.ArrayItemIterator');
+		import('lib.sep.classes.core.ArrayItemIterator');
 		$emailTemplates =& ArrayItemIterator::fromRangeInfo($emailTemplates, $rangeInfo);
 
 		$templateMgr =& TemplateManager::getManager();
@@ -49,7 +49,7 @@ class EmailHandler extends ManagerHandler {
 	/**
 	 * Create an empty email template.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createEmail($args, &$request) {
 		$this->editEmail($args, $request);
@@ -58,7 +58,7 @@ class EmailHandler extends ManagerHandler {
 	/**
 	 * Display form to create/edit an email.
 	 * @param $args array if set the first parameter is the key of the email template to edit
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editEmail($args, &$request) {
 		$this->validate();
@@ -214,11 +214,11 @@ class EmailHandler extends ManagerHandler {
 	/**
 	 * Export the selected email templates as XML
 	 * @param $args array
-	 * @@param $request PKPRequest
+	 * @@param $request SEPRequest
 	 */
 	function exportEmails($args, $request) {
 		$this->validate();
-		import('lib.pkp.classes.xml.XMLCustomWriter');
+		import('lib.sep.classes.xml.XMLCustomWriter');
 		
 		$selectedEmailKeys = (array) $request->getUserVar('tplId');
 		if (empty($selectedEmailKeys)) {
@@ -268,11 +268,11 @@ class EmailHandler extends ManagerHandler {
 	/**
 	 * Upload a custom email template file
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function uploadEmails($args, $request) {
 		$this->validate();
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 
 		$journal = $request->getJournal();
@@ -311,7 +311,7 @@ class EmailHandler extends ManagerHandler {
 	 */
 	function _saveEmailTemplates($filePath, $journal) {
 		$this->validate();
-		import('lib.pkp.classes.xml.XMLParser');
+		import('lib.sep.classes.xml.XMLParser');
 		$emailTemplateDao = DAORegistry::getDAO('EmailTemplateDAO');
 		
 		$xmlParser = new XMLParser();
@@ -369,7 +369,7 @@ class EmailHandler extends ManagerHandler {
 	
 	/**
 	 * Show success or error message
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $success boolean
 	 */
 	function _showMessage($request, $success = true) {
@@ -377,7 +377,7 @@ class EmailHandler extends ManagerHandler {
 		import('classes.notification.NotificationManager');
 		$notificationManager = new NotificationManager();
 
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_MANAGER);
 		
 		if ($success == true) {
 			$notificationType = NOTIFICATION_TYPE_SUCCESS;

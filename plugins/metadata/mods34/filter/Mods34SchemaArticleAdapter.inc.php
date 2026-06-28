@@ -21,7 +21,7 @@
  *  into/from an Article or PublishedArticle object.
  */
 
-import('lib.pkp.plugins.metadata.mods34.filter.Mods34SchemaSubmissionAdapter');
+import('lib.sep.plugins.metadata.mods34.filter.Mods34SchemaSubmissionAdapter');
 
 class Mods34SchemaArticleAdapter extends Mods34SchemaSubmissionAdapter {
 	/**

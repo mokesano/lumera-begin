@@ -29,7 +29,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Delete a submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteSubmission($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -58,7 +58,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Delete an author version file.
 	 * @param $args array ($articleId, $fileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteArticleFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -78,7 +78,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Display a summary of the status of an author's submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submission($args, $request) {
 		$journal =& $request->getJournal();
@@ -123,11 +123,11 @@ class TrackSubmissionHandler extends AuthorHandler {
 		$templateMgr->assign_by_ref('editorDecisionOptions', SectionEditorSubmission::getEditorDecisionOptions());
 
 		// Set up required Payment Related Information
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		if ( $paymentManager->submissionEnabled() || $paymentManager->fastTrackEnabled() || $paymentManager->publicationEnabled()) {
 			$templateMgr->assign('authorFees', true);
-			$completedPaymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+			$completedPaymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 
 			if ($paymentManager->submissionEnabled()) {
 				$templateMgr->assign_by_ref('submissionPayment', $completedPaymentDao->getSubmissionCompletedPayment ($journal->getId(), $articleId));
@@ -153,7 +153,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Display specific details of an author's submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissionReview($args, $request) {
 		$user =& $request->getUser();
@@ -162,7 +162,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 		$this->validate($request, $articleId);
 		$authorSubmission =& $this->submission;
 		$this->setupTemplate($request, true, $articleId);
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_EDITOR); // editor.article.decision etc. FIXME?
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_EDITOR); // editor.article.decision etc. FIXME?
 
 		$reviewAssignmentDao =& DAORegistry::getDAO('ReviewAssignmentDAO');
 		$reviewModifiedByRound = $reviewAssignmentDao->getLastModifiedByRound($articleId);
@@ -202,7 +202,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Add a supplementary file.
 	 * @param $args array ($articleId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function addSuppFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -232,7 +232,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Edit a supplementary file.
 	 * @param $args array ($articleId, $suppFileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editSuppFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -262,7 +262,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Set reviewer visibility for a supplementary file.
 	 * @param $args array ($suppFileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function setSuppFileVisibility($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -285,7 +285,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Save a supplementary file.
 	 * @param $args array ($suppFileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveSuppFile($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -316,7 +316,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Display the status and other details of an author's submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submissionEditing($args, $request) {
 		$journal =& $request->getJournal();
@@ -349,7 +349,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Upload the author's revised version of an article.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function uploadRevisedVersion($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -365,7 +365,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * View the submission metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewMetadata($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -380,7 +380,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Save the modified metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveMetadata($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -400,7 +400,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Remove cover page from article
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function removeArticleCoverPage($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -431,7 +431,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Uploaded a copyedited version of the submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function uploadCopyeditVersion($args, $request) {
 		$copyeditStage = $request->getUserVar('copyeditStage');
@@ -449,7 +449,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Flag the author copyediting process as complete.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function completeAuthorCopyedit($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -469,7 +469,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Download a file.
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function downloadFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -487,7 +487,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Download a file.
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function download($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -506,7 +506,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Set the author proofreading date completion
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function authorProofreadingComplete($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -525,7 +525,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Proof / "preview" a galley.
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalley($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -542,7 +542,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Proof galley (shows frame header).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyTop($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -560,7 +560,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Proof galley (outputs file contents).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -593,7 +593,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * View a file (inlines file).
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -614,7 +614,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Display a form to pay for the submission an article
 	 * @param $args array ($articleId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function paySubmissionFee($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -624,8 +624,8 @@ class TrackSubmissionHandler extends AuthorHandler {
 
 		$journal =& $request->getJournal();
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$user =& $request->getUser();
 
 		$queuedPayment =& $paymentManager->createQueuedPayment($journal->getId(), PAYMENT_TYPE_SUBMISSION, $user->getId(), $articleId, $journal->getSetting('submissionFee'));
@@ -637,7 +637,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Display a form to pay for Fast Tracking an article
 	 * @param $args array ($articleId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function payFastTrackFee($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -647,8 +647,8 @@ class TrackSubmissionHandler extends AuthorHandler {
 
 		$journal =& $request->getJournal();
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$user =& $request->getUser();
 
 		$queuedPayment =& $paymentManager->createQueuedPayment($journal->getId(), PAYMENT_TYPE_FASTTRACK, $user->getId(), $articleId, $journal->getSetting('fastTrackFee'));
@@ -660,7 +660,7 @@ class TrackSubmissionHandler extends AuthorHandler {
 	/**
 	 * Display a form to pay for Publishing an article
 	 * @param $args array ($articleId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function payPublicationFee($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -670,8 +670,8 @@ class TrackSubmissionHandler extends AuthorHandler {
 
 		$journal =& $request->getJournal();
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$user =& $request->getUser();
 
 		$queuedPayment =& $paymentManager->createQueuedPayment($journal->getId(), PAYMENT_TYPE_PUBLICATION, $user->getId(), $articleId, $journal->getSetting('publicationFee'));

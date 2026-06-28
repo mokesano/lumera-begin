@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000003.xml
@@ -18,7 +18,7 @@
 	</section>
 
 	<section title="Systemoplysninger">
-		<![CDATA[<p>Generelle oplysninger om servermiljøet og OJS-versionshistorik (herunder tidligere opgraderinger). En webbaseret grænseflade til ændring af OJS-konfigurationsfilen er også tilgængelig.</p>]]>
+		<![CDATA[<p>Generelle oplysninger om servermiljøet og CLA-versionshistorik (herunder tidligere opgraderinger). En webbaseret grænseflade til ændring af CLA-konfigurationsfilen er også tilgængelig.</p>]]>
 	</section>
 
 	<section title="Lad brugersessioner udløbe">

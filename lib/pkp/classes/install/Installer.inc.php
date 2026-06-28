@@ -24,12 +24,12 @@ define('INSTALLER_ERROR_DB', 2);
 // Default data
 define('INSTALLER_DEFAULT_LOCALE', 'en_US');
 
-import('lib.pkp.classes.db.DBDataXMLParser');
-import('lib.pkp.classes.site.Version');
-import('lib.pkp.classes.site.VersionDAO');
-import('lib.pkp.classes.config.ConfigParser');
+import('lib.sep.classes.db.DBDataXMLParser');
+import('lib.sep.classes.site.Version');
+import('lib.sep.classes.site.VersionDAO');
+import('lib.sep.classes.config.ConfigParser');
 
-require_once './lib/pkp/lib/adodb/adodb-xmlschema.inc.php';
+require_once './lib/sep/lib/adodb/adodb-xmlschema.inc.php';
 
 class Installer {
 
@@ -368,7 +368,7 @@ class Installer {
 				$fileName = $action['file'];
 				$this->log(sprintf('schema: %s', $action['file']));
 
-				require_once './lib/pkp/lib/adodb/adodb-xmlschema.inc.php';
+				require_once './lib/sep/lib/adodb/adodb-xmlschema.inc.php';
 				$schemaXMLParser = new adoSchema($this->dbconn);
 				$dict =& $schemaXMLParser->dict;
 				$dict->SetCharSet($this->dbconn->charSet);
@@ -652,7 +652,7 @@ class Installer {
 
 		// Get the filter helper.
 		if ($filterHelper === false) {
-			import('lib.pkp.classes.filter.FilterHelper');
+			import('lib.sep.classes.filter.FilterHelper');
 			$filterHelper = new FilterHelper();
 		}
 
@@ -722,7 +722,7 @@ class Installer {
 	 * @return boolean
 	 */
 	function fileExists($filePath) {
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileMgr = new FileManager();
 
 		return $fileMgr->fileExists(realpath($filePath));
@@ -735,7 +735,7 @@ class Installer {
 	 */
 	function addPluginVersions() {
 		$versionDao =& DAORegistry::getDAO('VersionDAO');
-		import('lib.pkp.classes.site.VersionCheck');
+		import('lib.sep.classes.site.VersionCheck');
 		$fileManager = new FileManager();
 		$categories = PluginRegistry::getCategories();
 		foreach ($categories as $category) {

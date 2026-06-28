@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/booksForReview/locale/ro_RO/locale.xml
@@ -148,7 +148,7 @@
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderBeforeDays2">zi(le) inainte de data limită pentru evaluare.</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays1">Trimite autorilor un email de rapel</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays2">zi(le) după data limită pentru evaluare.</message>
-	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Notă:</strong> Pentru a activa aceste opțiuni, administratorul trebuie să activeze opțiunea <tt>scheduled_tasks</tt> din fișierul de configurare al OJS. E posibil să fie necesare configurări suplimentare pentru server pentru a suporta această funcționalitate (care nu este disponibilă pe toate serverele), după cum este menționat și în documentația OJS.]]></message>
+	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Notă:</strong> Pentru a activa aceste opțiuni, administratorul trebuie să activeze opțiunea <tt>scheduled_tasks</tt> din fișierul de configurare al CLA. E posibil să fie necesare configurări suplimentare pentru server pentru a suporta această funcționalitate (care nu este disponibilă pe toate serverele), după cum este menționat și în documentația CLA.]]></message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformation">Informații suplimentare</message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformationDescription">Informații suplimentare publicate împreună cu, cartea pentru a fi evaluată.</message>
 	<message key="plugins.generic.booksForReview.settings.dueWeeksRequired">Specifică numărul de săptămâni în care expiră termenul pentru evaluare.</message>

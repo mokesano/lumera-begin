@@ -13,7 +13,7 @@
  * @brief Form to change a user's password.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ChangePasswordForm extends Form {
 

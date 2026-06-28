@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000031.xml
@@ -14,7 +14,7 @@
 
 <topic id="journal/topic/000031" locale="en_US" title="Importera/Exportera data" toc="journal/toc/000001" key="journal.managementPages.importExport">
 	<section>
-		<![CDATA[<p>Funktionen Importera/Exportera data som är tillgänglig under Tidskriftshantering, tillåter Tidskriftsansvarig att lägga in och extrahera data från OJS. </p><p> Importera/Exportera data görs genom att använda olika plugins, beroende på format och typ av data. För mer information, se respektive plugins dokumentation som finns tillgänglig i översikten över plugins i OJS. Fem Importera/Exportera plugins kommer med OJS och är beskrivna härunder.</p><p>Importera/Exportera funktionalitet finns också tillgänglig som ett 'command-line' verktyg; för mer information se tools/importExport.php.</p>]]>
+		<![CDATA[<p>Funktionen Importera/Exportera data som är tillgänglig under Tidskriftshantering, tillåter Tidskriftsansvarig att lägga in och extrahera data från CLA. </p><p> Importera/Exportera data görs genom att använda olika plugins, beroende på format och typ av data. För mer information, se respektive plugins dokumentation som finns tillgänglig i översikten över plugins i CLA. Fem Importera/Exportera plugins kommer med CLA och är beskrivna härunder.</p><p>Importera/Exportera funktionalitet finns också tillgänglig som ett 'command-line' verktyg; för mer information se tools/importExport.php.</p>]]>
 	</section>
 		
 	

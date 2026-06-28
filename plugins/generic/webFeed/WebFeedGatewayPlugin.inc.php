@@ -132,7 +132,7 @@ class WebFeedGatewayPlugin extends GatewayPlugin {
 
 		$publishedArticleDao =& DAORegistry::getDAO('PublishedArticleDAO');
 		if ($displayItems == 'recent' && $recentItems > 0) {
-			import('lib.pkp.classes.db.DBResultRange');
+			import('lib.sep.classes.db.DBResultRange');
 			$rangeInfo = new DBResultRange($recentItems, 1);
 			$publishedArticleObjects =& $publishedArticleDao->getPublishedArticlesByJournalId($journal->getId(), $rangeInfo, true);
 			while ($publishedArticle =& $publishedArticleObjects->next()) {
@@ -147,7 +147,7 @@ class WebFeedGatewayPlugin extends GatewayPlugin {
 		$version =& $versionDao->getCurrentVersion();
 
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->assign('ojsVersion', $version->getVersionString());
+		$templateMgr->assign('claVersion', $version->getVersionString());
 		$templateMgr->assign_by_ref('publishedArticles', $publishedArticles);
 		$templateMgr->assign_by_ref('journal', $journal);
 		$templateMgr->assign_by_ref('issue', $issue);

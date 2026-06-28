@@ -9,15 +9,15 @@
  *
  * @class NoteDAO
  * @ingroup note
- * @see PKPNoteDAO
+ * @see SEPNoteDAO
  *
- * @brief OJS extension of PKPNoteDAO
+ * @brief CLA extension of SEPNoteDAO
  */
 
-import('lib.pkp.classes.note.PKPNoteDAO');
+import('lib.sep.classes.note.SEPNoteDAO');
 import('classes.note.Note');
 
-class NoteDAO extends PKPNoteDAO {
+class NoteDAO extends SEPNoteDAO {
 	/** @var $articleFileDao Object */
 	var $articleFileDao;
 
@@ -26,7 +26,7 @@ class NoteDAO extends PKPNoteDAO {
 	 */
 	function NoteDAO() {
 		$this->articleFileDao =& DAORegistry::getDAO('ArticleFileDAO');
-		parent::PKPNoteDAO();
+		parent::SEPNoteDAO();
 	}
 
 	/**

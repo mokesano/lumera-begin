@@ -18,7 +18,7 @@
  *  them into a single "best" citation.
  */
 
-import('lib.pkp.classes.filter.Filter');
+import('lib.sep.classes.filter.Filter');
 
 class Nlm30CitationDemultiplexerFilter extends Filter {
 	/**
@@ -39,8 +39,8 @@ class Nlm30CitationDemultiplexerFilter extends Filter {
 	function Nlm30CitationDemultiplexerFilter() {
 		$this->setDisplayName('Join several NLM Citation descriptions into a single citation'); // Only for internal debugging.
 
-		parent::Filter('metadata::lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema(CITATION)[]',
-			'class::lib.pkp.classes.citation.Citation');
+		parent::Filter('metadata::lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema(CITATION)[]',
+			'class::lib.sep.classes.citation.Citation');
 	}
 
 	//
@@ -202,7 +202,7 @@ class Nlm30CitationDemultiplexerFilter extends Filter {
 		assert($scoreThreshold >= 0 && $scoreThreshold <= 100);
 
 		// Create the target citation description.
-		$targetDescription = new MetadataDescription('lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema', ASSOC_TYPE_CITATION);
+		$targetDescription = new MetadataDescription('lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema', ASSOC_TYPE_CITATION);
 
 		// Step 1: List all values and max scores that have been identified for a given element
 		//         but only include values from results above a given scoring threshold

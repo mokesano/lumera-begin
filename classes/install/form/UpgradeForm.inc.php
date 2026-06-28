@@ -14,7 +14,7 @@
  */
 
 import('classes.install.Upgrade');
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class UpgradeForm extends Form {
 

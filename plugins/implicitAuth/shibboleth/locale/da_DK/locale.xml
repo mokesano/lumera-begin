@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/implicitAuth/shibboleth/locale/da_DK/locale.xml
@@ -16,5 +16,5 @@
  
 <locale name="da_DK" full_name="Dansk">
 	<message key="plugins.implicitAuth.shibboleth.displayName">ShibAuthPlugin</message>
-	<message key="plugins.implicitAuth.shibboleth.description">ShibAuthPlugin. Dette plugin gælder hele sitet og aktiveres i OJS config filen.</message>
+	<message key="plugins.implicitAuth.shibboleth.description">ShibAuthPlugin. Dette plugin gælder hele sitet og aktiveres i CLA config filen.</message>
 </locale>

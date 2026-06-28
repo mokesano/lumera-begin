@@ -13,10 +13,10 @@
  *  contains such a setting.
  */
 
-import('lib.pkp.classes.security.authorization.AuthorizationPolicy');
+import('lib.sep.classes.security.authorization.AuthorizationPolicy');
 
 class RestrictedSiteAccessPolicy extends AuthorizationPolicy {
-	/** @var PKPRouter */
+	/** @var SEPRouter */
 	var $_router;
 
 	/** @var Request */
@@ -25,7 +25,7 @@ class RestrictedSiteAccessPolicy extends AuthorizationPolicy {
 	/**
 	 * Constructor
 	 *
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function RestrictedSiteAccessPolicy(&$request) {
 		parent::AuthorizationPolicy('user.authorization.restrictedSiteAccess');
@@ -48,7 +48,7 @@ class RestrictedSiteAccessPolicy extends AuthorizationPolicy {
 	 * @see AuthorizationPolicy::effect()
 	 */
 	function effect() {
-		if (is_a($this->_router, 'PKPPageRouter')) {
+		if (is_a($this->_router, 'SEPPageRouter')) {
 			$page = $this->_router->getRequestedPage($this->_request);
 		} else {
 			$page = null;

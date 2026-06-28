@@ -31,7 +31,7 @@ switch ($op) {
 	case 'unsubscribeMailList':
 	case 'fetchNotification':
 		define('HANDLER_CLASS', 'NotificationHandler');
-		import('lib.pkp.pages.notification.NotificationHandler');
+		import('lib.sep.pages.notification.NotificationHandler');
 		break;
 }
 

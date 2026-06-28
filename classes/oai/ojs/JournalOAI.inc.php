@@ -1,27 +1,27 @@
 <?php
 
 /**
- * @defgroup oai_ojs
+ * @defgroup oai_cla
  */
 
 /**
- * @file classes/oai/ojs/JournalOAI.inc.php
+ * @file classes/oai/cla/JournalOAI.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class JournalOAI
- * @ingroup oai_ojs
+ * @ingroup oai_cla
  * @see OAIDAO
  *
- * @brief OJS-specific OAI interface.
+ * @brief CLA-specific OAI interface.
  * Designed to support both a site-wide and journal-specific OAI interface
  * (based on where the request is directed).
  */
 
-import('lib.pkp.classes.oai.OAI');
-import('classes.oai.ojs.OAIDAO');
+import('lib.sep.classes.oai.OAI');
+import('classes.oai.cla.OAIDAO');
 
 class JournalOAI extends OAI {
 	/** @var $site Site associated site object */
@@ -124,11 +124,11 @@ class JournalOAI extends OAI {
 		$info->sampleIdentifier = $this->articleIdToIdentifier(1);
 		$info->earliestDatestamp = $this->dao->getEarliestDatestamp(array($this->journalId));
 
-		$info->toolkitTitle = 'Open Journal Systems';
+		$info->toolkitTitle = 'Code Lumera Editorial';
 		$versionDao =& DAORegistry::getDAO('VersionDAO');
 		$currentVersion =& $versionDao->getCurrentVersion();
 		$info->toolkitVersion = $currentVersion->getVersionString();
-		$info->toolkitURL = 'http://pkp.sfu.ca/ojs/';
+		$info->toolkitURL = 'http://lumera.sangia.org/cla/';
 
 		return $info;
 	}

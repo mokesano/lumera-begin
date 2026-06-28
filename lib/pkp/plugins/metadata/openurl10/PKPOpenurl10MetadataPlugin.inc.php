@@ -5,49 +5,49 @@
  */
 
 /**
- * @file plugins/metadata/openurl10/PKPOpenurl10MetadataPlugin.inc.php
+ * @file plugins/metadata/openurl10/SEPOpenurl10MetadataPlugin.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPOpenurl10MetadataPlugin
+ * @class SEPOpenurl10MetadataPlugin
  * @ingroup plugins_metadata_openurl10
  *
  * @brief Abstract base class for OpenURL 1.0 metadata plugins
  */
 
 
-import('lib.pkp.classes.plugins.MetadataPlugin');
+import('lib.sep.classes.plugins.MetadataPlugin');
 
-class PKPOpenurl10MetadataPlugin extends MetadataPlugin {
+class SEPOpenurl10MetadataPlugin extends MetadataPlugin {
 	/**
 	 * Constructor
 	 */
-	function PKPOpenurl10MetadataPlugin() {
+	function SEPOpenurl10MetadataPlugin() {
 		parent::MetadataPlugin();
 	}
 
 
 	//
-	// Override protected template methods from PKPPlugin
+	// Override protected template methods from SEPPlugin
 	//
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'Openurl10MetadataPlugin';
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.metadata.openurl10.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.metadata.openurl10.description');

@@ -22,7 +22,7 @@ class FilterHelper {
 	function installFilterGroups($filterGroupsNode) {
 		// Install filter groups.
 		$filterGroupDao =& DAORegistry::getDAO('FilterGroupDAO'); /* @var $filterGroupDao FilterGroupDAO */
-		import('lib.pkp.classes.filter.FilterGroup');
+		import('lib.sep.classes.filter.FilterGroup');
 
 		foreach ($filterGroupsNode->getChildren() as $filterGroupNode) { /* @var $filterGroupNode XMLNode */
 			$filterGroupSymbolic = $filterGroupNode->getAttribute('symbolic');

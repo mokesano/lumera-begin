@@ -60,7 +60,7 @@ class SubscriptionAction {
 	 */
 	function subscriptions($institutional = false) {
 		$journal =& Request::getJournal();
-		$rangeInfo =& PKPHandler::getRangeInfo('subscriptions');
+		$rangeInfo =& SEPHandler::getRangeInfo('subscriptions');
 
 		if ($institutional) {
 			$subscriptionDao =& DAORegistry::getDAO('InstitutionalSubscriptionDAO');
@@ -558,7 +558,7 @@ class SubscriptionAction {
 	/**
 	 * Display subscription policies for the current journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function subscriptionPolicies($args, &$request) {
 		import('classes.subscription.form.SubscriptionPolicyForm');
@@ -570,8 +570,8 @@ class SubscriptionAction {
 			$templateMgr->assign('scheduledTasksEnabled', true);
 		}
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$templateMgr->assign('acceptSubscriptionPayments', $paymentManager->acceptSubscriptionPayments());				
 
 		$subscriptionPolicyForm = new SubscriptionPolicyForm();
@@ -586,7 +586,7 @@ class SubscriptionAction {
 	/**
 	 * Save subscription policies for the current journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveSubscriptionPolicies($args, &$request) {
 		import('classes.subscription.form.SubscriptionPolicyForm');
@@ -601,8 +601,8 @@ class SubscriptionAction {
 			$templateMgr->assign('scheduledTasksEnabled', true);
 		}
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$templateMgr->assign('acceptSubscriptionPayments', $paymentManager->acceptSubscriptionPayments());				
 
 		if ($subscriptionPolicyForm->validate()) {

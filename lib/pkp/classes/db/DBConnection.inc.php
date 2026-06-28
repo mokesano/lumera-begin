@@ -111,7 +111,7 @@ class DBConnection {
 	 * @return boolean
 	 */
 	function initConn() {
-		require_once('lib/pkp/lib/adodb/adodb.inc.php');
+		require_once('lib/sep/lib/adodb/adodb.inc.php');
 
 		$this->dbconn =& ADONewConnection($this->driver);
 
@@ -241,7 +241,7 @@ class DBConnection {
 	}
 
 	/**
-	 * Log a SQL query and execution time in the PKPProfiler debug log
+	 * Log a SQL query and execution time in the SEPProfiler debug log
 	 * @param $sql string SQL statement being run
 	 * @param $start string a float representing the unix microtime the query started
 	 */

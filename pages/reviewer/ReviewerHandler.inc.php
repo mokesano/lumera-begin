@@ -69,7 +69,7 @@ class ReviewerHandler extends Handler {
 				$submissionsArray = array_reverse($submissionsArray);
 			}
 			// Convert submission array back to an ItemIterator class
-			import('lib.pkp.classes.core.ArrayItemIterator');
+			import('lib.sep.classes.core.ArrayItemIterator');
 			$submissions =& ArrayItemIterator::fromRangeInfo($submissionsArray, $rangeInfo);
 		}  else {
 			$submissions = $reviewerSubmissionDao->getReviewerSubmissionsByReviewerId($user->getId(), $journal->getId(), $active, $rangeInfo, $sort, $sortDirection);
@@ -108,7 +108,7 @@ class ReviewerHandler extends Handler {
 
 		define('REVIEWER_ACCESS_KEY_SESSION_VAR', 'ReviewerAccessKey');
 
-		import('lib.pkp.classes.security.AccessKeyManager');
+		import('lib.sep.classes.security.AccessKeyManager');
 		$accessKeyManager = new AccessKeyManager();
 
 		$session =& $request->getSession();
@@ -147,7 +147,7 @@ class ReviewerHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $articleId = 0, $reviewId = 0) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_OJS_EDITOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION, LOCALE_COMPONENT_CLA_EDITOR);
 		$templateMgr =& TemplateManager::getManager();
 		$pageHierarchy = $subclass ? array(array(Request::url(null, 'user'), 'navigation.user'), array(Request::url(null, 'reviewer'), 'user.role.reviewer'))
 				: array(array(Request::url(null, 'user'), 'navigation.user'), array(Request::url(null, 'reviewer'), 'user.role.reviewer'));
@@ -166,7 +166,7 @@ class ReviewerHandler extends Handler {
 	 * Validate that the user is an assigned reviewer for
 	 * the article.
 	 * Redirects to reviewer index page if validation fails.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $reviewId int optional
 	 */
 	function validate($request, $reviewId = null) {

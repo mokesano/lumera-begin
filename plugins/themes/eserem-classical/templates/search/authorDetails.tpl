@@ -73,7 +73,7 @@
     	{if $section->getLocalizedTitle()|escape}
 		<p class="content-type">{$section->getLocalizedTitle()|escape}</p>
 		{else}
-		<p class="content-type">{translate key="rt.metadata.pkp.peerReviewed"}</p>
+		<p class="content-type">{translate key="rt.metadata.sep.peerReviewed"}</p>
 		{/if}
 
         <div class="lozenges">
@@ -141,7 +141,7 @@
     	{if $section->getLocalizedTitle()|escape}
 		<p class="content-type">{$section->getLocalizedTitle()|escape}</p>
 		{else}
-		<p class="content-type">{translate key="rt.metadata.pkp.peerReviewed"}</p>
+		<p class="content-type">{translate key="rt.metadata.sep.peerReviewed"}</p>
 		{/if}
 
         <div class="lozenges"></div>

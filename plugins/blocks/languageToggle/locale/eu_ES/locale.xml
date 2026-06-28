@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/blocks/languageToggle/locale/eu_ES/locale.xml
@@ -17,4 +17,3 @@
 	<message key="plugins.block.languageToggle.description">Plugin honek hizkuntza-aldatzeko aukera ematen du alboko barran.</message>
 	<message key="plugins.block.languageToggle.selectLabel">Aukeratu hizkuntza</message>
 </locale>
-

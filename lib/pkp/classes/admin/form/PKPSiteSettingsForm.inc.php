@@ -4,7 +4,7 @@
  */
 
 /**
- * @file classes/admin/form/PKPSiteSettingsForm.inc.php
+ * @file classes/admin/form/SEPSiteSettingsForm.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
@@ -18,16 +18,16 @@
 
 
 define('SITE_MIN_PASSWORD_LENGTH', 4);
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
-class PKPSiteSettingsForm extends Form {
+class SEPSiteSettingsForm extends Form {
 	/** @var $siteSettingsDao object Site settings DAO */
 	var $siteSettingsDao;
 
 	/**
 	 * Constructor.
 	 */
-	function PKPSiteSettingsForm() {
+	function SEPSiteSettingsForm() {
 		parent::Form('admin/settings.tpl');
 		$this->siteSettingsDao =& DAORegistry::getDAO('SiteSettingsDAO');
 

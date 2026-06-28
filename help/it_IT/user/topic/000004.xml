@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000004.xml
@@ -15,6 +15,6 @@
 
 <topic id="user/topic/000004" locale="it_IT" title="Fascicolo corrente e archivi" toc="user/toc/000000" key="user.currentAndArchives">
 	<section>
-		<![CDATA[<p>Sono raggiungibili, per orgni rivista, il fascicolo corrente e, attraverso gli archivi quelli precedenti. L'amministratore pu&#x00F2; anche importare in OJS fascicoli precedentemente pubblicati con altro sistema.</p>]]>	
+		<![CDATA[<p>Sono raggiungibili, per orgni rivista, il fascicolo corrente e, attraverso gli archivi quelli precedenti. L'amministratore pu&#x00F2; anche importare in CLA fascicoli precedentemente pubblicati con altro sistema.</p>]]>	
 	</section>
 </topic>

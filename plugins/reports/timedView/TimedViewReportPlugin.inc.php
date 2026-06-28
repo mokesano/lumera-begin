@@ -15,7 +15,7 @@
 
 define('TIMED_VIEW_REPORT_YEAR_OFFSET_PAST', '-20');
 define('TIMED_VIEW_REPORT_YEAR_OFFSET_FUTURE', '+0');
-define('OJS_METRIC_TYPE_TIMED_VIEWS', 'ojs::timedViews');
+define('CLA_METRIC_TYPE_TIMED_VIEWS', 'cla::timedViews');
 
 import('classes.plugins.ReportPlugin');
 
@@ -103,7 +103,7 @@ class TimedViewReportPlugin extends ReportPlugin {
 			$dateClear = date('Ymd', mktime(0, 0, 0, $request->getUserVar('dateClearMonth'), $request->getUserVar('dateClearDay'), $request->getUserVar('dateClearYear')));
 			$journal =& $request->getJournal();
 			$metricsDao =& DAORegistry::getDAO('MetricsDAO'); /* @var $metricsDao MetricsDAO */
-			$metricsDao->purgeRecords(OJS_METRIC_TYPE_TIMED_VIEWS, $dateClear);
+			$metricsDao->purgeRecords(CLA_METRIC_TYPE_TIMED_VIEWS, $dateClear);
 			$form->display();
 		} else {
 			$form->initData();

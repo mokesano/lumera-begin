@@ -5,49 +5,49 @@
  */
 
 /**
- * @file plugins/metadata/nlm30/PKPNlm30MetadataPlugin.inc.php
+ * @file plugins/metadata/nlm30/SEPNlm30MetadataPlugin.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPNlm30MetadataPlugin
+ * @class SEPNlm30MetadataPlugin
  * @ingroup plugins_metadata_nlm30
  *
  * @brief Abstract base class for NLM 3.0 metadata plugins
  */
 
 
-import('lib.pkp.classes.plugins.MetadataPlugin');
+import('lib.sep.classes.plugins.MetadataPlugin');
 
-class PKPNlm30MetadataPlugin extends MetadataPlugin {
+class SEPNlm30MetadataPlugin extends MetadataPlugin {
 	/**
 	 * Constructor
 	 */
-	function PKPNlm30MetadataPlugin() {
+	function SEPNlm30MetadataPlugin() {
 		parent::MetadataPlugin();
 	}
 
 
 	//
-	// Override protected template methods from PKPPlugin
+	// Override protected template methods from SEPPlugin
 	//
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'Nlm30MetadataPlugin';
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.metadata.nlm30.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.metadata.nlm30.description');

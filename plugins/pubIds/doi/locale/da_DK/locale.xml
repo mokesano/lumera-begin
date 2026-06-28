@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/pubIds/doi/locale/da_DK/locale.xml
@@ -13,11 +13,11 @@
  
 <locale name="da_DK" full_name="Dansk">
 	<message key="plugins.pubIds.doi.displayName">DOI</message>
-	<message key="plugins.pubIds.doi.description">Dette plug-in gør det muligt at tildele DOI’er (Digital Object Identifiers) til numre, artikler, satsskibe og supplerende filer i OJS.</message>
+	<message key="plugins.pubIds.doi.description">Dette plug-in gør det muligt at tildele DOI’er (Digital Object Identifiers) til numre, artikler, satsskibe og supplerende filer i CLA.</message>
 
 	<!-- settings form -->
 	<message key="plugins.pubIds.doi.manager.settings.doiSettings">DOI plug-in-indstillinger</message>
-	<message key="plugins.pubIds.doi.manager.settings.description">Konfigurer dette DOI plug-in, så det bliver muligt at administrere og bruge DOI’er i OJS:</message>
+	<message key="plugins.pubIds.doi.manager.settings.description">Konfigurer dette DOI plug-in, så det bliver muligt at administrere og bruge DOI’er i CLA:</message>
 	
 	<message key="plugins.pubIds.doi.manager.settings.doiObjects">Tidsskriftsindhold</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiObjectsRequired">Vælg de elementer, der skal DOI-registreres.</message>
@@ -33,7 +33,7 @@
 
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffix">DOI-suffiks</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixDescription">Et DOI-suffiks kan antage en hvilken som helst form, men det skal være unikt for hvert enkelt udgivet element under samme DOI-præfiksgruppe:</message>
-	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern">Brug nedenstående format til at generere DOI-suffikser ud fra. Anvend %j til tidsskriftsinitialer, %v til årgangsnummer, %i til nummeret i årgangen, %Y til året, %a til OJS-artikel-id, %g til OJS-satsskibs-id, %s til OJS-supplerende fil-id %p til sidenummer.</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern">Brug nedenstående format til at generere DOI-suffikser ud fra. Anvend %j til tidsskriftsinitialer, %v til årgangsnummer, %i til nummeret i årgangen, %Y til året, %a til CLA-artikel-id, %g til CLA-satsskibs-id, %s til CLA-supplerende fil-id %p til sidenummer.</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.issues">til numre</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.articles">til artikler</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.galleys">til satsskibe</message>

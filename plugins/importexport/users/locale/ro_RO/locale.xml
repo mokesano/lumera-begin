@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/users/locale/ro_RO/locale.xml
@@ -50,7 +50,7 @@ Exemple:
 	<message key="plugins.importexport.users.import.errorsOccurred">Au apărut erori la momentul importului</message>
 	<message key="plugins.importexport.users.import.confirmUsers">Confirmaţi că aceştia sunt utilizatorii care aţi dori să-i importaţi în sistem</message>
 	<message key="plugins.importexport.users.import.warning">Avertisment</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">Nu se pot folosi parole hashed cu {$importHash}; OJS este configurat pentru a utiliza {$ojsHash}. Dacă continui, va trebui să resetaţi parolele utilizatorilor importaţi.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">Nu se pot folosi parole hashed cu {$importHash}; CLA este configurat pentru a utiliza {$claHash}. Dacă continui, va trebui să resetaţi parolele utilizatorilor importaţi.</message>
 	<message key="plugins.importexport.users.unknownJournal">A fost specificată o cale necunoscută "{$journalPath}" către revistă.</message>
 
 	<message key="plugins.importexport.users.export.exportUsers">Exportă utilizatori</message>

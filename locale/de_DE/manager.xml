@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/de_DE/manager.xml
@@ -20,7 +20,7 @@
 	<message key="manager.groups.context.editorialTeam.short">Redaktion</message>
 	<message key="manager.groups.context.people">Lassen Sie die Funktionen als eigenständige Kategorien unter der Rubrik "Personen" (z.B. Redaktion) erscheinen.</message>
 	<message key="manager.groups.create">Position erstellen</message>
-	<message key="manager.groups.disableBoard">OJS führt die Mitglieder der Redaktion unter ihren jeweiligen Funktionen auf (Zeitschriftenverwalter/in, Lektor/in etc.)</message>
+	<message key="manager.groups.disableBoard">CLA führt die Mitglieder der Redaktion unter ihren jeweiligen Funktionen auf (Zeitschriftenverwalter/in, Lektor/in etc.)</message>
 	<message key="manager.groups.enableBoard">Die/der Zeitschriftenverwalter/in erstellt Funktionen und weist diesen Funktionen Personen zu.</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[Unter <a href="{$aboutEditorialTeamUrl}">Personen</a> in "Über uns":]]></message>
 	<message key="manager.groups.noneCreated">Es wurden keine Positionen innerhalb der Redaktion angelegt.</message>
@@ -30,7 +30,7 @@
 	<message key="manager.language.forms">Formulare</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Dies wird alle Einstellungen, die Sie für diese Regionaleinstellung gewählt hatten, ersetzen.</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Die Standardeinstellungen für diese Regionaleinstellung wiederherstellen</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS steht den Benutzer/innen in jeder der unterstützten Sprachen zur Verfügung. Außerdem kann OJS als ein mehrsprachiges System arbeiten, wodurch den Benutzer/innen die Möglichkeit gegeben wird, auf jeder einzelnen Seite zwischen den Sprachen hin und her zu springen und bestimmte Daten in zusätzlichen Sprachen einzugeben.<br /><br />Sollte eine von OJS unterstützte Sprache nicht nachfolgend aufgelistet werden, bitten Sie Ihre/n Website-Administrator/in, die Sprache von der Administrationsoberfläche aus zu installieren. Konsultieren Sie die OJS-Dokumentation für Anweisungen bezüglich der Unterstützung weiterer Sprachen. ]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA steht den Benutzer/innen in jeder der unterstützten Sprachen zur Verfügung. Außerdem kann CLA als ein mehrsprachiges System arbeiten, wodurch den Benutzer/innen die Möglichkeit gegeben wird, auf jeder einzelnen Seite zwischen den Sprachen hin und her zu springen und bestimmte Daten in zusätzlichen Sprachen einzugeben.<br /><br />Sollte eine von CLA unterstützte Sprache nicht nachfolgend aufgelistet werden, bitten Sie Ihre/n Website-Administrator/in, die Sprache von der Administrationsoberfläche aus zu installieren. Konsultieren Sie die CLA-Dokumentation für Anweisungen bezüglich der Unterstützung weiterer Sprachen. ]]></message>
 	<message key="manager.languages.noneAvailable">Leider ist keine weitere Sprache verfügbar. Setzen Sie sich mit Ihrer Administratorin/Ihrem Administrator in Verbindung, wenn Sie in der Zeitschrift weitere Sprachen verwenden möchten.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Dies ist die Standardsprache der Zeitschriften-Website.</message>
 	<message key="manager.managementPages">Verwaltung</message>
@@ -40,7 +40,7 @@
 	<message key="manager.payment.authorFees">Autor/innengebühren</message>
 	<message key="manager.payment.authorFeesDescription">Die ausgewählten Optionen (zusammen mit der jeweiligen Beschreibung und den Gebühren, die weiter unten bearbeitet werden können) erscheinen unter "1. Schritt" der Beitragseinreichung, im "Über uns" der Zeitschrift unter "Zur Zeitschrift" sowie an allen Stellen, an denen eine Zahlung erforderlich ist.</message>
 	<message key="manager.payment.currency">Währung</message>
-	<message key="manager.payment.currencymessage">OJS führt keine Währungsumrechnungen durch. Wenn Sie Zahlungen für Abonnements annehmen, müssen Sie sicherstellen, dass die Währung, in der das Abonnement bezahlt wird, der hier festgelegten entpricht.</message>
+	<message key="manager.payment.currencymessage">CLA führt keine Währungsumrechnungen durch. Wenn Sie Zahlungen für Abonnements annehmen, müssen Sie sicherstellen, dass die Währung, in der das Abonnement bezahlt wird, der hier festgelegten entpricht.</message>
 	<message key="manager.payment.description">Beschreibung</message>
 	<message key="manager.payment.details">Details</message>
 	<message key="manager.payment.editSubscription">Abonnement bearbeiten</message>
@@ -269,7 +269,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Beiräte legen die redaktionelle Ausrichtung der Zeitschrift fest, beteiligen sich an der Auswahl von Redakteur/innen und tragen - durch den Ruf, den ihre Mitglieder haben - zum Ansehen der Zeitschrift in ihrem Fachgebiet bei. Begutachtungskomitees lenken zusätzlich den Peer-Review-Prozess. Mitglieder des Begutachtungskomitees haben keinen Zugang zum Verwaltungssystem der Zeitschrift, stehen jedoch auf der Liste potenzieller Gutachter/innen.</message>
 	<message key="manager.setup.emailBounceAddress">Antwortadresse</message>
 	<message key="manager.setup.emailBounceAddressDescription">Jede E-Mail, die nicht zugestellt werden kann, erzeugt eine Fehlermeldung, die an diese Adresse geschickt wird.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Anmerkung:</strong> Die Website-Administrator/in muss in der OJS-Konfigurationsdatei die Option <tt>allow_envelope_sender</tt> aktivieren, um dies zu ermöglichen. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe OJS-Dokumentation.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Anmerkung:</strong> Die Website-Administrator/in muss in der CLA-Konfigurationsdatei die Option <tt>allow_envelope_sender</tt> aktivieren, um dies zu ermöglichen. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe CLA-Dokumentation.]]></message>
 	<message key="manager.setup.emails">E-Mail-Kennzeichnung </message>
 	<message key="manager.setup.emailSignatureDescription">Alle E-Mail-Vorlagen, die vom System im Namen der Zeitschrift verschickt werden, tragen die folgende Signatur. Die E-Mail-Vorlagen können unter "Zeitschriftenverwaltung" bearbeitet werden.</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
@@ -291,7 +291,7 @@
 	<message key="manager.setup.focusScope">Konzept</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>BEISPIEL FÜR HTML-DATEN</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Indizierung von Arbeiten für Autor/innen</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS unterstützt das Protocol for Metadata Harvesting der <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a>, das den Zugang zu gut katalogisierten Forschungsquellen weltweit eröffnet. Die Autor/innen veröffentlichen Metadaten ihrer Beiträge nach einer ähnlichen Vorlage. Die Zeitschriftenverwalterin/der Zeitschriftenverwalter sollte die Kategorien für die Indizierung auswählen und den Autor/innen passende Beispiele an die Hand geben, die die Indizierung ihrer Arbeit erleichtern, wobei die Begriffe durch Semikolon getrennt werden (z.B. Begriff1; Begriff2). Die Einträge sollten als Beispiele (mit "z.B." oder "zum Beispiel") gekennzeichnet sein.]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA unterstützt das Protocol for Metadata Harvesting der <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a>, das den Zugang zu gut katalogisierten Forschungsquellen weltweit eröffnet. Die Autor/innen veröffentlichen Metadaten ihrer Beiträge nach einer ähnlichen Vorlage. Die Zeitschriftenverwalterin/der Zeitschriftenverwalter sollte die Kategorien für die Indizierung auswählen und den Autor/innen passende Beispiele an die Hand geben, die die Indizierung ihrer Arbeit erleichtern, wobei die Begriffe durch Semikolon getrennt werden (z.B. Begriff1; Begriff2). Die Einträge sollten als Beispiele (mit "z.B." oder "zum Beispiel") gekennzeichnet sein.]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Die E-Mail-Adresse des Hauptkontakts ist erforderlich.</message>
 	<message key="manager.setup.form.contactNameRequired">Der Name des Hauptkontakts ist erforderlich.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Das Kürzel der Zeitschrift ist erforderlich.</message>
@@ -430,8 +430,8 @@
 	<message key="manager.setup.reviewGuidelines">Begutachtungsrichtlinien</message>
 	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Die Begutachtungsrichtlinien liefern Gutachter/innen Kriterien für die Beurteilung der Eignung einer Einreichung für die Veröffentlichung in der Zeitschrift und können spezielle Hinweise, um ein wirksames und hilfreiches Gutachten zu verfassen. Den Gutachter/innen werden während der Anfertigung des Gutachtens zwei Freitextfelder angeboten, das erste "für Autor/in und Redakteur/in", das zweite "für Redakteur/in". Alternativ kann der/die Zeitschriftenverwalter/in ein Begutachtungsformular unter <a href="{$reviewFormsUrl}" class="action">Review Forms</a> anlegen. In jedem Fall werden Redakteur/innen die Möglichkeit haben, die Gutachten in die Korrespondenz mit dem/der Autor/in aufzunehmen.]]></message>
 	<message key="manager.setup.reviewOptions">Optionen für die Begutachtung</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">Automatische Erinnerung der Gutachter/innen per E-Mail (aus den OJS-Standard-E-Mails) kann an zwei Stellen erfolgen. Die Redakteurin/der Redakteur kann hingegen den Gutachter/innen zu jeder Zeit direkt eine E-Mail schicken</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Anmerkung:</strong> Hierfür muss die/der Website-Administrator/in die <tt>scheduled_tasks</tt>-Option in der Konfigurationsdatei von OJS aktivieren. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe OJS-Dokumentation.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">Automatische Erinnerung der Gutachter/innen per E-Mail (aus den CLA-Standard-E-Mails) kann an zwei Stellen erfolgen. Die Redakteurin/der Redakteur kann hingegen den Gutachter/innen zu jeder Zeit direkt eine E-Mail schicken</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Anmerkung:</strong> Hierfür muss die/der Website-Administrator/in die <tt>scheduled_tasks</tt>-Option in der Konfigurationsdatei von CLA aktivieren. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe CLA-Dokumentation.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Anonyme Begutachtung</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Kann im Verlauf der redaktionellen Bearbeitung verändert werden.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Vorgesehener Zeitaufwand für eine Begutachtung</message>
@@ -450,7 +450,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Bietet Links zu <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Anonyme Begutachtung sicherstellen</a> auf den Seiten, auf denen Autor/innen und Gutachter/innen Dateien hochladen.]]></message>
 	<message key="manager.setup.reviewPolicy">Begutachtungsgrundsätze</message>
 	<message key="manager.setup.reviewProcess">Begutachtungsverfahren</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS unterstützt zwei Modelle für die Verwaltung des Begutachtungsverfahrens. Es empfiehlt sich, das Standardbegutachtungsverfahren zu wählen, weil es die Gutachter/innen Schritt für Schritt durch das Verfahren führt und somit einen vollständigen Begutachtungsverlauf für jeden Beitrag garantiert. Außerdem enthält es eine automatische Erinnerungsfunktion sowie Standardempfehlungen zu den Beiträgen (Beitrag annehmen; Überarbeitung erforderlich; Erneut zur Begutachtung einreichen; Anderswo erneut einreichen; Beitrag ablehnen; Siehe Kommentare).<br /><br /> Wählen Sie unter den folgenden:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA unterstützt zwei Modelle für die Verwaltung des Begutachtungsverfahrens. Es empfiehlt sich, das Standardbegutachtungsverfahren zu wählen, weil es die Gutachter/innen Schritt für Schritt durch das Verfahren führt und somit einen vollständigen Begutachtungsverlauf für jeden Beitrag garantiert. Außerdem enthält es eine automatische Erinnerungsfunktion sowie Standardempfehlungen zu den Beiträgen (Beitrag annehmen; Überarbeitung erforderlich; Erneut zur Begutachtung einreichen; Anderswo erneut einreichen; Beitrag ablehnen; Siehe Kommentare).<br /><br /> Wählen Sie unter den folgenden:]]></message>
 	<message key="manager.setup.reviewProcessEmail">Begutachtungsverfahren über E-Mail-Anhänge</message>
 	<message key="manager.setup.reviewProcessStandard">Standardbegutachtungsverfahren</message>
 	<message key="manager.setup.reviewProcessStandardDescription">Redakteur/innen schicken ausgewählten Gutachter/innen den Titel und Abstract des Beitrags und laden sie dazu ein, sich für die Begutachtung auf der Website der Zeitschrift einzuloggen. Über die Website erklären die Gutacher/innen ihr Einverständnis zur Übernahme der Begutachtung, laden die Beiträge herunter, reichen ihre Kommentare ein und entscheiden sich für eine Empfehlung.</message>
@@ -460,7 +460,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Falls keine Rubrik angegeben wird, werden die Beiträge standardmäßig für die Rubrik Artikel eingereicht.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Gehen Sie zur Rubrikverwaltung, um Zeitschriftenrubriken einzurichten oder zu verändern (z.B. Artikel, Rezensionen usw.).<br /><br /> Wenn Beiträge eingereicht werden, schlagen die Autor/innen eine Rubrik vor.]]></message>
 	<message key="manager.setup.securitySettings">Zugangs- und Sicherheitseinstellungen</message>
-	<message key="manager.setup.securitySettingsDescription">OJS bietet eine Reihe von sicherheitsrelevanten Optionen, mit denen die Inhalte der Zeitschrift beschränkt werden können oder die zusätzliche Informationen über Beiträge für Kontrollzwecke liefern.</message>
+	<message key="manager.setup.securitySettingsDescription">CLA bietet eine Reihe von sicherheitsrelevanten Optionen, mit denen die Inhalte der Zeitschrift beschränkt werden können oder die zusätzliche Informationen über Beiträge für Kontrollzwecke liefern.</message>
 	<message key="manager.setup.selectEditorDescription">Redakteur/in, die/der den Beitrag betreut</message>
 	<message key="manager.setup.selectSectionDescription">Die Rubrik der Zeitschrift, für die der Beitrag in Frage kommt</message>
 	<message key="manager.setup.showGalleyLinksDescription">Links auf die Fahne immer anzeigen und beschränkten Zugang kennzeichnen.</message>
@@ -482,7 +482,7 @@
 	<message key="manager.setup.submissions.description">Richtlinien für Autor/innen, Copyright und Indizierung (einschließlich Registrierung).</message>
 	<message key="manager.setup.subscription">Einige oder alle Inhalte der Zeitschrift sind nur für Abonnent/innen zugänglich.</message>
 	<message key="manager.setup.subscriptionDescription">Die Einrichtung der Funktion einer Abonnementverwaltung ist in diesem Fall nötig. Diese hat Zugang zu den Abonnement-Modulen, was auch frei zugängliche Angebote, Selbst-Archivierung und Benachrichtigungen per E-Mail beinhaltet.</message>
-	<message key="manager.setup.noPublishing">OJS wird nicht verwandt, um die Zeitschrifteninhalte online zu veröffentlichen.</message>
+	<message key="manager.setup.noPublishing">CLA wird nicht verwandt, um die Zeitschrifteninhalte online zu veröffentlichen.</message>
 	<message key="manager.setup.technicalSupportContact">Kontakt bei technischen Fragen</message>
 	<message key="manager.setup.technicalSupportContactDescription">Diese Person erscheint auf der "Kontakt"-Seite der Zeitschrift und kann von Redakteur/innen, Autor/innen und Gutachter/innen genutzt werden. Sie sollte mit der Handhabung des Systems aus all diesen Perspektiven vertraut sein. Da dieses Zeitschriftensystem nur sehr geringe technische Unterstützung benötigt, handelt es sich um eine Teilzeitaufgabe. Es könnte zum Beispiel vorkommen, dass Autor/innen und Gutachter/innen Schwierigkeiten mit den Anweisungen oder den Dateiformaten haben. Außerdem muss eine regelmäßige Sicherung der Zeitschriftendaten auf dem Server gewährleistet sein.</message>
 	<message key="manager.setup.typeExamples">(z.B. historische Untersuchung; quasi-experimentell; Literaturanalyse; Umfrage/Interview)</message>
@@ -502,13 +502,13 @@
 	<message key="manager.setup.useTextTitle">Titeltext</message>
 	<message key="manager.setup.volumePerYear">Bände pro Jahr</message>
 	<message key="manager.statistics.defaultMetricDescription">
-		Ihre OJS-Installation ist so eingestellt, dass sie mehr als eine Nutzungsstatistik aufzeichnet. Nutzungsstatistiken werden in verschiedenen Kontexten angezeigt.
+		Ihre CLA-Installation ist so eingestellt, dass sie mehr als eine Nutzungsstatistik aufzeichnet. Nutzungsstatistiken werden in verschiedenen Kontexten angezeigt.
 		Es gibt Fälle, in denen eine einzige Nutzungsstatistik benutzt werden muss, z.B. wenn eine sortierte Liste der am häufigsten genutzten Artikel angezeigt werden soll oder um
 		Suchergebnisse zu gewichten. Bitte wählen Sie eine der Nutzungsmetriken als Standard aus.
 	</message>
 	<message key="manager.statistics.reports">Berichterstellung</message>
 	<message key="manager.statistics.reports.aggregationColumns">Erzeuge Statistiken nach:</message>
-	<message key="manager.statistics.reports.optionalColumns.description">Elemente, die kursiv gesetzt und mit * markiert sind, stehen für optionale Daten fürdie momentane Statistikmethode in OJS sind (gewählte Metrik). Abhängig von Ihrer Konfiguration des Statistik-Plug-Ins haben Sie diese Daten oder nicht.</message>
+	<message key="manager.statistics.reports.optionalColumns.description">Elemente, die kursiv gesetzt und mit * markiert sind, stehen für optionale Daten fürdie momentane Statistikmethode in CLA sind (gewählte Metrik). Abhängig von Ihrer Konfiguration des Statistik-Plug-Ins haben Sie diese Daten oder nicht.</message>
 	<message key="manager.statistics.reports.defaultReportTemplates">Standard-Berichtsvorlagen</message>
 	<message key="manager.statistics.reports.defaultReport.articleDownloads">Downloads von Artikeldateien</message>
 	<message key="manager.statistics.reports.defaultReport.articleAbstract">Aufrufe der Abstractseiten von Artikeln</message>
@@ -517,7 +517,7 @@
 	<message key="manager.statistics.reports.defaultReport.issueTableOfContents">Aufrufe der Inhaltsverzeichnis-Seiten</message>
 	<message key="manager.statistics.reports.defaultReport.issueTableOfContentsAndDownloads">Inhaltsverzeichnisse und Downloads</message>
 	<message key="manager.statistics.reports.defaultReport.journalIndexPageViews">Startseiten-Aufrufe</message>
-	<message key="manager.statistics.reports.description">OJS erstellt Berichte, die die Details der Verarbeitung von Beiträgen aus der Perspektive von Beiträgen, Redakteur/innen, Gutachter/innen sowie Rubriken über einen festgelegten Zeitraum nachzeichnen. Die Berichte werden im CSV-Format erstellt, die mit einer Tabellenkalkulation betrachtet werden können.</message>
+	<message key="manager.statistics.reports.description">CLA erstellt Berichte, die die Details der Verarbeitung von Beiträgen aus der Perspektive von Beiträgen, Redakteur/innen, Gutachter/innen sowie Rubriken über einen festgelegten Zeitraum nachzeichnen. Die Berichte werden im CSV-Format erstellt, die mit einer Tabellenkalkulation betrachtet werden können.</message>
 	<message key="manager.statistics.reports.generateReport">Benutzerdefinierten Bericht erzeugen</message>
 	<message key="manager.statistics.reports.advancedOptions">Erweiterte Einstellungen</message>
 	<message key="manager.statistics.reports.advancedOptions.label">Spalten, Filter und Sortierung anpassen. Änderungen an diesen Einstellungen könnte das erwartete Ergebnis der Berichtsvorlage verändern.</message>
@@ -555,7 +555,7 @@
 	<message key="manager.statistics.statistics.count.revise">Erneut einreichen</message>
 	<message key="manager.statistics.statistics.daysPerReview">Tage bis zur Begutachtung</message>
 	<message key="manager.statistics.statistics.daysToPublication">Tage bis zur Veröffentlichung</message>
-	<message key="manager.statistics.statistics.description">OJS berechnet folgende Statistiken für jede Zeitschrift: "Tage bis zur Begutachtung" wird vom Beitragseingang (oder dem Eingang der zu begutachtenden Version) bis zur ersten Redaktionsentscheidung berechnet, während die "Tage bis zur Veröffentlichung" der angenommenen Beiträge vom Hochladen des Originals bis zur Veröffentlichung berechnet werden.</message>
+	<message key="manager.statistics.statistics.description">CLA berechnet folgende Statistiken für jede Zeitschrift: "Tage bis zur Begutachtung" wird vom Beitragseingang (oder dem Eingang der zu begutachtenden Version) bis zur ersten Redaktionsentscheidung berechnet, während die "Tage bis zur Veröffentlichung" der angenommenen Beiträge vom Hochladen des Originals bis zur Veröffentlichung berechnet werden.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Veröffentlichte Beiträge</message>
 	<message key="manager.statistics.statistics.makePublic">Mitteilungen, die den Leser/innen in "Über uns" vermittelt werden.</message>
 	<message key="manager.statistics.statistics.note">Anmerkung: Die Prozentsätze der Gutachter/innenempfehlungen summieren sich nicht notwendigerweise auf 100%, weil erneut eingereichte Beiträge entweder angenommen, abgelehnt oder noch in Bearbeitung sein können.</message>
@@ -590,8 +590,8 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">Erinnerung per E-Mail</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">Woche(n) vor Ablauf des Abonnements.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Erinnerung an das Auslaufen des Abonnements</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Automatische E-Mails zur Erinnerung (verfügbar unter den Standard-E-Mails des OJS) können den Abonnent/innen sowohl vor als auch nach dem Ablauf des Abonnements zugehen.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Anmerkung:</strong> Hierzu muss die/der Website-Administrator/in <tt>scheduled_tasks</tt> in der Konfigurationsdatei von OJS aktivieren. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe OJS-Dokumentation.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Automatische E-Mails zur Erinnerung (verfügbar unter den Standard-E-Mails des CLA) können den Abonnent/innen sowohl vor als auch nach dem Ablauf des Abonnements zugehen.</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Anmerkung:</strong> Hierzu muss die/der Website-Administrator/in <tt>scheduled_tasks</tt> in der Konfigurationsdatei von CLA aktivieren. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe CLA-Dokumentation.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Wählen Sie aus:</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[Falls Sie im Textfeld HTML verwenden (für Schriftart, -farbe usw.) beachten Sie, dass Zeilenwechsel im Text automatisch als <tt>&lt;br&gt;</tt> behandelt werden. Der HTML-Editor arbeitet mit Firefox-Browsern.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Bitte eine gültige Zahl vor "Monat(e) nach Ablauf des Abonnements" eintragen</message>
@@ -599,9 +599,9 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Bitte eine gültige Zahl vor "Woche(n) nach Ablauf des Abonnements" eintragen</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Bitte eine gültige Zahl vor "Woche(n) vor Ablauf des Abonnements" eintragen.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Eingetragene Benutzer/innen können sich das Inhaltsverzeichnis einer Ausgabe per E-Mail zuschicken lassen, sobald sie frei zugänglich ist.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Anmerkung:</strong>Hierfür muss die/der Website-Adminstrator/in die <tt>scheduled_tasks</tt>-Option in der Konfigurationsdatei von OJS aktivieren. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe OJS-Dokumentation.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Anmerkung:</strong>Hierfür muss die/der Website-Adminstrator/in die <tt>scheduled_tasks</tt>-Option in der Konfigurationsdatei von CLA aktivieren. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe CLA-Dokumentation.]]></message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Online-Zahlungs-Benachrichtigungen</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">An die Abonnementverwalter/innen können automatische Mailbenachrichtigungen (verfügbar für Zeitschriftenverwalter/innen in den OJS-E-Mail-Vorlagen) verschickt werden bei Vervollständigung der Online-Zahlung von Abonnements.</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">An die Abonnementverwalter/innen können automatische Mailbenachrichtigungen (verfügbar für Zeitschriftenverwalter/innen in den CLA-E-Mail-Vorlagen) verschickt werden bei Vervollständigung der Online-Zahlung von Abonnements.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Abonnementverwalter/innen per E-Mail über den Online-Erwerb von individuellen Abonnements informieren.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseInstitutional">Abonnementverwalter/innen per E-Mail über den Online-Erwerb von institutionellen Abonnements informieren (empfohlen).</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">Abonnementverwalter/innen per E-Mail über die Online-Erneuerung eines individuellen Abonnements informieren.</message>

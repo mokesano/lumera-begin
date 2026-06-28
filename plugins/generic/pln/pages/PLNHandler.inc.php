@@ -20,7 +20,7 @@ class PLNHandler extends Handler {
 	/**
 	 * Index handler: redirect to journal page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$request->redirect(null, 'index');

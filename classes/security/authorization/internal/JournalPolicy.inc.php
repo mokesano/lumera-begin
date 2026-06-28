@@ -9,22 +9,22 @@
  * @class JournalPolicy
  * @ingroup security_authorization_internal
  *
- * @brief Policy that ensures availability of an OJS journal in
+ * @brief Policy that ensures availability of an CLA journal in
  *  the request context
  */
 
-import('lib.pkp.classes.security.authorization.PolicySet');
+import('lib.sep.classes.security.authorization.PolicySet');
 
 class JournalPolicy extends PolicySet {
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function JournalPolicy(&$request) {
 		parent::PolicySet();
 
 		// Ensure that we have a journal in the context.
-		import('lib.pkp.classes.security.authorization.ContextRequiredPolicy');
+		import('lib.sep.classes.security.authorization.ContextRequiredPolicy');
 		$this->addPolicy(new ContextRequiredPolicy($request, 'user.authorization.noJournal'));
 	}
 }

@@ -14,7 +14,7 @@
  * See dbscripts/xml/dtd/users.dtd for the XML schema used.
  */
 
-import('lib.pkp.classes.xml.XMLParser');
+import('lib.sep.classes.xml.XMLParser');
 
 class UserXMLParser {
 
@@ -77,9 +77,9 @@ class UserXMLParser {
 								$newUser->setMustChangePassword($attrib->getAttribute('change') == 'true'?1:0);
 								$encrypted = $attrib->getAttribute('encrypted');
 								if (isset($encrypted) && $encrypted !== 'plaintext') {
-									$ojsEncryptionScheme = Config::getVar('security', 'encryption');
-									if ($encrypted != $ojsEncryptionScheme) {
-										$this->errors[] = __('plugins.importexport.users.import.encryptionMismatch', array('importHash' => $encrypted, 'ojsHash' => $ojsEncryptionScheme));
+									$claEncryptionScheme = Config::getVar('security', 'encryption');
+									if ($encrypted != $claEncryptionScheme) {
+										$this->errors[] = __('plugins.importexport.users.import.encryptionMismatch', array('importHash' => $encrypted, 'claHash' => $claEncryptionScheme));
 									}
 									$newUser->setPassword($attrib->getValue());
 								} else {

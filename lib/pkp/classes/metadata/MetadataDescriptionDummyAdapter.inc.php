@@ -15,7 +15,7 @@
  * description object for direct metadata description persistence.
  */
 
-import('lib.pkp.classes.metadata.MetadataDataObjectAdapter');
+import('lib.sep.classes.metadata.MetadataDataObjectAdapter');
 
 class MetadataDescriptionDummyAdapter extends MetadataDataObjectAdapter {
 	/**
@@ -40,7 +40,7 @@ class MetadataDescriptionDummyAdapter extends MetadataDataObjectAdapter {
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.classes.metadata.MetadataDescriptionDummyAdapter';
+		return 'lib.sep.classes.metadata.MetadataDescriptionDummyAdapter';
 	}
 
 

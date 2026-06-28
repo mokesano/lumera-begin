@@ -36,11 +36,11 @@
 
 	<!-- NLM 3.0 output -->
 	<message key="plugins.metadata.nlm30.nlm30XmlOutput.displayName">Édition de revue NLM 3.0</message>
-	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Convertissez un article OJS ou OCS en NLM 3.0.</message>
+	<message key="plugins.metadata.nlm30.nlm30XmlOutput.description">Convertissez un article CLA ou OCS en NLM 3.0.</message>
 
 	<!-- NLM 2.3 output -->
 	<message key="plugins.metadata.nlm30.nlm23XmlOutput.displayName">Édition de revue NLM 2.3</message>
-	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Convertissez un article OJS ou OCS en NLM 2.3.</message>
+	<message key="plugins.metadata.nlm30.nlm23XmlOutput.description">Convertissez un article CLA ou OCS en NLM 2.3.</message>
 
 	<!-- NLM 3.0 to 2.3 downgrade -->
 	<message key="plugins.metadata.nlm30.nlm30ToNlm23Xml.displayName">Rétrogradation de l'édition de revue NLM 3.0 à 2.3</message>
@@ -48,5 +48,5 @@
 
 	<!-- Plain text reference list output -->
 	<message key="plugins.metadata.nlm30.refList.displayName">Génération d'une bibliographie en texte brut</message>
-	<message key="plugins.metadata.nlm30.refList.description">Produisez une bibliographie en texte brut formatée à partir des références d'une soumission OJS/OCS/OMP</message>
+	<message key="plugins.metadata.nlm30.refList.description">Produisez une bibliographie en texte brut formatée à partir des références d'une soumission CLA/OCS/OMP</message>
 </locale>

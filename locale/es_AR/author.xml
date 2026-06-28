@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
-  * ojs2-devel/locale/es_AR/author.xml
+  * cla2-devel/locale/es_AR/author.xml
   *
   * Copyright (c) 2013-2017 Simon Fraser University
   * Copyright (c) 2003-2016 John Willinsky

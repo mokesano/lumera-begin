@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/booksForReview/locale/fa_IR/locale.xml
@@ -125,7 +125,7 @@
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderBeforeDays2">روز قبل از مهلت کارشناسی</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays1">ارسال ایمل یاد آور به نویسنده</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays2">روز بعد از مهلت کارشناسی</message>
-	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Note:</strong> To activate these options, the site administrator must enable the <tt>scheduled_tasks</tt> option in the OJS configuration file. Additional server configuration may be required to support this functionality (which may not be possible on all servers), as indicated in the OJS documentation.]]></message>
+	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Note:</strong> To activate these options, the site administrator must enable the <tt>scheduled_tasks</tt> option in the CLA configuration file. Additional server configuration may be required to support this functionality (which may not be possible on all servers), as indicated in the CLA documentation.]]></message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformation">اطلاعات بیشتر</message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformationDescription">اطلاعات بیشترهمراه با کتاب برای کارشناسی چاپ می شود</message>
 	<message key="plugins.generic.booksForReview.settings.dueWeeksRequired">لطفا مدت زمان کارشناسی به هفته را وارد کنید</message>

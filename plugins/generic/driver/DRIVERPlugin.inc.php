@@ -19,7 +19,7 @@ define('DRIVER_ACCESS_EMBARGOED', 2);
 define('DRIVER_ACCESS_DELAYED', 3);
 define('DRIVER_ACCESS_RESTRICTED', 4);
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class DRIVERPlugin extends GenericPlugin {
 

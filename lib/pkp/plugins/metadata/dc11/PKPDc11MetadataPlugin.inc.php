@@ -5,49 +5,49 @@
  */
 
 /**
- * @file plugins/metadata/dc11/PKPDc11MetadataPlugin.inc.php
+ * @file plugins/metadata/dc11/SEPDc11MetadataPlugin.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPDc11MetadataPlugin
+ * @class SEPDc11MetadataPlugin
  * @ingroup plugins_metadata_dc11
  *
  * @brief Abstract base class for Dublin Core version 1.1 metadata plugins
  */
 
 
-import('lib.pkp.classes.plugins.MetadataPlugin');
+import('lib.sep.classes.plugins.MetadataPlugin');
 
-class PKPDc11MetadataPlugin extends MetadataPlugin {
+class SEPDc11MetadataPlugin extends MetadataPlugin {
 	/**
 	 * Constructor
 	 */
-	function PKPDc11MetadataPlugin() {
+	function SEPDc11MetadataPlugin() {
 		parent::MetadataPlugin();
 	}
 
 
 	//
-	// Override protected template methods from PKPPlugin
+	// Override protected template methods from SEPPlugin
 	//
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'Dc11MetadataPlugin';
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.metadata.dc11.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.metadata.dc11.description');

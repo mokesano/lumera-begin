@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 
 <!--
   * @file plugins/generic/sword/locale/de_DE/emailTemplates.xml
@@ -18,7 +18,7 @@
 
 Fahren Sie unter {$swordDepositUrl} fort.
 
-Diese E-Mail wurde durch das SWORD-Archivierungs-Plug-In für Open Journal Systems erzeugt.</body>
+Diese E-Mail wurde durch das SWORD-Archivierungs-Plug-In für Code Lumera Editorial erzeugt.</body>
 		<description>Diese E-Mail-Vorlage wird benutzt, um eine/n Autor/in über optionale Archivierungsorte für SWORD-Archivierungen zu informieren.</description>
 	</email_text>
 </email_texts>

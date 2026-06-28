@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plnplugin SYSTEM "ping.dtd"> 
 <plnplugin>
-	<ojsInfo>
-		<release>{$ojsVersion|escape}</release>
-	</ojsInfo>
+	<claInfo>
+		<release>{$claVersion|escape}</release>
+	</claInfo>
 	<pluginInfo>
 		<release>{$pluginVersion.release|escape}</release>
 		<releaseDate>{$pluginVersion.date|escape}</releaseDate>

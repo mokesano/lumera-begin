@@ -9,7 +9,7 @@
 <script type="text/javascript">
 	$(function() {ldelim}
 		// Attach the form handler.
-		$('#searchForm').pkpHandler('$.pkp.pages.search.SearchFormHandler');
+		$('#searchForm').sepHandler('$.sep.pages.search.SearchFormHandler');
 	{rdelim});
 </script>
 <form class="lm-site-search" method="GET" id="search-bar" action="{url page="search" op="search"}">

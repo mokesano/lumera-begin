@@ -13,7 +13,7 @@
  * @brief Plugin settings: select Dataverse to hold studies created from journal submissions
  * 
  */
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class DataverseSelectForm extends Form {
 

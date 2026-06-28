@@ -12,7 +12,7 @@
  * @brief This plugin enables embedding of the pdf.js viewer for PDF display
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class PdfJsViewerPlugin extends GenericPlugin {
 	/**

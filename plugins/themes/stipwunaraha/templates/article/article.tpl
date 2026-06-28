@@ -65,7 +65,7 @@
             <li>{if $section.title}<h7 class="tocSectionTitle">{$section.title|escape}</h7>{/if}</li>
             {/foreach}{* articles *}
             {/foreach}{* sections *}
-            <li><h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.pkp.peerReviewed"}{/if}</h7></li>
+            <li><h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.sep.peerReviewed"}{/if}</h7></li>
             </ul>
         </div>
         <h2 class="title u-font-serif">{$article->getLocalizedTitle()|strip_unsafe_html}</h2>
@@ -319,13 +319,13 @@
         <ul class="c-bibliographic-information__list">
             {if $article->getLocalizedDiscipline()}    
             <li class="c-bibliographic-information__item">
-                <h5 class="strong u-font-serif">{translate key="rt.metadata.pkp.discipline"}</h5>
+                <h5 class="strong u-font-serif">{translate key="rt.metadata.sep.discipline"}</h5>
                 <span class="c-bibliographic-information__value u-font-sans">{$article->getLocalizedDiscipline()|escape}</span>
             </li>{/if}
             
             {if $article->getLocalizedSubjectClass()}
             <li class="c-bibliographic-information__item">
-                <h5 class="strong u-font-serif">Sub-{translate key="rt.metadata.pkp.discipline"}</h5>
+                <h5 class="strong u-font-serif">Sub-{translate key="rt.metadata.sep.discipline"}</h5>
                 <span class="c-bibliographic-information__value u-font-sans">{$article->getLocalizedSubjectClass()|escape}</span>
             </li>{/if}
         </ul>
@@ -437,7 +437,7 @@
             <li>{if $section.title}<h7 class="tocSectionTitle">{$section.title|escape}</h7>{/if}</li>
             {/foreach}{* articles *}
             {/foreach}{* sections *}
-            <li><h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.pkp.peerReviewed"}{/if}</h7></li>
+            <li><h7>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.sep.peerReviewed"}{/if}</h7></li>
             </ul>
         </div>
         <h2 class="title u-font-serif">{$article->getLocalizedTitle()|strip_unsafe_html}</h2>

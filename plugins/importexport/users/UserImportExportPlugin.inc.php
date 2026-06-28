@@ -15,7 +15,7 @@
 
 import('classes.plugins.ImportExportPlugin');
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
 class UserImportExportPlugin extends ImportExportPlugin {
 	/**
@@ -77,7 +77,7 @@ class UserImportExportPlugin extends ImportExportPlugin {
 				$sendNotify = (bool) Request::getUserVar('sendNotify');
 				$continueOnError = (bool) Request::getUserVar('continueOnError');
 
-				import('lib.pkp.classes.file.FileManager');
+				import('lib.sep.classes.file.FileManager');
 				$fileManager = new FileManager();
 				if (($userFile = $fileManager->getUploadedFilePath('userFile')) !== false) {
 					// Import the uploaded file
@@ -234,7 +234,7 @@ class UserImportExportPlugin extends ImportExportPlugin {
 				$sendNotify = in_array('send_notify', $flags);
 				$continueOnError = in_array('continue_on_error', $flags);
 
-				import('lib.pkp.classes.file.FileManager');
+				import('lib.sep.classes.file.FileManager');
 
 				// Import the uploaded file
 				$parser = new UserXMLParser($journal->getId());

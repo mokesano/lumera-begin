@@ -15,8 +15,8 @@
  */
 
 
-import('lib.pkp.classes.help.HelpTopic');
-import('lib.pkp.classes.help.PKPHelp');
+import('lib.sep.classes.help.HelpTopic');
+import('lib.sep.classes.help.SEPHelp');
 
 class HelpTopicDAO extends XMLDAO {
 	/**
@@ -28,9 +28,9 @@ class HelpTopicDAO extends XMLDAO {
 
 	function &_getCache($topicId) {
 		$cache =& Registry::get('helpTopicCache', true, null);
-		$locale = PKPHelp::getLocale();
+		$locale = SEPHelp::getLocale();
 		if (!isset($cache[$locale][$topicId])) {
-			$help =& PKPHelp::getHelp();
+			$help =& SEPHelp::getHelp();
 			$cacheManager =& CacheManager::getManager();
 			$cache[$locale][$topicId] = $cacheManager->getFileCache('help-topic-' . $locale, $topicId, array($this, '_cacheMiss'));
 
@@ -45,7 +45,7 @@ class HelpTopicDAO extends XMLDAO {
 	}
 
 	function &getMappingFile($topicId) {
-		$help =& PKPHelp::getHelp();
+		$help =& SEPHelp::getHelp();
 		$mappingFiles =& $help->getMappingFiles();
 
 		for ($i = 0; $i < count($mappingFiles); $i++) {
@@ -130,7 +130,7 @@ class HelpTopicDAO extends XMLDAO {
 	function &getTopicsByKeyword($keyword) {
 		$keyword = String::strtolower($keyword);
 		$matchingTopics = array();
-		$help =& PKPHelp::getHelp();
+		$help =& SEPHelp::getHelp();
 		foreach ($help->getSearchPaths() as $searchPath => $mappingFile) {
 			$dir = opendir($searchPath);
 			while (($file = readdir($dir)) !== false) {

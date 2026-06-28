@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE data SYSTEM "../../../lib/pkp/dtd/xmlData.dtd">
+<!DOCTYPE data SYSTEM "../../../lib/sep/dtd/xmlData.dtd">
 
 <!--
   * 2.3.3_preupdate1.xml
@@ -13,22 +13,22 @@
   -->
 
 <data>
-	<!-- Bug #5386: port review assignments to pkp-lib -->
+	<!-- Bug #5386: port review assignments to sep-lib -->
 	<sql>
 		<rename table="review_assignments" column="article_id" to="submission_id" />
 		<rename table="review_rounds" column="article_id" to="submission_id" />
 	</sql>
-	<!-- Bug #5397: port "comments" into pkp-lib -->
+	<!-- Bug #5397: port "comments" into sep-lib -->
 	<sql>
 		<rename table="comments" column="article_id" to="submission_id" />
 	</sql>
-	<!-- Bug #5440: port submission notes to PKP "notes" -->
+	<!-- Bug #5440: port submission notes to SEP "notes" -->
 	<sql>
 		<rename table="article_notes" column="article_id" to="assoc_id" />
 		<rename table="article_notes" column="note" to="contents" />
 		<rename table="article_notes" to="notes" />
 	</sql>
-	<!-- Bug #5490: port authors into pkp-lib -->
+	<!-- Bug #5490: port authors into sep-lib -->
 	<sql>
 		<rename table="article_authors" column="article_id" to="submission_id" />
 		<rename table="article_authors" to="authors" />

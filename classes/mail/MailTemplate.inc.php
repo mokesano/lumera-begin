@@ -10,12 +10,12 @@
  * @class MailTemplate
  * @ingroup mail
  *
- * @brief Subclass of PKPMailTemplate for mailing a template email.
+ * @brief Subclass of SEPMailTemplate for mailing a template email.
  */
 
-import('lib.pkp.classes.mail.PKPMailTemplate');
+import('lib.sep.classes.mail.SEPMailTemplate');
 
-class MailTemplate extends PKPMailTemplate {
+class MailTemplate extends SEPMailTemplate {
 	/** @var $journal object The journal this message relates to */
 	var $journal;
 
@@ -29,7 +29,7 @@ class MailTemplate extends PKPMailTemplate {
 	 * @param $ignorePostedData boolean optional
 	 */
 	function MailTemplate($emailKey = null, $locale = null, $enableAttachments = null, $journal = null, $includeSignature = true, $ignorePostedData = false) {
-		parent::PKPMailTemplate($emailKey, $locale, $enableAttachments, $includeSignature);
+		parent::SEPMailTemplate($emailKey, $locale, $enableAttachments, $includeSignature);
 
 		// If a journal wasn't specified, use the current request.
 		if ($journal === null) $journal =& Request::getJournal();

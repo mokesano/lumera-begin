@@ -14,8 +14,8 @@
  *  must be an email.
  */
 
-import('lib.pkp.classes.filter.FilterSetting');
-import('lib.pkp.classes.form.validation.FormValidatorEmail');
+import('lib.sep.classes.filter.FilterSetting');
+import('lib.sep.classes.form.validation.FormValidatorEmail');
 
 class EmailFilterSetting extends FilterSetting {
 	/**

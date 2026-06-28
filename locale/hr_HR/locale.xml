@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/hr_HR/locale.xml
@@ -34,7 +34,7 @@
 	-->
 
 	<!-- Common Messages -->
-	<message key="common.openJournalSystems">Open Journal Systems</message>
+	<message key="common.openJournalSystems">Code Lumera Editorial</message>
 
 	<!-- Common Form Messages -->
 	<!-- Common Email Messages -->
@@ -254,18 +254,18 @@
 	<message key="comments.authenticated">{$userName}</message>
 
 	<!-- Site Administration -->
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Kako biste učinili sadržaj svih časopisa izdanih u okviru ovih stranica indeksiranim unutar globalno distribuiranog sustava istraživačkih baza podataka, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registrirajte</a> URL ove stranice pri <a href="http://pkp.sfu.ca/harvester/" target="_blank">sakupljaču</a> metapodataka Public Knowledge Project-a. Ovaj alat sakuplja metapodatke iz svakog indeksiranog priloga svakog časopisa na ovim stranicama, omogućujući precizno i kolektivno pretraživanje istraživačkih stranica koje sudjeluju u <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Kako biste učinili sadržaj svih časopisa izdanih u okviru ovih stranica indeksiranim unutar globalno distribuiranog sustava istraživačkih baza podataka, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">registrirajte</a> URL ove stranice pri <a href="http://lumera.sangia.org/harvester/" target="_blank">sakupljaču</a> metapodataka Sangia Editorial Project-a. Ovaj alat sakuplja metapodatke iz svakog indeksiranog priloga svakog časopisa na ovim stranicama, omogućujući precizno i kolektivno pretraživanje istraživačkih stranica koje sudjeluju u <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
 <br /><br />
-Za registraciju pri PKP sakupljaču <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">kliknite ovdje</a> i upišite: <span class="highlight">{$siteUrl}</span> unutar <b>Site URL</b>-a i <span class="highlight">{$oaiUrl}</span> unutar <b>Base URL for OAI Archive</b>.
+Za registraciju pri SEP sakupljaču <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">kliknite ovdje</a> i upišite: <span class="highlight">{$siteUrl}</span> unutar <b>Site URL</b>-a i <span class="highlight">{$oaiUrl}</span> unutar <b>Base URL for OAI Archive</b>.
 <br /><br />
-Aktivirani OAI protokol može biti isključen na razini čitave stranice promjenom sistemske konfiguracije OJS-a. Buduće verzije OJS-a omogućit će da se OAI sudjelovanje u OAI protokolu može uključiti ili isključiti individualno za svaki časopis koji se nalazi na stranici.]]></message>
+Aktivirani OAI protokol može biti isključen na razini čitave stranice promjenom sistemske konfiguracije CLA-a. Buduće verzije CLA-a omogućit će da se OAI sudjelovanje u OAI protokolu može uključiti ili isključiti individualno za svaki časopis koji se nalazi na stranici.]]></message>
 
 
 
 	<!-- Languages -->
-	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>Određivanje primarnog izvora autentifikacije izvan OJS-a rezultira sljedećim:</p>
+	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>Određivanje primarnog izvora autentifikacije izvan CLA-a rezultira sljedećim:</p>
 <ul>
-	<li>Ako korisnik pokuša registrirati novi korisnički račun na ovoj stranici s korisničkim imenom koje postoji na izvoru autentifikacije (ali ne i u OJS bazi podataka), registracija je dopuštena ukoliko je isporučena lozinka valjana za taj korisnički račun.</li>
+	<li>Ako korisnik pokuša registrirati novi korisnički račun na ovoj stranici s korisničkim imenom koje postoji na izvoru autentifikacije (ali ne i u CLA bazi podataka), registracija je dopuštena ukoliko je isporučena lozinka valjana za taj korisnički račun.</li>
 </ul>]]></message>
 
 	<!-- System Information -->
@@ -283,8 +283,8 @@ Aktivirani OAI protokol može biti isključen na razini čitave stranice promjen
 	<!-- Plugin Management -->
 
 	<!-- General plugin information -->
-	<message key="plugins.categories.generic.description">Opći dodaci služe proširivanju funkcionalnosti OJS-a. Ovo je rezidualna kategorije u koju spadaju dodaci koji ne pripadaju ni jednoj od sistematiziranih kategorija.</message>
-	<message key="plugins.categories.auth.description">Autorizacijski dodaci omogućuju Open Journal Systems-u da vrši provjeru vjerodostojnosti korisničkih pristupa putem vanjskih sustava, kao što su LDAP poslužitelji.</message>
+	<message key="plugins.categories.generic.description">Opći dodaci služe proširivanju funkcionalnosti CLA-a. Ovo je rezidualna kategorije u koju spadaju dodaci koji ne pripadaju ni jednoj od sistematiziranih kategorija.</message>
+	<message key="plugins.categories.auth.description">Autorizacijski dodaci omogućuju Code Lumera Editorial-u da vrši provjeru vjerodostojnosti korisničkih pristupa putem vanjskih sustava, kao što su LDAP poslužitelji.</message>
 
 
 
@@ -292,18 +292,18 @@ Aktivirani OAI protokol može biti isključen na razini čitave stranice promjen
 	<!-- Journal Setup -->
 	<!-- Setup Step 1 -->
 	<!-- Setup Step 2 -->
-	<message key="manager.setup.lockssDescription"><![CDATA[Open Journal Systems podržava <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (mnogo kopija čuva stvari sigurnima) sustav da bi osigurao sigurnu i trajnu arhivu za časopise. LOCKSS je program otvorenog koda razvijen pri sveučilišnoj knjižnici u Stanfordu koji omogućuje knjižnicama da čuvaju odabrane mrežne časopise tako što periodički provjeravaju sadržaj mrežnih stranica časopisa registriranih u sustav, te arhiviraju sve novoobjavljene sadržaje. Sadržaj svakog arhiva se konstantno uspoređuje sa drugim knjižnicama koje su uključene u sustav, te ako je bilo koji sadržaj neispravan ili izgubljen, sadržaj se obnavlja podacima iz drugih arhiva u mreži ili iz izvornog časopisa.
+	<message key="manager.setup.lockssDescription"><![CDATA[Code Lumera Editorial podržava <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (mnogo kopija čuva stvari sigurnima) sustav da bi osigurao sigurnu i trajnu arhivu za časopise. LOCKSS je program otvorenog koda razvijen pri sveučilišnoj knjižnici u Stanfordu koji omogućuje knjižnicama da čuvaju odabrane mrežne časopise tako što periodički provjeravaju sadržaj mrežnih stranica časopisa registriranih u sustav, te arhiviraju sve novoobjavljene sadržaje. Sadržaj svakog arhiva se konstantno uspoređuje sa drugim knjižnicama koje su uključene u sustav, te ako je bilo koji sadržaj neispravan ili izgubljen, sadržaj se obnavlja podacima iz drugih arhiva u mreži ili iz izvornog časopisa.
 <br /><br />
-Postavljanje LOCKSS podrške za Open Journal Systems nije potrebno dok izdavanje elektroničke verzije časopisa nije doista pokrenuto, odnosno prvi broj objavljen ili pri izdavanju. Da bi se to učinilo, potrebno je slijediti ova dva koraka:]]></message>
+Postavljanje LOCKSS podrške za Code Lumera Editorial nije potrebno dok izdavanje elektroničke verzije časopisa nije doista pokrenuto, odnosno prvi broj objavljen ili pri izdavanju. Da bi se to učinilo, potrebno je slijediti ova dva koraka:]]></message>
 	
 	<!-- Setup Step 3 -->
 	<message key="manager.setup.subjectClassificationDescription"><![CDATA[Časopis će koristiti predmetnu klasifikaciju sustava dostupnu na mreži.<br />
 Naslov klasifikacijskog sustava]]></message>
-	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Kako biste učinili sadržaj ovog časopisa indeksiranim unutar globalno distribuiranog sustava istraživačkih baza podataka, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registrirajte</a> URL vašeg časopisa pri <a href="http://pkp.sfu.ca/harvester/" target="_blank">sakupljaču</a> metapodataka Public Knowledge Project-a. Ovaj alat sakuplja metapodatke iz svakog indeksiranog priloga u ovom časopisu, omogućujući precizno i kolektivno pretraživanje istraživačkih stranica koje sudjeluju u <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
+	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Kako biste učinili sadržaj ovog časopisa indeksiranim unutar globalno distribuiranog sustava istraživačkih baza podataka, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">registrirajte</a> URL vašeg časopisa pri <a href="http://lumera.sangia.org/harvester/" target="_blank">sakupljaču</a> metapodataka Sangia Editorial Project-a. Ovaj alat sakuplja metapodatke iz svakog indeksiranog priloga u ovom časopisu, omogućujući precizno i kolektivno pretraživanje istraživačkih stranica koje sudjeluju u <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
 <br /><br />
-Ako je vaš administrator već registrirao ovu stranicu kod PKP sakupljača, vaš časopis će biti indeksiran automatski.
+Ako je vaš administrator već registrirao ovu stranicu kod SEP sakupljača, vaš časopis će biti indeksiran automatski.
 <br /><br />
-Za registraciju pri PKP sakupljaču <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">kliknite ovdje</a> i unesite: <span class="highlight">{$siteUrl}</span> unutar <b>Site URL</b> i <span class="highlight">{$oaiUrl}</span> unutar <b>Base URL for OAI Archive</b>.]]></message>
+Za registraciju pri SEP sakupljaču <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">kliknite ovdje</a> i unesite: <span class="highlight">{$siteUrl}</span> unutar <b>Site URL</b> i <span class="highlight">{$oaiUrl}</span> unutar <b>Base URL for OAI Archive</b>.]]></message>
 
 	<!-- Setup Step 4 -->	<message key="manager.setup.basicEditorialStepsDescription"><![CDATA[Koraci: Red čekanja prijave > Recenzija prijave> Uređivanje prijave > Red čekanja pri određivanju rokova > Kazalo sadržaja.<br /><br />
 Odaberite model za korištenje ovih aspekata lektorskoga postupka. (Da biste odredili glavnog urednika i urednika rubrika, odite na Urednici u Uređivački postupci.)]]></message>
@@ -604,22 +604,22 @@ Sadržaj priložene datoteke možete provjeriti ukoliko kliknete na njezino ime.
 	<message key="about.subscriptionsContact">Kontakt za pretplate</message>
 	<message key="about.availableSubscriptionTypes">Tipovi pretplate</message>
 	<message key="about.journalSponsorship">Naklada i financiranje časopisa</message>
-	<message key="about.aboutThisPublishingSystem">O OJS-u</message>
-	<message key="about.aboutOJSJournal"><![CDATA[Ovaj časopis koristi Open Journal Systems {$ojsVersion}, otvoreni softver namijenjen uređivanju i izdavanju časopisa, razvijan,  podržan i besplatno distribuiran od <a href="http://pkp.sfu.ca/">Public Knowledge Project</a>-a pod GNU General Public License.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[Ova stranica koristi Open Journal Systems {$ojsVersion}, koji je otvoreni izvor upravljanja časopisom i program za izdavanje, podržan i besplatno distribuiran od <a href="http://pkp.sfu.ca/">Public Knowledge Project</a>-a pod GNU General Public License.]]></message>
+	<message key="about.aboutThisPublishingSystem">O CLA-u</message>
+	<message key="about.aboutCLAJournal"><![CDATA[Ovaj časopis koristi Code Lumera Editorial {$claVersion}, otvoreni softver namijenjen uređivanju i izdavanju časopisa, razvijan,  podržan i besplatno distribuiran od <a href="http://lumera.sangia.org/">Sangia Editorial Project</a>-a pod GNU General Public License.]]></message>
+	<message key="about.aboutCLASite"><![CDATA[Ova stranica koristi Code Lumera Editorial {$claVersion}, koji je otvoreni izvor upravljanja časopisom i program za izdavanje, podržan i besplatno distribuiran od <a href="http://lumera.sangia.org/">Sangia Editorial Project</a>-a pod GNU General Public License.]]></message>
 	
-	<!-- Announcement -->	<!-- Help -->	<message key="help.ojsHelp">Pomoć za korištenje OJS-a</message>
-	<message key="help.ojsHelpAbbrev">OJS pomoć</message>	
+	<!-- Announcement -->	<!-- Help -->	<message key="help.claHelp">Pomoć za korištenje CLA-a</message>
+	<message key="help.claHelpAbbrev">CLA pomoć</message>	
 	
-	<!-- Installer --><message key="installer.ojsInstallation">OJS instalacija</message>
-	<message key="installer.ojsUpgrade">OJS nadogradnja</message>
-	<message key="installer.installationInstructions"><![CDATA[<h4>OJS verzija {$version}</h4>
+	<!-- Installer --><message key="installer.claInstallation">CLA instalacija</message>
+	<message key="installer.claUpgrade">CLA nadogradnja</message>
+	<message key="installer.installationInstructions"><![CDATA[<h4>CLA verzija {$version}</h4>
 
-<p>Hvala vam na preuzimanju Public Knowledge Project-ovog <strong>Open Journal Systems-a</strong>. Prije postupka, molimo vas da pročitate <a href="{$baseUrl}/docs/README">README</a> datoteku koja dolazi uz ovaj program. Za više informacija o Public Knowledge Project-u i njegovim programskim projektima, posjetite <a href="http://pkp.sfu.ca/" target="_blank">PKP mrežnu stranicu</a>. Ako primite izvješća o greški u programu ili tražite tehničku podršku za Open Journal Systems, pogledajte <a href="http://forum.pkp.sfu.ca">forum za podršku</a> ili posjetite  PKP-ov online <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">sustav za prijavljivanje greške</a>. Iako je forum za podršku korištenija metoda kontaktiranja, možete poslati i e-poštu stručnom timu na <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>Hvala vam na preuzimanju Sangia Editorial Project-ovog <strong>Code Lumera Editorial-a</strong>. Prije postupka, molimo vas da pročitate <a href="{$baseUrl}/docs/README">README</a> datoteku koja dolazi uz ovaj program. Za više informacija o Sangia Editorial Project-u i njegovim programskim projektima, posjetite <a href="http://lumera.sangia.org/" target="_blank">SEP mrežnu stranicu</a>. Ako primite izvješća o greški u programu ili tražite tehničku podršku za Code Lumera Editorial, pogledajte <a href="http://forum.sep.sfu.ca">forum za podršku</a> ili posjetite  SEP-ov online <a href="https://github.com/sep/sep-lib#issues" target="_blank">sustav za prijavljivanje greške</a>. Iako je forum za podršku korištenija metoda kontaktiranja, možete poslati i e-poštu stručnom timu na <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
 
 <h4>Nadogradnja</h4>
 
-<p>Ako nadograđujete postojeću instalaciju OJS 2.x, <a href="{$upgradeUrl}">kliknite ovdje</a> za nastavak.</p>
+<p>Ako nadograđujete postojeću instalaciju CLA 2.x, <a href="{$upgradeUrl}">kliknite ovdje</a> za nastavak.</p>
 
 <h4>Preporučeni uvjeti za sustav</h4>
 
@@ -630,13 +630,13 @@ Sadržaj priložene datoteke možete provjeriti ukoliko kliknete na njezino ime.
  <li>Operativni sustav: bilo koji OS koji podržava gore navedeni program, uključujući <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.oracle.com/sun/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, <a href="http://www.microsoft.com/">Windows</a></li>
 </ul>
 
-<p>Budući da PKP nema sredstava da testira svaku moguću kombinaciju programskih verzija i platformi, nije garantirana potpuna ispravnost postupka ili podrške.</p>
+<p>Budući da SEP nema sredstava da testira svaku moguću kombinaciju programskih verzija i platformi, nije garantirana potpuna ispravnost postupka ili podrške.</p>
 
-<p>Nakon instalacije ove postavke se mogu promijeniti, uređivanjem datoteke <tt>config.inc.php</tt> u glavnom OJS direktoriju ili korištenjem administracijske stranice mrežnog sučelja.</p>
+<p>Nakon instalacije ove postavke se mogu promijeniti, uređivanjem datoteke <tt>config.inc.php</tt> u glavnom CLA direktoriju ili korištenjem administracijske stranice mrežnog sučelja.</p>
 
 <h4>Podržani sustavi baze podataka</h4>
 
-<p>OJS je trenutno testiran na MySQL i PostgreSQL, iako drugi sustavi za upravljanje bazom podataka podržani od <a href="http://php.weblogs.com/adodb/" target="_blank">ADOdb</a> mogu funkcionirati (u potpunosti ili djelomično). Funkcionalni izvještaji i/ili zakrpe koda za alternativne sustave za upravljanjem bazom podataka mogu biti poslani OJS timu.</p>
+<p>CLA je trenutno testiran na MySQL i PostgreSQL, iako drugi sustavi za upravljanje bazom podataka podržani od <a href="http://php.weblogs.com/adodb/" target="_blank">ADOdb</a> mogu funkcionirati (u potpunosti ili djelomično). Funkcionalni izvještaji i/ili zakrpe koda za alternativne sustave za upravljanjem bazom podataka mogu biti poslani CLA timu.</p>
 
 <h4>Predinstalacijski koraci</h4>
 
@@ -654,28 +654,28 @@ Sadržaj priložene datoteke možete provjeriti ukoliko kliknete na njezino ime.
 
 <h4>Ručno instaliranje</h4>
 
-<p>Izaberite <strong>Ručnu instalaciju</strong> da bi prikazali SQL izjave potrebne za kreiranje OJS sheme baze podataka i inicijalnih podataka, tako da instalacija baze podataka može biti izvršena ručno. Ta opcija je korisna kada otkrivate pogreške kod instalacijskih problema, djelomično na nepodržanim platformama. Obavijest: ta metoda instalacije neće poduzeti ništa kako bi kreirala bazu podataka ili bilo koje tablice, iako će konfiguracijska datoteka svejedno biti zapisana s isporučenim postavkama baze podataka.</p>]]></message>
-	<message key="installer.upgradeInstructions"><![CDATA[<h4>OJS verzija {$version}</h4>
+<p>Izaberite <strong>Ručnu instalaciju</strong> da bi prikazali SQL izjave potrebne za kreiranje CLA sheme baze podataka i inicijalnih podataka, tako da instalacija baze podataka može biti izvršena ručno. Ta opcija je korisna kada otkrivate pogreške kod instalacijskih problema, djelomično na nepodržanim platformama. Obavijest: ta metoda instalacije neće poduzeti ništa kako bi kreirala bazu podataka ili bilo koje tablice, iako će konfiguracijska datoteka svejedno biti zapisana s isporučenim postavkama baze podataka.</p>]]></message>
+	<message key="installer.upgradeInstructions"><![CDATA[<h4>CLA verzija {$version}</h4>
 	
-<p>Hvala Vam za preuzimanje Public Knowledge Projecta, <strong>Open Journal Systems</strong>. Prije postupka, molimo pročitajte <a href="{$baseUrl}/docs/README">README</a> i <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> datoteke uključene s ovim softverom. Za više informacija o Public Knowledge Project-u i njegovim softverskim projektima, molimo posjetite <a href="http://pkp.sfu.ca/" target="_blank">PKP mrežnu stranicu</a>. Ako imate prijavu o grešci ili tražite tehničku podršku za OJS, pogledajte <a href="http://forum.pkp.sfu.ca">forum podrške</a> ili posjetite PKP-ov online <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">sustav prijave pogrešaka</a>. Iako je forum podrške preferirana metoda kontakta, također možete timu poslati e-poštu na <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>Hvala Vam za preuzimanje Sangia Editorial Projecta, <strong>Code Lumera Editorial</strong>. Prije postupka, molimo pročitajte <a href="{$baseUrl}/docs/README">README</a> i <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> datoteke uključene s ovim softverom. Za više informacija o Sangia Editorial Project-u i njegovim softverskim projektima, molimo posjetite <a href="http://lumera.sangia.org/" target="_blank">SEP mrežnu stranicu</a>. Ako imate prijavu o grešci ili tražite tehničku podršku za CLA, pogledajte <a href="http://forum.sep.sfu.ca">forum podrške</a> ili posjetite SEP-ov online <a href="https://github.com/sep/sep-lib#issues" target="_blank">sustav prijave pogrešaka</a>. Iako je forum podrške preferirana metoda kontakta, također možete timu poslati e-poštu na <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
 
-<p><strong>Vrlo je preporučljivo</strong> da napravite sigurnosnu kopiju vaše baze podataka, direktorija s datotekama i OJS instalacijskog direktorija prije nastavka.</p>
+<p><strong>Vrlo je preporučljivo</strong> da napravite sigurnosnu kopiju vaše baze podataka, direktorija s datotekama i CLA instalacijskog direktorija prije nastavka.</p>
 <p>Ako imate pokrenut <a href="http://www.php.net/features.safe-mode" target="_blank">PHP sigurnosni mod</a>, molimo osigurajte da je max_execution_time direktiva u vašoj php.ini konfiguracijskoj datoteci postavljena na visok limit. Ako je taj ili bilo koji drugi vremenski limit (npr. Apachejeva "timeout" direktiva) dosegnut i postupak nadogradnje prekinut, bit će potrebna ručna intervencija.</p>]]></message>
 	<message key="installer.localeSettingsInstructions"><![CDATA[Za kompletnu Unicode (UTF-8) podršku, odaberite UTF-8 za postavku skupa svih znakova. Uzmite u obzir da ova podrška trenutno zahtijeva MySQL >= 4.1.1 ili PostgreSQL >= 7.1 poslužitelj baze podataka. Također, uzmite u obzir da potpuna Unicode podrška zahtijeva PHP >= 4.3.0 izrađen s podrškom za <a href="http://www.php.net/mbstring" target="_blank">mbstring</a> biblioteku (uobičajeno omogućeno u većini aktualnih PHP instalacija). Možete imati problema ukoliko koristite proširene skupove znakova ako vaš poslužitelj ne podržava ove zahtjeve. 
 <br /><br />
 Vaš poslužitelj trenutno podržava mbstring: <strong>{$supportsMBString}</strong>]]></message>
-	<message key="installer.localeInstructions">Primarni jezik za korištenju u ovom sustavu. Molimo pogledajte OJS dokumentaciju ako ste zainteresirani za podršku za jezike koji nisu izlistani ovdje.</message>
+	<message key="installer.localeInstructions">Primarni jezik za korištenju u ovom sustavu. Molimo pogledajte CLA dokumentaciju ako ste zainteresirani za podršku za jezike koji nisu izlistani ovdje.</message>
 	<message key="installer.additionalLocalesInstructions">Odaberite bilo koji dodatni jezik koji želite podržati u ovom sustavu. Ti jezici će biti omogućeni za korištenje za časopise udomaćene na stranici. Dodatni jezici također mogu biti instalirani u bilo koje vrijeme iz sučelja za administraciju stranice.</message>
 	<message key="installer.filesDirInstructions"><![CDATA[Unesite puno ime putanje prema postojećem direktoriju gdje će se pohranjivati poslane datoteke. Taj direktorij ne bi smio biti direktno dostupan preko mreže. <strong>Molimo osigurajte da taj direktorij postoji i da se može pisati po njemu prije istalacije.</strong> Imena Windows putanji trebaju koristiti kose crte unaprijed, npr. "C:/mojicasopisi/datoteke".]]></message>
-	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<b>Upozorenje:</b> Ako je instalacija neuspjela djelomično prilikom instalacije baze podataka morat ćete izbrisati vašu OJS bazu podataka ili tablice baze podataka prije ponovnog pokušaja instalacije baze podataka.]]></message>
+	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<b>Upozorenje:</b> Ako je instalacija neuspjela djelomično prilikom instalacije baze podataka morat ćete izbrisati vašu CLA bazu podataka ili tablice baze podataka prije ponovnog pokušaja instalacije baze podataka.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>VAŽNO!</h4>
 <p>Instalacijski program ne može automatski pisati preko konfiguracijske datoteke. Prije pokušanja korištenja sustava, molimo otvorite <tt>config.inc.php</tt> u odgovarajućem uređivaču teksta i zamijenite njegov sadržaj sa sadržajem teksta koji se nalazi u polju ispod.</p>]]></message>
-	<message key="installer.installationComplete"><![CDATA[<p>Instalacija OJS-a je dovršena uspješno.</p>
+	<message key="installer.installationComplete"><![CDATA[<p>Instalacija CLA-a je dovršena uspješno.</p>
 <p>Da biste počeli koristiti sustav, <a href="{$loginUrl}">prijavite se</a> s korisničkim imenom i lozinkom navedenim na prošloj stranici.</p>
-<p>Ako želite primati vijesti i dopune, <strong>molimo da se registrirate na <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a>.</strong> Ako imate pitanja ili komentare, molimo posjetite <a href="http://forum.pkp.sfu.ca" target="_new">forum podrške</a>.</p>]]></message>
-	<message key="installer.upgradeComplete"><![CDATA[<p>Nadogradnja OJS-a na verziju {$version} je uspješno završena.</p>
+<p>Ako želite primati vijesti i dopune, <strong>molimo da se registrirate na <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a>.</strong> Ako imate pitanja ili komentare, molimo posjetite <a href="http://forum.sep.sfu.ca" target="_new">forum podrške</a>.</p>]]></message>
+	<message key="installer.upgradeComplete"><![CDATA[<p>Nadogradnja CLA-a na verziju {$version} je uspješno završena.</p>
 <p>Ne zaboravite postaviti "installed" postavku u vašem config.inc.php konfiguracijskoj datoteci nazad na <i>On</i>.</p>
-<p>Ako se još niste registrirali i želite primati vijesti i dopune, <strong>molimo da se registrirate na <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a>.</strong> IAko imate pitanja ili komentare, molimo posjetite <a href="http://forum.pkp.sfu.ca" target="_new">forum podrške</a>.</p>]]></message>
+<p>Ako se još niste registrirali i želite primati vijesti i dopune, <strong>molimo da se registrirate na <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a>.</strong> IAko imate pitanja ili komentare, molimo posjetite <a href="http://forum.sep.sfu.ca" target="_new">forum podrške</a>.</p>]]></message>
 
 
 	<!-- Article Logs --><message key="log.author.submitted">{$authorName} je prijavio novi prilog, ID {$submissionId}.</message>
@@ -738,8 +738,8 @@ Vaš poslužitelj trenutno podržava mbstring: <strong>{$supportsMBString}</stro
 
 	<!-- RT Versions -->	<!-- RT Contexts -->	<!-- RT Searches -->	<!-- RT Entities -->	<message key="rt.metadata.dublinCore.primaryAuthor">Tvorac</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">Autorovo ime, pripadnost, država</message>
-	<message key="rt.metadata.pkp.peerReviewed">Stručno recenziran članak</message>
+	<message key="rt.metadata.sep.primaryAuthor">Autorovo ime, pripadnost, država</message>
+	<message key="rt.metadata.sep.peerReviewed">Stručno recenziran članak</message>
 
 
 	
@@ -775,12 +775,12 @@ Vaš poslužitelj trenutno podržava mbstring: <strong>{$supportsMBString}</stro
 	<message key="reader.openAccess">Otvoren pristup</message>
 	<message key="reader.subscriptionAccess">Pretplatnički pristup</message>
 	<message key="reader.subscriptionOrFeeAccess">Pretplatnički ili otvoren pristup</message>
-	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Preuzimanje datoteke s jezicima sa Public Knowledge Project mrežnog poslužitelja trenutno nije dostupno jer:</p>
+	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Preuzimanje datoteke s jezicima sa Sangia Editorial Project mrežnog poslužitelja trenutno nije dostupno jer:</p>
 	<ul>
 		<li>Vaš poslužitelj nema ili ne dozvoljava pokretanje GNU "tar" programa</li>
-		<li>OJS ne može modificirati lokalizacijsku registry datoteku, obično "registry/locales.xml".</li>
+		<li>CLA ne može modificirati lokalizacijsku registry datoteku, obično "registry/locales.xml".</li>
 	</ul>
-<p>Datoteku s jezicima možete ručno preuzeti sa <a href="http://pkp.sfu.ca">PKP web site</a>.</p>]]></message>
+<p>Datoteku s jezicima možete ručno preuzeti sa <a href="http://sep.sfu.ca">SEP web site</a>.</p>]]></message>
 	<message key="plugins.categories.citationFormats.description">Dodaci za oblikovanje referenci omogućuju korisnicima preuzimanje referenci u različitim bibliografskim standardima.</message>
 	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Predložene Creative Commons odredbe o autorskim pravima</h3>
 <h4>1. Prijedlog za časopise koji omogućuju otvoren pristup</h4>
@@ -847,7 +847,7 @@ Autori koji objavljuju u ovom časopisu pristaju na sljedeće uvijete:
 	<message key="payment.membership.ends">Član do</message>
 	<message key="payment.subscription.renew">Obnovite pretplatu</message>
 	<message key="payment.subscription.expires">Istječe</message>
-	<message key="installer.databaseSettingsInstructions">OJS sa spremanje svojih podataka zahtjeva pristup SQL bazi. Pregledajte gorenavedene sistemske zahtjeve za popis baza koje OJS podržava. U niže priloženim poljima navedite postavke koje će se koristiti za povezivanje s bazom.</message>
+	<message key="installer.databaseSettingsInstructions">CLA sa spremanje svojih podataka zahtjeva pristup SQL bazi. Pregledajte gorenavedene sistemske zahtjeve za popis baza koje CLA podržava. U niže priloženim poljima navedite postavke koje će se koristiti za povezivanje s bazom.</message>
 	<message key="log.review.reviewDeclinedByProxy">{$userName} je odbio/la {$round} recenziju priloga {$articleId} u ime {$reviewerName}.</message>
 	<message key="log.editor.decision">{$editorName} je evidentirao uredničku odluku ({$decision}) za članak {$articleId}.</message>
 	<message key="rt.admin.settings.addComment.authenticated">Anonimni komentari nisu dozvoljeni. Korisnici moraju biti registrirani i prijavljeni da bi mogli ostavljati komentare.</message>
@@ -882,7 +882,7 @@ Autori koji objavljuju u ovom časopisu pristaju na sljedeće uvijete:
 	<message key="issue.coverPage.altText">Slika naslovnice broja</message>
 	<message key="plugins.categories.implicitAuth">Dodaci za implicitnu provjeru identiteta</message>
 	<message key="plugins.categories.implicitAuth.description">Dodaci za implicitnu provjeru identiteta implementiraju podršku za provjeru korisničkih identiteta temeljem http zaglavlja.</message>
-	<message key="about.aboutThisPublishingSystem.altText">Proces uređivanja i izdavanja u OJS-u</message>
+	<message key="about.aboutThisPublishingSystem.altText">Proces uređivanja i izdavanja u CLA-u</message>
 	<message key="submission.layout.publicGalleyId">Javni identifikator prijeloma</message>
 	<message key="submission.layout.galleyPublicIdentificationExists">Javni identifikator prijeloma već postoji.</message>
 	<message key="help.searchReturnResults">Povratak na rezultate pretraživanja</message>
@@ -1012,8 +1012,8 @@ Autori koji objavljuju u ovom časopisu pristaju na sljedeće uvijete:
 	<message key="payment.subscription.purchase">Kupi pretplatu</message>
 	<message key="installer.allowFileUploads"><![CDATA[Vaš uslužnik dozvoljava postavljanje datoteka: <strong>{$allowFileUploads}</strong>]]></message>
 	<message key="installer.maxFileUploadSize"><![CDATA[Vaš uslužnik dozvoljava postavljanje datoteka maksimalne veličine: <strong>{$maxFileUploadSize}</strong>]]></message>
-	<message key="installer.installApplication">Instaliraj Open Journal Systems</message>
-	<message key="installer.upgradeApplication">Nadogradi Open Journal Systems</message>
+	<message key="installer.installApplication">Instaliraj Code Lumera Editorial</message>
+	<message key="installer.upgradeApplication">Nadogradi Code Lumera Editorial</message>
 	<message key="notification.mailListDescription">Upišite vašu e-adresu kako bi dobili obavijesti o važnom dodanom sadržaju u časopis.</message>
 	<message key="notification.type.editing">Uređivanje događaja</message>
 	<message key="notification.type.issuePublished">Izdanje je objavljeno.</message>
@@ -1026,8 +1026,8 @@ Autori koji objavljuju u ovom časopisu pristaju na sljedeće uvijete:
 	<message key="user.subscriptions.form.domainIPRangeRequired">Odabrani tip pretplate zahtijeva domen i/ili IP opseg za proverju autentičnosti pristupa za pretplatu.</message>
 	<message key="user.subscriptions.form.ipRangeInstructions"><![CDATA[Ako ste unijeli IP opseg onda domen nije obavezan.<br />Važeče vrijednosti uključuju IP adresu (npr. 142.58.103.1), IP opseg (npr. 142.58.103.1 - 142.58.103.4), IP opseg sa zamjenskim znakom '*' (npr. 142.58.*.*), i IP opseg sa CIDR (npr. 142.58.100.0/24).]]></message>
 	<message key="payment.type.purchaseIssue">Cijena nabavke izdanja</message>
-	<message key="site.upgradeAvailable.admin"><![CDATA[Dostupna je nova verzija OJS! Vi trenutno koristite OJS {$currentVersion}. Najnovija verzija jeOJS {$latestVersion}. Posjetite <a href="http://pkp.sfu.ca/ojs_download" target="_new">ovu stranu</a> za preuzimanje najnovije verzije i uputa za nadogradnju.]]></message>
-	<message key="site.upgradeAvailable.manager"><![CDATA[Dostupna je nova verzija OJS! Vi trenutno koristite OJS {$currentVersion}. Najnovija verzija jeOJS {$latestVersion}. Kontaktirajte administratora sustava ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) i obavijestite ga o novoj verziji. Više informacija možete naći <a href="http://pkp.sfu.ca/ojs_download" target="_new">ovdje</a>.]]></message>
+	<message key="site.upgradeAvailable.admin"><![CDATA[Dostupna je nova verzija CLA! Vi trenutno koristite CLA {$currentVersion}. Najnovija verzija jeCLA {$latestVersion}. Posjetite <a href="http://lumera.sangia.org/cla_download" target="_new">ovu stranu</a> za preuzimanje najnovije verzije i uputa za nadogradnju.]]></message>
+	<message key="site.upgradeAvailable.manager"><![CDATA[Dostupna je nova verzija CLA! Vi trenutno koristite CLA {$currentVersion}. Najnovija verzija jeCLA {$latestVersion}. Kontaktirajte administratora sustava ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) i obavijestite ga o novoj verziji. Više informacija možete naći <a href="http://lumera.sangia.org/cla_download" target="_new">ovdje</a>.]]></message>
 	<message key="submission.license.cc.by-nc-nd4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licenca" style="border-width:0" src="//licensebuttons.net/l/by-nc-nd/4.0/88x31.png" /></a><br />Ovaj uradak je licenciran a <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Licencom</a>.]]></message>
 	<message key="submission.license.cc.by-nc4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licenca" style="border-width:0" src="//licensebuttons.net/l/by-nc/4.0/88x31.png" /></a><br />Ovaj uradak je licenciran <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International Licencom</a>.]]></message>
 	<message key="submission.license.cc.by-nc-sa4.footer"><![CDATA[<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licenca" style="border-width:0" src="//licensebuttons.net/l/by-nc-sa/4.0/88x31.png" /></a><br />Ovaj uradak je licenciran<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licencom</a>.]]></message>
@@ -1039,7 +1039,7 @@ Autori koji objavljuju u ovom časopisu pristaju na sljedeće uvijete:
 	<message key="plugins.categories.oaiMetadataFormats.description">Ovi format dodaci pokazuju metapodatke u OAI komunikaciji.</message>
 	<message key="plugins.categories.pubIds">Dodaci za javnu identifikaciju</message>
 	<message key="plugins.categories.pubIds.description">Ovi dodaci pružaju podršku za javnuidentifikaciju.</message>
-	<message key="manager.setup.preservationDescription"><![CDATA[Open Journal Systems podržava <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) sustav za sigurno i trajno čuvanje vašeg časopisa. Imate nekoliko mogućnosti za uključiti vaš časopis u LOCKSS mrežu:]]></message>
+	<message key="manager.setup.preservationDescription"><![CDATA[Code Lumera Editorial podržava <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) sustav za sigurno i trajno čuvanje vašeg časopisa. Imate nekoliko mogućnosti za uključiti vaš časopis u LOCKSS mrežu:]]></message>
 	<message key="user.subscriptions.statusInformation">Aktivne i istekle pretplate su dole prikazane sa datumima isteka. Dodatno, slijedeće statusne informacije mogu biti prikzanu uz svaku pretplatu.</message>
 	<message key="user.subscriptions.form.domainInstructions"><![CDATA[Ako je ovdje unesen domen, IP opseg nije obavezan. <br />Važeće vrijednosti za naživ domena je (npr. hrcak.srce.hr)]]></message>
 	<message key="gifts.redeemGift">Upotrebi poklon pretplatu</message>

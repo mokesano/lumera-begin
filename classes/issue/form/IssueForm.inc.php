@@ -18,7 +18,7 @@
  * @brief Form to create or edit an issue
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 import('classes.issue.Issue'); // Bring in constants
 
 class IssueForm extends Form {

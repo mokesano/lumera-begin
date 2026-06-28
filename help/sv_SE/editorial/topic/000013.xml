@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000013.xml
@@ -17,4 +17,3 @@
 		<![CDATA[<p>Layoutredaktören får en epost från Manusredaktören eller Sektionsredaktören med begäran om layout för ett manuskript som har genomgått redigeringsstadiet. En Layoutredaktör som inte kan ta sig an arbetet svarar Sektionsredaktören via epost.</p>]]>	
 	</section>
 </topic>
-

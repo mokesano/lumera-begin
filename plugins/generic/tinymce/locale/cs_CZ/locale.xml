@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/tinymce/locale/cs_CZ/locale.xml
@@ -14,8 +14,8 @@
  
 <locale name="cs_CZ" full_name="Čeština">
 	<message key="plugins.generic.tinymce.name">Plugin TinyMCE</message>
-	<message key="plugins.generic.tinymce.description"><![CDATA[Tento plugin umožňuje WYSIWYG editování textových polí OJS s využitím <a href="http://tinymce.moxiecode.com" target="_new">TinyMCE</a> editoru obsahu.]]></message>
-	<message key="plugins.generic.tinymce.descriptionDisabled"><![CDATA[Tento plugin umožňuje WYSIWYG editování textových polí OJS s využitím <a href="http://tinymce.moxiecode.com" target="_new">TinyMCE</a> editor obsahu. <strong>TinyMCE není aktuálně nainstalován; prosím nainstalujte ho do {$tinyMcePath}.</strong>]]></message>
+	<message key="plugins.generic.tinymce.description"><![CDATA[Tento plugin umožňuje WYSIWYG editování textových polí CLA s využitím <a href="http://tinymce.moxiecode.com" target="_new">TinyMCE</a> editoru obsahu.]]></message>
+	<message key="plugins.generic.tinymce.descriptionDisabled"><![CDATA[Tento plugin umožňuje WYSIWYG editování textových polí CLA s využitím <a href="http://tinymce.moxiecode.com" target="_new">TinyMCE</a> editor obsahu. <strong>TinyMCE není aktuálně nainstalován; prosím nainstalujte ho do {$tinyMcePath}.</strong>]]></message>
 
 	<message key="plugins.generic.tinymce.settings">Nastavení</message>
 </locale>

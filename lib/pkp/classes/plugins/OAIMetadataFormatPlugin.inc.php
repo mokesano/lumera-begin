@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file lib/pkp/classes/plugins/OAIMetadataFormatPlugin.inc.php
+ * @file lib/sep/classes/plugins/OAIMetadataFormatPlugin.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
@@ -14,7 +14,7 @@
  */
 
 import('classes.plugins.Plugin');
-import('lib.pkp.classes.oai.OAIStruct');
+import('lib.sep.classes.oai.OAIStruct');
 
 class OAIMetadataFormatPlugin extends Plugin {
 	function OAIMetadataFormatPlugin() {

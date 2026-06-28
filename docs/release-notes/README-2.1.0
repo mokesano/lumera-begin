@@ -1,5 +1,5 @@
-OJS 2.1.0 Release Notes
-CVS tag: ojs-2_1_0-1
+CLA 2.1.0 Release Notes
+CVS tag: cla-2_1_0-1
 Release date: February 3, 2006
 =================================
 
@@ -69,7 +69,7 @@ New Features
 	- #1960# Add support for Google Scholar gateway
 	- #1961# #2010# Add Portuguese (Brasil) locale
 	- #1968# Clean up template links to CSS files
-	- #1976# Added transcoding (iconv) support to OJS 1.x migration
+	- #1976# Added transcoding (iconv) support to CLA 1.x migration
 	- #1981# Editor/Author Correspondence changes
 	- #1987# Add link to Registration page after installation
 	- #2009# Add Spanish (Spain) translation
@@ -129,7 +129,7 @@ Bug Fixes
 	- #2001# Missing locale key in article history
 	- #2002# Event log does not indicate "editor to enter"
 	- #2005# Corrected "Enroll User" function specifics
-	- #2007# xmllint validation errors for OJS XML
+	- #2007# xmllint validation errors for CLA XML
 	- #2011# Journal Logo in setup 5.1
 	- #2020# Searching/indexing updates
 	- #2022# Supplemental file public IDs cannot remain the same

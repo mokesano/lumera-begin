@@ -18,7 +18,7 @@
  * @brief Form for editing authentication source settings.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class AuthSourceSettingsForm extends Form {
 

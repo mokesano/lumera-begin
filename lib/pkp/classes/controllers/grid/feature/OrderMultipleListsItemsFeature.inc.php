@@ -14,7 +14,7 @@
  *
  */
 
-import('lib.pkp.classes.controllers.grid.feature.OrderItemsFeature');
+import('lib.sep.classes.controllers.grid.feature.OrderItemsFeature');
 
 class OrderMultipleListsItemsFeature extends OrderItemsFeature {
 
@@ -33,7 +33,7 @@ class OrderMultipleListsItemsFeature extends OrderItemsFeature {
 	 * @see GridFeature::getJSClass()
 	 */
 	function getJSClass() {
-		return '$.pkp.classes.features.OrderMultipleListsItemsFeature';
+		return '$.sep.classes.features.OrderMultipleListsItemsFeature';
 	}
 
 

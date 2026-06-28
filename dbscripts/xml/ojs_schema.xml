@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE schema SYSTEM "../../lib/pkp/dtd/xmlSchema.dtd">
+<!DOCTYPE schema SYSTEM "../../lib/sep/dtd/xmlSchema.dtd">
 
 <!--
-  * ojs_schema.xml
+  * cla_schema.xml
   *
   * Copyright (c) 2013-2017 Simon Fraser University
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * OJS database schema in XML.
+  * CLA database schema in XML.
   *
   -->
 

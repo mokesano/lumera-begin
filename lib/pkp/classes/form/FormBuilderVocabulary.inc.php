@@ -844,9 +844,9 @@ class FormBuilderVocabulary {
 			switch ($key) {
 				case 'size':
 					switch($value) {
-						case 'SMALL': $classes[] = 'pkp_helpers_quarter'; break;
-						case 'MEDIUM': $classes[] = 'pkp_helpers_half'; break;
-						CASE 'LARGE': $classes[] = 'pkp_helpers_threeQuarter'; break;
+						case 'SMALL': $classes[] = 'sep_helpers_quarter'; break;
+						case 'MEDIUM': $classes[] = 'sep_helpers_half'; break;
+						CASE 'LARGE': $classes[] = 'sep_helpers_threeQuarter'; break;
 					}
 					break;
 				case 'inline':

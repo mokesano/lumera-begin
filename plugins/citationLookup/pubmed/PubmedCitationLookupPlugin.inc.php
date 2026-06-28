@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationLookup.pubmed.PKPPubmedCitationLookupPlugin');
+import('lib.sep.plugins.citationLookup.pubmed.SEPPubmedCitationLookupPlugin');
 
-class PubmedCitationLookupPlugin extends PKPPubmedCitationLookupPlugin {
+class PubmedCitationLookupPlugin extends SEPPubmedCitationLookupPlugin {
 	/**
 	 * Constructor
 	 */
 	function PubmedCitationLookupPlugin() {
-		parent::PKPPubmedCitationLookupPlugin();
+		parent::SEPPubmedCitationLookupPlugin();
 	}
 }
 

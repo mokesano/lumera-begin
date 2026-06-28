@@ -14,7 +14,7 @@
  *  from the database.
  */
 
-import('lib.pkp.classes.validation.Validator');
+import('lib.sep.classes.validation.Validator');
 
 class ValidatorControlledVocab extends Validator {
 	/** @var array */

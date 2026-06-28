@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationOutput.apa.PKPApaCitationOutputPlugin');
+import('lib.sep.plugins.citationOutput.apa.SEPApaCitationOutputPlugin');
 
-class ApaCitationOutputPlugin extends PKPApaCitationOutputPlugin {
+class ApaCitationOutputPlugin extends SEPApaCitationOutputPlugin {
 	/**
 	 * Constructor
 	 */
 	function ApaCitationOutputPlugin() {
-		parent::PKPApaCitationOutputPlugin();
+		parent::SEPApaCitationOutputPlugin();
 	}
 }
 

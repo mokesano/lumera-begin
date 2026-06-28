@@ -14,13 +14,13 @@
  */
 
 
-import('lib.pkp.classes.handler.PKPHandler');
+import('lib.sep.classes.handler.SEPHandler');
 import('classes.handler.validation.HandlerValidatorJournal');
 import('classes.handler.validation.HandlerValidatorSubmissionComment');
 
-class Handler extends PKPHandler {
+class Handler extends SEPHandler {
 	function Handler() {
-		parent::PKPHandler();
+		parent::SEPHandler();
 	}
 }
 

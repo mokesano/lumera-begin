@@ -5,7 +5,7 @@
  */
 
 /**
- * @file classes/install/PKPInstall.inc.php
+ * @file classes/install/SEPInstall.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
@@ -23,9 +23,9 @@
  */
 
 
-import('lib.pkp.classes.install.Installer');
+import('lib.sep.classes.install.Installer');
 
-class PKPInstall extends Installer {
+class SEPInstall extends Installer {
 
 	/**
 	 * Constructor.
@@ -34,7 +34,7 @@ class PKPInstall extends Installer {
 	 * @param $params array installer parameters
 	 * @param $isPlugin boolean true iff a plugin is being installed
 	 */
-	function PKPInstall($xmlDescriptor, $params, $isPlugin) {
+	function SEPInstall($xmlDescriptor, $params, $isPlugin) {
 		parent::Installer($xmlDescriptor, $params, $isPlugin);
 	}
 
@@ -113,7 +113,7 @@ class PKPInstall extends Installer {
 		} else {
 			// Create required subdirectories
 			$dirsToCreate = $this->getCreateDirectories();
-			import('lib.pkp.classes.file.FileManager');
+			import('lib.sep.classes.file.FileManager');
 			$fileManager = new FileManager();
 			foreach ($dirsToCreate as $dirName) {
 				$dirToCreate = $this->getParam('filesDir') . '/' . $dirName;
@@ -135,7 +135,7 @@ class PKPInstall extends Installer {
 		} else {
 			// Create required subdirectories
 			$dirsToCreate = $this->getCreateDirectories();
-			import('lib.pkp.classes.file.FileManager');
+			import('lib.sep.classes.file.FileManager');
 			$fileManager = new FileManager();
 			foreach ($dirsToCreate as $dirName) {
 				$dirToCreate = $publicFilesDir . '/' . $dirName;

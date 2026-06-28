@@ -17,7 +17,7 @@ define('BLOCK_CONTEXT_LEFT_SIDEBAR',		0x00000001);
 define('BLOCK_CONTEXT_RIGHT_SIDEBAR',		0x00000002);
 define('BLOCK_CONTEXT_HOMEPAGE',		0x00000003);
 
-import('lib.pkp.classes.plugins.LazyLoadPlugin');
+import('lib.sep.classes.plugins.LazyLoadPlugin');
 
 class BlockPlugin extends LazyLoadPlugin {
 	/**
@@ -28,10 +28,10 @@ class BlockPlugin extends LazyLoadPlugin {
 	}
 
 	/*
-	 * Override public methods from PKPPlugin
+	 * Override public methods from SEPPlugin
 	 */
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		$success = parent::register($category, $path);
@@ -47,10 +47,10 @@ class BlockPlugin extends LazyLoadPlugin {
 	}
 
 	/*
-	 * Override protected methods from PKPPlugin
+	 * Override protected methods from SEPPlugin
 	 */
 	/**
-	 * @see PKPPlugin::getSeq()
+	 * @see SEPPlugin::getSeq()
 	 *
 	 * NB: In the case of block plugins, higher numbers move
 	 * plugins down the page compared to other blocks.
@@ -138,7 +138,7 @@ class BlockPlugin extends LazyLoadPlugin {
 	 * Get the HTML contents for this block.
 	 *
 	 * @param $templateMgr object
-	 * @param $request PKPRequest (Optional for legacy plugins)
+	 * @param $request SEPRequest (Optional for legacy plugins)
 	 * @return string
 	 */
 	function getContents(&$templateMgr, $request = null) {
@@ -158,7 +158,7 @@ class BlockPlugin extends LazyLoadPlugin {
 		$params =& $args[0];
 		$smarty =& $args[1];
 		$output =& $args[2];
-		$output .= $this->getContents($smarty, PKPApplication::getRequest());
+		$output .= $this->getContents($smarty, SEPApplication::getRequest());
 		return false;
 	}
 
@@ -171,7 +171,7 @@ class BlockPlugin extends LazyLoadPlugin {
 	 * @return string
 	 */
 	function _getContextSpecificHomepageHook() {
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 
 		if ($application->getContextDepth() == 0) return null;
 

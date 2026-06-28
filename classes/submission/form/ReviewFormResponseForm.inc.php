@@ -15,7 +15,7 @@
  *
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ReviewFormResponseForm extends Form {
 

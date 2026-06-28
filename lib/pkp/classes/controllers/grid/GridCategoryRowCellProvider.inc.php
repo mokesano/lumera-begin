@@ -14,7 +14,7 @@
  * the template variables from the category row instance.
  */
 
-import('lib.pkp.classes.controllers.grid.GridCellProvider');
+import('lib.sep.classes.controllers.grid.GridCellProvider');
 
 class GridCategoryRowCellProvider extends GridCellProvider {
 	/**

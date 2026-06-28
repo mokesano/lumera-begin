@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/lucene/locale/de_DE/locale.xml
@@ -7,7 +7,7 @@
   * Copyright (c) 2013-2017 Simon Fraser University
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
-  * OJS solr/lucene search plugin localization strings
+  * CLA solr/lucene search plugin localization strings
   * Please contact Marco Tullney, marco.tullney@fu-berlin.de, with any questions regarding this translation.
   -->
  
@@ -30,7 +30,7 @@
 	<message key="plugins.generic.lucene.message.indexingIncomplete">Ein Fehler ist bei der Indizierung aufgetreten: {$numProcessed} aus einer Menge von {$batchCount} verarbeitet ({numDeleted} gelöschte Dokumente in dieser Menge).</message>
 	<message key="plugins.generic.lucene.message.indexOnline">Index mit {$numDocs} Dokumenten online.</message>
 	<message key="plugins.generic.lucene.message.pullIndexingDisabled">Die Pull-Indizierung ist nicht eingeschaltet. Bitte erlauben Sie sie in den Einstellungen des Lucene-Suche-Plug-Ins.</message>
-	<message key="plugins.generic.lucene.message.searchServiceOffline">Leider ist der OJS-Suchdienst momentan offline.</message>
+	<message key="plugins.generic.lucene.message.searchServiceOffline">Leider ist der CLA-Suchdienst momentan offline.</message>
 	<message key="plugins.generic.lucene.message.techAdminInformed">Der/die technische Verwalter/in dieser Zeitschrift ist über das Problem informiert worden.</message>
 	<message key="plugins.generic.lucene.message.webServiceError">Der Lucene-Webdienst hat einen Fehler zurückgegeben.</message>
 
@@ -84,8 +84,8 @@
 	]]></message>
 	<message key="plugins.generic.lucene.settings.highlighting">Hervorhebung (kurze Auszüge, die die Suchbegriffe enthalten, aus dem Volltext jedes Artikels anzeigen)</message>
 	<message key="plugins.generic.lucene.settings.instId">Eindeutige ID der Installation</message>
-	<message key="plugins.generic.lucene.settings.instIdRequired">Bitte geben Sie eine ID an, die diese OJS-Installation eindeutig gegenüber dem Solr-Suchserver identifiziert.</message>
-	<message key="plugins.generic.lucene.settings.instIdInstructions">Wenn Sie einen zentralen Suchserver benutzen, dann müssen Sie für jede OJS-Installation, die denselben Suchindex benutzt, eine eindeutige Installations-ID angeben. Dies kann ein beliebiger Text sein, der aber für jeden teilnehmenden OJS-Server unterschiedlich sein muss (z.B. die statische IP-Adresse des Servers, wenn Sie eine OJS-Installation pro Server nutzen).</message>
+	<message key="plugins.generic.lucene.settings.instIdRequired">Bitte geben Sie eine ID an, die diese CLA-Installation eindeutig gegenüber dem Solr-Suchserver identifiziert.</message>
+	<message key="plugins.generic.lucene.settings.instIdInstructions">Wenn Sie einen zentralen Suchserver benutzen, dann müssen Sie für jede CLA-Installation, die denselben Suchindex benutzt, eine eindeutige Installations-ID angeben. Dies kann ein beliebiger Text sein, der aber für jeden teilnehmenden CLA-Server unterschiedlich sein muss (z.B. die statische IP-Adresse des Servers, wenn Sie eine CLA-Installation pro Server nutzen).</message>
 	<message key="plugins.generic.lucene.settings.internalError">Ungültige Auswahl.</message>
 	<message key="plugins.generic.lucene.settings.luceneSettings">Lucene-Plug-In: Einstellungen des Solr-Servers</message>
 	<message key="plugins.generic.lucene.settings.password">Passwort</message>

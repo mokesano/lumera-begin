@@ -10,8 +10,8 @@
 <script type="text/javascript">
 	// Initialise JS handler.
 	$(function() {ldelim}
-		$('#{$id}').pkpHandler(
-			'$.pkp.controllers.ExtrasOnDemandHandler');
+		$('#{$id}').sepHandler(
+			'$.sep.controllers.ExtrasOnDemandHandler');
 	{rdelim});
 </script>
 {if !$lessDetailsText}
@@ -20,7 +20,7 @@
 {if !$lessDetailsLabel}
 	{assign var=lessDetailsLabel value=$moreDetailsLabel}
 {/if}
-<div id="{$id}" class="pkp_controllers_extrasOnDemand">
+<div id="{$id}" class="sep_controllers_extrasOnDemand">
 	<div class="extrasContainer">
 		{$extraContent}
 	</div>

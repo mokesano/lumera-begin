@@ -18,7 +18,7 @@
  * @brief Issue galley editing form.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class IssueGalleyForm extends Form {
 	/** @var int the ID of the issue */

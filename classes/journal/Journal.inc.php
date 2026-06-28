@@ -423,7 +423,7 @@ class Journal extends DataObject {
 				$defaultMetricType = $availableMetrics[0];
 			} else {
 				// Use the site-wide default metric.
-				$application =& PKPApplication::getApplication();
+				$application =& SEPApplication::getApplication();
 				$defaultMetricType = $application->getDefaultMetricType();
 			}
 		} else {
@@ -435,7 +435,7 @@ class Journal extends DataObject {
 	/**
 	 * Retrieve a statistics report pre-filtered on this journal.
 	 *
-	 * @see <http://pkp.sfu.ca/wiki/index.php/OJSdeStatisticsConcept#Input_and_Output_Formats_.28Aggregation.2C_Filters.2C_Metrics_Data.29>
+	 * @see <http://lumera.sangia.org/wiki/index.php/CLAdeStatisticsConcept#Input_and_Output_Formats_.28Aggregation.2C_Filters.2C_Metrics_Data.29>
 	 * for a full specification of the input and output format of this method.
 	 *
 	 * @param $metricType null|integer|array metrics selection
@@ -450,7 +450,7 @@ class Journal extends DataObject {
 	function getMetrics($metricType = null, $columns = array(), $filter = array(), $orderBy = array(), $range = null) {
 		// Add a journal filter and run the report.
 		$filter[STATISTICS_DIMENSION_CONTEXT_ID] = $this->getId();
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		return $application->getMetrics($metricType, $columns, $filter, $orderBy, $range);
 	}
 }

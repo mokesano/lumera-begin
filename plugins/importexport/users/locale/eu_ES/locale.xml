@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/users/locale/eu_ES/locale.xml
@@ -50,7 +50,7 @@ Adibideak:
 	<message key="plugins.importexport.users.import.errorsOccurred">Erroreak gertatu dira inportazioan</message>
 	<message key="plugins.importexport.users.import.confirmUsers">Berretsi hauek direla sistemara inportatu nahi dituzun erabiltzaileak</message>
 	<message key="plugins.importexport.users.import.warning">Abisua</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">Ezin da erabili "{$importHash}"ekin xehatutako pasahitzik; {$ojsHash} erabiltzeko konfiguratuta dago OJS. Jarraitzen baduzu, inportatutako erabiltzaileen pasahitzak berrezarri beharko dituzu.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">Ezin da erabili "{$importHash}"ekin xehatutako pasahitzik; {$claHash} erabiltzeko konfiguratuta dago CLA. Jarraitzen baduzu, inportatutako erabiltzaileen pasahitzak berrezarri beharko dituzu.</message>
 	<message key="plugins.importexport.users.unknownJournal">Aldizkariaren bide ezezaguna: {$journalPath}</message>
 
 	<message key="plugins.importexport.users.export.exportUsers">Esportatu erabiltzaileak</message>
@@ -59,4 +59,3 @@ Adibideak:
 	<message key="plugins.importexport.users.export.errorsOccurred">Erroreak gertatu dira esportazioan</message>
 	<message key="plugins.importexport.users.export.couldNotWriteFile">Ezin izan da idatzi "{$fileName}" fitxategian.</message>
 </locale>
-

@@ -1,5 +1,5 @@
 {**
- * lib/pkp/templates/linkAction/linkAction.tpl
+ * lib/sep/templates/linkAction/linkAction.tpl
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
@@ -27,8 +27,8 @@
 <script type="text/javascript">
 	{* Attach the action handler to the button. *}
 	$(function() {ldelim}
-		$('#{$buttonId}').pkpHandler(
-			'$.pkp.controllers.linkAction.LinkActionHandler',
+		$('#{$buttonId}').sepHandler(
+			'$.sep.controllers.linkAction.LinkActionHandler',
 				{include file="linkAction/linkActionOptions.tpl" action=$action selfActivate=$selfActivate staticId=$staticId}
 			);
 	{rdelim});

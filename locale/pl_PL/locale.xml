@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * Copyright (c) 2013-2017 Simon Fraser University
@@ -52,7 +52,7 @@
 	-->
 
 	<!-- Common Messages -->
-	<message key="common.openJournalSystems">Open Journal Systems</message>
+	<message key="common.openJournalSystems">Code Lumera Editorial</message>
 	<message key="common.confirmComplete">Czy na pewno chcesz oznaczyc zadania jako wykonane? Po oznaczeniu edycja nie będzie dostępna.</message>
 	<message key="common.payment">Płatność</message>
 	<message key="common.payments">Płatności</message>
@@ -711,14 +711,14 @@ Ocena jest w skali 5-stopniowej (gdzie 5 oznacza "doskonały").<br />
 	<message key="about.journalSponsorship">Wydawca</message>
 	<message key="about.aboutThisPublishingSystem">O systemie</message>
 	<message key="about.aboutThisPublishingSystem.altText">Proces redakcyjny</message>
-	<message key="about.aboutOJSJournal"><![CDATA[Strona zbudowana jest w oparciu o Open Journal Systems {$ojsVersion}, otwarty (open source) system zarządzania treścią dostarczany, rozwijany i dystrybuowany bezpłatnie przez <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> na licencji GNU GPL.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[Strona zbudowana jest w oparciu o Open Journal Systems {$ojsVersion}, otwarty (open source) system zarządzania treścią dostarczany, rozwijany i dystrybuowany bezpłatnie przez <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> na licencji GNU GPL.]]></message>
+	<message key="about.aboutCLAJournal"><![CDATA[Strona zbudowana jest w oparciu o Code Lumera Editorial {$claVersion}, otwarty (open source) system zarządzania treścią dostarczany, rozwijany i dystrybuowany bezpłatnie przez <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> na licencji GNU GPL.]]></message>
+	<message key="about.aboutCLASite"><![CDATA[Strona zbudowana jest w oparciu o Code Lumera Editorial {$claVersion}, otwarty (open source) system zarządzania treścią dostarczany, rozwijany i dystrybuowany bezpłatnie przez <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> na licencji GNU GPL.]]></message>
 	
 	<!-- Announcement -->
 
 	<!-- Help -->
-	<message key="help.ojsHelp">Pomoc Open Journal Systems</message>
-	<message key="help.ojsHelpAbbrev">Pomoc OJS</message>	
+	<message key="help.claHelp">Pomoc Code Lumera Editorial</message>
+	<message key="help.claHelpAbbrev">Pomoc CLA</message>	
 	<message key="help.searchReturnResults">Wróc do wyników wyszukiwania</message>
 
 	<!-- Donations -->
@@ -728,8 +728,8 @@ Ocena jest w skali 5-stopniowej (gdzie 5 oznacza "doskonały").<br />
 	<!-- Payments -->
 
 	<!-- Installer -->
-	<message key="installer.ojsInstallation">Instalacja OJS</message>
-	<message key="installer.ojsUpgrade">Aktualizacja OJS</message>
+	<message key="installer.claInstallation">Instalacja CLA</message>
+	<message key="installer.claUpgrade">Aktualizacja CLA</message>
 
 	<!-- Article Logs -->
 	<message key="log.author.submitted">{$authorName} wysłał nowy tekst, ID {$submissionId}.</message>
@@ -795,9 +795,9 @@ Ocena jest w skali 5-stopniowej (gdzie 5 oznacza "doskonały").<br />
 
 	<message key="rt.metadata.dublinCore.primaryAuthor">Autor</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">Imię, nazwisko autora, afiliacja, kraj</message>
-	<message key="rt.metadata.pkp.peerReviewed">Recenzowany artykuł</message>
-	<message key="rt.metadata.pkp.doi">Digital Object Identifier (DOI)</message>
+	<message key="rt.metadata.sep.primaryAuthor">Imię, nazwisko autora, afiliacja, kraj</message>
+	<message key="rt.metadata.sep.peerReviewed">Recenzowany artykuł</message>
+	<message key="rt.metadata.sep.doi">Digital Object Identifier (DOI)</message>
 
 
 

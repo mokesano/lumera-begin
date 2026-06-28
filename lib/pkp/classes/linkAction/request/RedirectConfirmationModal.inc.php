@@ -13,7 +13,7 @@
  */
 
 
-import('lib.pkp.classes.linkAction.request.ConfirmationModal');
+import('lib.sep.classes.linkAction.request.ConfirmationModal');
 
 class RedirectConfirmationModal extends ConfirmationModal {
 	/** @var string A URL to be redirected to when the confirmation button is clicked. */
@@ -62,7 +62,7 @@ class RedirectConfirmationModal extends ConfirmationModal {
 	function getLocalizedOptions() {
 		$parentLocalizedOptions = parent::getLocalizedOptions();
 		// override the modalHandler option.
-		$parentLocalizedOptions['modalHandler'] = '$.pkp.controllers.modal.RedirectConfirmationModalHandler';
+		$parentLocalizedOptions['modalHandler'] = '$.sep.controllers.modal.RedirectConfirmationModalHandler';
 		$parentLocalizedOptions['remoteUrl'] = $this->getRemoteUrl();
 		return $parentLocalizedOptions;
 	}

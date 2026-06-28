@@ -30,9 +30,9 @@
  */
 
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
-import('lib.pkp.plugins.metadata.nlm30.filter.Openurl10Nlm30CitationSchemaCrosswalkFilter');
-import('lib.pkp.classes.filter.SetFilterSetting');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
+import('lib.sep.plugins.metadata.nlm30.filter.Openurl10Nlm30CitationSchemaCrosswalkFilter');
+import('lib.sep.classes.filter.SetFilterSetting');
 
 define('CITATION_PARSER_PARACITE_STANDARD', 'Standard');
 define('CITATION_PARSER_PARACITE_CITEBASE', 'Citebase');
@@ -75,7 +75,7 @@ class ParaciteRawCitationNlm30CitationSchemaFilter extends Nlm30CitationSchemaFi
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationParser.paracite.filter.ParaciteRawCitationNlm30CitationSchemaFilter';
+		return 'lib.sep.plugins.citationParser.paracite.filter.ParaciteRawCitationNlm30CitationSchemaFilter';
 	}
 
 
@@ -205,7 +205,7 @@ class ParaciteRawCitationNlm30CitationSchemaFilter extends Nlm30CitationSchemaFi
 					}
 					unset($metadata['title']);
 				}
-				$openurl10SchemaName = 'lib.pkp.plugins.metadata.openurl10.schema.Openurl10BookSchema';
+				$openurl10SchemaName = 'lib.sep.plugins.metadata.openurl10.schema.Openurl10BookSchema';
 				$openurl10SchemaClass = 'Openurl10BookSchema';
 				break;
 
@@ -225,7 +225,7 @@ class ParaciteRawCitationNlm30CitationSchemaFilter extends Nlm30CitationSchemaFi
 					}
 					unset($metadata['title']);
 				}
-				$openurl10SchemaName = 'lib.pkp.plugins.metadata.openurl10.schema.Openurl10JournalSchema';
+				$openurl10SchemaName = 'lib.sep.plugins.metadata.openurl10.schema.Openurl10JournalSchema';
 				$openurl10SchemaClass = 'Openurl10JournalSchema';
 				break;
 		}

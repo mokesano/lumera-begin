@@ -20,8 +20,8 @@
 
 define('ISBNDB_WEBSERVICE_URL', 'http://isbndb.com/api/books.xml');
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
-import('lib.pkp.classes.filter.FilterSetting');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
+import('lib.sep.classes.filter.FilterSetting');
 
 class IsbndbNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 	/*

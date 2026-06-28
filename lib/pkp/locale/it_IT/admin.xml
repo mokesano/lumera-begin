@@ -89,7 +89,7 @@
 	<message key="admin.scheduledTask.stopTime">Fine delle attività programmate.</message>
 	<message key="admin.scheduledTask.noLog">Il processo non ha prodotto log.</message>
 	<message key="admin.scheduledTask.openAccessNotification">Notifica di disponibilità open access</message>
-	<message key="admin.scheduledTask.downloadLog">La tua installazione OJS ha eseguito automaticamente e completato questa attività; puoi scaricare qui il log del processo: {$url}</message>
+	<message key="admin.scheduledTask.downloadLog">La tua installazione CLA ha eseguito automaticamente e completato questa attività; puoi scaricare qui il log del processo: {$url}</message>
 	<message key="admin.scheduledTask.confirmClearLogs">Sei sicuro di eliminare tutti i log di esecuzione delle attività programmate?</message>
 	<message key="admin.scheduledTask.clearLogs">Cancella i log di esecuzione delle attività programmate</message>
 	<message key="admin.scheduledTask.reviewReminder">Promemoria revisione</message>

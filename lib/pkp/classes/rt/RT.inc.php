@@ -19,7 +19,7 @@
  */
 
 
-import('lib.pkp.classes.rt.RTStruct');
+import('lib.sep.classes.rt.RTStruct');
 
 class RT {
 

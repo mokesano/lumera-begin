@@ -64,7 +64,7 @@ class ArticleHTMLGalley extends ArticleGalley {
 				$contents
 			);
 
-			// Replacement for other players (ested with odeo; yahoo and google player won't work w/ OJS URLs, might work for others)
+			// Replacement for other players (ested with odeo; yahoo and google player won't work w/ CLA URLs, might work for others)
 			$contents = preg_replace(
 				'/[Uu][Rr][Ll]=([^"]*' . $pattern . ')/',
 				'url=' . $imageUrl ,
@@ -73,10 +73,10 @@ class ArticleHTMLGalley extends ArticleGalley {
 
 		}
 
-		// Perform replacement for ojs://... URLs
+		// Perform replacement for cla://... URLs
 		$contents = preg_replace_callback(
 			'/(<[^<>]*")[Oo][Jj][Ss]:\/\/([^"]+)("[^<>]*>)/',
-			array(&$this, '_handleOjsUrl'),
+			array(&$this, '_handleCLAUrl'),
 			$contents
 		);
 
@@ -101,7 +101,7 @@ class ArticleHTMLGalley extends ArticleGalley {
 		return $contents;
 	}
 
-	function _handleOjsUrl($matchArray) {
+	function _handleCLAUrl($matchArray) {
 		$url = $matchArray[2];
 		$anchor = null;
 		if (($i = strpos($url, '#')) !== false) {

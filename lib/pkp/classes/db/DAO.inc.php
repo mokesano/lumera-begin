@@ -19,9 +19,9 @@
  */
 
 
-import('lib.pkp.classes.db.DBConnection');
-import('lib.pkp.classes.db.DAOResultFactory');
-import('lib.pkp.classes.core.DataObject');
+import('lib.sep.classes.db.DBConnection');
+import('lib.sep.classes.db.DAOResultFactory');
+import('lib.sep.classes.core.DataObject');
 
 define('SORT_DIRECTION_ASC', 0x00001);
 define('SORT_DIRECTION_DESC', 0x00002);
@@ -621,7 +621,7 @@ class DAO {
 
 		// Create and render the JSON message with the
 		// event to be triggered on the client side.
-		import('lib.pkp.classes.core.JSONMessage');
+		import('lib.sep.classes.core.JSONMessage');
 		$json = new JSONMessage(true);
 		$json->setEvent('dataChanged', $eventData);
 		return $json->getString();

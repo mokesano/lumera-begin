@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationParser.paracite.PKPParaciteCitationParserPlugin');
+import('lib.sep.plugins.citationParser.paracite.SEPParaciteCitationParserPlugin');
 
-class ParaciteCitationParserPlugin extends PKPParaciteCitationParserPlugin {
+class ParaciteCitationParserPlugin extends SEPParaciteCitationParserPlugin {
 	/**
 	 * Constructor
 	 */
 	function ParaciteCitationParserPlugin() {
-		parent::PKPParaciteCitationParserPlugin();
+		parent::SEPParaciteCitationParserPlugin();
 	}
 }
 

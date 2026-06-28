@@ -30,7 +30,7 @@
 	<message key="installer.databaseCharset">Database karakter set</message>
 	<message key="installer.databaseCharsetInstructions">Kode karakter database. Perhatikan bahwa pengkodean ini hanya didukung oleh MySQL >= 4.1.1 atau PostgreSQL >= 7.1. Pilih "Tidak bisa diterapkan" jika server database Anda tidak memenuhi persyaratan.</message>
 	<message key="installer.databaseDriver">Database Driver</message>
-	<message key="installer.databaseDriverInstructions"><![CDATA[<strong>Driver database yang tercantum dalam tanda kurung tidak memiliki ekstensi PHP yang diperlukan dan instalasi mungkin akan gagal.</strong><br />Setiap driver database yang tidak didukung diatas hanya untuk tujuan akademi dan tidak akan bekerja baik pada OJS.]]></message>
+	<message key="installer.databaseDriverInstructions"><![CDATA[<strong>Driver database yang tercantum dalam tanda kurung tidak memiliki ekstensi PHP yang diperlukan dan instalasi mungkin akan gagal.</strong><br />Setiap driver database yang tidak didukung diatas hanya untuk tujuan akademi dan tidak akan bekerja baik pada CLA.]]></message>
 	<message key="installer.databaseHost">Host</message>
 	<message key="installer.databaseHostInstructions">Biarkan nama host kosong untuk terhubung menggunakan soket domain dan bukan melalui TCP/IP. Tidak perlu melakukan perubahan nama host jika Anda menggunakan MySQL yang secara otomatis menggunakan soket jika [localhost] dimasukkan, namun perubahan nama host diperlukan jika server database Anda adalah PostgreSQL atau yang lainnya.</message>
 	<message key="installer.databaseName">Database</message>

@@ -7,20 +7,20 @@
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPTemporaryFileManager
+ * @class SEPTemporaryFileManager
  * @ingroup file
  * @see TemporaryFileDAO
  *
  * @brief Class defining operations for temporary file management.
  */
 
-import('lib.pkp.classes.file.PrivateFileManager');
+import('lib.sep.classes.file.PrivateFileManager');
 
-class PKPTemporaryFileManager extends PrivateFileManager {
+class SEPTemporaryFileManager extends PrivateFileManager {
 	/**
 	 * Constructor
 	 */
-	function PKPTemporaryFileManager() {
+	function SEPTemporaryFileManager() {
 		parent::FileManager();
 
 		$this->_performPeriodicCleanup();

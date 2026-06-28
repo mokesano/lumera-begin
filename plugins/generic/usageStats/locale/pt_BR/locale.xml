@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/usageStats/locale/pt_BR/locale.xml
@@ -24,11 +24,11 @@
 	<message key="plugins.generic.usageStats.displayName">Estatísticas de uso</message>
 	<message key="plugins.generic.usageStats.description">Apresentar estatísticas de uso de objetos de dados. Pode usar arquivos de log de acesso para extrair estatísticas.</message>
 	
-	<message key="plugins.reports.usageStats.report.displayName">Relatório de estatísticas de uso do OJS</message>
-	<message key="plugins.reports.usageStats.report.description">Relatório de estatísticas de uso padrão do OJS (pronto para COUNTER)</message>
+	<message key="plugins.reports.usageStats.report.displayName">Relatório de estatísticas de uso do CLA</message>
+	<message key="plugins.reports.usageStats.report.description">Relatório de estatísticas de uso padrão do CLA (pronto para COUNTER)</message>
 	
-	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
-	<message key="plugins.reports.usageStats.metricType.full">Estatísticas Open Journal Systems (pronto para COUNTER)</message>
+	<message key="plugins.reports.usageStats.metricType">CLA/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Estatísticas Code Lumera Editorial (pronto para COUNTER)</message>
 	<message key="plugins.generic.usageStats.usageStatsLoaderName">Estatísticas de uso do carregador de arquivos</message>
 	<message key="plugins.generic.usageStats.removeUrlError">A linha {$lineNumber} do arquivo {$file} contém uma URL que o sistema não pode consegue remover a URL base.</message>
 	<message key="plugins.generic.usageStats.loadDataError">Não foi possível carregar os dados extraídos do arquivo {$file}. O erro foi: {$error}. O arquivo foi movido para o estágio novamente.</message>

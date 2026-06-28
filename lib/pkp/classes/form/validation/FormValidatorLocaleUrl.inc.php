@@ -14,8 +14,8 @@
  * @brief Form validation check for URL addresses.
  */
 
-import('lib.pkp.classes.form.validation.FormValidatorLocale');
-import('lib.pkp.classes.validation.ValidatorUrl');
+import('lib.sep.classes.form.validation.FormValidatorLocale');
+import('lib.sep.classes.validation.ValidatorUrl');
 
 class FormValidatorLocaleUrl extends FormValidatorLocale {
 	/**

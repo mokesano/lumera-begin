@@ -12,16 +12,16 @@
  * @brief Class to control access to handler operations based on protocol.
  */
 
-import('lib.pkp.classes.security.authorization.AuthorizationPolicy');
+import('lib.sep.classes.security.authorization.AuthorizationPolicy');
 
 class HttpsPolicy extends AuthorizationPolicy {
-	/** @var PKPRequest */
+	/** @var SEPRequest */
 	var $_request;
 
 	/**
 	 * Constructor
 	 *
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function HttpsPolicy(&$request) {
 		parent::AuthorizationPolicy();

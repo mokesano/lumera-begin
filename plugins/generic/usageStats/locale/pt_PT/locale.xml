@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/usageStats/locale/pt_PT/locale.xml
@@ -36,7 +36,7 @@
 	<message key="plugins.reports.usageStats.report.displayName">Relatório de Estatísticas de Utilização da Revista</message>
 	<message key="plugins.reports.usageStats.report.description">Relatório de Estatísticas de Utilização da Revista(COUNTER)</message>
 	
-	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType">CLA/COUNTER</message>
 	<message key="plugins.generic.usageStats.settings.dataPrivacyOption">Opção de dados privados</message>
 	<message key="plugins.generic.usageStats.settings.dataPrivacyCheckbox">Respeitar privacidade dados</message>
 	<message key="plugins.generic.usageStats.settings.archives">Arquivos</message>

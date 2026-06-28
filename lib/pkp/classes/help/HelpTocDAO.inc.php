@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.help.HelpToc');
+import('lib.sep.classes.help.HelpToc');
 
 class HelpTocDAO extends XMLDAO {
 	/**

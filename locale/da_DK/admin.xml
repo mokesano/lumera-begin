@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * /locale/da_DK/admin.xml
@@ -20,21 +20,21 @@
 	<message key="admin.languages.primaryLocaleInstructions">Dette er standardsproget for webstedet og alle tilknyttede tidsskrifter.</message>
 	<message key="admin.languages.supportedLocalesInstructions">Vælg alle de landestandarder, der skal understøttes på webstedet. De valgte landestandarder kan benyttes af alle de tidsskrifter, der er tilknyttet webstedet, og vises også i en sprogvalgsmenu, der vises på hver enkelt side på webstedet (kan tilsidesættes på tidsskriftsspecifikke sider). Hvis der ikke vælges flere landestandarder, vises sprogvalgsmenuen ikke, og udvidede sprogindstillinger vil ikke være tilgængelige for tidsskrifter.</message>
 	<message key="admin.languages.confirmUninstall">Er du sikker på, at du vil fjerne denne landestandard? Denne handling kan påvirke alle tilknyttede tidsskrifter, der i øjeblikket benytter landestandarden.</message>
-	<message key="admin.languages.installNewLocalesInstructions">Vælg yderligere landestandarder, du vil installere understøttelse af i dette system. Landestandarder skal installeres, inden de kan benyttes af tilknyttede tidsskrifter. Se dokumentationen til OJS for at få oplysninger om understøttelse af nye sprog.</message>
+	<message key="admin.languages.installNewLocalesInstructions">Vælg yderligere landestandarder, du vil installere understøttelse af i dette system. Landestandarder skal installeres, inden de kan benyttes af tilknyttede tidsskrifter. Se dokumentationen til CLA for at få oplysninger om understøttelse af nye sprog.</message>
 	<message key="admin.languages.downloadLocales">Hent landestandarder</message>
 	<message key="admin.languages.downloadFailed">Overførslen af landestandarden mislykkedes. Fejlen er beskrevet i nedenstående fejlmeddelelse(r).</message>
 	<message key="admin.languages.localeInstalled">Landestandarden "{$locale}" er blevet installeret.</message>
 	<message key="admin.languages.download">Hent landestandard</message>
 	<message key="admin.languages.reloadDefaultEmailTemplates">Reload standard e-mail-skabeloner</message>
-	<message key="admin.languages.download.cannotOpen">Det er ikke muligt at åbne sprogbeskrivelsen fra PKP-webstedet.</message>
+	<message key="admin.languages.download.cannotOpen">Det er ikke muligt at åbne sprogbeskrivelsen fra SEP-webstedet.</message>
 	<message key="admin.languages.download.cannotModifyRegistry">Det er ikke muligt at føje den nye landestandard til landestandardens registreringsdatabasefil, normalt "registry/locales.xml".</message>
-	<message key="admin.auth.ojs">OJS-brugerdatabase</message>
-	<message key="admin.auth.enableSyncProfiles">Aktiver synkronisering af brugerprofil (hvis dette understøttes af denne godkendelses-plug-in). Oplysningerne om brugerprofil opdateres automatisk fra fjernkilden, når en bruger logger på, og de profilændringer (herunder ændringer af adgangskode), der er foretaget i OJS, opdateres automatisk på fjernkilden. Hvis denne indstilling ikke aktiveres, holdes oplysninger om OJS-profiler adskilt fra oplysninger om fjernkildeprofiler.</message>
-	<message key="admin.auth.enableSyncPasswords">Aktiver ændring af brugeradgangskode (hvis dette understøttes af denne godkendelses-plug-in). Hvis denne indstilling aktiveres, kan brugere ændre deres adgangskode i OJS og bruge OJS-funktionen "mistet adgangskode" til at nulstille en glemt adgangskode. Disse funktioner vil ikke være tilgængelige for brugere med denne godkendelseskilde, hvis denne indstilling ikke aktiveres.</message>
-	<message key="admin.auth.enableCreateUsers">Aktiver oprettelse af bruger (hvis dette understøttes af denne godkendelses-plug-in). De bruger, der oprettes i OJS med denne godkendelseskilde, føjes automatisk til fjerngodkendelseskilden, hvis de ikke allerede findes. Hvis denne kilde er standardgodkendelseskilden, føjes de OJS-konti, der er oprettet via brugerregistrering, også til fjerngodkendelseskilden.</message>
-	<message key="admin.systemVersion">OJS-version</message>
-	<message key="admin.systemConfiguration">OJS-konfiguration</message>
-	<message key="admin.systemConfigurationDescription"><![CDATA[OJS-konfigurationsindstillinger fra <tt>config.inc.php</tt>.]]></message>
+	<message key="admin.auth.cla">CLA-brugerdatabase</message>
+	<message key="admin.auth.enableSyncProfiles">Aktiver synkronisering af brugerprofil (hvis dette understøttes af denne godkendelses-plug-in). Oplysningerne om brugerprofil opdateres automatisk fra fjernkilden, når en bruger logger på, og de profilændringer (herunder ændringer af adgangskode), der er foretaget i CLA, opdateres automatisk på fjernkilden. Hvis denne indstilling ikke aktiveres, holdes oplysninger om CLA-profiler adskilt fra oplysninger om fjernkildeprofiler.</message>
+	<message key="admin.auth.enableSyncPasswords">Aktiver ændring af brugeradgangskode (hvis dette understøttes af denne godkendelses-plug-in). Hvis denne indstilling aktiveres, kan brugere ændre deres adgangskode i CLA og bruge CLA-funktionen "mistet adgangskode" til at nulstille en glemt adgangskode. Disse funktioner vil ikke være tilgængelige for brugere med denne godkendelseskilde, hvis denne indstilling ikke aktiveres.</message>
+	<message key="admin.auth.enableCreateUsers">Aktiver oprettelse af bruger (hvis dette understøttes af denne godkendelses-plug-in). De bruger, der oprettes i CLA med denne godkendelseskilde, føjes automatisk til fjerngodkendelseskilden, hvis de ikke allerede findes. Hvis denne kilde er standardgodkendelseskilden, føjes de CLA-konti, der er oprettet via brugerregistrering, også til fjerngodkendelseskilden.</message>
+	<message key="admin.systemVersion">CLA-version</message>
+	<message key="admin.systemConfiguration">CLA-konfiguration</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[CLA-konfigurationsindstillinger fra <tt>config.inc.php</tt>.]]></message>
 	<message key="admin.journals.journalSettings">Tidsskriftsindstillinger</message>
 	<message key="admin.journals.noneCreated">Der er ikke oprettet nogen tidsskrifter.</message>
 	<message key="admin.journals.confirmDelete">Er du sikker på, at du vil slette dette tidsskrift og alt dets indhold permanent?</message>
@@ -47,10 +47,10 @@
 	<message key="admin.journals.form.pathExists">Den valgte sti bruges allerede af et andet tidsskrift.</message>
 	<message key="admin.journals.enableJournalInstructions">Offentliggør dette tidsskrift på webstedet</message>
 	<message key="admin.journals.journalDescription">Tidsskriftsbeskrivelse</message>
-	<message key="admin.journal.pathImportInstructions">Eksisterende tidsskriftssti eller sti, der skal oprettes (f.eks. "ojs").</message>
+	<message key="admin.journal.pathImportInstructions">Eksisterende tidsskriftssti eller sti, der skal oprettes (f.eks. "cla").</message>
 	<message key="admin.journals.importSubscriptions">Importer abonnementer</message>
 	<message key="admin.journals.transcode">Omsæt kode for artikelmetadata fra ISO8859-1</message>
-	<message key="admin.journals.redirect">Gererer kode for at mappe OJS 1 URL's til OJS 2 URL's</message>
+	<message key="admin.journals.redirect">Gererer kode for at mappe CLA 1 URL's til CLA 2 URL's</message>
 	<message key="admin.journals.form.importPathRequired">Importstien er påkrævet.</message>
 	<message key="admin.journals.importErrors">Importen mislykkedes</message>
 	<message key="admin.mergeUsers">Flet brugere</message>
@@ -80,7 +80,7 @@
 	<message key="admin.settings.journalsList.showThumbnail">Tidsskrifts-thumbnail</message>
 	<message key="admin.settings.journalsList.showTitle">Tidsskriftstitel</message>
 	<message key="admin.settings.journalsList.showDescription">Tidsskriftsbeskrivelse</message>
-	<message key="admin.settings.defaultMetricDescription">Jeres OJS-installation er konfigureret til at registrere mere end en metrisk brugerenhed. Brugerstatistikker vil blive fremvist i flere forskellige sammenhænge.
+	<message key="admin.settings.defaultMetricDescription">Jeres CLA-installation er konfigureret til at registrere mere end en metrisk brugerenhed. Brugerstatistikker vil blive fremvist i flere forskellige sammenhænge.
 		Der er tilfælde, hvor en enkelt brugerstatistik skal anvendes, f.eks. ved visning af en sorteret liste over mest anvendte artikler eller ved rangering af
 		søgeresultater. Vælg én af de konfigurerede metriske enheder som standard.</message>
 	<message key="admin.copyAccessLogFileTool.error.creatingFolder">Fejl: Kan ikke oprette temporær mappe {$tmpDir}</message>

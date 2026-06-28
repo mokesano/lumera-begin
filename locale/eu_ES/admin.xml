@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/eu_ES/admin.xml
@@ -24,15 +24,15 @@
 	<message key="admin.languages.downloadFailed">Hizkuntza deskargatzeak huts egin du. Beheko errore-mezuan azaltzen da hutsegitea.</message>
 	<message key="admin.languages.localeInstalled">"{$locale}" hizkuntza instalatu da. </message>
 	<message key="admin.languages.download">Deskargatu hizkuntza-paketea</message>
-	<message key="admin.languages.download.cannotOpen">Ezin da ireki PKP webguneko hizkuntza-deskriptorea.</message>
+	<message key="admin.languages.download.cannotOpen">Ezin da ireki SEP webguneko hizkuntza-deskriptorea.</message>
 	<message key="admin.languages.download.cannotModifyRegistry">Ezin da hizkuntza-pakete berria gehitu localeen erregistro-fitxategian (normalean "registry/locales.xml".</message>
-	<message key="admin.auth.ojs">OJS erabiltzaileen datu-basea</message>
-	<message key="admin.auth.enableSyncProfiles">Gaitu erabiltzaile-profilen sinkronizazioa (autentifikazioko plugin honek onartzen badu). Erabiltzaile-profilen informazioa automatikoki eguneratuko da urruneko iturburutik erabiltzaileak saioa hasten duenean, eta OJSn egiten diren profil-aldaketak (pasahitz-aldaketak barne) automatikoki eguneratuko dira urruneko iturburuan. Aukera hau ez bada gaitzen, OJS profil-informazioa eta urruneko iturburuko profil-informazioa aparte bereizita mantenduko dira.</message>
-	<message key="admin.auth.enableSyncPasswords">Gaitu erabiltzailearen pasahitza aldatzea (autentifikazioko plugin honek onartzen badu). Aukera hau gaitzen bada, erabiltzaileek OJS barruan aldatu ahal izango dute pasahitza eta OJSren "galdutako pasahitza" eginbidea erabili ahal izango dute pasahitza ahazten zaienean. Aukera hau ez bada gaitzen, funtzio horiek ez dira erabilgarri egongo autentifikazio-iturburu hau daukaten erabiltzaileentzat.</message>
-	<message key="admin.auth.enableCreateUsers">Gaitu erabiltzaileak sortzea (autentifikazioko plugin honek onartzen badu). OJSn autentifikazio-iturburu honekin sortzen diren erabiltzaileak automatikoki gehituko dira urruneko autentifikazio-iturburuan, dagoeneko sortuta ez badaude. Gainera, iturburu hori autentifikazio-iturburu lehenetsia baldin bada, erabiltzaile-erregistratzearen bidez sortutako OJS kontuak ere gehituko dira urruneko autentifikazio-iturburuan.</message>
-	<message key="admin.systemVersion">OJS bertsioa</message>
-	<message key="admin.systemConfiguration">OJS konfigurazioa</message>
-	<message key="admin.systemConfigurationDescription"><![CDATA[<tt>config.inc.php</tt> OJS konfigurazio-ezarpenak.]]></message>
+	<message key="admin.auth.cla">CLA erabiltzaileen datu-basea</message>
+	<message key="admin.auth.enableSyncProfiles">Gaitu erabiltzaile-profilen sinkronizazioa (autentifikazioko plugin honek onartzen badu). Erabiltzaile-profilen informazioa automatikoki eguneratuko da urruneko iturburutik erabiltzaileak saioa hasten duenean, eta CLAn egiten diren profil-aldaketak (pasahitz-aldaketak barne) automatikoki eguneratuko dira urruneko iturburuan. Aukera hau ez bada gaitzen, CLA profil-informazioa eta urruneko iturburuko profil-informazioa aparte bereizita mantenduko dira.</message>
+	<message key="admin.auth.enableSyncPasswords">Gaitu erabiltzailearen pasahitza aldatzea (autentifikazioko plugin honek onartzen badu). Aukera hau gaitzen bada, erabiltzaileek CLA barruan aldatu ahal izango dute pasahitza eta CLAren "galdutako pasahitza" eginbidea erabili ahal izango dute pasahitza ahazten zaienean. Aukera hau ez bada gaitzen, funtzio horiek ez dira erabilgarri egongo autentifikazio-iturburu hau daukaten erabiltzaileentzat.</message>
+	<message key="admin.auth.enableCreateUsers">Gaitu erabiltzaileak sortzea (autentifikazioko plugin honek onartzen badu). CLAn autentifikazio-iturburu honekin sortzen diren erabiltzaileak automatikoki gehituko dira urruneko autentifikazio-iturburuan, dagoeneko sortuta ez badaude. Gainera, iturburu hori autentifikazio-iturburu lehenetsia baldin bada, erabiltzaile-erregistratzearen bidez sortutako CLA kontuak ere gehituko dira urruneko autentifikazio-iturburuan.</message>
+	<message key="admin.systemVersion">CLA bertsioa</message>
+	<message key="admin.systemConfiguration">CLA konfigurazioa</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[<tt>config.inc.php</tt> CLA konfigurazio-ezarpenak.]]></message>
 	<message key="admin.journals.journalSettings">Aldizkariaren ezarpenak</message>
 	<message key="admin.journals.noneCreated">Ez da aldizkaririk sortu.</message>
 	<message key="admin.journals.confirmDelete">Ziur zaude betiko ezabatu nahi dituzula aldizkari hau eta bere eduki osoa?</message>
@@ -44,10 +44,10 @@
 	<message key="admin.journals.form.pathExists">Hautatutako bidea beste aldizkari batek erabiltzen du.</message>
 	<message key="admin.journals.enableJournalInstructions">Gaitu aldizkari hau publikoki agertzeko gunean.</message>
 	<message key="admin.journals.journalDescription">Aldizkariaren azalpena</message>
-	<message key="admin.journal.pathImportInstructions">Lehendik dagoen aldizkariaren kokalekua edo berria (adib., "ojs")</message>
+	<message key="admin.journal.pathImportInstructions">Lehendik dagoen aldizkariaren kokalekua edo berria (adib., "cla")</message>
 	<message key="admin.journals.importSubscriptions">Inportatu harpidetzak</message>
 	<message key="admin.journals.transcode">Bihurtu artikuluen metadatuak ISO8859-1etik.</message>
-	<message key="admin.journals.redirect">Sortu kodea OJS1 URLak OJS 2 URLetara mapatzeko</message>
+	<message key="admin.journals.redirect">Sortu kodea CLA1 URLak CLA 2 URLetara mapatzeko</message>
 	<message key="admin.journals.form.importPathRequired">Inportatzeko bidea zehaztu behar da.</message>
 	<message key="admin.journals.importErrors">Inportazioak huts egin du.</message>
 	<message key="admin.mergeUsers">Batu erabiltzaileak</message>
@@ -58,7 +58,7 @@
 	<message key="admin.mergeUsers.confirm">Ziur zaude "{$oldUsername}" erabiltzaile-izena duen kontua ezabatu eta "{$newUsername}" erabiltzaile-izena duen kontuarekin batu nahi duzula? "{$oldUsername}" kontua galdu egingo da. Ekintza hau ezingo da desegin.</message>
 	<message key="admin.mergeUsers.noneEnrolled">Inskribatutako erabiltzailerik ez.</message>
 	<message key="admin.locale.maybeIncomplete">Markatutako localeak osatu gabe egon daitezke.</message>
-	<message key="admin.languages.installNewLocalesInstructions">Hauta itzazu locale osagarriak sistema horretarako laguntzailea instalatzeko. Localeak aldizkari ostalariak erabili baino lehen instalatu behar dira. Ikusi OJS-ren dokumentazioa hizkuntza berrientzako laguntzaileak gehitzeari buruzko informazioa eskuratzeko.</message>
+	<message key="admin.languages.installNewLocalesInstructions">Hauta itzazu locale osagarriak sistema horretarako laguntzailea instalatzeko. Localeak aldizkari ostalariak erabili baino lehen instalatu behar dira. Ikusi CLA-ren dokumentazioa hizkuntza berrientzako laguntzaileak gehitzeari buruzko informazioa eskuratzeko.</message>
 	<message key="admin.journals.createInstructions">Aldizkari honen kudeatzaile gisa emango duzu izena automatikoki. Aldizkari berria sortu ondoren, bertara kudeatzaile gisa sartu haren ezarpenarekin eta erabiltzailearen izen-ematearekin jarraitzeko.</message>
 	<message key="admin.settings.options">Aukerak</message>
 	<message key="admin.settings.useAlphalist">Aldizkari bat baino gehiago duten webguneetan, erakutsi hasierako orrian zerrenda alfabetiko bat, aldizkarien artean nabigazio alfabetiko bizkorra egiteko.</message>

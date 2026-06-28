@@ -13,7 +13,7 @@
  * @brief Object for review plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 define('OFR_MODE_FULL',		0x01);
 define('OFR_MODE_METADATA',	0x02);
@@ -47,7 +47,7 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 * @return boolean true iff success
 	 */
 	function register($category, $path) {
@@ -112,7 +112,7 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 * @return string
 	 */
 	function getDisplayName() {
@@ -120,7 +120,7 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 * @return string
 	 */
 	function getDescription() {
@@ -128,7 +128,7 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getInstallSchemaFile()
+	 * @see SEPPlugin::getInstallSchemaFile()
 	 * @return string
 	 */
 	function getInstallSchemaFile() {
@@ -136,7 +136,7 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getInstallEmailTemplatesFile()
+	 * @see SEPPlugin::getInstallEmailTemplatesFile()
 	 * @return string
 	 */
 	function getInstallEmailTemplatesFile() {
@@ -144,7 +144,7 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getInstallEmailTemplateDataFile()
+	 * @see SEPPlugin::getInstallEmailTemplateDataFile()
 	 * @return string
 	 */
 	function getInstallEmailTemplateDataFile() {
@@ -152,7 +152,7 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getTemplatePath()
+	 * @see SEPPlugin::getTemplatePath()
 	 * @return string
 	 */
 	function getTemplatePath() {
@@ -209,7 +209,7 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 	// Application level hook implementations.
 	//
 	/**
-	 * @see PKPPageRouter::route()
+	 * @see SEPPageRouter::route()
 	 * @param $hookName string Hook name
 	 * @param $params array Array of hook parameters
 	 * @return boolean false to continue processing subsequent hooks
@@ -226,13 +226,13 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 				if (in_array($op, $reviewObjectTypesEditorPages)) {
 					define('HANDLER_CLASS', 'ReviewObjectTypesEditorHandler');
 					define('OBJECTS_FOR_REVIEW_PLUGIN_NAME', $this->getName());
-					AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_PKP_USER, LOCALE_COMPONENT_OJS_EDITOR);
+					AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_SEP_USER, LOCALE_COMPONENT_CLA_EDITOR);
 					$handlerFile =& $params[2];
 					$handlerFile = $this->getHandlerPath() . 'ReviewObjectTypesEditorHandler.inc.php';
 				} elseif (in_array($op, $objectsForReviewEditorPages)) {
 					define('HANDLER_CLASS', 'ObjectsForReviewEditorHandler');
 					define('OBJECTS_FOR_REVIEW_PLUGIN_NAME', $this->getName());
-					AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_PKP_USER, LOCALE_COMPONENT_OJS_EDITOR);
+					AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_SEP_USER, LOCALE_COMPONENT_CLA_EDITOR);
 					$handlerFile =& $params[2];
 					$handlerFile = $this->getHandlerPath() . 'ObjectsForReviewEditorHandler.inc.php';
 				}
@@ -261,7 +261,7 @@ class ObjectsForReviewPlugin extends GenericPlugin {
 						if (in_array($op, $objectsForReviewAuthorPages)) {
 							define('HANDLER_CLASS', 'ObjectsForReviewAuthorHandler');
 							define('OBJECTS_FOR_REVIEW_PLUGIN_NAME', $this->getName());
-							AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_PKP_USER, LOCALE_COMPONENT_OJS_AUTHOR);
+							AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_SEP_USER, LOCALE_COMPONENT_CLA_AUTHOR);
 							$handlerFile =& $params[2];
 							$handlerFile = $this->getHandlerPath() . 'ObjectsForReviewAuthorHandler.inc.php';
 						}

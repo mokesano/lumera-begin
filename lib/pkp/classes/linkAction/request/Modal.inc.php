@@ -16,7 +16,7 @@
 define('MODAL_WIDTH_DEFAULT', '710');
 define('MODAL_WIDTH_AUTO', 'auto');
 
-import('lib.pkp.classes.linkAction.request.LinkActionRequest');
+import('lib.sep.classes.linkAction.request.LinkActionRequest');
 
 class Modal extends LinkActionRequest {
 	/** @var string The localized title of the modal. */
@@ -91,7 +91,7 @@ class Modal extends LinkActionRequest {
 	 * @see LinkActionRequest::getJSLinkActionRequest()
 	 */
 	function getJSLinkActionRequest() {
-		return '$.pkp.classes.linkAction.ModalRequest';
+		return '$.sep.classes.linkAction.ModalRequest';
 	}
 
 	/**

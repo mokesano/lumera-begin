@@ -26,7 +26,7 @@ class EmailHandler extends UserHandler {
 	/**
 	 * Display a "send email" template or send an email.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function email($args, &$request) {
 		$this->validate();

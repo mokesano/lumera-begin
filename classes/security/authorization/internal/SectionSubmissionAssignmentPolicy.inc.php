@@ -15,15 +15,15 @@
  * submission in the authorization context.
  */
 
-import('lib.pkp.classes.security.authorization.AuthorizationPolicy');
+import('lib.sep.classes.security.authorization.AuthorizationPolicy');
 
 class SectionSubmissionAssignmentPolicy extends AuthorizationPolicy {
-	/** @var PKPRequest */
+	/** @var SEPRequest */
 	var $_request;
 
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function SectionSubmissionAssignmentPolicy(&$request) {
 		parent::AuthorizationPolicy('user.authorization.sectionAssignment');
@@ -39,7 +39,7 @@ class SectionSubmissionAssignmentPolicy extends AuthorizationPolicy {
 	function effect() {
 		// Get the user
 		$user =& $this->_request->getUser();
-		if (!is_a($user, 'PKPUser')) return AUTHORIZATION_DENY;
+		if (!is_a($user, 'SEPUser')) return AUTHORIZATION_DENY;
 
 		// Get the section editor submission.
 		$sectionEditorSubmission =& $this->getAuthorizedContextObject(ASSOC_TYPE_ARTICLE);

@@ -17,7 +17,7 @@
  */
 
 
-import('lib.pkp.classes.linkAction.request.AjaxModal');
+import('lib.sep.classes.linkAction.request.AjaxModal');
 
 class AjaxLegacyPluginModal extends AjaxModal {
 	/**
@@ -40,7 +40,7 @@ class AjaxLegacyPluginModal extends AjaxModal {
 	 */
 	function getLocalizedOptions() {
 		return array_merge(parent::getLocalizedOptions(), array(
-				'modalHandler' => '$.pkp.controllers.modal.AjaxLegacyPluginModalHandler',
+				'modalHandler' => '$.sep.controllers.modal.AjaxLegacyPluginModalHandler',
 				'url' => $this->getUrl()));
 	}
 }

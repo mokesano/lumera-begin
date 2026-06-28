@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000002.xml
@@ -16,6 +16,6 @@
 
 <topic id="journal/topic/000002" locale="gl_ES" title="Usuarios" toc="journal/toc/000000" subtoc="journal/toc/000002" key="journal.users.index">
 	<section>
-		<![CDATA[<p>É responsabilidade do Administrador da Revista gestionar os usuarios en OJS. O que abranxe a creación de usuarios, a desactivación de contas,a xestión de funcións, etc. O Administrador da Revista pode explorar e engadir rexistros existentes,mudar perfís, xunguir contas, e contactar grupos de usuarios.</p>]]>	
+		<![CDATA[<p>É responsabilidade do Administrador da Revista gestionar os usuarios en CLA. O que abranxe a creación de usuarios, a desactivación de contas,a xestión de funcións, etc. O Administrador da Revista pode explorar e engadir rexistros existentes,mudar perfís, xunguir contas, e contactar grupos de usuarios.</p>]]>	
 	</section>
 </topic>

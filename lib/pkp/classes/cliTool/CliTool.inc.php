@@ -16,7 +16,7 @@
  *
  * @brief Initialization code for command-line scripts.
  *
- * FIXME: Write a PKPCliRequest and PKPCliRouter class and use the dispatcher
+ * FIXME: Write a SEPCliRequest and SEPCliRouter class and use the dispatcher
  *  to bootstrap and route tool requests.
  */
 
@@ -28,7 +28,7 @@ if (!defined('STDIN')) {
 	define('STDIN', fopen('php://stdin','r'));
 }
 define('SESSION_DISABLE_INIT', 1);
-require('./lib/pkp/includes/bootstrap.inc.php');
+require('./lib/sep/includes/bootstrap.inc.php');
 
 if (!isset($argc)) {
 	// In PHP < 4.3.0 $argc/$argv are not automatically registered
@@ -50,7 +50,7 @@ class CommandLineTool {
 
 	function CommandLineTool($argv = array()) {
 		// Initialize the request object with a page router
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$request =& $application->getRequest();
 
 		// FIXME: Write and use a CLIRouter here (see classdoc)

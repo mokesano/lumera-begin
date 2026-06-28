@@ -6,7 +6,7 @@
   * Copyright (c) 2000-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Crosswalk from MARC21XML to PKP Citation elements
+  * Crosswalk from MARC21XML to SEP Citation elements
   *
   * Based on mappings by Raymond Yee:
   *	http://www.raymondyee.net/wiki/MarcXmlToOpenUrlCrosswalk

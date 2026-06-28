@@ -12,7 +12,7 @@
  *
  * @brief Form for journal managers to modify PLN plugin settings
  */
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class PLNSettingsForm extends Form {
 

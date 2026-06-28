@@ -16,7 +16,7 @@
  * [issue id]/public
  */
 
-import('lib.pkp.classes.file.FileManager');
+import('lib.sep.classes.file.FileManager');
 import('classes.issue.IssueFile');
 
 class IssueFileManager extends FileManager {

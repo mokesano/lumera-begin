@@ -14,7 +14,7 @@
 	<filters>
 		<filter
 			inGroup="nlm30-element-citation=>nlm30-element-citation"
-			class="lib.pkp.plugins.citationLookup.worldcat.filter.WorldcatNlm30CitationSchemaFilter"
+			class="lib.sep.plugins.citationLookup.worldcat.filter.WorldcatNlm30CitationSchemaFilter"
 			isTemplate="1" />
 	</filters>
 </filterConfig>

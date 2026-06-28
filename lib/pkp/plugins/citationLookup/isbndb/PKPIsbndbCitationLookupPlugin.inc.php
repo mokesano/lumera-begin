@@ -5,13 +5,13 @@
  */
 
 /**
- * @file plugins/citationLookup/isbndb/PKPIsbndbCitationLookupPlugin.inc.php
+ * @file plugins/citationLookup/isbndb/SEPIsbndbCitationLookupPlugin.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPIsbndbCitationLookupPlugin
+ * @class SEPIsbndbCitationLookupPlugin
  * @ingroup plugins_citationLookup_isbndb
  *
  * @brief Cross-application ISBNdb citation lookup plugin
@@ -20,20 +20,20 @@
 
 import('classes.plugins.Plugin');
 
-class PKPIsbndbCitationLookupPlugin extends Plugin {
+class SEPIsbndbCitationLookupPlugin extends Plugin {
 	/**
 	 * Constructor
 	 */
-	function PKPIsbndbCitationLookupPlugin() {
+	function SEPIsbndbCitationLookupPlugin() {
 		parent::Plugin();
 	}
 
 
 	//
-	// Override protected template methods from PKPPlugin
+	// Override protected template methods from SEPPlugin
 	//
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		if (!parent::register($category, $path)) return false;
@@ -42,21 +42,21 @@ class PKPIsbndbCitationLookupPlugin extends Plugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'IsbndbCitationLookupPlugin';
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.citationLookup.isbndb.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.citationLookup.isbndb.description');

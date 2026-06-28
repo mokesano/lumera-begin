@@ -14,7 +14,7 @@
  */
 define('DATAVERSE_PLUGIN_PASSWORD_SLUG', '********');
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class DataverseAuthForm extends Form {
 
@@ -65,7 +65,7 @@ class DataverseAuthForm extends Form {
 	 */
 	function readInputData() {
 		$this->readUserVars(array('dvnUri', 'username', 'password'));
-		$request =& PKPApplication::getRequest();
+		$request =& SEPApplication::getRequest();
 		$password = $request->getUserVar('password');
 		if ($password === DATAVERSE_PLUGIN_PASSWORD_SLUG) {
 			$plugin =& $this->_plugin;

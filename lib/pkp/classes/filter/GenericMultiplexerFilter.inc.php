@@ -18,7 +18,7 @@
  */
 
 
-import('lib.pkp.classes.filter.CompositeFilter');
+import('lib.sep.classes.filter.CompositeFilter');
 
 class GenericMultiplexerFilter extends CompositeFilter {
 	/**
@@ -66,7 +66,7 @@ class GenericMultiplexerFilter extends CompositeFilter {
 	 * @see PersistentFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.classes.filter.GenericMultiplexerFilter';
+		return 'lib.sep.classes.filter.GenericMultiplexerFilter';
 	}
 
 

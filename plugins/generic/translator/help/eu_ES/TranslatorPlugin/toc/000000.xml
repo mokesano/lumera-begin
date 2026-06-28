@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE toc SYSTEM "../../../../../../../lib/pkp/dtd/helpToc.dtd">
+<!DOCTYPE toc SYSTEM "../../../../../../../lib/sep/dtd/helpToc.dtd">
 
 <!--
   * 000000.xml
@@ -15,4 +15,3 @@
 <toc id="TranslatorPlugin/toc/000000" locale="eu_ES" title="Euskara" parent_topic="index/topic/000000">
 	<topic id="TranslatorPlugin/topic/000000" title="Itzultzailearen plugina" />
 </toc>
-

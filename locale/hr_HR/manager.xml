@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/hr_HR/manager.xml
@@ -35,7 +35,7 @@
 	<message key="manager.payment.authorFees">Naplata od autora</message>
 	<message key="manager.payment.authorFeesDescription">Odabrane opcije, zajedno s njihovim opisom i iznosom (koji se mogu uređivati na ovoj stranici) bit će navedene u prvom koraku postupka prijave priloga, u rubrici "prijave priloga" pod poveznicom "o časopisu", kao i na svim mjestima gdje se traži plaćanje.</message>
 	<message key="manager.payment.currency">Valuta</message>
-	<message key="manager.payment.currencymessage">OJS ne preračunava vrijednosti valuta. Ukoliko naplaćujete usluge časopisa, valuta u kojoj se zaprimaju uplate mora biti identična ovdje odabranoj.</message>
+	<message key="manager.payment.currencymessage">CLA ne preračunava vrijednosti valuta. Ukoliko naplaćujete usluge časopisa, valuta u kojoj se zaprimaju uplate mora biti identična ovdje odabranoj.</message>
 	<message key="manager.payment.description">Opis</message>
 	<message key="manager.payment.details">Detalji</message>
 	<message key="manager.payment.editSubscription">Uređivanje pretplate</message>
@@ -161,7 +161,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Pojavljuje se u "o časopisu")</message>
 	<message key="manager.setup.authorCopyrightNotice">Autorska prava</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Zahtijevaj od autora da početkom postupka prijavljivanja priloga izraze svoju suglasnost sa ovim propozicijama o autorskim pravima.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Ova obavijest o autorskim pravima će se pojaviti u rubrici "o časopisu" i metapodacima svakog objavljenog priloga. Premda je na svakom časopisu da odredi prirodu svog ugovora o autorskim pravima, <i>Public Knowledge Project </i>preporuča upotrebu  <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> licence. Stoga je ovdje priložena <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">ogledna formulacija autorskih prava</a> koja može biti zalijepljena u priloženi prostor za časopise koji (a) nude otvoren pristup, (b) nude odgođeni otvoren pristup ili (c) ne nude otvoren pristup.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Ova obavijest o autorskim pravima će se pojaviti u rubrici "o časopisu" i metapodacima svakog objavljenog priloga. Premda je na svakom časopisu da odredi prirodu svog ugovora o autorskim pravima, <i>Sangia Editorial Project </i>preporuča upotrebu  <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> licence. Stoga je ovdje priložena <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">ogledna formulacija autorskih prava</a> koja može biti zalijepljena u priloženi prostor za časopise koji (a) nude otvoren pristup, (b) nude odgođeni otvoren pristup ili (c) ne nude otvoren pristup.]]></message>
 	<message key="manager.setup.authorGuidelines">Smjernice za autore</message>
 	<message key="manager.setup.authorGuidelinesDescription">Ovim tekstom autori se upoznaju sa standardima citiranja i opreme teksta koji se očekuju od priloga prijavljenih za časopis.  Od velike je pomoći ukoliko se prilože i konkretni primjeri označavanja referenci za knjige, časopise i druge izvore. Također, ovdje se mogu naznačiti i prikladni tipovi dopunskih datoteka (npr. baze podataka, istraživački instrumenti itd.) koje autori mogu priložiti uz svoje prijave.</message>
 	<message key="manager.setup.competingInterests">Sukob interesa</message>
@@ -204,7 +204,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Časopisi imaju uredništva koja organiziraju lektorske smjernice časopisa, sudjeluju na sastancima urednika i na temelju reputacije članova upravnog organa daju časopisu određeni položaj u području. Recenzenti imaju sličnu ulogu, ali u tom postupku recenzije svi su ravnopravni. Recenzenti nemaju pristup administrativnom sustavu časopisa, ali će biti dodani na listu onih koji su raspoloživi za rad stručnih recenzija.</message>
 	<message key="manager.setup.emailBounceAddress">Adresa obavijesti o nedostavljanju</message>
 	<message key="manager.setup.emailBounceAddressDescription">Bilo koja nedostavljena e-pošta rezultirat će slanjem poruke o pogrešci na ovu adresu.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Obavijest:</strong> Kako bi aktivirao ovu opciju, administrator stranice mora omogućiti <tt>allow_envelope_sender</tt> u konfiguracijskoj datoteci OJS-a. Dodatna konfiguracija poslužitelja je potrebna da bi podržala ovu funkcionalnost (što nije moguće na svim poslužiteljima) -  naznačeno u  OJS dokumentaciji.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Obavijest:</strong> Kako bi aktivirao ovu opciju, administrator stranice mora omogućiti <tt>allow_envelope_sender</tt> u konfiguracijskoj datoteci CLA-a. Dodatna konfiguracija poslužitelja je potrebna da bi podržala ovu funkcionalnost (što nije moguće na svim poslužiteljima) -  naznačeno u  CLA dokumentaciji.]]></message>
 	<message key="manager.setup.emails">Identifikacija e-pošte</message>
 	<message key="manager.setup.emailSignature">Potpis</message>
 	<message key="manager.setup.emailSignatureDescription">Pripremljeni obrasci e-pošte poslani od strane sustava u ime časopisa na kraju će sadržavati ovdje priložen potpis. Sam sadržaj obrazaca e-pošte može uređivati glavni urednik opcijom "pripremljeni obrasci e-pošte" u izborniku "uređivački postupci".</message>
@@ -226,7 +226,7 @@
 	<message key="manager.setup.focusScope">Fokus i obuhvat</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<b>PRIMJER HTML PODATKA</b>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Autorsko indeksiranje radova</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS se oslanja na <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> protokol za sakupljanje metapodataka, koji predstavlja standard u nastajanju sa ciljem omogućavanja dobro indeksiranog pristupa elektroničkim istraživačkim izvorima na globalnom nivou. Autori će koristiti jednostavan predložak kako bi naveli metapodatke za svoje priloge. Glavni urednik treba odabrati kategorije za indeksiranje i predstaviti autorima relevantne primjere, kako bi im pomogao u indeksiranju njihova rada, odvajajući pojmove s točka-zarezom (npr. naziv1; naziv2). Ne zaboravite popis primjera otpočeti sa "Npr." ili "Na primjer".]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA se oslanja na <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> protokol za sakupljanje metapodataka, koji predstavlja standard u nastajanju sa ciljem omogućavanja dobro indeksiranog pristupa elektroničkim istraživačkim izvorima na globalnom nivou. Autori će koristiti jednostavan predložak kako bi naveli metapodatke za svoje priloge. Glavni urednik treba odabrati kategorije za indeksiranje i predstaviti autorima relevantne primjere, kako bi im pomogao u indeksiranju njihova rada, odvajajući pojmove s točka-zarezom (npr. naziv1; naziv2). Ne zaboravite popis primjera otpočeti sa "Npr." ili "Na primjer".]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Primarna e-pošta je obavezna.</message>
 	<message key="manager.setup.form.contactNameRequired">Primarno ime (kontakta) je obavezno.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Inicijali časopisa su obavezni.</message>
@@ -247,7 +247,7 @@
 	<message key="manager.setup.information.forLibrarians">Za knjižničare</message>
 	<message key="manager.setup.information.forReaders">Za čitatelje</message>
 	<message key="manager.setup.initialIssue">Početno izdanje</message>
-	<message key="manager.setup.initialIssueDescription">Ovisno o odabranom formatu, odredite broj časopisa, svezak, i/ili godinu prvog izdanja izdanog u sklopu OJS-a:</message>
+	<message key="manager.setup.initialIssueDescription">Ovisno o odabranom formatu, odredite broj časopisa, svezak, i/ili godinu prvog izdanja izdanog u sklopu CLA-a:</message>
 	<message key="manager.setup.institution">Institucija</message>
 	<message key="manager.setup.issnDescription"><![CDATA[Međunarodni standardni broj serijske publikacije je osmeroznamenkasti broj koji omogućuje jedinstvenu identifikaciju periodičkih publikacija, kao i e-izdanja publikacija. Hrvatski nakladnici mogu dobiti ISSN u <a href="http://www.nsk.hr/izdavaci/issn/obrazacissn.html" target="_new">ISSN uredu za Hrvatsku</a>.]]></message>
 	<message key="manager.setup.issuePerVolume">Brojeva časopisa godišnje</message>
@@ -355,8 +355,8 @@
 	<message key="manager.setup.reviewGuidelines">Smjernice za recenziju</message>
 	<message key="manager.setup.reviewGuidelinesDescription">Smjernice za recenziju pružaju recenzentima kriterij za procjenu primjerenosti prijavljenih priloga za objavljivanje u časopisu. Također, smjernice mogu sadržavati i dodatne naputke za izradu učinkovite i korisne recenzije.</message>
 	<message key="manager.setup.reviewOptions">Opcije recenzije</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">Poruke e-pošte kojima se recenzente podsjeća na njihov zadatak (dostupni među obrascima e-pošte OJS-a) mogu se automatski odaslati recenzentima u dva slučaja (također, urednik može uvijek osobno kroz sustav poslati obrazac e-pošte s upitom recenzentu)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Napomena:</strong> Da biste aktivirali ovu opciju, administrator stranice mora omogućiti <tt>scheduled_tasks</tt> opciju u konfiguracijskoj datoteci (što nije moguće učiniti na svim poslužiteljima), kao što je pojašnjeno u OJS dokumentaciji.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">Poruke e-pošte kojima se recenzente podsjeća na njihov zadatak (dostupni među obrascima e-pošte CLA-a) mogu se automatski odaslati recenzentima u dva slučaja (također, urednik može uvijek osobno kroz sustav poslati obrazac e-pošte s upitom recenzentu)</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Napomena:</strong> Da biste aktivirali ovu opciju, administrator stranice mora omogućiti <tt>scheduled_tasks</tt> opciju u konfiguracijskoj datoteci (što nije moguće učiniti na svim poslužiteljima), kao što je pojašnjeno u CLA dokumentaciji.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Anonimnost recenzije</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Rok za svaki pojedini članak moguće je modificirati tijekom uređivačkog postupka.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Tipičan rok dozvoljen za recenzije</message>
@@ -375,7 +375,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Objavi poveznicu na <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Kako osigurati anonimnost recenzije</a> na stranicama gdje autori i recenzenti prilažu svoje datoteke.]]></message>
 	<message key="manager.setup.reviewPolicy">Recenzijska politika</message>
 	<message key="manager.setup.reviewProcess">Recenzijski proces</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS podržava dva modela upravljanja recenzijskim procesom. Preporuča se standardni recenzijski postupak, koji vodi recenzente korak po korak kroz postupak, osigurava kompletni pregled prijašnjih recenzija za svaki prijavljeni prilog te koristi pogodnosti automatskog podsjetnika i standardnih preporuka za prijave ("objaviti bez izmjena"; "objaviti uz predložene izmjene"; "revidirati i vratiti na recenziju"; "predložiti za objavljivanje drugdje"; "tekst nije za objavljivanje"; "vidi komentare").<br /><br />Odaberite jedno od sljedećeg:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA podržava dva modela upravljanja recenzijskim procesom. Preporuča se standardni recenzijski postupak, koji vodi recenzente korak po korak kroz postupak, osigurava kompletni pregled prijašnjih recenzija za svaki prijavljeni prilog te koristi pogodnosti automatskog podsjetnika i standardnih preporuka za prijave ("objaviti bez izmjena"; "objaviti uz predložene izmjene"; "revidirati i vratiti na recenziju"; "predložiti za objavljivanje drugdje"; "tekst nije za objavljivanje"; "vidi komentare").<br /><br />Odaberite jedno od sljedećeg:]]></message>
 	<message key="manager.setup.reviewProcessEmail">Recenzija e-poštom</message>
 	<message key="manager.setup.reviewProcessStandard">Standardni recenzijski postupak</message>
 	<message key="manager.setup.reviewProcessStandardDescription">Urednici recenzentima kroz obrazac e-pošte šalju naslov i sažetak prijavljenog članka, uz poziv da se prijave na mrežnu stranicu časopisa te izrade recenziju. Recenzenti potom pristupaju mrežnoj stranici časopisa kako bi pristali (ili odbili) izraditi recenziju, preuzeli tekst prijavljenog članka, predali svoje recenzentske komentare te odabrali preporuke.</message>
@@ -385,7 +385,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Ako rubrike nisu dodane, stavke će biti dodane standardnoj rubrici "članci".)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[DA biste kreirali ili modificirali rubrike za časopis (npr. Članci, Recenzije knjiga itd.), odite na "upravljenje rubrikama"<br /><br />Autori će biti označeni pri predaji stavki...]]></message>
 	<message key="manager.setup.securitySettings">Postavke pristupa</message>
-	<message key="manager.setup.securitySettingsDescription"><![CDATA[<B> OJS omogućuje aktivaciju nekoliko sigurnosnih opcija koje se mogu koristiti kako bi se regulirao pristup sadržaju časopisa. Također, sustav omogućuje evidentiranje svih radnji i poruka e-pošte vezanih uz sve prijavljene poruke kako bi se sačuvale sve informacije o tijeku uređivačkog postupka u svrhu arhiviranja te eventualne revizije uređivačkih aktivnosti. </B>]]></message>
+	<message key="manager.setup.securitySettingsDescription"><![CDATA[<B> CLA omogućuje aktivaciju nekoliko sigurnosnih opcija koje se mogu koristiti kako bi se regulirao pristup sadržaju časopisa. Također, sustav omogućuje evidentiranje svih radnji i poruka e-pošte vezanih uz sve prijavljene poruke kako bi se sačuvale sve informacije o tijeku uređivačkog postupka u svrhu arhiviranja te eventualne revizije uređivačkih aktivnosti. </B>]]></message>
 	<message key="manager.setup.selectEditorDescription">Urednik časopisa koji će to vidjeti kroz postupak uređivanja.</message>
 	<message key="manager.setup.selectSectionDescription">Rubrika časopisa za koju će stavka biti razmatrana.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Uvijek prikaži poveznicu na pun tekst priloga, uz naznaku ograničenja pristupa.</message>
@@ -423,14 +423,14 @@
 	<message key="manager.setup.useTextTitle">Tekst naslova</message>
 	<message key="manager.setup.volumePerYear">Svezaka godišnje</message>
 	<message key="manager.statistics.reports">Generator izvještaja</message>
-	<message key="manager.statistics.reports.description">OJS može generirati izvještaje koji prikazuju detalje procesa uređivanja časopisa iz perspektive prijavljenih priloga, zaduženih urednika i recenzenata te pojedinih rubrika. Izvještaji su generirani za naznačeno vremensko razdoblje u CSV formatu koji za pregled zahtijeva tabličnu aplikaciju (npr. Excell).</message>
+	<message key="manager.statistics.reports.description">CLA može generirati izvještaje koji prikazuju detalje procesa uređivanja časopisa iz perspektive prijavljenih priloga, zaduženih urednika i recenzenata te pojedinih rubrika. Izvještaji su generirani za naznačeno vremensko razdoblje u CSV formatu koji za pregled zahtijeva tabličnu aplikaciju (npr. Excell).</message>
 	<message key="manager.statistics.statistics.articleViews">Brojač pristupa člancima (samo za autore)</message>
 	<message key="manager.statistics.statistics.count.accept">Pozitivnih</message>
 	<message key="manager.statistics.statistics.count.decline">Negativnih</message>
 	<message key="manager.statistics.statistics.count.revise">Zahtijevane izmjene</message>
 	<message key="manager.statistics.statistics.daysPerReview">Dana do recenzije</message>
 	<message key="manager.statistics.statistics.daysToPublication">Dana do objave</message>
-	<message key="manager.statistics.statistics.description">OJS izračunava izvjestan broj statistika za svako godište časopisa koji se nalazi na stranicama. Parametar "dana do recenzije" računa se kao prosječno trajanje razdoblja od datuma prijave (ili prilaganja verzije priloga za recenziju) do prvog donošenja uredničke odluke, dok se parametar "dana do objave" računa samo za prihvaćene prijave, kao prosječno vrijeme proteklo od slanja rukopisa do njegova objavljivanja.</message>
+	<message key="manager.statistics.statistics.description">CLA izračunava izvjestan broj statistika za svako godište časopisa koji se nalazi na stranicama. Parametar "dana do recenzije" računa se kao prosječno trajanje razdoblja od datuma prijave (ili prilaganja verzije priloga za recenziju) do prvog donošenja uredničke odluke, dok se parametar "dana do objave" računa samo za prihvaćene prijave, kao prosječno vrijeme proteklo od slanja rukopisa do njegova objavljivanja.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Objavljenih priloga</message>
 	<message key="manager.statistics.statistics.makePublic">Postavite kvačicu uz stavke za koje želite da budu dostupne čitateljima u sekciji "o časopisu".</message>
 	<message key="manager.statistics.statistics.note">Napomena: Zbroj postotaka za ishode recenzija može biti različit od 100% jer ponovno prijavljeni prilozi mogu biti ili prihvaćeni, ili odbijeni, ili se još nalaziti u postupku.</message>
@@ -465,8 +465,8 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">Obavijesti pretplatnike putem e-pošte</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">tjedan(a) prije isteka pretplate.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Podsjetnici o isteku pretplate</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Automatizirani podsjetnici e-poštom (omogućeni za uređivanje glavnim urednicima u OJS-ovoj rubrici "pripremljeni obrasci e-pošte") mogu biti poslani pretplatnicima i prije i poslije no što je pretplata istekla.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Napomena:</strong> Kako biste aktivirali ove opcije, administrator stranice mora aktivirati <tt>scheduled_tasks</tt> opciju u OJS konfiguracijskoj datoteci. Ovo može zahtjevati dodatnu konfiguraciju poslužitelja (koja ne mora biti moguća na svim poslužiteljima), na način naveden u OJS dokumentaciji.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Automatizirani podsjetnici e-poštom (omogućeni za uređivanje glavnim urednicima u CLA-ovoj rubrici "pripremljeni obrasci e-pošte") mogu biti poslani pretplatnicima i prije i poslije no što je pretplata istekla.</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Napomena:</strong> Kako biste aktivirali ove opcije, administrator stranice mora aktivirati <tt>scheduled_tasks</tt> opciju u CLA konfiguracijskoj datoteci. Ovo može zahtjevati dodatnu konfiguraciju poslužitelja (koja ne mora biti moguća na svim poslužiteljima), na način naveden u CLA dokumentaciji.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Odaberite jedno od sljedećeg:</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[U prostoru za tekst možete koristiti HTML (za određivanje veličine fonta, boje, itd.). Tipka "enter" tretira se kao <tt>&lt;br&gt;</tt>; uređivanje HTML-a radi sa preglednikom Firefox.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Molimo odaberite ispravnu vrijednost za broj mjeseci nakon isteka pretplate.</message>
@@ -474,7 +474,7 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Molimo odaberite ispravnu vrijednost za broj tjedana nakon isteka pretplate.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Molimo odaberite ispravnu vrijednost za broj tjedana prije isteka pretplate.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Registrirani čitatelji će imati mogućnost primanja kazala sadržaja putem e-pošte kada broj časopisa postane dio otvorenog pristupa.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Napomena:</strong> Kako biste aktivirali ove opcije, administrator stranice mora aktivirati <tt>scheduled_tasks</tt> opciju u OJS konfiguracijskoj datoteci. Ovo može zahtjevati dodatnu konfiguraciju poslužitelja (koja ne mora biti moguća na svim poslužiteljima), na način naveden u OJS dokumentaciji.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Napomena:</strong> Kako biste aktivirali ove opcije, administrator stranice mora aktivirati <tt>scheduled_tasks</tt> opciju u CLA konfiguracijskoj datoteci. Ovo može zahtjevati dodatnu konfiguraciju poslužitelja (koja ne mora biti moguća na svim poslužiteljima), na način naveden u CLA dokumentaciji.]]></message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">Mogućnosti otvorenog pristupa za časopise koji su dostupni uz pretplatu</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">Časopisi čijim je sadržajima pristup ograničen pretplatom mogu omogućiti "odgođeni otvoreni pristup" svojem sadržaju, kao i "autorsko samoarhiviranje" (što oboje povećava čitanost i citiranje sadržaja). Informacije o odabranim modusima pristupa bit će navedeni pod "o časopisu".</message>
 	<message key="manager.subscriptionPolicies.subscriptionAdditionalInformation">Informacije o pretplati</message>
@@ -674,7 +674,7 @@
 	<message key="manager.plugins.wrongCategory">Postavljen dodatak ne odgovara kategoriji nadograđenog dodatka.</message>
 	<message key="manager.language.ui">UI</message>
 	<message key="manager.language.submissions">Podneseni članci</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS može biti dostupan korisnicima na bilo kojem od mnogo podržanih jezika. OJS, može funkcionirati kao multilingvalni sustav i omogućiti korisnicima lak prelazak između jezika na svakoj strani i da se određeni podaci unesu na nekoliko dodatnih jezika.<br /><br />  Ako nije dole izlistan jezik koji podržava OJS pitajte vašeg administratora sustava OJS da instalira jezik iz sučelja za administraciju. Pogledajte u OJS dokumentima instrukcije kako se dodaje podrška za nove jezike.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA može biti dostupan korisnicima na bilo kojem od mnogo podržanih jezika. CLA, može funkcionirati kao multilingvalni sustav i omogućiti korisnicima lak prelazak između jezika na svakoj strani i da se određeni podaci unesu na nekoliko dodatnih jezika.<br /><br />  Ako nije dole izlistan jezik koji podržava CLA pitajte vašeg administratora sustava CLA da instalira jezik iz sučelja za administraciju. Pogledajte u CLA dokumentima instrukcije kako se dodaje podrška za nove jezike.]]></message>
 	<message key="manager.payment.giftFees">Plaćanja poklona</message>
 	<message key="manager.payment.giftFeesDescription">Veza za poklonjenu pretplatu će se pojaviti u stranici Pretplate u O časopisu i u bloku u rubnom stupcu.</message>
 	<message key="manager.people.allUsers">Svi upisani korisnici</message>
@@ -700,7 +700,7 @@
 	<message key="manager.setup.managingTheJournal">Korak 4. Upravljanje časopisom</message>
 	<message key="manager.setup.publisherNoteDescription">Ovaj tekst će se pojaviti ispod naslova "Nakladnik" i iznad imena nakladnika i URLa u "O časopisu" stranici koja je u dijelu "Sponzori časopisa".</message>
 	<message key="manager.setup.useThumbnail">Mala sličica</message>
-	<message key="manager.setup.noPublishing">OJS neće biti upotrebljen za objavljivanje sadržaja časopisa na internetu.</message>
+	<message key="manager.setup.noPublishing">CLA neće biti upotrebljen za objavljivanje sadržaja časopisa na internetu.</message>
 	<message key="manager.statistics.reports.defaultReportTemplates">Predlošci za izvještaje</message>
 	<message key="manager.statistics.reports.defaultReport.articleDownloads">Broj preuzimanja datoteka članka</message>
 	<message key="manager.statistics.reports.defaultReport.articleAbstract">Broj pregleda stranice sa sažetkom</message>
@@ -730,7 +730,7 @@ Možete ovaj URL spremiti u pregledniku i brže stvarati vaše posebne izvješta
 	<message key="manager.statistics.reports.filters.byObject.description">Suzi rezultate po tipu objekta (časopis, izdanje, članak, pdf korekturne kopije, druge korekturne kopije) i/ili po jednom ili više ID za određeni objekt.</message>
 	<message key="manager.statistics.reports.filters.byTime">Odaberi raspon za izvještaj</message>
 	<message key="manager.statistics.reports.filters.byTime.dimensionSelector">Ili odaberite raspon po:</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Automatska obavještenja e-porukama (koje mogu urediti Ravnatelji časopisa ulaskom u Pripremljene poruke u OJS) mogu biti poslate Ravnatelju za pretplate nakon izvršenja uplate preko interneta za pretplatu.</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Automatska obavještenja e-porukama (koje mogu urediti Ravnatelji časopisa ulaskom u Pripremljene poruke u CLA) mogu biti poslate Ravnatelju za pretplate nakon izvršenja uplate preko interneta za pretplatu.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Obavijesti Ravnatelja za pretplate e-porukom nakon kupovine Individualne pretplate preko interneta.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseInstitutional">Obavijesti Ravnatelja za pretplate e-porukom nakon kupovine Institucionalne pretplate.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">Obavijesti Ravnatelja za pretplate e-porukom nakon obnove Individualne pretplate.</message>

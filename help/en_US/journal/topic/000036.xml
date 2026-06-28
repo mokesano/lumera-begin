@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000036.xml
@@ -14,7 +14,7 @@
 
 <topic id="journal/topic/000036" locale="en_US" title="Review Forms" toc="journal/toc/000001" key="journal.managementPages.reviewForms">
 	<section>
-		<![CDATA[<p>By default, OJS allows Reviewers to enter their review findings via a simple two-field review form: one field for Editor-only text, and one for both Authors and Editors. The Journal Manager can extend this functionality by making custom review forms.</p>
+		<![CDATA[<p>By default, CLA allows Reviewers to enter their review findings via a simple two-field review form: one field for Editor-only text, and one for both Authors and Editors. The Journal Manager can extend this functionality by making custom review forms.</p>
 		<p>The Journal Manager can associate a custom review form with a Journal Section so that it will be the default form for that section; if more than one form is active, the Editor will also be able to override the default form when a reviewer is assigned to a submission.</p>
 		
 		<p><strong>Locked Reviews:</strong> Any number of review forms can be created; however, review form edits and deletions can be committed only until the form has been put to use (specifically, when an editor assigns a reviewer to a submission, and mandates they use a custom review form). As soon as a form has been put to use, it becomes locked; this happens to ensure a permanent review record. A used review form can be deactivated and removed from the list of forms that can be used; it can also be duplicated by using the Copy action. Both actions are discussed below.</p>]]>	

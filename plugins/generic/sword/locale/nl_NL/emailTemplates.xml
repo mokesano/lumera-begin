@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * emailTemplateData.xml
   *
@@ -17,7 +17,7 @@
 
 Ga daarvoor naar {$swordDepositUrl}.
 
-Deze e-mail is gegenereerd door de SWORD deposit plugin van Open Journal Systems.</body>
+Deze e-mail is gegenereerd door de SWORD deposit plugin van Code Lumera Editorial.</body>
 		<description>Dit e-mail sjabloon wordt gebruikt om een auteur te in te lichten over de mogelijkheid om met SWORD in te zenden naar repositories</description>
 	</email_text>
 </email_texts>

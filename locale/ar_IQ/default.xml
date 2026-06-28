@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/ar_IQ/default.xml
@@ -140,7 +140,7 @@ ________________________________________________________________________</messag
 {$indexUrl}/{$journalPath}</message>
 	<message key="default.journalSettings.forReaders"><![CDATA[نحن نشجع القراء على التسجيل في خدمة إشعار النشر المتاحة في هذه المجلة. إستعمل <a href="{$indexUrl}/{$journalPath}/user/register">رابط التسجيل</a> المتواجد في أعلى الصفحة الرئيسية للمجلة. هذا التسجيل سيقدم لصاحبه رسالة بالبريد الكتروني تتضمن جدولاً بعمليات النشر الجديدة في المجلة. ذلك الجدول أو القائمة تساعد المجلة على استقطاب القراء مما يساعدها على الانتشار ويكسب لها سمعة في الوسط العلمي. أنظر <a href="{$indexUrl}/{$journalPath}/about/submissions#privacyStatement">بيان الخصوصية</a> الذي يؤكد أن أسماء الأشخاص المسجلين في الموقع وعناوينهم البريدية لن تكون متاحة إلا للأغراض المتعلقة بإجراء النشر.]]></message>
 	<message key="default.journalSettings.forAuthors"><![CDATA[ألديك اهتمام بالنشر في هذه المجلة؟ نوصيك إذن بمراجعة صفحة <a href="{$indexUrl}/{$journalPath}/about">عن المجلة</a> للاطلاع على سياسة عمل هذا القسم في المجلة، فضلاً عن <a href="{$indexUrl}/{$journalPath}/about/submissions#authorGuidelines">دليل المؤلفين</a>. يحتاج المؤلفون إلى <a href="{$indexUrl}/{$journalPath}/user/register">التسجيل</a> في المجلة ليتمكون من إرسال طلباتهم للنشر فيها، أو إن سبق لهم التسجيل فيها، <a href="{$indexUrl}/index/login">تسجيل الدخول</a> والشروع بالخطوات الخمس لتقديم طلب النشر.]]></message>	
-	<message key="default.journalSettings.forLibrarians"><![CDATA[نحن نشجع العاملين في مكتبات البحوث العلمية على تضمين هذه المجلة في قوائم مكتباتهم المنشورة على الإنترنت للمجلات العلمية الناشرة للبحوث والمقالات العلمية. كما أنه من الناجع الإشارة إلى أن الموقع المستضيف لهذه المجلة يعمل بنظام يتناسب مع حاجات هذه المكتبات من حيث إمكانية حفظ حسابات منتسبيها ليتمكنوا من المشاركة في هيئة تحريرها. (أنظر <a href="http://pkp.sfu.ca/ojs">Open Journal Systems</a>).]]></message>
+	<message key="default.journalSettings.forLibrarians"><![CDATA[نحن نشجع العاملين في مكتبات البحوث العلمية على تضمين هذه المجلة في قوائم مكتباتهم المنشورة على الإنترنت للمجلات العلمية الناشرة للبحوث والمقالات العلمية. كما أنه من الناجع الإشارة إلى أن الموقع المستضيف لهذه المجلة يعمل بنظام يتناسب مع حاجات هذه المكتبات من حيث إمكانية حفظ حسابات منتسبيها ليتمكنوا من المشاركة في هيئة تحريرها. (أنظر <a href="http://lumera.sangia.org/cla">Code Lumera Editorial</a>).]]></message>
 	<message key="default.journalSettings.lockssLicense"><![CDATA[هذه المجلة تستعمل نظام LOCKSS لخلق نظام أرشفة متوزع على المكتبات المشاركة فيه، والتي بإمكانها عبره صنع أرشيف دائم للمجلة لأغراض الحفظ والاسترجاع. <a href="http://www.lockss.org/">للمزيد أنظر...</a>]]></message>
 
 	<!-- Default settings for payment items. -->

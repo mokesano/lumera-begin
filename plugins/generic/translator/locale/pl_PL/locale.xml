@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * Copyright (c) 2013-2017 Simon Fraser University
@@ -13,8 +13,8 @@
 <locale name="pl_PL" full_name="Język Polski">
 	<message key="plugins.generic.translator.name">Translator</message>
 	<message key="plugins.generic.translator.description"><![CDATA[<span style="color: #00F";>Wtyczka umożliwia zarządzanie oraz edycję tłumaczeń z poziomu systemu (przeglądarki)</span>]]></message>
-	<message key="plugins.generic.translator.longdescription">This area allows the Site Administrator to build, modify and check translations of OJS. This is site-wide and should not be used to customize a single OJS journal. If you correct or create a translation, please consider submitting it to the Public Knowledge Project for distribution with future releases.</message>
-	<message key="plugins.generic.translator.localeDescription">This page lists all components of an OJS translation and provides the translator with the opportunity to edit each. A full translation of a translation should contain complete translations of all components.</message>
+	<message key="plugins.generic.translator.longdescription">This area allows the Site Administrator to build, modify and check translations of CLA. This is site-wide and should not be used to customize a single CLA journal. If you correct or create a translation, please consider submitting it to the Sangia Editorial Project for distribution with future releases.</message>
+	<message key="plugins.generic.translator.localeDescription">This page lists all components of an CLA translation and provides the translator with the opportunity to edit each. A full translation of a translation should contain complete translations of all components.</message>
 	
 	<message key="plugins.generic.translator.tarMissing">The export function of this plugin has been deactivated because the configured tar binary cannot be found on this system. Please make sure that you have the tar program installed and then configure the path to the tar binary in config.inc.php's [cli] section!</message>
 	

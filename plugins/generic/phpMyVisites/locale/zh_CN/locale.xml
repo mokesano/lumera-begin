@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/phpMyVisites/locale/zh_CN/locale.xml
@@ -16,7 +16,7 @@
 
 	<!-- phpMyVisites -->
 	<message key="plugins.generic.phpmv.displayName">phpMyVisites插件</message>
-	<message key="plugins.generic.phpmv.description"><![CDATA[OJS与phpMyVisites（自由和开放源码网站流量分析中的应用）整合。前提是已安装了phpMyVisites应用。请参看 <a href="http://www.phpmyvisites.us/" title="phpMyVisites site">phpMyVisites site</a> 获取更多信息.]]></message>
+	<message key="plugins.generic.phpmv.description"><![CDATA[CLA与phpMyVisites（自由和开放源码网站流量分析中的应用）整合。前提是已安装了phpMyVisites应用。请参看 <a href="http://www.phpmyvisites.us/" title="phpMyVisites site">phpMyVisites site</a> 获取更多信息.]]></message>
 	<!-- phpMyVisites Settings Management -->
 	<message key="plugins.generic.phpmv.manager.settings">设置</message>
 	<message key="plugins.generic.phpmv.manager.phpmvSettings">phpMyVisites设置</message>

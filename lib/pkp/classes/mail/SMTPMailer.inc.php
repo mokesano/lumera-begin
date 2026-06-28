@@ -16,7 +16,7 @@
  */
 
 
-import('lib.pkp.classes.mail.Mail');
+import('lib.sep.classes.mail.Mail');
 
 class SMTPMailer {
 
@@ -180,7 +180,7 @@ class SMTPMailer {
 		fclose($this->socket);
 
 		if (!empty($error)) {
-			error_log('OJS SMTPMailer: ' . $error);
+			error_log('CLA SMTPMailer: ' . $error);
 			return false;
 		}
 		return true;

@@ -15,14 +15,14 @@
  */
 
 
-import('lib.pkp.classes.signoff.PKPSignoffDAO');
+import('lib.sep.classes.signoff.SEPSignoffDAO');
 
-class SignoffDAO extends PKPSignoffDAO {
+class SignoffDAO extends SEPSignoffDAO {
 	/**
 	 * Constructor
 	 */
 	function SignoffDAO() {
-		parent::PKPSignoffDAO();
+		parent::SEPSignoffDAO();
 	}
 }
 

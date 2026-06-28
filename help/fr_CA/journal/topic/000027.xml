@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000027.xml
@@ -18,6 +18,6 @@
 		<p><em>Valider les outils de lecture. </em>Cette fonction vérifiera la validité de l’adresse URL de recherche qui est utilisée par chaque banque de données pour trouver des articles qui ont un rapport à l’article que les outils suivent (en employant les termes d’indexation de l’auteur). Si l’adresse URL est invalide, le directeur de revue peut ajuster les réglages en trouvant la nouvelle adresse URL , en demandant de l’aide à quelqu’un d’autre, ou en supprimant la banque de données du jeu d’outils de recherche. Comme cette fonction s’exécute  à travers chaque banque de données, ça prend un peu de temps à compléter et résultera en un rapport pour chacune des banques de données attestant de sa validité ou de la source du problème.</p>
 		<p><em>Les métadonnées pour chacun des outils de lecture. </em>Les métadonnées pour chacun des outils de lecture donnent le nom de l’outil, une brève description de l’outil, ce qui permet au directeur de revue de modifier l’organisation des outils ou d’en créer de nouvelles séries.</p>
 		<p><em>Contextes pour le jeu d’outil. </em>Chaque jeu d’outil consiste de regroupements variés, ou de contextes, de banques de données (i.e. Études apparentées, Forums en ligne, etc.) avec chacun des contextes consistant d’un nombre de banques de données pertinentes. Ces banques de données peuvent être crées, éditées ou supprimées. Les regroupements peuvent aussi être réarrangés.</p>
-		<p><em>Exportation des données. </em>Si le directeur de revue développe des outils de lecture additionnels, ceux-ci sont exportés au Public Knowledge Project pour utilisation par d’autres revues reliés aux mêmes domaines.</p>]]>
+		<p><em>Exportation des données. </em>Si le directeur de revue développe des outils de lecture additionnels, ceux-ci sont exportés au Sangia Editorial Project pour utilisation par d’autres revues reliés aux mêmes domaines.</p>]]>
 	</section>
 </topic>

@@ -13,7 +13,7 @@
  */
 
 
-import('lib.pkp.classes.linkAction.request.LinkActionRequest');
+import('lib.sep.classes.linkAction.request.LinkActionRequest');
 
 class RedirectAction extends LinkActionRequest {
 	/** @var string The URL this action will invoke */
@@ -48,7 +48,7 @@ class RedirectAction extends LinkActionRequest {
 	 * @see LinkActionRequest::getJSLinkActionRequest()
 	 */
 	function getJSLinkActionRequest() {
-		return '$.pkp.classes.linkAction.RedirectRequest';
+		return '$.sep.classes.linkAction.RedirectRequest';
 	}
 
 	/**

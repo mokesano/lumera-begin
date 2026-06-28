@@ -17,7 +17,7 @@ class SolrSearchRequest {
 
 	/**
 	 * @var Journal The journal to be queried. All journals of
-	 *  an OJS instance will be queried if no journal is given.
+	 *  an CLA instance will be queried if no journal is given.
 	 */
 	var $_journal = null;
 
@@ -334,22 +334,22 @@ class SolrSearchRequest {
 	 * @param $keywords array See ArticleSearch::retrieveResults()
 	 */
 	function addQueryFromKeywords($keywords) {
-		// Get a mapping of OJS search fields bitmaps to index fields.
+		// Get a mapping of CLA search fields bitmaps to index fields.
 		$indexFieldMap = ArticleSearch::getIndexFieldMap();
 
 		// The keywords list is indexed with a search field bitmap.
 		foreach($keywords as $searchFieldBitmap => $searchPhrase) {
-			// Translate the search field from OJS to solr nomenclature.
+			// Translate the search field from CLA to solr nomenclature.
 			if (empty($searchFieldBitmap)) {
 				// An empty search field means "all fields".
 				$solrFields = array_values($indexFieldMap);
 			} else {
 				$solrFields = array();
-				foreach($indexFieldMap as $ojsField => $solrField) {
+				foreach($indexFieldMap as $claField => $solrField) {
 					// The search field bitmap may stand for
 					// several actual index fields (e.g. the index terms
 					// field).
-					if ($searchFieldBitmap & $ojsField) {
+					if ($searchFieldBitmap & $claField) {
 						$solrFields[] = $solrField;
 					}
 				}

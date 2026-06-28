@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * @file plugins/generic/booksForReview/locale/es_AR/locale.xml
@@ -125,7 +125,7 @@
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderBeforeDays2">días antes de la revisión fecha de vencimiento.</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays1">Enviar un recordatorio por correo electrónico a los autores</message>
 	<message key="plugins.generic.booksForReview.settings.enableDueReminderAfterDays2">días después de la fecha de vencimiento de la revisión.</message>
-	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Nota:</strong> Para activar estas opciones, el administrador del sitio debe habilitar la opción de <tt> tareas_programadas </tt> en el archivo de configuración de OJS. Puede ser necesaria una configuración adicional del servidor para soportar esta funcionalidad (que puede no ser posible en todos los servidores), como se indica en la documentación de OJS.]]></message>
+	<message key="plugins.generic.booksForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Nota:</strong> Para activar estas opciones, el administrador del sitio debe habilitar la opción de <tt> tareas_programadas </tt> en el archivo de configuración de CLA. Puede ser necesaria una configuración adicional del servidor para soportar esta funcionalidad (que puede no ser posible en todos los servidores), como se indica en la documentación de CLA.]]></message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformation">Información Adicional</message>
 	<message key="plugins.generic.booksForReview.settings.additionalInformationDescription">Información adicional publicada junto con las peticiones para su revisión.</message>
 	<message key="plugins.generic.booksForReview.settings.dueWeeksRequired">Por favor, especifique el número de semanas requerido para realizar las revisiones.</message>

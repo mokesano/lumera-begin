@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/openAIRE/locale/id_ID/locale.xml
@@ -13,7 +13,7 @@
  
 <locale name="id_ID" full_name="Bahasa Indonesia">
 	<message key="plugins.generic.openAIRE.displayName">OpenAIRE</message>
-	<message key="plugins.generic.openAIRE.description">Plugin OpenAIRE menambahkan elemen projectID ke metadata artikel dan memperluas interface OAI-PMH menurut Petunjuk OpenAIRE 1.1, membantu jurnal OJS untuk menjadi OpenAIRE compliant.</message>
+	<message key="plugins.generic.openAIRE.description">Plugin OpenAIRE menambahkan elemen projectID ke metadata artikel dan memperluas interface OAI-PMH menurut Petunjuk OpenAIRE 1.1, membantu jurnal CLA untuk menjadi OpenAIRE compliant.</message>
 	<message key="plugins.generic.openAIRE.projectID">ProjectID</message>
 	<message key="plugins.generic.openAIRE.metadata">Metadata spesifik OpenAIRE</message>
 	<message key="plugins.generic.openAIRE.projectID.description">(ProjectID setara dengan jumlah Perjanjian Hibah)</message>

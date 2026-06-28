@@ -14,8 +14,8 @@
  *  be one of a given set of values.
  */
 
-import('lib.pkp.classes.filter.FilterSetting');
-import('lib.pkp.classes.form.validation.FormValidatorInSet');
+import('lib.sep.classes.filter.FilterSetting');
+import('lib.sep.classes.form.validation.FormValidatorInSet');
 
 class SetFilterSetting extends FilterSetting {
 	/** @var array */

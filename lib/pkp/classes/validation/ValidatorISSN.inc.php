@@ -14,7 +14,7 @@
  * @brief Validation check for ISSNs.
  */
 
-import('lib.pkp.classes.validation.ValidatorRegExp');
+import('lib.sep.classes.validation.ValidatorRegExp');
 
 class ValidatorISSN extends ValidatorRegExp {
 	/**

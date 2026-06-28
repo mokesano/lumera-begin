@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/zh_TW/manager.xml
@@ -114,7 +114,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">各期刊設有編輯顧問監督期刊的編輯方針，提供編輯建言，並基於顧問成員的學術聲望賦予該期刊某些學術地位。審查委員會則扮演一個類似但額外的角色：他們負責審查的過程。審查委員會成員將不會進入期刊的管理系統，不過會被加入到可以進行審查工作的人員清單中。</message>
 	<message key="manager.setup.emailBounceAddress">退信地址</message>
 	<message key="manager.setup.emailBounceAddressDescription">如有任何退回的電子郵件，都會送出一封錯誤訊息到這個地址。</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>注意：</strong>要啟用這個選項，網站管理員必須啟用OJS設定檔中的 <tt>allow_envelope_sender</tt>選項。可能會需要額外的伺服器設定才能支持使用這個功能（可能不是所有伺服器上都能用），請見上述的OJS文件。]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>注意：</strong>要啟用這個選項，網站管理員必須啟用CLA設定檔中的 <tt>allow_envelope_sender</tt>選項。可能會需要額外的伺服器設定才能支持使用這個功能（可能不是所有伺服器上都能用），請見上述的CLA文件。]]></message>
 	<message key="manager.setup.emails">電子郵件 ID</message>
 	<message key="manager.setup.emailSignature">簽名</message>
 	<message key="manager.setup.emailSignatureDescription">The prepared emails that are sent by the system on behalf of the journal will have the following signature added to the end. The body of the prepared emails are available for editing under Journal Management.系統代表這份期刊所寄發的預備電子郵件會具有下面的簽名列在信末。預備電子郵件的正文部分允許「期刊管理員」進行編輯。</message>
@@ -132,7 +132,7 @@
 	<message key="manager.setup.focusScope">焦點和範圍</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>HTML資料範例</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">讓作者索引他們的作品</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS支持 <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative(OAI )開放典藏計畫</a> 協定來編寫後設資料，其顯示標準提供了完善的索引，以存取全球規模的電子研究資源。作者會使用一個類似的模版來提供其投稿稿件的後設資料。「期刊管理員」應該選擇索引的領域，並請以相干的範例請作者索引他們的作品，用分號來分隔多個項目（例如，項目1; 項目2）。這些項目的前面應該要加上「例如，」或者「比方說：」來介紹。]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA支持 <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative(OAI )開放典藏計畫</a> 協定來編寫後設資料，其顯示標準提供了完善的索引，以存取全球規模的電子研究資源。作者會使用一個類似的模版來提供其投稿稿件的後設資料。「期刊管理員」應該選擇索引的領域，並請以相干的範例請作者索引他們的作品，用分號來分隔多個項目（例如，項目1; 項目2）。這些項目的前面應該要加上「例如，」或者「比方說：」來介紹。]]></message>
 	<message key="manager.setup.form.contactEmailRequired">需要主要連絡人的電子信箱。</message>
 	<message key="manager.setup.form.contactNameRequired">需要主要連絡人的姓名。</message>
 	<message key="manager.setup.form.journalInitialsRequired">需要期刊起首字母名稱。</message>
@@ -155,7 +155,7 @@
 	<message key="manager.setup.information.forLibrarians">給圖書館員</message>
 	<message key="manager.setup.information.forReaders">給讀者</message>
 	<message key="manager.setup.initialIssue">創刊號</message>
-	<message key="manager.setup.initialIssueDescription">依照所選的格式，指認被OJS所出刊的第一期的期數、卷數、和/或年分：</message>
+	<message key="manager.setup.initialIssueDescription">依照所選的格式，指認被CLA所出刊的第一期的期數、卷數、和/或年分：</message>
 	<message key="manager.setup.institution">機構</message>
 	<message key="manager.setup.issnDescription"><![CDATA[ISSN (International Standard Serial Number 國際標準序列號碼)是一個八位數字，用以識別定期出版之出版品，包括電子期刊。其由一個國家中心的世界性網路所管理，與位在巴黎的一個由聯合國教科文組織(Unesco)和法國政府所支持的國際中心合作。您可以從<a href="http://www.issn.org" target="_blank">ISSN 網站</a>獲得一組號碼。在期刊運作的任何一個階段都可以取得這樣的號碼。]]></message>
 	<message key="manager.setup.issuePerVolume">期/卷</message>
@@ -253,8 +253,8 @@
 	<message key="manager.setup.reviewGuidelines">審查須知</message>
 	<message key="manager.setup.reviewGuidelinesDescription">「審查須知」提供審查人評判一份投稿是否適合在本期刊出版的判準，這就像是一個特殊的指南手冊，用以進行有效的和協助性的審查工作。</message>
 	<message key="manager.setup.reviewOptions">審查選項</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">自動電子郵件備忘錄 (可從 OJS 的預設電子郵件取得) 可以在兩個時間點送給審查人 (而編輯也隨時可以直接電郵審查人)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>注意：</strong>要啟用這些選項，這個網站的管理員必須啟用OJS設定檔中的<tt>scheduled_tasks</tt> 選項。（可能無法在所有的伺服器上面執行），就在上面指出的OJS文件當中]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">自動電子郵件備忘錄 (可從 CLA 的預設電子郵件取得) 可以在兩個時間點送給審查人 (而編輯也隨時可以直接電郵審查人)</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>注意：</strong>要啟用這些選項，這個網站的管理員必須啟用CLA設定檔中的<tt>scheduled_tasks</tt> 選項。（可能無法在所有的伺服器上面執行），就在上面指出的CLA文件當中]]></message>
 	<message key="manager.setup.reviewOptions.noteOnModification">可在編輯過程中修訂。</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">一般審查時間</message>
 	<message key="manager.setup.reviewOptions.onQuality">對每一篇審查結果，編輯將會由1到5評比審查人。</message>
@@ -271,7 +271,7 @@
 	<message key="manager.setup.reviewOptions.reviewTime">審查時間</message>
 	<message key="manager.setup.reviewPolicy">審查方針</message>
 	<message key="manager.setup.reviewProcess">審查程序</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[.OJS支援兩種管理審查程序的模式。建議使用「標準審查程序」，因為其透過各項步驟引導審查人，確保每份投稿都會有一份完整審查歷史紀錄，還有方便的自動提醒通知，以及給投稿稿件的標準建議（接受刊登；修改後接受刊登；重新審查；投稿他處；婉謝退稿；見審查意見）。<br /><br />請在下面選擇一個選項：]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[.CLA支援兩種管理審查程序的模式。建議使用「標準審查程序」，因為其透過各項步驟引導審查人，確保每份投稿都會有一份完整審查歷史紀錄，還有方便的自動提醒通知，以及給投稿稿件的標準建議（接受刊登；修改後接受刊登；重新審查；投稿他處；婉謝退稿；見審查意見）。<br /><br />請在下面選擇一個選項：]]></message>
 	<message key="manager.setup.reviewProcessEmail">電子郵件附件審查程序</message>
 	<message key="manager.setup.reviewProcessEmailDescription">編輯向審查人寄交一份附有投稿稿件的審查邀請函。審查人同樣以電子郵件將他們的同意書（或婉謝信），連同審查意見書和建議選項寄交給編輯。編輯在投稿的「審查」頁面，進入審查人的同意書（或婉謝信）以及審查意見書和建議選項，以記錄審查流程。</message>
 	<message key="manager.setup.reviewProcessStandard">標準審查程序</message>
@@ -282,7 +282,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">（如果沒有加入任何文稿類型，那麼投稿項目預設將是「論文」文稿類型。）</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[進入「文稿類型管理」以建立或修改本期刊的文章文稿類型（例如論文、書評等等）。<br /><br />在投稿給本期刊之後，作者將會指派其文章為...]]></message>
 	<message key="manager.setup.securitySettings">安全性/進入網頁設定</message>
-	<message key="manager.setup.securitySettingsDescription">OJS提供一個與安全性相關的數字選項，能夠用來限制期刊的內容，並且基於日後審核結算的目的來維護額外的投稿稿件資訊。</message>
+	<message key="manager.setup.securitySettingsDescription">CLA提供一個與安全性相關的數字選項，能夠用來限制期刊的內容，並且基於日後審核結算的目的來維護額外的投稿稿件資訊。</message>
 	<message key="manager.setup.selectEditorDescription">將會全程監控處理過程的期刊編輯</message>
 	<message key="manager.setup.selectSectionDescription">將會考慮納入此項目的期刊文稿類型。</message>
 	<message key="manager.setup.siteAccess">網站權限</message>
@@ -321,14 +321,14 @@
 	<message key="manager.setup.useTextTitle">標題文字</message>
 	<message key="manager.setup.volumePerYear">卷/年</message>
 	<message key="manager.statistics.reports">報告產生器</message>
-	<message key="manager.statistics.reports.description">OJS建立報告，從投稿人、編輯、審查人和文稿類型編輯的眼光，追蹤在一段時間中進行之投稿的相關細節。報告生成為CSV檔案格式，需要一個有試算表的應用程式(如Excel)才能檢視。</message>
+	<message key="manager.statistics.reports.description">CLA建立報告，從投稿人、編輯、審查人和文稿類型編輯的眼光，追蹤在一段時間中進行之投稿的相關細節。報告生成為CSV檔案格式，需要一個有試算表的應用程式(如Excel)才能檢視。</message>
 	<message key="manager.statistics.statistics">期刊統計</message>
 	<message key="manager.statistics.statistics.count.accept">接受刊出</message>
 	<message key="manager.statistics.statistics.count.decline">回絕刊出</message>
 	<message key="manager.statistics.statistics.count.revise">重新投稿</message>
 	<message key="manager.statistics.statistics.daysPerReview">審查天數</message>
 	<message key="manager.statistics.statistics.daysToPublication">出版天數</message>
-	<message key="manager.statistics.statistics.description">OJS為每一份期刊計算下列的統計數據。「審查日數」計算從投稿日（或指派審查版本的日期）開始，到做出最初的編輯決策之間的天數；而「出版日數」則計算從收到上傳初稿到出版之間的天數。</message>
+	<message key="manager.statistics.statistics.description">CLA為每一份期刊計算下列的統計數據。「審查日數」計算從投稿日（或指派審查版本的日期）開始，到做出最初的編輯決策之間的天數；而「出版日數」則計算從收到上傳初稿到出版之間的天數。</message>
 	<message key="manager.statistics.statistics.itemsPublished">已出版項目</message>
 	<message key="manager.statistics.statistics.makePublic">點選讀者在「關於本期刊」之中可以使用的項目。</message>
 	<message key="manager.statistics.statistics.note">注意已審查的稿件不可能加到百分日，因為重新投稿的頁目不是接受、退稿就是還在處理中。</message>
@@ -357,15 +357,15 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">以電子郵件通知訂閱者</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">訂閱期滿前幾週</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">訂閱期滿提醒函</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">可以在訂閱期滿之前和之後寄發自動電子郵件提醒函（期刊管理員可在OJS的預備電子郵件中編輯）</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>注意：</strong>要啟用這些選項，這個網站的管理員必須啟用OJS設定檔中的<tt>scheduled_tasks</tt> 選項。（可能無法在所有的伺服器上面執行），就在上面指出的OJS文件當中]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">可以在訂閱期滿之前和之後寄發自動電子郵件提醒函（期刊管理員可在CLA的預備電子郵件中編輯）</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>注意：</strong>要啟用這些選項，這個網站的管理員必須啟用CLA設定檔中的<tt>scheduled_tasks</tt> 選項。（可能無法在所有的伺服器上面執行），就在上面指出的CLA文件當中]]></message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[HTML能夠被使用在文字區域中（設定字形大小和字體色彩等等）， 按下"Enter"會被視為插入<tt>&lt;br&gt;</tt>標籤；HTML編輯器能在Firefox瀏覽器中執行。]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">請選擇一個訂閱期滿之後有多少月數的有效值。</message>
 	<message key="manager.subscriptionPolicies.numMonthsBeforeSubscriptionExpiryReminderValid">請選擇一個訂閱期滿之前有多少月數的有效值。</message>
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">.請選擇一個訂閱期滿之後有多少週數的有效值。</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid"></message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">已註冊之讀者將可以選擇在一期期刊開放閱讀之時，透過電子郵件收到目錄通知。</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>注意：</strong>要啟用這些選項，這個網站的管理員必須啟用OJS設定檔中的<tt>scheduled_tasks</tt> 選項。（可能無法在所有的伺服器上面執行），就在上面指出的OJS文件當中]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>注意：</strong>要啟用這些選項，這個網站的管理員必須啟用CLA設定檔中的<tt>scheduled_tasks</tt> 選項。（可能無法在所有的伺服器上面執行），就在上面指出的CLA文件當中]]></message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">開放閱讀選項來訂閱期刊</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">需訂閱之期刊可以提供「稍後開放閱讀」以及＼或者「作者自行典藏」（增加讀者和內容的引用數）兩種方式。被選擇的方案會出現在「期刊介紹」之中。</message>
 	<message key="manager.subscriptionPolicies.subscriptionAdditionalInformation">訂閱資訊</message>

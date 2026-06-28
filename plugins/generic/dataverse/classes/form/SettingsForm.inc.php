@@ -13,7 +13,7 @@
  * @brief Plugin settings: set data policies, define terms of use, configure workflows. 
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 import('plugins.generic.tinymce.TinyMCEPlugin');
 
 class SettingsForm extends Form {

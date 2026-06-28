@@ -1,5 +1,5 @@
 /**
- * @file lib/pkp/styles/content.css
+ * @file lib/sep/styles/content.css
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
@@ -13,10 +13,10 @@
  * DEPRECATED. Do not use these styles. Remove them when possible.
  */
 
-/* Used by old modal.js; deprecated in favour of pkp_helpers_progressIndicator */
+/* Used by old modal.js; deprecated in favour of sep_helpers_progressIndicator */
 .deprecated_throbber {
 	display: none;
-	background: url(../lib/pkp/templates/images/throbber.gif) no-repeat;
+	background: url(../lib/sep/templates/images/throbber.gif) no-repeat;
 	width: 25px;
 	height: 25px;
 	margin-left: 50%;

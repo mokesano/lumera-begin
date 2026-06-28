@@ -65,7 +65,7 @@ class Validation {
 					$oldEmail = $user->getEmail();
 					$auth->doGetUserInfo($user);
 					if ($user->getEmail() != $oldEmail) {
-						// FIXME OJS requires email addresses to be unique; if changed email already exists, ignore
+						// FIXME CLA requires email addresses to be unique; if changed email already exists, ignore
 						if ($userDao->userExistsByEmail($user->getEmail())) {
 							$user->setEmail($oldEmail);
 						}

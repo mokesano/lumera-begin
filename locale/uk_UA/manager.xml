@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/uk_UA/manager.xml
@@ -23,7 +23,7 @@
        <message key="manager.groups.context.editorialTeam.short">Редакційний штат</message>
        <message key="manager.groups.context.people">Відображати посаду як окрему категорію розділу "Редакція" (наприклад, Редколегія)</message>
        <message key="manager.groups.create">Створити посаду</message>
-       <message key="manager.groups.disableBoard">OJS відображає людей у списку "Редакційний штат" з ролями, на які вони призначені (Менеджер журналу, Літературний редактор тощо).</message>
+       <message key="manager.groups.disableBoard">CLA відображає людей у списку "Редакційний штат" з ролями, на які вони призначені (Менеджер журналу, Літературний редактор тощо).</message>
        <message key="manager.groups.enableBoard">Відображаються посади, створені менеджером журналу, та люди, призначені на кожну з них.</message>
        <message key="manager.groups.enableBoard.description"><![CDATA[У розділі <a href="{$aboutEditorialTeamUrl}">Редакція</a> сторінки "Про журнал":]]></message>
        <message key="manager.groups.noneCreated">Жодних редакційних посад не було створено.</message>
@@ -33,7 +33,7 @@
        <message key="manager.language.forms">Форми</message>
        <message key="manager.language.confirmDefaultSettingsOverwrite">Ця дія скасує всі особисті налаштування журналу, залежні від цієї локалізації</message>
        <message key="manager.language.reloadLocalizedDefaultSettings">Перевантажити мовні налаштування до стандартних</message>
-       <message key="manager.languages.languageInstructions"><![CDATA[OJS може бути доступним користувачам будь-якою з мов, що підтримуються. Крім того, OJS може функціонувати як багатомовна система, забезпечуючи користувачам можливість зміни мови з будь-якої сторінки сайту, а також надаючи можливість заповнення деяких даних кількома додатковими мовами.<br /><br />Якщо необхідна мова підтримується OJS, але Ви не знаходите її у списку нижче, зверніться до адміністратора сайту з проханням встановити цю мову за допомогою інтерфейсу адміністратора. Для отримання інструкцій щодо додавання підтримки нових мов, будь ласка, консультуйтеся з документацією OJS.]]></message>
+       <message key="manager.languages.languageInstructions"><![CDATA[CLA може бути доступним користувачам будь-якою з мов, що підтримуються. Крім того, CLA може функціонувати як багатомовна система, забезпечуючи користувачам можливість зміни мови з будь-якої сторінки сайту, а також надаючи можливість заповнення деяких даних кількома додатковими мовами.<br /><br />Якщо необхідна мова підтримується CLA, але Ви не знаходите її у списку нижче, зверніться до адміністратора сайту з проханням встановити цю мову за допомогою інтерфейсу адміністратора. Для отримання інструкцій щодо додавання підтримки нових мов, будь ласка, консультуйтеся з документацією CLA.]]></message>
        <message key="manager.languages.noneAvailable">Вибачте, зараз не доступно жодних додаткових мов. Якщо Ви хочете використовувати додаткові мови у цьому журналі, повідомте про це адміністратору сайту.</message>
        <message key="manager.languages.primaryLocaleInstructions">Це буде основна мова сайту журналу.</message>
        <message key="manager.managementPages">Сторінки менеджменту</message>
@@ -43,7 +43,7 @@
        <message key="manager.payment.authorFees">Платежі авторів</message>
        <message key="manager.payment.authorFeesDescription">Інформація про обрані пункти, разом з їх описами та сумами внесків (які нижче можна редагувати), з'явиться на Кроці 1 процесу подання рукопису, у розділі "Подання" сторінки "Про журнал", а також на сторінках, які мають відношення до цих платежів.</message>
        <message key="manager.payment.currency">Валюта</message>
-       <message key="manager.payment.currencymessage">OJS не надає можливостей перерахунку валют. Якщо журнал приймає плаетжі за передплату, переконайтеся, що валюта передплати збігається зі вказаною тут.</message>
+       <message key="manager.payment.currencymessage">CLA не надає можливостей перерахунку валют. Якщо журнал приймає плаетжі за передплату, переконайтеся, що валюта передплати збігається зі вказаною тут.</message>
        <message key="manager.payment.description">Опис</message>
        <message key="manager.payment.details">Подробиці</message>
        <message key="manager.payment.editSubscription">Редагувати передплату</message>
@@ -205,7 +205,7 @@
        <message key="manager.setup.appearInAboutJournal">(показувати на сторінці "Про журнал") </message>
        <message key="manager.setup.authorCopyrightNotice">Положення про авторські права</message>
        <message key="manager.setup.authorCopyrightNoticeAgree">Вимагати від авторів погодження з Положенням про авторські права під час подання рукопису.</message>
-       <message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Подане нижче Положення про авторські права з'явиться у розділі "Про журнал" та у метаданих кожної опублікованої статті. Хоча формулювання положень авторського права для читачів знаходиться повністю у компетенції журналів, Public Knowledge Project рекомендує видавцям використовувати ліцензію <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> та пропонує <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">типовий шаблон положення про авторські права</a>, пункти якого можна скопіювати та вставити у поле нижче журналам, які (a) пропонують відкритий доступ, (b) пропонують відкритий доступ з затримкою, або (c) не пропонують відкритого доступу.]]></message>
+       <message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Подане нижче Положення про авторські права з'явиться у розділі "Про журнал" та у метаданих кожної опублікованої статті. Хоча формулювання положень авторського права для читачів знаходиться повністю у компетенції журналів, Sangia Editorial Project рекомендує видавцям використовувати ліцензію <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> та пропонує <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">типовий шаблон положення про авторські права</a>, пункти якого можна скопіювати та вставити у поле нижче журналам, які (a) пропонують відкритий доступ, (b) пропонують відкритий доступ з затримкою, або (c) не пропонують відкритого доступу.]]></message>
        <message key="manager.setup.authorGuidelines">Керівництва для авторів</message>
        <message key="manager.setup.authorGuidelinesDescription"><![CDATA[Викладіть для авторів прийняті стандарти щодо форматування та оформлення бібліографії у рукописах, що подаються до Вашого журналу (наприклад, <em>Publication Manual of the American Psychological Association</em>, 5th edition, 2001). Часто буває доречно подати приклади оформлення типових посилань на статті, книжки та інші види документів у списках пристатейної бібліографії. Крім того, якщо Ви заохочуєте авторів надсилати разом з текстами власних рукописів також супровідні файли, які допоможуть читачам журналу краще розуміти суть викладених у статтях досліджень, вкажіть типи супровідних файлів (наприклад, набори даних, дослідні інструменти), які журнал хотів би приймати від авторів.]]></message>
        <message key="manager.setup.competingInterests">Конфлікт інтересів</message>
@@ -252,7 +252,7 @@
        <message key="manager.setup.editorialReviewBoardDescription">Журнали мають редакційні колегії, які слідкують за редакційною політикою журналу, беруть участь у призначенні редакторів, крім того, репутація та статус членів редколегії важливі для затвердження репутації журналу в межах наукової спільноти. Ради рецензентів відіграють таку ж роль, але крім цього, вони очолюють процес наукового рецензування. Члени ради рецензентів не будуть мати доступу до системи адміністрування журналу, але вони будуть додані до списку доступних рецензентів.</message>
        <message key="manager.setup.emailBounceAddress">Адреса повернення</message>
        <message key="manager.setup.emailBounceAddressDescription">На цю адресу будуть надсилатися повідомлення про всі недоставлені листи.</message>
-       <message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію, адміністратор повинен дозволити директиву <tt>allow_envelope_sender</tt> у файлі конфігурації OJS. Крім того, як зазначено у документації OJS, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
+       <message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію, адміністратор повинен дозволити директиву <tt>allow_envelope_sender</tt> у файлі конфігурації CLA. Крім того, як зазначено у документації CLA, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
        <message key="manager.setup.emails">Налаштування листування</message>
        <message key="manager.setup.emailSignature">Підпис</message>
        <message key="manager.setup.emailSignatureDescription">Підготовані листи, які будуть розсилатися системою від імені журналу, матимуть у кінці зазначений нижче підпис. Посилання для редагування змісту підготованих листів доступне на сторінці "Менеджмент журналу".</message>
@@ -274,7 +274,7 @@
        <message key="manager.setup.focusScope">Галузь та проблематика</message>
        <message key="manager.setup.focusScopeDescription"><![CDATA[<strong>ПРИКЛАД ДАНИХ HTML</strong>]]></message>
        <message key="manager.setup.forAuthorsToIndexTheirWork">Для авторів щодо індексації їх праць</message>
-       <message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS підтримує Протокол для збору метаданих <a href="http://www.openarchives.org/" target="_blank">Ініціативи відкритих архівів</a> (OAI-PMH), який наразі стає стандартом забезпечення ефективного доступу до електронних наукових ресурсів у глобальному середовищі. Авторам варто надати можливість використання готових шаблонів для введення метаданих про роботи, які вони подають для публікації у журналі. Для цього менеджер журналу повинен вибрати категорії термінів, за якими будуть індексуватися матеріали журналу, та надати добрі приклади термінів як керівництва для майбутніх авторів. Розділяти приклади слід крапкою з комою (наприклад, термін1; термін2). Варто також вказати, що наведені терміни - це лише приклади; для цього перед термінами у полях нижче треба написати слово "Наприклад,".]]></message>
+       <message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA підтримує Протокол для збору метаданих <a href="http://www.openarchives.org/" target="_blank">Ініціативи відкритих архівів</a> (OAI-PMH), який наразі стає стандартом забезпечення ефективного доступу до електронних наукових ресурсів у глобальному середовищі. Авторам варто надати можливість використання готових шаблонів для введення метаданих про роботи, які вони подають для публікації у журналі. Для цього менеджер журналу повинен вибрати категорії термінів, за якими будуть індексуватися матеріали журналу, та надати добрі приклади термінів як керівництва для майбутніх авторів. Розділяти приклади слід крапкою з комою (наприклад, термін1; термін2). Варто також вказати, що наведені терміни - це лише приклади; для цього перед термінами у полях нижче треба написати слово "Наприклад,".]]></message>
        <message key="manager.setup.form.contactEmailRequired">Необхідно вказати email основної контактної особи.</message>
        <message key="manager.setup.form.contactNameRequired">Необхідно вказати основну контактну особу.</message>
        <message key="manager.setup.form.journalInitialsRequired">Необхідно вказати ініціали журналу.</message>
@@ -297,7 +297,7 @@
        <message key="manager.setup.information.forLibrarians">Для бібліотекарів</message>
        <message key="manager.setup.information.forReaders">Для читачів</message>
        <message key="manager.setup.initialIssue">Перший випуск</message>
-       <message key="manager.setup.initialIssueDescription">Залежно від обраного формату вкажіть том, номер та/або рік першого випуску, який буде опублікований з OJS:</message>
+       <message key="manager.setup.initialIssueDescription">Залежно від обраного формату вкажіть том, номер та/або рік першого випуску, який буде опублікований з CLA:</message>
        <message key="manager.setup.institution">Організація</message>
        <message key="manager.setup.issnDescription"><![CDATA[ISSN (International Standard Serial Number) - це 8-значний номер, який ідентифікує періодичні видання, в тому числі, електронні серіальні видання. Реєстр підтримується всесвітньою мережею національних центрів, яка координується Міжнародним центром ISSN у Парижі, що підпорядкований ЮНЕСКО та французькому уряду. Номер можна отримати на <a href="http://www.issn.org" target="_new">веб-сайті ISSN</a>. Це можна зробити на будь-якому етапі видання журналу.]]></message>
        <message key="manager.setup.issuePerVolume">Номерів у томі</message>
@@ -413,7 +413,7 @@
        <message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Керівництво для рецензентів має пропонувати рецензентам критерії для оцінювання подань з точки зору їх придатності до публікації у цьому журналі; воно може містити будь-які інструкції щодо підготовки влучної та корисної рецензії. В процесі підготовки рецензії рецензентам будуть доступні два текстових блоки, перший "для автора та редактора" та другий "лише для редактора". Як варіант, менеджер журналу може створювати форми рецензій у розділі <a href="{$reviewFormsUrl}" class="action">Форми рецензій</a>. У обох випадках редактори матимуть змогу включення рецензій до кореспонденції з автором.]]></message>
        <message key="manager.setup.reviewOptions">Налаштування рецензування</message>
        <message key="manager.setup.reviewOptions.automatedReminders">Хоча редактор завжди може особисто контактувати з рецензентами по email, можливі також два варіанта налаштування автоматичного розсилання нагадувань (зміст листів-нагадувань можна змінити у розділі "Підготовані листи")</message>
-       <message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію адміністратор сайту повинен дозволити директиву <tt>scheduled_tasks</tt> у файлі конфігурації OJS. Крім того, як зазначено у документації OJS, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
+       <message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію адміністратор сайту повинен дозволити директиву <tt>scheduled_tasks</tt> у файлі конфігурації CLA. Крім того, як зазначено у документації CLA, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
        <message key="manager.setup.reviewOptions.blindReview">Сліпе рецензування</message>
        <message key="manager.setup.reviewOptions.noteOnModification">Може бути змінений в процесі видання.</message>
        <message key="manager.setup.reviewOptions.numWeeksPerReview">Типовий період, необхідний для проведення рецензування</message>
@@ -432,7 +432,7 @@
        <message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Надати посилання на <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Гарантії сліпого рецензування</a> на сторінках, де автори та рецензенти вивантажують файли.]]></message>
        <message key="manager.setup.reviewPolicy">Політика рецензування</message>
        <message key="manager.setup.reviewProcess">Процес рецензування</message>
-       <message key="manager.setup.reviewProcessDescription"><![CDATA[OJS підтримує дві моделі керування процесом рецензування. Рекомендується Стандартний процес рецензування, оскільки він дозволяє спростити роботу рецензентів, гарантувати збереження повної історії рецензування кожного подання, отримати переваги від системи автоматичних нагадувань і стандартизувати рекомендації щодо подань (Прийняти; Прийняти з зауваженнями; Надіслати на додаткове рецензування; Надіслати в інше місце; Відхилити; Див. коментарі).<br /><br />Оберіть одне з наступного:]]></message>
+       <message key="manager.setup.reviewProcessDescription"><![CDATA[CLA підтримує дві моделі керування процесом рецензування. Рекомендується Стандартний процес рецензування, оскільки він дозволяє спростити роботу рецензентів, гарантувати збереження повної історії рецензування кожного подання, отримати переваги від системи автоматичних нагадувань і стандартизувати рекомендації щодо подань (Прийняти; Прийняти з зауваженнями; Надіслати на додаткове рецензування; Надіслати в інше місце; Відхилити; Див. коментарі).<br /><br />Оберіть одне з наступного:]]></message>
        <message key="manager.setup.reviewProcessEmail">Процес рецензування вкладень до листів</message>
        <message key="manager.setup.reviewProcessStandard">Стандартний процес рецензування</message>
        <message key="manager.setup.reviewProcessStandardDescription">Редактори надсилатимуть обраним рецензентам назву та анатоацію подання, а також запрошення увійти до веб-сайту журналу для завершення рецензування. Рецензенти входитимуть до веб-сайту журналу для того, щоб погодитись дати рецензію, завантажити подання, викласти власні коментарі щодо рукопису та обрати одну з рекомендацій для редактора.</message>
@@ -442,7 +442,7 @@
        <message key="manager.setup.sectionsDefaultSectionDescription">(Якщо розділи не додані, матеріали будуть надсилатися до розділу статей за замовчуванням).</message>
        <message key="manager.setup.sectionsDescription"><![CDATA[Щоб додати або змінити розділи журналу (наприклад, Статті, Рецензії тощо), перейдіть до сторінки Керування розділами..<br /><br />Автори подань до журналу вказуватимуть...]]></message>
        <message key="manager.setup.securitySettings">Налаштування доступу та безпеки</message>
-       <message key="manager.setup.securitySettingsDescription">OJS пропонує численні опції налаштування безпеки, які можуть використовуватись для обмеження доступу до змісту журналу та збереження додаткової інформації про подання з метою удосконалення аудиту.</message>
+       <message key="manager.setup.securitySettingsDescription">CLA пропонує численні опції налаштування безпеки, які можуть використовуватись для обмеження доступу до змісту журналу та збереження додаткової інформації про подання з метою удосконалення аудиту.</message>
        <message key="manager.setup.selectEditorDescription">Редактор журналу, який наглядатиме за редакційним процесом.</message>
        <message key="manager.setup.selectSectionDescription">Розділ журналу для об'єктів.</message>
        <message key="manager.setup.showGalleyLinksDescription">Завжди відображати посилання на повні тексти та повідомляти про обмежений доступ.</message>
@@ -463,7 +463,7 @@
        <message key="manager.setup.submissions.description">Інформація для авторів, авторські права та індексування (в тому числі, реєстрація).</message>
        <message key="manager.setup.subscription">Для доступу до змісту журналу (всього або деякого) буде потрібна передплата.</message>
        <message key="manager.setup.subscriptionDescription">Це потребує призначення менеджера передплати з правом доступу до модуля передплати, який дозволяє додаткові налаштування відкритого доступу, депонування та поштових сповіщень.</message>
-       <message key="manager.setup.noPublishing">OJS не буде використовуватись для онлайнової публікації змісту журналу.</message>
+       <message key="manager.setup.noPublishing">CLA не буде використовуватись для онлайнової публікації змісту журналу.</message>
        <message key="manager.setup.technicalSupportContact">Контактна особа з технічних питань</message>
        <message key="manager.setup.technicalSupportContactDescription">Ця особа буде вказана у розділі "Контакти" для допомоги редакторам, авторам та рецензентам. Особа повинна розумітися на особливостях роботи з системою у всіх цих ролях. Оскільки дана журнальна система не потребує значного технічного супроводу, контактною особою з технічних питань може виступати частково зайнятий працівник. До сфери відповідальності цього працівника входить, наприклад. роз'яснення інструкцій щодо роботи з системою, надання допомоги авторам та рецензентам у питаннях форматів файлів або перевірка працездатності серверу.</message>
        <message key="manager.setup.typeExamples">(наприклад, Історичний екскурс; Результати експерименту; Огляд літератури; Опитування/Інтерв'ю)</message>
@@ -482,7 +482,7 @@
        <message key="manager.setup.useTextTitle">Текст заголовку</message>
        <message key="manager.setup.volumePerYear">Томів на рік</message>
        <message key="manager.statistics.reports">Генератор звіту</message>
-       <message key="manager.statistics.reports.description">OJS генерує звіти, які відслідковують дані щодо обробки подань до журналу за певний період часу. Звіти генеруються у форматі CSV, для перегляду якого необхідне програмне забезпечення для роботи з електронними таблицями.</message>
+       <message key="manager.statistics.reports.description">CLA генерує звіти, які відслідковують дані щодо обробки подань до журналу за певний період часу. Звіти генеруються у форматі CSV, для перегляду якого необхідне програмне забезпечення для роботи з електронними таблицями.</message>
        <message key="manager.statistics.statistics">Статистика журналу</message>
        <message key="manager.statistics.statistics.articleViews">Показники перегляду статей (лише для авторів)</message>
        <message key="manager.statistics.statistics.count.accept">Прийнято</message>
@@ -490,7 +490,7 @@
        <message key="manager.statistics.statistics.count.revise">Повторно надіслано</message>
        <message key="manager.statistics.statistics.daysPerReview">Днів на рецензування</message>
        <message key="manager.statistics.statistics.daysToPublication">Днів до публікації</message>
-       <message key="manager.statistics.statistics.description">OJS вираховує наступну статистику по кожному журналу. Період "днів до рецензування" вираховується від дати подання рукопису (або вказання версії рецензії) до прийняття початкового рішення редактором; період "днів до публікації" позначає термін від початкового вивантаження автором рукопису до остаточної публікації.</message>
+       <message key="manager.statistics.statistics.description">CLA вираховує наступну статистику по кожному журналу. Період "днів до рецензування" вираховується від дати подання рукопису (або вказання версії рецензії) до прийняття початкового рішення редактором; період "днів до публікації" позначає термін від початкового вивантаження автором рукопису до остаточної публікації.</message>
        <message key="manager.statistics.statistics.itemsPublished">Одиниць опубліковано</message>
        <message key="manager.statistics.statistics.makePublic">Оберіть пункти, які Ви хочете публікувати у розділі "Про журнал".</message>
        <message key="manager.statistics.statistics.note">Примітка: Відсоткове співвідношення рецензованих подань може не дорівнювати 100%, оскільки деякі матеріали, завантажені повторно, були прийняті, відхилені або все ще знаходяться в роботі.</message>
@@ -526,7 +526,7 @@
        <message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">тижнів до завершення передплати.</message>
        <message key="manager.subscriptionPolicies.expiryReminders">Нагадування про завершення передплати</message>
        <message key="manager.subscriptionPolicies.expiryRemindersDescription">Автоматизовані поштові нагадування (зміст яких може редагувати менеджер журналу у розділі "Підготовані листи") можуть розсилатись передплатникам як до, так і після завершення їх передплат.</message>
-       <message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цї опції адміністратор сайту повинен дозволити директиву <tt>scheduled_tasks</tt> у файлі конфігурації OJS. Крім того, як зазначено у документації OJS, налаштування цих опцій може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
+       <message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цї опції адміністратор сайту повинен дозволити директиву <tt>scheduled_tasks</tt> у файлі конфігурації CLA. Крім того, як зазначено у документації CLA, налаштування цих опцій може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
        <message key="manager.subscriptionPolicies.expirySelectOne">Оберіть одне з наступного:</message>
        <message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[У текстовому полі може застосовуватись розмітка HTML (теги font size, color тощо); перехід на наступний рядок трактується як тег <tt>&lt;br&gt;</tt>; редактор HTML працює з браузерами Firefox.]]></message>
        <message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Будь ласка, вкажіть коректне значення кількості місяців після завершення передплати.</message>
@@ -534,7 +534,7 @@
        <message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Будь ласка, вкажіть коректне значення кількості тижнів після завершення передплати.</message>
        <message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Будь ласка, вкажіть коректне значення кількості тижнів до завершення передплати.</message>
        <message key="manager.subscriptionPolicies.openAccessNotificationDescription">Зареєстровані читачі матимуть можливість автоматизовано отримувати поштою сторінки змісту випусків, які з'явилися у відкритому доступі.</message>
-       <message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію адміністратор сайту повинен дозволити директиву <tt>scheduled_tasks</tt> у файлі конфігурації OJS. Крім того, як зазначено у документації OJS, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
+       <message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію адміністратор сайту повинен дозволити директиву <tt>scheduled_tasks</tt> у файлі конфігурації CLA. Крім того, як зазначено у документації CLA, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
        <message key="manager.subscriptionPolicies.onlinePaymentNotifications">Онлайнові сповіщення про платежі</message>
        <message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Сповіщення про платежі (зміст яких може редагувати менеджер журналу у розділі "Підготовані листи") можуть автоматизовано надсилатись менеджеру передплати після завершення користувачами процедури оплати передплат.</message>
        <message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Сповіщати менеджера передплати поштою про купівлю індивідуальних передплат.</message>

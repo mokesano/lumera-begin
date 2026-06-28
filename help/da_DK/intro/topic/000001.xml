@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -16,9 +16,9 @@
 	<section>
 		<![CDATA[
 <ol>
-	<li><a href="#section1">Hvordan starter jeg et tidsskrift op med OJS?</a></li>
-	<li><a href="#section2">Hvor kan jeg finde teknisk support, fremsende fejl og foreslå forbedringer til anvendelsen af OJS?</a></li>
-	<li><a href="#section3">Hvordan skal jeg gribe det an, hvis jeg vil oversætte OJS til et andet sprog?</a></li>
+	<li><a href="#section1">Hvordan starter jeg et tidsskrift op med CLA?</a></li>
+	<li><a href="#section2">Hvor kan jeg finde teknisk support, fremsende fejl og foreslå forbedringer til anvendelsen af CLA?</a></li>
+	<li><a href="#section3">Hvordan skal jeg gribe det an, hvis jeg vil oversætte CLA til et andet sprog?</a></li>
 	<li><a href="#section4">Hvorfor modtager forfattere meddelelsen om, at tidsskriftet "ikke accepterer manuskripter på nuværende tidspunkt"?</a></li>
 	<li><a href="#section5">Hvad kan vi gøre, hvis vi vil tillade adgang til manuskripter, der bedømmes, eller der befinder sig i "fasen forud for trykning", inden de publiceres af tidsskriftet?</a></li>
 	<li><a href="#section6">Hvordan kan jeg fortælle om mit tidsskrift på internettet?</a></li>
@@ -29,26 +29,26 @@
 </ol>
 		]]>	
 	</section>
-	<section title="1. Hvordan starter jeg et tidsskrift op med OJS?">
+	<section title="1. Hvordan starter jeg et tidsskrift op med CLA?">
 		<![CDATA[
 <ol type="a">
-	<li><a href="http://pkp.sfu.ca/ojs_download" target="_blank">Hent</a> OJS, og installer softwaren, idet du følger softwarens installationscript, på en webserver, som opfylder softwarens krav.</li>
-	<li>Log på med det administrationsbrugernavn og den administrationsadgangskode, der blev oprettet under installationen af OJS.</li>
+	<li><a href="http://lumera.sangia.org/cla_download" target="_blank">Hent</a> CLA, og installer softwaren, idet du følger softwarens installationscript, på en webserver, som opfylder softwarens krav.</li>
+	<li>Log på med det administrationsbrugernavn og den administrationsadgangskode, der blev oprettet under installationen af CLA.</li>
 	<li>Opret et nyt tidsskrift under Tilknyttede tidsskrifter.</li>
 	<li>Webstedadministratoren registreres automatisk som tidsskriftschef for det nye tidsskrift, men hvis det er nødvendigt, kan du oprette en eller flere nye brugere i rollen som tidsskriftschef.</li>
 	<li>Tidsskriftschefen åbner derefter Konfiguration og arbejder sig igennem de fem trin (dog nødvendigvis ikke alle på én gang), hvilket resulterer i et websted, der er klar til at modtage manuskripter, administrere den redaktionelle proces og publicere tidsskriftet online.</li>
-	<li>Se <a href="http://pkp.sfu.ca/files/OJSinanHour.pdf" target="_blank">OJS in an Hour </a>, hvis du vil have flere oplysninger om, hvordan du kommer i gang med OJS.</li>
+	<li>Se <a href="http://lumera.sangia.org/files/CLAinanHour.pdf" target="_blank">CLA in an Hour </a>, hvis du vil have flere oplysninger om, hvordan du kommer i gang med CLA.</li>
 </ol>
 		]]>
 	</section>
-	<section title="2. Hvor kan jeg finde teknisk support, fremsende fejl og foreslå forbedringer til anvendelsen af OJS?">
+	<section title="2. Hvor kan jeg finde teknisk support, fremsende fejl og foreslå forbedringer til anvendelsen af CLA?">
 		<![CDATA[
-<p>Public Knowledge Project driver et <a href="http://forum.pkp.sfu.ca/" target="_blank">supportforum</a> med langt over tusinde udvekslinger, hvor det er muligt at søge efter svar og stille spørgsmål. Det er f.eks. muligt at søge efter fejlmeddelelser, der leder dig videre til foreslåede løsninger på kendte problemer. Hvis der ikke gøres brug af dette, kan brugere sende forespørgsler til <a href="mailto:pkp-support@sfu.ca">pkp-support@sfu.ca</a>. Fremsendelse af fejlrapporter skal ske via PKP's <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github issues</a>.</p>
+<p>Sangia Editorial Project driver et <a href="http://forum.lumera.sangia.org/" target="_blank">supportforum</a> med langt over tusinde udvekslinger, hvor det er muligt at søge efter svar og stille spørgsmål. Det er f.eks. muligt at søge efter fejlmeddelelser, der leder dig videre til foreslåede løsninger på kendte problemer. Hvis der ikke gøres brug af dette, kan brugere sende forespørgsler til <a href="mailto:sep-support@sfu.ca">sep-support@sfu.ca</a>. Fremsendelse af fejlrapporter skal ske via SEP's <a href="https://github.com/sep/sep-lib#issues" target="_blank">Github issues</a>.</p>
 		]]>
 	</section>
-	<section title="3. Hvordan skal jeg gribe det an, hvis jeg vil oversætte OJS til et andet sprog?">
+	<section title="3. Hvordan skal jeg gribe det an, hvis jeg vil oversætte CLA til et andet sprog?">
 		<![CDATA[
-<p>Der findes instruktioner i filen docs/README, som følger med OJS-overførslen. Du kan også finde flere oplysninger om oversættelsesproblemer i <a href="http://forum.pkp.sfu.ca/" target="_blank">PKP's supportforum</a>.</p>
+<p>Der findes instruktioner i filen docs/README, som følger med CLA-overførslen. Du kan også finde flere oplysninger om oversættelsesproblemer i <a href="http://forum.lumera.sangia.org/" target="_blank">SEP's supportforum</a>.</p>
 		]]>
 	</section>
 	<section title='4. Hvorfor modtager forfattere meddelelsen om, at tidsskriftet "ikke accepterer manuskripter på nuværende tidspunkt"?'>
@@ -58,12 +58,12 @@
 	</section>
 	<section title='5. Hvad kan vi gøre, hvis vi vil tillade adgang til manuskripter, der bedømmes, eller der befinder sig i "fasen forud for trykning", inden de publiceres af tidsskriftet?'>
 		<![CDATA[
-	<p>Redaktører har to muligheder for at tilbyde "adgang forud for trykning". De kan oprette en forud for trykning-sektion, til hvilken der føjes artikler, som er godkendt til en senere udgave, og som endnu ikke er klar til at blive publiceret. Artiklerne føjes til den aktuelle udgaves indholdsfortegnelse. Når den nye udgave er klar til at blive publiceret, fjerner redaktøren artiklerne fra den tidligere udgave og flytter dem til den nye udgave. Redaktørerne kan også bruge URL-adressen til "Vis korrektur" for et manuskript fra layoutfasen på siden Redigering for den pågældende artikel til at oprette en visning forud for trykning. Den pågældende URL-adresse opretter adgang til artiklen (for priviligerede brugere), inden den publiceres i en udgave af tidsskriftet. I mellemtiden registrerer PKP interesse for denne funktion og overvejer eventuelt at oprette en formel proces for dette.</p>
+	<p>Redaktører har to muligheder for at tilbyde "adgang forud for trykning". De kan oprette en forud for trykning-sektion, til hvilken der føjes artikler, som er godkendt til en senere udgave, og som endnu ikke er klar til at blive publiceret. Artiklerne føjes til den aktuelle udgaves indholdsfortegnelse. Når den nye udgave er klar til at blive publiceret, fjerner redaktøren artiklerne fra den tidligere udgave og flytter dem til den nye udgave. Redaktørerne kan også bruge URL-adressen til "Vis korrektur" for et manuskript fra layoutfasen på siden Redigering for den pågældende artikel til at oprette en visning forud for trykning. Den pågældende URL-adresse opretter adgang til artiklen (for priviligerede brugere), inden den publiceres i en udgave af tidsskriftet. I mellemtiden registrerer SEP interesse for denne funktion og overvejer eventuelt at oprette en formel proces for dette.</p>
 		]]>
 	</section>
 	<section title="6. Hvordan kan jeg fortælle om mit tidsskrift på internettet?">
 		<![CDATA[
-<p>Tidsskriftet vil inden længe blive vist på Google og andre store søgemaskiner, men du kan også tage andre skridt. Sørg for at registrere tidsskriftet hos PKP Harvester i trin 3 under Konfiguration, hvilket medfører, at tidsskriftet indekseres i Open Archives Initiative-indeks, herunder <a href="http://pkp.sfu.ca/harvester/" target="_blank">PKP Harvester</a> og <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Hvis der er Open Access til tidsskriftet, skal du tale med en universitetsbibliotekar om, hvordan tidsskriftet kan blive angivet blandt bibliotekets elektroniske tidsskrifter, og hvordan du kan kontakte en række andre forskningsbiblioteker via en seriel bibliotekarlisteserver. Se, om du kan bruge de relevante akademikerorganisationers websted eller listeserver til at annoncere opfordringen "ring efter papirer" eller lanceringen af tidsskriftet. Under Adgangs- og sikkerhedsindstillinger (2.7) under Konfiguration skal tidsskriftschefen til slut sørge for, at brugere kan registrere sig som læsere, så de regelmæssigt kan underrettes om nye udgaver.</p>
+<p>Tidsskriftet vil inden længe blive vist på Google og andre store søgemaskiner, men du kan også tage andre skridt. Sørg for at registrere tidsskriftet hos SEP Harvester i trin 3 under Konfiguration, hvilket medfører, at tidsskriftet indekseres i Open Archives Initiative-indeks, herunder <a href="http://lumera.sangia.org/harvester/" target="_blank">SEP Harvester</a> og <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Hvis der er Open Access til tidsskriftet, skal du tale med en universitetsbibliotekar om, hvordan tidsskriftet kan blive angivet blandt bibliotekets elektroniske tidsskrifter, og hvordan du kan kontakte en række andre forskningsbiblioteker via en seriel bibliotekarlisteserver. Se, om du kan bruge de relevante akademikerorganisationers websted eller listeserver til at annoncere opfordringen "ring efter papirer" eller lanceringen af tidsskriftet. Under Adgangs- og sikkerhedsindstillinger (2.7) under Konfiguration skal tidsskriftschefen til slut sørge for, at brugere kan registrere sig som læsere, så de regelmæssigt kan underrettes om nye udgaver.</p>
 		]]>
 	</section>
 	<section title="7. Hvordan kan tidsskriftet præsentere en oversigt over, hvem der har været medlem af tidsskriftets redaktionsgruppe?">

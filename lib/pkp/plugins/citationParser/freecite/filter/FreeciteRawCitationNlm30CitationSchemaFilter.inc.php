@@ -19,7 +19,7 @@
  */
 
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
 
 define('FREECITE_WEBSERVICE', 'http://freecite.library.brown.edu/citations/create');
 
@@ -41,7 +41,7 @@ class FreeciteRawCitationNlm30CitationSchemaFilter extends Nlm30CitationSchemaFi
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationParser.freecite.filter.FreeciteRawCitationNlm30CitationSchemaFilter';
+		return 'lib.sep.plugins.citationParser.freecite.filter.FreeciteRawCitationNlm30CitationSchemaFilter';
 	}
 
 
@@ -69,7 +69,7 @@ class FreeciteRawCitationNlm30CitationSchemaFilter extends Nlm30CitationSchemaFi
 		// Convert the genre
 		if (isset($metadata['genre'])) {
 			$genre = $metadata['genre'];
-			import('lib.pkp.plugins.metadata.nlm30.filter.Openurl10Nlm30CitationSchemaCrosswalkFilter');
+			import('lib.sep.plugins.metadata.nlm30.filter.Openurl10Nlm30CitationSchemaCrosswalkFilter');
 			$genreMap = Openurl10Nlm30CitationSchemaCrosswalkFilter::_getOpenurl10GenreTranslationMapping();
 			$metadata['[@publication-type]'] = (isset($genreMap[$genre]) ? $genreMap[$genre] : $genre);
 			unset($metadata['genre']);

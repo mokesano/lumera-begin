@@ -14,7 +14,7 @@
  * @brief rfc1807 metadata format plugin for OAI.
  */
 
-import('lib.pkp.classes.plugins.OAIMetadataFormatPlugin');
+import('lib.sep.classes.plugins.OAIMetadataFormatPlugin');
 
 class OAIMetadataFormatPlugin_RFC1807 extends OAIMetadataFormatPlugin {
 

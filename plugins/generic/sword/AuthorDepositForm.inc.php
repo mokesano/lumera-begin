@@ -13,7 +13,7 @@
  * @brief Form to perform an author's SWORD deposit(s)
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class AuthorDepositForm extends Form {
 	/** @var $article object */
@@ -80,8 +80,8 @@ class AuthorDepositForm extends Form {
 	 */
 	function execute(&$request) {
 		$user =& $request->getUser();
-		import('classes.sword.OJSSwordDeposit');
-		$deposit = new OJSSwordDeposit($this->article);
+		import('classes.sword.CLASwordDeposit');
+		$deposit = new CLASwordDeposit($this->article);
 		$deposit->setMetadata();
 		$deposit->addEditorial();
 		$deposit->createPackage();
@@ -128,7 +128,7 @@ class AuthorDepositForm extends Form {
 	}
 
 	function _getDepositableDepositPoints() {
-		import('classes.sword.OJSSwordDeposit');
+		import('classes.sword.CLASwordDeposit');
 		$depositPoints = $this->swordPlugin->getSetting($this->article->getJournalId(), 'depositPoints');
 		foreach ($depositPoints as $key => $depositPoint) {
 			$type = $depositPoint['type'];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/stopForumSpam/locale/fr_CA/locale.xml
@@ -14,11 +14,11 @@
 <locale name="fr_CA" full_name="Français (Canada)">
 
 	<message key="plugins.generic.stopForumSpam.displayName">Plugiciel Stop Forum Spam</message>
-	<message key="plugins.generic.stopForumSpam.description">Intégrer OJS avec le système de prévention Stop Forum Spam, qui vise à réduire le montant des spams.</message>
+	<message key="plugins.generic.stopForumSpam.description">Intégrer CLA avec le système de prévention Stop Forum Spam, qui vise à réduire le montant des spams.</message>
 
 	<message key="plugins.generic.stopForumSpam.manager.settings">Paramètres</message>
 	<message key="plugins.generic.stopForumSpam.manager.stopForumSpamSettings">Paramètres de Stop Forum Spam</message>
-	<message key="plugins.generic.stopForumSpam.manager.settings.description"><![CDATA[<p>Avec ce plugiciel activé, OJS vérifiera si l'inscription d'un utilisateur contient des éléments qui se trouvent sur la liste du Stop Forum Spam.  Les inscriptions seront refusées si c'est le cas.</p>]]></message>
+	<message key="plugins.generic.stopForumSpam.manager.settings.description"><![CDATA[<p>Avec ce plugiciel activé, CLA vérifiera si l'inscription d'un utilisateur contient des éléments qui se trouvent sur la liste du Stop Forum Spam.  Les inscriptions seront refusées si c'est le cas.</p>]]></message>
 	<message key="plugins.generic.stopForumSpam.manager.settings.checkIp">Vérifier l'inscription IP</message>
 	<message key="plugins.generic.stopForumSpam.manager.settings.checkEmail">Vérifier l'inscription de l'adresse courriel</message>
 	<message key="plugins.generic.stopForumSpam.manager.settings.checkUsername">Vérifier l'inscription du nom d'utilisateur (activez avec prudence!)</message>

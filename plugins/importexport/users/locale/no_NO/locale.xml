@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/users/locale/no_NO/locale.xml
@@ -48,7 +48,7 @@ Eksempler:
 	<message key="plugins.importexport.users.import.errorsOccurred">Det oppsto feil under importen</message>
 	<message key="plugins.importexport.users.import.confirmUsers">Bekreft at dette er de brukerne du vil ha importert til dette systemet</message>
 	<message key="plugins.importexport.users.import.warning">Advarsel</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">Kan ikke bruke passord hashed med {$importHash}; OJS er konfigurert for å bruke {$ojsHash}. Hvis du fortsetter må du gjenopprette de importerte brukernes passord.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">Kan ikke bruke passord hashed med {$importHash}; CLA er konfigurert for å bruke {$claHash}. Hvis du fortsetter må du gjenopprette de importerte brukernes passord.</message>
 	<message key="plugins.importexport.users.unknownJournal">En ukjent tidsskrift-filsti "{$journalPath}" ble angitt.</message>
 
 	<message key="plugins.importexport.users.export.exportUsers">Eksporter brukere</message>

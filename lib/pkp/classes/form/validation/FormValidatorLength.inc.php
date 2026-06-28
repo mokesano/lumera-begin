@@ -13,7 +13,7 @@
  * @brief Form validation check that checks if a field's length meets certain requirements.
  */
 
-import ('lib.pkp.classes.form.validation.FormValidator');
+import ('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorLength extends FormValidator {
 

@@ -26,7 +26,7 @@ class SectionHandler extends ManagerHandler {
 	/**
 	 * Display a list of the sections within the current journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function sections($args, &$request) {
 		$this->validate();
@@ -38,8 +38,8 @@ class SectionHandler extends ManagerHandler {
 		$sections =& $sectionDao->getJournalSections($journal->getId(), $rangeInfo);
 		$emptySectionIds = $sectionDao->getJournalEmptySectionIds($journal->getId());
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 		$templateMgr->assign('pageHierarchy', array(array(Request::url(null, 'manager'), 'manager.journalManagement')));
 		$templateMgr->assign_by_ref('sections', $sections);
 		$templateMgr->assign('emptySectionIds', $emptySectionIds);
@@ -50,7 +50,7 @@ class SectionHandler extends ManagerHandler {
 	/**
 	 * Display form to create a new section.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createSection($args, &$request) {
 		$this->editSection($args, $request);
@@ -59,7 +59,7 @@ class SectionHandler extends ManagerHandler {
 	/**
 	 * Display form to create/edit a section.
 	 * @param $args array if set the first parameter is the ID of the section to edit
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editSection($args, &$request) {
 		$this->validate();
@@ -79,7 +79,7 @@ class SectionHandler extends ManagerHandler {
 	/**
 	 * Save changes to a section.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateSection($args, &$request) {
 		$this->validate();
@@ -114,7 +114,7 @@ class SectionHandler extends ManagerHandler {
 	/**
 	 * Delete a section.
 	 * @param $args array first parameter is the ID of the section to delete
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteSection($args, &$request) {
 		$this->validate();
@@ -131,7 +131,7 @@ class SectionHandler extends ManagerHandler {
 	/**
 	 * Change the sequence of a section.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function moveSection($args, &$request) {
 		$this->validate();
@@ -176,7 +176,7 @@ class SectionHandler extends ManagerHandler {
 	 * @param $subclass boolean True iff this page is a second level deep in the breadcrumb heirarchy.
 	 */
 	function setupTemplate($subclass = false) {
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_PKP_READER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION, LOCALE_COMPONENT_SEP_READER);
 		parent::setupTemplate(true);
 		if ($subclass) {
 			$templateMgr =& TemplateManager::getManager();

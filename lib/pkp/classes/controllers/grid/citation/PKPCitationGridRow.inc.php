@@ -1,21 +1,21 @@
 <?php
 
 /**
- * @file classes/controllers/grid/citation/PKPCitationGridRow.inc.php
+ * @file classes/controllers/grid/citation/SEPCitationGridRow.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPCitationGridRow
+ * @class SEPCitationGridRow
  * @ingroup classes_controllers_grid_citation
  *
  * @brief The citation grid row definition
  */
 
-import('lib.pkp.classes.controllers.grid.GridRow');
+import('lib.sep.classes.controllers.grid.GridRow');
 
-class PKPCitationGridRow extends GridRow {
+class SEPCitationGridRow extends GridRow {
 	/** @var integer */
 	var $_assocId;
 
@@ -25,7 +25,7 @@ class PKPCitationGridRow extends GridRow {
 	/**
 	 * Constructor
 	 */
-	function PKPCitationGridRow() {
+	function SEPCitationGridRow() {
 		parent::GridRow();
 	}
 

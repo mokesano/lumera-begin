@@ -1,26 +1,26 @@
 <?php
 
 /**
- * @defgroup payment_ojs
+ * @defgroup payment_cla
  */
 
 /**
- * @file classes/payment/ojs/OJSCompletedPayment.inc.php
+ * @file classes/payment/cla/CLACompletedPayment.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2006-2009 Gunther Eysenbach, Juan Pablo Alperin, MJ Suhonos
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class OJSCompletedPayment
- * @ingroup payment_ojs
- * @see OJSCompletedPaymentDAO
+ * @class CLACompletedPayment
+ * @ingroup payment_cla
+ * @see CLACompletedPaymentDAO
  *
  * @brief Class describing a payment ready to be in the database.
  *
  */
-import('lib.pkp.classes.payment.Payment');
+import('lib.sep.classes.payment.Payment');
 
-class OJSCompletedPayment extends Payment {
+class CLACompletedPayment extends Payment {
 	var $journalId;
 	var $paperId;
 	var $type;
@@ -30,7 +30,7 @@ class OJSCompletedPayment extends Payment {
 	/**
 	 * Constructor
 	 */
-	function OJSCompletedPayment() {
+	function CLACompletedPayment() {
 		parent::Payment();
 	}
 

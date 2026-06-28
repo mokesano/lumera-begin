@@ -17,6 +17,6 @@
 
 	<message key="plugins.blocks.popularArticles.settings.maxArticlesCount.description">Festlegung, wieviele Artikel angezeigt werden</message>
 	<message key="plugins.blocks.popularArticles.settings.months.description">Festlegung, wieviele Monate für die Artikelzählung ausgewertet werden</message>
-	<message key="plugins.blocks.popularArticles.settings.mixOldStats.description">Wählen Sie diese Option, wenn Sie ältere Statistikinformationen (vor dem Upgrade auf OJS 2.4.2) mit neueren Statistikdaten mixen wollen, um die am häufigsten angesehenen Artikel zu berechnen.</message>
+	<message key="plugins.blocks.popularArticles.settings.mixOldStats.description">Wählen Sie diese Option, wenn Sie ältere Statistikinformationen (vor dem Upgrade auf CLA 2.4.2) mit neueren Statistikdaten mixen wollen, um die am häufigsten angesehenen Artikel zu berechnen.</message>
 	<message key="plugins.blocks.popularArticles.settings.mixOldStats.label">Alte Statistiken beim Ranking berücksichtigen</message>
 </locale>

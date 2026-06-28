@@ -15,8 +15,8 @@
 
 <script type="text/javascript">
 	$(function() {ldelim}
-		$('#{$gridId|escape}').pkpHandler(
-			'$.pkp.controllers.listbuilder.ListbuilderHandler',
+		$('#{$gridId|escape}').sepHandler(
+			'$.sep.controllers.listbuilder.ListbuilderHandler',
 			{ldelim}
 				{include file="controllers/listbuilder/listbuilderOptions.tpl"}
 			{rdelim}
@@ -25,7 +25,7 @@
 </script>
 
 
-<div id="{$gridId|escape}" class="pkp_controllers_grid pkp_controllers_listbuilder formWidget">
+<div id="{$gridId|escape}" class="sep_controllers_grid sep_controllers_listbuilder formWidget">
 
 	{* Use this disabled input to store LB deletions. See ListbuilderHandler.js *}
 	<input disabled="disabled" type="hidden" class="deletions" />

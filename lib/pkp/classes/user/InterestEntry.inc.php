@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.controlledVocab.ControlledVocabEntry');
+import('lib.sep.classes.controlledVocab.ControlledVocabEntry');
 
 class InterestEntry extends ControlledVocabEntry {
 	//

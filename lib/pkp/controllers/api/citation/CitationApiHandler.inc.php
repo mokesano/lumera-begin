@@ -17,26 +17,26 @@
  */
 
 // import the base Handler
-import('lib.pkp.classes.handler.PKPHandler');
+import('lib.sep.classes.handler.SEPHandler');
 
-class CitationApiHandler extends PKPHandler {
+class CitationApiHandler extends SEPHandler {
 	/**
 	 * Constructor.
 	 */
 	function CitationApiHandler() {
-		parent::PKPHandler();
+		parent::SEPHandler();
 	}
 
 
 	//
-	// Implement template methods from PKPHandler
+	// Implement template methods from SEPHandler
 	//
 	/**
-	 * @see PKPHandler::authorize()
+	 * @see SEPHandler::authorize()
 	 */
 	function authorize(&$request, $args, $roleAssignments) {
-		import('lib.pkp.classes.security.authorization.PKPProcessAccessPolicy');
-		$this->addPolicy(new PKPProcessAccessPolicy($request, $args, 'checkAllCitations'));
+		import('lib.sep.classes.security.authorization.SEPProcessAccessPolicy');
+		$this->addPolicy(new SEPProcessAccessPolicy($request, $args, 'checkAllCitations'));
 		return parent::authorize($request, $args, $roleAssignments);
 	}
 
@@ -56,7 +56,7 @@ class CitationApiHandler extends PKPHandler {
 	 * the number of parallel processes that can be started in parallel.
 	 *
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function checkAllCitations($args, &$request) {
 		// This is potentially a long running request. So

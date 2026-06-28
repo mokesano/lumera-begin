@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * emailTemplateData.xml
   *
@@ -18,7 +18,7 @@ Caso deseje, pode depositar automaticamente esta submissão em um ou mais reposi
 
 Acesse {$swordDepositUrl} para proceder.
 
-Esta é uma mensagem automática da ferramenta de Depósito SWORD do Open Journal Systems.</body>
+Esta é uma mensagem automática da ferramenta de Depósito SWORD do Code Lumera Editorial.</body>
 		<description>Mensagem de notificação ao autor, de pontos de depósito opcional para repositórios SWORD.</description>
 	</email_text>
 </email_texts>

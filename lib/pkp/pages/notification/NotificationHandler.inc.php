@@ -178,7 +178,7 @@ class NotificationHandler extends Handler {
 
 		$this->setupTemplate(true);
 
-		$application = PKPApplication::getApplication();
+		$application = SEPApplication::getApplication();
 		$appName = $application->getNameKey();
 
 		$site =& $request->getSite();
@@ -236,7 +236,7 @@ class NotificationHandler extends Handler {
 		$user = $request->getUser();
 
 		if(!isset($user)) {
-			import('lib.pkp.classes.notification.form.NotificationMailingListForm');
+			import('lib.sep.classes.notification.form.NotificationMailingListForm');
 			$notificationMailingListForm = new NotificationMailingListForm();
 			$notificationMailingListForm->display($request);
 		} else {
@@ -254,7 +254,7 @@ class NotificationHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate(true);
 
-		import('lib.pkp.classes.notification.form.NotificationMailingListForm');
+		import('lib.sep.classes.notification.form.NotificationMailingListForm');
 
 		$notificationMailingListForm = new NotificationMailingListForm();
 		$notificationMailingListForm->readInputData();
@@ -368,7 +368,7 @@ class NotificationHandler extends Handler {
 			$notifications =& $notifications->toArray();
 		}
 
-		import('lib.pkp.classes.core.JSONMessage');
+		import('lib.sep.classes.core.JSONMessage');
 		$json = new JSONMessage();
 
 		if (is_array($notifications) && !empty($notifications)) {
@@ -445,10 +445,10 @@ class NotificationHandler extends Handler {
 
 	/**
 	 * Override setupTemplate() so we can load other locale components.
-	 * @see PKPHandler::setupTemplate()
+	 * @see SEPHandler::setupTemplate()
 	 */
 	function setupTemplate() {
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_GRID, LOCALE_COMPONENT_PKP_SUBMISSION);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_GRID, LOCALE_COMPONENT_SEP_SUBMISSION);
 		parent::setupTemplate();
 	}
 }

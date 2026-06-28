@@ -13,7 +13,7 @@
  * @brief Form to edit user profile.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ProfileForm extends Form {
 
@@ -162,7 +162,7 @@ class ProfileForm extends Form {
 	function initData(&$args, &$request) {
 		$user =& $request->getUser();
 
-		import('lib.pkp.classes.user.InterestManager');
+		import('lib.sep.classes.user.InterestManager');
 		$interestManager = new InterestManager();
 
 		$this->_data = array(
@@ -258,7 +258,7 @@ class ProfileForm extends Form {
 
 		// Insert the user interests
 		$interests = $this->getData('interestsKeywords') ? $this->getData('interestsKeywords') : $this->getData('interestsTextOnly');
-		import('lib.pkp.classes.user.InterestManager');
+		import('lib.sep.classes.user.InterestManager');
 		$interestManager = new InterestManager();
 		$interestManager->setInterestsForUser($user, $interests);
 

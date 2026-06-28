@@ -18,7 +18,7 @@
  */
 
 import('classes.manager.form.setup.JournalSetupForm');
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class JournalSetupForm extends Form {
 	var $step;

@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.file.TemporaryFile');
+import('lib.sep.classes.file.TemporaryFile');
 
 class TemporaryFileDAO extends DAO {
 	/**

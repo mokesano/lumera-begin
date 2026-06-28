@@ -15,7 +15,7 @@
  *  'false', a value of '1' is considered 'true'.
  */
 
-import('lib.pkp.classes.form.validation.FormValidator');
+import('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorBoolean extends FormValidator {
 	/**

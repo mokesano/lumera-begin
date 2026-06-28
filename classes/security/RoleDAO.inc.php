@@ -395,7 +395,7 @@ class RoleDAO extends DAO {
 
 	/**
 	 * Validation check to see if a user belongs to any group that has a given role
-	 * DEPRECATE: keeping around because HandlerValidatorRoles in pkp-lib uses
+	 * DEPRECATE: keeping around because HandlerValidatorRoles in sep-lib uses
 	 * until we port user groups to OxS
 	 * Check if a role exists.
 	 * @param $journalId int

@@ -13,7 +13,7 @@
  * @brief Annoucement Feed plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class AnnouncementFeedPlugin extends GenericPlugin {
 	function register($category, $path) {
@@ -71,7 +71,7 @@ class AnnouncementFeedPlugin extends GenericPlugin {
 		if ($this->getEnabled()) {
 			// Only pages requests interest us here
 			$request =& Registry::get('request');
-			if (!is_a($request->getRouter(), 'PKPPageRouter')) return false;
+			if (!is_a($request->getRouter(), 'SEPPageRouter')) return false;
 
 			$templateManager =& $args[0];
 			$currentJournal =& $templateManager->get_template_vars('currentJournal');

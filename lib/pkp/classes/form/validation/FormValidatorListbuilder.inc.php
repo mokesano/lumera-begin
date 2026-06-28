@@ -14,7 +14,7 @@
  * contains at least one valid user id.
  */
 
-import('lib.pkp.classes.form.validation.FormValidator');
+import('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorListbuilder extends FormValidator {
 
@@ -43,7 +43,7 @@ class FormValidatorListbuilder extends FormValidator {
 	 */
 	function isValid() {
 		$value = $this->getFieldValue();
-		import('lib.pkp.classes.controllers.listbuilder.ListbuilderHandler');
+		import('lib.sep.classes.controllers.listbuilder.ListbuilderHandler');
 		ListbuilderHandler::unpack($request, $value);
 		if ($this->_valid) {
 			return true;

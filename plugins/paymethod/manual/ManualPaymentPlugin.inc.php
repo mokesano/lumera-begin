@@ -104,7 +104,7 @@ class ManualPaymentPlugin extends PaymethodPlugin {
 	/**
 	 * Handle incoming requests/notifications
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function handle($args, &$request) {
 		$journal =& $request->getJournal();
@@ -113,9 +113,9 @@ class ManualPaymentPlugin extends PaymethodPlugin {
 		$op = isset($args[0])?$args[0]:null;
 		$queuedPaymentId = isset($args[1])?((int) $args[1]):0;
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$ojsPaymentManager = new OJSPaymentManager($request);
-		$queuedPayment =& $ojsPaymentManager->getQueuedPayment($queuedPaymentId);
+		import('classes.payment.cla.CLAPaymentManager');
+		$claPaymentManager = new CLAPaymentManager($request);
+		$queuedPayment =& $claPaymentManager->getQueuedPayment($queuedPaymentId);
 		// if the queued payment doesn't exist, redirect away from payments
 		if (!$queuedPayment) $request->redirect(null, 'index');
 

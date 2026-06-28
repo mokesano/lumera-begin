@@ -15,9 +15,9 @@
  */
 
 import('classes.plugins.GatewayPlugin');
-import('lib.pkp.classes.site.VersionCheck');
-import('lib.pkp.classes.db.DBResultRange');
-import('lib.pkp.classes.core.ArrayItemIterator');
+import('lib.sep.classes.site.VersionCheck');
+import('lib.sep.classes.db.DBResultRange');
+import('lib.sep.classes.core.ArrayItemIterator');
 
 define('PLN_PLUGIN_PING_ARTICLE_COUNT', 12);
 
@@ -135,7 +135,7 @@ class PLNGatewayPlugin extends GatewayPlugin {
 			$templateMgr->assign('termsAccepted', 'no');
 		}
 		
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$products =& $application->getEnabledProducts('plugins.generic');
 		$curlVersion = 'not installed';
 		if(function_exists('curl_version')) {
@@ -165,8 +165,8 @@ class PLNGatewayPlugin extends GatewayPlugin {
 		$templateMgr->assign('termsDisplay', new ArrayItemIterator($termsDisplay));
 
 		$versionDao =& DAORegistry::getDAO('VersionDAO');
-		$ojsVersion =& $versionDao->getCurrentVersion();
-		$templateMgr->assign('ojsVersion', $ojsVersion->getVersionString());
+		$claVersion =& $versionDao->getCurrentVersion();
+		$templateMgr->assign('claVersion', $claVersion->getVersionString());
 
 		$publishedArticlesDAO =& DAORegistry::getDAO('PublishedArticleDAO');
 		$range = new DBResultRange(PLN_PLUGIN_PING_ARTICLE_COUNT);

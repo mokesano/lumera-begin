@@ -27,7 +27,7 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Copyeditor's view of a submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submission($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -60,7 +60,7 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Complete a copyedit.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function completeCopyedit($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -75,7 +75,7 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Complete a final copyedit.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function completeFinalCopyedit($args, $request) {
 		$articleId = $request->getUserVar('articleId');
@@ -141,7 +141,7 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Set the author proofreading date completion
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function authorProofreadingComplete($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -160,7 +160,7 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Proof / "preview" a galley.
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalley($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -176,7 +176,7 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Proof galley (shows frame header).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyTop($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -193,7 +193,7 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Proof galley (outputs file contents).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -226,13 +226,13 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Metadata functions.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewMetadata($args, $request) {
 		$articleId = (int) array_shift($args);
 		$journal =& $request->getJournal();
 		$this->validate($request, $articleId);
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_AUTHOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_AUTHOR);
 		$submission =& $this->submission;
 		$this->setupTemplate(true, $articleId, 'editing');
 		CopyeditorAction::viewMetadata($submission, $journal);
@@ -241,7 +241,7 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Save modified metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveMetadata($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -256,7 +256,7 @@ class SubmissionCopyeditHandler extends CopyeditorHandler {
 	/**
 	 * Remove cover page from article
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function removeArticleCoverPage($args, &$request) {
 		$articleId = (int) array_shift($args);

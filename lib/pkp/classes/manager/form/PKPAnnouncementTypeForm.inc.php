@@ -15,9 +15,9 @@
  */
 
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
-class PKPAnnouncementTypeForm extends Form {
+class SEPAnnouncementTypeForm extends Form {
 	/** @var typeId int the ID of the announcement type being edited */
 	var $typeId;
 
@@ -25,7 +25,7 @@ class PKPAnnouncementTypeForm extends Form {
 	 * Constructor
 	 * @param typeId int leave as default for new announcement type
 	 */
-	function PKPAnnouncementTypeForm($typeId = null) {
+	function SEPAnnouncementTypeForm($typeId = null) {
 		$this->typeId = isset($typeId) ? (int) $typeId : null;
 
 		parent::Form('manager/announcement/announcementTypeForm.tpl');

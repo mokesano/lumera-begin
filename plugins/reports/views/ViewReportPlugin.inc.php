@@ -16,7 +16,7 @@
 
 import('classes.plugins.ReportPlugin');
 
-define('OJS_METRIC_TYPE_LEGACY_DEFAULT', 'ojs::legacyDefault');
+define('CLA_METRIC_TYPE_LEGACY_DEFAULT', 'cla::legacyDefault');
 
 class ViewReportPlugin extends ReportPlugin {
 	/**
@@ -79,10 +79,10 @@ class ViewReportPlugin extends ReportPlugin {
 		$dbResultRange = new DBResultRange(STATISTICS_MAX_ROWS);
 		$page = 3;
 
-		if ($request->getUserVar('metricType') === OJS_METRIC_TYPE_COUNTER) {
-			$metricType = OJS_METRIC_TYPE_COUNTER;
+		if ($request->getUserVar('metricType') === CLA_METRIC_TYPE_COUNTER) {
+			$metricType = CLA_METRIC_TYPE_COUNTER;
 		} else {
-			$metricType = OJS_METRIC_TYPE_LEGACY_DEFAULT;
+			$metricType = CLA_METRIC_TYPE_LEGACY_DEFAULT;
 		}
 
 		while (true) {

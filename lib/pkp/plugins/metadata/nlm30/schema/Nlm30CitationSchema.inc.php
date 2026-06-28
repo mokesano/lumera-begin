@@ -29,7 +29,7 @@
  *  <http://dtd.nlm.nih.gov/publishing/tag-library/3.0/n-fmz0.html>.
  */
 
-import('lib.pkp.classes.metadata.MetadataSchema');
+import('lib.sep.classes.metadata.MetadataSchema');
 
 // Define the well-known elements of the NLM publication type vocabulary.
 define('NLM30_PUBLICATION_TYPE_JOURNAL', 'journal');
@@ -46,7 +46,7 @@ class Nlm30CitationSchema extends MetadataSchema {
 		parent::MetadataSchema(
 			'nlm-3.0-element-citation',
 			'nlm30',
-			'lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema',
+			'lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema',
 			ASSOC_TYPE_CITATION
 		);
 

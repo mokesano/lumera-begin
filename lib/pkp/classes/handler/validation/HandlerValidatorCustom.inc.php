@@ -12,7 +12,7 @@
  * @brief Class to represent a page validation check.
  */
 
-import('lib.pkp.classes.handler.validation.HandlerValidator');
+import('lib.sep.classes.handler.validation.HandlerValidator');
 
 class HandlerValidatorCustom extends HandlerValidator {
 	/** additionalArguments to apss to the user function **/

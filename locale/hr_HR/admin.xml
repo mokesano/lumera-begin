@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/hr_HR/admin.xml
@@ -20,19 +20,19 @@
 	<message key="admin.languages.primaryLocaleInstructions">Ovo će biti standardni jezik stranice i svakog časopisa koji se na njoj nalazi.</message>
 	<message key="admin.languages.supportedLocalesInstructions">Izaberite sve jezike za koje želite da budu podržani na stranici. Izabrane prijevode bit će moguće koristiti sa svim časopisima postavljenim u sustavu, te će se na svakoj stranici prikazivati i izbornik jezika (što se može uključiti ili isključiti na razini pojedinog časopisa). Ako je izabran samo jedan jezik, jezični izbornik se neće prikazivati, niti će glavnim urednicima pojedinih časopisa biti na raspolaganu jezične postavke.</message>
 	<message key="admin.languages.confirmUninstall">Jeste li sigurni da želite deinstalirati ovaj prijevod? To može utjecati na časopise koji trenutno koriste taj prijevod.</message>
-	<message key="admin.languages.installNewLocalesInstructions">Izaberite bilo koji od ispod navedenih prijevoda kako biste instalirali podršku za taj jezik u sustavu. Prijevodi moraju biti instalirani prije nego što se mogu aktivirati i koristiti u pojedinim časopisima. Pogledajte OJS dokumentaciju za informacije o dodavanju podrške za nove jezike.</message>
+	<message key="admin.languages.installNewLocalesInstructions">Izaberite bilo koji od ispod navedenih prijevoda kako biste instalirali podršku za taj jezik u sustavu. Prijevodi moraju biti instalirani prije nego što se mogu aktivirati i koristiti u pojedinim časopisima. Pogledajte CLA dokumentaciju za informacije o dodavanju podrške za nove jezike.</message>
 	<message key="admin.languages.downloadLocales">Preuzmi lokalizacije</message>
 	<message key="admin.languages.downloadFailed">Preuzimanje lokalizacije nije uspjelo. Ispod priložena poruka opisuje grešku.</message>
 	<message key="admin.languages.localeInstalled">Lokalizacija "{$locale}" je uspješno postavljena.</message>
 	<message key="admin.languages.download">Preuzmi lokalizaciju</message>
-	<message key="admin.languages.download.cannotOpen">Nije moguće otvoriti deskriptor jezika sa PKP mrežne stranice.</message>
+	<message key="admin.languages.download.cannotOpen">Nije moguće otvoriti deskriptor jezika sa SEP mrežne stranice.</message>
 	<message key="admin.languages.download.cannotModifyRegistry">Nije moguće dodati lokalizaciju u lokalizacijsku registry datoteku, obično "registry/locales.xml".</message>
-	<message key="admin.auth.ojs">OJS korisnička baza</message>
-	<message key="admin.auth.enableSyncProfiles">Omogući sinkronizaciju korisničkog profila (ako je podržana ovim autentifikacijskim dodatkom). Informacije o korisničkom profilu bit će automatski ažurirane preko udaljenog izvora prilikom prijave korisnika. Također, izmjene profila (uključujući promjenu lozinke) izvršene unutar OJS-a bit će automatski ažurirane na udaljenom izvoru. Informacije o OJS profilu bit će odvojene od informacija o profilu na udaljenom izvoru, ako ova opcija nije uključena.</message>
-	<message key="admin.auth.enableSyncPasswords">Omogući promjenu korisničke lozinke (ako je podržana ovim autentifikacijskim dodatkom). Uključivanje ove opcije dopušta korisnicima da promjene svoje lozinke unutar OJS-a te korištenje OJS opcije "izdaj novu lozinku" kako bi se umjesto zaboravljene lozinke izdala nova. Te opcije neće biti dostupne korisnicima s ovim izvorom autentifikacije, ako ova opcija nije uključena.</message>
-	<message key="admin.auth.enableCreateUsers">Omogući kreiranja korisnika (ako je podržano ovim autentifikacijskim dodatkom). Korisnici kreirani unutar OJS-a s ovim autentifikacijskim izvorom bit će automatski dodani na udaljeni izvor autentifikacije ukoliko već ne postoje. Osim toga, ako je ovaj izvor primaran, OJS računi kreirani preko korisničke registracije bit će također dodani na udaljeni izvor.</message>
-	<message key="admin.systemConfiguration">Konfiguracija OJS-a</message>
-	<message key="admin.systemConfigurationDescription"><![CDATA[OJS konfiguracijske postavke iz <tt>config.inc.php</tt> datoteke.]]></message>
+	<message key="admin.auth.cla">CLA korisnička baza</message>
+	<message key="admin.auth.enableSyncProfiles">Omogući sinkronizaciju korisničkog profila (ako je podržana ovim autentifikacijskim dodatkom). Informacije o korisničkom profilu bit će automatski ažurirane preko udaljenog izvora prilikom prijave korisnika. Također, izmjene profila (uključujući promjenu lozinke) izvršene unutar CLA-a bit će automatski ažurirane na udaljenom izvoru. Informacije o CLA profilu bit će odvojene od informacija o profilu na udaljenom izvoru, ako ova opcija nije uključena.</message>
+	<message key="admin.auth.enableSyncPasswords">Omogući promjenu korisničke lozinke (ako je podržana ovim autentifikacijskim dodatkom). Uključivanje ove opcije dopušta korisnicima da promjene svoje lozinke unutar CLA-a te korištenje CLA opcije "izdaj novu lozinku" kako bi se umjesto zaboravljene lozinke izdala nova. Te opcije neće biti dostupne korisnicima s ovim izvorom autentifikacije, ako ova opcija nije uključena.</message>
+	<message key="admin.auth.enableCreateUsers">Omogući kreiranja korisnika (ako je podržano ovim autentifikacijskim dodatkom). Korisnici kreirani unutar CLA-a s ovim autentifikacijskim izvorom bit će automatski dodani na udaljeni izvor autentifikacije ukoliko već ne postoje. Osim toga, ako je ovaj izvor primaran, CLA računi kreirani preko korisničke registracije bit će također dodani na udaljeni izvor.</message>
+	<message key="admin.systemConfiguration">Konfiguracija CLA-a</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[CLA konfiguracijske postavke iz <tt>config.inc.php</tt> datoteke.]]></message>
 	<message key="admin.journals.journalSettings">Postavke časopisa</message>
 	<message key="admin.journals.noneCreated">Nema kreiranih časopisa.</message>
 	<message key="admin.journals.confirmDelete">Jeste li sigurni da želite trajno izbrisati ovaj časopis i sav njegov sadržaj?</message>
@@ -45,10 +45,10 @@
 	<message key="admin.journals.form.pathExists">Odabrana putanja je već u korištenju drugog časopisa.</message>
 	<message key="admin.journals.enableJournalInstructions">Omogućite ovom časopisu da se pojavi javno na stranici.</message>
 	<message key="admin.journals.journalDescription">Opis časopisa</message>
-	<message key="admin.journal.pathImportInstructions">Postojeća putanja časopisa ili putanja koju treba kreirati (npr. "ojs").</message>
+	<message key="admin.journal.pathImportInstructions">Postojeća putanja časopisa ili putanja koju treba kreirati (npr. "cla").</message>
 	<message key="admin.journals.importSubscriptions">Prenesi pretplate i pretplatnike</message>
 	<message key="admin.journals.transcode">Prekodiraj metapodatke prenesenih članaka iz ISO8859-1</message>
-	<message key="admin.journals.redirect">Generiraj kod koji će mapirati OJS 1 URL-ove u OJS 2 URL-ove</message>
+	<message key="admin.journals.redirect">Generiraj kod koji će mapirati CLA 1 URL-ove u CLA 2 URL-ove</message>
 	<message key="admin.journals.form.importPathRequired">Putanja uvođenja je obavezna.</message>
 	<message key="admin.journals.importErrors">Neuspješno uvođenje</message>
 	<message key="admin.mergeUsers">Spajanje korisnika</message>
@@ -67,7 +67,7 @@
 	<message key="admin.settings.journalsList.showDescription">Opis časopisa</message>
 	<message key="admin.locale.maybeIncomplete">Označeni prijevodi su možda nezavršeni.</message>
 	<message key="admin.languages.reloadDefaultEmailTemplates">Ponovo učitaj prvobitne predloške za e-poruke</message>
-	<message key="admin.systemVersion">OJS verzija</message>
+	<message key="admin.systemVersion">CLA verzija</message>
 	<message key="admin.categories">Kategorije</message>
 	<message key="admin.categories.disableCategories">Ne organiziraj časopise u kategorije.</message>
 	<message key="admin.categories.editTitle">Uredi kategoriju</message>

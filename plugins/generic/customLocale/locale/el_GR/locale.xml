@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/customLocale/locale/el_GR/locale.xml
@@ -14,11 +14,11 @@
  
 <locale name="el_GR" full_name="ελληνικά">
 	<message key="plugins.generic.customLocale.name">Πρόσθετο προσαρμογής διεπαφής</message>
-	<message key="plugins.generic.customLocale.description">Το πρόσθετο αυτό ενεργοποιεί την δυνατότητα προσαρμογής του προκαθορισμένου κειμένου διεπαφής του χρήστη που χρησιμοποιεί το OJS.</message>
+	<message key="plugins.generic.customLocale.description">Το πρόσθετο αυτό ενεργοποιεί την δυνατότητα προσαρμογής του προκαθορισμένου κειμένου διεπαφής του χρήστη που χρησιμοποιεί το CLA.</message>
 
 	<message key="plugins.generic.customLocale.longDescription">Αυτή η σελίδα εμφανίζει όλες τις τρέχουσες γλώσσες που είναι εγκατεστημένες για αυτό το περιοδικό.</message>
 	<message key="plugins.generic.customLocale.localeDescription">Αυτή η σελίδα εμφανίζει όλα αρχεία που είναι διαθέσιμα για την επιλεγμένη γλώσσα.</message>
-	<message key="plugins.generic.customLocale.fileDescription">Εισάγετε το κείμενό σας στο αντίστοιχο πεδίο προσαρμογής κειμένου. Αφήστε το πεδίο κενό αν επιθυμείτε να χρησιμοποιήσετε το προκαθορισμένο κείμενο του OJS.</message>
+	<message key="plugins.generic.customLocale.fileDescription">Εισάγετε το κείμενό σας στο αντίστοιχο πεδίο προσαρμογής κειμένου. Αφήστε το πεδίο κενό αν επιθυμείτε να χρησιμοποιήσετε το προκαθορισμένο κείμενο του CLA.</message>
 	<message key="plugins.generic.customLocale.localeName">Όνομα γλώσσας</message>
 	<message key="plugins.generic.customLocale.localeKey">Κλειδί</message>
 	<message key="plugins.generic.customLocale.localeKey.description">Εισάγετε ένα ολόκληρο κλειδί γλώσσας για να το αναζητήσετε.</message>

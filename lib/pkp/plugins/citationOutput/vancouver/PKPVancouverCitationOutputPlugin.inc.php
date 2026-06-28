@@ -5,13 +5,13 @@
  */
 
 /**
- * @file plugins/citationOutput/vancouver/PKPVancouverCitationOutputPlugin.inc.php
+ * @file plugins/citationOutput/vancouver/SEPVancouverCitationOutputPlugin.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPVancouverCitationOutputPlugin
+ * @class SEPVancouverCitationOutputPlugin
  * @ingroup plugins_citationOutput_vancouver
  *
  * @brief Cross-application Vancouver citation style plugin
@@ -20,20 +20,20 @@
 
 import('classes.plugins.Plugin');
 
-class PKPVancouverCitationOutputPlugin extends Plugin {
+class SEPVancouverCitationOutputPlugin extends Plugin {
 	/**
 	 * Constructor
 	 */
-	function PKPVancouverCitationOutputPlugin() {
+	function SEPVancouverCitationOutputPlugin() {
 		parent::Plugin();
 	}
 
 
 	//
-	// Override protected template methods from PKPPlugin
+	// Override protected template methods from SEPPlugin
 	//
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		if (!parent::register($category, $path)) return false;
@@ -42,21 +42,21 @@ class PKPVancouverCitationOutputPlugin extends Plugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'VancouverCitationOutputPlugin';
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.citationOutput.vancouver.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.citationOutput.vancouver.description');

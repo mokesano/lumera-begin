@@ -14,11 +14,11 @@
  * @brief Operations for retrieving and modifying ArticleFile objects.
  */
 
-import('lib.pkp.classes.file.PKPFileDAO');
+import('lib.sep.classes.file.SEPFileDAO');
 import('classes.article.ArticleFile');
 
 
-class ArticleFileDAO extends PKPFileDAO {
+class ArticleFileDAO extends SEPFileDAO {
 
 	/**
 	 * Retrieve an article by ID.

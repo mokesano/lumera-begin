@@ -14,7 +14,7 @@
  * @brief Validation check for ORCID iDs.
  */
 
-import('lib.pkp.classes.validation.ValidatorRegExp');
+import('lib.sep.classes.validation.ValidatorRegExp');
 
 class ValidatorORCID extends ValidatorRegExp {
 	/**
@@ -42,7 +42,7 @@ class ValidatorORCID extends ValidatorRegExp {
 		$matches = $this->getMatches();
 		$orcid = $matches[1] . $matches[2] . $matches[3] . $matches[4];
 
-		import('lib.pkp.classes.validation.ValidatorISNI');
+		import('lib.sep.classes.validation.ValidatorISNI');
 		$validator = new ValidatorISNI();
 		return $validator->isValid($orcid);
 	}

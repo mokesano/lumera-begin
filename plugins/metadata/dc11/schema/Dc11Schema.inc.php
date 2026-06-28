@@ -13,21 +13,21 @@
  *
  * @class Dc11Schema
  * @ingroup plugins_metadata_dc11_schema
- * @see PKPDc11Schema
+ * @see SEPDc11Schema
  *
- * @brief OJS-specific implementation of the Dc11Schema.
+ * @brief CLA-specific implementation of the Dc11Schema.
  */
 
 
-import('lib.pkp.plugins.metadata.dc11.schema.PKPDc11Schema');
+import('lib.sep.plugins.metadata.dc11.schema.SEPDc11Schema');
 
-class Dc11Schema extends PKPDc11Schema {
+class Dc11Schema extends SEPDc11Schema {
 	/**
 	 * Constructor
 	 */
 	function Dc11Schema() {
 		// Configure the MODS schema.
-		parent::PKPDc11Schema(ASSOC_TYPE_ARTICLE);
+		parent::SEPDc11Schema(ASSOC_TYPE_ARTICLE);
 	}
 }
 ?>

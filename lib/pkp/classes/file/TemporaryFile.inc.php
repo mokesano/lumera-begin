@@ -14,15 +14,15 @@
  * @brief Temporary file class.
  */
 
-import('lib.pkp.classes.file.PKPFile');
+import('lib.sep.classes.file.SEPFile');
 
-class TemporaryFile extends PKPFile {
+class TemporaryFile extends SEPFile {
 
 	/**
 	 * Constructor.
 	 */
 	function TemporaryFile() {
-		parent::PKPFile();
+		parent::SEPFile();
 	}
 
 	/**
@@ -30,8 +30,8 @@ class TemporaryFile extends PKPFile {
 	 * @return string
 	 */
 	function getFilePath() {
-		import('lib.pkp.classes.file.PKPTemporaryFileManager');
-		$temporaryFileManager = new PKPTemporaryFileManager();
+		import('lib.sep.classes.file.SEPTemporaryFileManager');
+		$temporaryFileManager = new SEPTemporaryFileManager();
 		return $temporaryFileManager->getBasePath() . $this->getFileName();
 	}
 

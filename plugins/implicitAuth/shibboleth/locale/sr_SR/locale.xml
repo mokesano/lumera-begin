@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/implicitAuth/shibboleth/locale/sr_SR/locale.xml
@@ -16,5 +16,5 @@
  
 <locale name="sr_SR" full_name="Cрпски">
 	<message key="plugins.implicitAuth.shibboleth.displayName">ShibAuth dodatak</message>
-	<message key="plugins.implicitAuth.shibboleth.description">ShibAuthPlugin. Ovo je dodatak za ceo sajt i uključuje se u OJS konfiguracionom fajlu.</message>
+	<message key="plugins.implicitAuth.shibboleth.description">ShibAuthPlugin. Ovo je dodatak za ceo sajt i uključuje se u CLA konfiguracionom fajlu.</message>
 </locale>

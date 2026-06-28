@@ -13,8 +13,8 @@
  * @brief Form validation check that field is a date or date part.
  */
 
-import('lib.pkp.classes.form.validation.FormValidator');
-import('lib.pkp.classes.validation.ValidatorDate');
+import('lib.sep.classes.form.validation.FormValidator');
+import('lib.sep.classes.validation.ValidatorDate');
 
 class FormValidatorDate extends FormValidator {
 

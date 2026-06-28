@@ -218,7 +218,7 @@ class ThesisHandler extends Handler {
 	function viewCaptcha($args) {
 		$this->validate();
 		$captchaId = (int) array_shift($args);
-		import('lib.pkp.classes.captcha.CaptchaManager');
+		import('lib.sep.classes.captcha.CaptchaManager');
 		$captchaManager = new CaptchaManager();
 		if ($captchaManager->isEnabled()) {
 			$captchaDao =& DAORegistry::getDAO('CaptchaDAO');

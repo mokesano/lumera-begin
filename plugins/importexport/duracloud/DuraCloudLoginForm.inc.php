@@ -13,7 +13,7 @@
  * @brief Form to allow login to an external DuraCloud service.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class DuraCloudLoginForm extends Form {
 	/**

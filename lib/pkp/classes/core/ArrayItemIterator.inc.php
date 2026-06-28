@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.core.ItemIterator');
+import('lib.sep.classes.core.ItemIterator');
 
 class ArrayItemIterator extends ItemIterator {
 	/** @var $theArray array The array of contents of this iterator. */
@@ -170,7 +170,7 @@ class ArrayItemIterator extends ItemIterator {
 	 * @return object DBResultRange
 	 */
 	function &getLastPageRangeInfo() {
-		import('lib.pkp.classes.db.DBResultRange');
+		import('lib.sep.classes.db.DBResultRange');
 		$returner = new DBResultRange(
 			$this->itemsPerPage,
 			$this->getPageCount()

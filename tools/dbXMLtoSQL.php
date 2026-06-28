@@ -15,10 +15,10 @@
 
 require(dirname(__FILE__) . '/bootstrap.inc.php');
 
-import('lib.pkp.classes.cliTool.XmlToSqlTool');
+import('lib.sep.classes.cliTool.XmlToSqlTool');
 
 /** Default XML file to parse if none is specified */
-define('DATABASE_XML_FILE', 'dbscripts/xml/ojs_schema.xml');
+define('DATABASE_XML_FILE', 'dbscripts/xml/cla_schema.xml');
 
 class dbXMLtoSQL extends XmlToSqlTool {
 	/**

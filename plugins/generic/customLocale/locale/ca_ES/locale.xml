@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 <!--
   * locale.xml
   *
@@ -7,18 +7,18 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_(ca_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Catalan_(ca_ES)
   *
   * Localization strings for the ca_ES (Català) locale.
   -->
  
 <locale name="ca_ES" full_name="Català">
 	<message key="plugins.generic.customLocale.name">Mòdul de la configuració regional personalitzada</message>
-	<message key="plugins.generic.customLocale.description">Aquest mòdul permet personalitzar el text de la interfície d'usuari que l'OJS utilitza per defecte.</message>
+	<message key="plugins.generic.customLocale.description">Aquest mòdul permet personalitzar el text de la interfície d'usuari que l'CLA utilitza per defecte.</message>
 
 	<message key="plugins.generic.customLocale.longDescription">Aquesta pàgina enumera totes les configuracions regionals que hi ha instal·lades per a la revista.</message>
 	<message key="plugins.generic.customLocale.localeDescription">Aquesta pàgina enumera tots els fitxers que hi ha disponibles per a la configuració regional seleccionada.</message>
-	<message key="plugins.generic.customLocale.fileDescription">Introduïu text en el camp de text personalitzat corresponent. Deixeu en blanc el camp de text personalitzat si voleu utilitzar el text per defecte de l'OJS.</message>
+	<message key="plugins.generic.customLocale.fileDescription">Introduïu text en el camp de text personalitzat corresponent. Deixeu en blanc el camp de text personalitzat si voleu utilitzar el text per defecte de l'CLA.</message>
 	<message key="plugins.generic.customLocale.localeName">Nom de la configuració regional</message>
 	<message key="plugins.generic.customLocale.localeKey">Clau</message>
 	<message key="plugins.generic.customLocale.localeKey.description">Introduïu una clau regional sencera que vulgueu buscar.</message>

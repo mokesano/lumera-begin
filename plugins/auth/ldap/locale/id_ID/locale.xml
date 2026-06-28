@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/auth/ldap/locale/id_ID/locale.xml
@@ -38,4 +38,3 @@
 	<message key="plugins.auth.ldap.settings.saslauthzid"> Memerlukan ID Pengesahan </message> 
 	<message key="plugins.auth.ldap.settings.saslprop"> SASL Properti Keamanan </message> 
 </locale>
-

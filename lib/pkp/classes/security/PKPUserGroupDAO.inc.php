@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file classes/security/PKPUserGroupDAO.inc.php
+ * @file classes/security/SEPUserGroupDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPUserGroupDAO
+ * @class SEPUserGroupDAO
  * @ingroup security
  * @see UserGroup
  *
@@ -18,9 +18,9 @@
  */
 
 
-import('lib.pkp.classes.security.UserGroup');
+import('lib.sep.classes.security.UserGroup');
 
-class PKPUserGroupDAO extends DAO {
+class SEPUserGroupDAO extends DAO {
 	/** @var a shortcut to get the UserDAO **/
 	var $userDao;
 
@@ -30,7 +30,7 @@ class PKPUserGroupDAO extends DAO {
 	/**
 	 * Constructor.
 	 */
-	function PKPUserGroupDAO() {
+	function SEPUserGroupDAO() {
 		parent::DAO();
 		$this->userDao =& DAORegistry::getDAO('UserDAO');
 		$this->userGroupAssignmentDao =& DAORegistry::getDAO('UserGroupAssignmentDAO');
@@ -48,7 +48,7 @@ class PKPUserGroupDAO extends DAO {
 	/**
 	 * Internal function to return a UserGroup object from a row.
 	 * @param $row array
-	 * @return PKPUserGroup
+	 * @return SEPUserGroup
 	 */
 	function &_returnFromRow(&$row) {
 		$userGroup =& $this->newDataObject();
@@ -60,7 +60,7 @@ class PKPUserGroupDAO extends DAO {
 
 		$this->getDataObjectSettings('user_group_settings', 'user_group_id', $row['user_group_id'], $userGroup);
 
-		HookRegistry::call('PKPUserGroupDAO::_returnFromRow', array(&$userGroup, &$row));
+		HookRegistry::call('SEPUserGroupDAO::_returnFromRow', array(&$userGroup, &$row));
 
 		return $userGroup;
 	}

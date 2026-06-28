@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000031.xml
@@ -16,7 +16,7 @@
 
 <topic id="journal/topic/000031" locale="gl_ES" title="Importar/Exportar Dados" toc="journal/toc/000001" key="journal.managementPages.importExport">
 	<section>
-		<![CDATA[<p>A característica de Importar/Exportar Dados, dispoñíbel na administración da revista, permítelle ao administrador da revista inserir e extraer dados dende OJS.</p><p> Importar/Exportar dados desenvolveuse utilizando plugins, cada formato ou tipo de dados está provisto dun plugin diferente. Para máis información, diríxete á documentación de cada plugin, que se atopa no directorio de plugin de OJS.</p><p>Con OJS envíanse cinco plugins de Importar/Exportar , e están ilustrados a seguir.</p><p>A función Importar/Exportar tamén está dispoñíbel como unha ferramenta de comandos; Para máis información véxase tools/importExport.php </p>]]>
+		<![CDATA[<p>A característica de Importar/Exportar Dados, dispoñíbel na administración da revista, permítelle ao administrador da revista inserir e extraer dados dende CLA.</p><p> Importar/Exportar dados desenvolveuse utilizando plugins, cada formato ou tipo de dados está provisto dun plugin diferente. Para máis información, diríxete á documentación de cada plugin, que se atopa no directorio de plugin de CLA.</p><p>Con CLA envíanse cinco plugins de Importar/Exportar , e están ilustrados a seguir.</p><p>A función Importar/Exportar tamén está dispoñíbel como unha ferramenta de comandos; Para máis información véxase tools/importExport.php </p>]]>
 	</section>
 	<section title="Plugin de Usuarios XML">
 			<![CDATA[<p>O plugin de usuarios XML pode usarse para importar e exportar usuarios e os sus roles e funcións. Para máis información véxase  XML DTD en "plugins/importexport/users/users.dtd" </p>]]>

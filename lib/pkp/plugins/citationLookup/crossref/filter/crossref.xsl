@@ -6,7 +6,7 @@
   * Copyright (c) 2000-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Crosswalk from CrossRef XML to PKP citation elements
+  * Crosswalk from CrossRef XML to SEP citation elements
   -->
 
 <xsl:transform version="1.0"

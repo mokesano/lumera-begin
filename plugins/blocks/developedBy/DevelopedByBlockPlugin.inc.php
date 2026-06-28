@@ -13,7 +13,7 @@
  * @brief Class for "developed by" block plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class DevelopedByBlockPlugin extends BlockPlugin {
 	/**

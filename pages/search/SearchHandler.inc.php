@@ -28,7 +28,7 @@ class SearchHandler extends Handler {
 	/**
 	 * Show the search form
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$this->validate();
@@ -38,7 +38,7 @@ class SearchHandler extends Handler {
 	/**
 	 * Private function to transmit current filter values
 	 * to the template.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $templateMgr TemplateManager
 	 * @param $searchFilters array
 	 */
@@ -125,7 +125,7 @@ class SearchHandler extends Handler {
 	/**
 	 * Show the search form
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function search($args, &$request) {
 		$this->validate();
@@ -159,7 +159,7 @@ class SearchHandler extends Handler {
 	/**
 	 * Show index of published articles by author.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function authors($args, &$request) {
 		$this->validate();
@@ -251,7 +251,7 @@ class SearchHandler extends Handler {
 	/**
 	 * Show index of published articles by title.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function titles($args, &$request) {
 		$this->validate();
@@ -266,7 +266,7 @@ class SearchHandler extends Handler {
 		$articleIds =& $publishedArticleDao->getPublishedArticleIdsAlphabetizedByJournal(isset($journal)?$journal->getId():null);
 		$totalResults = count($articleIds);
 		$articleIds = array_slice($articleIds, $rangeInfo->getCount() * ($rangeInfo->getPage()-1), $rangeInfo->getCount());
-		import('lib.pkp.classes.core.VirtualArrayIterator');
+		import('lib.sep.classes.core.VirtualArrayIterator');
 		$results = new VirtualArrayIterator(ArticleSearch::formatResults($articleIds), $totalResults, $rangeInfo->getPage(), $rangeInfo->getCount());
 
 		$templateMgr =& TemplateManager::getManager();
@@ -277,7 +277,7 @@ class SearchHandler extends Handler {
 	/**
 	 * Display categories.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function categories($args, &$request) {
 		$this->validate();
@@ -304,7 +304,7 @@ class SearchHandler extends Handler {
 	/**
 	 * Display category contents.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function category($args, &$request) {
 		$categoryId = (int) array_shift($args);
@@ -337,7 +337,7 @@ class SearchHandler extends Handler {
 
 	/**
 	 * Setup common template variables.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $subclass boolean set to true if caller is below this handler in the hierarchy
 	 * @param $op string Current operation (for breadcrumb construction)
 	 */

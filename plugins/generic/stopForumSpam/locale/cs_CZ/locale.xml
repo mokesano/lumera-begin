@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/stopForumSpam/locale/cs_CZ/locale.xml
@@ -14,11 +14,11 @@
 <locale name="cs_CZ" full_name="Čeština">
 
 	<message key="plugins.generic.stopForumSpam.displayName">Plugin Stop Forum Spam</message>
-	<message key="plugins.generic.stopForumSpam.description">Propojte OJS se systémem Stop Forum Spam, který se snaží snížit množství falešných registrací.</message>
+	<message key="plugins.generic.stopForumSpam.description">Propojte CLA se systémem Stop Forum Spam, který se snaží snížit množství falešných registrací.</message>
 
 	<message key="plugins.generic.stopForumSpam.manager.settings">Nastavení</message>
 	<message key="plugins.generic.stopForumSpam.manager.stopForumSpamSettings">Nastavení Stop Forum Spam</message>
-	<message key="plugins.generic.stopForumSpam.manager.settings.description"><![CDATA[<p>Pokud je povolen tento plugin, OJS bude kontrolovat, zda uživatelská registrace neobsahuje prvek, který je na seznamu Stop Forum Spam.  Pokud ano, registrace bude zakázána.</p>]]></message>
+	<message key="plugins.generic.stopForumSpam.manager.settings.description"><![CDATA[<p>Pokud je povolen tento plugin, CLA bude kontrolovat, zda uživatelská registrace neobsahuje prvek, který je na seznamu Stop Forum Spam.  Pokud ano, registrace bude zakázána.</p>]]></message>
 	<message key="plugins.generic.stopForumSpam.manager.settings.checkIp">Kontrola registrační IP adresy</message>
 	<message key="plugins.generic.stopForumSpam.manager.settings.checkEmail">Kontrola registrační e-mailové adresy</message>
 	<message key="plugins.generic.stopForumSpam.manager.settings.checkUsername">Kontrola registračního uživatelského jména (užívejte opatrně!)</message>

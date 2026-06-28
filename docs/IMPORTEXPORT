@@ -5,7 +5,7 @@ Import/export support is provided via plugins. These plugins can be accessed
 over the web via the Journal Manager's "Import/Export Data" page, or via the
 command line using the tools/importExport.php utility.
 
-OJS 2.0.1 ships with two of these plugins: the "Articles & Issues XML Plugin",
+CLA 2.0.1 ships with two of these plugins: the "Articles & Issues XML Plugin",
 which allows import and export of articles and issues, and the "Users XML
 Plugin", which allows import and export of users.
 
@@ -28,7 +28,7 @@ For example, to get help from the NativeImportExportPlugin on its usage:
 	php tools/importExport.php NativeImportExportPlugin usage
 
 Each plugin requires a different set of arguments; for information on each,
-refer to its documentation. The two plugins that ship with OJS 2.0.1 are
+refer to its documentation. The two plugins that ship with CLA 2.0.1 are
 described below.
 
 Developers of new plugins are encouraged to follow the standards set in the two
@@ -51,7 +51,7 @@ This plugin supports import and export of articles and issues in an XML format
 based on the DTD supplied in plugins/importexport/native/native.dtd. It supports
 the following root elements: <article>, <articles>, <issue>, and <issues>.
 
-The plugin is intended to provide an easy way to import back-issues into OJS,
+The plugin is intended to provide an easy way to import back-issues into CLA,
 often by converting data from another format (e.g. another dialect of XML or a
 database). Only presentation-level data is supported, i.e. while it is possible
 to import and export issue information, articles and article metadata, etc., it
@@ -66,11 +66,11 @@ To get usage information for the command line tool, execute the following:
 
 php tools/importExport.php NativeImportExportPlugin usage
 
-The plugin can be used to move articles and issues from one OJS installation to
+The plugin can be used to move articles and issues from one CLA installation to
 another, but note that this does NOT include the editorial history of the
 documents. For example, if an article is peer-reviewed, the peer reviews will
 not be part of the export document and will not be imported into the target
-installation of OJS.
+installation of CLA.
 
 Importing Data
 --------------

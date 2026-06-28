@@ -25,7 +25,7 @@ class ReportPlugin extends Plugin {
 	* Retrieve a range of aggregate, filtered, ordered metric values, i.e.
 	* a statistics report.
 	*
-	* @see <http://pkp.sfu.ca/wiki/index.php/OJSdeStatisticsConcept#Input_and_Output_Formats_.28Aggregation.2C_Filters.2C_Metrics_Data.29>
+	* @see <http://lumera.sangia.org/wiki/index.php/CLAdeStatisticsConcept#Input_and_Output_Formats_.28Aggregation.2C_Filters.2C_Metrics_Data.29>
 	* for a full specification of the input and output format of this method.
 	*
 	* @param $metricType null|string|array metrics selection
@@ -206,7 +206,7 @@ class ReportPlugin extends Plugin {
 	/**
 	 * Base method to display the report plugin UI.  This should be implemented in the subclass.
 	 * @param $args Array The array of arguments the user supplied.
-	 * @param $request Object The PKP Request object initiating the call.
+	 * @param $request Object The SEP Request object initiating the call.
 	 */
 	function display($args, $request) {
 		$templateManager =& TemplateManager::getManager();

@@ -13,7 +13,7 @@
  * @brief Supplementary file author submission form.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class AuthorSubmitSuppFileForm extends Form {
 	/** @var int the ID of the article */

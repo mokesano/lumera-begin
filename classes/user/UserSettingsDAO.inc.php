@@ -14,9 +14,9 @@
  * @brief Operations for retrieving and modifying user settings.
  */
 
-import('lib.pkp.classes.user.PKPUserSettingsDAO');
+import('lib.sep.classes.user.SEPUserSettingsDAO');
 
-class UserSettingsDAO extends PKPUserSettingsDAO {
+class UserSettingsDAO extends SEPUserSettingsDAO {
 	/**
 	 * Retrieve a user setting value.
 	 * @param $userId int

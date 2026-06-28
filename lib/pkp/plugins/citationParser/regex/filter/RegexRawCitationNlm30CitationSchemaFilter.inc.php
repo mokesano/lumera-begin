@@ -23,7 +23,7 @@
  */
 
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
 
 class RegexRawCitationNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 	/*
@@ -43,7 +43,7 @@ class RegexRawCitationNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilte
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationParser.regex.filter.RegexRawCitationNlm30CitationSchemaFilter';
+		return 'lib.sep.plugins.citationParser.regex.filter.RegexRawCitationNlm30CitationSchemaFilter';
 	}
 
 

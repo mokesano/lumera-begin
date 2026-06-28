@@ -13,7 +13,7 @@
  * @brief Supplementary file form.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class SuppFileForm extends Form {
 	/** @var int the ID of the supplementary file */
@@ -122,7 +122,7 @@ class SuppFileForm extends Form {
 		$pubIdPlugins =& PluginRegistry::loadCategory('pubIds', true);
 		$templateMgr->assign('pubIdPlugins', $pubIdPlugins);
 
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_AUTHOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_AUTHOR);
 
 		parent::display();
 	}

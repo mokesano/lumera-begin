@@ -14,8 +14,8 @@
  *  be either true or false.
  */
 
-import('lib.pkp.classes.filter.FilterSetting');
-import('lib.pkp.classes.form.validation.FormValidatorBoolean');
+import('lib.sep.classes.filter.FilterSetting');
+import('lib.sep.classes.form.validation.FormValidatorBoolean');
 
 class BooleanFilterSetting extends FilterSetting {
 	/**

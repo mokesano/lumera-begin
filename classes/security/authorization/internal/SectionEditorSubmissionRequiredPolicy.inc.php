@@ -13,12 +13,12 @@
  *  editor submission.
  */
 
-import('lib.pkp.classes.security.authorization.DataObjectRequiredPolicy');
+import('lib.sep.classes.security.authorization.DataObjectRequiredPolicy');
 
 class SectionEditorSubmissionRequiredPolicy extends DataObjectRequiredPolicy {
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function SectionEditorSubmissionRequiredPolicy(&$request, &$args, $submissionParameterName = 'articleId') {
 		parent::DataObjectRequiredPolicy($request, $args, $submissionParameterName, 'user.authorization.invalidSectionEditorSubmission');

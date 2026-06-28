@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/piwik/locale/cs_CZ/locale.xml
@@ -15,7 +15,7 @@
 
 	<!-- Piwik -->
 	<message key="plugins.generic.piwik.displayName">Plugin Piwik</message>
-	<message key="plugins.generic.piwik.description"><![CDATA[Propojte OJS s Piwik, volně dostupnou a otevřenou aplikací pro analýzu provozu webu. Požaduje, aby byl Piwik nainstalován. Na <a href="http://piwik.org/" title="piwik site">stránce Piwik</a> najdete více informací.]]></message>
+	<message key="plugins.generic.piwik.description"><![CDATA[Propojte CLA s Piwik, volně dostupnou a otevřenou aplikací pro analýzu provozu webu. Požaduje, aby byl Piwik nainstalován. Na <a href="http://piwik.org/" title="piwik site">stránce Piwik</a> najdete více informací.]]></message>
 
 	<!-- Piwik Settings Management -->
 	<message key="plugins.generic.piwik.manager.settings">Nastavení</message>

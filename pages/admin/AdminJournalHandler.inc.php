@@ -36,8 +36,8 @@ class AdminJournalHandler extends AdminHandler {
 		$journals =& $journalDao->getJournals(false, $rangeInfo);
 
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 		$templateMgr->assign_by_ref('journals', $journals);
 		$templateMgr->assign('helpTopicId', 'site.siteManagement');
 		$templateMgr->display('admin/journals.tpl');
@@ -124,7 +124,7 @@ class AdminJournalHandler extends AdminHandler {
 			if ($journalDao->deleteJournalById($journalId)) {
 				// Delete journal file tree
 				// FIXME move this somewhere better.
-				import('lib.pkp.classes.file.FileManager');
+				import('lib.sep.classes.file.FileManager');
 				$fileManager = new FileManager();
 
 				$journalPath = Config::getVar('files', 'files_dir') . '/journals/' . $journalId;
@@ -187,7 +187,7 @@ class AdminJournalHandler extends AdminHandler {
 	 */
 	function setupTemplate() {
 		parent::setupTemplate(true);
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_MANAGER);
 	}
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/xmlGalley/locale/ja_JP/locale.xml
@@ -44,4 +44,3 @@
 	<message key="plugins.generic.xmlGalley.settings.customXSLInvalid">アップロードされたXSLファイルは不正です。ファイルをチェックして、再度アップロードしてください。</message>
 
 </locale>
-

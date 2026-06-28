@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/externalFeed/locale/fa_IR/locale.xml
@@ -58,7 +58,7 @@
 	<message key="plugins.generic.externalFeed.form.titleRequired">لطفا برای این فید عنوانی وارد کنید</message>
 	<message key="plugins.generic.externalFeed.form.feedUrl">URL</message>
 	<message key="plugins.generic.externalFeed.form.feedUrlValid">Please provide a valid feed URL (include http://)</message>
-	<message key="plugins.generic.externalFeed.form.feedUrlDescription">The URL of the external Atom/RSS syndication feed (e.g. http://pkp.sfu.ca/blog/feed)</message>
+	<message key="plugins.generic.externalFeed.form.feedUrlDescription">The URL of the external Atom/RSS syndication feed (e.g. http://lumera.sangia.org/blog/feed)</message>
 	<message key="plugins.generic.externalFeed.form.display">نمایش</message>
 	<message key="plugins.generic.externalFeed.form.displayHomepage">نمایش در صفحه خانگی</message>
 	<message key="plugins.generic.externalFeed.form.displayBlockNone">در بلوک نشان نده</message>

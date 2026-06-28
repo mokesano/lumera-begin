@@ -1,22 +1,22 @@
 <?php
 
 /**
- * @file classes/core/PKPProfiler.inc.php
+ * @file classes/core/SEPProfiler.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPProfiler
+ * @class SEPProfiler
  * @ingroup core
  *
  * @brief Basic shell class used to wrap the PHP Quick Profiler Class
  */
 
 
-require_once('./lib/pkp/lib/pqp/classes/PhpQuickProfiler.php');
+require_once('./lib/sep/lib/pqp/classes/PhpQuickProfiler.php');
 
-class PKPProfiler {
+class SEPProfiler {
 
 	/** @var $profiler object instance of the PQP profiler */
 	var $profiler;
@@ -24,7 +24,7 @@ class PKPProfiler {
 	/**
 	 * Constructor.
 	 */
-	function PKPProfiler() {
+	function SEPProfiler() {
 		$this->profiler = new PhpQuickProfiler(PhpQuickProfiler::getMicroTime());
 	}
 
@@ -34,7 +34,7 @@ class PKPProfiler {
 	 */
 	function getData() {
 		$profiler =& $this->profiler;
-		$profiler->db = new PKPDBProfiler();
+		$profiler->db = new SEPDBProfiler();
 
 		$profiler->gatherConsoleData();
 		$profiler->gatherFileData();
@@ -46,7 +46,7 @@ class PKPProfiler {
 	}
 }
 
-class PKPDBProfiler {
+class SEPDBProfiler {
 
 	/** @var $queryCount property to wrap DB connection query count */
 	var $queryCount;
@@ -54,7 +54,7 @@ class PKPDBProfiler {
 	/**
 	 * Constructor.
 	 */
-	function PKPDBProfiler() {
+	function SEPDBProfiler() {
 		$dbconn =& DBConnection::getInstance();
 
 		$this->queryCount = $dbconn->getNumQueries();

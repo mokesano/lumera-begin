@@ -31,11 +31,11 @@ class DonationsHandler extends Handler {
 	/**
 	 * Display the donations page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$journal =& $request->getJournal();
 
 		if (!Validation::isLoggedIn()) {
@@ -53,7 +53,7 @@ class DonationsHandler extends Handler {
 	/**
 	 * Display a "thank you" page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function thankYou($args, &$request) {
 		$templateMgr =& TemplateManager::getManager();

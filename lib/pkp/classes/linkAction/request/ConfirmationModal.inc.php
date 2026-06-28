@@ -13,7 +13,7 @@
  */
 
 
-import('lib.pkp.classes.linkAction.request.Modal');
+import('lib.sep.classes.linkAction.request.Modal');
 
 class ConfirmationModal extends Modal {
 	/**
@@ -101,7 +101,7 @@ class ConfirmationModal extends Modal {
 	 */
 	function getLocalizedOptions() {
 		return array_merge(parent::getLocalizedOptions(), array(
-				'modalHandler' => '$.pkp.controllers.modal.ConfirmationModalHandler',
+				'modalHandler' => '$.sep.controllers.modal.ConfirmationModalHandler',
 				'okButton' => $this->getOkButton(),
 				'cancelButton' => $this->getCancelButton(),
 				'dialogText' => $this->getDialogText()));

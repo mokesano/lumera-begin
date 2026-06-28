@@ -12,7 +12,7 @@
  * @brief Class to validate if a Journal is present
  */
 
-import('lib.pkp.classes.handler.validation.HandlerValidator');
+import('lib.sep.classes.handler.validation.HandlerValidator');
 
 class HandlerValidatorJournal extends HandlerValidator {
 	/**

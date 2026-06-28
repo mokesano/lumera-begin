@@ -14,7 +14,7 @@
  * @brief NLM Journal Article metadata format plugin for OAI.
  */
 
-import('lib.pkp.classes.plugins.OAIMetadataFormatPlugin');
+import('lib.sep.classes.plugins.OAIMetadataFormatPlugin');
 
 class OAIMetadataFormatPlugin_NLM extends OAIMetadataFormatPlugin {
 	/**

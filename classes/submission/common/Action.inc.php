@@ -39,14 +39,14 @@ define('SUBMISSION_FIELD_DATE_COPYEDIT_COMPLETE', 5);
 define('SUBMISSION_FIELD_DATE_LAYOUT_COMPLETE', 6);
 define('SUBMISSION_FIELD_DATE_PROOFREADING_COMPLETE', 7);
 
-import('lib.pkp.classes.submission.common.PKPAction');
+import('lib.sep.classes.submission.common.SEPAction');
 
-class Action extends PKPAction {
+class Action extends SEPAction {
 	/**
 	 * Constructor.
 	 */
 	function Action() {
-		parent::PKPAction();
+		parent::SEPAction();
 	}
 
 	//
@@ -72,7 +72,7 @@ class Action extends PKPAction {
 	/**
 	 * Save metadata.
 	 * @param $article object
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveMetadata($article, &$request) {
 		$router =& $request->getRouter();

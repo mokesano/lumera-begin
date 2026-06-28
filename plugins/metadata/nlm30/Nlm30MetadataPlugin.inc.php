@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.metadata.nlm30.PKPNlm30MetadataPlugin');
+import('lib.sep.plugins.metadata.nlm30.SEPNlm30MetadataPlugin');
 
-class Nlm30MetadataPlugin extends PKPNlm30MetadataPlugin {
+class Nlm30MetadataPlugin extends SEPNlm30MetadataPlugin {
 	/**
 	 * Constructor
 	 */
 	function Nlm30MetadataPlugin() {
-		parent::PKPNlm30MetadataPlugin();
+		parent::SEPNlm30MetadataPlugin();
 	}
 }
 

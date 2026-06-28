@@ -14,7 +14,7 @@
  *
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class StaticPagesPlugin extends GenericPlugin {
 	function getDisplayName() {
@@ -30,7 +30,7 @@ class StaticPagesPlugin extends GenericPlugin {
 
 	function isTinyMCEInstalled() {
 		// If the thesis plugin isn't enabled, don't do anything.
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$products =& $application->getEnabledProducts('plugins.generic');
 		return (isset($products['tinymce']));
 	}
@@ -45,7 +45,7 @@ class StaticPagesPlugin extends GenericPlugin {
 		if (parent::register($category, $path)) {
 			if ($this->getEnabled()) {
 				$this->import('StaticPagesDAO');
-				if (checkPhpVersion('5.0.0')) { // WARNING: see http://pkp.sfu.ca/wiki/index.php/Information_for_Developers#Use_of_.24this_in_the_constructor
+				if (checkPhpVersion('5.0.0')) { // WARNING: see http://lumera.sangia.org/wiki/index.php/Information_for_Developers#Use_of_.24this_in_the_constructor
 					$staticPagesDao = new StaticPagesDAO($this->getName());
 				} else {
 					$staticPagesDao =& new StaticPagesDAO($this->getName());

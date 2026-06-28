@@ -1,26 +1,26 @@
 <?php
 
 /**
- * @file controllers/grid/citation/PKPCitationGridHandler.inc.php
+ * @file controllers/grid/citation/SEPCitationGridHandler.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPCitationGridHandler
+ * @class SEPCitationGridHandler
  * @ingroup controllers_grid_citation
  *
  * @brief Handle generic parts of citation grid requests.
  */
 
 // import grid base classes
-import('lib.pkp.classes.controllers.grid.GridHandler');
-import('lib.pkp.classes.controllers.grid.citation.PKPCitationGridCellProvider');
+import('lib.sep.classes.controllers.grid.GridHandler');
+import('lib.sep.classes.controllers.grid.citation.SEPCitationGridCellProvider');
 
 // import citation grid specific classes
-import('lib.pkp.classes.controllers.grid.citation.PKPCitationGridRow');
+import('lib.sep.classes.controllers.grid.citation.SEPCitationGridRow');
 
-class PKPCitationGridHandler extends GridHandler {
+class SEPCitationGridHandler extends GridHandler {
 	/** @var DataObject */
 	var $_assocObject;
 
@@ -30,7 +30,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Constructor
 	 */
-	function PKPCitationGridHandler() {
+	function SEPCitationGridHandler() {
 		parent::GridHandler();
 	}
 
@@ -58,7 +58,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Get the object that citations are associated to.
 	 *
-	 * @see PKPCitationGridHandler::setAssocObject() for more details.
+	 * @see SEPCitationGridHandler::setAssocObject() for more details.
 	 *
 	 * @return DataObject
 	 */
@@ -95,17 +95,17 @@ class PKPCitationGridHandler extends GridHandler {
 
 
 	//
-	// Overridden methods from PKPHandler
+	// Overridden methods from SEPHandler
 	//
 	/**
 	 * Configure the grid
-	 * @see PKPHandler::initialize()
+	 * @see SEPHandler::initialize()
 	 */
 	function initialize(&$request, $args) {
 		parent::initialize($request, $args);
 
 		// Load submission-specific translations
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_SUBMISSION);
 
 		// Basic grid configuration
 		$this->setTitle('submission.citations.editor.citationlist.title');
@@ -146,7 +146,7 @@ class PKPCitationGridHandler extends GridHandler {
 		);
 
 		// Columns
-		$cellProvider = new PKPCitationGridCellProvider();
+		$cellProvider = new SEPCitationGridCellProvider();
 		$this->addColumn(
 			new GridColumn(
 				'rawCitation',
@@ -168,7 +168,7 @@ class PKPCitationGridHandler extends GridHandler {
 	 */
 	function &getRowInstance() {
 		// Return a citation row
-		$row = new PKPCitationGridRow();
+		$row = new SEPCitationGridRow();
 		return $row;
 	}
 
@@ -186,7 +186,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Export a list of formatted citations
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $noCitationsFoundMessage string an app-specific help message
 	 * @return string a serialized JSON message
 	 */
@@ -227,7 +227,7 @@ class PKPCitationGridHandler extends GridHandler {
 				foreach($exportFilterConfiguration as $selectListHeading => $outputType) {
 					// All filters that take a submission and one of the supported
 					// output types will be displayed.
-					$exportFilterObjects =& $filterDao->getObjectsByTypeDescription('class::lib.pkp.classes.submission.Submission', $outputType);
+					$exportFilterObjects =& $filterDao->getObjectsByTypeDescription('class::lib.sep.classes.submission.Submission', $outputType);
 
 					// Build the array for the template.
 					$exportFilters[$selectListHeading] = array();
@@ -306,7 +306,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * An action to manually add a new citation
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string a serialized JSON message
 	 */
 	function addCitation(&$args, &$request) {
@@ -318,7 +318,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Edit a citation
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string a serialized JSON message
 	 */
 	function editCitation(&$args, &$request) {
@@ -326,7 +326,7 @@ class PKPCitationGridHandler extends GridHandler {
 		$citation =& $this->getCitationFromArgs($request, $args, true);
 
 		// Form handling
-		import('lib.pkp.classes.controllers.grid.citation.form.CitationForm');
+		import('lib.sep.classes.controllers.grid.citation.form.CitationForm');
 		$citationForm = new CitationForm($request, $citation, $this->getAssocObject());
 		if ($citationForm->isLocaleResubmit()) {
 			$citationForm->readInputData();
@@ -340,7 +340,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Change the raw text of a citation and re-process it.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string a serialized JSON message
 	 */
 	function updateRawCitation(&$args, &$request) {
@@ -359,7 +359,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Check (parse and lookup) a citation
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string a serialized JSON message
 	 */
 	function checkCitation(&$args, &$request) {
@@ -392,7 +392,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Update a citation
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string a serialized JSON message
 	 */
 	function updateCitation(&$args, &$request) {
@@ -437,7 +437,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Delete a citation
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string a serialized JSON message
 	 */
 	function deleteCitation(&$args, &$request) {
@@ -460,7 +460,7 @@ class PKPCitationGridHandler extends GridHandler {
 	 * calculated differences between the field based and the
 	 * raw version.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string a serialized JSON message
 	 */
 	function fetchCitationFormErrorsAndComparison(&$args, &$request) {
@@ -479,12 +479,12 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Send an author query based on the posted data.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string a serialized JSON message
 	 */
 	function sendAuthorQuery(&$args, &$request) {
 		// Instantiate the email to the author.
-		import('lib.pkp.classes.mail.Mail');
+		import('lib.sep.classes.mail.Mail');
 		$mail = new Mail();
 
 		// Recipient
@@ -501,7 +501,7 @@ class PKPCitationGridHandler extends GridHandler {
 		// In principle we should use a template here but this seems exaggerated
 		// for such a small message.
 		$json = new JSONMessage(true,
-			'<div id="authorQueryResult"><span class="pkp_form_error">'
+			'<div id="authorQueryResult"><span class="sep_form_error">'
 			.__('submission.citations.editor.details.sendAuthorQuerySuccess')
 			.'</span></div>');
 		return $json->getString();
@@ -531,7 +531,7 @@ class PKPCitationGridHandler extends GridHandler {
 		} else {
 			if ($createIfMissing) {
 				// It seems that a new citation is being edited/updated
-				import('lib.pkp.classes.citation.Citation');
+				import('lib.sep.classes.citation.Citation');
 				$citation = new Citation();
 				$citation->setAssocType($this->getAssocType());
 				$citation->setAssocId($this->getAssocId());
@@ -560,7 +560,7 @@ class PKPCitationGridHandler extends GridHandler {
 	function _getExportFilterConfiguration() {
 		return array(
 			'submission.citations.editor.export.pleaseSelectXmlFilter' => 'xml::%',
-			'submission.citations.editor.export.pleaseSelectPlaintextFilter' => 'class::lib.pkp.classes.citation.PlainTextReferencesList'
+			'submission.citations.editor.export.pleaseSelectPlaintextFilter' => 'class::lib.sep.classes.citation.PlainTextReferencesList'
 		);
 	}
 
@@ -568,7 +568,7 @@ class PKPCitationGridHandler extends GridHandler {
 	 * Create and validate a citation form with POST
 	 * request data and (optionally) persist the citation.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $persist boolean
 	 * @return CitationForm the citation form for further processing
 	 */
@@ -579,7 +579,7 @@ class PKPCitationGridHandler extends GridHandler {
 		$citation =& $this->getCitationFromArgs($request, $args, true);
 
 		// Form initialization
-		import('lib.pkp.classes.controllers.grid.citation.form.CitationForm');
+		import('lib.sep.classes.controllers.grid.citation.form.CitationForm');
 		$citationForm = new CitationForm($request, $citation, $this->getAssocObject());
 		$citationForm->readInputData();
 
@@ -598,7 +598,7 @@ class PKPCitationGridHandler extends GridHandler {
 	/**
 	 * Internal method that re-checks the given citation and
 	 * returns a rendered citation editing form with the changes.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $originalCitation Citation
 	 * @param $persist boolean whether to save (true) or render (false)
 	 * @return string|Citation a serialized JSON message with the citation
@@ -619,7 +619,7 @@ class PKPCitationGridHandler extends GridHandler {
 		$filteredCitation =& $citationDao->checkCitation($request, $originalCitation, $filterIds);
 
 		// Crate a new form for the filtered (but yet unsaved) citation data
-		import('lib.pkp.classes.controllers.grid.citation.form.CitationForm');
+		import('lib.sep.classes.controllers.grid.citation.form.CitationForm');
 		$citationForm = new CitationForm($request, $filteredCitation, $this->getAssocObject());
 
 		// Transport filtering errors to form (if any).

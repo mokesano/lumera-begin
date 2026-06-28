@@ -13,7 +13,7 @@
  * @brief phpMyVisites plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class PhpMyVisitesPlugin extends GenericPlugin {
 	/**
@@ -154,7 +154,7 @@ class PhpMyVisitesPlugin extends GenericPlugin {
 				$templateMgr->register_function('plugin_url', array(&$this, 'smartyPluginUrl'));
 				$journal =& Request::getJournal();
 
-				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_PKP_MANAGER);
+				AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON,  LOCALE_COMPONENT_SEP_MANAGER);
 				$this->import('PhpMyVisitesSettingsForm');
 				$form = new PhpMyVisitesSettingsForm($this, $journal->getId());
 				if (Request::getUserVar('save')) {

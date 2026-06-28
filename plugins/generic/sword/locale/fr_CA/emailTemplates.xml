@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * emailTemplateData.xml
   *
@@ -17,7 +17,7 @@
 
 Allez à {$swordDepositUrl} afin de procéder.
 
-Ce courriel a été généré par le plugiciel de dépôt SWORD du Open Journal Systems.</body>
+Ce courriel a été généré par le plugiciel de dépôt SWORD du Code Lumera Editorial.</body>
 		<description>Ce modèle de courriel est utilisé pour avertir un auteur qu'il peut déposer s'il le désire sa soumission dans SWORD.</description>
 	</email_text>
 </email_texts>

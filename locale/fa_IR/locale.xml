@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/fa_IR/locale.xml
@@ -210,11 +210,11 @@
 <!-- نظرات خوانندگان -->  <message key="comments.commentsOnArticle">نظرات در مورد مقاله</message>
 	<message key="comments.authenticated">{$userName}</message>
 <!-- ادمین سایت -->	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[چنانچه مایل باشید محتوای مجلات این سایت در یک سیستم گسترده از بانکهای اطلاعاتی پژوهشی اندکس شود ، آدرس سایت خود را در سیستم 
-<a href="http://pkp.sfu.ca/harvester/" target="_blank">
+<a href="http://lumera.sangia.org/harvester/" target="_blank">
 استخراج کننده
 </a>
  فراداده پروژه عمومی دانش 
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">
 ثبت
 </a>
  کنید.این سیستم ، فراداده هر کدام از مجلات این سایت را جمع آوری میکند و امکان جستجوی دقیق و جامع را در سایتهای پژوهشی که تابع 
@@ -223,7 +223,7 @@
 </a>
  هستند را فراهم میکند.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">
 اینجا
 </a>
  را کلیک کرده و در قسمت 
@@ -235,7 +235,7 @@ http://journals.mui.ac.ir/index.php/index/index
 <span class="highlight">{$oaiUrl}</span>
  را وارد کنید.
 <br /><br />
-توجه داشته باشید که سیستم پیشگام بایگانی آزاد را میتوان از طریق نگارش فایل تنظیمات سیستم از کار انداخت. در نسخه های آینده OJS امکان فعال یا غیر فعال ساختن این سیستم برای هرکدام از مجلات بطور مستقل وجود خواهد داشت.]]></message>
+توجه داشته باشید که سیستم پیشگام بایگانی آزاد را میتوان از طریق نگارش فایل تنظیمات سیستم از کار انداخت. در نسخه های آینده CLA امکان فعال یا غیر فعال ساختن این سیستم برای هرکدام از مجلات بطور مستقل وجود خواهد داشت.]]></message>
 <!-- زبانها -->	<message key="admin.auth.defaultSourceDescription"><![CDATA[تایید یک منبع تایید کننده هویت پیش فرض جدای از او ج اس دارای این مزیات است:
 <ul>
 <li>
@@ -254,8 +254,8 @@ http://journals.mui.ac.ir/index.php/index/index
 <!-- اطلاعات عمومی پلاگین -->	<message key="plugins.categories.generic.description">پلاگین های عمومی برای گسترش سیستم ژورنال های آزاد به روشهای مختلف که توسط پلاگین های دیگر پشتیبانی نمی شوند به کار می روند</message>
 	<message key="plugins.categories.auth.description">پلاگ این های تایید کننده هویت  عمل تایید هویت را به سیستم های خارجی تایید کننده هویت مانند سرور LDAP واگذار می کنند.</message>
 	<message key="plugins.categories.citationFormats.description">پلاگین الگوی مرجع نویسی , قالبهای مختلف مرجع نویسی را برای  کاربران فراهم می کند</message>
-<!-- مرورگر فایل -->	<message key="manager.setup.lockssDescription"><![CDATA[OJS از سیستم <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> که علامت اختصاری Lots of Copies Keep Stuff Safe است  برای بایگانی امن و دائمی داده برای مجله پستیبانی میکند. LOCKSS یک نوم افزار کد آزاد است که توسط کتابخانه دانشگاه استانفورد تهیه شده است و کتابخانه ها را قادر می سازد داده های مجلات انتخابی خود را جمع آوری و حفاظت کنند. این کار از طریق استخراج مداوم داده ها از سایت های مجلات انتخاب شده صورت می گیرد. هر بایگانی یطور مداوم با کش های کتابخانه ای دیگر مقایسه و بروز رسانی میشود. 
-<br /><br /> نصب پشتیبانی LOCKSS برای OJS تا وقتی که مجله کاملا بصورت آنلاین چاپ نشود لازم نیست. پس از را افتادن سیستم چاپ آنلاین مجله این دو اقدام را انجام دهید تا حمایت LOCKSS برقرار شود:]]></message>
+<!-- مرورگر فایل -->	<message key="manager.setup.lockssDescription"><![CDATA[CLA از سیستم <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> که علامت اختصاری Lots of Copies Keep Stuff Safe است  برای بایگانی امن و دائمی داده برای مجله پستیبانی میکند. LOCKSS یک نوم افزار کد آزاد است که توسط کتابخانه دانشگاه استانفورد تهیه شده است و کتابخانه ها را قادر می سازد داده های مجلات انتخابی خود را جمع آوری و حفاظت کنند. این کار از طریق استخراج مداوم داده ها از سایت های مجلات انتخاب شده صورت می گیرد. هر بایگانی یطور مداوم با کش های کتابخانه ای دیگر مقایسه و بروز رسانی میشود. 
+<br /><br /> نصب پشتیبانی LOCKSS برای CLA تا وقتی که مجله کاملا بصورت آنلاین چاپ نشود لازم نیست. پس از را افتادن سیستم چاپ آنلاین مجله این دو اقدام را انجام دهید تا حمایت LOCKSS برقرار شود:]]></message>
 <!-- واردات / صادرات--><!-- گروهها / تیم دبیری -->	<message key="manager.people.confirmDisable">آیا این کاربر غیر فعال شود؟ این اقدام از ورود کاربر به سیستم جلوگیری میکند.
 
 میتوانید دلیل این اقدام را به کاربر خاطرنشان سازید.</message>
@@ -454,19 +454,19 @@ http://journals.mui.ac.ir/index.php/index/index
 	<message key="about.availableSubscriptionTypes">انواع اشتراک</message>
 	<message key="about.journalSponsorship">حمایت ها از مجله</message>
 	<message key="about.aboutThisPublishingSystem">در باره این سیستم انتشاراتی</message>
-	<message key="about.aboutOJSJournal"><![CDATA[این مجله از سیستم مجلات آزاد نسخه {$ojsVersion} استفاده میکند که یک نرم افزار کد باز اداره و انتشار مجلات تهیه شده توسط  <a href="http://pkp.sfu.ca/">پروژه دانش عمومی</a> است که تحت لیسانس GNU General Public License بصورت رایگان در اختیار همگان میباشد.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[این سایت از سیستم مجلات آزاد نسخه {$ojsVersion} استفاده میکند که یک نرم افزار کد باز اداره و انتشار مجلات تهیه شده توسط  <a href="http://pkp.sfu.ca/">پروژه دانش عمومی</a> است که تحت لیسانس GNU General Public License بصورت رایگان در اختیار همگان میباشد.]]></message>
-<!-- اطلاعیه --><!-- راهنما -->	<message key="help.ojsHelp">راهنمای سیستم مجلات آزاد</message>
-	<message key="help.ojsHelpAbbrev">راهنمای OJS</message>
-<!-- نصب کننده -->  <message key="installer.ojsInstallation">نصب OJS</message>
-	<message key="installer.ojsUpgrade">بروز رسانی OJS</message>
-	<message key="installer.installationInstructions"><![CDATA[<h4>OJS نسخه {$version}</h4>
+	<message key="about.aboutCLAJournal"><![CDATA[این مجله از سیستم مجلات آزاد نسخه {$claVersion} استفاده میکند که یک نرم افزار کد باز اداره و انتشار مجلات تهیه شده توسط  <a href="http://lumera.sangia.org/">پروژه دانش عمومی</a> است که تحت لیسانس GNU General Public License بصورت رایگان در اختیار همگان میباشد.]]></message>
+	<message key="about.aboutCLASite"><![CDATA[این سایت از سیستم مجلات آزاد نسخه {$claVersion} استفاده میکند که یک نرم افزار کد باز اداره و انتشار مجلات تهیه شده توسط  <a href="http://lumera.sangia.org/">پروژه دانش عمومی</a> است که تحت لیسانس GNU General Public License بصورت رایگان در اختیار همگان میباشد.]]></message>
+<!-- اطلاعیه --><!-- راهنما -->	<message key="help.claHelp">راهنمای سیستم مجلات آزاد</message>
+	<message key="help.claHelpAbbrev">راهنمای CLA</message>
+<!-- نصب کننده -->  <message key="installer.claInstallation">نصب CLA</message>
+	<message key="installer.claUpgrade">بروز رسانی CLA</message>
+	<message key="installer.installationInstructions"><![CDATA[<h4>CLA نسخه {$version}</h4>
 
-<p>از دانلود <strong>سیستم مجلات آزاد </strong> پروژه دانش عمومی تشکر میکنیم. قبل از ادامه لطفا متن فایل  <a href="{$baseUrl}/docs/README">README</a> همراه با این نرم افزار را مطالعه بفرمائید. برای اطلاعات بیشتر در مورد پروژه دانش عمومی و پروژه های نرم افزاری آن لطفا از <a href="http://pkp.sfu.ca/" target="_blank">وب سایت PKP</a> بازدید بفرمائید. اگر میخواهید گزارش اشکال بدهید ویا بدنبال حمایت تکنیکی برای سیستم مجلات آزاد هستید به <a href="http://forum.pkp.sfu.ca">فوروم حمایت</a> مراجعه و یا از  <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">سیستم گزارش اشکال </a> آن لاین PKP بازدید کنید. اگرچه فوروم حمایت متد ترجیحی تماس میباشد ، شما میتوانید به تیم حمایت کننده به آدررس <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a> ایمیل بزنید. </p>
+<p>از دانلود <strong>سیستم مجلات آزاد </strong> پروژه دانش عمومی تشکر میکنیم. قبل از ادامه لطفا متن فایل  <a href="{$baseUrl}/docs/README">README</a> همراه با این نرم افزار را مطالعه بفرمائید. برای اطلاعات بیشتر در مورد پروژه دانش عمومی و پروژه های نرم افزاری آن لطفا از <a href="http://lumera.sangia.org/" target="_blank">وب سایت SEP</a> بازدید بفرمائید. اگر میخواهید گزارش اشکال بدهید ویا بدنبال حمایت تکنیکی برای سیستم مجلات آزاد هستید به <a href="http://forum.sep.sfu.ca">فوروم حمایت</a> مراجعه و یا از  <a href="https://github.com/sep/sep-lib#issues" target="_blank">سیستم گزارش اشکال </a> آن لاین SEP بازدید کنید. اگرچه فوروم حمایت متد ترجیحی تماس میباشد ، شما میتوانید به تیم حمایت کننده به آدررس <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a> ایمیل بزنید. </p>
 
 <h4>بروزرسانی</h4>
 
-<p>چنانچه میخواهید نسخه OJS 2.x موجود را ارتقا دهید  <a href="{$upgradeUrl}">اینجا را کلیک </a> کنید.</p>
+<p>چنانچه میخواهید نسخه CLA 2.x موجود را ارتقا دهید  <a href="{$upgradeUrl}">اینجا را کلیک </a> کنید.</p>
 
 <h4>ملزومات توصیه شده سیستم</h4>
 
@@ -477,13 +477,13 @@ http://journals.mui.ac.ir/index.php/index/index
 	<li>سیستم عامل: هر سیستم عاملی که نرم افزار های فوق را حمایت کند قابل استفاده است. شامل  <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.oracle.com/sun/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, <a href="http://www.microsoft.com/">Windows</a> میباشد.</li>
 </ul>
 
-<p>از آنجا که PKP  دارای تمام امکانات برای تست کردن بر روی هر گونه ترکیب احتمالی  از نسخه های مختلف نرم افزارهای فوق و سیستم های عامل نیست ، هیچگونه تضمینی در مورد عملکرد صحیح و یا حمایت از آن را نمیتوانیم عهده دار شویم</p>
+<p>از آنجا که SEP  دارای تمام امکانات برای تست کردن بر روی هر گونه ترکیب احتمالی  از نسخه های مختلف نرم افزارهای فوق و سیستم های عامل نیست ، هیچگونه تضمینی در مورد عملکرد صحیح و یا حمایت از آن را نمیتوانیم عهده دار شویم</p>
 
-<p>پس از خاتمه نصب برنامه میتوانید این تنظیمات را از طریق ویرایش فایل  <tt>config.inc.php</tt> در شاخه اصلی OJS ، ویا از طریق صفحه مدیریت سایت تغییر دهید.</p>
+<p>پس از خاتمه نصب برنامه میتوانید این تنظیمات را از طریق ویرایش فایل  <tt>config.inc.php</tt> در شاخه اصلی CLA ، ویا از طریق صفحه مدیریت سایت تغییر دهید.</p>
 
 <h4>سیستم های بانک اطلاعاتی مورد پشتیبانی</h4>
 
-<p>OJS در حال حاضر بر روی MySQL و PostgreSQL تست شده است. با سایر سیستم های بانک اطلاعاتی که توسط <a href="http://php.weblogs.com/adodb/" target="_blank">ADOdb</a> حمایت میشوند نیز ممکن است بصورت نسبی یا تمام عیار کار کند. گزارشات سازکاری ویا کد های وصله ای برای سایر سیستم های بانک اطلاعاتی را میتوانید به تیم OJS بفرستید</p>
+<p>CLA در حال حاضر بر روی MySQL و PostgreSQL تست شده است. با سایر سیستم های بانک اطلاعاتی که توسط <a href="http://php.weblogs.com/adodb/" target="_blank">ADOdb</a> حمایت میشوند نیز ممکن است بصورت نسبی یا تمام عیار کار کند. گزارشات سازکاری ویا کد های وصله ای برای سایر سیستم های بانک اطلاعاتی را میتوانید به تیم CLA بفرستید</p>
 
 <h4>مراحل قبل از نصب</h4>
 
@@ -502,25 +502,25 @@ http://journals.mui.ac.ir/index.php/index/index
 <h4>نصب دستی</h4>
 
 <p> <strong>نصب دستی</strong> را انتخاب کنید تا جملات SQL لازم برای ایجاد ساختار بانک اطلاعاتی و داده های مقدماتی را مشاهده کنید. بدین وسیله نصب بانک اطلاعاتی میتواند بصورت دستی صورت گیرد. این گزینه مخصوصا موقعی مفید است که بخواهید مشکلات نصب را اشکال زدائی کنید ، مخصوصا هنگام نصب بر روی سیستمهای عاملی که هنوز حمایت نشده اند. اگرچه با این روش فایل تنظیمات با مقادیر داده شده بانک اطلاعاتی نوشته میشود ولی توجه داشته باشید که با این متد ، بانک اطلاعاتی ایجاد نمیشود.</p>]]></message>
-	<message key="installer.upgradeInstructions"><![CDATA[<h4>OJS نسخه {$version}</h4>
+	<message key="installer.upgradeInstructions"><![CDATA[<h4>CLA نسخه {$version}</h4>
 	
-<p>با تشکر بخاطر دان لود  <strong>سیستم مجلات آزاد</strong> پروژه دانش عمومی قبل از ادامه ، فایل  <a href="{$baseUrl}/docs/README">README</a> و فایل <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> همراه با این نرم افزار را مطالعه بفرمائید. برای اطلاعات بیشتر در مورد پروژه دانش عمومی و و پروژههای نرم افزاری آن از  <a href="http://pkp.sfu.ca/" target="_blank">وب سایت PKP</a> دیدن فرمائید. چنانچه میخواهید گزارش اشکال بدهید ویا بدنبال حمایت تکنیکی در مورد سیستم مجلات آزاد هستید به  <a href="http://forum.pkp.sfu.ca">فوروم حمایت</a> بروید و یا از  <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">سیستم گزارش اشکال </a> آنلاین PKP بازدید کنید. اگرچه فوروم حمایت روش ترجیحی تماس است همچنین میتواید به آدرس ایمیل  <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
-<p> پیغام بفرستید. <strong>شدیدا توصیه میشود</strong>  که از بانک اطلاعاتی و پوشه فایلها و پوشه نصب OJS نسخه پشتیبان تهیه کنید.</p>
+<p>با تشکر بخاطر دان لود  <strong>سیستم مجلات آزاد</strong> پروژه دانش عمومی قبل از ادامه ، فایل  <a href="{$baseUrl}/docs/README">README</a> و فایل <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> همراه با این نرم افزار را مطالعه بفرمائید. برای اطلاعات بیشتر در مورد پروژه دانش عمومی و و پروژههای نرم افزاری آن از  <a href="http://lumera.sangia.org/" target="_blank">وب سایت SEP</a> دیدن فرمائید. چنانچه میخواهید گزارش اشکال بدهید ویا بدنبال حمایت تکنیکی در مورد سیستم مجلات آزاد هستید به  <a href="http://forum.sep.sfu.ca">فوروم حمایت</a> بروید و یا از  <a href="https://github.com/sep/sep-lib#issues" target="_blank">سیستم گزارش اشکال </a> آنلاین SEP بازدید کنید. اگرچه فوروم حمایت روش ترجیحی تماس است همچنین میتواید به آدرس ایمیل  <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
+<p> پیغام بفرستید. <strong>شدیدا توصیه میشود</strong>  که از بانک اطلاعاتی و پوشه فایلها و پوشه نصب CLA نسخه پشتیبان تهیه کنید.</p>
 <p>چنانچه در  <a href="http://www.php.net/features.safe-mode" target="_blank">مد امن PHP</a> اجرا میکنید ، لطفا توجه کنید که گزینه  max_execution_time را در فایل تنظیمات  php.ini برابر با مقدار بالائی گذاشته شود. چنانچه زمان از این مقدار و یا سایر محدوده ها مانند مقدار Apache's "Timeout"  بیشتر شود و روند بروزرسانی قطع شوددخالت دستی لازم میشود.</p>]]></message>
 	<message key="installer.localeSettingsInstructions"><![CDATA[برای حمایت کامل یونی کد UTF-8 ، برای تمام تنظیمات مجموعه کاراکتری  UTF-8 را انتخاب کنید.  توجه کنید که این نوع حمایت نیاز به  MySQL >= 4.1.1 یا PostgreSQL >= 7.1 دارد. همچنین توجه کنید که حمایت کامل یونی کد نیاز به PHP >= 4.3.0 که همرا با حمایت کتابخانه <a href="http://www.php.net/mbstring" target="_blank">mbstring</a> کمپایل شده باشد دارد. حمایت کتابخانه mbstring بصورت پیش فرض در نسخه های جدید نصب PHP فعال است. چنانچه سرور شما از این ملزومات پشتیبانی نکند شما ممکن است هنگام استفاده از مجموعه های کاراکتری توسعه یافته مشکلاتی را تجربه کنید.<br /><br />
 سرور شما در حال حاضر mbstring را حمایت میکند: <strong>{$supportsMBString}</strong>]]></message>
-	<message key="installer.localeInstructions">زبان اولیه برای استفاده با این سیستم. در صورتی که به داشتن حمایت برای زبان دیگری علاقه مند هستید به مستندات OJS مراجعه کنید.</message>
+	<message key="installer.localeInstructions">زبان اولیه برای استفاده با این سیستم. در صورتی که به داشتن حمایت برای زبان دیگری علاقه مند هستید به مستندات CLA مراجعه کنید.</message>
 	<message key="installer.additionalLocalesInstructions">زبانهای اضافی را که مایلید این سیستم پشتیبانی کند انتخاب کنید. این زبانها در دسترس مجلات این سایت برای استفاده قرار خواهند گرفت. البته زبانهای اضافی را در زمانهای دیگر نیز میتوانید از طریق صفحه مدیریت سایت نصب کنید.</message>
 	<message key="installer.filesDirInstructions"><![CDATA[آدرس کامل پوشه ای که قرار است فایل های آپلود شده را نگه دارد. بهتر اشت این پوشه مستقیما قابل دستیابی از طریق وب نباشد.  <strong>لطفا قبل از نصب برنامه اطمینان حاصل کنید که این پوشه وجود دارد و قابل نوشتن است.</strong> مسیر های آدرس برای سیستم عامل ویندوز باید اسلاش رو به جلو بکار ببرد.مانند "C:/myjournal/files".]]></message>
 	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<b>اخطار:</b> چنانچه نصب بصورت نیمه کاره رها شود ممکن است لازم شود بانک اطلاعاتی و یا جداول ایجاد شده را حذف کنید و سپس اقدام به نصب مجدد کنید.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>مهم!</h4>
 <p>برنامه نصب کننده نمی تواند بطور اتوماتیک در فایل تنظیمات بنویسد. قبل از شروع کار با سیستم لطفا فایل <tt>config.inc.php</tt> را در یک ویرایشگر مناسب متنی باز کرده و محتوای آنرا با محتوای جعبه متن زیر عوض کنید..</p>]]></message>
-	<message key="installer.installationComplete"><![CDATA[<p>نصب OJS با موفقیت پایان یافت.</p>
+	<message key="installer.installationComplete"><![CDATA[<p>نصب CLA با موفقیت پایان یافت.</p>
 <p>برای شروع کار باسیستم ، با استفاده از نام کاربری و رمز عبوری که در مرحله قبل وارد کردید به سیستم  <a href="{$loginUrl}">وارد</a> شوید.</p>
-<p>چنانچه مایلید اخبار و تازه ها را دریافت کنید <strong>لطفا در  <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a> ثبت نام کنید.</strong> چنانچه سوال یا نظری دارید لطفا از  <a href="http://forum.pkp.sfu.ca" target="_new">فوروم حمایت</a> بازدید کنید.</p>]]></message>
-	<message key="installer.upgradeComplete"><![CDATA[<p>بروزرسانی  OJS به نسخه {$version} با موفقیت پایان یافت.</p>
+<p>چنانچه مایلید اخبار و تازه ها را دریافت کنید <strong>لطفا در  <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a> ثبت نام کنید.</strong> چنانچه سوال یا نظری دارید لطفا از  <a href="http://forum.sep.sfu.ca" target="_new">فوروم حمایت</a> بازدید کنید.</p>]]></message>
+	<message key="installer.upgradeComplete"><![CDATA[<p>بروزرسانی  CLA به نسخه {$version} با موفقیت پایان یافت.</p>
 <p>فراموش نکنید که مقدار "installed" را در فایل تنظیمات  config.inc.php را دوباره به <i>On</i> برگردانید.</p>
-<p>چنانچه تا کنون ثبت نام نکرده اید و مایل هستید تا اخبار و تازه ها را دریافت کنید ، <strong>لطفا در سایت  <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a> ثبت نام کنید.</strong>  چنانچه سوال ویا نظری دارید لطفا از  <a href="http://forum.pkp.sfu.ca" target="_new">فوروم حمایت </a> دیدن کنید.</p>]]></message>
+<p>چنانچه تا کنون ثبت نام نکرده اید و مایل هستید تا اخبار و تازه ها را دریافت کنید ، <strong>لطفا در سایت  <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a> ثبت نام کنید.</strong>  چنانچه سوال ویا نظری دارید لطفا از  <a href="http://forum.sep.sfu.ca" target="_new">فوروم حمایت </a> دیدن کنید.</p>]]></message>
 <!-- لاگ مقالات -->  <message key="log.author.submitted">{$authorName} یک ساب میشن جدید وارد کرد ، ID {$submissionId}.</message>
 	<message key="log.author.documentRevised">{$authorName} مقاله  {$articleId} را اصلاح کرد. ID فایل جدید  {$fileId} میباشد.</message>
 	<message key="log.review.reviewerAssigned">{$reviewerName} برای کارشناسی مقاله  {$articleId} در دور {$round} اول کارشناسی انتساب یافت.</message>
@@ -566,8 +566,8 @@ http://journals.mui.ac.ir/index.php/index/index
 	<message key="rt.admin.options">ابزار های مورد مجله</message>
 	<message key="rt.admin.relatedItems">ابزار های مورد مربوطه</message>
 <!-- نسخه های اخ --><!-- زمینه های اخ --><!-- جستجوهای اخ --><!-- هستارهای اخ -->	<message key="rt.metadata.dublinCore.primaryAuthor">ایجاد</message>
-	<message key="rt.metadata.pkp.primaryAuthor">نام ، وابستگی ، و کشور نویسنده</message>
-	<message key="rt.metadata.pkp.peerReviewed">مقاله کارشناسی شده</message>
+	<message key="rt.metadata.sep.primaryAuthor">نام ، وابستگی ، و کشور نویسنده</message>
+	<message key="rt.metadata.sep.peerReviewed">مقاله کارشناسی شده</message>
 	<message key="rt.beNotifiedWhen">با خبر شوم وقتی که...</message>
 	<message key="rt.thisJournal">جستجوی مجله</message>
 	<message key="rt.context.authorTermsDescription">در مورد مقالا ت با بیش از یک نویسنده تمام نام ها را در حالت چک خورده باقی بگذارید تا  در مورد کارهای مشترک آنها جستجو شود. میتوانید هر بار یکی را جستجو کنید. برای اطلاع بیشتر در مورد منابع مورد جستجو بر روی ABOUT کلیک کنید. این منابع به خاطر مرتبط بودن آنها و دسترسی آزاد به آنها انتخاب شده اند.</message>
@@ -682,7 +682,7 @@ http://journals.mui.ac.ir/index.php/index/index
 	<message key="rt.admin.settings.addComment.authenticated">برای ارسال نظر خود لازم است که ثبت نام کرده و سپی وارد شوید. ارسال بصورت گمنام مقدور نیست</message>
 	<message key="rt.admin.settings.addComment.anonymous">برای ارسال نظر خود بصورت گمنام لازم است که ثبت نام کرده و سپی وارد شوید.</message>
 	<message key="rt.admin.settings.addComment.unauthenticated">برای ارسال نظرات بضورت گمنام احتیاج به ثبت نام نیست</message>
-	<message key="rt.metadata.pkp.doi">شناسه دیژیتال شیئ</message>
+	<message key="rt.metadata.sep.doi">شناسه دیژیتال شیئ</message>
 	<message key="debug.notes.currencyListLoad">لیست واحد پولهای لود شده از فایل ایکس ام ال &quot;{$filename}&quot;</message>
 	<message key="debug.notes.helpMappingLoad">فایل ری لود شده نگاشت راهنما از فایل {$filename} در جستجوی {$id}</message>
 	<message key="submission.reviewForm">فرم کارشناسی</message>
@@ -749,7 +749,7 @@ http://journals.mui.ac.ir/index.php/index/index
 	<message key="submission.event.logLevel.notice">توجه</message>
 	<message key="reader.subscriptionRequiredLoginText">برای دسیابی به این مورد نیاز به اشتراک دارید. برای تایید اشتراک ابتدا وارد سیستم شوید.</message>
 	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>
-به یکی از دلائل زیر دانلود بسته زیان از سرور PKP در حال حاضر ممکن نیست:
+به یکی از دلائل زیر دانلود بسته زیان از سرور SEP در حال حاضر ممکن نیست:
 </p>
 	<ul>
 		<li>
@@ -760,8 +760,8 @@ http://journals.mui.ac.ir/index.php/index/index
 		</li>
 	</ul>
 <p>
-بسته های زبانی را میتوان بروش دستی از سایت PKP 
-<a href="http://pkp.sfu.ca">
+بسته های زبانی را میتوان بروش دستی از سایت SEP 
+<a href="http://sep.sfu.ca">
 دانلود کرد.
 </a>.</p>]]></message>
 	<message key="subscriptionManager.individualSubscriptions">اشتراکات شخصی</message>

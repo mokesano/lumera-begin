@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 <!--
   * plugins/generic/usageStats/locale/ca_ES/locale.xml
   *
@@ -7,7 +7,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_(ca_ES)
+  * Credits: https://lumera.sangia.org/wiki/index.php?title=CLA:_Catalan_(ca_ES)
   *
   * Localization strings
   -->
@@ -28,11 +28,11 @@
 	<message key="plugins.generic.usageStats.displayName">Estadístiques d'ús</message>
 	<message key="plugins.generic.usageStats.description">Actuals objectes d'estadístiques d'ús. Pots utilitzar els fitxers de registre d'accés del servidor per a extreure'n les estadístiques.</message>
 	
-	<message key="plugins.reports.usageStats.report.displayName">Informe OJS d'estadístiques d'ús</message>
-	<message key="plugins.reports.usageStats.report.description">Informe OJS per defecte d'estadístiques d'us (compatible amb COUNTER)</message>
+	<message key="plugins.reports.usageStats.report.displayName">Informe CLA d'estadístiques d'ús</message>
+	<message key="plugins.reports.usageStats.report.description">Informe CLA per defecte d'estadístiques d'us (compatible amb COUNTER)</message>
 	
-	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
-	<message key="plugins.reports.usageStats.metricType.full">Open Journal Systems statistics (compatible amb COUNTER)</message>
+	<message key="plugins.reports.usageStats.metricType">CLA/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Code Lumera Editorial statistics (compatible amb COUNTER)</message>
 	<message key="plugins.generic.usageStats.settings.dataPrivacyOption">Opció de privacitat de dades</message>
 	<message key="plugins.generic.usageStats.settings.dataPrivacyOption.excludesCity">Activar la privacitat de dades exclou Ciutat com a estadística opcional.</message>
 	<message key="plugins.generic.usageStats.settings.dataPrivacyOption.excludesRegion">Activar la privacitat de dades exclou Regió com a estadística opcional.</message>

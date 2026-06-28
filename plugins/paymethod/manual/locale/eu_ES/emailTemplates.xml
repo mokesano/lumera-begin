@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/paymethod/manual/locale/eu_ES/emailTemplateData.xml
   *
@@ -17,7 +17,7 @@
 Ordaindu beharreko lana "{$itemName}" da.
 Kostua : {$itemCost} ({$itemCurrencyCode}).
 
-Mezu hau Open Journal Systems-en Eskuzko ordainketen pluginak sortu du.</body>
+Mezu hau Code Lumera Editorial-en Eskuzko ordainketen pluginak sortu du.</body>
 		<description>Mezu-txantiloi hau aldizkariaren kudeatzaileari eskuzko ordainketa bat eskatu dela jakinarazteko erabiltzen da.</description>
 	</email_text>
 </email_texts>

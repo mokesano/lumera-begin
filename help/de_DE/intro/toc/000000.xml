@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE toc SYSTEM "../../../../lib/pkp/dtd/helpToc.dtd">
+<!DOCTYPE toc SYSTEM "../../../../lib/sep/dtd/helpToc.dtd">
 
 <!--
   * 000000.xml
@@ -9,11 +9,11 @@
   * Weiterverbreitung nach GNU GPL v2. Die vollständigen Bedingungen für die Weiterverbreitung dieser Datei finden Sie unter docs/COPYING.
   
   * Version, erstellt durch die Freie Universität Berlin, Redaktionen Querelles-Net und Forum Qualitative Sozialforschung (FQS).
-  * Inhaltsverzeichnis zur Einführung in OJS. 
+  * Inhaltsverzeichnis zur Einführung in CLA. 
   *
   -->
 
-<toc id="intro/toc/000000" locale="de_DE" title="Einführung in OJS" parent_topic="intro/topic/000000">
+<toc id="intro/toc/000000" locale="de_DE" title="Einführung in CLA" parent_topic="intro/topic/000000">
 	<topic id="intro/topic/000001" title="FAQ" />
-	<breadcrumb url="intro/topic/000000" title="Einführung in OJS" />
+	<breadcrumb url="intro/topic/000000" title="Einführung in CLA" />
 </toc>

@@ -11,14 +11,14 @@
  * @ingroup site
  * @see Version
  *
- * @brief Provides methods to check for the latest version of OJS.
+ * @brief Provides methods to check for the latest version of CLA.
  */
 
 
 define('VERSION_CODE_PATH', 'dbscripts/xml/version.xml');
 
-import('lib.pkp.classes.db.XMLDAO');
-import('lib.pkp.classes.site.Version');
+import('lib.sep.classes.db.XMLDAO');
+import('lib.sep.classes.site.Version');
 
 class VersionCheck {
 
@@ -198,7 +198,7 @@ class VersionCheck {
 
 	/**
 	 * Checks the application's version against the latest version 
-	 * on the PKP servers.
+	 * on the SEP servers.
 	 * @return string or false if no newer version
 	 */
 	function checkIfNewVersionExists() {

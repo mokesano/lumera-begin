@@ -13,7 +13,7 @@
  * @brief Scheduled task to extract transform and load usage statistics data into database.
  */
 
-import('lib.pkp.classes.task.FileLoader');
+import('lib.sep.classes.task.FileLoader');
 
 /** These are rules defined by the COUNTER project.
  * See http://www.projectcounter.org/code_practice.htmlcode */
@@ -377,7 +377,7 @@ class UsageStatsLoader extends FileLoader {
 
 		$pathInfoDisabled = Config::getVar('general', 'disable_path_info');
 
-		// Apache and ojs log files comes with complete or partial
+		// Apache and cla log files comes with complete or partial
 		// base url, remove it so system can retrieve path, page,
 		// operation and args.
 		$url = Core::removeBaseUrl($url);
@@ -662,7 +662,7 @@ class UsageStatsLoader extends FileLoader {
 		$metricsDao->purgeLoadBatch($loadId);
 
 		while ($record =& $statsDao->getNextByLoadId($loadId)) {
-			$record['metric_type'] = OJS_METRIC_TYPE_COUNTER;
+			$record['metric_type'] = CLA_METRIC_TYPE_COUNTER;
 			$errorMsg = null;
 			if (!$metricsDao->insertRecord($record, $errorMsg)) {
 				return false;

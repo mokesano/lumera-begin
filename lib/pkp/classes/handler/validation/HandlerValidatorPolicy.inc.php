@@ -15,7 +15,7 @@
  * Please use AuthorizationPolicy classes for authorization from now on.
  */
 
-import('lib.pkp.classes.handler.validation.HandlerValidator');
+import('lib.sep.classes.handler.validation.HandlerValidator');
 
 class HandlerValidatorPolicy extends HandlerValidator {
 	/** @var AuthorizationPolicy */

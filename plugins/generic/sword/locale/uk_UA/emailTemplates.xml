@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * emailTemplates.xml
   *
@@ -19,7 +19,7 @@
 
 Щоб зробити це, натисніть {$swordDepositUrl}.
 
-Цей лист був генерований модулем депонування SWORD системи Open Journal Systems.</body>
+Цей лист був генерований модулем депонування SWORD системи Code Lumera Editorial.</body>
                <description>Цей шаблон листа використовується для повідомлення автору про можливість депонування роботи у SWORD-сумісні сховища.</description>
        </email_text>
 </email_texts>

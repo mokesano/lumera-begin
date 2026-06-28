@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file lib/pkp/controllers/grid/filter/LookupFilterGridHandler.inc.php
+ * @file lib/sep/controllers/grid/filter/LookupFilterGridHandler.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
@@ -24,7 +24,7 @@ class LookupFilterGridHandler extends FilterGridHandler {
 	}
 
 	/**
-	 * @see PKPHandler::initialize()
+	 * @see SEPHandler::initialize()
 	 */
 	function initialize($request) {
 		// Set the filter group defining the filters

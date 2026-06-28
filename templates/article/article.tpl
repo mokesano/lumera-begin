@@ -114,7 +114,7 @@
             {else}
             <li class="open-access u-text-separator-after-micro">{translate key="reader.openAccess"}</li>
             {/if}
-            <li>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.pkp.peerReviewed"}{/if}</li>            
+            <li>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.sep.peerReviewed"}{/if}</li>            
         </ul>
         <h2 class="title">{$article->getLocalizedTitle()|strip_unsafe_html}</h2>
     </div>
@@ -162,7 +162,7 @@
     {if is_a($article, 'PublishedArticle')}{assign var=galleys value=$article->getGalleys()}{/if}
         {if $galleys && $subscriptionRequired && $showGalleyLinks}
         <div id="accessKey" class="right">
-            <img src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+            <img src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
             {if $purchaseArticleEnabled}
                 {translate key="reader.subscriptionOrFeeAccess"}
             {else}
@@ -445,14 +445,14 @@
             <ul class="c-bibliographic-information__list">
             {if $article->getLocalizedDiscipline()}    
                 <li class="c-bibliographic-information__list-item">
-                    <h5>{translate key="rt.metadata.pkp.discipline"}</h5>
+                    <h5>{translate key="rt.metadata.sep.discipline"}</h5>
                     <p class="c-bibliographic-information__value">{$article->getLocalizedDiscipline()|escape}</p>
                 </li>
             {/if}
             
             {if $article->getLocalizedSubjectClass()}
                 <li class="c-bibliographic-information__list-item">
-                    <h5>Sub-{translate key="rt.metadata.pkp.discipline"}</h5>
+                    <h5>Sub-{translate key="rt.metadata.sep.discipline"}</h5>
                     <p class="c-bibliographic-information__value">{$article->getLocalizedSubjectClass()|escape}</p>
                 </li>
             {/if}
@@ -631,7 +631,7 @@
             {else}
             <li class="open-access u-text-separator-after-micro">{translate key="reader.openAccess"}</li>
             {/if}
-            <li>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.pkp.peerReviewed"}{/if}</li>            
+            <li>{if $section && $section->getLocalizedIdentifyType()}{$section->getLocalizedIdentifyType()|escape}{else}{translate key="rt.metadata.sep.peerReviewed"}{/if}</li>            
         </ul>
         <h2 class="title">{$article->getLocalizedTitle()|strip_unsafe_html}</h2>
     </div>
@@ -702,7 +702,7 @@
     {if is_a($article, 'PublishedArticle')}{assign var=galleys value=$article->getGalleys()}{/if}
         {if $subscriptionRequired && $showGalleyLinks && !$restrictOnlyPdf}
         <div id="accessKey" class="right">
-            <img src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+            <img src="{$baseUrl}/lib/sep/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
             {if $purchaseArticleEnabled}
                 {translate key="reader.subscriptionOrFeeAccess"}
             {else}
@@ -981,14 +981,14 @@
             <ul class="c-bibliographic-information__list">
             {if $article->getLocalizedDiscipline()}    
                 <li class="c-bibliographic-information__list-item">
-                    <h5>{translate key="rt.metadata.pkp.discipline"}</h5>
+                    <h5>{translate key="rt.metadata.sep.discipline"}</h5>
                     <p class="c-bibliographic-information__value">{$article->getLocalizedDiscipline()|escape}</p>
                 </li>
             {/if}
             
             {if $article->getLocalizedSubjectClass()}
                 <li class="c-bibliographic-information__list-item">
-                    <h5>Sub-{translate key="rt.metadata.pkp.discipline"}</h5>
+                    <h5>Sub-{translate key="rt.metadata.sep.discipline"}</h5>
                     <p class="c-bibliographic-information__value">{$article->getLocalizedSubjectClass()|escape}</p>
                 </li>
             {/if}

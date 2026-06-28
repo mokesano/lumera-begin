@@ -1,18 +1,18 @@
-# Mason Publishing Group Theme for OJS
+# Mason Publishing Group Theme for CLA
 
 *Currently in Beta*
 
-Responsive and modern theme for OJS journals, created for journals published by the Mason Publishing Group, part of the George Mason University Libraries. The theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY.
+Responsive and modern theme for CLA journals, created for journals published by the Mason Publishing Group, part of the George Mason University Libraries. The theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY.
 
-A big "Thank you!" to [Carleton University Libraries](https://github.com/cu-library/OJS-Modern-Theme) for the example of creating OJS themes with template files.
+A big "Thank you!" to [Carleton University Libraries](https://github.com/cu-library/CLA-Modern-Theme) for the example of creating CLA themes with template files.
 
 ## Installation
 
-To install the mpg theme, upload the theme folder to the plugins/themes directory of your OJS installation. You will then be able to select the Mason Publishing Theme from the dropdown list of available themes.
+To install the mpg theme, upload the theme folder to the plugins/themes directory of your CLA installation. You will then be able to select the Mason Publishing Theme from the dropdown list of available themes.
 
 **Update: You will need to rename the theme folder to `mpg` in order for the theme to install properly.**
 
-## Changing Color Scheme within the OJS interface
+## Changing Color Scheme within the CLA interface
 
 For simple customizations of the theme, upload a CSS style sheet in Journal Setup, Step 5.6. 
 
@@ -72,16 +72,16 @@ nav a:active {
 
 If you wish to make more expansive changes to the theme, you will need to edit the sass files and/or page templates. The theme uses [Compass](http://compass-style.org/), a Ruby-based CSS authoring framework, and [Susy](http://susy.oddbird.net/), a Ruby-based grid system. Gem versions are documented in the Gemfile. To use, make style changes to files in the css/sass folder and then recompile using `compass compile`, or if installed using bundler (recommended), `bundle exec compass compile`. The theme is responsive, but not mobile first.
 
-The template files provide a copy the standard page templates in the OJS base directories. Some of the tables have been streamlined for consistency and to aid with mobile-friendly styling. A major upgrade to OJS may break the ability for the system to read the Mason Publishing theme.
+The template files provide a copy the standard page templates in the CLA base directories. Some of the tables have been streamlined for consistency and to aid with mobile-friendly styling. A major upgrade to CLA may break the ability for the system to read the Mason Publishing theme.
 
 ## Questions or Contributions
 
 Please use the Github issues to report any bugs. Pull requests are welcome!
 
 
-## PKP Software License:
-This software is released under the the [GNU General Public License](https://github.com/pkp/ojs/blob/master/docs/COPYING).
+## SEP Software License:
+This software is released under the the [GNU General Public License](https://github.com/sep/cla/blob/master/docs/COPYING).
 
-See the file [COPYING](https://github.com/pkp/ojs/blob/master/docs/COPYING) included with this distribution for the terms of this license.
+See the file [COPYING](https://github.com/sep/cla/blob/master/docs/COPYING) included with this distribution for the terms of this license.
 
-Third parties are welcome to modify and redistribute OJS in entirety or parts according to the terms of this license. PKP also welcomes patches for improvements or bug fixes to the software.
+Third parties are welcome to modify and redistribute CLA in entirety or parts according to the terms of this license. SEP also welcomes patches for improvements or bug fixes to the software.

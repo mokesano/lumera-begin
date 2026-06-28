@@ -1,25 +1,25 @@
 <?php
 
 /**
- * @file classes/core/PKPHandler.inc.php
+ * @file classes/core/SEPHandler.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @package core
- * @class PKPHandler
+ * @class SEPHandler
  *
  * Base request handler abstract class.
  *
  */
 
 // FIXME: remove these import statements - handler validators are deprecated.
-import('lib.pkp.classes.handler.validation.HandlerValidator');
-import('lib.pkp.classes.handler.validation.HandlerValidatorRoles');
-import('lib.pkp.classes.handler.validation.HandlerValidatorCustom');
+import('lib.sep.classes.handler.validation.HandlerValidator');
+import('lib.sep.classes.handler.validation.HandlerValidatorRoles');
+import('lib.sep.classes.handler.validation.HandlerValidatorCustom');
 
-class PKPHandler {
+class SEPHandler {
 	/**
 	 * @var string identifier of the controller instance - must be unique
 	 *  among all instances of a given controller type.
@@ -48,7 +48,7 @@ class PKPHandler {
 	/**
 	 * Constructor
 	 */
-	function PKPHandler() {
+	function SEPHandler() {
 	}
 
 	//
@@ -86,7 +86,7 @@ class PKPHandler {
 
 	/**
 	 * Set the dispatcher
-	 * @param $dispatcher PKPDispatcher
+	 * @param $dispatcher SEPDispatcher
 	 */
 	function setDispatcher(&$dispatcher) {
 		$this->_dispatcher =& $dispatcher;
@@ -120,7 +120,7 @@ class PKPHandler {
 	 *
 	 * Policies must be added in the class constructor or in the
 	 * subclasses' authorize() method before the parent::authorize()
-	 * call so that PKPHandler::authorize() will be able to enforce
+	 * call so that SEPHandler::authorize() will be able to enforce
 	 * them.
 	 *
 	 * @param $authorizationPolicy AuthorizationPolicy
@@ -130,7 +130,7 @@ class PKPHandler {
 	function addPolicy(&$authorizationPolicy, $addToTop = false) {
 		if (is_null($this->_authorizationDecisionManager)) {
 			// Instantiate the authorization decision manager
-			import('lib.pkp.classes.security.authorization.AuthorizationDecisionManager');
+			import('lib.sep.classes.security.authorization.AuthorizationDecisionManager');
 			$this->_authorizationDecisionManager = new AuthorizationDecisionManager();
 		}
 
@@ -250,12 +250,12 @@ class PKPHandler {
 	 */
 	function authorize(&$request, &$args, $roleAssignments) {
 		// Enforce restricted site access.
-		import('lib.pkp.classes.security.authorization.RestrictedSiteAccessPolicy');
+		import('lib.sep.classes.security.authorization.RestrictedSiteAccessPolicy');
 		$this->addPolicy(new RestrictedSiteAccessPolicy($request), true);
 
 		// Enforce SSL site-wide.
 		if ($this->requireSSL()) {
-			import('lib.pkp.classes.security.authorization.HttpsPolicy');
+			import('lib.sep.classes.security.authorization.HttpsPolicy');
 			$this->addPolicy(new HttpsPolicy($request), true);
 		}
 
@@ -263,7 +263,7 @@ class PKPHandler {
 			// Add user roles in authorized context.
 			$user = $request->getUser();
 			if (is_a($user, 'User')) {
-				import('lib.pkp.classes.security.authorization.UserRolesRequiredPolicy');
+				import('lib.sep.classes.security.authorization.UserRolesRequiredPolicy');
 				$this->addPolicy(new UserRolesRequiredPolicy($request), true);
 			}
 		}
@@ -272,7 +272,7 @@ class PKPHandler {
 		assert(is_a($this->_authorizationDecisionManager, 'AuthorizationDecisionManager'));
 
 		$router =& $request->getRouter();
-		if (is_a($router, 'PKPPageRouter')) {
+		if (is_a($router, 'SEPPageRouter')) {
 			// We have to apply a blacklist approach for page
 			// controllers to maintain backwards compatibility:
 			// Requests are implicitly authorized if no policy
@@ -324,7 +324,7 @@ class PKPHandler {
 			// WARNING: This line is for PHP4 compatibility when
 			// instantiating handlers without reference. Should not
 			// be removed or otherwise used.
-			// See <http://pkp.sfu.ca/wiki/index.php/Information_for_Developers#Use_of_.24this_in_the_constructor>
+			// See <http://lumera.sangia.org/wiki/index.php/Information_for_Developers#Use_of_.24this_in_the_constructor>
 			// for a similar problem.
 			$check->_setHandler($this);
 
@@ -351,7 +351,7 @@ class PKPHandler {
 	 * NB: This method will be called after validation and
 	 * authorization.
 	 *
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $args array
 	 */
 	function initialize(&$request, $args = null) {
@@ -359,7 +359,7 @@ class PKPHandler {
 		// page (page routing) or component name
 		// (component routing) by default.
 		$router =& $request->getRouter();
-		if (is_a($router, 'PKPComponentRouter')) {
+		if (is_a($router, 'SEPComponentRouter')) {
 			$componentId = $router->getRequestedComponent($request);
 			// Create a somewhat compressed but still globally unique
 			// and human readable component id.
@@ -368,7 +368,7 @@ class PKPHandler {
 			$componentId = str_replace('.', '-', String::strtolower(String::substr($componentId, 0, -7)));
 			$this->setId($componentId);
 		} else {
-			assert(is_a($router, 'PKPPageRouter'));
+			assert(is_a($router, 'SEPPageRouter'));
 			$this->setId($router->getRequestedPage($request));
 		}
 	}
@@ -382,17 +382,17 @@ class PKPHandler {
 	 * @return array ($pageNum, $dbResultRange)
 	 */
 	function &getRangeInfo($rangeName, $contextData = null) {
-		//FIXME: is there any way to get around calling a Request (instead of a PKPRequest) here?
+		//FIXME: is there any way to get around calling a Request (instead of a SEPRequest) here?
 		$context =& Request::getContext();
-		$pageNum = PKPRequest::getUserVar($rangeName . 'Page');
+		$pageNum = SEPRequest::getUserVar($rangeName . 'Page');
 		if (empty($pageNum)) {
-			$session =& PKPRequest::getSession();
+			$session =& SEPRequest::getSession();
 			$pageNum = 1; // Default to page 1
 			if ($session && $contextData !== null) {
 				// See if we can get a page number from a prior request
-				$contextHash = PKPHandler::hashPageContext($contextData);
+				$contextHash = SEPHandler::hashPageContext($contextData);
 
-				if (PKPRequest::getUserVar('clearPageContext')) {
+				if (SEPRequest::getUserVar('clearPageContext')) {
 					// Explicitly clear the old page context
 					$session->unsetSessionVar("page-$contextHash");
 				} else {
@@ -401,10 +401,10 @@ class PKPHandler {
 				}
 			}
 		} else {
-			$session =& PKPRequest::getSession();
+			$session =& SEPRequest::getSession();
 			if ($session && $contextData !== null) {
 				// Store the page number
-				$contextHash = PKPHandler::hashPageContext($contextData);
+				$contextHash = SEPHandler::hashPageContext($contextData);
 				$session->setSessionVar("page-$contextHash", $pageNum);
 			}
 		}
@@ -412,7 +412,7 @@ class PKPHandler {
 		if ($context) $count = $context->getSetting('itemsPerPage');
 		if (!isset($count)) $count = Config::getVar('interface', 'items_per_page');
 
-		import('lib.pkp.classes.db.DBResultRange');
+		import('lib.sep.classes.db.DBResultRange');
 
 		if (isset($count)) $returner = new DBResultRange($count, $pageNum);
 		else $returner = new DBResultRange(-1, -1);
@@ -422,8 +422,8 @@ class PKPHandler {
 
 	function setupTemplate() {
 		AppLocale::requireComponents(
-			LOCALE_COMPONENT_PKP_COMMON,
-			LOCALE_COMPONENT_PKP_USER
+			LOCALE_COMPONENT_SEP_COMMON,
+			LOCALE_COMPONENT_SEP_USER
 		);
 		if (defined('LOCALE_COMPONENT_APPLICATION_COMMON')) {
 			AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON);
@@ -457,7 +457,7 @@ class PKPHandler {
 	 * @return array
 	 */
 	function getLoginExemptions() {
-		import('lib.pkp.classes.security.authorization.RestrictedSiteAccessPolicy');
+		import('lib.sep.classes.security.authorization.RestrictedSiteAccessPolicy');
 		return RestrictedSiteAccessPolicy::_getLoginExemptions();
 	}
 

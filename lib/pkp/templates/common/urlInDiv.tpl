@@ -13,8 +13,8 @@
 	// Initialise JS handler.
 	<!--
 	$(function() {ldelim}
-		$('#{$inDivDivId|escape:"js"}').pkpHandler(
-			'$.pkp.controllers.UrlInDivHandler',
+		$('#{$inDivDivId|escape:"js"}').sepHandler(
+			'$.sep.controllers.UrlInDivHandler',
 			{ldelim}
 				sourceUrl: '{$inDivUrl|escape:"javascript"}'
 			{rdelim}

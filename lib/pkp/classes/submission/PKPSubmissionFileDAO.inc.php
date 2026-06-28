@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file classes/submission/PKPSubmissionFileDAO.inc.php
+ * @file classes/submission/SEPSubmissionFileDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPSubmissionFileDAO
+ * @class SEPSubmissionFileDAO
  * @ingroup submission
  * @see SubmissionFile
  * @see SubmissionFileDAODelegate
@@ -30,10 +30,10 @@
  * between DAO implementations.
  */
 
-import('lib.pkp.classes.file.PKPFileDAO');
+import('lib.sep.classes.file.SEPFileDAO');
 
 
-class PKPSubmissionFileDAO extends PKPFileDAO {
+class SEPSubmissionFileDAO extends SEPFileDAO {
 	/**
 	 * @var array a private list of delegates that provide operations for
 	 *  different SubmissionFile implementations.
@@ -43,7 +43,7 @@ class PKPSubmissionFileDAO extends PKPFileDAO {
 	/**
 	 * Constructor
 	 */
-	function PKPSubmissionFileDAO() {
+	function SEPSubmissionFileDAO() {
 		parent::DAO();
 	}
 
@@ -303,7 +303,7 @@ class PKPSubmissionFileDAO extends PKPFileDAO {
 			$previousFilePath = $previousFile->getFilePath();
 			$targetFilePath = $updatedFile->getFilePath();
 			assert($previousFilePath != $targetFilePath && !file_exists($targetFilePath));
-			import('lib.pkp.classes.file.FileManager');
+			import('lib.sep.classes.file.FileManager');
 			$fileManager = new FileManager();
 			$fileManager->copyFile($previousFilePath, $targetFilePath);
 
@@ -747,7 +747,7 @@ class PKPSubmissionFileDAO extends PKPFileDAO {
 			// Instantiate the file and add it to the
 			// result array with a unique key.
 			// N.B. The subclass implementation of fromRow receives just the $row
-			// but calls PKPSubmissionFileDAO::fromRow($row, $fileImplementation) as defined here.
+			// but calls SEPSubmissionFileDAO::fromRow($row, $fileImplementation) as defined here.
 			$submissionFiles[$idAndRevision] =& $this->fromRow($row);
 
 			// Move the query cursor to the next record.

@@ -1,24 +1,24 @@
 <?php
 
 /**
- * @file classes/announcement/PKPAnnouncementType.inc.php
+ * @file classes/announcement/SEPAnnouncementType.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPAnnouncementType
+ * @class SEPAnnouncementType
  * @ingroup announcement
- * @see AnnouncementTypeDAO, AnnouncementTypeForm, PKPAnnouncementTypeDAO, PKPAnnouncementTypeForm
+ * @see AnnouncementTypeDAO, AnnouncementTypeForm, SEPAnnouncementTypeDAO, SEPAnnouncementTypeForm
  *
  * @brief Basic class describing an announcement type.
  */
 
-class PKPAnnouncementType extends DataObject {
+class SEPAnnouncementType extends DataObject {
 	/**
 	 * Constructor
 	 */
-	function PKPAnnouncementType() {
+	function SEPAnnouncementType() {
 		parent::DataObject();
 	}
 

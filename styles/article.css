@@ -1380,7 +1380,7 @@ ol#results-list {
   word-break: break-word;
   display: inline-block;
 }
-.pkp_controllers_extrasOnDemand .toggleExtras {
+.sep_controllers_extrasOnDemand .toggleExtras {
   float: left;
   margin: 0;
   font-family: Georgia,Arial,sans-serif;
@@ -1847,32 +1847,32 @@ h7 {
     width: auto;
     font-size: 0.8em;
 }
-#pkp-search-authorIndex #content {
+#sep-search-authorIndex #content {
     padding-right: 2%;
     padding-left: 2.7%
 }
-#pkp-search-authorName #main h2, #pkp-search-authorDetails #main h2 {
+#sep-search-authorName #main h2, #sep-search-authorDetails #main h2 {
     display: none;
 }
 #sidebarFontSize {
     display: none;
 }
-#pkp-search-authorDetails #sidebar #sidebarKeywordCloud, #pkp-search-authorDetails #sidebar .custom, 
-#pkp-search-authorDetails #sidebar #sidebarUser, #pkp-search-authorDetails #sidebar #sidebarHelp, #pkp-search-authorDetails #sidebar #sidebarDevelopedBy,
-#pkp-search-titleIndex #sidebar #sidebarKeywordCloud, #pkp-search-titleIndex #sidebar .custom, 
-#pkp-search-titleIndex #sidebar #sidebarUser, #pkp-search-titleIndex #sidebar #sidebarDevelopedBy, 
-#pkp-search-titleIndex #sidebar #sidebarHelp, #pkp-search-titleIndex #sidebar #sidebarLanguageToggle,
-#pkp-search-authorIndex #sidebar #sidebarDevelopedBy, #pkp-search-authorIndex #sidebar #sidebarHelp,
-#pkp-search-authorIndex #sidebar #sidebarUser, #pkp-search-authorIndex #sidebar #sidebarLanguageToggle,
-#pkp-search-authorIndex #sidebar #sidebarKeywordCloud, #pkp-search-authorIndex #sidebar #customblock-ISSN-Print,
-#pkp-search-authorIndex #sidebar #customblock-Plagiarisme, #pkp-search-authorIndex #sidebar #customblock-CrossRef,
-#pkp-navigation-search #sidebar #sidebarDevelopedBy, #pkp-navigation-search #sidebar #sidebarHelp,
-#pkp-navigation-search #sidebar #sidebarUser, #pkp-navigation-search #sidebar #sidebarLanguageToggle,
-#pkp-navigation-search #sidebar #sidebarKeywordCloud, #pkp-navigation-search #sidebar #customblock-ISSN-Print,
-#pkp-navigation-search #sidebar #customblock-Plagiarisme, #pkp-navigation-search #sidebar #customblock-CrossRef,
-#pkp-common-openJournalSystems #sidebar #sidebarDevelopedBy, #pkp-common-openJournalSystems #sidebar #sidebarHelp,
-#pkp-common-openJournalSystems #sidebar #sidebarLanguageToggle, #pkp-navigation-categories #sidebar #sidebarHelp, #pkp-navigation-categories #sidebar #sidebarDevelopedBy,
-#pkp-navigation-categories #sidebar #sidebarLanguageToggle {
+#sep-search-authorDetails #sidebar #sidebarKeywordCloud, #sep-search-authorDetails #sidebar .custom, 
+#sep-search-authorDetails #sidebar #sidebarUser, #sep-search-authorDetails #sidebar #sidebarHelp, #sep-search-authorDetails #sidebar #sidebarDevelopedBy,
+#sep-search-titleIndex #sidebar #sidebarKeywordCloud, #sep-search-titleIndex #sidebar .custom, 
+#sep-search-titleIndex #sidebar #sidebarUser, #sep-search-titleIndex #sidebar #sidebarDevelopedBy, 
+#sep-search-titleIndex #sidebar #sidebarHelp, #sep-search-titleIndex #sidebar #sidebarLanguageToggle,
+#sep-search-authorIndex #sidebar #sidebarDevelopedBy, #sep-search-authorIndex #sidebar #sidebarHelp,
+#sep-search-authorIndex #sidebar #sidebarUser, #sep-search-authorIndex #sidebar #sidebarLanguageToggle,
+#sep-search-authorIndex #sidebar #sidebarKeywordCloud, #sep-search-authorIndex #sidebar #customblock-ISSN-Print,
+#sep-search-authorIndex #sidebar #customblock-Plagiarisme, #sep-search-authorIndex #sidebar #customblock-CrossRef,
+#sep-navigation-search #sidebar #sidebarDevelopedBy, #sep-navigation-search #sidebar #sidebarHelp,
+#sep-navigation-search #sidebar #sidebarUser, #sep-navigation-search #sidebar #sidebarLanguageToggle,
+#sep-navigation-search #sidebar #sidebarKeywordCloud, #sep-navigation-search #sidebar #customblock-ISSN-Print,
+#sep-navigation-search #sidebar #customblock-Plagiarisme, #sep-navigation-search #sidebar #customblock-CrossRef,
+#sep-common-openJournalSystems #sidebar #sidebarDevelopedBy, #sep-common-openJournalSystems #sidebar #sidebarHelp,
+#sep-common-openJournalSystems #sidebar #sidebarLanguageToggle, #sep-navigation-categories #sidebar #sidebarHelp, #sep-navigation-categories #sidebar #sidebarDevelopedBy,
+#sep-navigation-categories #sidebar #sidebarLanguageToggle {
     display: none;
 }
     #authorDetails.details {
@@ -1984,7 +1984,7 @@ ul.sidemenu li a:hover {
     /*! border-bottom: 1px dotted #333; */
     font-size: .6em;
 }
-#pkp-search-titleIndex #main>h2 {
+#sep-search-titleIndex #main>h2 {
     padding: 0px;
     font-size: 100%;
     font-family: Georgia,serif;
@@ -2755,7 +2755,7 @@ table.announcementsMore {
   float: left;
   padding: 0 !important;
 }
-#pkp-article-suppFile #headerTitle h1, #pkp-rt-suppFiles #headerTitle h1 {
+#sep-article-suppFile #headerTitle h1, #sep-rt-suppFiles #headerTitle h1 {
     width: 100%;
 }
 #journal #main {
@@ -3975,7 +3975,7 @@ query for retina AND a certain size if you want. Go Nuts.
         max-width: 100%;
         margin: 0;
     }
-    #pkp-search-titleIndex #main > h2 {
+    #sep-search-titleIndex #main > h2 {
         width: 100%;
         padding: 0;
     }
@@ -4037,7 +4037,7 @@ query for retina AND a certain size if you want. Go Nuts.
         width: 100%;
         max-width: 100%;
     }
-    #pkp-search-authorIndex #main h2, #pkp-search-authorIndex #content {
+    #sep-search-authorIndex #main h2, #sep-search-authorIndex #content {
         margin: 0 2.7% 0 5%;
         padding: 1% 0;
     }
@@ -4261,7 +4261,7 @@ Responsive Structure end from OpenS
         width: auto;
         max-width: 100%;
     }
-    #pkp-search-titleIndex #main h2 {
+    #sep-search-titleIndex #main h2 {
         width: 100%;
         margin: 0;
         padding: 0 10px;

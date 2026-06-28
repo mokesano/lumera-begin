@@ -40,7 +40,7 @@
  */
 
 
-import('lib.pkp.classes.core.DataObject');
+import('lib.sep.classes.core.DataObject');
 
 class FilterGroup extends DataObject {
 	/**

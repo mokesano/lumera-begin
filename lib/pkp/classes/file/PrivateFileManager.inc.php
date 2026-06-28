@@ -13,7 +13,7 @@
  * @brief Class defining operations for private file management.
  */
 
-import('lib.pkp.classes.file.FileManager');
+import('lib.sep.classes.file.FileManager');
 
 class PrivateFileManager extends FileManager {
 	/**

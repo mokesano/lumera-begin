@@ -86,7 +86,7 @@ class PubMedExportPlugin extends ImportExportPlugin {
 			case 'issues':
 				// Display a list of issues for export
 				$this->setBreadcrumbs(array(), true);
-				AppLocale::requireComponents(LOCALE_COMPONENT_OJS_EDITOR);
+				AppLocale::requireComponents(LOCALE_COMPONENT_CLA_EDITOR);
 				$issueDao =& DAORegistry::getDAO('IssueDAO');
 				$issues =& $issueDao->getIssues($journal->getId(), Handler::getRangeInfo('issues'));
 
@@ -101,7 +101,7 @@ class PubMedExportPlugin extends ImportExportPlugin {
 				$articleIds = $publishedArticleDao->getPublishedArticleIdsByJournal($journal->getId(), false);
 				$totalArticles = count($articleIds);
 				if ($rangeInfo->isValid()) $articleIds = array_slice($articleIds, $rangeInfo->getCount() * ($rangeInfo->getPage()-1), $rangeInfo->getCount());
-				import('lib.pkp.classes.core.VirtualArrayIterator');
+				import('lib.sep.classes.core.VirtualArrayIterator');
 				$iterator = new VirtualArrayIterator(ArticleSearch::formatResults($articleIds), $totalArticles, $rangeInfo->getPage(), $rangeInfo->getCount());
 				$templateMgr->assign_by_ref('articles', $iterator);
 				$templateMgr->display($this->getTemplatePath() . 'articles.tpl');

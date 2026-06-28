@@ -26,7 +26,7 @@ class AboutHandler extends Handler {
 	/**
 	 * Display about index page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$this->validate();
@@ -54,8 +54,8 @@ class AboutHandler extends Handler {
 			}
 			
 			// Hide membership if the payment method is not configured
-			import('classes.payment.ojs.OJSPaymentManager');
-			$paymentManager = new OJSPaymentManager($request);
+			import('classes.payment.cla.CLAPaymentManager');
+			$paymentManager = new CLAPaymentManager($request);
 			$templateMgr->assign('paymentConfigured', $paymentManager->isConfigured());
 
 			if ($journal->getSetting('boardEnabled')) {
@@ -87,7 +87,7 @@ class AboutHandler extends Handler {
 		$templateMgr =& TemplateManager::getManager();
 		$journal =& Request::getJournal();
 		
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_MANAGER, LOCALE_COMPONENT_PKP_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_MANAGER, LOCALE_COMPONENT_SEP_MANAGER);
 
 		if (!$journal || !$journal->getSetting('restrictSiteAccess')) {
 			$templateMgr->setCacheability(CACHEABILITY_PUBLIC);
@@ -309,7 +309,7 @@ class AboutHandler extends Handler {
 	/**
 	 * Display editorialPolicies page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editorialPolicies($args, &$request) {
 		$this->addCheck(new HandlerValidatorJournal($this));
@@ -332,8 +332,8 @@ class AboutHandler extends Handler {
 		}
 		$templateMgr->assign_by_ref('sectionEditorEntriesBySection', $sectionEditorEntriesBySection);
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$templateMgr->assign('paymentConfigured', $paymentManager->isConfigured());
 
 		$templateMgr->display('about/editorialPolicies.tpl');
@@ -342,7 +342,7 @@ class AboutHandler extends Handler {
 	/**
 	 * Display subscriptions page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function subscriptions($args, &$request) {
 		$this->addCheck(new HandlerValidatorJournal($this));
@@ -365,8 +365,8 @@ class AboutHandler extends Handler {
 		$individualSubscriptionTypes =& $subscriptionTypeDao->getSubscriptionTypesByInstitutional($journalId, false, false);
 		$institutionalSubscriptionTypes =& $subscriptionTypeDao->getSubscriptionTypesByInstitutional($journalId, true, false);
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptGiftSubscriptionPayments = $paymentManager->acceptGiftSubscriptionPayments();
 
 		$templateMgr =& TemplateManager::getManager();
@@ -386,7 +386,7 @@ class AboutHandler extends Handler {
 	/**
 	 * Display subscriptions page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function memberships($args, &$request) {
 		$this->addCheck(new HandlerValidatorJournal($this));
@@ -396,8 +396,8 @@ class AboutHandler extends Handler {
 		$journal =& Request::getJournal();
 		$journalId = $journal->getId();
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 
 		$membershipEnabled = $paymentManager->membershipEnabled();
 
@@ -528,7 +528,7 @@ class AboutHandler extends Handler {
 		$version =& $versionDao->getCurrentVersion();
 
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->assign('ojsVersion', $version->getVersionString());
+		$templateMgr->assign('claVersion', $version->getVersionString());
 
 		foreach (array(AppLocale::getLocale(), $primaryLocale = AppLocale::getPrimaryLocale(), 'en_US') as $locale) {
 			$edProcessFile = "locale/$locale/edprocesslarge.png";

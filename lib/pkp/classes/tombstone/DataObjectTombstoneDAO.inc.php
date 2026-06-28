@@ -14,7 +14,7 @@
  * @brief Base class for retrieving and modifying DataObjectTombstone objects.
  */
 
-import('lib.pkp.classes.tombstone.DataObjectTombstone');
+import('lib.sep.classes.tombstone.DataObjectTombstone');
 
 class DataObjectTombstoneDAO extends DAO {
 	/**

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE toc SYSTEM "../../../../lib/pkp/dtd/helpToc.dtd">
+<!DOCTYPE toc SYSTEM "../../../../lib/sep/dtd/helpToc.dtd">
 
 <!--
   * 000000.xml
@@ -8,12 +8,12 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Table of contents for Introduction to OJS. 
+  * Table of contents for Introduction to CLA. 
   * Thanks to AePIC Team CILEA.
   *
   -->
 
-<toc id="intro/toc/000000" locale="it_IT" title="Introduzione a OJS" parent_topic="intro/topic/000000">
+<toc id="intro/toc/000000" locale="it_IT" title="Introduzione a CLA" parent_topic="intro/topic/000000">
 	<topic id="intro/topic/000001" title="FAQ" />
-	<breadcrumb url="intro/topic/000000" title="Introduzione a OJS" />
+	<breadcrumb url="intro/topic/000000" title="Introduzione a CLA" />
 </toc>

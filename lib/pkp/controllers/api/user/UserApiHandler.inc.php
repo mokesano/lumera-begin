@@ -17,29 +17,29 @@
  */
 
 // import the base Handler
-import('lib.pkp.classes.handler.PKPHandler');
+import('lib.sep.classes.handler.SEPHandler');
 
 // import JSON class for API responses
-import('lib.pkp.classes.core.JSONMessage');
+import('lib.sep.classes.core.JSONMessage');
 
-class UserApiHandler extends PKPHandler {
+class UserApiHandler extends SEPHandler {
 	/**
 	 * Constructor.
 	 */
 	function UserApiHandler() {
-		parent::PKPHandler();
+		parent::SEPHandler();
 	}
 
 
 	//
-	// Implement template methods from PKPHandler
+	// Implement template methods from SEPHandler
 	//
 	/**
-	 * @see PKPHandler::authorize()
+	 * @see SEPHandler::authorize()
 	 */
 	function authorize(&$request, $args, $roleAssignments) {
-		import('lib.pkp.classes.security.authorization.PKPSiteAccessPolicy');
-		$this->addPolicy(new PKPSiteAccessPolicy(
+		import('lib.sep.classes.security.authorization.SEPSiteAccessPolicy');
+		$this->addPolicy(new SEPSiteAccessPolicy(
 			$request,
 			array('updateUserMessageState'),
 			SITE_ACCESS_ALL_ROLES
@@ -55,7 +55,7 @@ class UserApiHandler extends PKPHandler {
 	 * Update the information whether user messages should be
 	 * displayed or not.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string a JSON message
 	 */
 	function updateUserMessageState($args, &$request) {

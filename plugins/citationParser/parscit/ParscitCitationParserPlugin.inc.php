@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationParser.parscit.PKPParscitCitationParserPlugin');
+import('lib.sep.plugins.citationParser.parscit.SEPParscitCitationParserPlugin');
 
-class ParscitCitationParserPlugin extends PKPParscitCitationParserPlugin {
+class ParscitCitationParserPlugin extends SEPParscitCitationParserPlugin {
 	/**
 	 * Constructor
 	 */
 	function ParscitCitationParserPlugin() {
-		parent::PKPParscitCitationParserPlugin();
+		parent::SEPParscitCitationParserPlugin();
 	}
 }
 

@@ -9,19 +9,19 @@
  *
  * @class SiteSettingsForm
  * @ingroup admin_form
- * @see PKPSiteSettingsForm
+ * @see SEPSiteSettingsForm
  *
  * @brief Form to edit site settings.
  */
 
-import('lib.pkp.classes.admin.form.PKPSiteSettingsForm');
+import('lib.sep.classes.admin.form.SEPSiteSettingsForm');
 
-class SiteSettingsForm extends PKPSiteSettingsForm {
+class SiteSettingsForm extends SEPSiteSettingsForm {
 	/**
 	 * Constructor.
 	 */
 	function SiteSettingsForm() {
-		parent::PKPSiteSettingsForm();
+		parent::SEPSiteSettingsForm();
 	}
 
 	/**
@@ -43,7 +43,7 @@ class SiteSettingsForm extends PKPSiteSettingsForm {
 
 		$templateMgr->assign('redirectOptions', $journals);
 
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$templateMgr->assign('availableMetricTypes', $application->getMetricTypes(true));
 
 		return parent::display();

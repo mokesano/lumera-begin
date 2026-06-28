@@ -485,7 +485,7 @@ class BooksForReviewEditorHandler extends Handler {
 		$editorId = $user->getId();
 		$rangeInfo = Handler::getRangeInfo('submissions');
 
-		import('lib.pkp.classes.db.DAO');
+		import('lib.sep.classes.db.DAO');
 		$submissions =& $editorSubmissionDao->getEditorSubmissions(
 			$journalId,
 			0,

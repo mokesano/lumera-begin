@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/eu_ES/manager.xml
@@ -23,7 +23,7 @@
 	<message key="manager.journalManagement">Aldizkariaren kudeaketa</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Locale honentzat zehaztu dituzun aldizkari-ezarpen guztiak ordeztuko ditu ekintza honek.</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Birkargatu locale hizkuntza-paketearen ezarpen lehenetsiak.</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS hainbat  hizkuntzatan jar daiteke erabilgarri erabiltzaileentzat. Gainera, hizkuntza anitzeko sistema ere eskain dezake, erabiltzaileei orri bakoitzean hizkuntza aldatzeko eta datu batzuk hainbat hizkuntzatan sartzeko aukera emanez.<br /><br />OJSk onartzen duen hizkuntzaren bat beheko zerrendan ez badago, esan gune-administratzaileari instala dezala gune-administratzailearen interfazetik. Beste hizkuntza batzuk gehitzeko instrukzioak OJS dokumentazioan aurkituko dituzu.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA hainbat  hizkuntzatan jar daiteke erabilgarri erabiltzaileentzat. Gainera, hizkuntza anitzeko sistema ere eskain dezake, erabiltzaileei orri bakoitzean hizkuntza aldatzeko eta datu batzuk hainbat hizkuntzatan sartzeko aukera emanez.<br /><br />CLAk onartzen duen hizkuntzaren bat beheko zerrendan ez badago, esan gune-administratzaileari instala dezala gune-administratzailearen interfazetik. Beste hizkuntza batzuk gehitzeko instrukzioak CLA dokumentazioan aurkituko dituzu.]]></message>
 	<message key="manager.languages.noneAvailable">Ez dago beste hizkuntzarik erabilgarri. Aldizkari honetan hizkuntza gehiago erabili nahi badituzu, galdetu gune-administratzaileari.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Hau izango da aldizkariaren webguneko hizkuntza lehenetsia.</message>
 	<message key="manager.managementPages">Kudeaketako orriak</message>
@@ -33,7 +33,7 @@
 	<message key="manager.payment.authorFees">Egile-tarifak</message>
 	<message key="manager.payment.authorFeesDescription">Hautatutako aukerak, dagozkien azalpenekin eta tarifekin batera (behean edita daitezke), bidalketa-prozesuaren 1. urratsean azalduko dira, eta halaber Aldizkariari buruz orriko Bidalketak sailean, eta ordainketa eskatzen duten gainerako puntuetan.</message>
 	<message key="manager.payment.currency">Moneta</message>
-	<message key="manager.payment.currencymessage">OJSk ez du moneta-bihurketarik egiten.  Harpidetza kobratzen bada, moneta bera zehaztu behar duzu hemen.</message>
+	<message key="manager.payment.currencymessage">CLAk ez du moneta-bihurketarik egiten.  Harpidetza kobratzen bada, moneta bera zehaztu behar duzu hemen.</message>
 	<message key="manager.payment.description">Azalpena</message>
 	<message key="manager.payment.details">Xehetasunak</message>
 	<message key="manager.payment.editSubscription">Editatu harpidetza</message>
@@ -163,7 +163,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Aldizkariari buruz orrian agertzeko) </message>
 	<message key="manager.setup.authorCopyrightNotice">Copyright informazioa</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Eskatu egileei Copyright informazioa onar dezatela bidalketa-prozesuaren parte gisa.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Behean idazten den Copyright informazioa Aldizkariari buruz orrian eta argitaratutako lan bakoitzaren metadatuetan agertuko da. Aldizkariari badagokio ere egile-eskubideak egileekin hitzartzea, Public Knowledge Project-ek <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> lizentzia gomendatzen du. Horretarako eskaintzen du <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">Copyright informazioaren adibide hau</a> kopiatu eta behean itsasteko (a) sarrera librea ematen duten, (b) sarrera libre geroratua ematen duten, edo (c) sarrera librerik ematen ez duten aldizkarientzat.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Behean idazten den Copyright informazioa Aldizkariari buruz orrian eta argitaratutako lan bakoitzaren metadatuetan agertuko da. Aldizkariari badagokio ere egile-eskubideak egileekin hitzartzea, Sangia Editorial Project-ek <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> lizentzia gomendatzen du. Horretarako eskaintzen du <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">Copyright informazioaren adibide hau</a> kopiatu eta behean itsasteko (a) sarrera librea ematen duten, (b) sarrera libre geroratua ematen duten, edo (c) sarrera librerik ematen ez duten aldizkarientzat.]]></message>
 	<message key="manager.setup.authorGuidelines">Egileentzako gidalerroak</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Ezarri egileek aldizkarira bidaltzen dituzten lanetan bibliografiari eta formatuari buruz zaindu behar dituzten arauak (adib., <em>Publication Manual of the American Psychological Association</em>, 5. argitalpena, 2001). Normalean lagungarria izaten da ohiko adibide batzuk ematea bidalketetan aldizkariak eta liburuak nola aipatu behar diren erakusteko. Bidalketarekin batera, irakurleen interesa eta atxikimendua areagotzeko, zein motatako Fitxategi osagarriak kargatzea komeni den ere identifikatu behar da (adib., datu multzoak, ikerketa-tresnak, etab.).]]></message>
 	<message key="manager.setup.competingInterests">Interes-gatazka</message>
@@ -207,7 +207,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Aldizkariek Kontseilu editorialak izaten dituzte, aldizkariaren zuzendaritza editoriala gainbegiratzeko, editoreen izendapenean parte hartzeko, eta, kontseiluko kideen ospeari esker, aldizkariari bere esparruan izen ona emateko. Adituen kontseiluek antzeko funtzioa izaten dute baina, gainera, adituen ebaluazio-prozesua zuzentzen dute. Adituen kontseiluko kideek ez dute aldizkariaren administrazio-sistemarako sarbiderik izango baina adituen ebaluazioa egiteko erabilgarri daudenen zerrendan sartuko dira.</message>
 	<message key="manager.setup.emailBounceAddress">Erreboteko helbidea</message>
 	<message key="manager.setup.emailBounceAddressDescription">Mezu bat bidali ezinda geratzen den bakoitzean, errore-mezu bat iritsiko da helbide honetara.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Oharra:</strong> Aukera hau aktibatzeko, gune-administratzaileak <tt>allow_envelope_sender</tt> aukera gaitu behar du konfigurazio-fitxategian. Funtzionalitate hau erabili ahal izateko, zerbitzari-konfigurazio gehiago egin beharko dira seguru asko (eta zerbitzari guztietan ezin izango da), OJS dokumentazioan adierazten den bezala.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Oharra:</strong> Aukera hau aktibatzeko, gune-administratzaileak <tt>allow_envelope_sender</tt> aukera gaitu behar du konfigurazio-fitxategian. Funtzionalitate hau erabili ahal izateko, zerbitzari-konfigurazio gehiago egin beharko dira seguru asko (eta zerbitzari guztietan ezin izango da), CLA dokumentazioan adierazten den bezala.]]></message>
 	<message key="manager.setup.emails">Helbide elektronikoen identifikazioa</message>
 	<message key="manager.setup.emailSignature">Sinadura</message>
 	<message key="manager.setup.emailSignatureDescription">Sistemak aldizkariaren izenean bidaltzen dituen mezu aurrez prestatuek sinadura hau edukiko dute bukaeran. Aurrez prestatutako mezuen gorputza Aldizkariaren kudeaketan edita daiteke.</message>
@@ -228,7 +228,7 @@
 	<message key="manager.setup.focusScope">Orientazioa eta esparrua</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>HTML DATUEN ADIBIDEA</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Egileek beren lana indexatzen lagundu dezaten</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> ekimenaren Metadatuak Biltzeko Protokoloari (Protocol for Metadata Harvesting) atxikitzen zaio. Protokolo hori estandar berri bat da, eta mundu guztiko ikerketako baliabideak eskaintzen ditu ongi indexatuta. Egileek antzeko txantiloi bat erabiliko dute beren bidalketaren metadatuak emateko. Aldizkariaren kudeatzaileek indexatzeko kategoriak hautatuko dituzte eta egileei adibide argigarriak emango dizkiete beren lana indexatzen laguntzeko, gako-hitzak puntu eta komaz bereiziz (adib., 1terminoa; 2terminoa). Sarrerak adibide moduan sartu behar dira "Adib.," edo "Adibidez," jarrita.]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> ekimenaren Metadatuak Biltzeko Protokoloari (Protocol for Metadata Harvesting) atxikitzen zaio. Protokolo hori estandar berri bat da, eta mundu guztiko ikerketako baliabideak eskaintzen ditu ongi indexatuta. Egileek antzeko txantiloi bat erabiliko dute beren bidalketaren metadatuak emateko. Aldizkariaren kudeatzaileek indexatzeko kategoriak hautatuko dituzte eta egileei adibide argigarriak emango dizkiete beren lana indexatzen laguntzeko, gako-hitzak puntu eta komaz bereiziz (adib., 1terminoa; 2terminoa). Sarrerak adibide moduan sartu behar dira "Adib.," edo "Adibidez," jarrita.]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Kontaktu nagusiaren helbide elektronikoa eman behar da.</message>
 	<message key="manager.setup.form.contactNameRequired">Kontaktu nagusiaren izena eman behar da.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Aldizkariaren inizialak eman behar dira.</message>
@@ -250,7 +250,7 @@
 	<message key="manager.setup.information.forLibrarians">Liburuzainentzat</message>
 	<message key="manager.setup.information.forReaders">Irakurleentzat</message>
 	<message key="manager.setup.initialIssue">Lehenengo zenbakia</message>
-	<message key="manager.setup.initialIssueDescription">Hautatutako formatuaren arabera, identifikatu OJSrekin argitaratuko den lehenengo zenbakiaren zenbakia, bolumena eta/edo urtea.</message>
+	<message key="manager.setup.initialIssueDescription">Hautatutako formatuaren arabera, identifikatu CLArekin argitaratuko den lehenengo zenbakiaren zenbakia, bolumena eta/edo urtea.</message>
 	<message key="manager.setup.institution">Erakundea</message>
 	<message key="manager.setup.issnDescription"><![CDATA[ISSN (International Standard Serial Number) aldizkako argitalpenak, serie elektronikoak barne, identifikatzeko erabiltzen den zortzi zifrako zenbaki bat da. Mundu guztiko Zentro Nazionalek osatutako sare batek kudeatzen du, Parisen kokatutako eta Unescok eta Frantziako gobernuak babestutako Nazioarteko Zentro batek koordinatuta. ISSN zenbaki bat nahi izanez gero, <a href="http://www.issn.org" target="_new">ISSN webgunean</a> lor daiteke.  Aldizkariaren edozein fasetan egin daiteke.]]></message>
 	<message key="manager.setup.issuePerVolume">Bolumenean zenbat zenbaki</message>
@@ -360,8 +360,8 @@
 	<message key="manager.setup.reviewGuidelines">Ebaluazioa egiteko gidalerroak</message>
 	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Ebaluazioa egiteko gidalerroetan emango zaizkie ebaluatzaileei bidalketa bat aldizkarian argitaratzeko egokia den epaitzeko erabili behar dituzten irizpideak, eta ebaluazio efektibo eta lagungarriak prestatzeko instrukzioak ere sar daitezke.  Ebaluazioa egitean, testu libreko bi koadro izango dituzte ebaluatzaileek, "egilearentzat eta editorearentzat" lehenengoa eta "editorearentzat" bigarrena.  Bestela, Aldizkariaren kudeatzaileak ebaluazio-inprimaki bat sor dezake <a href="{$reviewFormsUrl}" class="action">Ebaluazio-inprimakiak</a> sailean. Kasu guztietan, editoreek ebaluazioak sartzeko aukera izango dute egilearekin izaten duten korrespondentzian.]]></message>
 	<message key="manager.setup.reviewOptions">Ebaluazio-aukerak</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">Mezu elektroniko automatikoak (OJSren mezu elektroniko lehenetsietan daude) bi puntutan bidal dakizkieke oroigarri gisa ebaluatzaileei (hala ere, editoreak nahi duenean bidal diezazkioke mezuak zuzenean ebaluatzaileari)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Oharra:</strong> Aukera hauek aktibatzeko, gune-administratzaileak <tt>scheduled_tasks</tt> aukera gaitu behar du konfigurazio-fitxategian. Funtzionalitate hau erabili ahal izateko, zerbitzari-konfigurazio gehiago egin beharko dira seguru asko (eta zerbitzari guztietan ezin izango da), OJS dokumentazioan adierazten den bezala.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">Mezu elektroniko automatikoak (CLAren mezu elektroniko lehenetsietan daude) bi puntutan bidal dakizkieke oroigarri gisa ebaluatzaileei (hala ere, editoreak nahi duenean bidal diezazkioke mezuak zuzenean ebaluatzaileari)</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Oharra:</strong> Aukera hauek aktibatzeko, gune-administratzaileak <tt>scheduled_tasks</tt> aukera gaitu behar du konfigurazio-fitxategian. Funtzionalitate hau erabili ahal izateko, zerbitzari-konfigurazio gehiago egin beharko dira seguru asko (eta zerbitzari guztietan ezin izango da), CLA dokumentazioan adierazten den bezala.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Ebaluazio anonimoa</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Prozesu editorialean alda daiteke.</message>
 	<message key="manager.setup.reviewOptions.onQuality">Editoreek bost puntuko kalitate-eskala baten arabera baloratuko dituzte ebaluatzaileak, ebaluazio bakoitzaren ondoren. </message>
@@ -378,7 +378,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Ezarri <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Ebaluazio anonimoa segurtatzen</a> duten estekak egileek eta ebaluatzaileek fitxategiak kargatzen dituzten orrietarako.]]></message>
 	<message key="manager.setup.reviewPolicy">Ebaluazio-politika</message>
 	<message key="manager.setup.reviewProcess">Ebaluazio-prozesua</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJSk bi eredu eskaintzen ditu ebaluazio-prozesua kudeatzeko. Ebaluazio-prozesu estandarra gomendatzen da, ebaluatzaileak urratsez urrats gidatzen dituelako prozesuan zehar, bidalketa bakoitzaren ebaluazioaren historia osoa jasotzen duelako, eta oroigarriak automatikoki bidaltzen dituelako eta bidalketei buruzko gomendio estandarrak ematen dituelako (Onartu; Onartu aldaketekin; Berriro bidali ebaluatzeko; Bidali beste norabait; Ez onartu; Ikusi oharrak).<br /><br />Hautatu ondorengo aukeretako bat:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLAk bi eredu eskaintzen ditu ebaluazio-prozesua kudeatzeko. Ebaluazio-prozesu estandarra gomendatzen da, ebaluatzaileak urratsez urrats gidatzen dituelako prozesuan zehar, bidalketa bakoitzaren ebaluazioaren historia osoa jasotzen duelako, eta oroigarriak automatikoki bidaltzen dituelako eta bidalketei buruzko gomendio estandarrak ematen dituelako (Onartu; Onartu aldaketekin; Berriro bidali ebaluatzeko; Bidali beste norabait; Ez onartu; Ikusi oharrak).<br /><br />Hautatu ondorengo aukeretako bat:]]></message>
 	<message key="manager.setup.reviewProcessStandard">Ebaluazio-prozesu estandarra</message>
 	<message key="manager.setup.reviewProcessStandardDescription">Editoreek bidalketaren titulua eta laburpena bidaliko dizkiete Ebaluatzaileei, aldizkariaren webgunean sartu eta ebaluazioa osatzeko gonbita eginez. Ebaluatzaileak aldizkariaren webgunean sartuko dira, bidalketak deskargatzeko, beren oharrak bidaltzeko eta gomendioak hautatzeko. </message>
 	<message key="manager.setup.searchEngineIndexing">Bilatzailearen indexatzea</message>
@@ -387,7 +387,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">(atalik ez bada zehazten, lana zuzenean Artikuluen atalera joango da lehenespenez.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Aldizkariaren atalak sortzeko edo aldatzeko (adib., Artikuluak, Liburuen kritikak, etab.) joan Atalen kudeaketara.<br /><br />Egileek aldizkarira lanak bidaltzen dituztenean, adieraziko dute...]]></message>
 	<message key="manager.setup.securitySettings">Sarbideari eta segurtasunari buruzko ezarpenak</message>
-	<message key="manager.setup.securitySettingsDescription">OJSk segurtasunaren inguruko hainbat aukera eskaintzen ditu aldizkariaren edukia mugatzeko eta bidalketei buruzko informazio osagarria gordetzeko kontrol-lanetarako.</message>
+	<message key="manager.setup.securitySettingsDescription">CLAk segurtasunaren inguruko hainbat aukera eskaintzen ditu aldizkariaren edukia mugatzeko eta bidalketei buruzko informazio osagarria gordetzeko kontrol-lanetarako.</message>
 	<message key="manager.setup.selectEditorDescription">Aldizkariko zein editorek jarraituko duen lana prozesu editorialean zehar.</message>
 	<message key="manager.setup.selectSectionDescription">Lana aldizkariaren zein ataletarako pentsatua den.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Beti erakutsi galerada-estekak eta adierazi sarbide murriztua.</message>
@@ -425,7 +425,7 @@
 	<message key="manager.setup.useTextTitle">Testua</message>
 	<message key="manager.setup.volumePerYear">Urtean zenbat bolumen</message>
 	<message key="manager.statistics.reports">Txosten-sortzailea</message>
-	<message key="manager.statistics.reports.description">Denboraldi jakin batean aldizkarira bidalitako artikuluei, editoreei, ebaluatzaileei eta atalei buruzko xehetasunak erakusten dituzten txostenak egiten ditu OJSk. Txostenak CSV formatuan egiten dira, eta, beraz, kalkulu-orrien aplikazio bat behar da ikusteko.</message>
+	<message key="manager.statistics.reports.description">Denboraldi jakin batean aldizkarira bidalitako artikuluei, editoreei, ebaluatzaileei eta atalei buruzko xehetasunak erakusten dituzten txostenak egiten ditu CLAk. Txostenak CSV formatuan egiten dira, eta, beraz, kalkulu-orrien aplikazio bat behar da ikusteko.</message>
 	<message key="manager.statistics.statistics">Aldizkariaren estatistikak</message>
 	<message key="manager.statistics.statistics.articleViews">Artikuluari egindako bisitak (Egileentzat soilik)</message>
 	<message key="manager.statistics.statistics.count.accept">Onartuak</message>
@@ -433,7 +433,7 @@
 	<message key="manager.statistics.statistics.count.revise">Birbidaliak</message>
 	<message key="manager.statistics.statistics.daysPerReview">Ebaluazioa egiteko egunak</message>
 	<message key="manager.statistics.statistics.daysToPublication">Argitaratzeko egunak</message>
-	<message key="manager.statistics.statistics.description">OJSk ondorengo estatistikak kalkulatzen ditu aldizkari bakoitzari buruz. "Ebaluazioa egiteko egunak" kalkulatzeko, bidalketa-datatik (edo Ebaluazio-bertsioa izendatzen denetik) Editorearen lehen erabakira arteko denbora hartzen da, eta onartutako bidalketak "argitaratzeko egunak" neurtzeko, hasierako karga egiten den egunetik argitaratu arteko denbora hartzen da.</message>
+	<message key="manager.statistics.statistics.description">CLAk ondorengo estatistikak kalkulatzen ditu aldizkari bakoitzari buruz. "Ebaluazioa egiteko egunak" kalkulatzeko, bidalketa-datatik (edo Ebaluazio-bertsioa izendatzen denetik) Editorearen lehen erabakira arteko denbora hartzen da, eta onartutako bidalketak "argitaratzeko egunak" neurtzeko, hasierako karga egiten den egunetik argitaratu arteko denbora hartzen da.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Artikulu argitaratuak</message>
 	<message key="manager.statistics.statistics.makePublic">Hautatu Aldizkariari buruz orrian irakurleek ikusiko dituzten elementuak.</message>
 	<message key="manager.statistics.statistics.note">Oharra: Adituek ebaluatutako bidalketen ehunekoen batura ez da beti % 100 izango, birbidalitako artikuluak onartuak edo ez onartuak izan daitezkeelako edo oraindik lantzen ari direlako.</message>
@@ -468,8 +468,8 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">Harpidetza amaitu baino </message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">aste lehenago bidali mezua harpidedunei.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Harpidetza-amaierako oroigarriak</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Mezu elektroniko automatikoak (OJSren mezu elektroniko prestatuetan daude eta Aldizkariaren kudeatzaileak edita ditzake) bidal dakizkieke oroigarri gisa harpidedunei harpidetza amaitu aurretik eta ondoren.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Oharra</strong>: Aukera hauek aktibatzeko, gune-administratzaileak <tt>scheduled_tasks</tt> aukera gaitu behar du konfigurazio-fitxategian. Funtzionalitate hau erabili ahal izateko, zerbitzari-konfigurazio gehiago egin beharko dira seguru asko (eta zerbitzari guztietan ezin izango da), OJS dokumentazioan adierazten den bezala.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Mezu elektroniko automatikoak (CLAren mezu elektroniko prestatuetan daude eta Aldizkariaren kudeatzaileak edita ditzake) bidal dakizkieke oroigarri gisa harpidedunei harpidetza amaitu aurretik eta ondoren.</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Oharra</strong>: Aukera hauek aktibatzeko, gune-administratzaileak <tt>scheduled_tasks</tt> aukera gaitu behar du konfigurazio-fitxategian. Funtzionalitate hau erabili ahal izateko, zerbitzari-konfigurazio gehiago egin beharko dira seguru asko (eta zerbitzari guztietan ezin izango da), CLA dokumentazioan adierazten den bezala.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Hautatu ondorengo aukeretako bat:</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[Testu-arean HTML erabil daiteke (letra-tamaina, kolorea, etab. aldatu ahal izateko), eta "lerro-jauziak" <tt>&lt;br&gt;</tt> bezala tratatuta; HTML editoreak Firefox arakatzaileekin funtzionatzen du.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Hautatu baliozko zenbaki bat harpidetza amaitu osteko hilabete kopurua adierazteko.</message>
@@ -477,7 +477,7 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Hautatu baliozko zenbaki bat harpidetza amaitu osteko aste kopurua adierazteko.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Hautatu baliozko zenbaki bat harpidetza amaitu aurreko aste kopurua adierazteko.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Zenbakia sarrera libreko bihurtzen denean, aurkibidea mezu elektronikoz jasotzeko aukera izango dute erregistratutako irakurleek.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Oharra</strong>: Aukera hau aktibatzeko, gune-administratzaileak <tt>scheduled_tasks</tt> aukera gaitu behar du konfigurazio-fitxategian. Funtzionalitate hau erabili ahal izateko, zerbitzari-konfigurazio gehiago egin beharko dira seguru asko (eta zerbitzari guztietan ezin izango da), OJS dokumentazioan adierazten den bezala.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Oharra</strong>: Aukera hau aktibatzeko, gune-administratzaileak <tt>scheduled_tasks</tt> aukera gaitu behar du konfigurazio-fitxategian. Funtzionalitate hau erabili ahal izateko, zerbitzari-konfigurazio gehiago egin beharko dira seguru asko (eta zerbitzari guztietan ezin izango da), CLA dokumentazioan adierazten den bezala.]]></message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">Harpidetza bidezko aldizkarien Sarrera libreko aukerak</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">Harpidetza bidezko aldizkariek "sarrera libre geroratua" eman dezakete argitaratzen duten edukiarentzat, edo "egileen auto-artxibatzea" onar dezakete (bi aukera horiek irakurlegoa eta edukiaren aipamenak areagotuko dituzte).</message>
 	<message key="manager.subscriptionPolicies.subscriptionAdditionalInformation">Harpidetzari buruzko informazioa</message>
@@ -571,7 +571,7 @@
 	<message key="manager.groups.publishEmails">Argitaratuko kideen helbide elektronikoak</message>
 	<message key="manager.groups.context.editorialTeam">“Aldizkariari buruz” ataleko Lantaldea ataleko Talde editorialaren azpian tituluak agerrarazi (adib., editorea)</message>
 	<message key="manager.groups.context.people">Lantaldea atalaren azpian tituluak berariazko kategoria gisa agerrarazi (adib., Talde editoriala)</message>
-	<message key="manager.groups.disableBoard">Langileak esleituta dituzten eginkizunaren arabera jartzen ditu Talde editorialean OJS sistemak (aldizkariaren kudeatzailea, zuzentzailea, etab.)</message>
+	<message key="manager.groups.disableBoard">Langileak esleituta dituzten eginkizunaren arabera jartzen ditu Talde editorialean CLA sistemak (aldizkariaren kudeatzailea, zuzentzailea, etab.)</message>
 	<message key="manager.groups.enableBoard">Aldizkariaren kudeatzaileak tituluak sortzen ditu eta titulu horien azpian pertsonak gehitzen ditu.</message>
 	<message key="manager.language.ui">Erabiltzailearen interfazea</message>
 	<message key="manager.language.submissions">Aurkezpenak</message>
@@ -621,9 +621,9 @@
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Gaitu klik bakarreko ebaluatzaile-sarbidea.</message>
 	<message key="manager.setup.reviewProcessEmail">Posta elektronikoaren eranskinaren ebaluazio-prozesua</message>
 	<message key="manager.setup.sponsorNoteDescription">Testua “Aldizkariari buruz” orrian agertuko da,  “Babesleak” tituluaren azpian eta laguntzaileen izenen eta urls-en zerrendaren gainean, “Aldizkariaren Laguntzaileak” atalaren azpian.</message>
-	<message key="manager.setup.noPublishing">OJS ez da erabiliko aldizkariaren edukiak linean argitaratzeko.</message>
+	<message key="manager.setup.noPublishing">CLA ez da erabiliko aldizkariaren edukiak linean argitaratzeko.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Lineako ordainketaren jakinarazpenak</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Posta elektronikoaren jakinarazpen automatizatuak (Aldizkariaren kudeatzaileek editatu dezakete, OJSren prestatutako mezu elektronikoetan) bidal daitezke harpidetza-kudeatzailearengana, harpidetzaren lineako ordainketa amaitu ondoren.</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Posta elektronikoaren jakinarazpen automatizatuak (Aldizkariaren kudeatzaileek editatu dezakete, CLAren prestatutako mezu elektronikoetan) bidal daitezke harpidetza-kudeatzailearengana, harpidetzaren lineako ordainketa amaitu ondoren.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Harpidetza-kudeatzaileari harpidetza indibidual baten lineako ordainketaren berri eman posta elektronikoz.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseInstitutional">Harpidetza-kudeatzaileari eman harpidetza instituzional baten lineako ordainketaren berri posta elektronikoz (gomendatua).</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">Harpidetza-kudeatzaileari eman harpidetza indibidual baten lineako berritzearen berri, posta elektronikoz.</message>

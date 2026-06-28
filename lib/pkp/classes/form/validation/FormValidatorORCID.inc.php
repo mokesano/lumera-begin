@@ -13,7 +13,7 @@
  * @brief Form validation check for ORCID iDs.
  */
 
-import('lib.pkp.classes.form.validation.FormValidator');
+import('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorORCID extends FormValidator {
 	/**
@@ -24,7 +24,7 @@ class FormValidatorORCID extends FormValidator {
 	 * @param $message string the error message for validation failures (i18n key)
 	 */
 	function FormValidatorORCID($form, $field, $type, $message) {
-		import('lib.pkp.classes.validation.ValidatorORCID');
+		import('lib.sep.classes.validation.ValidatorORCID');
 		$validator = new ValidatorORCID();
 		parent::FormValidator($form, $field, $type, $message, $validator);
 	}

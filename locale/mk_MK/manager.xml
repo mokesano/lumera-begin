@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/mk_MK/manager.xml
@@ -20,7 +20,7 @@
 	<message key="manager.groups.context.editorialTeam.short">Уреднички тим</message>
 	<message key="manager.groups.context.people">Насловот се појавува како посебна категорија под луѓето (на пр.уредувачки одбор)</message>
 	<message key="manager.groups.create">Креирај наслов на функцијата</message>
-	<message key="manager.groups.disableBoard">OJS ги наведува луѓето во уредничкиот тим под доделените улоги (менаџер на списание, уредник, итн.)</message>
+	<message key="manager.groups.disableBoard">CLA ги наведува луѓето во уредничкиот тим под доделените улоги (менаџер на списание, уредник, итн.)</message>
 	<message key="manager.groups.enableBoard">Менаџерот на списание креира наслови и додава луѓе под секој наслов.</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[Под <a href="{$aboutEditorialTeamUrl}">Луѓе</a> вклучени во списанието:]]></message>
 	<message key="manager.groups.noneCreated">Не се создадени позиции на уредничкиот тим.</message>
@@ -30,7 +30,7 @@
 	<message key="manager.language.forms">Форми</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Ова ќе го замени секое локација-специфично поставување за списание кое сте го имале за оваа локација</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Вчитај ги стандардните вредности</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS може да се направи достапен за корисниците во било кој од неколкуте поддржани јазици. Исто така, OJS може да работи како повеќејазичен систем, обезбедувајќи ги корисниците со способност да менуваат јазици на секоја страница, и овозможувајќи им на одредени податоци да бидат внесени на неколку други јазици.<br /><br />Ако јазикот поддржан од OJS не е наведен подолу, замолете го вашиот администратор на сајтот/страната да инсталира поддршка за јазикот од администраторскиот сајт интерфејс. За инструкции за додавање на поддршка за нови јазици, ве молиме консултирајте се со OJS документацијата.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA може да се направи достапен за корисниците во било кој од неколкуте поддржани јазици. Исто така, CLA може да работи како повеќејазичен систем, обезбедувајќи ги корисниците со способност да менуваат јазици на секоја страница, и овозможувајќи им на одредени податоци да бидат внесени на неколку други јазици.<br /><br />Ако јазикот поддржан од CLA не е наведен подолу, замолете го вашиот администратор на сајтот/страната да инсталира поддршка за јазикот од администраторскиот сајт интерфејс. За инструкции за додавање на поддршка за нови јазици, ве молиме консултирајте се со CLA документацијата.]]></message>
 	<message key="manager.languages.noneAvailable">Жалам, но нема други јазици кои се достапни. Контактирајте го вашиот администратор на сајтот/страната ако сакате да користите други јазици со ова списание.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Ова ќе биде стандарден јазик за страната на списанието.</message>
 	<message key="manager.managementPages">Управување со страници</message>
@@ -40,7 +40,7 @@
 	<message key="manager.payment.authorFees">Давачки на авторот</message>
 	<message key="manager.payment.authorFeesDescription">Избраните опции, заедно со нивните описи и надомести(кои ќе се уредуваат подолу), ќе се појават во чекор 1 на процесот на поднесување и во информациите за списанието под поднесувањето, како и на места каде што е потребно плаќање.</message>
 	<message key="manager.payment.currency">Валута</message>
-	<message key="manager.payment.currencymessage">OJS не врши конверзии на било која валута. Ако прифатите плаќање на претплати, мора да се осигурате дека валутата за претплата одговара на една од тука наведените.</message>
+	<message key="manager.payment.currencymessage">CLA не врши конверзии на било која валута. Ако прифатите плаќање на претплати, мора да се осигурате дека валутата за претплата одговара на една од тука наведените.</message>
 	<message key="manager.payment.description">Опис</message>
 	<message key="manager.payment.details">Детали</message>
 	<message key="manager.payment.editSubscription">Измени претплата</message>
@@ -210,7 +210,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Да се ​​појави во За списанието) </message>
 	<message key="manager.setup.authorCopyrightNotice">Авторски права</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Потребно е авторите да се согласат со Copyright Notice како дел од поднесување процес.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Известување за авторски права ќе се појави "За списанието" и во метаподатоците во секој објавен метаподаток. Иако тоа зависи од списанието за да се утврди природата на неговите авторски права согласност со авторите, PKP проектот препорачува употреба на <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> лиценца. За таа цел, тој ја предвидува <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">пример за Copyright Notice wording</a> кој може да се сече и залепи во просторот подолу за списанија под (a) да се понуди отворен пристап, (b) да се понуди одложено отворен пристап, или (c) не нудиме отворен пристап.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Известување за авторски права ќе се појави "За списанието" и во метаподатоците во секој објавен метаподаток. Иако тоа зависи од списанието за да се утврди природата на неговите авторски права согласност со авторите, SEP проектот препорачува употреба на <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> лиценца. За таа цел, тој ја предвидува <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">пример за Copyright Notice wording</a> кој може да се сече и залепи во просторот подолу за списанија под (a) да се понуди отворен пристап, (b) да се понуди одложено отворен пристап, или (c) не нудиме отворен пристап.]]></message>
 	<message key="manager.setup.authorGuidelines">Упатство за авторот</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Утврдени се библиографски и форматирани стандарди за авторите на кои се користат за доставени предмети во списанието (на пример, <em>Прирачник за објавување на Американската психолошка асоцијација</ em>, 5th Edition, 2001). Тоа е најчесто корисно за да се обезбеди примери за заеднички цитат на списанија и книги кои се користат во подесувањата. Исто така се идентификуваат видовите на соодветните дополнителни датотеки (на пример, сет на податоци, истражувачки инструменти, итн.) со кои авторите треба да бидат охрабрени да прикачат, во прилог на нивното поднесување, за подобрување на работата на читателите.]]></message>
 	<message key="manager.setup.competingInterests">Конкурентни интереси</message>
@@ -257,7 +257,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Списанијата имаат уредувачки одбори за надгледување на уреднички правец на списанието, учествуваат во назначувањето на уредници, и, врз основа на угледот на членовите на одборот ", им дава на списанието некоја состојба во оваа област. Одборите за преглед играат слична улога, но освен тоа, тие ја водат рецензија на процесот. Одборот за преглед немаат пристап до административниот систем на списанието, но ќе бидат додадени во листата на оние кои се достапни за да прават peer коментари.</message>
 	<message key="manager.setup.emailBounceAddress">Отскокна адреса</message>
 	<message key="manager.setup.emailBounceAddressDescription">Секоја испратена порака ќе резултира со порака за грешка на оваа адреса.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Забелешка:</strong> За да ја активирате оваа опција, администраторот на сајтот мора да им овозможи опцијата <tt>allow_envelope_sender</ tt> во OJS конфигурациската датотека. Дополнителна конфигурација на серверот може да се побара за поддршка на оваа функционалност (што не може да биде можно на сите сервери), како што е наведено во OJS документацијата.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Забелешка:</strong> За да ја активирате оваа опција, администраторот на сајтот мора да им овозможи опцијата <tt>allow_envelope_sender</ tt> во CLA конфигурациската датотека. Дополнителна конфигурација на серверот може да се побара за поддршка на оваа функционалност (што не може да биде можно на сите сервери), како што е наведено во CLA документацијата.]]></message>
 	<message key="manager.setup.emails">Email идентификација</message>
 	<message key="manager.setup.emailSignature">Потпис</message>
 	<message key="manager.setup.emailSignatureDescription">Подготвените пораки кои се испраќаат од страна на системот во име на списанието ќе го следат потписот додаден на крајот. Телото на подготвените пораки се достапни за уредување од менаџерот на списанието.</message>
@@ -279,7 +279,7 @@
 	<message key="manager.setup.focusScope">Фокус и опсег</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>Пример за HTML податоци</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">За авторите да ја означат нивната работа</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS се придржува до <a href="http://www.openarchives.org/" target="_blank">Отворенa Архива иницијатива</a> Протоколот за жетва на метаподатоци, што е во развој на стандарди за обезбедување на добро-индексиран пристап до електронските истражувачки ресурси на глобално ниво. Авторите ќе користат сличен шаблонот за да ги обезбеди метаподатоците за нивно поднесување. Менаџерите на списанието треба да изберат категории за индексирање и да ги презентираат авторите со релевантни примери за да им помогне во индексирањето на нивната работа, одвојување термини со точка-запирка (на пример, term1; term2). Записите треба да се воведат како примери со користење на "На пр.," или "На пример,".]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA се придржува до <a href="http://www.openarchives.org/" target="_blank">Отворенa Архива иницијатива</a> Протоколот за жетва на метаподатоци, што е во развој на стандарди за обезбедување на добро-индексиран пристап до електронските истражувачки ресурси на глобално ниво. Авторите ќе користат сличен шаблонот за да ги обезбеди метаподатоците за нивно поднесување. Менаџерите на списанието треба да изберат категории за индексирање и да ги презентираат авторите со релевантни примери за да им помогне во индексирањето на нивната работа, одвојување термини со точка-запирка (на пример, term1; term2). Записите треба да се воведат како примери со користење на "На пр.," или "На пример,".]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Основниот e-mail контакт е задолжителен.</message>
 	<message key="manager.setup.form.contactNameRequired">Основното име на контактот е задолжителено.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Иницијали на списанието се задолжителни.</message>
@@ -302,7 +302,7 @@
 	<message key="manager.setup.information.forLibrarians">За библиотекари</message>
 	<message key="manager.setup.information.forReaders">За читателите</message>
 	<message key="manager.setup.initialIssue">Прво издавање</message>
-	<message key="manager.setup.initialIssueDescription">Во зависност од форматот, да се идентификува изданието, волуменот, и / или годината на првото издание за да бидат објавени со OJS:</message>
+	<message key="manager.setup.initialIssueDescription">Во зависност од форматот, да се идентификува изданието, волуменот, и / или годината на првото издание за да бидат објавени со CLA:</message>
 	<message key="manager.setup.institution">Институција</message>
 	<message key="manager.setup.issnDescription"><![CDATA[ISSN (International Standard Serial Number) е осум-цифрен број кој идентификува периодични публикации како што се, вклучувајќи ги и електронските серијали. Тоа е управувано од страна на World Wide мрежа на Националниот центри координирани од страна на Меѓународниот центар со седиште во Париз, поддржан од УНЕСКО и француската влада. Голем број може да се добијат од <a href="http://www.issn.org" target="_new">ISSN веб сајт</a>. Ова може да се направи во било која точка во работењето на списанието.]]></message>
 	<message key="manager.setup.issuePerVolume">Теми по волумен</message>
@@ -418,8 +418,8 @@
 	<message key="manager.setup.reviewGuidelines">Преглед на упатство</message>
 	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Упатсвото за преглед ќе овозможи прегледи со критериуми за оценување на соодветноста на поднесувањето за објавување во списание, и може да вклучува било какви специјални инструкции за подготовка на ефикасен и корисен преглед. Во спроведување на преглед, рецензентите се претставени со со два отворени текст кутии, првата "за авторот и уредник," и втората "за уредник." Алтернативно, списанието на менаџерот може да креира форма под <a href="{$reviewFormsUrl}" class="action">Преглед на форми</a>. Во сите случаи, уредниците ќе имаат можност за вклучување на коментари во договор со авторот.]]></message>
 	<message key="manager.setup.reviewOptions">Опции за преглед</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">Автоматските е-мајл потсетници (достапни во OJS стандардните пораки) може да бидат испратени до прегледувачите на две точки</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Забелешка:</strong> За да ги активирате овие опции, сајт администраторот мора да овозможи <tt>scheduled_tasks</tt> опција во OJS конфигурациската датотека. Дополнителната конфигурација на серверот може да се бара за да ја поддржат оваа функционалност (што не може да биде можно на сите сервери), како што е наведено во OJS документација.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">Автоматските е-мајл потсетници (достапни во CLA стандардните пораки) може да бидат испратени до прегледувачите на две точки</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Забелешка:</strong> За да ги активирате овие опции, сајт администраторот мора да овозможи <tt>scheduled_tasks</tt> опција во CLA конфигурациската датотека. Дополнителната конфигурација на серверот може да се бара за да ја поддржат оваа функционалност (што не може да биде можно на сите сервери), како што е наведено во CLA документација.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Слеп преглед</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Може да се менува за време на уредувачкиот процес.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Типичен период на време дозволено за коментарите</message>
@@ -438,7 +438,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Обезбеди линкови до <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Обезбедување на слепи прегледи на страници, каде што авторите и рецензентите прикачуваат датотеки.]]></message>
 	<message key="manager.setup.reviewPolicy">преглед за приватност</message>
 	<message key="manager.setup.reviewProcess">Процес за преглед</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS поддржува два модели за управување со процес на преглед. Стандардниот процес за преглед се препорачува поради тоа што чекорите за лекторите низ процесот, овозможува комплетен преглед на историјата за секоја пријава, и носи предност на автоматско известување, и стандардни препораки за поднесувања (Прифати; Прифати со дополнувања; Поднеси за преглед; Прати на друго место; Намалување; Види ги коментарите).<br /><br />Одбери една од следниве:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA поддржува два модели за управување со процес на преглед. Стандардниот процес за преглед се препорачува поради тоа што чекорите за лекторите низ процесот, овозможува комплетен преглед на историјата за секоја пријава, и носи предност на автоматско известување, и стандардни препораки за поднесувања (Прифати; Прифати со дополнувања; Поднеси за преглед; Прати на друго место; Намалување; Види ги коментарите).<br /><br />Одбери една од следниве:]]></message>
 	<message key="manager.setup.reviewProcessEmail">Е-маил додаток како процес за преглед</message>
 	<message key="manager.setup.reviewProcessStandard">Стандарден процес за преглед</message>
 	<message key="manager.setup.reviewProcessStandardDescription">Editors will email selected Reviewers the title and abstract of the submission, as well as an invitation to log into the journal web site to complete the review. Reviewers enter the journal web site to agree to do the review, to download submissions, submit their comments, and select a recommendation.</message>
@@ -448,7 +448,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Ако деловите не се додаваат, тогаш се доставуваат до секцијата на артикли по стандард.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Да креирате или менувате делови за списанието (на пример, статии, прегледи на книги, итн), одете на делот менаџмент.<br /><br />Автори за поднесуваат елементи, за да на списанието се назначи...]]></message>
 	<message key="manager.setup.securitySettings">Пристап и безбедносни подесувања</message>
-	<message key="manager.setup.securitySettingsDescription">OJS обезбедува голем број на поврзано безбедностни опции кои можат да се користат за да се ограничи содржината на списанието, и одржувањето на дополнителни информации за поставувања на ревизорски цели.</message>
+	<message key="manager.setup.securitySettingsDescription">CLA обезбедува голем број на поврзано безбедностни опции кои можат да се користат за да се ограничи содржината на списанието, и одржувањето на дополнителни информации за поставувања на ревизорски цели.</message>
 	<message key="manager.setup.selectEditorDescription">Уредникот на списанието кој ќе го гледа преку уредувачкиот процес.</message>
 	<message key="manager.setup.selectSectionDescription">Делот на списанието за која како содржина ќе се смета.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Секогаш да се прикажуваат galley линкови и наведете ограничен пристап.</message>
@@ -470,7 +470,7 @@
 	<message key="manager.setup.submissions.description">Упатства за авторот, авторски права, и индексирање (вклучувајќи регистрација).</message>
 	<message key="manager.setup.subscription">The journal will require subscriptions to access some or all of its contents.</message>
 	<message key="manager.setup.subscriptionDescription">Ова барање за доделување или зачленување на менаџер кој има пристап до модул за зачленување, вклучува дополнително отворен пристап, само-архивирање, и е-мејл известување.</message>
-	<message key="manager.setup.noPublishing">OJS нема да се користи за онлјан објавување на содржина на списанието.</message>
+	<message key="manager.setup.noPublishing">CLA нема да се користи за онлјан објавување на содржина на списанието.</message>
 	<message key="manager.setup.technicalSupportContact">Technical Support Contact</message>
 	<message key="manager.setup.technicalSupportContactDescription">Овој член ќе биде наведен на контакт страница на списанието за користењето од уредници, автори и рецензенти, и треба да има искуство во работењето преку системот од перспектива на сите свои улоги. Овој систем за списанието бара многу малку техничка поддршка, и тоа треба да се гледа како скратено работно време на задачата. Може да има случаи, на пример, кога авторите и рецензентите имаат тешкотии со инструкциите или форматите на датотеки, или има потреба да се обезбеди дека за списанието редовно се прави бејкап на серверот.</message>
 	<message key="manager.setup.typeExamples">(На пример, историско истражување; Квази-Експериментално; книжевна анализа; Истражување / Интервју)</message>
@@ -490,7 +490,7 @@
 	<message key="manager.setup.useTextTitle">наслов на текстот</message>
 	<message key="manager.setup.volumePerYear">Волумен за година</message>
 	<message key="manager.statistics.reports">Генератор за извештај</message>
-	<message key="manager.statistics.reports.description">OJS генерира извештаи што ги следат деталите поврзани со обработката на списанието од перспектива на поднесоци, уредници, лектори, и секции, во текот на одреден временски период. Извештаите се генерирани во CSV формат, ко бара апликација со табеларни пресметки.</message>
+	<message key="manager.statistics.reports.description">CLA генерира извештаи што ги следат деталите поврзани со обработката на списанието од перспектива на поднесоци, уредници, лектори, и секции, во текот на одреден временски период. Извештаите се генерирани во CSV формат, ко бара апликација со табеларни пресметки.</message>
 	<message key="manager.statistics.statistics">Статистика на списанието</message>
 	<message key="manager.statistics.statistics.articleViews">Прикажи број на прегледи (само за автори)</message>
 	<message key="manager.statistics.statistics.count.accept">Прифати</message>
@@ -498,7 +498,7 @@
 	<message key="manager.statistics.statistics.count.revise">Поднесете повторно</message>
 	<message key="manager.statistics.statistics.daysPerReview">Денови за преглед</message>
 	<message key="manager.statistics.statistics.daysToPublication">Денови за објавување</message>
-	<message key="manager.statistics.statistics.description">OJS ги пресметува следните статистики за секое списание. "Денови за преглед" е пресметано од датумот на поднесување (или ознака на преглед верзија) на иницијалниот уредник за одлука, додека "денови за објавување" е измерно за прифатените поднесоци од неговато оригинално прикачување до неговото објавување.</message>
+	<message key="manager.statistics.statistics.description">CLA ги пресметува следните статистики за секое списание. "Денови за преглед" е пресметано од датумот на поднесување (или ознака на преглед верзија) на иницијалниот уредник за одлука, додека "денови за објавување" е измерно за прифатените поднесоци од неговато оригинално прикачување до неговото објавување.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Објавени ставки</message>
 	<message key="manager.statistics.statistics.makePublic">Проверете ставки за да бидат достапни за читателите во За списанието.</message>
 	<message key="manager.statistics.statistics.note">Забелешка: Процентите за прегледените поднесоци не може да се додадат до 100%, како предмети кои се повторно вратени или подоцна прифатени, одбиени, или сеуште се во процес.</message>
@@ -533,8 +533,8 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">Информирање на претплатниците преку е-маил</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">недела(и) пред истекувањето на рокот.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Претплатнички рок на потсетници</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Автоматски е-мејл (достапен за уредување од страна на Менаџерите на списанието во OJS подготвени пораки) може да бидат испратени до претплатници и пред и по претплата е истечен.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Забелешка:</strong> За да ги активирате овие опции, администратор мора да им овозможи на <tt> scheduled_tasks </ tt> опција во OJS конфигурациската датотека. Дополнителни конфигурација на серверот може да се бара за поддршка на оваа функционалност (што не може да биде можно на сите сервери), како што е наведено во OJS документација.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Автоматски е-мејл (достапен за уредување од страна на Менаџерите на списанието во CLA подготвени пораки) може да бидат испратени до претплатници и пред и по претплата е истечен.</message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Забелешка:</strong> За да ги активирате овие опции, администратор мора да им овозможи на <tt> scheduled_tasks </ tt> опција во CLA конфигурациската датотека. Дополнителни конфигурација на серверот може да се бара за поддршка на оваа функционалност (што не може да биде можно на сите сервери), како што е наведено во CLA документација.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Изберете една од следниве:</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[HTML може да се користи во textarea (за големина на фонт, боја, итн), со "returns" третирани како <tt>&lt;br&gt;</tt>; HTML едиторот работи со Firefox интернет прелистувачи.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Ве молиме изберете валидна вредност за бројот на месеци по истекувањето на рокот.</message>
@@ -542,9 +542,9 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Ве молиме изберете валидна вредност за бројот на недели по истекувањето на рокот.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Ве молиме изберете валидна вредност за бројот на недели пред истекувањето на рокот.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Регистрираните читателите ќе имаат можност за добивање на табела на содржина преку е-маил, кога едно прашање станува отворен пристап.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Забелешка:</strong> За да ја активирате оваа опција, сајт администраторот мора да им овозможи на <tt> scheduled_tasks </ tt> опција во OJS конфигурациската датотека. Дополнителни конфигурација на серверот може да се бара за поддршка на оваа функционалност (што не може да биде можно на сите сервери), како што е наведено во OJS документација.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Забелешка:</strong> За да ја активирате оваа опција, сајт администраторот мора да им овозможи на <tt> scheduled_tasks </ tt> опција во CLA конфигурациската датотека. Дополнителни конфигурација на серверот може да се бара за поддршка на оваа функционалност (што не може да биде можно на сите сервери), како што е наведено во CLA документација.]]></message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Известувања за плаќање преку интернет</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Автоматски е-мејл нотификации (достапен за уредување од страна на Менаџерите на списанието во OJS подготвени пораки) _може да се испрати до претплатнички Менаџер по завршување на онлајн плаќања.</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Автоматски е-мејл нотификации (достапен за уредување од страна на Менаџерите на списанието во CLA подготвени пораки) _може да се испрати до претплатнички Менаџер по завршување на онлајн плаќања.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Известување на менаџерот преку е-маил по онлајн купување на индивидуална претплата.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseInstitutional">Известување на менаџерот преку е-маил по онлајн купување на институционална претплата (препорачано).</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual">Известување на менаџерот преку е-маил по онлајн обновување на индивидуална претплата.</message>

@@ -17,7 +17,7 @@
 require(dirname(__FILE__) . '/bootstrap.inc.php');
 
 // Bring in the file loader folder constants.
-import('lib.pkp.classes.task.FileLoader');
+import('lib.sep.classes.task.FileLoader');
 
 class CopyAccessLogFileTool extends CommandLineTool {
 
@@ -36,7 +36,7 @@ class CopyAccessLogFileTool extends CommandLineTool {
 	function CopyAccessLogFileTool($argv = array()) {
 		parent::CommandLineTool($argv);
 
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_ADMIN, LOCALE_COMPONENT_PKP_ADMIN);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_ADMIN, LOCALE_COMPONENT_SEP_ADMIN);
 
 		if (count($this->argv) < 1 || count($this->argv) > 2)  {
 			$this->usage();

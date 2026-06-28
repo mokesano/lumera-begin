@@ -13,7 +13,7 @@
  * @brief Form for journal managers to create/edit books for review.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 define('BFR_COVER_PAGE_IMAGE_NAME', 'coverPage');
 

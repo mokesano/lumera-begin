@@ -15,7 +15,7 @@
  */
 
 // Import base class.
-import('lib.pkp.classes.controllers.grid.GridDataProvider');
+import('lib.sep.classes.controllers.grid.GridDataProvider');
 
 class CategoryGridDataProvider extends GridDataProvider {
 

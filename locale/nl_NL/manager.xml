@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/nl_NL/manager.xml
@@ -20,14 +20,14 @@
 	<message key="manager.groups.context.editorialTeam.short">Redactieteam</message>
 	<message key="manager.groups.context.people">Toon de titel als een aparte categorie bij Personen (bv. redactiebestuur)</message>
 	<message key="manager.groups.create">Maak positietitel</message>
-	<message key="manager.groups.disableBoard">OJS toont de personen in het redactieteam onder de toegewezen rollen (tijdschriftbeheerder, tekstredacteur, enz)</message>
+	<message key="manager.groups.disableBoard">CLA toont de personen in het redactieteam onder de toegewezen rollen (tijdschriftbeheerder, tekstredacteur, enz)</message>
 	<message key="manager.groups.enableBoard">De tijdschriftbeheerder maakt de titels aan en wijst personen toe aan titels</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[Onder <a href="{$aboutEditorialTeamUrl}">Personen</a> in Over dit tijdschrift :]]></message>
 	<message key="manager.groups.noneCreated">Er zijn geen posities in het redactionele team gemaakt.</message>
 	<message key="manager.journalManagement">Tijdschriftbeheer</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Dit vervangt alle taalspecifieke tijdschriftinstellingen die u had voor deze taal</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Taalspecifieke standaardinsellingen terugzetten</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS kan in een aantal verschillende talen aan de gebruikers aangeboden worden. OJS kan ook meertalig werken, waarbij de gebruikers kunnen schakelen tussen verschillende talen. Bepaalde gegevens kunnen in verschillende additionele talen ingevoerd worden.<br /><br />Als een door OJS ondersteunde taal hieronder niet getoond wordt, vraag dan uw sitebeheerder om die taal te installeren in de sitebeheer interface. Consulteer de OJS documentatie voor het toevoegen van ondersteuning van nieuwe talen.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA kan in een aantal verschillende talen aan de gebruikers aangeboden worden. CLA kan ook meertalig werken, waarbij de gebruikers kunnen schakelen tussen verschillende talen. Bepaalde gegevens kunnen in verschillende additionele talen ingevoerd worden.<br /><br />Als een door CLA ondersteunde taal hieronder niet getoond wordt, vraag dan uw sitebeheerder om die taal te installeren in de sitebeheer interface. Consulteer de CLA documentatie voor het toevoegen van ondersteuning van nieuwe talen.]]></message>
 	<message key="manager.languages.noneAvailable">Sorry, er zijn geen andere talen beschikbaar. Neem contact op met uw sitebeheerder als u meer talen wilt gebruiken bij dit tijdschrift.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Dit wordt de standaardtaal voor de site van het tijdschrift.</message>
 	<message key="manager.managementPages">Beheerpagina's</message>
@@ -37,7 +37,7 @@
 	<message key="manager.payment.authorFees">Betaling door de auteur</message>
 	<message key="manager.payment.authorFeesDescription">De geselecteerde opties worden met hun beschrijving en kosten getoond in stap 1 van de inzendingsprocecure en in Over het tijdschrift en op de plaatsen waar betaling vereist is.</message>
 	<message key="manager.payment.currency">Valuta</message>
-	<message key="manager.payment.currencymessage">OJS converteert valuta niet. Als u betalingen voor abonnementen accepteert, verzeker u ervan dat de valuta van het abonnement overeenkomt met de opgegeven valuta.</message>
+	<message key="manager.payment.currencymessage">CLA converteert valuta niet. Als u betalingen voor abonnementen accepteert, verzeker u ervan dat de valuta van het abonnement overeenkomt met de opgegeven valuta.</message>
 	<message key="manager.payment.description">Beschrijving</message>
 	<message key="manager.payment.details">Details</message>
 	<message key="manager.payment.editSubscription">Bewerk abonnement</message>
@@ -168,7 +168,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Om op te nemen in Over dit Tijdschrift)</message>
 	<message key="manager.setup.authorCopyrightNotice">Auteursrecht verklaring</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Verplicht auteurs de auteursrecht verklaring te onderschrijven als onderdeel van de inzendingsprocedure.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[De auteursrecht verklaring hieronder wordt getoond bij Over dit tijdschrift en in de metadata van ieder gepubliceerd artikel. Hoewel ieder tijdschrift een eigen auteursrechtovereenkomst kan hanteren, raadt het Public Knowledge Project de <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> licentie aan. Daartoe biedt het een <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">voorbeeld auteursrecht verklaring</a> die met knippen en plakken in het veld hieronder geplaatst kan worden voor tijdschriften die (a) open access aanbieden, (b) vertraagde open access aanbieden, of (c) geen open access aanbieden.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[De auteursrecht verklaring hieronder wordt getoond bij Over dit tijdschrift en in de metadata van ieder gepubliceerd artikel. Hoewel ieder tijdschrift een eigen auteursrechtovereenkomst kan hanteren, raadt het Sangia Editorial Project de <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> licentie aan. Daartoe biedt het een <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">voorbeeld auteursrecht verklaring</a> die met knippen en plakken in het veld hieronder geplaatst kan worden voor tijdschriften die (a) open access aanbieden, (b) vertraagde open access aanbieden, of (c) geen open access aanbieden.]]></message>
 	<message key="manager.setup.authorGuidelines">Richtlijnen voor auteurs</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Stel ten behoeve van de auteurs de bibliografische en formatteringsstandaard voor inzendingen voor het tijdschrift (bv., <em>Publication Manual of the American Psychological Association</em>, 5e editie, 2001) op. Het is aan te bevelen om voorbeelden te geven van de gangbare citatieformaten voor tijdschriften en boeken voor gebruik in inzendingen. Identificeer ook de bruikbare typen van aanvullende bestanden (bv. datasets, onderzoeksinstrumenten, enz.) die auteurs aangemoedigd worden om met hun inzendingen mee te leveren teneinde de betrokkenheid van de lezers met hun werk te vergroten.]]></message>
 	<message key="manager.setup.competingInterests">Strijdige belangen</message>
@@ -212,7 +212,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Tijdschriften hebben een redactieteam om de redactionele richting van het tijdschrift te beoordelen, deel te nemen in het benoemen van redacteuren, en door middel van de reputatie van de leden van het redactieteam, het tijdschrift aanzicht in het veld te geven. Reviewteams hebben een soortgelijke rol maar leiden bovendien de reviewprocedure. Reviewteam leden hebben geen toegang tot het administratieve systeem van het tijdschrift maar worden toegevoegd aan de lijst van beschikbare reviewers.</message>
 	<message key="manager.setup.emailBounceAddress">Retouradres voor onbestelbare e-mail</message>
 	<message key="manager.setup.emailBounceAddressDescription">E-mails die niet afgeleverd kunnen worden, resulteren in een foutbericht op dit adres.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Noot:</strong> Om deze optie te activeren moet de beheerder de <tt>allow_envelope_sender</tt> optie in het OJS configuratiebestand inschakelen. Additionale server configuratie kan noodzakelijk zijn om deze optie te gebruiken (die niet op alle servers ondersteund wordt) zoals aangegeven in de OJS documentatie.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Noot:</strong> Om deze optie te activeren moet de beheerder de <tt>allow_envelope_sender</tt> optie in het CLA configuratiebestand inschakelen. Additionale server configuratie kan noodzakelijk zijn om deze optie te gebruiken (die niet op alle servers ondersteund wordt) zoals aangegeven in de CLA documentatie.]]></message>
 	<message key="manager.setup.emails">E-mail identificatie</message>
 	<message key="manager.setup.emailSignature">Ondertekening</message>
 	<message key="manager.setup.emailSignatureDescription">De voorbewerkte e-mails die door het systeem namens het tijdschrift verzonden worden, krijgen de volgende ondertekening toegevoegd aan het einde. De tekst van de voorbwerkte e-mails kan aangepast worden bij tijdschriftbeheer.</message>
@@ -234,7 +234,7 @@
 	<message key="manager.setup.focusScope">Focus en missie</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>VOORBEELD HTML DATA</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Voor auteurs ter indexering van hun werk</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS houdt zich aan het <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> Protocol voor Metadata Harvesting, de standaard voor het leveren van goed geïndexeerde toegang tot elektronische wetenschappelijke informatie op wereldschaal. Alle auteurs gebruiken een soortgelijk sjabloon voor het leveren van metadata bij hun inzendingen. De tijdschriftbeheerder selecteert de categorieën voor indexering en levert de auteurs relevante voorbeelden om hen te helpen bij het indexeren van hun werk. Categorieën moeten gescheiden door een puntkomma (bv., term1; term2). De voorbeelden worden als zodanig geïntroduceerd door het gebruik van termen als "bv."  of "voorbeeld".]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA houdt zich aan het <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> Protocol voor Metadata Harvesting, de standaard voor het leveren van goed geïndexeerde toegang tot elektronische wetenschappelijke informatie op wereldschaal. Alle auteurs gebruiken een soortgelijk sjabloon voor het leveren van metadata bij hun inzendingen. De tijdschriftbeheerder selecteert de categorieën voor indexering en levert de auteurs relevante voorbeelden om hen te helpen bij het indexeren van hun werk. Categorieën moeten gescheiden door een puntkomma (bv., term1; term2). De voorbeelden worden als zodanig geïntroduceerd door het gebruik van termen als "bv."  of "voorbeeld".]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Het e-mailadres van de eerste contactpersoon is verplicht.</message>
 	<message key="manager.setup.form.contactNameRequired">De naam van de eerste contactpersoon is verplicht.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Initialen voor het tijdschrift zijn verplicht.</message>
@@ -257,7 +257,7 @@
 	<message key="manager.setup.information.forLibrarians">Voor bibliothecarissen</message>
 	<message key="manager.setup.information.forReaders">Voor lezers</message>
 	<message key="manager.setup.initialIssue">Eerste nummer</message>
-	<message key="manager.setup.initialIssueDescription">Identificeer, afhankelijk van de gekozen vorm, nummer, volume en/of jaar van het eerste nummer dat met OJS gepubliceerd gaat worden:</message>
+	<message key="manager.setup.initialIssueDescription">Identificeer, afhankelijk van de gekozen vorm, nummer, volume en/of jaar van het eerste nummer dat met CLA gepubliceerd gaat worden:</message>
 	<message key="manager.setup.institution">Instituut</message>
 	<message key="manager.setup.issnDescription"><![CDATA[Het ISSN (Internationaal Standaard SerieNummer) is een achtcijferig nummer dat periodieke publicaties, inclusief elektronische versies identificeert. Het wordt beheerd door een wereldwijd netwerk van nationale centra gecoördineerd door een internationaal centrum in Parijs, gesteund door Unesco en de Franse regering. Een nummer kan verkregen worden bij de <a href="http://www.issn.org" target="_new">ISSN website</a>.  Dit kan op ieder gewenst moment gedaan worden.]]></message>
 	<message key="manager.setup.issuePerVolume">Nummers per volume</message>
@@ -368,8 +368,8 @@
 	<message key="manager.setup.reviewGuidelines">Review richtlijnen</message>
 	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[De review richtlijnen verschaffen de reviewers de criteria voor het beoordelen van de geschiktheid van een inzending voor publicatie in dit tijdschrift. Ze bevatten ook instructies voor het maken van een effectief en behulpzaam review. Bij het uitvoeren van het review krijgen reviewers twee tekstvelden, de eerste "voor auteur en redacteur" en de tweede "voor redacteur". Het is ook mogelijk dat de tijdschriftbeheerder een reviewformulier aanmaakt onder <a href="{$reviewFormsUrl}" class="action">Reviewformulieren</a>. In alle gevallen krijgen redacteuren de optie om de reviews op te nemen in hun correspondentie met de auteur.]]></message>
 	<message key="manager.setup.reviewOptions">Opties voor reviews</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">Automatische e-mail herinneringen (beschikbaar in de standaard e-mails van OJS) kunnen op twee momenten naar de reviewer gestuurd worden (de redacteur kan de reviewer altijd direct e-mailen)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Noot:</strong> Om deze opties te kunnen activeren moet de sitebeheerder de <tt>scheduled_tasks</tt> optie in het OJS configuratiebestand inschakelen. Additionale serverconfiguratie is mogelijk nodig om deze functionaliteit te kunnen gebruiken (wat wellicht niet op alle servers mogelijk is), zoals aangegeven is in de OJS documentatie.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">Automatische e-mail herinneringen (beschikbaar in de standaard e-mails van CLA) kunnen op twee momenten naar de reviewer gestuurd worden (de redacteur kan de reviewer altijd direct e-mailen)</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Noot:</strong> Om deze opties te kunnen activeren moet de sitebeheerder de <tt>scheduled_tasks</tt> optie in het CLA configuratiebestand inschakelen. Additionale serverconfiguratie is mogelijk nodig om deze functionaliteit te kunnen gebruiken (wat wellicht niet op alle servers mogelijk is), zoals aangegeven is in de CLA documentatie.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Blinde review</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Kan gewijzigd worden tijdens het redactieproces.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">De vastgestelde tijd voor een review</message>
@@ -388,7 +388,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Maak links naar <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Verzeker een blinde review</a> op pagina's waar auteurs en reviewers bestanden laden.]]></message>
 	<message key="manager.setup.reviewPolicy">Beleid voor reviews</message>
 	<message key="manager.setup.reviewProcess">Review procedure</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS kent twee modellen voor het beheer van de reviewprocedure. De standaard reviewprocedure wordt aanbevolen omdat het de reviewers stap voor stap door het proces leidt, wat een complete review-historie voor iedere inzending oplevert. Het maakt gebruik van automatische herinneringen en standaard aanbevelingen voor inzendingen (Accepteer; Accepteer met revisies; Inzenden voor review; Elders inzenden; Weiger; Zie opmerkingen).<br /><br />Kies een van de volgende:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA kent twee modellen voor het beheer van de reviewprocedure. De standaard reviewprocedure wordt aanbevolen omdat het de reviewers stap voor stap door het proces leidt, wat een complete review-historie voor iedere inzending oplevert. Het maakt gebruik van automatische herinneringen en standaard aanbevelingen voor inzendingen (Accepteer; Accepteer met revisies; Inzenden voor review; Elders inzenden; Weiger; Zie opmerkingen).<br /><br />Kies een van de volgende:]]></message>
 	<message key="manager.setup.reviewProcessEmail">E-mail bijlage reviewprocedure</message>
 	<message key="manager.setup.reviewProcessStandard">Standaard reviewprocedure</message>
 	<message key="manager.setup.reviewProcessStandardDescription">Redacteuren e-mailen geselecteerde reviewers de titel en samenvatting van een inzending met een uitnodiging om in te loggen op de website van het tijdschrift om de review te voltooien. Reviewers gaan naar de website van het tijdschrift om de review  te accepteren, de inzendingen op te halen, hun commentaren in te zenden en een aanbeveling te kiezen.</message>
@@ -398,7 +398,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Als er geen sectie wordt opgegeven, wordt het stuk ingezonden voor de artikelen-sectie)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Ga naar Sectiebeheer om secties voor het tijdschrift aan te maken of te wijzigen (bv. Artikelen, Boekreviews, enz.).<br /><br />Auteurs geven bij de inzending van stukken het volgende aan...]]></message>
 	<message key="manager.setup.securitySettings">Instellingen voor toegang en beveiliging</message>
-	<message key="manager.setup.securitySettingsDescription">OJS biedt een aantal aan beveiliging gerelateerde opties die de toegang tot de inhoud van het tijdschrift kunnen beperken en kan additionele informatie over inzendingen bewaren voor controledoeleinden.</message>
+	<message key="manager.setup.securitySettingsDescription">CLA biedt een aantal aan beveiliging gerelateerde opties die de toegang tot de inhoud van het tijdschrift kunnen beperken en kan additionele informatie over inzendingen bewaren voor controledoeleinden.</message>
 	<message key="manager.setup.selectEditorDescription">De redacteur die het door het redactieproces zal leiden.</message>
 	<message key="manager.setup.selectSectionDescription">De tijdschriftsectie waarvoor het stuk overwogen moet worden.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Altijd de proefdruk-links tonen en beperkte toegang aangeven.</message>
@@ -436,7 +436,7 @@
 	<message key="manager.setup.useTextTitle">Titel tekst</message>
 	<message key="manager.setup.volumePerYear">Volumes per jaar</message>
 	<message key="manager.statistics.reports">Rapportgenerator</message>
-	<message key="manager.statistics.reports.description">OJS genereert rapporten die details tonen met betrekking tot het verwerken van inzendingen voor het tijdschrift vanuit het perspectief van inzendingen, redacteurs, reviewers en secties over een gegeven tijdsperiode. Rapporten worden gegenereerd in CSV formaat die in een spreadsheet bekeken kunnen worden.</message>
+	<message key="manager.statistics.reports.description">CLA genereert rapporten die details tonen met betrekking tot het verwerken van inzendingen voor het tijdschrift vanuit het perspectief van inzendingen, redacteurs, reviewers en secties over een gegeven tijdsperiode. Rapporten worden gegenereerd in CSV formaat die in een spreadsheet bekeken kunnen worden.</message>
 	<message key="manager.statistics.statistics">Tijdschrift statistieken</message>
 	<message key="manager.statistics.statistics.articleViews">Artikel-tellers (alleen voor auteurs)</message>
 	<message key="manager.statistics.statistics.count.accept">Accepteer</message>
@@ -444,7 +444,7 @@
 	<message key="manager.statistics.statistics.count.revise">Opnieuw insturen</message>
 	<message key="manager.statistics.statistics.daysPerReview">Dagen voor een review</message>
 	<message key="manager.statistics.statistics.daysToPublication">Dagen tot publicatie</message>
-	<message key="manager.statistics.statistics.description">OJS berekent de volgende statistieken voor ieder tijdschrift. "Dagen voor een review" wordt berekend van de datum van inzending (of aanwijzen van de review-versie) tot de initiele beslissing van de redacteur, terwijl "Dagen tot publicatie" voor geaccepteerde inzendingen wordt gemeten van de oorsponkelijke inzenddatum tot de publicatie.</message>
+	<message key="manager.statistics.statistics.description">CLA berekent de volgende statistieken voor ieder tijdschrift. "Dagen voor een review" wordt berekend van de datum van inzending (of aanwijzen van de review-versie) tot de initiele beslissing van de redacteur, terwijl "Dagen tot publicatie" voor geaccepteerde inzendingen wordt gemeten van de oorsponkelijke inzenddatum tot de publicatie.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Gepubliceerde items</message>
 	<message key="manager.statistics.statistics.makePublic">Vink de gegevens aan die lezers kunnen zien in Over dit tijdschrift.</message>
 	<message key="manager.statistics.statistics.note">Noot: Percentages voor gereviewde inzendingen komen mogelijk niet uit op 100%, omdat opnieuw ingestuurde items geaccepteerd, geweigerd of nog in bewerking zijn.</message>
@@ -480,7 +480,7 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">we(e)k(en) voor afloop van het abonnement.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Herinneringen bij afloop van het abonnement</message>
 	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Geautomatiseerde e-mail herinneringen (die bij Voorbereide e-mails door de tijdschriftbeheerder gewijzigd kunnen worden) kunnen voor en na het aflopen van een abonnement naar de abonnees gestuurd worden.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Noot:</strong> Om deze opties te activeren moet de sitebeheerder de <tt>scheduled_tasks</tt> optie in het OJS configuratiebestand inschakelen. Aanvullende serverconfiguratie is mogelijk nodig (wat wellicht niet op alle servers mogelijk is), zoals vermeld in de OJS documentatie.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Noot:</strong> Om deze opties te activeren moet de sitebeheerder de <tt>scheduled_tasks</tt> optie in het CLA configuratiebestand inschakelen. Aanvullende serverconfiguratie is mogelijk nodig (wat wellicht niet op alle servers mogelijk is), zoals vermeld in de CLA documentatie.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Kies een van de volgende</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[In het tekstveld kan HTML  gebruikt worden (voor lettergrootte, kleur enz.), waarbij "returns" opgevat worden als <tt><br></tt>; HTML bewerken werkt in de Firefox browser.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Geef een geldige waarde voor het aantal maanden nadat het abonnement afloopt.</message>
@@ -488,7 +488,7 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Geef een geldige waarde voor het aantal weken nadat het abonnement afloopt.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Geef een geldige waarde voor het aantal weken voordat het abonnement afloopt.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Geregistreerde gebruikers kunnen de inhoudsopgave toegestuurd krijgen zodra een nummer als open access beschikbaar komt.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Noot:</strong>Om deze optie te activeren moet de sitebeheerder de <tt>scheduled_tasks</tt> optie in het OJS configuratiebestand inschakelen. Extra serverconfiguratie is mogelijk nodig om deze functionaliteit te kunnen gebruiken (niet op alle servers mogelijk). Zie de OJS documentatie.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Noot:</strong>Om deze optie te activeren moet de sitebeheerder de <tt>scheduled_tasks</tt> optie in het CLA configuratiebestand inschakelen. Extra serverconfiguratie is mogelijk nodig om deze functionaliteit te kunnen gebruiken (niet op alle servers mogelijk). Zie de CLA documentatie.]]></message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">Open Access opties voor tijdschriften met abonnement</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">Tijdschriften met abonnement kunnen "vertraagde open access" bieden voor hun gepubliceerde inhoud en ze kunnen publicatie door de auteurs toestaan. Beide verhogen de lezersaantallen en citaties.</message>
 	<message key="manager.subscriptionPolicies.subscriptionAdditionalInformation">Abonnementen informatie</message>
@@ -654,11 +654,11 @@
 	<message key="manager.setup.historyDescription">Deze tekst verschijnt in de "Over" sectie van de website van het tijdschrift en kan gebruikt worden om de veranderingen in het tijdschrift, de redactie en andere relevante historische feiten te beschrijven.</message>
 	<message key="manager.setup.journalFaviconDescription">Voeg een favicon toe aan dit tijdschrift. Dat wordt bij de adresbalk getoond van gebruikers die uw site bezoeken.</message>
 	<message key="manager.setup.journalFaviconInvalid">Onjuist favicon formaat. Geldige formaten zijn .ico, .png en .gif.</message>
-	<message key="manager.setup.noPublishing">OJS zal niet gebruikt worden om de inhoud van het tijdschrift online te publiceren.</message>
+	<message key="manager.setup.noPublishing">CLA zal niet gebruikt worden om de inhoud van het tijdschrift online te publiceren.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Berichten over online betalingen</message>
 	<message key="manager.setup.publisherNoteDescription">Deze tekst wordt getoond onder de kop "uitgever" en boven de naam/url van de uitgever onder "Sponsors"  op de pagina "Over het tijdschrift".</message>
 	<message key="manager.setup.sponsorNoteDescription">Deze tekst wordt getoond onder de "sponsors" kop en boven de lijst met sponsornamen en url's onder "Sponsors"  op de pagina "Over het tijdschrift".</message>
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Automatische e-mailberichten (aan te passen door de tijdschriftbeheerders  bij de OJS voorbereide e-mails) die gestuurd kunnen worden aan de abonnementenbeheerder bij het voltooien van online betalingen van abonnementen.</message>
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Automatische e-mailberichten (aan te passen door de tijdschriftbeheerders  bij de CLA voorbereide e-mails) die gestuurd kunnen worden aan de abonnementenbeheerder bij het voltooien van online betalingen van abonnementen.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentPurchaseInstitutionalDescription"><![CDATA[<strong>Noot:</strong> Institutionele abonnementen die online gekocht worden vereisen goedkeuring van het opgegeven domein en IP reeksen en activatie van het abonnement door de abonnementenbeheerder.]]></message>
 	<message key="manager.subscriptionPolicies.onlinePaymentDisabled"><![CDATA[<strong>Noot:</strong> Om deze opties in te schakelen moet de tijdschriftbeheerder de online betalingen module, inclusief online betalingen voor abonnementen inschakelen bij Kosten voor Lezers.]]></message>
 	<message key="manager.language.submissions">Inzendingen</message>

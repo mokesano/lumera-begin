@@ -20,7 +20,7 @@
 define('GRID_ACTION_POSITION_ROW_CLICK', 'row-click');
 define('GRID_ACTION_POSITION_ROW_LEFT', 'row-left');
 
-import('lib.pkp.classes.controllers.grid.GridBodyElement');
+import('lib.sep.classes.controllers.grid.GridBodyElement');
 
 class GridRow extends GridBodyElement {
 

@@ -30,7 +30,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * View an assigned submission's layout editing page.
 	 * @param $args array ($articleId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submission($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -76,7 +76,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * View submission metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewMetadata($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -89,7 +89,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Mark assignment as complete.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function completeAssignment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -108,7 +108,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Create a new layout file (layout version, galley, or supp file) with the uploaded file.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function uploadLayoutFile($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -146,7 +146,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Edit a galley.
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editGalley($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -233,7 +233,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Delete a galley file.
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteGalley($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -249,7 +249,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Change the sequence order of a galley.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function orderGalley($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -264,7 +264,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Proof / "preview" a galley.
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalley($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -280,7 +280,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Proof galley (shows frame header).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyTop($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -297,7 +297,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Proof galley (outputs file contents).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -329,7 +329,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Delete an article image.
 	 * @param $args array ($articleId, $fileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteArticleImage($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -351,7 +351,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Edit a supplementary file.
 	 * @param $args array ($articleId, $suppFileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editSuppFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -434,7 +434,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Delete a supplementary file.
 	 * @param $args array ($articleId, $suppFileId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteSuppFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -447,7 +447,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Change the sequence order of a supplementary file.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function orderSuppFile($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -464,7 +464,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Download a file.
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function downloadFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -483,7 +483,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * View a file (inlines file).
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -529,7 +529,7 @@ class SubmissionLayoutHandler extends LayoutEditorHandler {
 	/**
 	 * Download a layout template.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function downloadLayoutTemplate($args, &$request) {
 		parent::validate($request);

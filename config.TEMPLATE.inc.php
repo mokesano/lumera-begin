@@ -11,7 +11,7 @@
 ; Copyright (c) 2003-2016 John Willinsky
 ; Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
 ;
-; OJS Configuration settings.
+; CLA Configuration settings.
 ; Rename config.TEMPLATE.inc.php to config.inc.php to use.
 ;
 ;
@@ -28,8 +28,8 @@
 ; (This is generally done automatically by the installer)
 installed = Off
 
-; The canonical URL to the OJS installation (excluding the trailing slash)
-base_url = "http://pkp.sfu.ca/ojs"
+; The canonical URL to the CLA installation (excluding the trailing slash)
+base_url = "http://lumera.sangia.org/cla"
 
 ; Path to the registry directory (containing various settings files)
 ; Although the files in this directory generally do not contain any
@@ -38,7 +38,7 @@ base_url = "http://pkp.sfu.ca/ojs"
 registry_dir = registry
 
 ; Session cookie name
-session_cookie_name = OJSSID
+session_cookie_name = CLASID
 
 ; Number of days to save login cookie for if user selects to remember
 ; (set to 0 to force expiration at end of current session)
@@ -75,8 +75,8 @@ disable_path_info = Off
 allow_url_fopen = Off
 
 ; Base URL override settings: Entries like the following examples can
-; be used to override the base URLs used by OJS. If you want to use a
-; proxy to rewrite URLs to OJS, configure your proxy's URL here.
+; be used to override the base URLs used by CLA. If you want to use a
+; proxy to rewrite URLs to CLA, configure your proxy's URL here.
 ; Syntax: base_url[journal_path] = http://www.myUrl.com
 ; To override URLs that aren't part of a particular journal, use a
 ; journal_path of "index".
@@ -108,7 +108,7 @@ citation_checking_max_processes = 3
 ; Display a message on the site admin and journal manager user home pages if there is an upgrade available
 show_upgrade_warning = On
 
-; Provide a unique site ID and OAI base URL to PKP for statistics and security
+; Provide a unique site ID and OAI base URL to SEP for statistics and security
 ; alert purposes only.
 enable_beacon = On
 
@@ -121,9 +121,9 @@ enable_beacon = On
 
 driver = mysql
 host = localhost
-username = ojs
-password = ojs
-name = ojs
+username = cla
+password = cla
+name = cla
 
 ; Enable persistent connections
 persistent = Off
@@ -161,7 +161,7 @@ memcache_port = 11211
 ;
 ; When using web_cache, configure a tool to periodically clear out cache files
 ; such as CRON. For example, configure it to run the following command:
-; find .../ojs/cache -maxdepth 1 -name wc-\*.html -mtime +1 -exec rm "{}" ";"
+; find .../cla/cache -maxdepth 1 -name wc-\*.html -mtime +1 -exec rm "{}" ";"
 web_cache = Off
 web_cache_hours = 1
 
@@ -208,7 +208,7 @@ files_dir = files
 
 ; Path to the directory to store public uploaded files
 ; (This directory should be web-accessible and the specified path
-; should be relative to the base OJS directory)
+; should be relative to the base CLA directory)
 ; Windows users should use forward slashes
 public_files_dir = public
 
@@ -326,7 +326,7 @@ allowed_html = "<a href|target> <em> <strong> <cite> <code> <ul> <ol> <li> <dl> 
 enable_attachments = On
 
 ; Amount of time required between attempts to send non-editorial emails
-; in seconds. This can be used to help prevent email relaying via OJS.
+; in seconds. This can be used to help prevent email relaying via CLA.
 time_between_emails = 3600
 
 ; Maximum number of recipients that can be included in a single email
@@ -387,7 +387,7 @@ result_cache_hours = 1
 oai = On
 
 ; OAI Repository identifier
-repository_id = ojs.pkp.sfu.ca
+repository_id = cla.sep.sfu.ca
 
 ; Maximum number of records per request to serve via OAI
 oai_max_records = 100
@@ -517,12 +517,12 @@ log_web_service_info = Off
 ; to do so by someone from your network. You do not need to create an 
 ; account or login on this server. 
 ; 
-; For more information, please see https://pkp.sfu.ca/pkp-lockss/
+; For more information, please see https://lumera.sangia.org/sep-lockss/
 ; 
 ; If you do change this value, a journal manager must also reset each deposit in
 ; each journal so that the new network will receive and process the deposits. 
 ; Deposits can be reset for each journal on the PLN Plugin's status page at 
-; Journal Management > System Plugins > Generic Plugins > PKP PLN Plugin
+; Journal Management > System Plugins > Generic Plugins > SEP PLN Plugin
 ; 
-; pln_url = http://pkp-pln.lib.sfu.ca
-; pln_status_docs = http://pkp-pln.lib.sfu.ca/docs/status
+; pln_url = http://sep-pln.lib.sfu.ca
+; pln_status_docs = http://sep-pln.lib.sfu.ca/docs/status

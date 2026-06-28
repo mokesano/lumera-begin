@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000013.xml
@@ -16,6 +16,6 @@
 
 <topic id="journal/topic/000013" locale="gl_ES" title="Importar Usuarios" toc="journal/toc/000002" key="journal.users.importUsers">
 	<section>
-		<![CDATA[<p>OJS fornece un servicio sinxelo para importar dados de usuarios dende un formato baseado en XML, que pode ser xerado doadamente dende outra base de dados de información de usuarios. Consulta a documentación incluida en OJS, para maior información sobre formatos XML e XML DTD para dados de usuarios.</p>]]>	
+		<![CDATA[<p>CLA fornece un servicio sinxelo para importar dados de usuarios dende un formato baseado en XML, que pode ser xerado doadamente dende outra base de dados de información de usuarios. Consulta a documentación incluida en CLA, para maior información sobre formatos XML e XML DTD para dados de usuarios.</p>]]>	
 	</section>
 </topic>

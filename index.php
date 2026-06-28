@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @mainpage OJS API Reference
+ * @mainpage CLA API Reference
  *
- * Welcome to the OJS API Reference. This resource contains documentation
- * generated automatically from the OJS source code.
+ * Welcome to the CLA API Reference. This resource contains documentation
+ * generated automatically from the CLA source code.
  *
  * The design of Open %Journal Systems 2.x is heavily structured for
  * maintainability, flexibility and robustness. For this reason it may seem
@@ -36,12 +36,12 @@
  * has a Class name of the form [Something]%DAO, and has a filename of the form
  * [Something]%DAO.inc.php.
  *
- * To learn more about developing OJS, there are several additional resources
+ * To learn more about developing CLA, there are several additional resources
  * that may be useful:
  * - The docs/README document
- * - The PKP support forum at http://forum.pkp.sfu.ca
+ * - The SEP support forum at http://forum.sep.sfu.ca
  * - The technical reference (and other documents), available at
- *   http://pkp.sfu.ca/ojs_documentation
+ *   http://lumera.sangia.org/cla_documentation
  *
  * @file index.php
  *
@@ -51,16 +51,16 @@
  *
  * @ingroup index
  *
- * Bootstrap code for OJS site. Loads required files and then calls the
+ * Bootstrap code for CLA site. Loads required files and then calls the
  * dispatcher to delegate to the appropriate request handler.
  */
 
 // Initialize global environment
 define('INDEX_FILE_LOCATION', __FILE__);
-require('./lib/pkp/includes/bootstrap.inc.php');
+require('./lib/sep/includes/bootstrap.inc.php');
 
 // Serve the request
-$application =& PKPApplication::getApplication();
+$application =& SEPApplication::getApplication();
 $application->execute();
 
 ?>

@@ -13,10 +13,10 @@
  * @brief Class defining basic operations for handling Listbuilder UI elements
  */
 
-import('lib.pkp.classes.controllers.grid.GridHandler');
-import('lib.pkp.classes.controllers.listbuilder.ListbuilderGridRow');
-import('lib.pkp.classes.controllers.listbuilder.ListbuilderGridColumn');
-import('lib.pkp.classes.controllers.listbuilder.MultilingualListbuilderGridColumn');
+import('lib.sep.classes.controllers.grid.GridHandler');
+import('lib.sep.classes.controllers.listbuilder.ListbuilderGridRow');
+import('lib.sep.classes.controllers.listbuilder.ListbuilderGridColumn');
+import('lib.sep.classes.controllers.listbuilder.MultilingualListbuilderGridColumn');
 
 /* Listbuilder source types: text-based, pulldown, ... */
 define_exposed('LISTBUILDER_SOURCE_TYPE_TEXT', 0);
@@ -66,7 +66,7 @@ class ListbuilderHandler extends GridHandler {
 		parent::initialize($request);
 
 		if ($addItemLink) {
-			import('lib.pkp.classes.linkAction.request.NullAction');
+			import('lib.sep.classes.linkAction.request.NullAction');
 			$this->addAction(
 				new LinkAction(
 					'addItem',
@@ -147,7 +147,7 @@ class ListbuilderHandler extends GridHandler {
 	 * Get the new row ID from the request. For multi-column listbuilders,
 	 * this is an array representing the row. For single-column
 	 * listbuilders, this is a single piece of data (i.e. a string or int)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return mixed
 	 */
 	function getNewRowId($request) {
@@ -208,7 +208,7 @@ class ListbuilderHandler extends GridHandler {
 	/**
 	 * Fetch the listbuilder.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function fetch($args, &$request) {
 		return $this->fetchGrid($args, $request);
@@ -234,7 +234,7 @@ class ListbuilderHandler extends GridHandler {
 			$updateCallback = array(&$this, 'updateEntry');
 		}
 
-		import('lib.pkp.classes.core.JSONManager');
+		import('lib.sep.classes.core.JSONManager');
 		$jsonManager = new JSONManager();
 		$data = $jsonManager->decode($data);
 
@@ -286,7 +286,7 @@ class ListbuilderHandler extends GridHandler {
 	/**
 	 * Save the listbuilder using the internal handler.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function save($args, &$request) {
 		// The ListbuilderHandler will post a list of changed
@@ -306,7 +306,7 @@ class ListbuilderHandler extends GridHandler {
 	/**
 	 * Load the set of options for a select list type listbuilder.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function fetchOptions($args, &$request) {
 		$options = $this->getOptions($request);

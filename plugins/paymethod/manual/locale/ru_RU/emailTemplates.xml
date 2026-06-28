@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 
 <!--
   * @file plugins/paymethod/manual/locale/ru_RU/emailTemplates.xml
@@ -20,7 +20,7 @@
 Пользователь платит за «{$itemName}».
 Сумма {$itemCost} ({$itemCurrencyCode}).
 
-Это письмо сгенерировано плагином «Ввод оплаты вручную» системы Open Journal Systems.</body>
+Это письмо сгенерировано плагином «Ввод оплаты вручную» системы Code Lumera Editorial.</body>
 		<description>Этот шаблон письма используется для уведомления управляющего журналом о том, что был запрошен ввод оплаты вручную.</description>
 	</email_text>
 </email_texts>

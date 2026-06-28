@@ -1,4 +1,4 @@
-Starting with OJS 2.4.6-1, this software will optionally provide PKP with a
+Starting with CLA 2.4.6-1, this software will optionally provide SEP with a
 unique identifier for the installation and the OAI base URL. These are to be
 used for statistics and security alert purposes only.
 

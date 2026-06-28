@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/plumAnalytics/locale/en_US/locale.xml
@@ -14,13 +14,13 @@
 
 	<!-- Plum Analytics -->
 	<message key="plugins.generic.plumAnalytics.displayName">Plum Analytics Artifact Widget</message>
-	<message key="plugins.generic.plumAnalytics.description"><![CDATA[Integrate OJS with PlumX, a subscription-based platform for tracking research impact.  Through this plugin, PlumX customers can embed the PlumX Artifact widget on the article abstract view in OJS to demonstrate how each article is utilized, interacted with and talked about around the world through dozens of metrics mined from the open Web.  The article requires a DOI for the widget to appear.]]></message>
+	<message key="plugins.generic.plumAnalytics.description"><![CDATA[Integrate CLA with PlumX, a subscription-based platform for tracking research impact.  Through this plugin, PlumX customers can embed the PlumX Artifact widget on the article abstract view in CLA to demonstrate how each article is utilized, interacted with and talked about around the world through dozens of metrics mined from the open Web.  The article requires a DOI for the widget to appear.]]></message>
 	<message key="plugins.generic.plumAnalytics.block.displayName">Plum Analytics Artifact Widget Block</message>
 	
 	<!-- Plum Analytics Settings Management -->
 	<message key="plugins.generic.plumAnalytics.manager.settings">Settings</message>
 	<message key="plugins.generic.plumAnalytics.manager.plumAnalyticsSettings">Plum Analytics Artifact Widget Settings</message>
-	<message key="plugins.generic.plumAnalytics.manager.settings.description"><![CDATA[<p>With this plugin enabled, the Plum Analytics Artifact widget will be added to your articles.  This requires a service agreement with PlumX: please review the <a href="http://plumanalytics.com/ojs_integration/">information on PlumX and OJS integration</a>.  The article's DOI will be used to link to the PlumX artifact metrics. For details and examples of the different widget settings, please see the <a href="https://plu.mx/developers/widgets" target="_blank">PlumX Widget Page</a>.</p>]]></message>
+	<message key="plugins.generic.plumAnalytics.manager.settings.description"><![CDATA[<p>With this plugin enabled, the Plum Analytics Artifact widget will be added to your articles.  This requires a service agreement with PlumX: please review the <a href="http://plumanalytics.com/cla_integration/">information on PlumX and CLA integration</a>.  The article's DOI will be used to link to the PlumX artifact metrics. For details and examples of the different widget settings, please see the <a href="https://plu.mx/developers/widgets" target="_blank">PlumX Widget Page</a>.</p>]]></message>
 	<message key="plugins.generic.plumAnalytics.manager.settings.widgetType">Widget Type</message>
 	<message key="plugins.generic.plumAnalytics.manager.settings.widgetType.plumx-plum-print-popup">Pop Up</message>
 	<message key="plugins.generic.plumAnalytics.manager.settings.widgetType.plumx-summary">Summary</message>

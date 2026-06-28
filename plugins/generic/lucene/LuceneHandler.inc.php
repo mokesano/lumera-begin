@@ -15,7 +15,7 @@
 
 import('classes.handler.Handler');
 import('plugins.generic.lucene.classes.SolrWebService');
-import('lib.pkp.classes.core.JSONMessage');
+import('lib.sep.classes.core.JSONMessage');
 import('classes.search.ArticleSearch');
 
 class LuceneHandler extends Handler {

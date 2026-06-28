@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/vi_VN/manager.xml
@@ -20,14 +20,14 @@
 	<message key="manager.groups.context.editorialTeam.short">Ban Biên tập</message>
 	<message key="manager.groups.context.people">Chức danh được nêu dưới mục ở mục riêng trong phần Nhân sự (v.d., Hội đồng Biên tập)</message>
 	<message key="manager.groups.create">Tạo định danh chức vụ</message>
-	<message key="manager.groups.disableBoard">Phần mềm OJS liệt kê thành viên của Ban Biên tập theo những chức vai trò được giao (Tổng biên tập, Biên tập viên bản thảo,...)</message>
+	<message key="manager.groups.disableBoard">Phần mềm CLA liệt kê thành viên của Ban Biên tập theo những chức vai trò được giao (Tổng biên tập, Biên tập viên bản thảo,...)</message>
 	<message key="manager.groups.enableBoard">Tổng biên tập quy định chức danh và xếp người vào mỗi chức danh</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[Dưới mục <a href="{$aboutEditorialTeamUrl}">Nhân sự</a> trong trang Giới thiệu Tạp chí:]]></message>
 	<message key="manager.groups.noneCreated">Không có chức danh biên tập nào thêm được lập.</message>
 	<message key="manager.journalManagement">Quản lý Tạp chí</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">Tác vụ này sẽ thay thế bất kỳ tham số nào bạn đã đặt cho ngôn ngữ này</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Tải lại tham số mặc định theo ngôn ngữ</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[Người dùng có thể sử dụng OJS ở bất kỳ ngôn ngữ nào trong số các ngôn ngữ có trong phần mềm. Ngoài ra, OJS còn hoạt động như một phần mềm đa ngôn ngữ, cho phép người dùng chuyển đổi giữa các ngôn ngữ trên mỗi trang, và cho phép một số dữ liệu nhất định được nhập vào ở nhiều ngôn ngữ khác nhau.<br /><br/>Nếu một ngôn ngữ mà OS hỗ trợ mà không được liệt kê dưới đây, hãy đề nghị người quản trị website cài đặt ngôn ngữ đó từ giao diện quản trị. Về các chỉ dẫn cài đặt thêm ngôn ngữ mới, vui lòng xem tài liệu hướng dẫn sử dụng OJS.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[Người dùng có thể sử dụng CLA ở bất kỳ ngôn ngữ nào trong số các ngôn ngữ có trong phần mềm. Ngoài ra, CLA còn hoạt động như một phần mềm đa ngôn ngữ, cho phép người dùng chuyển đổi giữa các ngôn ngữ trên mỗi trang, và cho phép một số dữ liệu nhất định được nhập vào ở nhiều ngôn ngữ khác nhau.<br /><br/>Nếu một ngôn ngữ mà OS hỗ trợ mà không được liệt kê dưới đây, hãy đề nghị người quản trị website cài đặt ngôn ngữ đó từ giao diện quản trị. Về các chỉ dẫn cài đặt thêm ngôn ngữ mới, vui lòng xem tài liệu hướng dẫn sử dụng CLA.]]></message>
 	<message key="manager.languages.noneAvailable">Xin lỗi, không có thêm ngôn ngữ nào sẵn sàng. Vui lòng liên hệ với người quản trị website nếu bạn muốn có thêm ngôn ngữ cho tạp chí.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Đây sẽ là ngôn ngữ mặc định trên trang web tạp chí.</message>
 	<message key="manager.managementPages">Các công cụ quản lý</message>
@@ -37,7 +37,7 @@
 	<message key="manager.payment.authorFees">Phí Tác giả</message>
 	<message key="manager.payment.authorFeesDescription">Các phương án được lựa chọn, cùng với mô tả và lệ phí (có thể sửa được ở dưới đây), sẽ xuất hiện ở Bước 1 trong quá trình nộp bài và trong trang Giới thiệu Tạp chí dưới mục Bài nộp, đồng thời ở những nơi cần phải trả tiền để tiếp tục.</message>
 	<message key="manager.payment.currency">Tiền tệ</message>
-	<message key="manager.payment.currencymessage">OJS không quy đổi giữa các loại tiền tệ. Nếu chấp nhận các khoản thanh toán cho thuê bao, quý vị phải đảm bảo rằng tiền tệ trả cho thuê bao khớp với loại được nêu ở đây.</message>
+	<message key="manager.payment.currencymessage">CLA không quy đổi giữa các loại tiền tệ. Nếu chấp nhận các khoản thanh toán cho thuê bao, quý vị phải đảm bảo rằng tiền tệ trả cho thuê bao khớp với loại được nêu ở đây.</message>
 	<message key="manager.payment.description">Mô tả</message>
 	<message key="manager.payment.details">Chi tiết</message>
 	<message key="manager.payment.editSubscription">Sửa thuê bao</message>
@@ -211,7 +211,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Các tạp chí thường có Hội đồng Biên tập để quản lý định hướng biên tập của tạp chí, để tham gia vào việc bổ nhiệm các BTV, và để tạo dựng vị thế của tạp chí từ danh tiếng của các thành viên trong hội đồng. Hội đồng Phản biện đóng vai trò tương tự nhưng ngoài ra họ còn dẫn dắt quá trình phản biện chuyên gia. Thành viên của Hội đồng Phản biện không chỉ có quyền truy cập vào hệ thống hành chính của tạp chí mà còn được đưa vào danh sách những người có thể phản biện chuyên gia.</message>
 	<message key="manager.setup.emailBounceAddress"> Các địa chỉ bị trả lại thư</message>
 	<message key="manager.setup.emailBounceAddressDescription"> Bất kỳ email nào không gửi được cũng sẽ trở thành một báo lỗi gửi tới địa chỉ này.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Lưu ý:</strong> Để kích hoạt lựa chọn này, người quản trị website phải kích hoạt lựa chọn <tt>allow_envelope_sender</tt> trong file cấu hình của OJS. Cấu hình máy chủ bố sung có thể cần để hỗ trợ tính năng này (có thể không có ở tất cả các máy chủ), như được nêu trong tài liệu hướng dẫn OJS.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Lưu ý:</strong> Để kích hoạt lựa chọn này, người quản trị website phải kích hoạt lựa chọn <tt>allow_envelope_sender</tt> trong file cấu hình của CLA. Cấu hình máy chủ bố sung có thể cần để hỗ trợ tính năng này (có thể không có ở tất cả các máy chủ), như được nêu trong tài liệu hướng dẫn CLA.]]></message>
 	<message key="manager.setup.emails">Nhận diện email</message>
 	<message key="manager.setup.emailSignature">Chữ ký</message>
 	<message key="manager.setup.emailSignatureDescription">Các email soạn sẵn được hệ thống gửi thay mặt cho tạp chí sẽ kèm theo chữ ký dưới đây ở cuối thư. Nội dung của các thư soạn sẵn có thể sửa ở mục Quản lý Tạp chí.</message>
@@ -233,7 +233,7 @@
 	<message key="manager.setup.focusScope">Trọng tâm và Phạm vi</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<strong>VÍ DỤ DỮ LIỆU HTML</strong>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Để tác giả lập chỉ mục tác phẩm của mình</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[Phần mềm OJS tuân theo Giao thức <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> về Gặt hái Dữ liệu mô tả (Siêu dữ liệu), một tiêu chuẩn đang được ưa chuộng dùng để cung cấp quyền truy cập ở phạm vi toàn cầu tới các nguồn thông tin điện tử đã được lập chỉ mục chi tiết. Tác giả sẽ sử dụng một khổ mẫu tương tự để cung cấp dữ liệu mô tả cho bài nộp của mình. Tổng biên tập cần lựa chọn các phân mục cho việc lập chỉ mục và cung cấp cho tác giả những ví dụ phù hợp để hỗ trợ tác giả trong việc lập chỉ mục cho tác phẩm của mình, phân tách các thuật ngữ bằng dấu chấm phẩy (v.d., thuật ngữ 1; thuật ngữ 2). Những mục này cần được giới thiệu như là các ví dụ bằng cách sử sụng từ dẫn "v.d.," hoặc "Ví dụ,".]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[Phần mềm CLA tuân theo Giao thức <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> về Gặt hái Dữ liệu mô tả (Siêu dữ liệu), một tiêu chuẩn đang được ưa chuộng dùng để cung cấp quyền truy cập ở phạm vi toàn cầu tới các nguồn thông tin điện tử đã được lập chỉ mục chi tiết. Tác giả sẽ sử dụng một khổ mẫu tương tự để cung cấp dữ liệu mô tả cho bài nộp của mình. Tổng biên tập cần lựa chọn các phân mục cho việc lập chỉ mục và cung cấp cho tác giả những ví dụ phù hợp để hỗ trợ tác giả trong việc lập chỉ mục cho tác phẩm của mình, phân tách các thuật ngữ bằng dấu chấm phẩy (v.d., thuật ngữ 1; thuật ngữ 2). Những mục này cần được giới thiệu như là các ví dụ bằng cách sử sụng từ dẫn "v.d.," hoặc "Ví dụ,".]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Phải có email của người liên lạc chính.</message>
 	<message key="manager.setup.form.contactNameRequired">Phải có người liên lạc chính.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Phải có các chữ cái đầu tên tạp chí</message>
@@ -256,7 +256,7 @@
 	<message key="manager.setup.information.forLibrarians">Dành cho CB Thư viện</message>
 	<message key="manager.setup.information.forReaders">Dành cho Bạn đọc</message>
 	<message key="manager.setup.initialIssue">Số khởi đầu</message>
-	<message key="manager.setup.initialIssueDescription">Tùy thuộc vào định dạng được chọn, xác định số, tập, và/hoặc năm của số đầu tiên sẽ được xuất bản bằng phần mềm OJS:</message>
+	<message key="manager.setup.initialIssueDescription">Tùy thuộc vào định dạng được chọn, xác định số, tập, và/hoặc năm của số đầu tiên sẽ được xuất bản bằng phần mềm CLA:</message>
 	<message key="manager.setup.institution">Đơn vị</message>
 	<message key="manager.setup.issnDescription"><![CDATA[Chỉ số ISSN (International Standard Serial Number) là một số gồm 8 chữ số định danh các ấn phẩm đều kỳ, bao gồm cả ấn phẩm đều kỳ điện tử. Chỉ số này được quản lý bởi một mạng lưới các Trung tâm Quốc gia về ISSN và được điều phối chung bởi Trung tâm Quốc tế ISSN tại Paris, được UNESCO và Chính phủ Pháp bảo trợ. Chỉ số này có thể xin tại <a href="http://www.issn.org" target="_new">Website của ISSN</a>.  Việc này có thể làm ở bất kỳ thời điểm nào trong quá trình hoạt động của tạp chí.]]></message>
 	<message key="manager.setup.issuePerVolume">Số lượng số tạp chí mỗi năm</message>
@@ -367,8 +367,8 @@
 	<message key="manager.setup.reviewGuidelines">Hướng dẫn Phản biện</message>
 	<message key="manager.setup.reviewGuidelinesDescription"> Hướng dẫn phản biện cung cấp cho người phản biện những tiêu chuẩn để đánh giá sự phù hợp để xuất bản trên tạp chí của một bài nộp, cùng với bất kỳ hướng dẫn đặc biệ nào cần để chuẩn bị một bài phản biện hiệu quả và hữu ích.</message>
 	<message key="manager.setup.reviewOptions">Các hình thức phản biện</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">Các email tự động (có trong các Email soạn sẵn của OJS) có thể được gửi tới những người phản biện ở hai thời điểm (BTV luôn có thể gửi email trực tiếp cho người phản biện)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Lưu ý:</strong> Để kích hoạt những lựa chọn này, người quản trị website phải kích hoạt lựa chọn <tt>scheduled_tasks</tt> trong file cấu hình của OJS. Ngoài ra, cấu hình máy chủ có thể phải bổ sung để hỗ trợ tính năn này (có thể không có trên tất cả các máy chủ), như đã nêu trong tài liệu hướng dẫn về OJS.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">Các email tự động (có trong các Email soạn sẵn của CLA) có thể được gửi tới những người phản biện ở hai thời điểm (BTV luôn có thể gửi email trực tiếp cho người phản biện)</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Lưu ý:</strong> Để kích hoạt những lựa chọn này, người quản trị website phải kích hoạt lựa chọn <tt>scheduled_tasks</tt> trong file cấu hình của CLA. Ngoài ra, cấu hình máy chủ có thể phải bổ sung để hỗ trợ tính năn này (có thể không có trên tất cả các máy chủ), như đã nêu trong tài liệu hướng dẫn về CLA.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Phản biện Khuyết danh</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Có thể thay đổi trong quá trình biên tập.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Khoảng thời gian thông thường dành cho phản biện</message>
@@ -387,7 +387,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Cung cấp đường dẫn tới mục <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Đảm bảo Phản biệt Khuyết danh</a> trên những trang nơi mà tác giả và người phản biện tải file của mình lên.]]></message>
 	<message key="manager.setup.reviewPolicy">Chính sách phản biện</message>
 	<message key="manager.setup.reviewProcess">Quá trình phản biện</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS hỗ trợ hai mô hình quản lý quá trình phản biện. Quá trình Phản biện Chuẩn được khuyến khích vì đặt ra các bước cho người phản biện trong suốt quá trình, đảm bảo toàn bộ lịch sử phản biện của một bài nộp được lưu giữ, và tận dụng được nhắc nhở tự động cùng với các khuyến nghị chuẩn đối với bài nộp (Chấp nhận; Chấp nhận có sửa chữa; Gửi lại để phản biện; Gửi bài chỗ khác; Từ chố; Xem lời bình).<br /><br />Chọn một trong các lựa chọn:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA hỗ trợ hai mô hình quản lý quá trình phản biện. Quá trình Phản biện Chuẩn được khuyến khích vì đặt ra các bước cho người phản biện trong suốt quá trình, đảm bảo toàn bộ lịch sử phản biện của một bài nộp được lưu giữ, và tận dụng được nhắc nhở tự động cùng với các khuyến nghị chuẩn đối với bài nộp (Chấp nhận; Chấp nhận có sửa chữa; Gửi lại để phản biện; Gửi bài chỗ khác; Từ chố; Xem lời bình).<br /><br />Chọn một trong các lựa chọn:]]></message>
 	<message key="manager.setup.reviewProcessEmail">Quá trình Phản biện qua Email</message>
 	<message key="manager.setup.reviewProcessEmailDescription">BTV gửi email cho Người phản biện đề nghị phản biện cùng với bài nộp đính kèm trong email. Người phản biện gửi email cho BTV đồng ý (hay từ chối) lời đề nghị, cùng với bài phản biện và khuyến nghị. BTV nhập thông tin đồng ý hay từ chối, cùng với bài phản biện và khuyến nghị vào trang Phản biện của bài nộp để ghi lại quá trình phản biện.</message>
 	<message key="manager.setup.reviewProcessStandard">Quá trình Phản biện Chuẩn</message>
@@ -398,7 +398,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Nếu không có chuyên mục nào được bổ sung, các bài viết sẽ được mặc định đưa vào Chuyên mục Bài viết.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Để tạo hoặc sửa các chuyên mục cho tạp chí (v.d., Bài viết, Điểm sách, v.v..), vào trang Quản lý Chuyên mục.<br /><br />Tác giả khi nộp bài cho tạp chí sẽ xác định...]]></message>
 	<message key="manager.setup.securitySettings">Thiết lập về Truy cập và An ninh</message>
-	<message key="manager.setup.securitySettingsDescription">Phần mềm OJS cung cấp một số lựa chọn về an ninh có thể sử dụng để hạn chế truy cập vào nội dung của tạp chí và lưu giữ những thông tin thêm về các bài nộp phục vụ cho mục đích kiểm tra sau này.</message>
+	<message key="manager.setup.securitySettingsDescription">Phần mềm CLA cung cấp một số lựa chọn về an ninh có thể sử dụng để hạn chế truy cập vào nội dung của tạp chí và lưu giữ những thông tin thêm về các bài nộp phục vụ cho mục đích kiểm tra sau này.</message>
 	<message key="manager.setup.selectEditorDescription">BTV sẽ theo dõi bài viết trong suốt quá trình biên tập.</message>
 	<message key="manager.setup.selectSectionDescription">Chuyên mục tạp chí mà bài viết sẽ được xem xét.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Luôn hiển thị liên kết tới bản thảo và chỉ thị truy cập hạn chế.</message>
@@ -438,7 +438,7 @@
 	<message key="manager.setup.useTextTitle">Tên TC dạng text</message>
 	<message key="manager.setup.volumePerYear">Số lượng tập mỗi năm</message>
 	<message key="manager.statistics.reports">Tạo báo cáo</message>
-	<message key="manager.statistics.reports.description">OJS lập các báo cáo theo dõi những chi tiết của quá trình xử lý các bài viết nộp cho tạp chí từ góc độ của bài nộp, BTV, người phản biện, và chuyên mục, trong một khoảng thời gian nhất định. Các báo cáo được lập dưới định dạng CSV (phân tách dữ liệu bằng dấu phẩy) và phải dùng các phần mềm bảng tính để xem.</message>
+	<message key="manager.statistics.reports.description">CLA lập các báo cáo theo dõi những chi tiết của quá trình xử lý các bài viết nộp cho tạp chí từ góc độ của bài nộp, BTV, người phản biện, và chuyên mục, trong một khoảng thời gian nhất định. Các báo cáo được lập dưới định dạng CSV (phân tách dữ liệu bằng dấu phẩy) và phải dùng các phần mềm bảng tính để xem.</message>
 	<message key="manager.statistics.statistics">Số liệu thống kê của tạp chí</message>
 	<message key="manager.statistics.statistics.articleViews">Lượt xem bài viết (chỉ dành cho Tác giả)</message>
 	<message key="manager.statistics.statistics.count.accept">Chấp nhận</message>
@@ -446,7 +446,7 @@
 	<message key="manager.statistics.statistics.count.revise">Nộp lại</message>
 	<message key="manager.statistics.statistics.daysPerReview">Số ngày phản biện</message>
 	<message key="manager.statistics.statistics.daysToPublication">Số ngày xuất bản</message>
-	<message key="manager.statistics.statistics.description">OJS tính toán các dữ liệu sau đây của tạp chí. "Số ngày phản biện" được tính từ ngày nộp bài (hoặc ngày giao bản Phản biện) tới Quyết định của BTV lần đầu tiên, trong khi "số ngày xuất bản" được tính đối với những bài nộp được chấp nhận tính từ thời điểm tải lên lần đầu tới khi xuất bản.</message>
+	<message key="manager.statistics.statistics.description">CLA tính toán các dữ liệu sau đây của tạp chí. "Số ngày phản biện" được tính từ ngày nộp bài (hoặc ngày giao bản Phản biện) tới Quyết định của BTV lần đầu tiên, trong khi "số ngày xuất bản" được tính đối với những bài nộp được chấp nhận tính từ thời điểm tải lên lần đầu tới khi xuất bản.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Các bài đã xuất bản</message>
 	<message key="manager.statistics.statistics.makePublic">Lựa chọn những mục bạn đọc có thể xem trong mục Giới thiệu về Tạp chí.</message>
 	<message key="manager.statistics.statistics.note">Lưu ý: Tỷ lệ phần trăm bài nộp được phản biện chuyên gia có thể không đạt tới 100% vì bài viết nộp cho tạp chí hoặc sẽ được chấp nhận, từ chối hoặc đang còn xử lý.</message>
@@ -482,7 +482,7 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">tuần trước khi phiếu đặt tạp chí hết hạn.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Nhắc nhở hết hạn tạp chí</message>
 	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Các email nhắc nhở tự đông (Tổng biên tập có thể sửa trong phần Các email tạo sẵn)được gửi cho người đặt tạp chí trước và sau khi phiếu đặt tạp chí hết thời hạn.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Lưu ý:</strong> Để kích hoạt lựa chọn này, người quản trị website phải kích hoạt lựa chọn <tt>scheduled_tasks</tt> trong file cấu hình OJS. Cấu hình bổ sung của máy chủ có thể cần để hỗ trọ chức năng này (có thể không có ở tất cả các máy chủ), như đã nêu trong tài liệu hướng dẫn OJS.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Lưu ý:</strong> Để kích hoạt lựa chọn này, người quản trị website phải kích hoạt lựa chọn <tt>scheduled_tasks</tt> trong file cấu hình CLA. Cấu hình bổ sung của máy chủ có thể cần để hỗ trọ chức năng này (có thể không có ở tất cả các máy chủ), như đã nêu trong tài liệu hướng dẫn CLA.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">Chọn một trong các lựa chọn sau:</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[Mã HTML có thể dùng trong ô text (đối với font, màu chữ, v.v..), với "xuống dòng" được thay bằng <tt>&lt;br&gt;</tt>; Công cụ soạn thảo HTML hoạt động được với trình duyệt Firefox.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Vui lòng lựa chọn một giá trị hợp lệ cho số tháng sau khi phiếu đặt tạp chí hết thời hạn..</message>
@@ -490,7 +490,7 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Vui lòng lựa chọn một giá trị hợp lệ cho số tuần sau khi phiếu đặt tạp chí hết thời hạn.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Vui lòng lựa chọn một giá trị hợp lệ cho số tuần trước khi phiếu đặt tạp chí hết thời hạn.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Người dùng đăng ký sẽ có quyền lựa chọn nhận mục lục qua email khi một số tạp chí được cung cấp truy cập tự do.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Lưu ý:</strong> Để kích hoạt lựa chọn này, người quản trị website phải kích hoạt lựa chọn <tt>scheduled_tasks</tt> trong file cấu hình OJS. Cấu hình bổ sung của máy chủ có thể cần để hỗ trọ chức năng này (có thể không có ở tất cả các máy chủ), như đã nêu trong tài liệu hướng dẫn OJS.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Lưu ý:</strong> Để kích hoạt lựa chọn này, người quản trị website phải kích hoạt lựa chọn <tt>scheduled_tasks</tt> trong file cấu hình CLA. Cấu hình bổ sung của máy chủ có thể cần để hỗ trọ chức năng này (có thể không có ở tất cả các máy chủ), như đã nêu trong tài liệu hướng dẫn CLA.]]></message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">Lựa chọn truy cập tự do đối với các tạp chí phải đặt mua</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">Các tạp chí phải đặt mua có thể cung cấp "truy cập tự do chậm số" và/hoặc "tác giả tự lưu trữ" (nhằm tăng lượng bạn đọc và trích dẫn nội dung tạp chí). Các chính sách được lựa chọn sẽ xuất hiện ở mục Giới thiệu Tạp chí.</message>
 	<message key="manager.subscriptionPolicies.subscriptionAdditionalInformation">Thông tin đặt tạp chí</message>

@@ -13,7 +13,7 @@
  * @brief Operations for retrieving and modifying DataverseFile objects.
  */
 
-import('lib.pkp.classes.db.DAO');
+import('lib.sep.classes.db.DAO');
 
 class DataverseFileDAO extends DAO {
 	

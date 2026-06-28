@@ -29,7 +29,7 @@ class SubmissionCommentsHandler extends CopyeditorHandler {
 	/**
 	 * View layout comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewLayoutComments($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -59,7 +59,7 @@ class SubmissionCommentsHandler extends CopyeditorHandler {
 	/**
 	 * View copyedit comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewCopyeditComments($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -88,7 +88,7 @@ class SubmissionCommentsHandler extends CopyeditorHandler {
 	/**
 	 * Edit comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editComment($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -137,7 +137,7 @@ class SubmissionCommentsHandler extends CopyeditorHandler {
 	/**
 	 * Delete comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteComment($args, &$request) {
 		$articleId = (int) array_shift($args);

@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.file.FileManager');
+import('lib.sep.classes.file.FileManager');
 
 class JournalFileManager extends FileManager {
 

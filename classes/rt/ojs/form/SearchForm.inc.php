@@ -1,19 +1,19 @@
 <?php
 
 /**
- * @file classes/rt/ojs/form/SearchForm.inc.php
+ * @file classes/rt/cla/form/SearchForm.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class SearchForm
- * @ingroup rt_ojs_form
+ * @ingroup rt_cla_form
  *
  * @brief Form to change metadata information for an RT search.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class SearchForm extends Form {
 

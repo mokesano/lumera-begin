@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.site.Version');
+import('lib.sep.classes.site.Version');
 
 class VersionDAO extends DAO {
 	/**
@@ -34,7 +34,7 @@ class VersionDAO extends DAO {
 	 */
 	function &getCurrentVersion($productType = null, $product = null, $isPlugin = false) {
 		if(!$productType || !$product) {
-			$application = PKPApplication::getApplication();
+			$application = SEPApplication::getApplication();
 			$productType = 'core';
 			$product = $application->getName();
 		}
@@ -88,7 +88,7 @@ class VersionDAO extends DAO {
 		$versions = array();
 
 		if(!$productType || !$product) {
-			$application = PKPApplication::getApplication();
+			$application = SEPApplication::getApplication();
 			$productType = 'core';
 			$product = $application->getName();
 		}

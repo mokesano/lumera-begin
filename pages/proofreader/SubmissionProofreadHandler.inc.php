@@ -26,7 +26,7 @@ class SubmissionProofreadHandler extends ProofreaderHandler {
 	/**
 	 * Submission - Proofreading view
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submission($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -66,7 +66,7 @@ class SubmissionProofreadHandler extends ProofreaderHandler {
 	/**
 	 * Sets proofreader completion date
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function completeProofreader($args, &$request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -82,7 +82,7 @@ class SubmissionProofreadHandler extends ProofreaderHandler {
 	/**
 	 * View submission metadata.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewMetadata($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -100,7 +100,7 @@ class SubmissionProofreadHandler extends ProofreaderHandler {
 	/**
 	 * Download a file.
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function downloadFile($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -116,7 +116,7 @@ class SubmissionProofreadHandler extends ProofreaderHandler {
 	/**
 	 * Proof / "preview" a galley.
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalley($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -132,7 +132,7 @@ class SubmissionProofreadHandler extends ProofreaderHandler {
 	/**
 	 * Proof galley (shows frame header).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyTop($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -149,7 +149,7 @@ class SubmissionProofreadHandler extends ProofreaderHandler {
 	/**
 	 * Proof galley (outputs file contents).
 	 * @param $args array ($articleId, $galleyId)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function proofGalleyFile($args, &$request) {
 		$articleId = (int) array_shift($args);
@@ -182,7 +182,7 @@ class SubmissionProofreadHandler extends ProofreaderHandler {
 	/**
 	 * View a file (inlines file).
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewFile($args, &$request) {
 		$articleId = (int) array_shift($args);

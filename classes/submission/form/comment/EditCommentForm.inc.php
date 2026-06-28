@@ -13,7 +13,7 @@
  * @brief Edit comment form.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class EditCommentForm extends Form {
 

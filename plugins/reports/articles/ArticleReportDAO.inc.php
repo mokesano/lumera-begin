@@ -14,7 +14,7 @@
  */
 
 import('classes.submission.common.Action');
-import('lib.pkp.classes.db.DBRowIterator');
+import('lib.sep.classes.db.DBRowIterator');
 
 class ArticleReportDAO extends DAO {
 	/**

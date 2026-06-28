@@ -17,31 +17,31 @@
  * @brief Class defining basic operations for handling HTML forms.
  */
 
-import('lib.pkp.classes.form.FormError');
-import('lib.pkp.classes.form.FormBuilderVocabulary');
+import('lib.sep.classes.form.FormError');
+import('lib.sep.classes.form.FormBuilderVocabulary');
 
 // Import all form validators for convenient use in sub-classes
-import('lib.pkp.classes.form.validation.FormValidatorAlphaNum');
-import('lib.pkp.classes.form.validation.FormValidatorArray');
-import('lib.pkp.classes.form.validation.FormValidatorArrayCustom');
-import('lib.pkp.classes.form.validation.FormValidatorControlledVocab');
-import('lib.pkp.classes.form.validation.FormValidatorCustom');
-import('lib.pkp.classes.form.validation.FormValidatorCaptcha');
-import('lib.pkp.classes.form.validation.FormValidatorReCaptcha');
-import('lib.pkp.classes.form.validation.FormValidatorDate');
-import('lib.pkp.classes.form.validation.FormValidatorEmail');
-import('lib.pkp.classes.form.validation.FormValidatorInSet');
-import('lib.pkp.classes.form.validation.FormValidatorLength');
-import('lib.pkp.classes.form.validation.FormValidatorListbuilder');
-import('lib.pkp.classes.form.validation.FormValidatorLocale');
-import('lib.pkp.classes.form.validation.FormValidatorLocaleEmail');
-import('lib.pkp.classes.form.validation.FormValidatorPost');
-import('lib.pkp.classes.form.validation.FormValidatorRegExp');
-import('lib.pkp.classes.form.validation.FormValidatorUri');
-import('lib.pkp.classes.form.validation.FormValidatorUrl');
-import('lib.pkp.classes.form.validation.FormValidatorLocaleUrl');
-import('lib.pkp.classes.form.validation.FormValidatorISSN');
-import('lib.pkp.classes.form.validation.FormValidatorORCID');
+import('lib.sep.classes.form.validation.FormValidatorAlphaNum');
+import('lib.sep.classes.form.validation.FormValidatorArray');
+import('lib.sep.classes.form.validation.FormValidatorArrayCustom');
+import('lib.sep.classes.form.validation.FormValidatorControlledVocab');
+import('lib.sep.classes.form.validation.FormValidatorCustom');
+import('lib.sep.classes.form.validation.FormValidatorCaptcha');
+import('lib.sep.classes.form.validation.FormValidatorReCaptcha');
+import('lib.sep.classes.form.validation.FormValidatorDate');
+import('lib.sep.classes.form.validation.FormValidatorEmail');
+import('lib.sep.classes.form.validation.FormValidatorInSet');
+import('lib.sep.classes.form.validation.FormValidatorLength');
+import('lib.sep.classes.form.validation.FormValidatorListbuilder');
+import('lib.sep.classes.form.validation.FormValidatorLocale');
+import('lib.sep.classes.form.validation.FormValidatorLocaleEmail');
+import('lib.sep.classes.form.validation.FormValidatorPost');
+import('lib.sep.classes.form.validation.FormValidatorRegExp');
+import('lib.sep.classes.form.validation.FormValidatorUri');
+import('lib.sep.classes.form.validation.FormValidatorUrl');
+import('lib.sep.classes.form.validation.FormValidatorLocaleUrl');
+import('lib.sep.classes.form.validation.FormValidatorISSN');
+import('lib.sep.classes.form.validation.FormValidatorORCID');
 
 class Form {
 
@@ -137,7 +137,7 @@ class Form {
 	//
 	/**
 	 * Display the form.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $template string the template to be rendered, mandatory
 	 *  if no template has been specified on class instantiation.
 	 */
@@ -147,7 +147,7 @@ class Form {
 
 	/**
 	 * Returns a string of the rendered form
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $template string the template to be rendered, mandatory
 	 *  if no template has been specified on class instantiation.
 	 * @param $display boolean
@@ -247,7 +247,7 @@ class Form {
 			// WARNING: This line is for PHP4 compatibility when
 			// instantiating forms without reference. Should not
 			// be removed or otherwise used.
-			// See http://pkp.sfu.ca/wiki/index.php/Information_for_Developers#Use_of_.24this_in_the_constructor
+			// See http://lumera.sangia.org/wiki/index.php/Information_for_Developers#Use_of_.24this_in_the_constructor
 			// for an explanation why we have to replace the reference to $this here.
 			$check->setForm($this);
 
@@ -278,7 +278,7 @@ class Form {
 		}
 
 		if (!defined('SESSION_DISABLE_INIT')) {
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			$request =& $application->getRequest();
 			$user =& $request->getUser();
 

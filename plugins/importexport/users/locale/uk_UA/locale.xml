@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/users/locale/uk_UA/locale.xml
@@ -49,7 +49,7 @@
        <message key="plugins.importexport.users.import.errorsOccurred">Під час імпорту виникли помилки</message>
        <message key="plugins.importexport.users.import.confirmUsers">Підтвердіть, що це саме ті користувачі, яких Ви хочете імпортувати до системи</message>
        <message key="plugins.importexport.users.import.warning">Попередження</message>
-       <message key="plugins.importexport.users.import.encryptionMismatch">Паролі з криптографічним ключем {$importHash} неприйнятні; система OJS налаштована на використання ключа {$ojsHash}. Якщо Ви продовжите процес, потім Вам необхідно буде скинути паролі для імпортованих користувачів.</message>
+       <message key="plugins.importexport.users.import.encryptionMismatch">Паролі з криптографічним ключем {$importHash} неприйнятні; система CLA налаштована на використання ключа {$claHash}. Якщо Ви продовжите процес, потім Вам необхідно буде скинути паролі для імпортованих користувачів.</message>
        <message key="plugins.importexport.users.unknownJournal">Вказаний невідомий шлях журналу "{$journalPath}".</message>
 
        <message key="plugins.importexport.users.export.exportUsers">Експорт користувачів</message>

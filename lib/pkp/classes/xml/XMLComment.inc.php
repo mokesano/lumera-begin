@@ -13,7 +13,7 @@
  * @brief Extension of XMLNode for a simple DOM-style comment.
  */
 
-import ('lib.pkp.classes.xml.XMLNode');
+import ('lib.sep.classes.xml.XMLNode');
 
 class XMLComment extends XMLNode {
 

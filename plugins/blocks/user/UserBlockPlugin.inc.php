@@ -13,13 +13,13 @@
  * @brief Class for user block plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class UserBlockPlugin extends BlockPlugin {
 	function register($category, $path) {
 		$success = parent::register($category, $path);
 		if ($success) {
-			AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_USER));
+			AppLocale::requireComponents(array(LOCALE_COMPONENT_SEP_USER));
 		}
 		return $success;
 	}

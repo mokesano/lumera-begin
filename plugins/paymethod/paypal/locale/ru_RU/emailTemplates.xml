@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 
 <!--
   * @file plugins/paymethod/paypal/locale/ru_RU/emailTemplates.xml
@@ -15,9 +15,9 @@
 <email_texts locale="ru_RU">
 	<email_text key="PAYPAL_INVESTIGATE_PAYMENT">
 		<subject>Необычная активность PayPal</subject>
-		<body>Система Open Journal Systems обнаружила необычную активность, связанную с поддержкой платежей через PayPal для журнала «{$journalName}». Эта активность может требовать дополнительного изучения или вмешательства в ручном режиме.
+		<body>Система Code Lumera Editorial обнаружила необычную активность, связанную с поддержкой платежей через PayPal для журнала «{$journalName}». Эта активность может требовать дополнительного изучения или вмешательства в ручном режиме.
                        
-Это письмо было сгенерировано плагином «Платежи через PayPal» системы Open Journal Systems.
+Это письмо было сгенерировано плагином «Платежи через PayPal» системы Code Lumera Editorial.
 
 Полная информация о запросе:
 {$postInfo}

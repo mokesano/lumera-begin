@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000006.xml
@@ -18,6 +18,6 @@
 	</section>
 	
 	<section title="Gửi email">
-		<![CDATA[<p>Phần mềm OJS sử dụng email để điều phối các chức năng trong quá trình biên tập và xuất bản. Tất cả các email tạo sẵn đều có bản mặc định, hiện ra mỗi khi biểu tượng email được nhấp chuột. Tổng biên tập có thể sửa các email mặc định bất cứ lúc nào. Ngoài ra, người gửi email có thể sửa trước khi gửi đi. Khi biểu tượng email được nhấp chuột, địa chỉ người nhận sẽ được tự động điền vào, cùng với các thông liên liên quan cần thiết cho quá trình biên tập và xuất bản. Người gửi có thể thêm bình luận hoặc hướng dẫn chiết cho người dử dụng. Người gửi có thể sửa địa chỉ email người nhận hoặc thêm người nhận mới, trừ những trường hợp không liên quan tới nhận mật khẩu vì lý do an ninh. Xin lưu ý việc sửa tên của địa chỉ người nhận không làm thay đổi địa chỉ email trong hồ sơ của họ. Chỉ có Tổng biên tập mới có quyền thay đổi hồ sơ của người dùng.</p>]]>
+		<![CDATA[<p>Phần mềm CLA sử dụng email để điều phối các chức năng trong quá trình biên tập và xuất bản. Tất cả các email tạo sẵn đều có bản mặc định, hiện ra mỗi khi biểu tượng email được nhấp chuột. Tổng biên tập có thể sửa các email mặc định bất cứ lúc nào. Ngoài ra, người gửi email có thể sửa trước khi gửi đi. Khi biểu tượng email được nhấp chuột, địa chỉ người nhận sẽ được tự động điền vào, cùng với các thông liên liên quan cần thiết cho quá trình biên tập và xuất bản. Người gửi có thể thêm bình luận hoặc hướng dẫn chiết cho người dử dụng. Người gửi có thể sửa địa chỉ email người nhận hoặc thêm người nhận mới, trừ những trường hợp không liên quan tới nhận mật khẩu vì lý do an ninh. Xin lưu ý việc sửa tên của địa chỉ người nhận không làm thay đổi địa chỉ email trong hồ sơ của họ. Chỉ có Tổng biên tập mới có quyền thay đổi hồ sơ của người dùng.</p>]]>
 	</section>
 </topic>

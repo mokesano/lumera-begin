@@ -16,12 +16,12 @@
  */
 
 class PaymentManager {
-	/** @var $request PKPRequest */
+	/** @var $request SEPRequest */
 	var $request;
 
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function PaymentManager(&$request) {
 		$this->request =& $request;
@@ -60,7 +60,7 @@ class PaymentManager {
 	 */
 	function isConfigured() {
 		$paymentPlugin =& $this->getPaymentPlugin();
-		if ($paymentPlugin !== null) return $paymentPlugin->isConfigured(PKPApplication::getRequest());
+		if ($paymentPlugin !== null) return $paymentPlugin->isConfigured(SEPApplication::getRequest());
 		return false;
 	}
 

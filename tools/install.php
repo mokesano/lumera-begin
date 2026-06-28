@@ -10,19 +10,19 @@
  * @class installTool
  * @ingroup tools
  *
- * @brief CLI tool for installing OJS.
+ * @brief CLI tool for installing CLA.
  */
 
 require(dirname(__FILE__) . '/bootstrap.inc.php');
 
-import('lib.pkp.classes.cliTool.InstallTool');
+import('lib.sep.classes.cliTool.InstallTool');
 
-class OJSInstallTool extends InstallTool {
+class CLAInstallTool extends InstallTool {
 	/**
 	 * Constructor.
 	 * @param $argv array command-line arguments
 	 */
-	function OJSInstallTool($argv = array()) {
+	function CLAInstallTool($argv = array()) {
 		parent::InstallTool($argv);
 	}
 
@@ -32,8 +32,8 @@ class OJSInstallTool extends InstallTool {
 	 * FIXME: Use readline if available?
 	 */
 	function readParams() {
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_INSTALLER, LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_PKP_USER);
-		printf("%s\n", __('installer.ojsInstallation'));
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_INSTALLER, LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_SEP_USER);
+		printf("%s\n", __('installer.claInstallation'));
 
 		parent::readParams();
 
@@ -44,7 +44,7 @@ class OJSInstallTool extends InstallTool {
 
 }
 
-$tool = new OJSInstallTool(isset($argv) ? $argv : array());
+$tool = new CLAInstallTool(isset($argv) ? $argv : array());
 $tool->execute();
 
 ?>

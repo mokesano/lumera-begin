@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -33,7 +33,7 @@
 	</section>
 	
 	<section title="İndirme">
-		<![CDATA[<p>ADS, Kamu Bilgi Projesi'nden indirilebilir <a href="http://pkp.sfu.ca/ojs/" target="_blank">web site</a>.</p>]]>
+		<![CDATA[<p>ADS, Kamu Bilgi Projesi'nden indirilebilir <a href="http://lumera.sangia.org/cla/" target="_blank">web site</a>.</p>]]>
 	</section>
 	
 	<section title="Yükleme">
@@ -44,8 +44,8 @@
 			</li>
 			<li>
 				Web sunucunuzdaki sıkıştırılmış ADS arşivini çözme ve web belgeleri ağacınızda istediğiniz yere koymak için:<br />
-				<tt>$ tar -zxf ojs-2.*.tar.gz<br />
-				$ mv ojs-2.* /var/www/myjournal</tt>
+				<tt>$ tar -zxf cla-2.*.tar.gz<br />
+				$ mv cla-2.* /var/www/myjournal</tt>
 			</li>
 			<li>
 				Aşağıdaki dosyaları ve dizinleri yazılabilir hale getirin (yani, chown ya da chmod kullanarak):<br />

@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class UsageStatsPlugin extends GenericPlugin {
 
@@ -56,7 +56,7 @@ class UsageStatsPlugin extends GenericPlugin {
 
 
 	//
-	// Implement methods from PKPPlugin.
+	// Implement methods from SEPPlugin.
 	//
 	/**
 	* @see LazyLoadPlugin::register()
@@ -101,49 +101,49 @@ class UsageStatsPlugin extends GenericPlugin {
 	}
 
 	/**
-	* @see PKPPlugin::getDisplayName()
+	* @see SEPPlugin::getDisplayName()
 	*/
 	function getDisplayName() {
 		return __('plugins.generic.usageStats.displayName');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.generic.usageStats.description');
 	}
 
 	/**
-	* @see PKPPlugin::isSitePlugin()
+	* @see SEPPlugin::isSitePlugin()
 	*/
 	function isSitePlugin() {
 		return true;
 	}
 
 	/**
-	* @see PKPPlugin::getInstallSitePluginSettingsFile()
+	* @see SEPPlugin::getInstallSitePluginSettingsFile()
 	*/
 	function getInstallSitePluginSettingsFile() {
 		return $this->getPluginPath() . '/settings.xml';
 	}
 
 	/**
-	 * @see PKPPlugin::getInstallSchemaFile()
+	 * @see SEPPlugin::getInstallSchemaFile()
 	 */
 	function getInstallSchemaFile() {
 		return $this->getPluginPath() . '/schema.xml';
 	}
 
 	/**
-	* @see PKPPlugin::getTemplatePath()
+	* @see SEPPlugin::getTemplatePath()
 	*/
 	function getTemplatePath() {
 		return parent::getTemplatePath() . 'templates/';
 	}
 
 	/**
-	* @see PKPPlugin::manage()
+	* @see SEPPlugin::manage()
 	*/
 	function manage($verb, $args, &$message, &$messageParams) {
 		$returner = parent::manage($verb, $args, $message, $messageParams);
@@ -221,7 +221,7 @@ class UsageStatsPlugin extends GenericPlugin {
 	}
 
 	/**
- 	 * @see PKPPageRouter::route()
+ 	 * @see SEPPageRouter::route()
 	 */
 	function callbackLoadHandler($hookName, $args) {
 		// Check the page.
@@ -323,7 +323,7 @@ class UsageStatsPlugin extends GenericPlugin {
 	* @return string
 	*/
 	function getFilesPath() {
-		import('lib.pkp.classes.file.PrivateFileManager');
+		import('lib.sep.classes.file.PrivateFileManager');
 		$fileMgr = new PrivateFileManager();
 
 		return realpath($fileMgr->getBasePath()) . DIRECTORY_SEPARATOR . 'usageStats';
@@ -415,7 +415,7 @@ class UsageStatsPlugin extends GenericPlugin {
 
 		$usageLogEntry = implode(' ', $desiredParams) . PHP_EOL;
 
-		import('lib.pkp.classes.file.PrivateFileManager');
+		import('lib.sep.classes.file.PrivateFileManager');
 		$fileMgr = new PrivateFileManager();
 
 		// Get the current day filename.
@@ -453,7 +453,7 @@ class UsageStatsPlugin extends GenericPlugin {
 	*
 	* NB: This implementation was taken from OA-S directly. See
 	* http://sourceforge.net/p/openaccessstati/code-0/3/tree/trunk/logfile-parser/lib/logutils.php
-	* We just do not implement the PHP4 part as OJS dropped PHP4 support.
+	* We just do not implement the PHP4 part as CLA dropped PHP4 support.
 	*
 	* @param $ip string
 	* @param $salt string

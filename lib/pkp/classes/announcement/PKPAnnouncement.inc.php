@@ -5,26 +5,26 @@
  */
 
 /**
- * @file classes/announcement/PKPAnnouncement.inc.php
+ * @file classes/announcement/SEPAnnouncement.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPAnnouncement
+ * @class SEPAnnouncement
  * @ingroup announcement
- * @see AnnouncementDAO, PKPAnnouncementDAO
+ * @see AnnouncementDAO, SEPAnnouncementDAO
  *
  * @brief Basic class describing a announcement.
  */
 
 define('ANNOUNCEMENT_EXPIRE_YEAR_OFFSET_FUTURE',	'+10');
 
-class PKPAnnouncement extends DataObject {
+class SEPAnnouncement extends DataObject {
 	/**
 	 * Constructor
 	 */
-	function PKPAnnouncement() {
+	function SEPAnnouncement() {
 		parent::DataObject();
 	}
 

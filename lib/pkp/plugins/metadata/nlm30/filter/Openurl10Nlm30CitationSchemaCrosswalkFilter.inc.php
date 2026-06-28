@@ -18,7 +18,7 @@
  *  OpenURL schemas.
  */
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30Openurl10CrosswalkFilter');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30Openurl10CrosswalkFilter');
 
 class Openurl10Nlm30CitationSchemaCrosswalkFilter extends Nlm30Openurl10CrosswalkFilter {
 	/**
@@ -26,8 +26,8 @@ class Openurl10Nlm30CitationSchemaCrosswalkFilter extends Nlm30Openurl10Crosswal
 	 */
 	function Openurl10Nlm30CitationSchemaCrosswalkFilter() {
 		$this->setDisplayName('Crosswalk from Open URL to NLM Citation');
-		parent::Nlm30Openurl10CrosswalkFilter('lib.pkp.plugins.metadata.openurl10.schema.Openurl10BaseSchema',
-				'lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema');
+		parent::Nlm30Openurl10CrosswalkFilter('lib.sep.plugins.metadata.openurl10.schema.Openurl10BaseSchema',
+				'lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema');
 	}
 
 
@@ -46,10 +46,10 @@ class Openurl10Nlm30CitationSchemaCrosswalkFilter extends Nlm30Openurl10Crosswal
 		$nullVar = null;
 
 		// Instantiate the target description.
-		$output = new MetadataDescription('lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema', $input->getAssocType());
+		$output = new MetadataDescription('lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema', $input->getAssocType());
 
 		// Parse au statements into name descriptions
-		import('lib.pkp.plugins.metadata.nlm30.filter.PersonStringNlm30NameSchemaFilter');
+		import('lib.sep.plugins.metadata.nlm30.filter.PersonStringNlm30NameSchemaFilter');
 		$personStringFilter = new PersonStringNlm30NameSchemaFilter(ASSOC_TYPE_AUTHOR);
 		$authors =& $input->getStatement('au');
 		if (is_array($authors) && count($authors)) {

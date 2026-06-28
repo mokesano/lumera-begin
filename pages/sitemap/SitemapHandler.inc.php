@@ -13,7 +13,7 @@
  * @brief Produce a sitemap in XML format for submitting to search engines. 
  */
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 import('classes.handler.Handler');
 
 define('SITEMAP_XSD_URL', 'http://www.sitemaps.org/schemas/sitemap/0.9');

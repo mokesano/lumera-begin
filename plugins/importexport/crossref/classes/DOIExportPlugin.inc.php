@@ -73,10 +73,10 @@ class DOIExportPlugin extends ImportExportPlugin {
 
 
 	//
-	// Implement template methods from PKPPlugin
+	// Implement template methods from SEPPlugin
 	//
 	/**
-	 * @see PKPPlugin::register()
+	 * @see SEPPlugin::register()
 	 */
 	function register($category, $path) {
 		$success = parent::register($category, $path);
@@ -88,21 +88,21 @@ class DOIExportPlugin extends ImportExportPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getTemplatePath()
+	 * @see SEPPlugin::getTemplatePath()
 	 */
 	function getTemplatePath() {
 		return parent::getTemplatePath().'templates/';
 	}
 
 	/**
-	 * @see PKPPlugin::getInstallSitePluginSettingsFile()
+	 * @see SEPPlugin::getInstallSitePluginSettingsFile()
 	 */
 	function getContextSpecificPluginSettingsFile() {
 		return $this->getPluginPath() . '/settings.xml';
 	}
 
 	/**
-	 * @see PKPPlugin::getLocaleFilename($locale)
+	 * @see SEPPlugin::getLocaleFilename($locale)
 	 */
 	function getLocaleFilename($locale) {
 		$localeFilenames = parent::getLocaleFilename($locale);
@@ -192,7 +192,7 @@ class DOIExportPlugin extends ImportExportPlugin {
 
 	/**
 	 * Process a DOI activity request.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $journal Journal
 	 */
 	function process(&$request, &$journal) {
@@ -477,7 +477,7 @@ class DOIExportPlugin extends ImportExportPlugin {
 		$this->setBreadcrumbs(array(), true);
 
 		// Retrieve all published issues.
-		AppLocale::requireComponents(array(LOCALE_COMPONENT_OJS_EDITOR));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_CLA_EDITOR));
 		$issueDao =& DAORegistry::getDAO('IssueDAO'); /* @var $issueDao IssueDAO */
 		$this->registerDaoHook('IssueDAO');
 		$issueIterator =& $issueDao->getPublishedIssues($journal->getId(), Handler::getRangeInfo('issues'));
@@ -512,7 +512,7 @@ class DOIExportPlugin extends ImportExportPlugin {
 	 */
 	function displayAllUnregisteredObjects(&$templateMgr, &$journal) {
 		$this->setBreadcrumbs(array(), true);
-		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_SUBMISSION));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_SEP_SUBMISSION));
 
 		// Prepare and display the template.
 		$templateMgr->assign_by_ref('issues', $this->_getUnregisteredIssues($journal));
@@ -1080,7 +1080,7 @@ class DOIExportPlugin extends ImportExportPlugin {
 		unset($articles);
 
 		// Instantiate article iterator.
-		import('lib.pkp.classes.core.VirtualArrayIterator');
+		import('lib.sep.classes.core.VirtualArrayIterator');
 		$iterator = new VirtualArrayIterator($articleData, $totalArticles, $rangeInfo->getPage(), $rangeInfo->getCount());
 
 		// Prepare and display the article template.
@@ -1141,7 +1141,7 @@ class DOIExportPlugin extends ImportExportPlugin {
 		unset($galleys);
 
 		// Instantiate galley iterator.
-		import('lib.pkp.classes.core.VirtualArrayIterator');
+		import('lib.sep.classes.core.VirtualArrayIterator');
 		$iterator = new VirtualArrayIterator($galleyData, $totalGalleys, $rangeInfo->getPage(), $rangeInfo->getCount());
 
 		// Prepare and display the galley template.

@@ -13,7 +13,7 @@
  * @brief Books for review plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 define('BFR_MODE_FULL',		0x01);
 define('BFR_MODE_METADATA',	0x02);
@@ -253,7 +253,7 @@ class BooksForReviewPlugin extends GenericPlugin {
 				if (in_array($op, $editorPages)) {
 					define('HANDLER_CLASS', 'BooksForReviewEditorHandler');
 					define('BOOKS_FOR_REVIEW_PLUGIN_NAME', $this->getName());
-					AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_PKP_USER, LOCALE_COMPONENT_OJS_EDITOR);
+					AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_SEP_USER, LOCALE_COMPONENT_CLA_EDITOR);
 					$handlerFile =& $params[2];
 					$handlerFile = $this->getHandlerPath() . 'BooksForReviewEditorHandler.inc.php';
 				}
@@ -278,7 +278,7 @@ class BooksForReviewPlugin extends GenericPlugin {
 				if (in_array($op, $authorPages)) {
 					define('HANDLER_CLASS', 'BooksForReviewAuthorHandler');
 					define('BOOKS_FOR_REVIEW_PLUGIN_NAME', $this->getName());
-					AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_PKP_USER, LOCALE_COMPONENT_OJS_AUTHOR);
+					AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_SEP_USER, LOCALE_COMPONENT_CLA_AUTHOR);
 					$handlerFile =& $params[2];
 					$handlerFile = $this->getHandlerPath() . 'BooksForReviewAuthorHandler.inc.php';
 				}

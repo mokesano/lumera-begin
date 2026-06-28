@@ -10,8 +10,8 @@
   -->
 
 <!--
-  * BATCH IMPORTING USING OJS 2.x
-  *  OJS 2.x supports XML import/export using this plugin for a variety of
+  * BATCH IMPORTING USING CLA 2.x
+  *  CLA 2.x supports XML import/export using this plugin for a variety of
   *  base elements:
   *   - article / articles
   *   - issue / issues
@@ -46,7 +46,7 @@
 
 <!ENTITY % externalformat "href | embed | remote">
 
-<!-- Contains public IDs (not OJS-internal IDs, e.g. DOIs), except
+<!-- Contains public IDs (not CLA-internal IDs, e.g. DOIs), except
      for the publisher id which is the public-id attribute of the
      publishing object's (issue, article, galley, supp file) root
      node. -->

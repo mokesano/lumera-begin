@@ -5,13 +5,13 @@
  */
 
 /**
- * @file classes/help/PKPHelp.inc.php
+ * @file classes/help/SEPHelp.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPHelp
+ * @class SEPHelp
  * @ingroup help
  *
  * @brief Provides methods for translating help topic keys to their respected topic
@@ -19,7 +19,7 @@
  */
 
 
-class PKPHelp {
+class SEPHelp {
 	/** @var $mappingFiles array of HelpMappingFile objects */
 	var $mappingFiles;
 
@@ -30,7 +30,7 @@ class PKPHelp {
 		$instance =& Registry::get('help');
 		if ($instance == null) {
 			unset($instance);
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			$instance =& $application->instantiateHelp();
 			Registry::set('help', $instance);
 		}
@@ -40,7 +40,7 @@ class PKPHelp {
 	/**
 	 * Constructor.
 	 */
-	function PKPHelp() {
+	function SEPHelp() {
 		$this->mappingFiles = array();
 	}
 
@@ -91,7 +91,7 @@ class PKPHelp {
 	}
 
 	function &_getTocCache() {
-		$cache =& Registry::get('pkpHelpTocCache', true, null);
+		$cache =& Registry::get('sepHelpTocCache', true, null);
 
 		if ($cache === null) {
 			$cacheManager =& CacheManager::getManager();
@@ -113,7 +113,7 @@ class PKPHelp {
 	function _mappingCacheMiss(&$cache, $id) {
 		// Keep a secondary cache of the mappings so that a few
 		// cache misses won't destroy the server
-		$mappings =& Registry::get('pkpHelpMappings', true, null);
+		$mappings =& Registry::get('sepHelpMappings', true, null);
 
 		$result = null;
 		if (HookRegistry::call('Help::_mappingCacheMiss', array(&$cache, &$id, &$mappings, &$result))) return $result;
@@ -128,7 +128,7 @@ class PKPHelp {
 	function _tocCacheMiss(&$cache, $id) {
 		// Keep a secondary cache of the TOC so that a few
 		// cache misses won't destroy the server
-		$toc =& Registry::get('pkpHelpTocData', true, null);
+		$toc =& Registry::get('sepHelpTocData', true, null);
 		if ($toc === null) {
 			$helpToc = array();
 			$topicId = 'index/topic/000000';

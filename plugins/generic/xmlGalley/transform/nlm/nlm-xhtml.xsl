@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<!-- ============================================================= -->
 	<!--  MODULE:    XSLT transform for NLM Journal Article            -->
-	<!--             to OJS 2.x XHTML Article                          -->
+	<!--             to CLA 2.x XHTML Article                          -->
 	<!--  VERSION:   1.0                                               -->
 	<!--  DATE:      August 2006                                       -->
 	<!--                                                               -->

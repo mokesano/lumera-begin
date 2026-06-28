@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.filter.TemplateBasedFilter');
+import('lib.sep.classes.filter.TemplateBasedFilter');
 
 class TemplateBasedReferencesListFilter extends TemplateBasedFilter {
 	/**
@@ -24,7 +24,7 @@ class TemplateBasedReferencesListFilter extends TemplateBasedFilter {
 	 */
 	function TemplateBasedReferencesListFilter(&$filterGroup) {
 		// Add the persistable filter settings.
-		import('lib.pkp.classes.filter.FilterSetting');
+		import('lib.sep.classes.filter.FilterSetting');
 		$this->addSetting(new FilterSetting('citationOutputFilterName', null, null));
 		$this->addSetting(new FilterSetting('metadataSchemaName', null, null));
 

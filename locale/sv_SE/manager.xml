@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/sv_SE/manager.xml
@@ -20,13 +20,13 @@
 	<message key="manager.groups.context.editorialTeam.short">Redaktionslag</message>
 	<message key="manager.groups.context.people">Visa redaktionstiteln i egen kategori under Personer (ex. Redaktionen)</message>
 	<message key="manager.groups.create">Skapa redaktionstitel</message>
-	<message key="manager.groups.disableBoard">OJS bestämmer de olika rollerna under Redaktionslag (Tidskriftsansvarig, Manusredaktör, etc.)</message>
+	<message key="manager.groups.disableBoard">CLA bestämmer de olika rollerna under Redaktionslag (Tidskriftsansvarig, Manusredaktör, etc.)</message>
 	<message key="manager.groups.enableBoard">Tidskriftsansvarig skapar redaktionstitel namn och lägger till personer under respektive titel.</message>
 	<message key="manager.groups.enableBoard.description"><![CDATA[Under <a href="{$aboutEditorialTeamUrl}">Personer</a> i Om tidskriften:]]></message>
 	<message key="manager.groups.noneCreated">Inget Redaktionslag har skapats.</message>
 	<message key="manager.journalManagement">Hantera tidskrift</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">Ladda upp lokal-specifika standard-inställningar</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS kan översättas till flera olika språk och fungerar dessutom som ett flerspråkigt system där användaren kan växla mellan språk på de olika sidorna.<br /><br /> Om ett språk som stöds av OJS inte finns listad nedan, be huvudadministratören att installera språket. För instruktioner om hur man lägger till fler språk, vänligen se OJS-dokumentationen.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA kan översättas till flera olika språk och fungerar dessutom som ett flerspråkigt system där användaren kan växla mellan språk på de olika sidorna.<br /><br /> Om ett språk som stöds av CLA inte finns listad nedan, be huvudadministratören att installera språket. För instruktioner om hur man lägger till fler språk, vänligen se CLA-dokumentationen.]]></message>
 	<message key="manager.languages.noneAvailable">Tyvärr, det finns inga ytterligare språk tillgängliga. Kontakta huvudadministratören om du vill lägga till språk i den här tidskriften.</message>
 	<message key="manager.languages.primaryLocaleInstructions">Detta blir standardspråket för tidskriftens hemsida.</message>
 	<message key="manager.managementPages">Administrationssidor</message>
@@ -36,7 +36,7 @@
 	<message key="manager.payment.authorFees">Författaravgifter</message>
 	<message key="manager.payment.authorFeesDescription">Följande alternativ (redigeras nedan) syns under Steg 1 av manuskriptprocessen, samt under manuskript i Om tidskriften, liksom vid de ställen där betalning krävs.</message>
 	<message key="manager.payment.currency">Valuta</message>
-	<message key="manager.payment.currencymessage">OJS stöder inte valutaomvandling. Om du accepterar betalning, försäkra dig om att abonnemangspriset överensstämmer med följande belopp:</message>
+	<message key="manager.payment.currencymessage">CLA stöder inte valutaomvandling. Om du accepterar betalning, försäkra dig om att abonnemangspriset överensstämmer med följande belopp:</message>
 	<message key="manager.payment.description">Beskrivning</message>
 	<message key="manager.payment.details">Detaljer</message>
 	<message key="manager.payment.editSubscription">Redigera information om abonnemang</message>
@@ -140,7 +140,7 @@
 	<message key="manager.setup.appearInAboutJournal">(Kommer att synas under "Om tidskriften")</message>
 	<message key="manager.setup.authorCopyrightNotice">Upphovsrättsskydd</message>
 	<message key="manager.setup.authorCopyrightNoticeAgree">Författare måste acceptera avtal om upphovsrätt i samband med att manuskriptet skickas in.</message>
-	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Information om upphovsrättsskydd kommer att synas under "Om tidskriften" och i varje publicerat dokuments metadata. Det är upp till respektive tidskrift att avgöra de upphovsrättsliga avtalen mellan författare och tidskrift, the Public Knowledge Project rekommenderar att man använder <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> licens. För detta infogas <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">sample Copyright Notice </a> Avtalet kan kopieras och klistras in i fältet nedan för tidskrifter som (a) är Open Access (b) 'Försenad' Open Access, eller (c) inte är Open Access.]]></message>
+	<message key="manager.setup.authorCopyrightNoticeDescription"><![CDATA[Information om upphovsrättsskydd kommer att synas under "Om tidskriften" och i varje publicerat dokuments metadata. Det är upp till respektive tidskrift att avgöra de upphovsrättsliga avtalen mellan författare och tidskrift, the Sangia Editorial Project rekommenderar att man använder <a href="https://creativecommons.org" target="_new" class="action">Creative Commons</a> licens. För detta infogas <a href="{$sampleCopyrightWordingUrl}" target="_new" class="action">sample Copyright Notice </a> Avtalet kan kopieras och klistras in i fältet nedan för tidskrifter som (a) är Open Access (b) 'Försenad' Open Access, eller (c) inte är Open Access.]]></message>
 	<message key="manager.setup.authorGuidelines">Författarinstruktioner</message>
 	<message key="manager.setup.authorGuidelinesDescription"><![CDATA[Fastställ de bibliografiska riktlinjerna för författarnas manuskript. (ex., <i>Publication Manual of the American Psychological Association</i>, 5th edition, 2001). Gör också klart vilka typer av kompletterande filer författaren kan ladda upp för att öka förståelsen hos läsaren (ex.: rådata, forskningsinstrument, dokumentation etc.)]]></message>
 	<message key="manager.setup.competingInterests">Intressekonflikter</message>
@@ -186,7 +186,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">Redaktionen ansvarar för tidskriftsarbetets redaktionella riktning, deltar i utnämning av redaktörer samt går i god för tidkriftens rykte och rennommé, Redaktionsrådet för granskning har en liknande funktion men leder dessutom granskningsprocessen. Medlemmar i redaktionsrådet för granskning har inte tillgång till tidskriftens administrativa del men ingår på listan för granskare.</message>
 	<message key="manager.setup.emailBounceAddress">Felaktig adress</message>
 	<message key="manager.setup.emailBounceAddressDescription">Felmeddelande för E-post som inte kan levereras skickas till den här adressen.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<<strong>Observera:</strong> För att göra det här valet måste sidadministratören aktivera <tt>allow_envelope_sender</tt> i OJS konfigureringsfil. Ytterligare serverkonfigurering kan komma att bli nödvändig (något som inte alla servrar tillåter, se OJS-dokumentationen för info.)]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<<strong>Observera:</strong> För att göra det här valet måste sidadministratören aktivera <tt>allow_envelope_sender</tt> i CLA konfigureringsfil. Ytterligare serverkonfigurering kan komma att bli nödvändig (något som inte alla servrar tillåter, se CLA-dokumentationen för info.)]]></message>
 	<message key="manager.setup.emails">E-post Id</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
 	<message key="manager.setup.emailSignatureDescription">Färdiga E-post som skickas från tidskriften kommer ha följande signatur infogad sist i E-posten. Övriga delar av de färdiga E-postmeddelandena går att redigera under Hantera tidskriften.</message>
@@ -208,7 +208,7 @@
 	<message key="manager.setup.focusScope">Ämne och fokus</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<b>EXAMPLE HTML DATA</b>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Författarens indexering av den egna publikationen</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS är ansluten till <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> Protocol for Metadata Harvesting, som är en väletablerad standard som stöder tillgängliggörandet av välindexerad data i en global kontext. Författare använder ett generellt formulär för att beskriva manuskriptets metadata. Den tidskriftsansvarige ska ange indexeringskategorier och förse författare med relevanta exempel på hur manuskript metadatahanteras, (semikolonseparering) (t.ex., term1; term2; term3).]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA är ansluten till <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> Protocol for Metadata Harvesting, som är en väletablerad standard som stöder tillgängliggörandet av välindexerad data i en global kontext. Författare använder ett generellt formulär för att beskriva manuskriptets metadata. Den tidskriftsansvarige ska ange indexeringskategorier och förse författare med relevanta exempel på hur manuskript metadatahanteras, (semikolonseparering) (t.ex., term1; term2; term3).]]></message>
 	<message key="manager.setup.form.contactEmailRequired">Fältet huvudkontaktens E-post är obligatoriskt.</message>
 	<message key="manager.setup.form.contactNameRequired">Fältet huvudkontakt är obligatoriskt.</message>
 	<message key="manager.setup.form.journalInitialsRequired">Fältet initialer för tidskriften är obligatoriskt.</message>
@@ -232,7 +232,7 @@
 	<message key="manager.setup.information.forLibrarians">För bibliotekarier</message>
 	<message key="manager.setup.information.forReaders">För läsare</message>
 	<message key="manager.setup.initialIssue">Första utgåva</message>
-	<message key="manager.setup.initialIssueDescription">Uppge nummer, volym, och/eller år för det första numret som pulicerats i OJS:</message>
+	<message key="manager.setup.initialIssueDescription">Uppge nummer, volym, och/eller år för det första numret som pulicerats i CLA:</message>
 	<message key="manager.setup.institution">Institution</message>
 	<message key="manager.setup.issnDescription"><![CDATA[ISSN (International Standard Serial Number) är ett åttasiffrigt nummer som identifierar periodiska publikationer (även elektroniska). ISSN-numren hanteras av nationella enheter i ett globalt nätverk, koordinerade av ett internationellt centrum i Paris som finansieras av Unesco och franska regeringen. Ett ISSN-nummer kan beställas från <a href="http://www.issn.org" target="_new">ISSN:s hemsida</a>. Beställning kan göras närsomhelst.]]></message>
 	<message key="manager.setup.issuePerVolume">Nummer per volym</message>
@@ -341,8 +341,8 @@
 	<message key="manager.setup.reviewGuidelines">Riktlinjer för granskning</message>
 	<message key="manager.setup.reviewGuidelinesDescription">I Riktlinjer för granskning kan granskaren få information om hur man läser och granskar ett manuskript, samt hitta kvalitetskriterium för granskning av manuskript.</message>
 	<message key="manager.setup.reviewOptions">Valmöjligheter för granskning</message>
-	<message key="manager.setup.reviewOptions.automatedReminders">Automatiska E-postpåminnelser (se OJS standard E-post) skickas till granskare vid två tillfällen (redaktören kan naturligtvis alltid E-posta granskaren direkt)</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>OBS:</strong> För att göra detta val måste sidansvarig aktivera <tt>scheduled_tasks</tt> -funktionen i OJS konfigurationsfil. Ytterligare serverkonfiguration kan komma att behöva göras för att stödja denna funktion (något som inte är möjligt på alla typer av servrar). Det här finns beskrivet i i OJS-dokumentationen.]]></message>
+	<message key="manager.setup.reviewOptions.automatedReminders">Automatiska E-postpåminnelser (se CLA standard E-post) skickas till granskare vid två tillfällen (redaktören kan naturligtvis alltid E-posta granskaren direkt)</message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>OBS:</strong> För att göra detta val måste sidansvarig aktivera <tt>scheduled_tasks</tt> -funktionen i CLA konfigurationsfil. Ytterligare serverkonfiguration kan komma att behöva göras för att stödja denna funktion (något som inte är möjligt på alla typer av servrar). Det här finns beskrivet i i CLA-dokumentationen.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">Anonym granskning</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">Kan ändras under den redaktionella processen.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Vanlig tidåtgång för granskning av artikel/artiklar</message>
@@ -361,7 +361,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Länka till <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Anonym granskning</a> på sidor där författare och granskare laddar upp filer.]]></message>
 	<message key="manager.setup.reviewPolicy">Granskningspolicy</message>
 	<message key="manager.setup.reviewProcess">Granskningsprocessen</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS stöder två olika modeller för bedömning och granskning av artiklar. Standardgranskningsprocessen, vilken innebär att granskaren går igenom processen steg för steg rekommenderas. Här kan granskaren även använda sig av standardmail för manuskript (Acceptera; Acceptera med ändringar; Skicka för ny granskning; Skicka till annan; Avvisa; See kommentarer <br /><br />Välj en av följande:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA stöder två olika modeller för bedömning och granskning av artiklar. Standardgranskningsprocessen, vilken innebär att granskaren går igenom processen steg för steg rekommenderas. Här kan granskaren även använda sig av standardmail för manuskript (Acceptera; Acceptera med ändringar; Skicka för ny granskning; Skicka till annan; Avvisa; See kommentarer <br /><br />Välj en av följande:]]></message>
 	<message key="manager.setup.reviewProcessEmail">Granskningsprocess bifogad i E-posten</message>
 	<message key="manager.setup.reviewProcessEmailDescription">Redaktörer mailar förfrågan om granskning till granskare och bifogar manuskriptet i E-posten. Granskaren tackar ja (eller nej),  och mailar sedan granskning och rekommendation. Redaktören för in granskarens synpunkter på Manuskriptsidan, under Granskning.</message>
 	<message key="manager.setup.reviewProcessStandard">Standardgranskningsprocess</message>
@@ -396,7 +396,7 @@
 	<message key="manager.setup.subscription">Tidskriften kräver abonnemang för delar av innehållet.</message>
 	<message key="manager.setup.subscriptionDescription">Det här innebär att man utser en abonnemangsansvarig som har tillgång till den abonnemangsmodul där Open Access, självarkivering och E-postpåminnelser administreras.</message>
 	<message key="manager.setup.technicalSupportContact">Kontaktuppgifter till teknisk support</message>
-	<message key="manager.setup.technicalSupportContactDescription">Den här personens kontaktuppgifter kommer att finnas tillgänglig under Kontakt. Personen ska kunna ta emot frågor från redaktörer, författare och granskare. Eftersom OJS kräver väldigt liten teknisk support bör detta ses som en deltidssysselsättning. Frågor kan exempelvis gälla uppladningsinstruktioner, uppgifter om filformat eller backup.</message>
+	<message key="manager.setup.technicalSupportContactDescription">Den här personens kontaktuppgifter kommer att finnas tillgänglig under Kontakt. Personen ska kunna ta emot frågor från redaktörer, författare och granskare. Eftersom CLA kräver väldigt liten teknisk support bör detta ses som en deltidssysselsättning. Frågor kan exempelvis gälla uppladningsinstruktioner, uppgifter om filformat eller backup.</message>
 	<message key="manager.setup.typeExamples">(T.ex., Historiska studier; Experimentella studier; Litteraturanalyser; Enkät och intervjuer)</message>
 	<message key="manager.setup.typeMethodApproach">Metod och Tillvägagångssätt</message>
 	<message key="manager.setup.typeProvideExamples">Ange exempel på typer av metod och tillvägagångssätt inom ämnesområdet</message>
@@ -413,7 +413,7 @@
 	<message key="manager.setup.useTextTitle">Namn (text) </message>
 	<message key="manager.setup.volumePerYear">Volym per år</message>
 	<message key="manager.statistics.reports">Rapportgenerator</message>
-	<message key="manager.statistics.reports.description">OJS genererar rapporter av manusprocessen under vald tid, utifrån redaktörens, granskarens och sektionernas olika perspektiv. Rapporten genereras i CSV format (som kräver en särskild spreadsheetapplikation för läsning)</message>
+	<message key="manager.statistics.reports.description">CLA genererar rapporter av manusprocessen under vald tid, utifrån redaktörens, granskarens och sektionernas olika perspektiv. Rapporten genereras i CSV format (som kräver en särskild spreadsheetapplikation för läsning)</message>
 	<message key="manager.statistics.statistics">Tidskriftsstatistik</message>
 	<message key="manager.statistics.statistics.articleViews">Antal visningar av artikeln (endast för författare)</message>
 	<message key="manager.statistics.statistics.count.accept">Accepterat</message>
@@ -421,7 +421,7 @@
 	<message key="manager.statistics.statistics.count.revise">Skicka in igen</message>
 	<message key="manager.statistics.statistics.daysPerReview">Dagar till granskning</message>
 	<message key="manager.statistics.statistics.daysToPublication">Dagar till publicering</message>
-	<message key="manager.statistics.statistics.description">OJS genererar följande statistik för respektive tidskrift:. "Dagar till granskning", räknar dagar från det att manuskriptet skickats in (eller att granskningsversionen tagits fram) till redaktören beslut. "Dagar till publicering", beräknar tiden för accepterade manuskript att bli publika från det att de laddats upp.</message>
+	<message key="manager.statistics.statistics.description">CLA genererar följande statistik för respektive tidskrift:. "Dagar till granskning", räknar dagar från det att manuskriptet skickats in (eller att granskningsversionen tagits fram) till redaktören beslut. "Dagar till publicering", beräknar tiden för accepterade manuskript att bli publika från det att de laddats upp.</message>
 	<message key="manager.statistics.statistics.itemsPublished">Publicerade komponenter</message>
 	<message key="manager.statistics.statistics.makePublic">Välj komponenter som ska vara publika för läsare i 'Om tidskriften'.</message>
 	<message key="manager.statistics.statistics.note">Observera: Procentsatsen för granskade manuskript behöver inte uppgå till 100% eftersom statusen på återsända manuskript kan vara accepterade, icke bekräftade eller fortfarande under granskning.</message>
@@ -451,14 +451,14 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">vecka/veckor innan abonnemanget upphör.</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">Påminnelse om upphörande av abonnemang</message>
 	<message key="manager.subscriptionPolicies.expiryRemindersDescription">Automatiska E-postpåminnelser (redigeras av tidskriftsansvarig under E-postmallar) kan skickas till abonnenter både före och efter att en abonnemangsperiod har upphört.</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Observera:</strong> För att aktivera de alternativen måste Huvudadministratören slå på <tt>scheduled_tasks</tt> i OJS konfigurationsfil. Ytterligare serverkonfiguration kan komma att krävas för att stödja den här typen av funktionalitet. (vilket inte är möjligt på alla servrar), se OJS-dokumentationen för ytterligare information.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>Observera:</strong> För att aktivera de alternativen måste Huvudadministratören slå på <tt>scheduled_tasks</tt> i CLA konfigurationsfil. Ytterligare serverkonfiguration kan komma att krävas för att stödja den här typen av funktionalitet. (vilket inte är möjligt på alla servrar), se CLA-dokumentationen för ytterligare information.]]></message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[HTML kan användas i textrutan (för teckenstorlek, färg, etc.), ("Enter" behandlas som <tt>&lt;br&gt;</tt>; HTML-redigeraren fungerar i Firefox.)]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">Vänligen ange antal återstående månader av abonnemangsperioden.</message>
 	<message key="manager.subscriptionPolicies.numMonthsBeforeSubscriptionExpiryReminderValid">Vänligen ange antal månader innan abonnemanget upphör.</message>
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">Vänligen ange antal återstående veckor av abonnemangsperioden.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">Vänligen ange antal veckor innan abonnemanget upphör.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">Registrerade läsare har möjligheten att få innehållsförteckningen mailade till sig när innehållet blir Open Access.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Observera:</strong> För att aktivera det här alternativet måste Huvudadministratören slå på <tt>scheduled_tasks</tt> i OJS konfigureringsfil. Ytterligare serverkonfigurering kan komma att krävas för att stödja den här typen av funktionalitet (vilket inte är möjligt på alla servrar), se OJS-dokumentationen för ytterligare information.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>Observera:</strong> För att aktivera det här alternativet måste Huvudadministratören slå på <tt>scheduled_tasks</tt> i CLA konfigureringsfil. Ytterligare serverkonfigurering kan komma att krävas för att stödja den här typen av funktionalitet (vilket inte är möjligt på alla servrar), se CLA-dokumentationen för ytterligare information.]]></message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">Open Access-alternativ för abonnemangstidskrifter.</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">Abonnemangstidskrifter kan tillåta såväl 'försenad' Open Access, som egenarkivering av det publicerade materialet. Detta för att öka spridningen samt citeringen av materialet.</message>
 	<message key="manager.subscriptionPolicies.subscriptionAdditionalInformation">Abonnemangsinformation</message>
@@ -564,7 +564,7 @@
 	<message key="manager.language.forms">Formulär</message>
 	<message key="manager.setup.history">Utgivningshistorik</message>
 	<message key="manager.setup.historyDescription">Den här texten visas under rubriken "Om tidskriften" och är till för att beskriva exempelvis förändringar av titel, redaktionens sammansättning, eller andra relevanta detaljer rörande tidskriftens utgivningshistorik.</message>
-	<message key="manager.setup.noPublishing">OJS kommer inte användas för att publicera tidskriftens innehåll online.</message>
+	<message key="manager.setup.noPublishing">CLA kommer inte användas för att publicera tidskriftens innehåll online.</message>
 	<message key="manager.setup.journalThumbnail">Miniatyrbild</message>
 	<message key="manager.setup.useThumbnail">Miniatyrbild</message>
 	<message key="manager.setup.journalFavicon">Tidskriftens favicon</message>

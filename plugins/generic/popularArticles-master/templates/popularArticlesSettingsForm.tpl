@@ -15,11 +15,11 @@
 <script type="text/javascript">
 	$(function() {ldelim}
 		// Attach the form handler.
-		$('#popularArticlesSettingsForm').pkpHandler('$.pkp.controllers.form.FormHandler');
+		$('#popularArticlesSettingsForm').sepHandler('$.sep.controllers.form.FormHandler');
 	{rdelim});
 </script>
 
-<form class="pkp_form" id="popularArticlesSettingsForm" method="post" action="{plugin_url path="save"}">
+<form class="sep_form" id="popularArticlesSettingsForm" method="post" action="{plugin_url path="save"}">
 
 	{include file="controllers/notification/inPlaceNotification.tpl" notificationId="popularArticlesSettingsFormNotification"}
 

@@ -13,10 +13,10 @@
  *  to control access to handler operations.
  */
 
-import('lib.pkp.classes.security.authorization.AuthorizationPolicy');
+import('lib.sep.classes.security.authorization.AuthorizationPolicy');
 
 class HandlerOperationPolicy extends AuthorizationPolicy {
-	/** @var PKPRequest */
+	/** @var SEPRequest */
 	var $_request;
 
 	/** @var array the target operations */
@@ -24,7 +24,7 @@ class HandlerOperationPolicy extends AuthorizationPolicy {
 
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $operations array|string either a single operation or a list of operations that
 	 *  this policy is targeting.
 	 * @param $message string a message to be displayed if the authorization fails
@@ -48,7 +48,7 @@ class HandlerOperationPolicy extends AuthorizationPolicy {
 	//
 	/**
 	 * Return the request.
-	 * @return PKPRequest
+	 * @return SEPRequest
 	 */
 	function &getRequest() {
 		return $this->_request;

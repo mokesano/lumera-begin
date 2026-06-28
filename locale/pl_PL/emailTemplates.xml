@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * Copyright (c) 2013-2017 Simon Fraser University
   * Copyright (c) 2003-2016 John Willinsky
@@ -788,4 +788,3 @@ Redaktor techniczny, {$journalName}</body>
 		<description>Wiadomość od redaktora technicznego, zawiera prośbę do autora o dodatkowe informacje na temat bibliografii.</description>
 	</email_text>
 </email_texts>
-

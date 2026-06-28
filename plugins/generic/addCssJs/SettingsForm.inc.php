@@ -13,7 +13,7 @@
  * @brief Form for journal managers to add external or internal CSS stylesheets and Js libraries
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class SettingsForm extends Form {
 

@@ -68,7 +68,7 @@ class PaymethodPlugin extends Plugin {
 	 * @param $queuedPaymentId int
 	 * @param $key string
 	 * @param $queuedPayment QueuedPayment
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function displayPaymentForm($queuedPaymentId, $key, &$queuedPayment, $request) {
 		assert(false); // Should always be overridden
@@ -121,7 +121,7 @@ class PaymethodPlugin extends Plugin {
 	 * Handle an incoming request from a user callback or an external
 	 * payment processing system.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function handle($args, &$request) {
 		// Subclass should override.

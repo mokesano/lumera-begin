@@ -13,10 +13,10 @@
  * @brief Handle Reading Tools requests.
  */
 
-import('lib.pkp.classes.rt.RT');
+import('lib.sep.classes.rt.RT');
 
-import('classes.rt.ojs.RTDAO');
-import('classes.rt.ojs.JournalRT');
+import('classes.rt.cla.RTDAO');
+import('classes.rt.cla.JournalRT');
 
 import('pages.article.ArticleHandler');
 
@@ -392,7 +392,7 @@ class RTHandler extends ArticleHandler {
 	function suppFileMetadata($args, &$request) {
 		$router =& $request->getRouter();
 		$this->setupTemplate($request);
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_AUTHOR);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_AUTHOR);
 		$articleId = isset($args[0]) ? $args[0] : 0;
 		$galleyId = isset($args[1]) ? (int) $args[1] : 0;
 		$suppFileId = isset($args[2]) ? (int) $args[2] : 0;

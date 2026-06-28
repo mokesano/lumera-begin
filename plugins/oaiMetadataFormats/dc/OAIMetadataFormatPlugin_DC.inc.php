@@ -14,14 +14,14 @@
  * @brief dc metadata format plugin for OAI.
  */
 
-import('lib.pkp.plugins.oaiMetadataFormats.dc.PKPOAIMetadataFormatPlugin_DC');
+import('lib.sep.plugins.oaiMetadataFormats.dc.SEPOAIMetadataFormatPlugin_DC');
 
-class OAIMetadataFormatPlugin_DC extends PKPOAIMetadataFormatPlugin_DC {
+class OAIMetadataFormatPlugin_DC extends SEPOAIMetadataFormatPlugin_DC {
 	/**
 	 * Constructor
 	 */
 	function OAIMetadataFormatPlugin_DC() {
-		parent::PKPOAIMetadataFormatPlugin_DC();
+		parent::SEPOAIMetadataFormatPlugin_DC();
 	}
 }
 

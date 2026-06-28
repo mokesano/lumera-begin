@@ -13,7 +13,7 @@
  * @brief Form for journal managers to edit user profiles.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class UserManagementForm extends Form {
 
@@ -143,7 +143,7 @@ class UserManagementForm extends Form {
 			$userDao =& DAORegistry::getDAO('UserDAO');
 			$user =& $userDao->getById($this->userId);
 
-			import('lib.pkp.classes.user.InterestManager');
+			import('lib.sep.classes.user.InterestManager');
 			$interestManager = new InterestManager();
 
 			if ($user != null) {
@@ -376,7 +376,7 @@ class UserManagementForm extends Form {
 
 		// Insert the user interests
 		$interests = $this->getData('interestsKeywords') ? $this->getData('interestsKeywords') : $this->getData('interestsTextOnly');
-		import('lib.pkp.classes.user.InterestManager');
+		import('lib.sep.classes.user.InterestManager');
 		$interestManager = new InterestManager();
 		$interestManager->setInterestsForUser($user, $interests);
 	}

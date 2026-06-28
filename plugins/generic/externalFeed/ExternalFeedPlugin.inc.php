@@ -13,7 +13,7 @@
  * @brief ExternalFeed plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class ExternalFeedPlugin extends GenericPlugin {
 	/**
@@ -175,7 +175,7 @@ class ExternalFeedPlugin extends GenericPlugin {
 		if ($this->getEnabled()) {
 			// Only pages requests interest us here
 			$request =& Registry::get('request');
-			if (!is_a($request->getRouter(), 'PKPPageRouter')) return false;
+			if (!is_a($request->getRouter(), 'SEPPageRouter')) return false;
 			$requestedPage = $request->getRequestedPage();
 
 			if (empty($requestedPage) || $requestedPage == 'index') {
@@ -271,8 +271,8 @@ class ExternalFeedPlugin extends GenericPlugin {
 
 		AppLocale::requireComponents(
 			LOCALE_COMPONENT_APPLICATION_COMMON,
-			LOCALE_COMPONENT_PKP_MANAGER,
-			LOCALE_COMPONENT_PKP_USER
+			LOCALE_COMPONENT_SEP_MANAGER,
+			LOCALE_COMPONENT_SEP_USER
 		);
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->register_function('plugin_url', array(&$this, 'smartyPluginUrl'));

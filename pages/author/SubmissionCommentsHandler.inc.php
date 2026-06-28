@@ -29,7 +29,7 @@ class SubmissionCommentsHandler extends AuthorHandler {
 	/**
 	 * View editor decision comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewEditorDecisionComments($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -41,7 +41,7 @@ class SubmissionCommentsHandler extends AuthorHandler {
 	/**
 	 * View copyedit comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewCopyeditComments($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -71,7 +71,7 @@ class SubmissionCommentsHandler extends AuthorHandler {
 	/**
 	 * View proofread comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewProofreadComments($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -101,7 +101,7 @@ class SubmissionCommentsHandler extends AuthorHandler {
 	/**
 	 * View layout comments.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewLayoutComments($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -114,7 +114,7 @@ class SubmissionCommentsHandler extends AuthorHandler {
 	/**
 	 * Post layout comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function postLayoutComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -132,7 +132,7 @@ class SubmissionCommentsHandler extends AuthorHandler {
 	/**
 	 * Email an editor decision comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function emailEditorDecisionComment($args, $request) {
 		$articleId = (int) $request->getUserVar('articleId');
@@ -146,7 +146,7 @@ class SubmissionCommentsHandler extends AuthorHandler {
 	/**
 	 * Edit comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editComment($args, $request) {
 		$articleId = (int) array_shift($args);
@@ -204,7 +204,7 @@ class SubmissionCommentsHandler extends AuthorHandler {
 	/**
 	 * Delete comment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteComment($args, $request) {
 		$articleId = (int) array_shift($args);

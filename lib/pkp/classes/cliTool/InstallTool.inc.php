@@ -10,14 +10,14 @@
  * @class installTool
  * @ingroup tools
  *
- * @brief CLI tool for installing a PKP app.
+ * @brief CLI tool for installing a SEP app.
  */
 
 
 import('classes.install.Install');
 import('classes.install.form.InstallForm');
-import('lib.pkp.classes.site.Version');
-import('lib.pkp.classes.site.VersionCheck');
+import('lib.sep.classes.site.Version');
+import('lib.sep.classes.site.VersionCheck');
 
 class InstallTool extends CommandLineTool {
 

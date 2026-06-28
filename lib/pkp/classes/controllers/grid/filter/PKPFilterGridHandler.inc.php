@@ -1,30 +1,30 @@
 <?php
 
 /**
- * @file classes/controllers/grid/filter/PKPFilterGridHandler.inc.php
+ * @file classes/controllers/grid/filter/SEPFilterGridHandler.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPFilterGridHandler
+ * @class SEPFilterGridHandler
  * @ingroup classes_controllers_grid_filter
  *
  * @brief Manage filter administration and settings.
  */
 
 // import grid base classes
-import('lib.pkp.classes.controllers.grid.GridHandler');
+import('lib.sep.classes.controllers.grid.GridHandler');
 
 // import filter grid specific classes
-import('lib.pkp.classes.controllers.grid.filter.PKPFilterGridRow');
-import('lib.pkp.classes.controllers.grid.filter.FilterGridCellProvider');
+import('lib.sep.classes.controllers.grid.filter.SEPFilterGridRow');
+import('lib.sep.classes.controllers.grid.filter.FilterGridCellProvider');
 
 // import metadata framework classes
-import('lib.pkp.classes.metadata.MetadataDescription');
+import('lib.sep.classes.metadata.MetadataDescription');
 
 
-class PKPFilterGridHandler extends GridHandler {
+class SEPFilterGridHandler extends GridHandler {
 	/** @var object the context (journal, press, conference) for which we manage filters */
 	var $_context;
 
@@ -37,7 +37,7 @@ class PKPFilterGridHandler extends GridHandler {
 	/**
 	 * Constructor
 	 */
-	function PKPFilterGridHandler() {
+	function SEPFilterGridHandler() {
 		// Instantiate the citation DAO which will implicitly
 		// define the filter groups for parsers and lookup
 		// database connectors.
@@ -105,11 +105,11 @@ class PKPFilterGridHandler extends GridHandler {
 
 
 	//
-	// Overridden methods from PKPHandler
+	// Overridden methods from SEPHandler
 	//
 	/**
 	 * Configure the grid
-	 * @see PKPHandler::initialize()
+	 * @see SEPHandler::initialize()
 	 */
 	function initialize(&$request) {
 		parent::initialize($request);
@@ -117,7 +117,7 @@ class PKPFilterGridHandler extends GridHandler {
 		// Load manager-specific translations
 		// FIXME: the submission translation component can be removed
 		// once all filters have been moved to plug-ins (see submission.xml).
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_PKP_SUBMISSION);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_MANAGER, LOCALE_COMPONENT_SEP_SUBMISSION);
 
 		// Retrieve the filters to be displayed in the grid
 		$router =& $request->getRouter();
@@ -170,7 +170,7 @@ class PKPFilterGridHandler extends GridHandler {
 	 */
 	function &getRowInstance() {
 		// Return a filter row
-		$row = new PKPFilterGridRow();
+		$row = new SEPFilterGridRow();
 		return $row;
 	}
 
@@ -181,7 +181,7 @@ class PKPFilterGridHandler extends GridHandler {
 	/**
 	 * An action to manually add a new filter
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function addFilter(&$args, &$request) {
 		// Calling editFilter() to edit a new filter.
@@ -191,7 +191,7 @@ class PKPFilterGridHandler extends GridHandler {
 	/**
 	 * Edit a filter
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editFilter(&$args, &$request, $newFilter = false) {
 		// Identify the filter to be edited
@@ -202,7 +202,7 @@ class PKPFilterGridHandler extends GridHandler {
 		}
 
 		// Form handling
-		import('lib.pkp.classes.controllers.grid.filter.form.FilterForm');
+		import('lib.sep.classes.controllers.grid.filter.form.FilterForm');
 		$filterForm = new FilterForm($filter, $this->getTitle(), $this->getFormDescription(),
 				$this->getFilterGroupSymbolic());
 
@@ -215,7 +215,7 @@ class PKPFilterGridHandler extends GridHandler {
 	/**
 	 * Update a filter
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string
 	 */
 	function updateFilter(&$args, &$request) {
@@ -225,7 +225,7 @@ class PKPFilterGridHandler extends GridHandler {
 		$filter =& $this->getFilterFromArgs($request, $args, true);
 
 		// Form initialization
-		import('lib.pkp.classes.controllers.grid.filter.form.FilterForm');
+		import('lib.sep.classes.controllers.grid.filter.form.FilterForm');
 		$nullVar = null;
 		$filterForm = new FilterForm($filter, $this->getTitle(), $this->getFormDescription(),
 				$nullVar); // No filter group required here.
@@ -257,7 +257,7 @@ class PKPFilterGridHandler extends GridHandler {
 	/**
 	 * Delete a filter
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string
 	 */
 	function deleteFilter(&$args, &$request) {

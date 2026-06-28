@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/implicitAuth/shibboleth/locale/id_ID/locale.xml
@@ -13,6 +13,5 @@
 
 <locale name="id_ID" full_name="Bahasa Indonesia">
 	<message key="plugins.implicitAuth.shibboleth.displayName">ShibAuthPlugin</message>
-	<message key="plugins.implicitAuth.shibboleth.description">ShibAuthPlugin. Ini adalah plugin site-wide dan diaktifkan di file konfigurasi OJS.</message>
+	<message key="plugins.implicitAuth.shibboleth.description">ShibAuthPlugin. Ini adalah plugin site-wide dan diaktifkan di file konfigurasi CLA.</message>
 </locale>
-

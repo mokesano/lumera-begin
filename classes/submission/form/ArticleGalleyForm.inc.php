@@ -18,7 +18,7 @@
  * @brief Article galley editing form.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ArticleGalleyForm extends Form {
 	/** @var int the ID of the article */

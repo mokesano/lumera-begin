@@ -1,24 +1,24 @@
 <?php
 
 /**
- * @defgroup rt_ojs
+ * @defgroup rt_cla
  */
 
 /**
- * @file classes/rt/ojs/JournalRT.inc.php
+ * @file classes/rt/cla/JournalRT.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class JournalRT
- * @ingroup rt_ojs
+ * @ingroup rt_cla
  *
- * @brief OJS-specific Reading Tools end-user interface.
+ * @brief CLA-specific Reading Tools end-user interface.
  */
 
-import('lib.pkp.classes.rt.RT');
-import('classes.rt.ojs.RTDAO');
+import('lib.sep.classes.rt.RT');
+import('classes.rt.cla.RTDAO');
 
 class JournalRT extends RT {
 	var $journalId;

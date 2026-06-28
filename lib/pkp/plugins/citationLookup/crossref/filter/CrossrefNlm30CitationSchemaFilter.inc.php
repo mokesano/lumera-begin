@@ -20,8 +20,8 @@
  */
 
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
-import('lib.pkp.classes.filter.EmailFilterSetting');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaFilter');
+import('lib.sep.classes.filter.EmailFilterSetting');
 
 define('CROSSREF_WEBSERVICE_URL', 'http://www.crossref.org/openurl/');
 
@@ -78,7 +78,7 @@ class CrossrefNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationLookup.crossref.filter.CrossrefNlm30CitationSchemaFilter';
+		return 'lib.sep.plugins.citationLookup.crossref.filter.CrossrefNlm30CitationSchemaFilter';
 	}
 
 
@@ -137,7 +137,7 @@ class CrossrefNlm30CitationSchemaFilter extends Nlm30CitationSchemaFilter {
 		$nullVar = null;
 
 		// Crosswalk to OpenURL.
-		import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaOpenurl10CrosswalkFilter');
+		import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaOpenurl10CrosswalkFilter');
 		$nlm30Openurl10Filter = new Nlm30CitationSchemaOpenurl10CrosswalkFilter();
 		if (is_null($openurl10Citation =& $nlm30Openurl10Filter->execute($citationDescription))) return $nullVar;
 

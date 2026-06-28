@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/fa_IR/admin.xml
@@ -27,7 +27,7 @@
 	<message key="admin.languages.download">دانلود فایل (های) زبانی</message>
 	<message key="admin.languages.download.cannotOpen">قادر به باز کردن فایل توصیف کننده زبان از سایت پی کی پی نیست</message>
 	<message key="admin.languages.download.cannotModifyRegistry">افزودن زبان جدید به فایل رجیستری زبان ممکن نیست</message>
-	<message key="admin.auth.ojs"> پاگاه داده کاربران او ج اس</message>
+	<message key="admin.auth.cla"> پاگاه داده کاربران او ج اس</message>
 	<message key="admin.auth.enableSyncProfiles">فعال ساختن نظام هماهنگ کاربران. البته این پلاگین تایید هویت میبایست آنرا حمایت کند. وقتی که کاربر وارد سیستم شود پرونده وی از منبع تایید کننده خارجی بروزرسانی می شود و چنانچه در سیستم او ج اس پرونده خود را تغییر دهد این تغییرات در منبع تایید کننده مورد نظر نیز اعمال میگردد. این موضوع شامل رمز عبور نیز می شود. چنانچه این گزینه فعال نشود اطلاعات پرونده کاربر در سیستم او ج اس بصورت مستقل از سیستم خارجی تایید کننده هویت می باشد.</message>
 	<message key="admin.auth.enableSyncPasswords">فعال سازی امکان تغییر رمز عبور کاربر. البته میبایست توسط سیستم تایید کننده هویت خارجی حمایت شود. با فعال سازی این گزینه کاربران میتوانند رمز عبور خودرا از داخل سیستم او ج اس تغییر داده و از قسمت رمز عبور فراموش ده نیز بهره بگیرند. در صورتی که این گزینه فعال نشود کاربرانی که از این سیستم خارجی تایید هویت استفاده می کنند قادر به استفاده از این امکانات یعنی رمز عبور فراموش ده نیستند.</message>
 	<message key="admin.auth.enableCreateUsers">امکان ایجاد کاربر جدید در صورتی که سیستم تایید کننده هویت خارجی حمایت کند. کاربرانی که درون او ج اس با استفاده از این سیستم خارجی اضافه می شوند به سیستم خارجی نیز اضافه می شوند. همچنین چنانچه این سیستم خارجی سیستم پیش فرض تایید کننده هویت باشد. کابران ایجاد شده هنگام ثبت نام به سیستم خارجی نیز اضافه می شوند.</message>
@@ -46,7 +46,7 @@
 	<message key="admin.journals.form.pathExists">مسیر انتخاب شده قبلا توسط یک مجله دیگر انتخاب شده است</message>
 	<message key="admin.journals.enableJournalInstructions">این مجله را فعال کنید تا به صورت عمومی روی سایت نمایش داده شود</message>
 	<message key="admin.journals.journalDescription">توصیف مجله</message>
-	<message key="admin.journal.pathImportInstructions">مسیر موجود یا مسیری که باید ایجاد شود. مثال: ojs</message>
+	<message key="admin.journal.pathImportInstructions">مسیر موجود یا مسیری که باید ایجاد شود. مثال: cla</message>
 	<message key="admin.journals.importSubscriptions">وارد کردن اشتراک ها</message>
 	<message key="admin.journals.transcode">انتقال کد دادههای مقاله از ISO8859-1</message>
 	<message key="admin.journals.redirect">تولید کد لازم برای تطبیق آدرس او ج اس ۱ به ۲</message>

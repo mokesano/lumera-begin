@@ -13,14 +13,14 @@
  * @brief Submission file class.
  */
 
-import('lib.pkp.classes.file.PKPFile');
+import('lib.sep.classes.file.SEPFile');
 
-class SubmissionFile extends PKPFile {
+class SubmissionFile extends SEPFile {
 	/**
 	 * Constructor.
 	 */
 	function SubmissionFile() {
-		parent::PKPFile();
+		parent::SEPFile();
 	}
 
 

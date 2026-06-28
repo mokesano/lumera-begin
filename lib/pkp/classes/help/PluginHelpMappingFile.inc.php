@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.help.HelpMappingFile');
+import('lib.sep.classes.help.HelpMappingFile');
 
 class PluginHelpMappingFile extends HelpMappingFile {
 	/** @var $plugin object */

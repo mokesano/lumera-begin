@@ -15,7 +15,7 @@
  * @brief Form for journal managers to modify ABNT Citation plugin settings
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class AbntSettingsForm extends Form {
 

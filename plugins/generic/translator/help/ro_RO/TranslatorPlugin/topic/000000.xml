@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000000.xml
@@ -14,7 +14,7 @@
 
 <topic id="TranslatorPlugin/topic/000000" locale="ro_RO" title="Modul de traducere" toc="index/toc/000000" key="TranslatorPlugin.index">
 	<section>
-		<![CDATA[<p>De la versiunea 2.2, OJS vine cu un modul pentru traducere care ușurează sarcina de actualizare a traducerilor incomplete. Pți chiar să inițiezi o nouă traducere de la zero chiar dacă aceasta necesită mai multă muncă inițial (vezi mai jos).</p><p>Pentru a vedea care sunt traducerile disponibile pentru OJS și pentru a verifica care sintre acestea se află în desfășurare, verifică pagina <a href="http://pkp.sfu.ca/ojs-languages">limbilor disponibile pentru OJS</a> pentru mai multe informații. Pentru traduceri în desfășurare ia în considerare contactarea traducătorilor pentru a verifica stadiul traducerii și/sau pentru a-ți coordona eforturile cu aceștia ajutându-i.</p><p>Pentru a activa modulul, autentifică-te ca manager al revistei, mergi la pagina personală și apoi la modulele de sistem. Aici vei găsi modulul de traducere afișat printre modulele generice. Dă clic pe „activează”. Pentru a accesa modulul,întoarce-te la pagina cu modulele sistemului, dă mai jos pentru a-l găsi și dă clic pe linkul „tradu”.</p><p>Vei vedea acum o listă cu localizările disponibile (deja instalate) și trei posibile acțiuni: „Verifică”, „Editează” și „Exportă”.</p>]]>
+		<![CDATA[<p>De la versiunea 2.2, CLA vine cu un modul pentru traducere care ușurează sarcina de actualizare a traducerilor incomplete. Pți chiar să inițiezi o nouă traducere de la zero chiar dacă aceasta necesită mai multă muncă inițial (vezi mai jos).</p><p>Pentru a vedea care sunt traducerile disponibile pentru CLA și pentru a verifica care sintre acestea se află în desfășurare, verifică pagina <a href="http://lumera.sangia.org/cla-languages">limbilor disponibile pentru CLA</a> pentru mai multe informații. Pentru traduceri în desfășurare ia în considerare contactarea traducătorilor pentru a verifica stadiul traducerii și/sau pentru a-ți coordona eforturile cu aceștia ajutându-i.</p><p>Pentru a activa modulul, autentifică-te ca manager al revistei, mergi la pagina personală și apoi la modulele de sistem. Aici vei găsi modulul de traducere afișat printre modulele generice. Dă clic pe „activează”. Pentru a accesa modulul,întoarce-te la pagina cu modulele sistemului, dă mai jos pentru a-l găsi și dă clic pe linkul „tradu”.</p><p>Vei vedea acum o listă cu localizările disponibile (deja instalate) și trei posibile acțiuni: „Verifică”, „Editează” și „Exportă”.</p>]]>
 	</section>
 
 	<section title="Verificarea unei traduceri">
@@ -26,7 +26,7 @@
 	</section>
 
 	<section title="Exportarea unei traduceri">
-		<![CDATA[<p>Poți exporta o traducere dând clic pe linkul „exportă” de lângă numele limbii din pagina modulului de traducere: sistemul va comprima toate fișierele pentru ca cine este interesat să le poată descărca ca o arhivă tar.gz. Această funcționalitate este utilă mai ales dacă migrezi un pachet de localizare recent tradus pe un alt mediu OJS sau OCS sau dacă dorești să contribui cu acesta la PKP.</p>]]>
+		<![CDATA[<p>Poți exporta o traducere dând clic pe linkul „exportă” de lângă numele limbii din pagina modulului de traducere: sistemul va comprima toate fișierele pentru ca cine este interesat să le poată descărca ca o arhivă tar.gz. Această funcționalitate este utilă mai ales dacă migrezi un pachet de localizare recent tradus pe un alt mediu CLA sau OCS sau dacă dorești să contribui cu acesta la SEP.</p>]]>
 	</section>
 
 	<section title="Inițierea unei traduceri de la zero">

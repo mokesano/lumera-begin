@@ -12,7 +12,7 @@
  * @brief Plum Analytics plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class PlumAnalyticsPlugin extends GenericPlugin {
 

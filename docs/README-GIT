@@ -1,13 +1,13 @@
 git Access
 ----------
-PKP provides access via github to the latest OJS code.
+SEP provides access via github to the latest CLA code.
 
-git web interface: <http://github.com/pkp/ojs>
+git web interface: <http://github.com/sep/cla>
 
-Read-only git access: <git://github.com/pkp/ojs.git>
+Read-only git access: <git://github.com/sep/cla.git>
 
-Please consult http://pkp.sfu.ca/wiki/index.php/HOW-TO_check_out_PKP_applications_from_git
+Please consult http://lumera.sangia.org/wiki/index.php/HOW-TO_check_out_SEP_applications_from_git
 for instructions on setting up a development environment.
 
 Note that you must rename config.TEMPLATE.inc.php to config.inc.php prior to
-running the OJS installation script.
+running the CLA installation script.

@@ -13,9 +13,9 @@
  * @brief Handle requests for site administrative/maintenance functions. 
  */
 
-import('lib.pkp.classes.site.Version');
-import('lib.pkp.classes.site.VersionDAO');
-import('lib.pkp.classes.site.VersionCheck');
+import('lib.sep.classes.site.Version');
+import('lib.sep.classes.site.VersionDAO');
+import('lib.sep.classes.site.VersionCheck');
 import('pages.admin.AdminHandler');
 
 class AdminFunctionsHandler extends AdminHandler {
@@ -119,7 +119,7 @@ class AdminFunctionsHandler extends AdminHandler {
 		$request =& $application->getRequest();
 
 		$file = basename($request->getUserVar('file'));
-		import('lib.pkp.classes.scheduledTask.ScheduledTaskHelper');
+		import('lib.sep.classes.scheduledTask.ScheduledTaskHelper');
 		ScheduledTaskHelper::downloadExecutionLog($file);
 	}
 	
@@ -128,7 +128,7 @@ class AdminFunctionsHandler extends AdminHandler {
 	 */
 	function clearScheduledTaskLogFiles() {
 		$this->validate();
-		import('lib.pkp.classes.scheduledTask.ScheduledTaskHelper');
+		import('lib.sep.classes.scheduledTask.ScheduledTaskHelper');
 		ScheduledTaskHelper::clearExecutionLogs();	
 
 		Request::redirect(null, 'admin');

@@ -14,7 +14,7 @@
  * @brief Form for journal managers to create/edit review object types.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class ReviewObjectTypeForm extends Form {
 	/** @var string Name of parent plugin */

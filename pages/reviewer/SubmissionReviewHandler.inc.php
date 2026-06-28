@@ -26,7 +26,7 @@ class SubmissionReviewHandler extends ReviewerHandler {
 	/**
 	 * Display the submission review page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function submission($args, $request) {
 		$journal =& $request->getJournal();
@@ -73,7 +73,7 @@ class SubmissionReviewHandler extends ReviewerHandler {
 	/**
 	 * Confirm whether the review has been accepted or not.
 	 * @param $args array optional
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function confirmReview($args, $request) {
 		$reviewId = (int) $request->getUserVar('reviewId');
@@ -100,7 +100,7 @@ class SubmissionReviewHandler extends ReviewerHandler {
 	/**
 	 * Save the competing interests statement, if allowed.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveCompetingInterests($args, &$request) {
 		$reviewId = (int) $request->getUserVar('reviewId');
@@ -119,7 +119,7 @@ class SubmissionReviewHandler extends ReviewerHandler {
 	/**
 	 * Record the reviewer recommendation.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function recordRecommendation($args, $request) {
 		$reviewId = (int) $request->getUserVar('reviewId');
@@ -142,7 +142,7 @@ class SubmissionReviewHandler extends ReviewerHandler {
 	/**
 	 * View the submission metadata
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewMetadata($args, $request) {
 		$reviewId = (int) array_shift($args);
@@ -175,7 +175,7 @@ class SubmissionReviewHandler extends ReviewerHandler {
 	/**
 	 * Delete one of the reviewer's annotated versions of an article.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteReviewerVersion($args, $request) {
 		$reviewId = (int) array_shift($args);
@@ -197,7 +197,7 @@ class SubmissionReviewHandler extends ReviewerHandler {
 	/**
 	 * Download a file.
 	 * @param $args array ($articleId, $fileId, [$revision])
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function downloadFile($args, $request) {
 		$reviewId = (int) array_shift($args);
@@ -221,7 +221,7 @@ class SubmissionReviewHandler extends ReviewerHandler {
 	/**
 	 * Edit or preview review form response.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editReviewFormResponse($args, $request) {
 		$reviewId = (int) array_shift($args);
@@ -241,7 +241,7 @@ class SubmissionReviewHandler extends ReviewerHandler {
 	/**
 	 * Save review form response
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function saveReviewFormResponse($args, $request) {
 		$reviewId = (int) array_shift($args);

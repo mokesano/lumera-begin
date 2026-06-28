@@ -6,14 +6,14 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * OJS solr/lucene search plugin index schema default configuration.
+  * CLA solr/lucene search plugin index schema default configuration.
   * 
   * NB: You may customize the index/query analyzer chains. Do not change the field
-  * configuration, though, as this will probably break the OJS/solr indexing or
+  * configuration, though, as this will probably break the CLA/solr indexing or
   * search protocol.
   -->
 
-<schema name="ojs" version="1.0">
+<schema name="cla" version="1.0">
 
   <types>
     <!-- Numeric fields are used for numeric IDs -->
@@ -409,10 +409,10 @@
     <field name="section_id" type="numId" indexed="true" stored="true" required="true" multiValued="false" />
     <dynamicField name="*_id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
 
-    <!-- OJS locale support. We are using stored field for easier debugging. This can be changed
+    <!-- CLA locale support. We are using stored field for easier debugging. This can be changed
          to "false" in a production environment if index size becomes an issue. If you want to
          support an additional locale, you can add a dynamic field definition here. The locale
-         names correspond 1:1 to OJS locale names. The type attribute points to one of the
+         names correspond 1:1 to CLA locale names. The type attribute points to one of the
          field type definitions above. -->
     <dynamicField name="*_ca_ES" type="text_ca" indexed="true"  stored="true" multiValued="false" />
     <dynamicField name="*_cs_CZ" type="text_cs" indexed="true"  stored="true" multiValued="false" />

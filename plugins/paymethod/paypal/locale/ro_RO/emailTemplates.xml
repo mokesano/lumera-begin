@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/paymethod/paypal/locale/ro_RO/emailTemplates.xml
   *
@@ -12,9 +12,9 @@
 <email_texts locale="ro_RO">
 	<email_text key="PAYPAL_INVESTIGATE_PAYMENT">
 		<subject>Activitate PayPal anormală</subject>
-		<body>Open Journal Systems a sesizat o activitate anormală privind suportul pentru plăți prin PayPal pentru revista {$journalName}. Această activitate necesită investigații sau intervenția manuală.
+		<body>Code Lumera Editorial a sesizat o activitate anormală privind suportul pentru plăți prin PayPal pentru revista {$journalName}. Această activitate necesită investigații sau intervenția manuală.
                        
-Acest email a fost generat de modulul pentru plăți prin PayPal al Open Journal Systems.
+Acest email a fost generat de modulul pentru plăți prin PayPal al Code Lumera Editorial.
 
 Informații postfactum pentru solicitarea:
 {$postInfo}

@@ -13,7 +13,7 @@
  * @brief Class to perform automated reminders for book reviewers.
  */
 
-import('lib.pkp.classes.scheduledTask.ScheduledTask');
+import('lib.sep.classes.scheduledTask.ScheduledTask');
 
 class BooksForReviewReminder extends ScheduledTask {
 

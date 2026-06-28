@@ -1,5 +1,5 @@
 ================================
-=== OJS METS XML Gateway Plugin
+=== CLA METS XML Gateway Plugin
 === Version: 1.0
 === Release date: 15/02/2008
 === Authors: Scott Yeadon, Leo Monus
@@ -7,7 +7,7 @@
 
 About
 -----
-This plugin for OJS 2 provides an XML export feature using The Australian METS Journal Profile 1.0
+This plugin for CLA 2 provides an XML export feature using The Australian METS Journal Profile 1.0
 for more information about the Schema go to the Library of Congress website
 http://www.loc.gov/standards/mets/mets-registered-profiles.html
 
@@ -17,25 +17,25 @@ This plugin is licensed under the GNU General Public License v2. See the file CO
 
 System Requirements
 -------------------
-Same requirements as the OJS 2.2.x core.
+Same requirements as the CLA 2.2.x core.
 
 Installation
 ------------
 To install the plugin:
-- copy the metsGateway folder into OJS/plugins/gateways
+- copy the metsGateway folder into CLA/plugins/gateways
 
 To enable the plugin click ENABLE under the "METS Gateway Plugin" in the  manager/plugins page
 
 The the Journals XML can be acessed by the following URLs:
 
 for All Issues:
-[OJS URL]/index.php/[JournalPath]/gateway/plugin/METSGatewayPlugin/
+[CLA URL]/index.php/[JournalPath]/gateway/plugin/METSGatewayPlugin/
 
 for a specific [IssueID]:
-[OJS URL]/index.php/[JournalPath]/gateway/plugin/METSGatewayPlugin/[IssueID]
+[CLA URL]/index.php/[JournalPath]/gateway/plugin/METSGatewayPlugin/[IssueID]
 
 for All Current Issues:
-[OJS URL]/index.php/[JournalPath]/gateway/plugin/METSGatewayPlugin/current
+[CLA URL]/index.php/[JournalPath]/gateway/plugin/METSGatewayPlugin/current
 
 Contact/Support
 ---------------

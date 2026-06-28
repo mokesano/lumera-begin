@@ -13,7 +13,7 @@
  * @brief Class for Notification.
  */
 
-import('lib.pkp.classes.notification.NotificationDAO');
+import('lib.sep.classes.notification.NotificationDAO');
 
 define('UNSUBSCRIBED_USER_NOTIFICATION',			0);
 
@@ -39,11 +39,11 @@ define('NOTIFICATION_TYPE_PLUGIN_DISABLED',			0x5000002);
 
 define('NOTIFICATION_TYPE_PLUGIN_BASE',				0x6000001);
 
-class PKPNotification extends DataObject {
+class SEPNotification extends DataObject {
 	/**
 	 * Constructor.
 	 */
-	function PKPNotification() {
+	function SEPNotification() {
 		parent::DataObject();
 	}
 

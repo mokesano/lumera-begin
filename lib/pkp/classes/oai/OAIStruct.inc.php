@@ -77,7 +77,7 @@ class OAIRepository {
 	/** @var $sampleIdentifier string example identifier */
 	var $sampleIdentifier;
 
-	/** @var $toolkitTitle string toolkit/software title (e.g. Open Journal Systems) */
+	/** @var $toolkitTitle string toolkit/software title (e.g. Code Lumera Editorial) */
 	var $toolkitTitle;
 
 	/** @var $toolkitVersion string toolkit/software version */

@@ -13,7 +13,7 @@
  * @brief Class for keyword cloud block plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 define('KEYWORD_BLOCK_MAX_ITEMS', 20);
 define('KEYWORD_BLOCK_CACHE_DAYS', 2);

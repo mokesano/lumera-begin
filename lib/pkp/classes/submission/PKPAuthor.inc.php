@@ -1,24 +1,24 @@
 <?php
 
 /**
- * @file classes/submission/PKPAuthor.inc.php
+ * @file classes/submission/SEPAuthor.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPAuthor
+ * @class SEPAuthor
  * @ingroup submission
- * @see PKPAuthorDAO
+ * @see SEPAuthorDAO
  *
  * @brief Author metadata class.
  */
 
-class PKPAuthor extends DataObject {
+class SEPAuthor extends DataObject {
 	/**
 	 * Constructor.
 	 */
-	function PKPAuthor() {
+	function SEPAuthor() {
 		parent::DataObject();
 	}
 

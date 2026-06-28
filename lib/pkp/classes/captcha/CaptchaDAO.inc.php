@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.captcha.Captcha');
+import('lib.sep.classes.captcha.Captcha');
 
 class CaptchaDAO extends DAO {
 	/**

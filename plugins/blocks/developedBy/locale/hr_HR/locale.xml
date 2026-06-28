@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/blocks/developedBy/locale/hr_HR/locale.xml
@@ -14,5 +14,5 @@
  
 <locale name="hr_HR" full_name="Hrvatski">
 	<message key="plugins.block.developedBy.displayName">"Sustav razvili" blok</message>
-	<message key="plugins.block.developedBy.description">Ovaj dodatak prikazuje poveznicu na razvojni tim OJS-a u rubnom izborniku.</message>
+	<message key="plugins.block.developedBy.description">Ovaj dodatak prikazuje poveznicu na razvojni tim CLA-a u rubnom izborniku.</message>
 </locale>

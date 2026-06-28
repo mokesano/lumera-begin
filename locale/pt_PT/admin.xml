@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/pt_PT/admin.xml
@@ -26,15 +26,15 @@
 	<message key="admin.languages.localeInstalled">Idioma "{$locale}" instalado.</message>
 	<message key="admin.languages.download">Transferir idioma</message>
 	<message key="admin.languages.reloadDefaultEmailTemplates">Actualizar modelos de e-mail padrão</message>
-	<message key="admin.languages.download.cannotOpen">Não é possível abrir a identificação de idioma do portal do PKP.</message>
+	<message key="admin.languages.download.cannotOpen">Não é possível abrir a identificação de idioma do portal do SEP.</message>
 	<message key="admin.languages.download.cannotModifyRegistry">Não é possível adicionar novo idioma no ficheiro de registo de idiomas, geralmente "registry/locales.xml".</message>
-	<message key="admin.auth.ojs">Base de Dados de Utilizadores do OJS</message>
+	<message key="admin.auth.cla">Base de Dados de Utilizadores do CLA</message>
 	<message key="admin.auth.enableSyncProfiles">Activar sincronização de perfil de utilizadores (caso suportado pelo plugin de autenticação!). Os perfis dos utilizadores serão actualizados com o conteúdo da fonte remota assim que o utilizador aceda ao sistema e alterações no perfil (incluindo alteração de senha) realizadas dentro do sistema actualizarão a fonte remota. Caso esta opção não esteja activada, os perfis no sistema serão mantidos separados da fonte remota.</message>
 	<message key="admin.auth.enableSyncPasswords">Activar alteração de senha de utilizador (caso suportado pelo plugin de autenticação!). Activar esta opção permite ao utilizador modificar a senha do sistema e fazer uso da opção de recuperação de senha para criar uma nova senha. Estas funcionalidades não estarão disponíveis aos utilizadores com esta fonte de autenticação, caso não seja activada.</message>
 	<message key="admin.auth.enableCreateUsers">Activar criação de utilizadores (caso suportado pelo plugin de autenticação!). Utilizadores criados no sistema serão automaticamente incluídos na fonte de autenticação remota, caso não existam ainda. Inclusive, utilizadores criados através do registo de utilizadores também serão incluídos automaticamente na fonte remota, caso esta seja a fonte de autenticação padrão.</message>
-	<message key="admin.systemVersion">Versão do OJS</message>
-	<message key="admin.systemConfiguration">Configuração do OJS</message>
-	<message key="admin.systemConfigurationDescription"><![CDATA[Configurações do OJS no documento <tt>config.inc.php</tt>.]]></message>
+	<message key="admin.systemVersion">Versão do CLA</message>
+	<message key="admin.systemConfiguration">Configuração do CLA</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[Configurações do CLA no documento <tt>config.inc.php</tt>.]]></message>
 	<message key="admin.journals.journalSettings">Configurações da Revista</message>
 	<message key="admin.journals.noneCreated">Nenhuma revista foi criada.</message>
 	<message key="admin.journals.confirmDelete">Deseja realmente eliminar permanentemente esta revista e o seu conteúdo?</message>
@@ -50,7 +50,7 @@
 	<message key="admin.journal.pathImportInstructions">Caminho existente ou caminho a ser criado (ex.:</message>
 	<message key="admin.journals.importSubscriptions">Importar assinaturas</message>
 	<message key="admin.journals.transcode">Transcodificar metadados de ISO8859-1</message>
-	<message key="admin.journals.redirect">Gerar código para mapear URLs da versão 1 do OJS para URLs da versão 2</message>
+	<message key="admin.journals.redirect">Gerar código para mapear URLs da versão 1 do CLA para URLs da versão 2</message>
 	<message key="admin.journals.form.importPathRequired">O caminho físico para a importação é obrigatório.</message>
 	<message key="admin.journals.importErrors">Importação não concluída.</message>
 	<message key="admin.mergeUsers">Juntar utilizadores</message>
@@ -69,7 +69,7 @@
 	<message key="admin.settings.journalsList.showThumbnail">Thumbnail da revista</message>
 	<message key="admin.settings.journalsList.showTitle">Título da revista</message>
 	<message key="admin.settings.journalsList.showDescription">Descrição da revista</message>
-	<message key="admin.settings.defaultMetricDescription">A instalação do OJS foi configurada para guardar mais do que uma métrica. As estatísticas de utilização serão exibidas em diferentes contextos.
+	<message key="admin.settings.defaultMetricDescription">A instalação do CLA foi configurada para guardar mais do que uma métrica. As estatísticas de utilização serão exibidas em diferentes contextos.
 		Nalgumas situações será usada apenas uma única métrica, e.g. mostrar uma lista ordenada dos artigos mais usados ou ordenar 
 		resultados da pesquisa. Por favor, seleccione um das métricas configuradas como padrão.</message>
 	<message key="admin.categories">Categorias</message>

@@ -5,20 +5,20 @@
  */
 
 /**
- * @file classes/i18n/PKPLocale.inc.php
+ * @file classes/i18n/SEPLocale.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPLocale
+ * @class SEPLocale
  * @ingroup i18n
  *
  * @brief Provides methods for loading locale data and translating strings identified by unique keys
  */
 
 
-import('lib.pkp.classes.i18n.LocaleFile');
+import('lib.sep.classes.i18n.LocaleFile');
 
 if (!defined('LOCALE_REGISTRY_FILE')) {
 	define('LOCALE_REGISTRY_FILE', Config::getVar('general', 'registry_dir') . DIRECTORY_SEPARATOR . 'locales.xml');
@@ -45,16 +45,16 @@ define('EMAIL_ERROR_EXTRA_EMAIL', 'EMAIL_ERROR_EXTRA_EMAIL');
 define('EMAIL_ERROR_DIFFERING_PARAMS', 'EMAIL_ERROR_DIFFERING_PARAMS');
 
 // Locale components
-define('LOCALE_COMPONENT_PKP_COMMON', 0x00000001);
-define('LOCALE_COMPONENT_PKP_ADMIN', 0x00000002);
-define('LOCALE_COMPONENT_PKP_INSTALLER', 0x00000003);
-define('LOCALE_COMPONENT_PKP_MANAGER', 0x00000004);
-define('LOCALE_COMPONENT_PKP_READER', 0x00000005);
-define('LOCALE_COMPONENT_PKP_SUBMISSION', 0x00000006);
-define('LOCALE_COMPONENT_PKP_USER', 0x00000007);
-define('LOCALE_COMPONENT_PKP_GRID', 0x00000008);
+define('LOCALE_COMPONENT_SEP_COMMON', 0x00000001);
+define('LOCALE_COMPONENT_SEP_ADMIN', 0x00000002);
+define('LOCALE_COMPONENT_SEP_INSTALLER', 0x00000003);
+define('LOCALE_COMPONENT_SEP_MANAGER', 0x00000004);
+define('LOCALE_COMPONENT_SEP_READER', 0x00000005);
+define('LOCALE_COMPONENT_SEP_SUBMISSION', 0x00000006);
+define('LOCALE_COMPONENT_SEP_USER', 0x00000007);
+define('LOCALE_COMPONENT_SEP_GRID', 0x00000008);
 
-class PKPLocale {
+class SEPLocale {
 	/**
 	 * Get a list of locale files currently registered, either in all
 	 * locales (in an array for each locale), or for a specific locale.
@@ -93,7 +93,7 @@ class PKPLocale {
 		$notes =& Registry::get('system.debug.notes');
 		$notes[] = array('debug.notes.missingLocaleKey', array('key' => $key));
 
-		if (!HookRegistry::call('PKPLocale::translate', array(&$this, &$key, &$params, &$locale, &$localeFiles, &$value))) {
+		if (!HookRegistry::call('SEPLocale::translate', array(&$this, &$key, &$params, &$locale, &$localeFiles, &$value))) {
 			// Add some octothorpes to missing keys to make them more obvious
 			return '##' . htmlentities($key) . '##';
 		} else {
@@ -116,7 +116,7 @@ class PKPLocale {
 			}
 		}
 
-		AppLocale::registerLocaleFile($locale, "lib/pkp/locale/$locale/common.xml");
+		AppLocale::registerLocaleFile($locale, "lib/sep/locale/$locale/common.xml");
 	}
 
 	/**
@@ -126,17 +126,17 @@ class PKPLocale {
 	 * @return array
 	 */
 	function makeComponentMap($locale) {
-		$baseDir = "lib/pkp/locale/$locale/";
+		$baseDir = "lib/sep/locale/$locale/";
 
 		return array(
-			LOCALE_COMPONENT_PKP_COMMON => $baseDir . 'common.xml',
-			LOCALE_COMPONENT_PKP_ADMIN => $baseDir . 'admin.xml',
-			LOCALE_COMPONENT_PKP_INSTALLER => $baseDir . 'installer.xml',
-			LOCALE_COMPONENT_PKP_MANAGER => $baseDir . 'manager.xml',
-			LOCALE_COMPONENT_PKP_READER => $baseDir . 'reader.xml',
-			LOCALE_COMPONENT_PKP_SUBMISSION => $baseDir . 'submission.xml',
-			LOCALE_COMPONENT_PKP_USER => $baseDir . 'user.xml',
-			LOCALE_COMPONENT_PKP_GRID => $baseDir . 'grid.xml'
+			LOCALE_COMPONENT_SEP_COMMON => $baseDir . 'common.xml',
+			LOCALE_COMPONENT_SEP_ADMIN => $baseDir . 'admin.xml',
+			LOCALE_COMPONENT_SEP_INSTALLER => $baseDir . 'installer.xml',
+			LOCALE_COMPONENT_SEP_MANAGER => $baseDir . 'manager.xml',
+			LOCALE_COMPONENT_SEP_READER => $baseDir . 'reader.xml',
+			LOCALE_COMPONENT_SEP_SUBMISSION => $baseDir . 'submission.xml',
+			LOCALE_COMPONENT_SEP_USER => $baseDir . 'user.xml',
+			LOCALE_COMPONENT_SEP_GRID => $baseDir . 'grid.xml'
 		);
 	}
 
@@ -209,7 +209,7 @@ class PKPLocale {
 	function &registerLocaleFile ($locale, $filename, $addToTop = false) {
 		$localeFiles =& AppLocale::getLocaleFiles($locale);
 		$localeFile = new LocaleFile($locale, $filename);
-		if (!HookRegistry::call('PKPLocale::registerLocaleFile::isValidLocaleFile', array(&$localeFile))) {
+		if (!HookRegistry::call('SEPLocale::registerLocaleFile::isValidLocaleFile', array(&$localeFile))) {
 			if (!$localeFile->isValid()) {
 				$localeFile = null;
 				return $localeFile;
@@ -222,7 +222,7 @@ class PKPLocale {
 		} else {
 			$localeFiles[] =& $localeFile;
 		}
-		HookRegistry::call('PKPLocale::registerLocaleFile', array(&$locale, &$filename, &$addToTop));
+		HookRegistry::call('SEPLocale::registerLocaleFile', array(&$locale, &$filename, &$addToTop));
 		return $localeFile;
 	}
 
@@ -313,7 +313,7 @@ class PKPLocale {
 	 */
 	function installLocale($locale) {
 		// Install default locale-specific data
-		import('lib.pkp.classes.db.DBDataXMLParser');
+		import('lib.sep.classes.db.DBDataXMLParser');
 
 		$emailTemplateDao =& DAORegistry::getDAO('EmailTemplateDAO');
 		$emailTemplateDao->installEmailTemplateData($emailTemplateDao->getMainEmailTemplateDataFilename($locale));
@@ -323,7 +323,7 @@ class PKPLocale {
 		foreach ($categories as $category) {
 			PluginRegistry::loadCategory($category);
 		}
-		HookRegistry::call('PKPLocale::installLocale', array(&$locale));
+		HookRegistry::call('SEPLocale::installLocale', array(&$locale));
 	}
 
 	/**
@@ -399,7 +399,7 @@ class PKPLocale {
 	}
 
 	/**
-	 * Translate the PKP locale identifier into an
+	 * Translate the SEP locale identifier into an
 	 * ISO639-2b compatible 3-letter string.
 	 * @param $locale string
 	 * @return string
@@ -412,7 +412,7 @@ class PKPLocale {
 
 	/**
 	 * Translate an ISO639-2b compatible 3-letter string
-	 * into the PKP locale identifier.
+	 * into the SEP locale identifier.
 	 *
 	 * This can be ambiguous if several locales are defined
 	 * for the same language. In this case we'll use the
@@ -498,7 +498,7 @@ class PKPLocale {
 	}
 
 	/**
-	 * Translate the PKP locale identifier into an
+	 * Translate the SEP locale identifier into an
 	 * ISO639-3 compatible 3-letter string.
 	 * @param $locale string
 	 * @return string
@@ -510,7 +510,7 @@ class PKPLocale {
 	}
 
 	/**
-	* Translate the PKP locale identifier into an
+	* Translate the SEP locale identifier into an
 	* ISO639-1 compatible 2-letter string.
 	* @param $locale string
 	* @return string
@@ -522,7 +522,7 @@ class PKPLocale {
 
 	/**
 	 * Translate an ISO639-3 compatible 3-letter string
-	 * into the PKP locale identifier.
+	 * into the SEP locale identifier.
 	 *
 	 * This can be ambiguous if several locales are defined
 	 * for the same language. In this case we'll use the
@@ -632,7 +632,7 @@ class PKPLocale {
 
 
 /**
- * Wrapper around PKPLocale::translate().
+ * Wrapper around SEPLocale::translate().
  *
  * Enables us to work with translated strings everywhere without
  * introducing a lot of duplicate code and without getting
@@ -641,7 +641,7 @@ class PKPLocale {
  * This is similar to WordPress' solution for translation, see
  * <http://codex.wordpress.org/Translating_WordPress>.
  *
- * @see PKPLocale::translate()
+ * @see SEPLocale::translate()
  *
  * @param $key string
  * @param $params array named substitution parameters

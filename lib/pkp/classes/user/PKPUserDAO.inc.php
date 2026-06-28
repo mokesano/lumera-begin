@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file classes/user/PKPUserDAO.inc.php
+ * @file classes/user/SEPUserDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPUserDAO
+ * @class SEPUserDAO
  * @ingroup user
  * @see User
  *
@@ -27,11 +27,11 @@ define('USER_FIELD_INITIAL', 'initial');
 define('USER_FIELD_AFFILIATION', 'affiliation');
 define('USER_FIELD_NONE', null);
 
-class PKPUserDAO extends DAO {
+class SEPUserDAO extends DAO {
 	/**
 	 * Constructor
 	 */
-	function PKPUserDAO() {
+	function SEPUserDAO() {
 		parent::DAO();
 	}
 

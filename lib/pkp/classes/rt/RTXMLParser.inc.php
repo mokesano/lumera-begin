@@ -15,8 +15,8 @@
  */
 
 
-import('lib.pkp.classes.xml.XMLParser');
-import('lib.pkp.classes.rt.RTStruct');
+import('lib.sep.classes.xml.XMLParser');
+import('lib.sep.classes.rt.RTStruct');
 
 class RTXMLParser {
 

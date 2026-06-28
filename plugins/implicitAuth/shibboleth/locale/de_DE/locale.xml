@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/implicitAuth/shibboleth/locale/de_DE/locale.xml
@@ -15,5 +15,5 @@
  
 <locale name="de_DE" full_name="Deutsch (Deutschland)">
 	<message key="plugins.implicitAuth.shibboleth.displayName">ShibAuth-Plug-In</message>
-	<message key="plugins.implicitAuth.shibboleth.description">Das ShibAuth-Plug-In betrifft die gesamte Website und wird in der OJS-Konfigurationsdatei aktiviert.</message>
+	<message key="plugins.implicitAuth.shibboleth.description">Das ShibAuth-Plug-In betrifft die gesamte Website und wird in der CLA-Konfigurationsdatei aktiviert.</message>
 </locale>

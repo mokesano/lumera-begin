@@ -26,7 +26,7 @@ JETTY_HOME="$PLUGIN_DIR/lib/jetty"
 JAVA_OPTIONS="$JAVA_OPTIONS -Djetty.home=$JETTY_HOME"
 
 # The Jetty log directory
-JETTY_LOGS="$OJS_FILES/lucene/log"
+JETTY_LOGS="$CLA_FILES/lucene/log"
 if [ ! -d "$JETTY_LOGS" ]; then
   mkdir -p "$JETTY_LOGS"
 fi
@@ -37,7 +37,7 @@ SOLR_HOME="$DEPLOYMENT_DIR/solr"
 JAVA_OPTIONS="$JAVA_OPTIONS -Dsolr.solr.home=$SOLR_HOME"
 
 # solr index data directory
-SOLR_DATA="$OJS_FILES/lucene/data"
+SOLR_DATA="$CLA_FILES/lucene/data"
 if [ ! -d "$SOLR_DATA" ]; then
   mkdir "$SOLR_DATA"
 fi
@@ -52,7 +52,7 @@ if [ -z "$TMP" ]; then
 fi
 JAVA_OPTIONS="$JAVA_OPTIONS -Djava.io.tmpdir=$TMP"
 
-java $JAVA_OPTIONS -jar "$JETTY_HOME/start.jar" $JETTY_CONF >>$OJS_FILES/lucene/solr-java.log 2>&1 &
+java $JAVA_OPTIONS -jar "$JETTY_HOME/start.jar" $JETTY_CONF >>$CLA_FILES/lucene/solr-java.log 2>&1 &
 
 # Remember the PID of the process we just started.
 SOLR_PID=$!

@@ -13,21 +13,21 @@
  * @brief PLN plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
-import('lib.pkp.classes.config.Config');
+import('lib.sep.classes.plugins.GenericPlugin');
+import('lib.sep.classes.config.Config');
 import('classes.article.PublishedArticle');
 import('classes.issue.Issue');
 
 define('PLN_PLUGIN_NAME','plnplugin');
 
 // defined here in case an upgrade doesn't pick up the default value.
-define('PLN_DEFAULT_NETWORK', 'http://pkp-pln.lib.sfu.ca');
+define('PLN_DEFAULT_NETWORK', 'http://sep-pln.lib.sfu.ca');
 define('PLN_DEFAULT_STATUS_SUFFIX', '/docs/status');
 
 define('PLN_PLUGIN_HTTP_STATUS_OK', 200);
 define('PLN_PLUGIN_HTTP_STATUS_CREATED', 201);
 
-define('PLN_PLUGIN_XML_NAMESPACE','http://pkp.sfu.ca/SWORD');
+define('PLN_PLUGIN_XML_NAMESPACE','http://lumera.sangia.org/SWORD');
 
 // base IRI for the SWORD server. IRIs are constructed by appending to 
 // this constant.
@@ -127,7 +127,7 @@ class PLNPlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 * @return string
 	 */
 	function getDisplayName() {
@@ -135,7 +135,7 @@ class PLNPlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 * @return string
 	 */
 	function getDescription() {
@@ -143,7 +143,7 @@ class PLNPlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @see PKPPlugin::getInstallSchemaFile()
+	 * @see SEPPlugin::getInstallSchemaFile()
 	 * @return string
 	 */
 	function getInstallSchemaFile() {
@@ -151,7 +151,7 @@ class PLNPlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @see PKPPlugin::getHandlerPath()
+	 * @see SEPPlugin::getHandlerPath()
 	 * @return string
 	 */
 	function getHandlerPath() {
@@ -159,7 +159,7 @@ class PLNPlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @see PKPPlugin::getTemplatePath()
+	 * @see SEPPlugin::getTemplatePath()
 	 * @return string
 	 */
 	function getTemplatePath() {
@@ -167,7 +167,7 @@ class PLNPlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @see PKPPlugin::getContextSpecificPluginSettingsFile()
+	 * @see SEPPlugin::getContextSpecificPluginSettingsFile()
 	 * @return string
 	 */
 	function getContextSpecificPluginSettingsFile() {
@@ -183,7 +183,7 @@ class PLNPlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @see PKPPlugin::getSetting()
+	 * @see SEPPlugin::getSetting()
 	 * @param $journalId int
 	 * @param $settingName string
 	 */
@@ -249,7 +249,7 @@ class PLNPlugin extends GenericPlugin {
 	 */
 	function callbackTemplateDisplay($hookName, $params) {
 		// Get request and context.
-		$request =& PKPApplication::getRequest();
+		$request =& SEPApplication::getRequest();
 		$journal =& $request->getContext();
 		
 		// Assign our private stylesheet.
@@ -309,7 +309,7 @@ class PLNPlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @copydoc PKPPageRouter::route()
+	 * @copydoc SEPPageRouter::route()
 	 */
 	function callbackLoadHandler($hookName, $args) {
 		$page =& $args[0];
@@ -327,7 +327,7 @@ class PLNPlugin extends GenericPlugin {
 	}
 	
 	/**
-	 * @copydoc PKPPlugin::manage()
+	 * @copydoc SEPPlugin::manage()
 	 */
 	function manage($verb, $args, &$message, &$messageParams) {
 
@@ -637,7 +637,7 @@ class PLNPlugin extends GenericPlugin {
 	 * @return boolean
 	 */
 	function cronEnabled() {
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$products =& $application->getEnabledProducts('plugins.generic');
 		return isset($products['acron']) || Config::getVar('general', 'scheduled_tasks', false);
 	}

@@ -16,7 +16,7 @@
 	<message key="installer.additionalLocales">لغات إضافية</message>
 	<message key="installer.administratorAccount">حساب المشرف الإداري</message>
 	<message key="installer.administratorAccountInstructions">حساب هذا المستخدم سيكون بمثابة المشرف الإداري الذي ستكون له حرية الوصول الكاملة للنظام. المزيد من حسابات المستخدمين يمكن إنشاؤها بعد إكمال التنصيب.</message>
-	<message key="installer.checkNo"><![CDATA[<span class="pkp_form_error formError">لا</span>]]></message>
+	<message key="installer.checkNo"><![CDATA[<span class="sep_form_error formError">لا</span>]]></message>
 	<message key="installer.checkYes">نعم</message>
 	<message key="installer.clientCharset">نظام الحروف للزبون</message>
 	<message key="installer.clientCharsetInstructions">الترميز المستعمل عند إرسال البيانات واستلامها من المستعرض.</message>

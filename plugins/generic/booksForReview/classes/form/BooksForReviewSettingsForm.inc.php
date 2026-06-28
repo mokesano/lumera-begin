@@ -13,7 +13,7 @@
  * @brief Form for editors to modify books for review plugin settings
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class BooksForReviewSettingsForm extends Form {
 

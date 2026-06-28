@@ -15,8 +15,8 @@
  * hook implementation.
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
-import('lib.pkp.classes.scheduledTask.ScheduledTaskHelper');
+import('lib.sep.classes.plugins.GenericPlugin');
+import('lib.sep.classes.scheduledTask.ScheduledTaskHelper');
 
 // TODO: Error handling. If a scheduled task encounters an error...?
 
@@ -46,7 +46,7 @@ class AcronPlugin extends GenericPlugin {
 	}
 
 	/**
-	* @see PKPPlugin::isSitePlugin()
+	* @see SEPPlugin::isSitePlugin()
 	*/
 	function isSitePlugin() {
 		// This is a site-wide plugin.
@@ -61,21 +61,21 @@ class AcronPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.generic.acron.name');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.generic.acron.description');
 	}
 
 	/**
-	* @see PKPPlugin::getInstallSitePluginSettingsFile()
+	* @see SEPPlugin::getInstallSitePluginSettingsFile()
 	*/
 	function getInstallSitePluginSettingsFile() {
 		return $this->getPluginPath() . '/settings.xml';
@@ -134,7 +134,7 @@ class AcronPlugin extends GenericPlugin {
 	 * @param $hookName string
 	 * @param $args array
 	 * @return boolean
-	 * @see PKPPageRouter::loadHandler() for the hook call.
+	 * @see SEPPageRouter::loadHandler() for the hook call.
 	 */
 	function callbackLoadHandler($hookName, $args) {
 		$tasksToRun = $this->_getTasksToRun();

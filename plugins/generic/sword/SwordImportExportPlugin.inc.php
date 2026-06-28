@@ -36,7 +36,7 @@ class SwordImportExportPlugin extends ImportExportPlugin {
 	 * 	the plugin will not be registered.
 	 */
 	function register($category, $path) {
-		import('classes.sword.OJSSwordDeposit');
+		import('classes.sword.CLASwordDeposit');
 		$success = parent::register($category, $path);
 		$this->addLocaleData();
 		return $success;
@@ -82,7 +82,7 @@ class SwordImportExportPlugin extends ImportExportPlugin {
 		$publishedArticle =& $publishedArticleDao->getPublishedArticleByArticleId($articleId);
 		$journal =& Request::getJournal();
 
-		$deposit = new OJSSwordDeposit($publishedArticle);
+		$deposit = new CLASwordDeposit($publishedArticle);
 		$deposit->setMetadata();
 		if ($depositGalleys) $deposit->addGalleys();
 		if ($depositEditorial) $deposit->addEditorial();
@@ -176,7 +176,7 @@ class SwordImportExportPlugin extends ImportExportPlugin {
 				$articleIds = $publishedArticleDao->getPublishedArticleIdsAlphabetizedByJournal($journal->getId(), false);
 				$totalArticles = count($articleIds);
 				if ($rangeInfo->isValid()) $articleIds = array_slice($articleIds, $rangeInfo->getCount() * ($rangeInfo->getPage()-1), $rangeInfo->getCount());
-				import('lib.pkp.classes.core.VirtualArrayIterator');
+				import('lib.sep.classes.core.VirtualArrayIterator');
 				$iterator = new VirtualArrayIterator(ArticleSearch::formatResults($articleIds), $totalArticles, $rangeInfo->getPage(), $rangeInfo->getCount());
 				foreach (array('swordUrl', 'swordUsername', 'swordPassword', 'depositEditorial', 'depositGalleys', 'swordDepositPoint') as $var) {
 					$templateMgr->assign($var, Request::getUserVar($var));

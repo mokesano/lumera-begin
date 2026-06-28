@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/pt_PT/locale.xml
@@ -241,11 +241,11 @@
 
 	<!-- Site Administration -->
 
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Para indexar todo o conteúdo das revistas hospedadas neste portal num sistema global de bases de dados de pesquisa integradas, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registe</a> o URL do portal no <a href="http://pkp.sfu.ca/harvester/" target="_blank">colectador de metadados</a> do Public Knowledge Project. Esta ferramenta recolhe os metadados de cada item indexado na revista, permitindo pesquisa coletiva e precisa dentro dos portais que adoptam o <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Protocolo de Ficheiros Abertos para Recolha de Metadados - OAI PMH</a>.
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Para indexar todo o conteúdo das revistas hospedadas neste portal num sistema global de bases de dados de pesquisa integradas, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">registe</a> o URL do portal no <a href="http://lumera.sangia.org/harvester/" target="_blank">colectador de metadados</a> do Sangia Editorial Project. Esta ferramenta recolhe os metadados de cada item indexado na revista, permitindo pesquisa coletiva e precisa dentro dos portais que adoptam o <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Protocolo de Ficheiros Abertos para Recolha de Metadados - OAI PMH</a>.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Clique aqui</a> e insira <span class="highlight">{$siteUrl}</span> no campo <strong>URL do Portal</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>URL Base para o Ficheiro OAI</strong>.
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Clique aqui</a> e insira <span class="highlight">{$siteUrl}</span> no campo <strong>URL do Portal</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>URL Base para o Ficheiro OAI</strong>.
 <br /><br />
-Note que a interface OAI pode ser desactivada para este portal nas configurações do sistema. Futuras versões do SEER/OJS permitirão activar ou desactivar a interface OAI para revistas, individualmente.]]></message>
+Note que a interface OAI pode ser desactivada para este portal nas configurações do sistema. Futuras versões do SEER/CLA permitirão activar ou desactivar a interface OAI para revistas, individualmente.]]></message>
 
 
 
@@ -269,18 +269,18 @@ Note que a interface OAI pode ser desactivada para este portal nas configuraçõ
 	<message key="plugins.categories.generic.description">Plugins Genéricos são utilizados para enriquecer o sistema, customizando o que não é possível com plugins de outras categorias.</message>
 	<message key="plugins.categories.auth.description">Plugins de Autenticação permitem ao sistema delegar tarefas de autenticação a outros sistemas, como servidores LDAP.</message>
 
-	<message key="manager.setup.lockssDescription"><![CDATA[O sistema <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe - Muitas Cópias Mantém as Coisas Seguras) para assegurar arquivamento seguro e permanente do cache da sua revista, é suportado pelo OJS. LOCKSS é um software livre desenvolvido pela Biblioteca da Universidade de Stanford, que permite preservar revistas online escolhidas ao sondar as páginas das mesmas por conteúdo recém publicado e arquivando-o. Cada arquivo é continuamente validado contra cópias de outras bibliotecas. Caso o conteúdo esteja corrompido ou perdido, as cópias são usadas para restauração.
+	<message key="manager.setup.lockssDescription"><![CDATA[O sistema <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe - Muitas Cópias Mantém as Coisas Seguras) para assegurar arquivamento seguro e permanente do cache da sua revista, é suportado pelo CLA. LOCKSS é um software livre desenvolvido pela Biblioteca da Universidade de Stanford, que permite preservar revistas online escolhidas ao sondar as páginas das mesmas por conteúdo recém publicado e arquivando-o. Cada arquivo é continuamente validado contra cópias de outras bibliotecas. Caso o conteúdo esteja corrompido ou perdido, as cópias são usadas para restauração.
 <br /><br />
-Configurar o suporte ao LOCKSS para o OJS é necessário somente após a publicação de uma edição estar quase completa, bastando seguir os passos a seguir:]]></message>
+Configurar o suporte ao LOCKSS para o CLA é necessário somente após a publicação de uma edição estar quase completa, bastando seguir os passos a seguir:]]></message>
 
 	<!-- Setup Step 3 -->
 	<message key="manager.setup.subjectClassificationDescription"><![CDATA[A revista utiliza um sistema de classificação de assunto disponível na web.<br />
 Título do sistema de classificação:]]></message>
-	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Para ter o conteúdo desta revista indexado dentro de um sistema global de distribuição de bases de pesquisa, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registe</a> o URL da revista no <a href="http://pkp.sfu.ca/harvester/" target="_blank">Colectador de Metadados</a> do Public Knowledge Project. Esta ferramenta recolha os recolha de cada item indexado desta revista, possibilitando pesquisas colectivas e precisas entre os portais de pesquisa que utilizam o protocolo de recolha de metadados do <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative, OAI-PMH</a>.
+	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Para ter o conteúdo desta revista indexado dentro de um sistema global de distribuição de bases de pesquisa, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">registe</a> o URL da revista no <a href="http://lumera.sangia.org/harvester/" target="_blank">Colectador de Metadados</a> do Sangia Editorial Project. Esta ferramenta recolha os recolha de cada item indexado desta revista, possibilitando pesquisas colectivas e precisas entre os portais de pesquisa que utilizam o protocolo de recolha de metadados do <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative, OAI-PMH</a>.
 <br /><br />
-Caso o administrador do portal já tenha registado a revista no portal do Colectador do PKP, a revista será automaticamente indexada, sem necessidade de registo individual.
+Caso o administrador do portal já tenha registado a revista no portal do Colectador do SEP, a revista será automaticamente indexada, sem necessidade de registo individual.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Clique aqui</a> e insira <span class="highlight">{$siteUrl}</span> no campo <strong>Site URL</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>Base URL for OAI Archive</strong>.]]></message>
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Clique aqui</a> e insira <span class="highlight">{$siteUrl}</span> no campo <strong>Site URL</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>Base URL for OAI Archive</strong>.]]></message>
 
 
 	<!-- Setup Step 4 -->
@@ -554,21 +554,21 @@ Activo indica revisão em consideração ou em progresso.]]></message>
 	<message key="about.availableSubscriptionTypes">Tipos de Subscrições</message>
 	<message key="about.journalSponsorship">Patrocínio da Revista</message>
 	<message key="about.aboutThisPublishingSystem">Sobre este Sistema de Publicação</message>
-	<message key="about.aboutOJSJournal"><![CDATA[A revista utiliza o Sistema Electrónico de Edição de Revistas (OJS {$ojsVersion}), sistema de código livre para a administração e a publicação de revistas desenvolvido, com suporte, e distribuído gratuitamente pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[O portal utiliza o Sistema Electrónico de Edição de Revistas (OJS {$ojsVersion}), sistema de código livre para a administração e a publicação de revistas desenvolvido, com suporte e distribuído gratuitamente pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
+	<message key="about.aboutCLAJournal"><![CDATA[A revista utiliza o Sistema Electrónico de Edição de Revistas (CLA {$claVersion}), sistema de código livre para a administração e a publicação de revistas desenvolvido, com suporte, e distribuído gratuitamente pelo <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> sob a licença GNU General Public License.]]></message>
+	<message key="about.aboutCLASite"><![CDATA[O portal utiliza o Sistema Electrónico de Edição de Revistas (CLA {$claVersion}), sistema de código livre para a administração e a publicação de revistas desenvolvido, com suporte e distribuído gratuitamente pelo <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> sob a licença GNU General Public License.]]></message>
 
 	<!-- Announcement -->
 
 	<!-- Help -->
-	<message key="help.ojsHelp">Ajuda?</message>
-	<message key="help.ojsHelpAbbrev">Ajuda do sistema</message>
+	<message key="help.claHelp">Ajuda?</message>
+	<message key="help.claHelpAbbrev">Ajuda do sistema</message>
 
 	<!-- Installer -->
-	<message key="installer.ojsInstallation">Instalação do Sistema</message>
-	<message key="installer.ojsUpgrade">Actualização do Sistema</message>
-	<message key="installer.installationInstructions"><![CDATA[<h4>OJS Versão {$version}</h4>
+	<message key="installer.claInstallation">Instalação do Sistema</message>
+	<message key="installer.claUpgrade">Actualização do Sistema</message>
+	<message key="installer.installationInstructions"><![CDATA[<h4>CLA Versão {$version}</h4>
 
-<p>Agradecemos o seu interesse em utilizar o <strong>Sistema Electrónico de Edição de Revistas</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> incluído com o pacote. Para mais informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, aceda ao <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Clique em <a href="http://www.ibict.br" target="_blank">portal do Ibict/MCT</a> e em <a href="http://seer.ibict.br" target="_blank">Portal do SEER</a> para mais informações sobre o envolvimento do Instituto Brasileiro de Informação em Ciência e Tecnologia com o sistema. Para reportar erros, sugestões ou dúvidas sobre o Sistema Electrónico de Edição de Revistas/Open Journal Systems visite <a href="forum.ibict.br">Forum do Ibict</a>, <a href="forum.pkp.sfu.ca">PKP Support Forum</a>, ou <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a> do PKP. Embora os fóruns sejam a forma preferencial de contacto, também pode-se entrar em contacto com a Equipa do SEER através dos formulários disponíveis na secção <a href="http://seer.ibict.br/index.php?option=com_content&task=view&id=270&Itemid=113" target="_blank">Fale conosco</a> no <a href="http://seer.ibict.br" target="_blank">portal do SEER</a> e para a <a href="mailto:pkp.contact@gmail.com">Equipa do PKP (pkp.contact@gmail.com)</a>.</p>
+<p>Agradecemos o seu interesse em utilizar o <strong>Sistema Electrónico de Edição de Revistas</strong>, desenvolvido pelo Sangia Editorial Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> incluído com o pacote. Para mais informações sobre o Sangia Editorial Project e outros sistemas desenvolvidos, aceda ao <a href="http://lumera.sangia.org/" target="_blank">portal do SEP</a>. Clique em <a href="http://www.ibict.br" target="_blank">portal do Ibict/MCT</a> e em <a href="http://seer.ibict.br" target="_blank">Portal do SEER</a> para mais informações sobre o envolvimento do Instituto Brasileiro de Informação em Ciência e Tecnologia com o sistema. Para reportar erros, sugestões ou dúvidas sobre o Sistema Electrónico de Edição de Revistas/Code Lumera Editorial visite <a href="forum.ibict.br">Forum do Ibict</a>, <a href="forum.sep.sfu.ca">SEP Support Forum</a>, ou <a href="https://github.com/sep/sep-lib#issues" target="_blank">Github.com issues</a> do SEP. Embora os fóruns sejam a forma preferencial de contacto, também pode-se entrar em contacto com a Equipa do SEER através dos formulários disponíveis na secção <a href="http://seer.ibict.br/index.php?option=com_content&task=view&id=270&Itemid=113" target="_blank">Fale conosco</a> no <a href="http://seer.ibict.br" target="_blank">portal do SEER</a> e para a <a href="mailto:sep.contact@gmail.com">Equipa do SEP (sep.contact@gmail.com)</a>.</p>
 
 <h4>Actualização</h4>
 
@@ -589,7 +589,7 @@ Activo indica revisão em consideração ou em progresso.]]></message>
 
 <h4>Suporte a Servidores de Bases de Dados</h4>
 
-<p>O sistema foi testado apenas com MySQL e PostgreSQL, embora outras bases de dados que utilizem o <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> possam funcionar (parcial ou completamente). Notificações sobre compatibilidade e/ou correcções para funcionamento em sistemas de bases de dados(DBMSs) alternativos devem ser encaminhados à equipa do PKP.</p>
+<p>O sistema foi testado apenas com MySQL e PostgreSQL, embora outras bases de dados que utilizem o <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> possam funcionar (parcial ou completamente). Notificações sobre compatibilidade e/ou correcções para funcionamento em sistemas de bases de dados(DBMSs) alternativos devem ser encaminhados à equipa do SEP.</p>
 
 <h4>Antes de Instalar</h4>
 
@@ -608,7 +608,7 @@ Activo indica revisão em consideração ou em progresso.]]></message>
 <li>Um pasta para armazenar os ficheiros de submissão deve ser criado e com permissão de escrita (veja mais abaixo Configuração de Ficheiros).</li></ol>]]></message>
 	<message key="installer.upgradeInstructions"><![CDATA[<h4>Versão {$version}</h4>
 
-<p>Agradecemos o seu interesse em utilizar o <strong>Sistema Electrónico de Edição de Revistas</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> e o <a href="{$baseUrl}/docs/UPGRADE_pt">UPGRADE_pt</a>incluído com o pacote. Para mais informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, aceda ao <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Clique em <href="http://www.ibict.br" target="_blank">portal do Ibict/MCT</a> e em <a href="http://www.ibict.br/seer/" target="_blank">Secção sobre o SEER/OJS</a>para mais informações sobre o envolvimento do Instituto Brasileiro de Informação em Ciência e Tecnologia com o sistema. Para reportar erros, sugestões ou dúvidas sobre o Sistema Electrónico de Edição de Revistas/Open Journal Systems visite <a href="forum.ibict.br">Forum do Ibict</a>, <a href="forum.pkp.sfu.ca">PKP Support Forum</a>, ou <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a> do PKP. Embora os fóruns sejam a forma preferencial de contacto, também pode-se enviar e-mail para a <a href="mailto:seer@ibict.br">Equipa do SEER (seer@ibict.br)</a> e para a <a href="mailto:pkp.contact@gmail.com">Equipa do PKP (pkp.contact@gmail.com)</a>.</p>
+<p>Agradecemos o seu interesse em utilizar o <strong>Sistema Electrónico de Edição de Revistas</strong>, desenvolvido pelo Sangia Editorial Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> e o <a href="{$baseUrl}/docs/UPGRADE_pt">UPGRADE_pt</a>incluído com o pacote. Para mais informações sobre o Sangia Editorial Project e outros sistemas desenvolvidos, aceda ao <a href="http://lumera.sangia.org/" target="_blank">portal do SEP</a>. Clique em <href="http://www.ibict.br" target="_blank">portal do Ibict/MCT</a> e em <a href="http://www.ibict.br/seer/" target="_blank">Secção sobre o SEER/CLA</a>para mais informações sobre o envolvimento do Instituto Brasileiro de Informação em Ciência e Tecnologia com o sistema. Para reportar erros, sugestões ou dúvidas sobre o Sistema Electrónico de Edição de Revistas/Code Lumera Editorial visite <a href="forum.ibict.br">Forum do Ibict</a>, <a href="forum.sep.sfu.ca">SEP Support Forum</a>, ou <a href="https://github.com/sep/sep-lib#issues" target="_blank">Github.com issues</a> do SEP. Embora os fóruns sejam a forma preferencial de contacto, também pode-se enviar e-mail para a <a href="mailto:seer@ibict.br">Equipa do SEER (seer@ibict.br)</a> e para a <a href="mailto:sep.contact@gmail.com">Equipa do SEP (sep.contact@gmail.com)</a>.</p>
 
 <p>É <strong>altamente recomendado</strong> fazer cópia de segurança da base de dados, das pastas para submissão e da pasta raíz do sistema antes de proceder.</p>
 <p>Caso esteja executando o <a href="http://www.php.net/features.safe-mode" target="_blank">PHP em Modo Seguro (Safe Mode)</a>, assegure-se que a directiva max_execution_time no php.ini esteja configurada para um limite alto. Caso este ou qualquer outro limite (ex.: directivas de timeout do Apache) for alcançada e o processo de actualização for interrompido, será necessário restaurar a versão anterior e executar novamente a actualização, alterando as configurações de limites no servidor.</p>]]></message>
@@ -703,8 +703,8 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via método 
 
 	<message key="rt.metadata.dublinCore.primaryAuthor">Autor</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">Nome do Autor, afiliação institucional, país</message>
-	<message key="rt.metadata.pkp.peerReviewed">Artigo Revisto por Pares</message>
+	<message key="rt.metadata.sep.primaryAuthor">Nome do Autor, afiliação institucional, país</message>
+	<message key="rt.metadata.sep.peerReviewed">Artigo Revisto por Pares</message>
 
 
 
@@ -798,13 +798,13 @@ Autores que publicam nesta revista concordam com os seguintes termos:
 	<message key="rt.admin.settings.addComment.unauthenticated">Não é necessário estar registado para comentar, com permissão de anonimato.</message>
 	<message key="debug.notes.currencyListLoad">Lista de moedas "{$filename}" do ficheiro XML</message>
 	<message key="debug.notes.helpMappingLoad">Foi recarregado o ficheiro XML de mapeamento da ajuda {$filename} pesquisando por {$id}.</message>
-	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Não é possível transferir idiomas do servidor do Public Knowledge Project. Os motivos possíveis são:
+	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Não é possível transferir idiomas do servidor do Sangia Editorial Project. Os motivos possíveis são:
 	<ul>
 		<li>O servidor não possui ou não permite a execução da ferramenta "tar" GNU</li>
 		<li>O sistema não possui permissão para alterar o ficheiro de registo de idiomas, normalmente "registry/locales.xml".</li>
-                <li>O servidor não possui permissões para conexão remota ao servidor do PKP</li>
+                <li>O servidor não possui permissões para conexão remota ao servidor do SEP</li>
 	</ul>
-Idiomas estão disponíveis para download manual no <a href="http://pkp.sfu.ca">portal do PKP</a>.</p>]]></message>
+Idiomas estão disponíveis para download manual no <a href="http://sep.sfu.ca">portal do SEP</a>.</p>]]></message>
 	<message key="reader.subscriptionRequiredLoginText">Subscrição exigida para acesso ao item. Para verificar a sua subscrição, aceda à revista.</message>
 	<message key="about.authorFees">Taxas para Autores</message>
 	<message key="about.authorFeesMessage">Este periódico cobra as seguintes taxas aos autores</message>
@@ -1033,14 +1033,14 @@ Pode-se opcionalmente informar o motivo pelo qual está sendo desactivado o regi
 	<message key="payment.type.gift.subscription">Subscrição</message>
 	<message key="installer.allowFileUploads"><![CDATA[O servidor actualmente permite uploads de ficheiros: <strong>{$allowFileUploads}</strong>]]></message>
 	<message key="installer.maxFileUploadSize"><![CDATA[O servidor actualmente permite o upload máximo de ficheiros com o tamanho de: <strong>{$maxFileUploadSize}</strong>]]></message>
-	<message key="site.upgradeAvailable.admin"><![CDATA[Está disponível uma nova versão do OJS! Actualmente usa a versão do OJS {$currentVersion}. A versão mais recente do OJS {$latestVersion}. Por favor visite <a href="http://pkp.sfu.ca/ojs_download" target="_new">this page</a> para fazer download da versão mais recente e encontre as instruções para a actualização]]></message>
-	<message key="site.upgradeAvailable.manager"><![CDATA[Está disponível uma nova versão do OJS! Actualmente usa a versão do OJS {$currentVersion}. A versão mais recente do OJS {$latestVersion}. Por favor contacte o Administrador ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) para notificá-lo da última versão. Pode encontrar mais informação <a href="http://pkp.sfu.ca/ojs_download" target="_new">aqui</a>.]]></message>
+	<message key="site.upgradeAvailable.admin"><![CDATA[Está disponível uma nova versão do CLA! Actualmente usa a versão do CLA {$currentVersion}. A versão mais recente do CLA {$latestVersion}. Por favor visite <a href="http://lumera.sangia.org/cla_download" target="_new">this page</a> para fazer download da versão mais recente e encontre as instruções para a actualização]]></message>
+	<message key="site.upgradeAvailable.manager"><![CDATA[Está disponível uma nova versão do CLA! Actualmente usa a versão do CLA {$currentVersion}. A versão mais recente do CLA {$latestVersion}. Por favor contacte o Administrador ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) para notificá-lo da última versão. Pode encontrar mais informação <a href="http://lumera.sangia.org/cla_download" target="_new">aqui</a>.]]></message>
 	<message key="user.authorization.copyeditorAssignmentMissing">Acesso recusado! Não tem direitos de autor sobre este artigo.</message>
 	<message key="user.authorization.noJournal">Nenhuma revista em contexto!</message>
 	<message key="user.authorization.sectionAssignment">Está a tentar aceder a um artigo que não pertence à secção.</message>
 	<message key="user.authorization.invalidCopyditorSubmission">Submissão de cópia de editor inválida ou nenhuma de cópia de editor solicitada!</message>
 	<message key="user.authorization.invalidSectionEditorSubmission">Submissão de secção de editor inválida ou nenhuma de secção editor solicitada!</message>
-	<message key="manager.setup.preservationDescription"><![CDATA[O Open Journal Systems suporta o sistema <a href="http://www.lockss.org/" target="_blank">LOCKSS</a>(Lots of Copies Keep Stuff Safe) para assegurar a conservação segura e permanente da sua revista. Dispõe de várias opções para incluir a sua revista na rede LOCKSS:]]></message>
+	<message key="manager.setup.preservationDescription"><![CDATA[O Code Lumera Editorial suporta o sistema <a href="http://www.lockss.org/" target="_blank">LOCKSS</a>(Lots of Copies Keep Stuff Safe) para assegurar a conservação segura e permanente da sua revista. Dispõe de várias opções para incluir a sua revista na rede LOCKSS:]]></message>
 	<message key="user.profile.implicitAuthChangePasswordInstructions">Se não estiver conectado através do seu Shibboleth, acompanhar o processo de sua organização se necessitar de alterar a sua senha. Para utilizadores locais, continue abaixo.</message>
 	<message key="user.login.implicitAuthLogin">Login via Shibboleth</message>
 	<message key="user.register.emailValidation">Validação e-Mail Obrigatória</message>

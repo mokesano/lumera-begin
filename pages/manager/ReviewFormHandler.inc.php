@@ -27,7 +27,7 @@ class ReviewFormHandler extends ManagerHandler {
 	/**
 	 * Display a list of review forms within the current journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function reviewForms($args, &$request) {
 		$this->validate();
@@ -40,8 +40,8 @@ class ReviewFormHandler extends ManagerHandler {
 		$reviewAssignmentDao =& DAORegistry::getDAO('ReviewAssignmentDAO');
 
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 		$templateMgr->assign_by_ref('reviewForms', $reviewForms);
 		$templateMgr->assign('completeCounts', $reviewFormDao->getUseCounts(ASSOC_TYPE_JOURNAL, $journal->getId(), true));
 		$templateMgr->assign('incompleteCounts', $reviewFormDao->getUseCounts(ASSOC_TYPE_JOURNAL, $journal->getId(), false));
@@ -343,13 +343,13 @@ class ReviewFormHandler extends ManagerHandler {
 		$this->setupTemplate(true, $reviewForm);
 		$templateMgr =& TemplateManager::getManager();
 
-		$templateMgr->addJavaScript('lib/pkp/js/lib/jquery/plugins/jquery.tablednd.js');
-		$templateMgr->addJavaScript('lib/pkp/js/functions/tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/lib/jquery/plugins/jquery.tablednd.js');
+		$templateMgr->addJavaScript('lib/sep/js/functions/tablednd.js');
 
 		$templateMgr->assign_by_ref('unusedReviewFormTitles', $unusedReviewFormTitles);
 		$templateMgr->assign_by_ref('reviewFormElements', $reviewFormElements);
 		$templateMgr->assign('reviewFormId', $reviewFormId);
-		import('lib.pkp.classes.reviewForm.ReviewFormElement');
+		import('lib.sep.classes.reviewForm.ReviewFormElement');
 		$templateMgr->assign_by_ref('reviewFormElementTypeOptions', ReviewFormElement::getReviewFormElementTypeOptions());
 		$templateMgr->assign('helpTopicId','journal.managementPages.reviewForms');
 		$templateMgr->display('manager/reviewForms/reviewFormElements.tpl');

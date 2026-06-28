@@ -108,7 +108,7 @@ class EditorHandler extends SectionEditorHandler {
 					$submissionsArray = array_reverse($submissionsArray);
 				}
 				// Convert submission array back to an ItemIterator class
-				import('lib.pkp.classes.core.ArrayItemIterator');
+				import('lib.sep.classes.core.ArrayItemIterator');
 				$submissions =& ArrayItemIterator::fromRangeInfo($submissionsArray, $rangeInfo);
 			} else {
 				$rawSubmissions =& $editorSubmissionDao->_getUnfilteredEditorSubmissions(
@@ -399,7 +399,7 @@ class EditorHandler extends SectionEditorHandler {
 	 */
 	function assignEditor($args, $request) {
 		$this->validate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER); // manager.people.noneEnrolled
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_MANAGER); // manager.people.noneEnrolled
 
 		$journal =& $request->getJournal();
 		$articleId = $request->getUserVar('articleId');

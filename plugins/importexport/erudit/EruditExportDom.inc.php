@@ -13,7 +13,7 @@
  * @brief Erudit plugin DOM functions for export
  */
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
 class EruditExportDom {
 	function &generateArticleDom(&$doc, &$journal, &$issue, &$article, &$galley) {
@@ -45,7 +45,7 @@ class EruditExportDom {
 
 		$journalNode =& XMLCustomWriter::createElement($doc, 'journal');
 		XMLCustomWriter::appendChild($adminNode, $journalNode);
-		XMLCustomWriter::setAttribute($journalNode, 'id', 'ojs-' . $journal->getPath());
+		XMLCustomWriter::setAttribute($journalNode, 'id', 'cla-' . $journal->getPath());
 		XMLCustomWriter::createChildWithText($doc, $journalNode, 'jtitle', $journal->getTitle($journal->getPrimaryLocale()));
 		XMLCustomWriter::createChildWithText($doc, $journalNode, 'jshorttitle', $journal->getSetting('initials', $journal->getPrimaryLocale()), false);
 
@@ -62,7 +62,7 @@ class EruditExportDom {
 
 		$issueNode =& XMLCustomWriter::createElement($doc, 'issue');
 		XMLCustomWriter::appendChild($adminNode, $issueNode);
-		XMLCustomWriter::setAttribute($issueNode, 'id', 'ojs-' . $issue->getBestIssueId());
+		XMLCustomWriter::setAttribute($issueNode, 'id', 'cla-' . $issue->getBestIssueId());
 		XMLCustomWriter::createChildWithText($doc, $issueNode, 'volume', $issue->getVolume(), false);
 		XMLCustomWriter::createChildWithText($doc, $issueNode, 'issueno', $issue->getNumber(), false);
 
@@ -78,7 +78,7 @@ class EruditExportDom {
 
 		$publisherInstitution =& $journal->getSetting('publisherInstitution');
 		$publisherNode =& XMLCustomWriter::createElement($doc, 'publisher');
-		XMLCustomWriter::setAttribute($publisherNode, 'id', 'ojs-' . $journal->getId() . '-' . $issue->getId() . '-' . $article->getId());
+		XMLCustomWriter::setAttribute($publisherNode, 'id', 'cla-' . $journal->getId() . '-' . $issue->getId() . '-' . $article->getId());
 		XMLCustomWriter::appendChild($adminNode, $publisherNode);
 		$publisherInstitution = $unavailableString;
 		if (empty($publisherInstitution)) $publisherInstitution = $unavailableString;
@@ -86,12 +86,12 @@ class EruditExportDom {
 
 		$digprodNode =& XMLCustomWriter::createElement($doc, 'digprod');
 		XMLCustomWriter::createChildWithText($doc, $digprodNode, 'orgname', $publisherInstitution);
-		XMLCustomWriter::setAttribute($digprodNode, 'id', 'ojs-prod-' . $journal->getId() . '-' . $issue->getId() . '-' . $article->getId());
+		XMLCustomWriter::setAttribute($digprodNode, 'id', 'cla-prod-' . $journal->getId() . '-' . $issue->getId() . '-' . $article->getId());
 		XMLCustomWriter::appendChild($adminNode, $digprodNode);
 
 		$digdistNode =& XMLCustomWriter::createElement($doc, 'digdist');
 		XMLCustomWriter::createChildWithText($doc, $digdistNode, 'orgname', $publisherInstitution);
-		XMLCustomWriter::setAttribute($digdistNode, 'id', 'ojs-dist-' . $journal->getId() . '-' . $issue->getId() . '-' . $article->getId());
+		XMLCustomWriter::setAttribute($digdistNode, 'id', 'cla-dist-' . $journal->getId() . '-' . $issue->getId() . '-' . $article->getId());
 		XMLCustomWriter::appendChild($adminNode, $digdistNode);
 
 
@@ -123,7 +123,7 @@ class EruditExportDom {
 		foreach ($article->getAuthors() as $author) {
 			$authorNode =& XMLCustomWriter::createElement($doc, 'author');
 			XMLCustomWriter::appendChild($authorGroupNode, $authorNode);
-			XMLCustomWriter::setAttribute($authorNode, 'id', 'ojs-' . $journal->getId() . '-' . $issue->getId() . '-' . $article->getId() . '-' . $galley->getId() . '-' . $authorNum);
+			XMLCustomWriter::setAttribute($authorNode, 'id', 'cla-' . $journal->getId() . '-' . $issue->getId() . '-' . $article->getId() . '-' . $galley->getId() . '-' . $authorNum);
 
 			$persNameNode =& XMLCustomWriter::createElement($doc, 'persname');
 			XMLCustomWriter::appendChild($authorNode, $persNameNode);

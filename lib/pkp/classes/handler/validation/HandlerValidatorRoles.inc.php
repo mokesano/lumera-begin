@@ -14,8 +14,8 @@
  * NB: Deprecated - please use RoleBasedHandlerOperationPolicy instead.
  */
 
-import('lib.pkp.classes.handler.validation.HandlerValidatorPolicy');
-import('lib.pkp.classes.security.authorization.RoleBasedHandlerOperationPolicy');
+import('lib.sep.classes.handler.validation.HandlerValidatorPolicy');
+import('lib.sep.classes.security.authorization.RoleBasedHandlerOperationPolicy');
 
 class HandlerValidatorRoles extends HandlerValidatorPolicy {
 	/**
@@ -25,7 +25,7 @@ class HandlerValidatorRoles extends HandlerValidatorPolicy {
 	 * @param $all bool flag for whether all roles must exist or just 1
 	 */
 	function HandlerValidatorRoles(&$handler, $redirectLogin = true, $message = null, $additionalArgs = array(), $roles, $all = false) {
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$request =& $application->getRequest();
 		$policy = new RoleBasedHandlerOperationPolicy($request, $roles, array(), $message, $all, true);
 		parent::HandlerValidatorPolicy($policy, $handler, $redirectLogin, $message, $additionalArgs);

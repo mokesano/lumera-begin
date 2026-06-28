@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.metadata.dc11.PKPDc11MetadataPlugin');
+import('lib.sep.plugins.metadata.dc11.SEPDc11MetadataPlugin');
 
-class Dc11MetadataPlugin extends PKPDc11MetadataPlugin {
+class Dc11MetadataPlugin extends SEPDc11MetadataPlugin {
 	/**
 	 * Constructor
 	 */
 	function Dc11MetadataPlugin() {
-		parent::PKPDc11MetadataPlugin();
+		parent::SEPDc11MetadataPlugin();
 	}
 }
 

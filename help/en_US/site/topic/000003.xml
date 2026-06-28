@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000003.xml
@@ -18,7 +18,7 @@
 	</section>
 
 	<section title="System Information">
-		<![CDATA[<p>General information about the server environment and OJS version history (including past upgrades). A web-based interface to view the OJS configuration file is also provided.</p>]]>
+		<![CDATA[<p>General information about the server environment and CLA version history (including past upgrades). A web-based interface to view the CLA configuration file is also provided.</p>]]>
 	</section>
 
 	<section title="Expire User Sessions">

@@ -13,7 +13,7 @@
  * @brief Operations for retrieving and modifying ExternalFeed objects.
  */
 
-import('lib.pkp.classes.db.DAO');
+import('lib.sep.classes.db.DAO');
 
 class ExternalFeedDAO extends DAO {
 	/** @var $parentPluginName string Name of parent plugin */

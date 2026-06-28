@@ -1,19 +1,19 @@
 <?php
 
 /**
- * @file plugins/oaiMetadata/dc/PKPOAIMetadataFormat_DC.inc.php
+ * @file plugins/oaiMetadata/dc/SEPOAIMetadataFormat_DC.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPOAIMetadataFormat_DC
+ * @class SEPOAIMetadataFormat_DC
  * @see OAI
  *
  * @brief OAI metadata format class -- Dublin Core.
  */
 
-class PKPOAIMetadataFormat_DC extends OAIMetadataFormat {
+class SEPOAIMetadataFormat_DC extends OAIMetadataFormat {
 	/**
 	 * @see OAIMetadataFormat#toXML
 	 */

@@ -32,7 +32,7 @@ class AuthorHandler extends Handler {
 	/**
 	 * Display journal author index page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, $request) {
 		$this->validate($request);
@@ -71,7 +71,7 @@ class AuthorHandler extends Handler {
 				$submissionsArray = array_reverse($submissionsArray);
 			}
 			// Convert submission array back to an ItemIterator class
-			import('lib.pkp.classes.core.ArrayItemIterator');
+			import('lib.sep.classes.core.ArrayItemIterator');
 			$submissions =& ArrayItemIterator::fromRangeInfo($submissionsArray, $rangeInfo);
 		} else {
 			$submissions = $authorSubmissionDao->getAuthorSubmissions($user->getId(), $journal->getId(), $active, $rangeInfo, $sort, $sortDirection);
@@ -86,15 +86,15 @@ class AuthorHandler extends Handler {
 		$templateMgr->assign_by_ref('submissions', $submissions);
 
 		// assign payment 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 
 		if ( $paymentManager->isConfigured() ) {		
 			$templateMgr->assign('submissionEnabled', $paymentManager->submissionEnabled());
 			$templateMgr->assign('fastTrackEnabled', $paymentManager->fastTrackEnabled());
 			$templateMgr->assign('publicationEnabled', $paymentManager->publicationEnabled());
 			
-			$completedPaymentDAO =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+			$completedPaymentDAO =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 			$templateMgr->assign_by_ref('completedPaymentDAO', $completedPaymentDAO);
 		}
 
@@ -111,7 +111,7 @@ class AuthorHandler extends Handler {
 	 * Validate that user has author permissions in the selected journal
 	 * and, optionally, for the specified article.
 	 * Redirects to user index page if not properly authenticated.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $articleId int optional
 	 * @param $reason string optional
 	 */
@@ -154,7 +154,7 @@ class AuthorHandler extends Handler {
 	 */
 	function setupTemplate($request, $subclass = false, $articleId = 0, $parentPage = null) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_AUTHOR, LOCALE_COMPONENT_PKP_SUBMISSION);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_AUTHOR, LOCALE_COMPONENT_SEP_SUBMISSION);
 		$templateMgr =& TemplateManager::getManager();
 
 		$pageHierarchy = $subclass ? array(array($request->url(null, 'user'), 'navigation.user'), array($request->url(null, 'author'), 'user.role.author'), array($request->url(null, 'author'), 'article.submissions'))
@@ -171,7 +171,7 @@ class AuthorHandler extends Handler {
 	/**
 	 * Display submission management instructions.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function instructions($args, &$request) {
 		import('classes.submission.proofreader.ProofreaderAction');

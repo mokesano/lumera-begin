@@ -13,11 +13,11 @@
  * @brief Class to maintain the article search index.
  */
 
-import('lib.pkp.classes.search.SearchFileParser');
-import('lib.pkp.classes.search.SearchHTMLParser');
-import('lib.pkp.classes.search.SearchHelperParser');
+import('lib.sep.classes.search.SearchFileParser');
+import('lib.sep.classes.search.SearchHTMLParser');
+import('lib.sep.classes.search.SearchHelperParser');
 
-define('SEARCH_STOPWORDS_FILE', 'lib/pkp/registry/stopwords.txt');
+define('SEARCH_STOPWORDS_FILE', 'lib/sep/registry/stopwords.txt');
 
 // Words are truncated to at most this length
 define('SEARCH_KEYWORD_MAX_LENGTH', 40);
@@ -33,7 +33,7 @@ class ArticleSearchIndex {
 	 * mark articles as "changed" and let the indexing back-end decide
 	 * the best point in time to actually index the changed data.
 	 *
-	 * @see http://pkp.sfu.ca/wiki/index.php/OJSdeSearchConcept#Push_vs._Pull
+	 * @see http://lumera.sangia.org/wiki/index.php/CLAdeSearchConcept#Push_vs._Pull
 	 * for a discussion of push vs. pull indexing.
 	 *
 	 * @param $article Article

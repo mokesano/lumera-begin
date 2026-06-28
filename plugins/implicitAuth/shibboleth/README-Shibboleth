@@ -1,4 +1,4 @@
-This document describes the config parameters that control the implicit authentication plugin in OJS. It does not describe how to set up Shibboleth based authentication.
+This document describes the config parameters that control the implicit authentication plugin in CLA. It does not describe how to set up Shibboleth based authentication.
 
 In the [security] section of the config.inc.php file there are several parameters that affect the operation of the implicit auth plugin. They are all commented out - by default. They are shown here with their default settings like they are in the config file. When you enable implicit auth - you should uncomment all of these variables.
 

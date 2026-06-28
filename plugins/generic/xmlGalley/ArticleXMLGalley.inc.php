@@ -152,10 +152,10 @@ class ArticleXMLGalley extends ArticleHTMLGalley {
 			}
 		}
 
-		// Perform replacement for ojs://... URLs
+		// Perform replacement for cla://... URLs
 		$contents = String::regexp_replace_callback(
 			'/(<[^<>]*")[Oo][Jj][Ss]:\/\/([^"]+)("[^<>]*>)/',
-			array(&$this, '_handleOjsUrl'),
+			array(&$this, '_handleCLAUrl'),
 			$contents
 		);
 
@@ -189,7 +189,7 @@ class ArticleXMLGalley extends ArticleHTMLGalley {
 	 * @return string
 	 */
 	function viewFileContents() {
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 		$pdfFileName = CacheManager::getFileCachePath() . DIRECTORY_SEPARATOR . 'fc-xsltGalley-' . str_replace($fileManager->parseFileExtension($this->getFileName()), 'pdf', $this->getFileName());
 
@@ -301,7 +301,7 @@ class ArticleXMLGalley extends ArticleHTMLGalley {
 				//
 				// http://www.whump.com/moreLikeThis/link/03815
 				// http://www.suite75.net/blog/mt/tim/archives/2004_07.php
-				//putenv("XML_CATALOG_FILES=/Users/mj/Sites/ojs2/plugins/generic/xmlGalley/transform/Publishing-2_2-dtd-June/catalog.ent");
+				//putenv("XML_CATALOG_FILES=/Users/mj/Sites/cla2/plugins/generic/xmlGalley/transform/Publishing-2_2-dtd-June/catalog.ent");
 				$xmlDom->substituteEntities = true;
 				$xmlDom->resolveExternals = true;
 

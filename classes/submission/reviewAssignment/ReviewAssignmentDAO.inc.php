@@ -15,9 +15,9 @@
  */
 
 import('classes.submission.reviewAssignment.ReviewAssignment');
-import('lib.pkp.classes.submission.reviewAssignment.PKPReviewAssignmentDAO');
+import('lib.sep.classes.submission.reviewAssignment.SEPReviewAssignmentDAO');
 
-class ReviewAssignmentDAO extends PKPReviewAssignmentDAO {
+class ReviewAssignmentDAO extends SEPReviewAssignmentDAO {
 	var $articleFileDao;
 	var $suppFileDao;
 	var $articleCommentsDao;
@@ -26,7 +26,7 @@ class ReviewAssignmentDAO extends PKPReviewAssignmentDAO {
 	 * Constructor.
 	 */
 	function ReviewAssignmentDAO() {
-		parent::PKPReviewAssignmentDAO();
+		parent::SEPReviewAssignmentDAO();
 		$this->articleFileDao =& DAORegistry::getDAO('ArticleFileDAO');
 		$this->suppFileDao =& DAORegistry::getDAO('SuppFileDAO');
 		$this->articleCommentDao =& DAORegistry::getDAO('ArticleCommentDAO');
@@ -267,7 +267,7 @@ class ReviewAssignmentDAO extends PKPReviewAssignmentDAO {
 	}
 
 	/**
-	* @see PKPReviewAssignmentDAO::getReviewRoundJoin()
+	* @see SEPReviewAssignmentDAO::getReviewRoundJoin()
 	*/
 	function getReviewRoundJoin() {
 		return 'r.submission_id = r2.submission_id AND r.round = r2.round';

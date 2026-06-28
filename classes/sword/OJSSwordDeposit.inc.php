@@ -1,23 +1,23 @@
 <?php
 
 /**
- * @file classes/sword/OJSSwordDeposit.inc.php
+ * @file classes/sword/CLASwordDeposit.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class OJSSwordDeposit
+ * @class CLASwordDeposit
  * @ingroup sword
  *
- * @brief Class providing a SWORD deposit wrapper for OJS articles
+ * @brief Class providing a SWORD deposit wrapper for CLA articles
  */
 
-require_once('./lib/pkp/lib/swordappv2/swordappclient.php');
-require_once('./lib/pkp/lib/swordappv2/swordappentry.php');
-require_once('./lib/pkp/lib/swordappv2/packager_mets_swap.php');
+require_once('./lib/sep/lib/swordappv2/swordappclient.php');
+require_once('./lib/sep/lib/swordappv2/swordappentry.php');
+require_once('./lib/sep/lib/swordappv2/packager_mets_swap.php');
 
-class OJSSwordDeposit {
+class CLASwordDeposit {
 	/** @var $package SWORD deposit METS package */
 	var $package;
 
@@ -35,9 +35,9 @@ class OJSSwordDeposit {
 
 	/**
 	 * Constructor.
-	 * Create a SWORD deposit object for an OJS article.
+	 * Create a SWORD deposit object for an CLA article.
 	 */
-	function OJSSwordDeposit(&$article) {
+	function CLASwordDeposit(&$article) {
 		// Create a directory for deposit contents
 		$this->outPath = tempnam('/tmp', 'sword');
 		unlink($this->outPath);
@@ -181,7 +181,7 @@ class OJSSwordDeposit {
 	 * Clean up after a deposit, i.e. removing all created files.
 	 */
 	function cleanup() {
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 
 		$fileManager->rmtree($this->outPath);

@@ -14,14 +14,14 @@
  * @brief Basic class describing an announcement type.
  */
 
-import('lib.pkp.classes.announcement.PKPAnnouncementType');
+import('lib.sep.classes.announcement.SEPAnnouncementType');
 
-class AnnouncementType extends PKPAnnouncementType {
+class AnnouncementType extends SEPAnnouncementType {
 	/**
 	 * Constructor
 	 */
 	function AnnouncementType() {
-		parent::PKPAnnouncementType();
+		parent::SEPAnnouncementType();
 	}
 }
 

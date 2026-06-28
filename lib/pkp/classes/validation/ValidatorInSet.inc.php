@@ -14,7 +14,7 @@
  * @brief Validation check for known sets.
  */
 
-import('lib.pkp.classes.validation.Validator');
+import('lib.sep.classes.validation.Validator');
 
 class ValidatorInSet extends Validator {
 

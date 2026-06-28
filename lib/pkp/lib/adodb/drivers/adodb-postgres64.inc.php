@@ -683,7 +683,7 @@ WHERE (c2.relname=\'%s\' or c2.relname=lower(\'%s\'))';
 		   	if ($str)  {
 			 	$host = split(":", $str);
 				if ($host[0]) $str = "host=".adodb_addslashes($host[0]);
-				else $str = 'host='; // Modified 2004-07-23 by Kevin Jamieson (http://pkp.sfu.ca/)
+				else $str = 'host='; // Modified 2004-07-23 by Kevin Jamieson (http://lumera.sangia.org/)
 				// Don't specify a host if none was entered (so will connect using sockets)
 				if (isset($host[1])) $str .= " port=$host[1]";
 				else if (!empty($this->port)) $str .= " port=".$this->port;

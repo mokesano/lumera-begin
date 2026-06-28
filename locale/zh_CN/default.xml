@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/zh_CN/default.xml
@@ -121,7 +121,7 @@
 	<message key="default.journalSettings.forAuthors"><![CDATA[
 		对这份期刊感兴趣吗？我们建议您看一下<a href="{$indexUrl}/{$journalPath}/about">期刊介绍</a>页面，以了解期刊的栏目方针；也请同时看一下 <a href="{$indexUrl}/{$journalPath}/about/submissions#authorGuidelines">作者指引</a>。作者在进行投稿之前必须在本期刊<a href="{$indexUrl}/{$journalPath}/user/register">注册</a>，而如果已经注册的话，可以简单地<a href="{$indexUrl}/index/login">登入</a>并且开始五个步骤的投稿流程。]]></message>
 	<message key="default.journalSettings.forLibrarians"><![CDATA[
-		我们鼓励图书馆员将这份期刊加入其图书馆的电子期刊数据库之中。同时，这份期刊的开源码出版系统或许会适合图书馆放置他们的职员正在编辑的期刊。(请见<a href="http://pkp.sfu.ca/ojs">Open Journal Systems</a>).]]></message>
+		我们鼓励图书馆员将这份期刊加入其图书馆的电子期刊数据库之中。同时，这份期刊的开源码出版系统或许会适合图书馆放置他们的职员正在编辑的期刊。(请见<a href="http://lumera.sangia.org/cla">Code Lumera Editorial</a>).]]></message>
 	<message key="default.journalSettings.lockssLicense"><![CDATA[
 		这份期刊使用LOCKSS系统建立一份在参与之图书馆之间流通的存档系统，并且允许那些图书馆基于保存和储藏的目的，建立本期刊的永久性存档文件<a href="http://lockss.stanford.edu/">更多信息...</a>]]></message>
 	<message key="default.journalSettings.lockssLicense"><![CDATA[

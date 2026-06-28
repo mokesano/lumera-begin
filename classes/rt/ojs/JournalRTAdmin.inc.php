@@ -1,20 +1,20 @@
 <?php
 
 /**
- * @file classes/rt/ojs/JournalRTAdmin.inc.php
+ * @file classes/rt/cla/JournalRTAdmin.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class JournalRTAdmin
- * @ingroup rt_ojs
+ * @ingroup rt_cla
  *
- * @brief OJS-specific Reading Tools administration interface.
+ * @brief CLA-specific Reading Tools administration interface.
  */
 
-import('lib.pkp.classes.rt.RTAdmin');
-import('classes.rt.ojs.RTDAO');
+import('lib.sep.classes.rt.RTAdmin');
+import('classes.rt.cla.RTDAO');
 
 define('RT_DIRECTORY', 'rt');
 define('DEFAULT_RT_LOCALE', 'en_US');
@@ -34,7 +34,7 @@ class JournalRTAdmin extends RTAdmin {
 	}
 
 	function restoreVersions($deleteBeforeLoad = true) {
-		import('lib.pkp.classes.rt.RTXMLParser');
+		import('lib.sep.classes.rt.RTXMLParser');
 		$parser = new RTXMLParser();
 
 		if ($deleteBeforeLoad) $this->dao->deleteVersionsByJournalId($this->journalId);
@@ -58,7 +58,7 @@ class JournalRTAdmin extends RTAdmin {
 	}
 
 	function importVersion($filename) {
-		import ('lib.pkp.classes.rt.RTXMLParser');
+		import ('lib.sep.classes.rt.RTXMLParser');
 		$parser = new RTXMLParser();
 
 		$version =& $parser->parse($filename);

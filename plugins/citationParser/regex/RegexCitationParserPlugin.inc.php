@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationParser.regex.PKPRegexCitationParserPlugin');
+import('lib.sep.plugins.citationParser.regex.SEPRegexCitationParserPlugin');
 
-class RegexCitationParserPlugin extends PKPRegexCitationParserPlugin {
+class RegexCitationParserPlugin extends SEPRegexCitationParserPlugin {
 	/**
 	 * Constructor
 	 */
 	function RegexCitationParserPlugin() {
-		parent::PKPRegexCitationParserPlugin();
+		parent::SEPRegexCitationParserPlugin();
 	}
 }
 

@@ -69,7 +69,7 @@ class SectionEditorAction extends Action {
 			$decisions = SectionEditorSubmission::getEditorDecisionOptions();
 			// Add log
 			import('classes.article.log.ArticleLog');
-			AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_OJS_EDITOR);
+			AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_CLA_EDITOR);
 			ArticleLog::logEvent($request, $sectionEditorSubmission, ARTICLE_LOG_EDITOR_DECISION, 'log.editor.decision', array('editorName' => $user->getFullName(), 'decision' => __($decisions[$decision])));
 		}
 	}
@@ -222,7 +222,7 @@ class SectionEditorAction extends Action {
 				HookRegistry::call('SectionEditorAction::notifyReviewer', array(&$sectionEditorSubmission, &$reviewAssignment, &$email));
 				if ($email->isEnabled()) {
 					if ($reviewerAccessKeysEnabled) {
-						import('lib.pkp.classes.security.AccessKeyManager');
+						import('lib.sep.classes.security.AccessKeyManager');
 						import('pages.reviewer.ReviewerHandler');
 						$accessKeyManager = new AccessKeyManager();
 
@@ -391,7 +391,7 @@ class SectionEditorAction extends Action {
 			$reviewer =& $userDao->getById($reviewAssignment->getReviewerId());
 
 			if ($reviewerAccessKeysEnabled) {
-				import('lib.pkp.classes.security.AccessKeyManager');
+				import('lib.sep.classes.security.AccessKeyManager');
 				import('pages.reviewer.ReviewerHandler');
 				$accessKeyManager = new AccessKeyManager();
 

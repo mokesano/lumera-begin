@@ -13,8 +13,8 @@
  * @brief Class defining basic operations for handling multiple lists listbuilder UI elements
  */
 
-import('lib.pkp.classes.controllers.listbuilder.ListbuilderHandler');
-import('lib.pkp.classes.controllers.listbuilder.ListbuilderList');
+import('lib.sep.classes.controllers.listbuilder.ListbuilderHandler');
+import('lib.sep.classes.controllers.listbuilder.ListbuilderList');
 
 define_exposed('LISTBUILDER_SOURCE_TYPE_NONE', 3);
 
@@ -113,7 +113,7 @@ class MultipleListsListbuilderHandler extends ListbuilderHandler {
 	function initFeatures($request, $args) {
 		// Multiple lists listbuilder always have orderable rows.
 		// We don't have any other requirement for it.
-		import('lib.pkp.classes.controllers.grid.feature.OrderMultipleListsItemsFeature');
+		import('lib.sep.classes.controllers.grid.feature.OrderMultipleListsItemsFeature');
 		return array(new OrderMultipleListsItemsFeature());
 	}
 
@@ -171,7 +171,7 @@ class MultipleListsListbuilderHandler extends ListbuilderHandler {
 	/**
 	 * Fetch the listbuilder.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function fetch($args, &$request) {
 		$templateMgr =& TemplateManager::getManager();

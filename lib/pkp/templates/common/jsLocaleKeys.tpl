@@ -8,13 +8,13 @@
  * Default Locale keys used by JavaScript.  May be overridden by the calling template
  *}
 
-{* List constants for JavaScript in $.pkp.locale namespace *}
+{* List constants for JavaScript in $.sep.locale namespace *}
 <script type="text/javascript">
-	jQuery.pkp = jQuery.pkp || {ldelim} {rdelim};
-	jQuery.pkp.locale = {ldelim} {rdelim};
+	jQuery.sep = jQuery.sep || {ldelim} {rdelim};
+	jQuery.sep.locale = {ldelim} {rdelim};
 	{foreach from=$jsLocaleKeys item=keyName}
 		{translate|assign:"keyValue" key=$keyName}
 		{* replace periods in the key name with underscores to prevent JS complaints about undefined variables *}
-		jQuery.pkp.locale.{$keyName|replace:'.':'_'|escape:"javascript"} = {if is_numeric($keyValue)}{$keyValue}{else}'{$keyValue|escape:"javascript"}'{/if};
+		jQuery.sep.locale.{$keyName|replace:'.':'_'|escape:"javascript"} = {if is_numeric($keyValue)}{$keyValue}{else}'{$keyValue|escape:"javascript"}'{/if};
 	{/foreach}
 </script>

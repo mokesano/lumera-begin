@@ -19,7 +19,7 @@
  */
 
 
-import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30CitationSchemaCitationOutputFormatFilter');
+import('lib.sep.plugins.metadata.nlm30.filter.Nlm30CitationSchemaCitationOutputFormatFilter');
 
 class Nlm30CitationSchemaMlaFilter extends Nlm30CitationSchemaCitationOutputFormatFilter {
 	/**
@@ -40,7 +40,7 @@ class Nlm30CitationSchemaMlaFilter extends Nlm30CitationSchemaCitationOutputForm
 	 * @see PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.citationOutput.mla.filter.Nlm30CitationSchemaMlaFilter';
+		return 'lib.sep.plugins.citationOutput.mla.filter.Nlm30CitationSchemaMlaFilter';
 	}
 
 

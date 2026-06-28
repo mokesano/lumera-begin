@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000030.xml
@@ -21,6 +21,6 @@
 
 <topic id="journal/topic/000030" locale="el_GR" title="Plugins Συστήματος" toc="journal/toc/000001" key="journal.managementPages.plugins">
 	<section>
-		<![CDATA[<p>Η σελίδα Plugins Συστήματος επιτρέπει στον Διαχειριστή του περιοδικού να προβάλει μια λίστα από εγκατεστημένα στο OJS plugins και να εκτελεί οποιαδήποτε ενέργεια κάθε plugin είναι προγραμματισμένο να εκτελεί. Για περισσότερες πληροφορίες, συμβουλευτείτε την τεκμηρίωση που συνοδεύει κάθε plugin, και βρίσκεται στο σχετικό φάκελο του OJS (/path/to/install/plugins).</p>]]>
+		<![CDATA[<p>Η σελίδα Plugins Συστήματος επιτρέπει στον Διαχειριστή του περιοδικού να προβάλει μια λίστα από εγκατεστημένα στο CLA plugins και να εκτελεί οποιαδήποτε ενέργεια κάθε plugin είναι προγραμματισμένο να εκτελεί. Για περισσότερες πληροφορίες, συμβουλευτείτε την τεκμηρίωση που συνοδεύει κάθε plugin, και βρίσκεται στο σχετικό φάκελο του CLA (/path/to/install/plugins).</p>]]>
 	</section>
 </topic>

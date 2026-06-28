@@ -12,7 +12,7 @@
  *
  * @brief Base scheduled task class to reliably handle files processing.
  */
-import('lib.pkp.classes.scheduledTask.ScheduledTask');
+import('lib.sep.classes.scheduledTask.ScheduledTask');
 
 define('FILE_LOADER_RETURN_TO_STAGING', 0x01);
 
@@ -213,7 +213,7 @@ class FileLoader extends ScheduledTask {
 				if ($install) {
 					// Try installing the folder if it is missing.
 					if (is_null($fileManager)) {
-						import('lib.pkp.classes.file.FileManager');
+						import('lib.sep.classes.file.FileManager');
 						$fileManager = new FileManager();
 					}
 					$fileManager->mkdirtree($path);

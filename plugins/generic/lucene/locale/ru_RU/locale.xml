@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/lucene/locale/ru_RU/locale.xml
@@ -31,7 +31,7 @@
 	<message key="plugins.generic.lucene.message.indexingIncomplete">Произошла ошибка в процессе индексации: Обработано {$numProcessed} из пакета в {$batchCount} ({$numDeleted} удаленных документов в этом пакете).</message>
 	<message key="plugins.generic.lucene.message.indexOnline">Индекс с {$numDocs} документами подключен.</message>
 	<message key="plugins.generic.lucene.message.pullIndexingDisabled">Самостоятельная индексация сервером отключена. Пожалуйста, включите ее в настройках плагина «Lucene».</message>
-	<message key="plugins.generic.lucene.message.searchServiceOffline">К сожалению, служба поиска OJS сейчас отключена.</message>
+	<message key="plugins.generic.lucene.message.searchServiceOffline">К сожалению, служба поиска CLA сейчас отключена.</message>
 	<message key="plugins.generic.lucene.message.techAdminInformed">Технический администратор этого журнала был проинформирован о проблеме.</message>
 	<message key="plugins.generic.lucene.message.webServiceError">Веб-служба Lucene вернула ошибку.</message>
 
@@ -85,8 +85,8 @@
 	]]></message>
 	<message key="plugins.generic.lucene.settings.highlighting">Выделение (показывать небольшой фрагмент полного текста каждой статьи, содержащий ключевые слова из поискового запроса)</message>
 	<message key="plugins.generic.lucene.settings.instId">Уникальный ID инсталляции</message>
-	<message key="plugins.generic.lucene.settings.instIdRequired">Пожалуйста, введите ID, который уникальным образом идентифицирует эту инсталляцию OJS для поискового сервера Solr.</message>
-	<message key="plugins.generic.lucene.settings.instIdInstructions">Если вы используете централизованный поисковый сервер, то вам необходимо будет задать уникальный ID инсталляции для каждой из инсталляций OJS, использующих одинаковый поисковый индекс. Это может быть любой произвольный текст, но он должен быть разным для каждого из участвующих серверов OJS (например, статический IP-адрес сервера, если у вас на каждом сервере установлена одна инсталляция OJS).</message>
+	<message key="plugins.generic.lucene.settings.instIdRequired">Пожалуйста, введите ID, который уникальным образом идентифицирует эту инсталляцию CLA для поискового сервера Solr.</message>
+	<message key="plugins.generic.lucene.settings.instIdInstructions">Если вы используете централизованный поисковый сервер, то вам необходимо будет задать уникальный ID инсталляции для каждой из инсталляций CLA, использующих одинаковый поисковый индекс. Это может быть любой произвольный текст, но он должен быть разным для каждого из участвующих серверов CLA (например, статический IP-адрес сервера, если у вас на каждом сервере установлена одна инсталляция CLA).</message>
 	<message key="plugins.generic.lucene.settings.internalError">Неправильный выбор.</message>
 	<message key="plugins.generic.lucene.settings.luceneSettings">Плагин «Lucene»: Настройки</message>
 	<message key="plugins.generic.lucene.settings.password">Пароль</message>

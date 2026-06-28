@@ -13,7 +13,7 @@
  * @brief Form validation check with a custom user function performing the validation check.
  */
 
-import('lib.pkp.classes.form.validation.FormValidator');
+import('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorCustom extends FormValidator {
 

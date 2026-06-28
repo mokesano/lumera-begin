@@ -16,8 +16,8 @@
 
 import('pages.manager.ManagerHandler');
 
-class PKPAnnouncementHandler extends ManagerHandler {
-	function PKPAnnouncementHandler() {
+class SEPAnnouncementHandler extends ManagerHandler {
+	function SEPAnnouncementHandler() {
 		parent::ManagerHandler();
 	}
 
@@ -28,7 +28,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 	/**
 	 * Display a list of announcements for the current context.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function announcements($args, &$request) {
 		// FIXME: Remove call to validate() when all ManagerHandler implementations
@@ -52,7 +52,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 
 	/**
 	 * Get the announcements for this request.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $rangeInfo Object optional
 	 * @return ItemIterator
 	 */
@@ -89,7 +89,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 	/**
 	 * Display form to edit an announcement.
 	 * @param $args array first parameter is the ID of the announcement to edit
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editAnnouncement($args, &$request) {
 		// FIXME: Remove call to validate() when all ManagerHandler implementations
@@ -143,7 +143,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 
 	/**
 	 * Save changes to an announcement.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateAnnouncement($args, &$request) {
 		// FIXME: Remove call to validate() when all ManagerHandler implementations
@@ -198,7 +198,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 	/**
 	 * Display a list of announcement types for the current context.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function announcementTypes($args, &$request) {
 		// FIXME: Remove call to validate() when all ManagerHandler implementations
@@ -222,7 +222,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 	/**
 	 * Delete an announcement type.
 	 * @param $args array first parameter is the ID of the announcement type to delete
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteAnnouncementType($args, $request) {
 		// FIXME: Remove call to validate() when all ManagerHandler implementations
@@ -247,7 +247,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 	/**
 	 * Display form to edit an announcement type.
 	 * @param $args array first parameter is the ID of the announcement type to edit
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editAnnouncementType($args, &$request) {
 		// FIXME: Remove call to validate() when all ManagerHandler implementations
@@ -288,7 +288,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 	/**
 	 * Display form to create new announcement type.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createAnnouncementType($args, &$request) {
 		$this->editAnnouncementType($args, $request);
@@ -297,7 +297,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 	/**
 	 * Save changes to an announcement type.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateAnnouncementType($args, &$request) {
 		// FIXME: Remove call to validate() when all ManagerHandler implementations
@@ -343,7 +343,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 
 	/**
 	 * Set up the template with breadcrumbs etc.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $subclass boolean
 	 */
 	function setupTemplate(&$request, $subclass = false) {
@@ -360,7 +360,7 @@ class PKPAnnouncementHandler extends ManagerHandler {
 	//
 	/**
 	 * Get the current context id in request.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return int or null
 	 */
 	function getContextId($request) {

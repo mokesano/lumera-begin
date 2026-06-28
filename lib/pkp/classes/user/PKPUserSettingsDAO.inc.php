@@ -1,25 +1,25 @@
 <?php
 
 /**
- * @file classes/user/PKPUserSettingsDAO.inc.php
+ * @file classes/user/SEPUserSettingsDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPUserSettingsDAO
+ * @class SEPUserSettingsDAO
  * @ingroup user
- * @see PKPUser
+ * @see SEPUser
  *
  * @brief Operations for retrieving and modifying user settings.
  */
 
 
-class PKPUserSettingsDAO extends DAO {
+class SEPUserSettingsDAO extends DAO {
 	/**
 	 * Constructor
 	 */
-	function PKPUserSettingsDAO() {
+	function SEPUserSettingsDAO() {
 		parent::DAO();
 	}
 

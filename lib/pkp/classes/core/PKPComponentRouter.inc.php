@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file classes/core/PKPComponentRouter.inc.php
+ * @file classes/core/SEPComponentRouter.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPComponentRouter
+ * @class SEPComponentRouter
  * @ingroup core
  *
  * @brief Class mapping an HTTP request to a component handler operation.
@@ -60,10 +60,10 @@ define ('COMPONENT_ROUTER_PARTS_MAXDEPTH', 5);
 define ('COMPONENT_ROUTER_PARTS_MAXLENGTH', 50);
 define ('COMPONENT_ROUTER_PARTS_MINLENGTH', 2);
 
-import('lib.pkp.classes.core.PKPRouter');
+import('lib.sep.classes.core.SEPRouter');
 import('classes.core.Request');
 
-class PKPComponentRouter extends PKPRouter {
+class SEPComponentRouter extends SEPRouter {
 	//
 	// Internal state cache variables
 	// NB: Please do not access directly but
@@ -81,7 +81,7 @@ class PKPComponentRouter extends PKPRouter {
 
 	/**
 	 * Determines whether this router can route the given request.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return boolean true, if the router supports this request, otherwise false
 	 */
 	function supports(&$request) {
@@ -96,7 +96,7 @@ class PKPComponentRouter extends PKPRouter {
 	 * NB: This can be a component that not actually exists
 	 * in the code base.
 	 *
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string the requested component or an empty string
 	 *  if none can be found.
 	 */
@@ -135,7 +135,7 @@ class PKPComponentRouter extends PKPRouter {
 	 * NB: This can be an operation that not actually
 	 * exists in the requested component.
 	 *
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string the requested operation or an empty string
 	 *  if none can be found.
 	 */
@@ -160,7 +160,7 @@ class PKPComponentRouter extends PKPRouter {
 	 * Get the (validated) RPC service endpoint from the request.
 	 * If no such RPC service endpoint can be constructed then the method
 	 * returns null.
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @return callable an array with the handler instance
 	 *  and the handler operation to be called by call_user_func().
 	 */
@@ -185,8 +185,8 @@ class PKPComponentRouter extends PKPRouter {
 				case file_exists($componentFileName):
 					break;
 
-				case file_exists('lib/pkp/'.$componentFileName):
-					$component = 'lib.pkp.'.$component;
+				case file_exists('lib/sep/'.$componentFileName):
+					$component = 'lib.sep.'.$component;
 					break;
 
 				default:
@@ -198,7 +198,7 @@ class PKPComponentRouter extends PKPRouter {
 			// of the following packages:
 			$allowedPackages = array(
 				'controllers',
-				'lib.pkp.controllers'
+				'lib.sep.controllers'
 			);
 
 			// Retrieve requested component operation
@@ -211,7 +211,7 @@ class PKPComponentRouter extends PKPRouter {
 				$op, 'authorize', 'validate', 'initialize'
 			);
 
-			$componentInstance =& instantiate($component, 'PKPHandler', $allowedPackages, $requiredMethods);
+			$componentInstance =& instantiate($component, 'SEPHandler', $allowedPackages, $requiredMethods);
 			if (!is_object($componentInstance)) return $nullVar;
 
 			//
@@ -226,10 +226,10 @@ class PKPComponentRouter extends PKPRouter {
 
 
 	//
-	// Implement template methods from PKPRouter
+	// Implement template methods from SEPRouter
 	//
 	/**
-	 * @see PKPRouter::route()
+	 * @see SEPRouter::route()
 	 */
 	function route(&$request) {
 		// Determine the requested service endpoint.
@@ -247,7 +247,7 @@ class PKPComponentRouter extends PKPRouter {
 	}
 
 	/**
-	 * @see PKPRouter::url()
+	 * @see SEPRouter::url()
 	 */
 	function url(&$request, $newContext = null, $component = null, $op = null, $path = null,
 			$params = null, $anchor = null, $escape = false) {
@@ -267,7 +267,7 @@ class PKPComponentRouter extends PKPRouter {
 		//
 		// We only support component/op retrieval from the request
 		// if this request is a component request.
-		$currentRequestIsAComponentRequest = is_a($request->getRouter(), 'PKPComponentRouter');
+		$currentRequestIsAComponentRequest = is_a($request->getRouter(), 'SEPComponentRouter');
 		if($currentRequestIsAComponentRequest) {
 			if (empty($component)) $component = $this->getRequestedComponent($request);
 			if (empty($op)) $op = $this->getRequestedOp($request);
@@ -335,14 +335,14 @@ class PKPComponentRouter extends PKPRouter {
 	}
 
 	/**
-	 * @see PKPRouter::handleAuthorizationFailure()
+	 * @see SEPRouter::handleAuthorizationFailure()
 	 */
 	function handleAuthorizationFailure($request, $authorizationMessage) {
 		// Translate the authorization error message.
 		if (defined('LOCALE_COMPONENT_APPLICATION_COMMON')) {
 			AppLocale::requireComponents(LOCALE_COMPONENT_APPLICATION_COMMON);
 		}
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_USER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_USER);
 		$translatedAuthorizationMessage = __($authorizationMessage);
 
 		// Add the router name and operation if show_stacktrace is enabled.
@@ -353,7 +353,7 @@ class PKPComponentRouter extends PKPRouter {
 			$translatedAuthorizationMessage .= ' ['.$url.$queryString.']';
 		}
 		// Return a JSON error message.
-		import('lib.pkp.classes.core.JSONMessage');
+		import('lib.sep.classes.core.JSONMessage');
 		$json = new JSONMessage(false, $translatedAuthorizationMessage);
 		return $json->getString();
 	}
@@ -366,7 +366,7 @@ class PKPComponentRouter extends PKPRouter {
 	 * Get the (validated) RPC service endpoint parts from the request.
 	 * If no such RPC service endpoint parts can be retrieved
 	 * then the method returns null.
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @return array a string array with the RPC service endpoint
 	 *  parts as values.
 	 */
@@ -399,7 +399,7 @@ class PKPComponentRouter extends PKPRouter {
 	 * Try to retrieve a (non-validated) array with the service
 	 * endpoint parts from the request. See the classdoc for the
 	 * URL patterns supported here.
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @return array an array of (non-validated) service endpoint
 	 *  parts or null if the request is not an RPC request.
 	 */

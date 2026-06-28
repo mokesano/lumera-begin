@@ -1,24 +1,24 @@
 <?php
 
 /**
- * @file classes/payment/ojs/OJSPaymentAction.inc.php
+ * @file classes/payment/cla/CLAPaymentAction.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class OJSPaymentAction
+ * @class CLAPaymentAction
  * @ingroup payments
  *
  * Common actions for payment management functions.
  */
 
-class OJSPaymentAction {
+class CLAPaymentAction {
 	/**
 	 * Display Payments Settings Form (main payments page)
 	 */
 	 function payments($args) {
-		import('classes.payment.ojs.form.PaymentSettingsForm');
+		import('classes.payment.cla.form.PaymentSettingsForm');
 		$form = new PaymentSettingsForm();
 
 		$journal =& Request::getJournal();
@@ -37,7 +37,7 @@ class OJSPaymentAction {
 	  * Execute the form or display it again if there are problems
 	  */
 	 function savePaymentSettings($args) {
-		import('classes.payment.ojs.form.PaymentSettingsForm');
+		import('classes.payment.cla.form.PaymentSettingsForm');
 		$settingsForm = new PaymentSettingsForm();
 
 		$journal =& Request::getJournal();
@@ -60,7 +60,7 @@ class OJSPaymentAction {
 	  */
 	 function viewPayments($args) {
 		$rangeInfo =& Handler::getRangeInfo('payments');
-		$paymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+		$paymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 		$journal =& Request::getJournal();
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('helpTopicId', 'journal.managementPages.payments');
@@ -82,7 +82,7 @@ class OJSPaymentAction {
 	  * Display a single Completed payment
 	  */
 	 function viewPayment($args) {
-		$paymentDao =& DAORegistry::getDAO('OJSCompletedPaymentDAO');
+		$paymentDao =& DAORegistry::getDAO('CLACompletedPaymentDAO');
 		$completedPaymentId = $args[0];
 		$payment =& $paymentDao->getCompletedPayment($completedPaymentId);
 
@@ -110,7 +110,7 @@ class OJSPaymentAction {
 		$templateMgr->assign('helpTopicId', 'journal.managementPages.payments');
 
 		$journal =& Request::getJournal();
-		import('classes.payment.ojs.form.PayMethodSettingsForm');
+		import('classes.payment.cla.form.PayMethodSettingsForm');
 
 		$settingsForm = new PayMethodSettingsForm();
 		$settingsForm->initData();
@@ -122,7 +122,7 @@ class OJSPaymentAction {
 	 */
 	function savePayMethodSettings() {
 		$journal =& Request::getJournal();
-		import('classes.payment.ojs.form.PayMethodSettingsForm');
+		import('classes.payment.cla.form.PayMethodSettingsForm');
 
 		$settingsForm = new PayMethodSettingsForm();
 		$settingsForm->readInputData();

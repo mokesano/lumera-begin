@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -32,23 +32,23 @@
 	<section title="1. ADS ile bir dergiyi nasıl başlatabilirim?">
 		<![CDATA[
 <ol type="a">
-	<li><a href="http://pkp.sfu.ca/ojs/ojs_download" target="_blank">ADS yazılımını indir</a> ve sitene yazılımın gereksinimlerine uygun web sunucuna kur.</li>
+	<li><a href="http://lumera.sangia.org/cla/cla_download" target="_blank">ADS yazılımını indir</a> ve sitene yazılımın gereksinimlerine uygun web sunucuna kur.</li>
 	<li>Kurulumda verdiğin yönetici kullanıcı adı ve şifresi ile siteye gir.</li>
 	<li>Yayınlanan Dergiler bağlantısını izleyip, dergi oluştur bağlantısı ile yeni dergi oluşturun.</li>
 	<li>Site yöneticisi yeni dergi için kendiliğinden dergi yöneticisi olarak görelendirilir. Eğer gerekli ise, dergi yöneticisi olmak üzere bir kullanıcı ekleyin.</li>
 	<li>Dergi yöneticisi beş basamaklı bir formlar süreci ile yeni dergi için gerekli ayarları yapar ve dergi başvuru kabul edip, editöryal süreci sürdürebilir ve yayınlanabilir hale gelir. Tüm ayarların bir seferde yapılması gerekmez, sonradan da ayarlar geliştirilebilir.</li>
-	<li>Kurulum ve ayarlar ile ilgili daha fazla bilgi için <a href="http://pkp.sfu.ca/ojs/OJSinanHour.pdf" target="_blank">Bir saatte ADS </a> sayfasına bakabilirsiniz.</li>
+	<li>Kurulum ve ayarlar ile ilgili daha fazla bilgi için <a href="http://lumera.sangia.org/cla/CLAinanHour.pdf" target="_blank">Bir saatte ADS </a> sayfasına bakabilirsiniz.</li>
 </ol>
 		]]>
 	</section>
 	<section title="2. ADS ile ilgili teknik konular, geliştirme önerilerim ve hata bildirimlerim için nerede destek bulabilirim?">
 		<![CDATA[
-<p>The Public Knowledge Project bir <a href="http://forum.pkp.sfu.ca/" target="_blank">Destek Forumu</a> yürütmektedir. Bu formda binin üzerinde bilgi alışverişine ulaşabilir, arama olanağı ile aradığınızı kolayca bulabilirsiniz. Örneğin hata raporlarını arama alanına girerek, o konuda daha önceki bilgi alışverişlerine ulaşabilirsiniz. Eğer bu yöntem sonuç vermez ise, sorunuzu <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a> adresine gönderebilirsiniz. Hata bildirimleri PKP tarafından yürütülen <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a> aracılığı ile yapılmalıdır.</p>
+<p>The Sangia Editorial Project bir <a href="http://forum.lumera.sangia.org/" target="_blank">Destek Forumu</a> yürütmektedir. Bu formda binin üzerinde bilgi alışverişine ulaşabilir, arama olanağı ile aradığınızı kolayca bulabilirsiniz. Örneğin hata raporlarını arama alanına girerek, o konuda daha önceki bilgi alışverişlerine ulaşabilirsiniz. Eğer bu yöntem sonuç vermez ise, sorunuzu <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a> adresine gönderebilirsiniz. Hata bildirimleri SEP tarafından yürütülen <a href="https://github.com/sep/sep-lib#issues" target="_blank">Github.com issues</a> aracılığı ile yapılmalıdır.</p>
 		]]>
 	</section>
 	<section title="3. ADS yazılımını başka bir dile nasıl çeviririm?">
 		<![CDATA[
-<p>Yazılım indirilir iken gelen doc/README dosyası gereken başlangıç bilgilerini içerir. Çeviri için gerekli ek bilgilere ve çeviri ile ilgili genel konulara <a href="http://forum.pkp.sfu.ca/" target="_blank">PKP Destek Forumundan</a> ulaşabilirsiniz.</p>
+<p>Yazılım indirilir iken gelen doc/README dosyası gereken başlangıç bilgilerini içerir. Çeviri için gerekli ek bilgilere ve çeviri ile ilgili genel konulara <a href="http://forum.lumera.sangia.org/" target="_blank">SEP Destek Forumundan</a> ulaşabilirsiniz.</p>
 		]]>
 	</section>
 	<section title='4. Niye yazarlar "dergi şimdilik başvuru kabul etmiyor" mesajı alıyorlar?'>
@@ -58,12 +58,12 @@
 	</section>
 	<section title='5. Dergide daha basılmamış hazır makaleler ile, değerlendirmedeki makalelere ulaşımı nasıl sağlarım?'>
 		<![CDATA[
-<p>Şu anda yayınlanmamış veya değerlendirilen makalelerin açık ulaşımı için yapılandırılmış bir yol yoktur. Editör ancak mizanpaj aşamasındaki makale için verilen "Prova Dizgiyi Gör" bağlantısını dilediği okuyuculara ileterek, prova dizgi aşamasında makaleye ulaşabilmelerini sağlayabilir. PKP grubu bu olanak ile ilgilenmektedir, gelecek sürümlerde bu tür bir düzenleme eklenecektir.</p>
+<p>Şu anda yayınlanmamış veya değerlendirilen makalelerin açık ulaşımı için yapılandırılmış bir yol yoktur. Editör ancak mizanpaj aşamasındaki makale için verilen "Prova Dizgiyi Gör" bağlantısını dilediği okuyuculara ileterek, prova dizgi aşamasında makaleye ulaşabilmelerini sağlayabilir. SEP grubu bu olanak ile ilgilenmektedir, gelecek sürümlerde bu tür bir düzenleme eklenecektir.</p>
 		]]>
 	</section>
 	<section title="6. Dergimin internet ortamında tanınmasını nasıl sağlarım?">
 		<![CDATA[
-<p>Derginizin Google ve diğer büyük arama motorlarında yer alması gecikmeden gerçekleşir, ancak yine de bilimsel dizinler için bir şeyler yapmanız yararlı olur. Kurulumun 3. basamağında derginizi PKP veri madencisine kaydetmeyi unutmayınız. Bu kayıt ile derginiz Open Archives Initiative dizinleri olan <a href="http://pkp.sfu.ca/harvester/" target="_blank">PKP Harvester</a> ve <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a> dizinlerine eklenmiş olur. Eğer derginiz açık ulaşım olanağı sunuyor ise, üniversitenizin kütüphanecisi ile görüşüp, derginizinin elektronik kütüphanelere eklenmesi için kütüphaneciler listesi ile ilişki kurmasını isteyiniz. Bilimsel dernek siteleri ve listelerinde derginize yazı gönderilmesi ve derginizdeki makalelerin okunması için duyurular yayınlayın. Kurulumun 2.5 basamağında okuyucuların kayıt olması gerekir seçeneği ile okuyucularınızın kayıt olmasını ve her yeni sayı çıktığında e-posta ile habedar olmalarını sağlayınız.</p>
+<p>Derginizin Google ve diğer büyük arama motorlarında yer alması gecikmeden gerçekleşir, ancak yine de bilimsel dizinler için bir şeyler yapmanız yararlı olur. Kurulumun 3. basamağında derginizi SEP veri madencisine kaydetmeyi unutmayınız. Bu kayıt ile derginiz Open Archives Initiative dizinleri olan <a href="http://lumera.sangia.org/harvester/" target="_blank">SEP Harvester</a> ve <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a> dizinlerine eklenmiş olur. Eğer derginiz açık ulaşım olanağı sunuyor ise, üniversitenizin kütüphanecisi ile görüşüp, derginizinin elektronik kütüphanelere eklenmesi için kütüphaneciler listesi ile ilişki kurmasını isteyiniz. Bilimsel dernek siteleri ve listelerinde derginize yazı gönderilmesi ve derginizdeki makalelerin okunması için duyurular yayınlayın. Kurulumun 2.5 basamağında okuyucuların kayıt olması gerekir seçeneği ile okuyucularınızın kayıt olmasını ve her yeni sayı çıktığında e-posta ile habedar olmalarını sağlayınız.</p>
 		]]>
 	</section>
 	<section title="7. Dergi tarihi ve önceki editörlerinin listesi gibi bilgileri nasıl yayınlayabilir?">

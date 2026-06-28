@@ -14,7 +14,7 @@
  */
 
 import('pages.rtadmin.RTAdminHandler');
-import('classes.rt.ojs.SharingRT');
+import('classes.rt.cla.SharingRT');
 
 class RTSharingHandler extends RTAdminHandler {
 	/**

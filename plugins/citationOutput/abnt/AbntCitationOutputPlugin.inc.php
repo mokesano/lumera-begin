@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationOutput.abnt.PKPAbntCitationOutputPlugin');
+import('lib.sep.plugins.citationOutput.abnt.SEPAbntCitationOutputPlugin');
 
-class AbntCitationOutputPlugin extends PKPAbntCitationOutputPlugin {
+class AbntCitationOutputPlugin extends SEPAbntCitationOutputPlugin {
 	/**
 	 * Constructor
 	 */
 	function AbntCitationOutputPlugin() {
-		parent::PKPAbntCitationOutputPlugin();
+		parent::SEPAbntCitationOutputPlugin();
 	}
 }
 

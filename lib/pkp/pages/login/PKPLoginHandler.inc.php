@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file pages/login/PKPLoginHandler.inc.php
+ * @file pages/login/SEPLoginHandler.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPLoginHandler
+ * @class SEPLoginHandler
  * @ingroup pages_login
  *
  * @brief Handle login/logout requests.
@@ -16,7 +16,7 @@
 
 import('classes.handler.Handler');
 
-class PKPLoginHandler extends Handler {
+class SEPLoginHandler extends Handler {
 
 	/**
 	 * Display user login form.
@@ -97,7 +97,7 @@ class PKPLoginHandler extends Handler {
 	/**
 	 * After a login has completed, direct the user somewhere.
 	 * (May be extended by subclasses.)
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _redirectAfterLogin($request) {
 		$request->redirectHome();
@@ -339,7 +339,7 @@ class PKPLoginHandler extends Handler {
 	/**
 	 * Helper function - set mail From
 	 * can be overriden by child classes
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param MailTemplate $mail
 	 * @param $site Site
 	 */

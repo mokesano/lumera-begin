@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE data SYSTEM "../../../lib/pkp/dtd/xmlData.dtd">
+<!DOCTYPE data SYSTEM "../../../lib/sep/dtd/xmlData.dtd">
 
 <!--
   * 2.3.3_update.xml
@@ -11,7 +11,7 @@
   * 2.3.3 database updates XML file.
   -->
 <data>
-	<!-- Bug #5124: port review forms to pkp-lib -->
+	<!-- Bug #5124: port review forms to sep-lib -->
 	<sql>
 		<query>UPDATE review_forms SET assoc_type = 256</query><!-- ASSOC_TYPE_JOURNAL -->
 	</sql>
@@ -27,7 +27,7 @@
 	<sql>
 		<query>DELETE FROM institutional_subscription_ip WHERE ip_start = 0 AND ip_end IS NULL</query>
 	</sql>
-	<!-- Bug #5440: Migrate submission notes into PKP "notes" -->
+	<!-- Bug #5440: Migrate submission notes into SEP "notes" -->
 	<sql>
 		<query>UPDATE notes SET assoc_type = 257</query><!-- ASSOC_TYPE_ARTICLE -->
 	</sql>

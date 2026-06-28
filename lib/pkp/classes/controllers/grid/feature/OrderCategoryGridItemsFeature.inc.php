@@ -14,7 +14,7 @@
  *
  */
 
-import('lib.pkp.classes.controllers.grid.feature.OrderItemsFeature');
+import('lib.sep.classes.controllers.grid.feature.OrderItemsFeature');
 
 define_exposed('ORDER_CATEGORY_GRID_CATEGORIES_ONLY', 0x01);
 define_exposed('ORDER_CATEGORY_GRID_CATEGORIES_ROWS_ONLY', 0x02);
@@ -58,7 +58,7 @@ class OrderCategoryGridItemsFeature extends OrderItemsFeature{
 	 * @see GridFeature::getJSClass()
 	 */
 	function getJSClass() {
-		return '$.pkp.classes.features.OrderCategoryGridItemsFeature';
+		return '$.sep.classes.features.OrderCategoryGridItemsFeature';
 	}
 
 
@@ -91,7 +91,7 @@ class OrderCategoryGridItemsFeature extends OrderItemsFeature{
 		$request =& $args['request'];
 		$grid =& $args['grid'];
 
-		import('lib.pkp.classes.core.JSONManager');
+		import('lib.sep.classes.core.JSONManager');
 		$jsonManager = new JSONManager();
 		$data = $jsonManager->decode($request->getUserVar('data'));
 		$gridCategoryElements = $grid->getGridDataElements($request);

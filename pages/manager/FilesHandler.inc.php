@@ -26,13 +26,13 @@ class FilesHandler extends ManagerHandler {
 	/**
 	 * Display the files associated with a journal.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function files($args, &$request) {
 		$this->validate();
 		$this->setupTemplate(true);
 
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 
 		$templateMgr =& TemplateManager::getManager();
@@ -79,7 +79,7 @@ class FilesHandler extends ManagerHandler {
 	/**
 	 * Upload a new file.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function fileUpload($args, &$request) {
 		$this->validate();
@@ -87,7 +87,7 @@ class FilesHandler extends ManagerHandler {
 		$this->_parseDirArg($args, $currentDir, $parentDir);
 		$currentPath = $this->_getRealFilesDir($request, $currentDir);
 
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 		if ($fileManager->uploadedFileExists('file')) {
 			$destPath = $currentPath . '/' . $this->_cleanFileName($fileManager->getUploadedFileName('file'));
@@ -100,7 +100,7 @@ class FilesHandler extends ManagerHandler {
 	/**
 	 * Create a new directory
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function fileMakeDir($args, &$request) {
 		$this->validate();
@@ -111,7 +111,7 @@ class FilesHandler extends ManagerHandler {
 			$currentPath = $this->_getRealFilesDir($request, $currentDir);
 			$newDir = $currentPath . '/' . $this->_cleanFileName($dirName);
 
-			import('lib.pkp.classes.file.FileManager');
+			import('lib.sep.classes.file.FileManager');
 			$fileManager = new FileManager();
 			@$fileManager->mkdir($newDir);
 		}
@@ -122,7 +122,7 @@ class FilesHandler extends ManagerHandler {
 	/**
 	 * Delete a file.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function fileDelete($args, &$request) {
 		$this->validate();
@@ -130,7 +130,7 @@ class FilesHandler extends ManagerHandler {
 		$this->_parseDirArg($args, $currentDir, $parentDir);
 		$currentPath = $this->_getRealFilesDir($request, $currentDir);
 
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 
 		if (@is_file($currentPath)) {

@@ -10,21 +10,21 @@
  * @class FilterGridHandler
  * @ingroup classes_controllers_grid_filter
  *
- * @brief Handle OJS specific parts of filter grid requests.
+ * @brief Handle CLA specific parts of filter grid requests.
  */
 
-import('lib.pkp.classes.controllers.grid.filter.PKPFilterGridHandler');
+import('lib.sep.classes.controllers.grid.filter.SEPFilterGridHandler');
 
 // import validation classes
 import('classes.handler.validation.HandlerValidatorJournal');
-import('lib.pkp.classes.handler.validation.HandlerValidatorRoles');
+import('lib.sep.classes.handler.validation.HandlerValidatorRoles');
 
-class FilterGridHandler extends PKPFilterGridHandler {
+class FilterGridHandler extends SEPFilterGridHandler {
 	/**
 	 * Constructor
 	 */
 	function FilterGridHandler() {
-		parent::PKPFilterGridHandler();
+		parent::SEPFilterGridHandler();
 		$this->addRoleAssignment(
 				array(ROLE_ID_SITE_ADMIN, ROLE_ID_JOURNAL_MANAGER),
 				array('fetchGrid', 'addFilter', 'editFilter', 'updateFilter', 'deleteFilter'));
@@ -32,15 +32,15 @@ class FilterGridHandler extends PKPFilterGridHandler {
 
 
 	//
-	// Implement template methods from PKPHandler
+	// Implement template methods from SEPHandler
 	//
 	/**
-	 * @see PKPHandler::authorize()
+	 * @see SEPHandler::authorize()
 	 */
 	function authorize(&$request, &$args, $roleAssignments) {
 		// Make sure the user can change the journal setup.
-		import('classes.security.authorization.OjsJournalAccessPolicy');
-		$this->addPolicy(new OjsJournalAccessPolicy($request, $roleAssignments));
+		import('classes.security.authorization.CLAJournalAccessPolicy');
+		$this->addPolicy(new CLAJournalAccessPolicy($request, $roleAssignments));
 		return parent::authorize($request, $args, $roleAssignments);
 	}
 }

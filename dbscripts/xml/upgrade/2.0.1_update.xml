@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE data SYSTEM "../../../lib/pkp/dtd/xmlData.dtd">
+<!DOCTYPE data SYSTEM "../../../lib/sep/dtd/xmlData.dtd">
 
 <!--
   * 2.0.1_update.xml
@@ -58,13 +58,13 @@
 	<sql>
 		<query>
 			UPDATE rt_searches
-			SET url = 'http://pkp.sfu.ca/harvester/'
-			WHERE url = 'http://www.pkp.ubc.ca/harvester/'
+			SET url = 'http://lumera.sangia.org/harvester/'
+			WHERE url = 'http://www.sep.ubc.ca/harvester/'
 		</query>
 		<query>
 			UPDATE rt_searches
-			SET search_url = 'http://pkp.sfu.ca/harvester/search.php?limit=author&amp;query='
-			WHERE search_url = 'http://www.pkp.ubc.ca/harvester/search.php?limit=author&amp;query='
+			SET search_url = 'http://lumera.sangia.org/harvester/search.php?limit=author&amp;query='
+			WHERE search_url = 'http://www.sep.ubc.ca/harvester/search.php?limit=author&amp;query='
 		</query>
 		<query>
 			UPDATE rt_searches

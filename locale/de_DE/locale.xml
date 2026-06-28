@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/de_DE/locale.xml
@@ -74,7 +74,7 @@
 	-->
 
 	<!-- Allgemeine Meldungen -->
-	<message key="common.openJournalSystems">Open Journal Systems</message>
+	<message key="common.openJournalSystems">Code Lumera Editorial</message>
 	<message key="common.confirmComplete">Sind Sie sicher, dass Sie diese Aufgabe als beendet markieren wollen? Später können möglicherweise keine Änderungen mehr vorgenommen werden.</message>
 	<message key="common.payment">Zahlung</message>
 	<message key="common.payments">Zahlungen</message>
@@ -236,7 +236,7 @@
 <message key="user.orcid">ORCID-iD</message>
 	<message key="user.orcid.description"><![CDATA[ORCID-iDs können nur durch <a href="http://orcid.org/" target="_blank">die ORCID-Registrierung</a> vergeben werden. Sie müssen deren Vorgabe zum Schreiben von ORCID-iDs beachten und den vollen URI (eg. <em>http://orcid.org/0000-0002-1825-0097</em>) verwenden.]]></message>
 	<message key="user.profile.form.orcidInvalid">Die angegebene ORCID-iD ist ungültig.</message>
-	<message key="user.profile.implicitAuthChangePasswordInstructions">Wenn Sie sich via Shibboleth eingeloggt haben, befolgen Sie bitte die Vorgaben Ihrer Organisation, um Ihr Passwort dort zu ändern. Nutzer/innen, die direkt auf diesem OJS-System angemeldet sind, folgen bitte den untern aufgeführten Schritten.</message>
+	<message key="user.profile.implicitAuthChangePasswordInstructions">Wenn Sie sich via Shibboleth eingeloggt haben, befolgen Sie bitte die Vorgaben Ihrer Organisation, um Ihr Passwort dort zu ändern. Nutzer/innen, die direkt auf diesem CLA-System angemeldet sind, folgen bitte den untern aufgeführten Schritten.</message>
 
 	<!-- Funktionen -->
 	<message key="user.role.manager">Zeitschriftenverwalter/in</message>
@@ -361,25 +361,25 @@
 
 	<!-- Verwaltung der Website -->
 
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Um den Inhalt aller von dieser Website angebotenen Zeitschriften bei einem allgemein verbreiteten System von Forschungsdatenbanken zu indizieren, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registrieren Sie</a> die URL Ihrer Website beim Metadaten-Harvester des Public Knowledge Project <a href="http://pkp.sfu.ca/harvester/" target="_blank"></a>. Der Harvester sammelt die Metadaten jedes indizierten Artikels dieser Zeitschrift und ermöglicht somit eine umfassende und genaue Suche auf allen Forschungs-Webseiten, die sich an dem Projekt <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank"> Open Archives Initiative Protocol for Metadata Harvesting</a> beteiligen.
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Um den Inhalt aller von dieser Website angebotenen Zeitschriften bei einem allgemein verbreiteten System von Forschungsdatenbanken zu indizieren, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">registrieren Sie</a> die URL Ihrer Website beim Metadaten-Harvester des Sangia Editorial Project <a href="http://lumera.sangia.org/harvester/" target="_blank"></a>. Der Harvester sammelt die Metadaten jedes indizierten Artikels dieser Zeitschrift und ermöglicht somit eine umfassende und genaue Suche auf allen Forschungs-Webseiten, die sich an dem Projekt <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank"> Open Archives Initiative Protocol for Metadata Harvesting</a> beteiligen.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Klicken Sie hier</a> und geben Sie <span class="highlight">{$siteUrl}</span> unter <strong>URL</strong> und <span class="highlight">{$oaiUrl}</span> unter <strong>OAI Base URL</strong> ein.
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Klicken Sie hier</a> und geben Sie <span class="highlight">{$siteUrl}</span> unter <strong>URL</strong> und <span class="highlight">{$oaiUrl}</span> unter <strong>OAI Base URL</strong> ein.
 <br /><br />
-Bitte beachten Sie, dass die OAI-Schnittstelle für diese Website in der OJS-Systemkonfiguration deaktiviert werden kann. Zukünftige Versionen von OJS werden es ermöglichen, die OAI-Schnittstelle für jede Zeitschrift einer Website gesondert zu aktivieren oder zu deaktivieren.]]></message>
+Bitte beachten Sie, dass die OAI-Schnittstelle für diese Website in der CLA-Systemkonfiguration deaktiviert werden kann. Zukünftige Versionen von CLA werden es ermöglichen, die OAI-Schnittstelle für jede Zeitschrift einer Website gesondert zu aktivieren oder zu deaktivieren.]]></message>
 
 
 
 	<!-- Sprachen -->
-	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Momentan ist das Herunterladen von Sprachpaketen vom Server des Public Knowledge Project nicht möglich, weil:</p>
+	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Momentan ist das Herunterladen von Sprachpaketen vom Server des Sangia Editorial Project nicht möglich, weil:</p>
 	<ul>
 		<li>Ihr Server den Dienst GNU "tar" entweder nicht besitzt oder seine Ausführung nicht erlaubt</li>
-		<li>OJS die Registrierungsdatei für Regionaleinstellungen (üblicherweise "registry/locales.xml") nicht verändern kann.</li>
+		<li>CLA die Registrierungsdatei für Regionaleinstellungen (üblicherweise "registry/locales.xml") nicht verändern kann.</li>
 	</ul>
-<p>Sprachpakete können manuell von der <a href="http://pkp.sfu.ca">PKP-Webseite</a> heruntergeladen werden.</p>]]></message>
+<p>Sprachpakete können manuell von der <a href="http://sep.sfu.ca">SEP-Webseite</a> heruntergeladen werden.</p>]]></message>
 
-	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>Eine Standardauthentifizierungsquelle außerhalb vom OJS festzulegen, hat folgende Auswirkungen:</p>
+	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>Eine Standardauthentifizierungsquelle außerhalb vom CLA festzulegen, hat folgende Auswirkungen:</p>
 <ul>
-	<li>Versucht jemand, auf dieser Seite ein neues Konto mit einem Benutzer/innen-Namen, der in der Authentifizierungsquelle existiert, nicht jedoch in der OJS-Datenbank, einzurichten, dann gelingt die Registrierung nur, wenn das eingegebene Passwort für dieses Benutzer/innen-Konto gültig ist.</li>
+	<li>Versucht jemand, auf dieser Seite ein neues Konto mit einem Benutzer/innen-Namen, der in der Authentifizierungsquelle existiert, nicht jedoch in der CLA-Datenbank, einzurichten, dann gelingt die Registrierung nur, wenn das eingegebene Passwort für dieses Benutzer/innen-Konto gültig ist.</li>
 </ul>]]></message>
 
 	<!-- Systeminformationen -->
@@ -404,9 +404,9 @@ Bitte beachten Sie, dass die OAI-Schnittstelle für diese Website in der OJS-Sys
 	<!-- Verwaltung Zahlungen -->
 
 	<!-- Allgemeine Informationen: Plug-Ins -->
-	<message key="plugins.categories.auth.description">Die Zugangs-Plug-Ins ermöglichen Open Journal Systems, die Zugangsberechtigung von Benutzer/innen an andere Systeme, wie etwa LDAP-Server, zu übertragen.</message>
+	<message key="plugins.categories.auth.description">Die Zugangs-Plug-Ins ermöglichen Code Lumera Editorial, die Zugangsberechtigung von Benutzer/innen an andere Systeme, wie etwa LDAP-Server, zu übertragen.</message>
 	<message key="plugins.categories.citationFormats.description">Plug-Ins für Zitatformate bieten Benutzer/innen unterschiedliche Formate zur Zitation der Artikel an.</message>
-	<message key="plugins.categories.generic.description">Generische Plugins werden zur Erweiterung von Open Journal Systems in einer Vielzahl von Wegen genutzt, die nicht durch die anderen Plug-In-Kategorien bereitgestellt werden.</message>
+	<message key="plugins.categories.generic.description">Generische Plugins werden zur Erweiterung von Code Lumera Editorial in einer Vielzahl von Wegen genutzt, die nicht durch die anderen Plug-In-Kategorien bereitgestellt werden.</message>
 	<message key="plugins.categories.implicitAuth">Plug-Ins zur impliziten Authentifizierung</message>
 	<message key="plugins.categories.implicitAuth.description">Plug-Ins zur impliziten Authentifizierung stellen Mittel zur Verfügung, um Nutzer/innen anhand ihrer HTTP-Header zu authentifizieren.</message>
 	<message key="plugins.categories.oaiMetadataFormats">Plug-In für OAI-Metadaten-Format</message>
@@ -427,7 +427,7 @@ Bitte beachten Sie, dass die OAI-Schnittstelle für diese Website in der OJS-Sys
 	Gutachter/innen die Bitte um Begutachtung, indem sie den eingereichten Beitrag an die E-Mail anhängen. Gutachter/innen mailen den Redakteur/innen ihr Einverständnis (oder einen abschlägigen Bescheid), außerdem das Gutachten und ihre Empfehlung. Redakteur/innen können das Einverständnis der Gutachter/innen (oder deren abschlägigen Bescheid) sowie das Gutachten und die Empfehlung auf der "In Begutachtung"-Seite des Beitrags einsehen, um den Begutachtungsprozess zu verfolgen.</message>
 
 
-	<message key="manager.setup.preservationDescription"><![CDATA[Open Journal Systems unterstützt das System <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) um sichere und dauerhafte Archivierung Ihrer Zeitschrift zu gewährleisten. Ihnen stehen mehrere Möglichkeiten zur Verfügung, Ihre Zeitschrift in ein LOCKSS-Netzwerk aufzunehmen:]]></message>
+	<message key="manager.setup.preservationDescription"><![CDATA[Code Lumera Editorial unterstützt das System <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) um sichere und dauerhafte Archivierung Ihrer Zeitschrift zu gewährleisten. Ihnen stehen mehrere Möglichkeiten zur Verfügung, Ihre Zeitschrift in ein LOCKSS-Netzwerk aufzunehmen:]]></message>
 
 	<message key="manager.setup.lockssDescription"><![CDATA[<strong>Andere LOCKSS-Netzwerke</strong>
 <br /><br />
@@ -888,15 +888,15 @@ Tragen Sie zur Wiederherstellung des Passwortes unten Ihre E-Mail-Adresse ein. E
 	<message key="about.memberships">Mitgliedschaften</message>
 	<message key="about.journalSponsorship">Unterstützung</message>
 	<message key="about.aboutThisPublishingSystem">Über dieses Publikationssystem</message>
-	<message key="about.aboutThisPublishingSystem.altText">Redaktions- und Veröffentlichungsprozess mit OJS</message>
-	<message key="about.aboutOJSJournal"><![CDATA[Diese Zeitschrift verwendet Open Journal Systems {$ojsVersion}, eine Open-Source-Zeitschriften- und Publikationsmanagement-Software. Sie wird unter der GNU General Public License entwickelt, dokumentiert und kostenlos vertrieben durch das <a href="http://pkp.sfu.ca/">Public Knowledge Project</a>.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[Diese Website verwendet Open Journal Systems {$ojsVersion}, eine Open-Source-Zeitschriften- und Publikationsmanagement-Software. Sie wird unter der GNU General Public License entwickelt, dokumentiert und kostenlos vertrieben durch das <a href="http://pkp.sfu.ca/">Public Knowledge Project</a>.]]></message>
+	<message key="about.aboutThisPublishingSystem.altText">Redaktions- und Veröffentlichungsprozess mit CLA</message>
+	<message key="about.aboutCLAJournal"><![CDATA[Diese Zeitschrift verwendet Code Lumera Editorial {$claVersion}, eine Open-Source-Zeitschriften- und Publikationsmanagement-Software. Sie wird unter der GNU General Public License entwickelt, dokumentiert und kostenlos vertrieben durch das <a href="http://lumera.sangia.org/">Sangia Editorial Project</a>.]]></message>
+	<message key="about.aboutCLASite"><![CDATA[Diese Website verwendet Code Lumera Editorial {$claVersion}, eine Open-Source-Zeitschriften- und Publikationsmanagement-Software. Sie wird unter der GNU General Public License entwickelt, dokumentiert und kostenlos vertrieben durch das <a href="http://lumera.sangia.org/">Sangia Editorial Project</a>.]]></message>
 
 	<!-- Mitteilungen -->
 
 	<!-- Hilfe -->
-	<message key="help.ojsHelp">Hilfe zu Open Journal Systems</message>
-	<message key="help.ojsHelpAbbrev">OJS-Hilfe</message>
+	<message key="help.claHelp">Hilfe zu Code Lumera Editorial</message>
+	<message key="help.claHelpAbbrev">CLA-Hilfe</message>
 	<message key="help.searchReturnResults">Zurück zu Suchergebnissen</message>
 
 	<!-- Spenden -->
@@ -980,15 +980,15 @@ Tragen Sie zur Wiederherstellung des Passwortes unten Ihre E-Mail-Adresse ein. E
 	<message key="payment.subscription.expires">Läuft aus</message>
 
 	<!-- Installation -->
-	<message key="installer.ojsInstallation">Installation von OJS</message>
-	<message key="installer.ojsUpgrade">Aktualisierung von OJS</message>
-	<message key="installer.installationInstructions"><![CDATA[<h4>OJS-Version {$version}</h4>
+	<message key="installer.claInstallation">Installation von CLA</message>
+	<message key="installer.claUpgrade">Aktualisierung von CLA</message>
+	<message key="installer.installationInstructions"><![CDATA[<h4>CLA-Version {$version}</h4>
 
-<p>Danke für das Herunterladen von Open Journal Systems <strong>des Public Knowledge Projects (PKP)</strong>. Bevor Sie fortfahren, lesen Sie bitte die zum Programm gehörende <a href="{$baseUrl}/docs/README">README</a>-Datei. Näheres über das Public Knowledge Project und seine Programmentwicklungen finden Sie auf der <a href="http://pkp.sfu.ca/" target="_blank">Webseite des PKP</a>. Wenn Sie Programmfehler melden wollen oder technische Fragen zu Open Journal Systems haben, gehen Sie bitte zum <a href="http://forum.pkp.sfu.ca">Support Forum</a> von PKP oder besuchen Sie unseren <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Webservice für die Anzeige von Programmfehlern</a>. Wenn Sie im Support Forum keine geeignete Hilfestellung finden, können Sie uns auch unter <a href="mailto:pkp.contact@gmail.com"></a> per E-Mail kontaktieren.</p>
+<p>Danke für das Herunterladen von Code Lumera Editorial <strong>des Sangia Editorial Projects (SEP)</strong>. Bevor Sie fortfahren, lesen Sie bitte die zum Programm gehörende <a href="{$baseUrl}/docs/README">README</a>-Datei. Näheres über das Sangia Editorial Project und seine Programmentwicklungen finden Sie auf der <a href="http://lumera.sangia.org/" target="_blank">Webseite des SEP</a>. Wenn Sie Programmfehler melden wollen oder technische Fragen zu Code Lumera Editorial haben, gehen Sie bitte zum <a href="http://forum.sep.sfu.ca">Support Forum</a> von SEP oder besuchen Sie unseren <a href="https://github.com/sep/sep-lib#issues" target="_blank">Webservice für die Anzeige von Programmfehlern</a>. Wenn Sie im Support Forum keine geeignete Hilfestellung finden, können Sie uns auch unter <a href="mailto:sep.contact@gmail.com"></a> per E-Mail kontaktieren.</p>
 
 <h4>Aktualisierungen</h4>
 
-<p>Wenn Sie eine bestehende Version von OJS 2.x durch eine neuere ersetzen wollen, <a href="{$upgradeUrl}/install/upgrade">hier klicken</a></p>
+<p>Wenn Sie eine bestehende Version von CLA 2.x durch eine neuere ersetzen wollen, <a href="{$upgradeUrl}/install/upgrade">hier klicken</a></p>
 
 <h4>Empfohlene Systemvoraussetzungen</h4>
 
@@ -999,13 +999,13 @@ Tragen Sie zur Wiederherstellung des Passwortes unten Ihre E-Mail-Adresse ein. E
 	<li>Betriebssystem: Jedes Betriebssystem, das die obigen Programme unterstützt, darunter <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.oracle.com/sun/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, <a href="http://www.microsoft.com/">Windows</a></li>
 </ul>
 
-<p>Die Ressourcen von PKP sind begrenzt; nicht alle Kombinationen von Plattformen und Programmversionen können getestet werden. Eine Funktionsgarantie kann daher nicht gegeben werden. </p>
+<p>Die Ressourcen von SEP sind begrenzt; nicht alle Kombinationen von Plattformen und Programmversionen können getestet werden. Eine Funktionsgarantie kann daher nicht gegeben werden. </p>
 
-<p>Änderungen an diesen Einstellungen können nach der Installation in der Datei <tt>config.inc.php</tt> im OJS-Basisverzeichnis oder über die Oberfläche der Website-Administration vorgenommen werden.</p>
+<p>Änderungen an diesen Einstellungen können nach der Installation in der Datei <tt>config.inc.php</tt> im CLA-Basisverzeichnis oder über die Oberfläche der Website-Administration vorgenommen werden.</p>
 
 <h4>Unterstützte Datenbank-Systeme</h4>
 
-<p>Bisher wurde OJS nur mit MySQL und PostgreSQL getestet, aber andere Datenbanken, die <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> unterstützen, können ebenfalls funktionieren (ganz oder teilweise). Berichte zur Kompatibilität und Patches für andere Datenbanken nimmt das OJS-Team gerne entgegen.</p>
+<p>Bisher wurde CLA nur mit MySQL und PostgreSQL getestet, aber andere Datenbanken, die <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> unterstützen, können ebenfalls funktionieren (ganz oder teilweise). Berichte zur Kompatibilität und Patches für andere Datenbanken nimmt das CLA-Team gerne entgegen.</p>
 
 <h4>Vor der Installation</h4>
 
@@ -1020,41 +1020,41 @@ Tragen Sie zur Wiederherstellung des Passwortes unten Ihre E-Mail-Adresse ein. E
 </ul>
 
 <p>2. Ein Verzeichnis für die Ablage hochgeladener Dateien muss angelegt und beschreibbar gemacht werden (siehe "Datei-Einstellungen" unten).</p>]]></message>
-	<message key="installer.upgradeInstructions"><![CDATA[<h4>OJS-Version{$version}</h4>
+	<message key="installer.upgradeInstructions"><![CDATA[<h4>CLA-Version{$version}</h4>
 
-<p>Danke für das Herunterladen von Open Journal Systems <strong>des Public Knowledge Project</strong>. Bevor Sie fortfahren, lesen Sie bitte die zum Programm gehörenden Dateien <a href="{$baseUrl}/docs/README">README</a> und <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a>. Näheres über das Public Knowledge Project und seine Programmentwicklungen finden Sie auf der <a href="http://pkp.sfu.ca/" target="_blank">Webseite des PKP</a>. Wenn Sie Programmfehler melden wollen oder technische Fragen zu Open Journal Systems haben, gehen Sie bitte zum <a href="http://forum.pkp.sfu.ca">Support Forum</a> von PKP oder besuchen Sie unseren <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Webservice für die Anzeige von Programmfehlern</a>. Wenn Sie im Support Forum keine geeignete Hilfestellung finden, können Sie uns auch unter <a href="mailto:pkp.contact@gmail.com"></a> per E-Mail kontaktieren.</p>
-<p>Wir <strong>empfehlen dringend</strong>, dass Sie ein Backup Ihrer Datenbank, Dateiverzeichnisse und OJS-Installation machen, bevor Sie fortfahren.</p>
+<p>Danke für das Herunterladen von Code Lumera Editorial <strong>des Sangia Editorial Project</strong>. Bevor Sie fortfahren, lesen Sie bitte die zum Programm gehörenden Dateien <a href="{$baseUrl}/docs/README">README</a> und <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a>. Näheres über das Sangia Editorial Project und seine Programmentwicklungen finden Sie auf der <a href="http://lumera.sangia.org/" target="_blank">Webseite des SEP</a>. Wenn Sie Programmfehler melden wollen oder technische Fragen zu Code Lumera Editorial haben, gehen Sie bitte zum <a href="http://forum.sep.sfu.ca">Support Forum</a> von SEP oder besuchen Sie unseren <a href="https://github.com/sep/sep-lib#issues" target="_blank">Webservice für die Anzeige von Programmfehlern</a>. Wenn Sie im Support Forum keine geeignete Hilfestellung finden, können Sie uns auch unter <a href="mailto:sep.contact@gmail.com"></a> per E-Mail kontaktieren.</p>
+<p>Wir <strong>empfehlen dringend</strong>, dass Sie ein Backup Ihrer Datenbank, Dateiverzeichnisse und CLA-Installation machen, bevor Sie fortfahren.</p>
 <p>Falls Sie in einem <a href="http://www.php.net/features.safe-mode" target="_blank">PHP-Safe Mode</a> arbeiten, stellen Sie bitte sicher, dass die max_execution_time-Richtlinie in Ihrer php.ini-Konfigurationsdatei auf einen hohen Grenzwert eingestellt ist. Sollte dieses (oder irgendein anderes) Zeitlimit (z.B. die "Timeout"-Regelung von Apache) erreicht werden und der Upgrade-Prozess unterbrochen werden, müssen Sie manuell eingreifen.</p>]]></message>
 	<message key="installer.localeSettingsInstructions"><![CDATA[Zur durchgängigen Unterstützung von Unicode (UTF-8) verwenden Sie stets UTF-8 als Zeichensatz. Beachten Sie, dass MySQL >= 4.1.1 oder PostgreSQL >= 7.1-Datenbankserver erforderlich sind. Beachten Sie bitte außerdem, dass die Unterstützung von Unicode PHP >= 4.3.0 kompiliert mit der Bibliothek <a href="http://www.php.net/mbstring" target="_blank">mbstring</a> verlangt (in den meisten neueren PHP-Installationen standardmäßig aktiviert). Falls Ihr Server diese Anforderungen nicht erfüllt, können Schwierigkeiten mit erweiterten Schriftsätzen auftreten.
 <br /><br />
 Ihr Server unterstützt derzeit : <strong>{$supportsMBString}</strong>]]></message>
 	<message key="installer.allowFileUploads"><![CDATA[Ihr Server erlaubt momentan Dateiuploads: <strong>{$allowFileUploads}</strong>]]></message>
 	<message key="installer.maxFileUploadSize"><![CDATA[Ihr Server erlaubt beim Upload momentan eine maximale Dateigröße von: <strong>{$maxFileUploadSize}</strong>]]></message>
-	<message key="installer.localeInstructions">Die Hauptsprache dieses Systems. Falls Sie an hier nicht aufgeführten Sprachen interessiert sind, sehen Sie bitte in der OJS-Dokumentation nach.</message>
+	<message key="installer.localeInstructions">Die Hauptsprache dieses Systems. Falls Sie an hier nicht aufgeführten Sprachen interessiert sind, sehen Sie bitte in der CLA-Dokumentation nach.</message>
 	<message key="installer.additionalLocalesInstructions">Wählen Sie alle weiteren Regionaleinstellungen, die das System unterstützen soll. Diese Regionaleinstellungen stehen allen Zeitschriften der Website zur Verfügung. Weitere Regionaleinstellungen können jederzeit über die Website-Administration eingerichtet werden.</message>
 	<message key="installer.filesDirInstructions"><![CDATA[Bitte geben Sie den vollständigen Pfad zu einem existierenden Verzeichnis an, in dem hochgeladene Dateien gespeichert werden sollen. Dieses Verzeichnis sollte nicht direkt aus dem WWW lesbar sein. <strong>Bitte stellen Sie sicher, dass dieses Verzeichnis existiert und beschreibbar ist, bevor Sie mit der Installation fortfahren.</strong> Pfadangaben auf Windows-Rechnern sollten normale Schrägstriche enthalten, z.B. "C:/myjournal/files".]]></message>
-	<message key="installer.databaseSettingsInstructions">OJS benötigt eine SQL-Datenbank zur Speicherung der Daten. Eine Liste der unterstützten Datenbanken können Sie der oben stehenden Liste der Systemanforderungen entnehmen. Bitte geben Sie in den folgenden Feldern die Einstellungen zur Verbindung zur Datenbank ein.</message>
-	<message key="installer.installApplication">Open Journal Systems installieren</message>
-	<message key="installer.upgradeApplication">Open Journal Systems upgraden</message>
-	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>Warnung:</strong> Wenn die Datenbank-Installation fehlschlägt, müssen Sie eventuell die OJS-Datenbank bzw. die Datenbank-Tabellen von Hand löschen, bevor Sie eine erneute Installation der Datenbank probieren können.]]></message>
+	<message key="installer.databaseSettingsInstructions">CLA benötigt eine SQL-Datenbank zur Speicherung der Daten. Eine Liste der unterstützten Datenbanken können Sie der oben stehenden Liste der Systemanforderungen entnehmen. Bitte geben Sie in den folgenden Feldern die Einstellungen zur Verbindung zur Datenbank ein.</message>
+	<message key="installer.installApplication">Code Lumera Editorial installieren</message>
+	<message key="installer.upgradeApplication">Code Lumera Editorial upgraden</message>
+	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>Warnung:</strong> Wenn die Datenbank-Installation fehlschlägt, müssen Sie eventuell die CLA-Datenbank bzw. die Datenbank-Tabellen von Hand löschen, bevor Sie eine erneute Installation der Datenbank probieren können.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>WICHTIG!</h4>
 <p>Die Installationsprozedur konnte die Konfigurationsdatei nicht automatisch überschreiben. Bevor Sie versuchen, das System zu benutzen, öffnen Sie bitte <tt>config.inc.php</tt> in einem geeigneten Text-Editor und ersetzen Sie den Dateiinhalt durch den Inhalt des folgenden Textfeldes.</p>]]></message>
-	<message key="installer.installationComplete"><![CDATA[<p>Die Installation von OJS wurde erfolgreich abgeschlossen.</p>
+	<message key="installer.installationComplete"><![CDATA[<p>Die Installation von CLA wurde erfolgreich abgeschlossen.</p>
 <p>Um mit der Nutzung des Systems zu beginnen, <a href="{$loginUrl}">loggen</a> Sie sich bitte mit dem auf der vorherigen Seite eingegebenen Benutzer/innen-Namen und dem entsprechenden Passwort <a href="{$loginUrl}">ein</a>.</p>
 <p>Wenn Sie in Zukunft Neuigkeiten und Hinweise auf Aktualisierungen erhalten möchten:</p>
 <ol>
-	<li><a href="http://pkp.sfu.ca/ojs/register" target="_new">Registrieren</a> Sie Ihre Zeitschrift, Konferenz oder Ihren Harvester und erhalten Sie Hinweise zu Software-Upgrades, Sicherheits-Patches und mehr.</li>
-	<li>Treten Sie unseren <a href="http://pkp.sfu.ca/informed" target="_new">Diskussionslisten</a> für OJS, OCS, den Harvester, Lemon8-XML, OMP oder allen genannten Themen bei.</li>
-	<li>Abonnieren Sie den <a href="http://pkp.sfu.ca/blog/feed" target="_new">RSS-Feed</a> des <a href="http://pkp.sfu.ca/blog" target="_new">PKP-Blogs</a>.</li>
+	<li><a href="http://lumera.sangia.org/cla/register" target="_new">Registrieren</a> Sie Ihre Zeitschrift, Konferenz oder Ihren Harvester und erhalten Sie Hinweise zu Software-Upgrades, Sicherheits-Patches und mehr.</li>
+	<li>Treten Sie unseren <a href="http://lumera.sangia.org/informed" target="_new">Diskussionslisten</a> für CLA, OCS, den Harvester, Lemon8-XML, OMP oder allen genannten Themen bei.</li>
+	<li>Abonnieren Sie den <a href="http://lumera.sangia.org/blog/feed" target="_new">RSS-Feed</a> des <a href="http://lumera.sangia.org/blog" target="_new">SEP-Blogs</a>.</li>
 </ol>
-<p>Wenn Sie Fragen oder Kommentare haben, besuchen Sie bitte das <a href="http://forum.pkp.sfu.ca" target="_new">Support-Forum</a>.</p>]]></message>
-	<message key="installer.upgradeComplete"><![CDATA[<p>Die Aktualisierung von OJS auf Version {$version} wurde erfolgreich abgeschlossen.</p>
+<p>Wenn Sie Fragen oder Kommentare haben, besuchen Sie bitte das <a href="http://forum.sep.sfu.ca" target="_new">Support-Forum</a>.</p>]]></message>
+	<message key="installer.upgradeComplete"><![CDATA[<p>Die Aktualisierung von CLA auf Version {$version} wurde erfolgreich abgeschlossen.</p>
 <p>Bitte vergessen Sie nicht, die "installed"-Einstellung in Ihrer config.inc.php-Konfigurationsdatei wieder zurück auf <em>On</em> zu setzen.</p>
-<p>Wenn Sie sich noch nicht registriert haben und in Zukunft Neuigkeiten und Hinweise auf Aktualisierungen erhalten möchten, <strong>registrieren Sie sich bitte auf <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a>.</strong> Wenn Sie Fragen oder Kommentare haben, besuchen Sie bitte das <a href="http://forum.pkp.sfu.ca" target="_new">Support-Forum</a>.</p>]]></message>
+<p>Wenn Sie sich noch nicht registriert haben und in Zukunft Neuigkeiten und Hinweise auf Aktualisierungen erhalten möchten, <strong>registrieren Sie sich bitte auf <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a>.</strong> Wenn Sie Fragen oder Kommentare haben, besuchen Sie bitte das <a href="http://forum.sep.sfu.ca" target="_new">Support-Forum</a>.</p>]]></message>
 
 	<!-- Warnungen zum Upgrade -->
-	<message key="site.upgradeAvailable.admin"><![CDATA[Eine neue Version von OJS ist verfügbar! Sie benutzen momentan OJS {$currentVersion}. Die aktuelleste Version ist OJS {$latestVersion}. Bitte gehen Sie zu <a href="http://pkp.sfu.ca/ojs_download" target="_new">dieser Seite</a>, um die aktuelle Version herunterzuladen und um Informationen zum Upgrade einzusehen.]]></message>
-	<message key="site.upgradeAvailable.manager"><![CDATA[Eine neue Version von OJS ist verfügbar! Sie benutzen momentan OJS {$currentVersion}. Die aktuellste Version ist OJS {$latestVersion}. Bitte benachrichtigen Sie Ihre/n Website-Administrator/in ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>), um sie/ihn über dieses neue Release zu informieren. Mehr Informationen können <a href="http://pkp.sfu.ca/ojs_download" target="_new">hier</a> gefunden werden.]]></message>
+	<message key="site.upgradeAvailable.admin"><![CDATA[Eine neue Version von CLA ist verfügbar! Sie benutzen momentan CLA {$currentVersion}. Die aktuelleste Version ist CLA {$latestVersion}. Bitte gehen Sie zu <a href="http://lumera.sangia.org/cla_download" target="_new">dieser Seite</a>, um die aktuelle Version herunterzuladen und um Informationen zum Upgrade einzusehen.]]></message>
+	<message key="site.upgradeAvailable.manager"><![CDATA[Eine neue Version von CLA ist verfügbar! Sie benutzen momentan CLA {$currentVersion}. Die aktuellste Version ist CLA {$latestVersion}. Bitte benachrichtigen Sie Ihre/n Website-Administrator/in ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>), um sie/ihn über dieses neue Release zu informieren. Mehr Informationen können <a href="http://lumera.sangia.org/cla_download" target="_new">hier</a> gefunden werden.]]></message>
 
 	<!-- Protokolle - Beiträge -->
 	<message key="log.author.submitted">{$authorName} hat einen neuen Beitrag eingereicht, ID {$submissionId}.</message>
@@ -1140,8 +1140,8 @@ Die Prüfung kann bei Such-URLs, die Formularausfüllung verlangen, fehlschlagen
 
 	<message key="rt.metadata.dublinCore.primaryAuthor">Autor/in</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">Name der Autorin/des Autors, Institution, Land</message>
-	<message key="rt.metadata.pkp.peerReviewed">Begutachter Beitrag</message>
+	<message key="rt.metadata.sep.primaryAuthor">Name der Autorin/des Autors, Institution, Land</message>
+	<message key="rt.metadata.sep.peerReviewed">Begutachter Beitrag</message>
 
 
 

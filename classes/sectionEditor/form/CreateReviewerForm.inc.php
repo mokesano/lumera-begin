@@ -17,7 +17,7 @@
  * @brief Form for section editors to create reviewers.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 class CreateReviewerForm extends Form {
 	/** @var int The article this form is for */
@@ -181,7 +181,7 @@ class CreateReviewerForm extends Form {
 
 		// Insert the user interests
 		$interests = $this->getData('interestsKeywords') ? $this->getData('interestsKeywords') : $this->getData('interestsTextOnly');
-		import('lib.pkp.classes.user.InterestManager');
+		import('lib.sep.classes.user.InterestManager');
 		$interestManager = new InterestManager();
 		$interestManager->setInterestsForUser($user, $interests);
 

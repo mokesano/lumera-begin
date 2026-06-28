@@ -13,7 +13,7 @@
  * @brief Counter report plugin
  */
 
-define('OJS_METRIC_TYPE_LEGACY_COUNTER', 'ojs::legacyCounterPlugin');
+define('CLA_METRIC_TYPE_LEGACY_COUNTER', 'cla::legacyCounterPlugin');
 
 define('COUNTER_CLASS_SUFFIX', '.inc.php');
 
@@ -23,7 +23,7 @@ import('plugins.reports.counter.classes.CounterReport');
 class CounterReportPlugin extends ReportPlugin {
 
 	/**
-	 * @see PKPPlugin::register($category, $path)
+	 * @see SEPPlugin::register($category, $path)
 	 */
 	function register($category, $path) {
 		$success = parent::register($category, $path);
@@ -35,7 +35,7 @@ class CounterReportPlugin extends ReportPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getLocaleFilename($locale)
+	 * @see SEPPlugin::getLocaleFilename($locale)
 	 */
 	function getLocaleFilename($locale) {
 		$localeFilenames = parent::getLocaleFilename($locale);
@@ -51,28 +51,28 @@ class CounterReportPlugin extends ReportPlugin {
 	}
 
 	/**
-	 * @see PKPPlugin::getName()
+	 * @see SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'CounterReportPlugin';
 	}
 
 	/**
-	 * @see PKPPlugin::getDisplayName()
+	 * @see SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.reports.counter');
 	}
 
 	/**
-	 * @see PKPPlugin::getDescription()
+	 * @see SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.reports.counter.description');
 	}
 
 	/**
-	 * @see PKPPlugin::getTemplatePath()
+	 * @see SEPPlugin::getTemplatePath()
 	 */
 	function getTemplatePath() {
 		return parent::getTemplatePath() . 'templates/';
@@ -251,10 +251,10 @@ class CounterReportPlugin extends ReportPlugin {
 	*/
 	function _getYears($useLegacyStats = false) {
 		if ($useLegacyStats) {
-			$metricType = OJS_METRIC_TYPE_LEGACY_COUNTER;
+			$metricType = CLA_METRIC_TYPE_LEGACY_COUNTER;
 			$filter = array();
 		} else {
-			$metricType = OJS_METRIC_TYPE_COUNTER;
+			$metricType = CLA_METRIC_TYPE_COUNTER;
 			$filter = array(STATISTICS_DIMENSION_ASSOC_TYPE => ASSOC_TYPE_GALLEY);
 		}
 		$metricsDao =& DAORegistry::getDAO('MetricsDAO'); /* @var $metricsDao MetricsDAO */

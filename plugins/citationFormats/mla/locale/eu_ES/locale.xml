@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/citationFormats/mla/locale/eu_ES/locale.xml
@@ -18,4 +18,3 @@
 	<message key="plugins.citationFormats.mla.description">Plugin honek MLA aipamenen formatua inplementatzen du.</message>
 	<message key="plugins.citationFormats.mla.noPages">or. kop.</message>
 </locale>
-

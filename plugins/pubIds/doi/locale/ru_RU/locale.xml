@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/pubIds/doi/locale/ru_RU/locale.xml
@@ -14,11 +14,11 @@
  
 <locale name="ru_RU" full_name="Русский">
 	<message key="plugins.pubIds.doi.displayName">Плагин «DOI»</message>
-	<message key="plugins.pubIds.doi.description">Этот плагин включает назначение идентификаторов цифровых объектов (Digital Object Identifier) выпускам, статьям, гранкам и дополнительным файлам в OJS.</message>
+	<message key="plugins.pubIds.doi.description">Этот плагин включает назначение идентификаторов цифровых объектов (Digital Object Identifier) выпускам, статьям, гранкам и дополнительным файлам в CLA.</message>
 
 	<!-- форма настройки -->
 	<message key="plugins.pubIds.doi.manager.settings.doiSettings">Настройки плагина «DOI»</message>
-	<message key="plugins.pubIds.doi.manager.settings.description">Пожалуйста, настройте плагин «DOI», чтобы иметь возможность управлять и использовать DOI в OJS:</message>
+	<message key="plugins.pubIds.doi.manager.settings.description">Пожалуйста, настройте плагин «DOI», чтобы иметь возможность управлять и использовать DOI в CLA:</message>
 	
 	<message key="plugins.pubIds.doi.manager.settings.doiObjects">Контент журнала</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiObjectsRequired">Пожалуйста, выберите объекты, которым должны быть назначены DOI.</message>
@@ -35,7 +35,7 @@
 
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffix">Суффикс DOI</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixDescription">Суффикс DOI может принимать любую форму, но должен быть уникальным среди всех публикуемых объектов, которым назначен один и тот же префикс DOI:</message>
-	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern">Использовать шаблон, введенный ниже, для генерации суффиксов DOI. Используйте %j для аббревиатуры журнала, %v для номера тома, %i для номера выпуска, %Y для года, %a для ID статьи в OJS, %g для ID гранки в OJS, %s для ID дополнительного файла в OJS, %p для номера страницы и %x для «пользовательского идентификатора» (должен быть включен на шаге 4.3 установки журнала).</message>
+	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern">Использовать шаблон, введенный ниже, для генерации суффиксов DOI. Используйте %j для аббревиатуры журнала, %v для номера тома, %i для номера выпуска, %Y для года, %a для ID статьи в CLA, %g для ID гранки в CLA, %s для ID дополнительного файла в CLA, %p для номера страницы и %x для «пользовательского идентификатора» (должен быть включен на шаге 4.3 установки журнала).</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.issues">для выпусков</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.articles">для статей</message>
 	<message key="plugins.pubIds.doi.manager.settings.doiSuffixPattern.galleys">для гранок</message>

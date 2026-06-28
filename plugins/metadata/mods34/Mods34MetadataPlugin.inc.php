@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.metadata.mods34.PKPMods34MetadataPlugin');
+import('lib.sep.plugins.metadata.mods34.SEPMods34MetadataPlugin');
 
-class Mods34MetadataPlugin extends PKPMods34MetadataPlugin {
+class Mods34MetadataPlugin extends SEPMods34MetadataPlugin {
 	/**
 	 * Constructor
 	 */
 	function Mods34MetadataPlugin() {
-		parent::PKPMods34MetadataPlugin();
+		parent::SEPMods34MetadataPlugin();
 	}
 }
 

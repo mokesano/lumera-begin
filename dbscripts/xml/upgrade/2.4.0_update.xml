@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE data SYSTEM "../../../lib/pkp/dtd/xmlData.dtd">
+<!DOCTYPE data SYSTEM "../../../lib/sep/dtd/xmlData.dtd">
 
 <!--
   * 2.4.0_update.xml
@@ -12,7 +12,7 @@
   -->
 <data>
 
-	<!-- Bug #6021: port logs to pkp-lib -->
+	<!-- Bug #6021: port logs to sep-lib -->
 	<sql>
 		<!--
 		  - Migrate article_event_log contents into event_log.

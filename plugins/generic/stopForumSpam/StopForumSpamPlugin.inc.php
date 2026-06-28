@@ -15,7 +15,7 @@
 
 define('STOP_FORUM_SPAM_API_ENDPOINT', 'http://www.stopforumspam.com/api?');
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class StopForumSpamPlugin extends GenericPlugin {
 	/**

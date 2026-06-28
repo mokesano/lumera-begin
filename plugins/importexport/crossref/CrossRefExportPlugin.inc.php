@@ -117,7 +117,7 @@ class CrossRefExportPlugin extends DOIExportPlugin {
 
 	/**
 	 * Process a DOI activity request.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $journal Journal
 	 */
 	function process(&$request, &$journal) {
@@ -147,7 +147,7 @@ class CrossRefExportPlugin extends DOIExportPlugin {
 		$this->setBreadcrumbs(array(), true);
 
 		// Retrieve all published issues.
-		AppLocale::requireComponents(array(LOCALE_COMPONENT_OJS_EDITOR));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_CLA_EDITOR));
 		$issueDao =& DAORegistry::getDAO('IssueDAO'); /* @var $issueDao IssueDAO */
 		$this->registerDaoHook('IssueDAO');
 		$issueIterator =& $issueDao->getPublishedIssues($journal->getId(), Handler::getRangeInfo('issues'));
@@ -244,7 +244,7 @@ class CrossRefExportPlugin extends DOIExportPlugin {
 			$articleData = array_slice($articleData, $rangeInfo->getCount() * ($rangeInfo->getPage()-1), $rangeInfo->getCount());
 		}
 		// Instantiate article iterator.
-		import('lib.pkp.classes.core.VirtualArrayIterator');
+		import('lib.sep.classes.core.VirtualArrayIterator');
 		$iterator = new VirtualArrayIterator($articleData, $totalArticles, $rangeInfo->getPage(), $rangeInfo->getCount());
 
 		// Prepare and display the article template.
@@ -285,7 +285,7 @@ class CrossRefExportPlugin extends DOIExportPlugin {
 	 */
 	function generateExportFiles(&$request, $exportType, &$objects, $targetPath, &$journal, &$errors) {
 		// Additional locale file.
-		AppLocale::requireComponents(array(LOCALE_COMPONENT_OJS_EDITOR));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_CLA_EDITOR));
 
 		$this->import('classes.CrossRefExportDom');
 		$dom = new CrossRefExportDom($request, $this, $journal, $this->getCache());
@@ -395,7 +395,7 @@ class CrossRefExportPlugin extends DOIExportPlugin {
 	 */
 	function updateDepositStatus(&$request, &$journal, $article) {
 		$articleDao =& DAORegistry::getDAO('ArticleDAO');  /* @var $articleDao ArticleDAO */
-		import('lib.pkp.classes.core.JSONManager');
+		import('lib.sep.classes.core.JSONManager');
 		$jsonManager = new JSONManager();
 
 		// Prepare HTTP session.

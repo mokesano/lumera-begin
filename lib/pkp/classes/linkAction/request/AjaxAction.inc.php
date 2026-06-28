@@ -16,7 +16,7 @@
 define('AJAX_REQUEST_TYPE_GET', 'get');
 define('AJAX_REQUEST_TYPE_POST', 'post');
 
-import('lib.pkp.classes.linkAction.request.LinkActionRequest');
+import('lib.sep.classes.linkAction.request.LinkActionRequest');
 
 class AjaxAction extends LinkActionRequest {
 
@@ -66,7 +66,7 @@ class AjaxAction extends LinkActionRequest {
 	 * @see LinkActionRequest::getJSLinkActionRequest()
 	 */
 	function getJSLinkActionRequest() {
-		return '$.pkp.classes.linkAction.AjaxRequest';
+		return '$.sep.classes.linkAction.AjaxRequest';
 	}
 
 	/**

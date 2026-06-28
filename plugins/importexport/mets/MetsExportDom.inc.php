@@ -13,7 +13,7 @@
  * @brief MetsExportDom export plugin DOM functions for export
  */
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
 class MetsExportDom {
 
@@ -495,7 +495,7 @@ class MetsExportDom {
 
 	function generateArticleHtmlGalleyImageFileDom(&$doc, &$root, &$article, &$galley, &$imageFile, $useAttribute, &$journal) {
 		import('classes.file.PublicFileManager');
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 		$contentWrapper = Request::getUserVar('contentWrapper');
 		$mfile =& XMLCustomWriter::createElement($doc, 'METS:file');
@@ -534,7 +534,7 @@ class MetsExportDom {
 	 */
 	function generateArticleFileDom(&$doc, &$root, &$article, &$galleyFile, $useAttribute, &$journal) {
 		import('classes.file.PublicFileManager');
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 		$contentWrapper = Request::getUserVar('contentWrapper');
 		$mfile =& XMLCustomWriter::createElement($doc, 'METS:file');
@@ -569,7 +569,7 @@ class MetsExportDom {
 	 */
 	function generateArticleSuppFileDom(&$doc, &$root, &$article, &$suppFile, &$journal) {
 		import('classes.file.PublicFileManager');
-		import('lib.pkp.classes.file.FileManager');
+		import('lib.sep.classes.file.FileManager');
 		$fileManager = new FileManager();
 		$contentWrapper = Request::getUserVar('contentWrapper');
 		$mfile =& XMLCustomWriter::createElement($doc, 'METS:file');
@@ -673,12 +673,12 @@ class MetsExportDom {
 	}
 
 	/**
-	 *  Creator is the OJS Sysytem
+	 *  Creator is the CLA Sysytem
 	 */
 	function getCreatorString() {
 		$versionDao =& DAORegistry::getDAO('VersionDAO');
 		$cVersion = $versionDao->getCurrentVersion();
-		return sprintf('Open Journal Systems v%d.%d.%d build %d', $cVersion->getMajor(), $cVersion->getMinor(), $cVersion->getRevision(), $cVersion->getBuild());
+		return sprintf('Code Lumera Editorial v%d.%d.%d build %d', $cVersion->getMajor(), $cVersion->getMinor(), $cVersion->getRevision(), $cVersion->getBuild());
 	}
 
 	/**

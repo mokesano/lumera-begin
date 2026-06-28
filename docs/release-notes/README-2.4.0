@@ -1,5 +1,5 @@
-OJS 2.4.0 Release Notes
-GIT tag: ojs-2_4_0-0
+CLA 2.4.0 Release Notes
+GIT tag: cla-2_4_0-0
 Release date: August 31, 2012
 =============================
 
@@ -10,7 +10,7 @@ New Features
 	#6305# #6945# #6466# #7237# #7777# #7373# #7547# #7772# #7729# #7718# #6649# Locale updates
 	#6305# Add paging to homepage journals list
 	#6306# Add alphalist to journals list
-	#6362# Implement optional "categories" support for large OJS journal sets
+	#6362# Implement optional "categories" support for large CLA journal sets
 	#4169# Issue galleys and purchase issue
 	#3909# Upgrade or replicate phpMyVisites plugin to Piwik
 	#4082# Add reCAPTCHA support
@@ -40,7 +40,7 @@ Bug Fixes
 	#5919# Reimplement submission 'type' column as constant
 	#5943# Plugin installed via PluginManagementHandler does not install schema file.
 	#5993# Simplify the filter discovery mechanism
-	#6012# PKPPageRouter fatal error persists across pages
+	#6012# SEPPageRouter fatal error persists across pages
 	#6014# Move timeZones.xml to registry
 	#6018# Correct space-based indents
 	#6019# Payment records - userProfile links return 404 not found
@@ -48,7 +48,7 @@ Bug Fixes
 	#6022# Error when uploading a replacement supplementary file
 	#6023# PostgreSQL groups upgrade fails when content in groups table
 	#6025# Fatal error with HTML galley image view function
-	#6035# fix broken link to pkp.css
+	#6035# fix broken link to sep.css
 	#6036# PHP fatal error when clearing reviewer
 	#6038# Plugin email template installation mechanism produces installation error if templates have already been installed before.
 	#6044# Implement OpenAIRE guidelines
@@ -87,7 +87,7 @@ Bug Fixes
 	#6210# citation assistant: OpenUrl->NLM crosswalk fails if author contains et-al string.
 	#6211# Issue management handler fails when creating a new issue.
 	#6214# Add additional info to user registration notification email
-	#6235# lib/pkp/locale/en_US/countries.xml is not up to date
+	#6235# lib/sep/locale/en_US/countries.xml is not up to date
 	#6239# Identification of filters via type always returns the last filter in the db.
 	#6240# Assign Reviewer produces fatal error
 	#6241# Migrate Dublin Core OAI provider to meta-data framework to prepare for OpenAIRE compliance.
@@ -100,7 +100,7 @@ Bug Fixes
 	#6291# Validation problems
 	#6292# Form "name" element has been deprecated
 	#6300# "Merge Users" signoff code cumbersome
-	#6303# Clean up lib/pkp/js directory and provide infrastructure to minify/compile JavaScript.
+	#6303# Clean up lib/sep/js directory and provide infrastructure to minify/compile JavaScript.
 	#6311# Standardize code headers
 	#6314# Optimize SELECT DISTINCT calls that include text-type DB columns
 	#6321# Delete journal: Call to undefined method ArticleEmailLogDAO::deleteArticleLogEntries
@@ -127,7 +127,7 @@ Bug Fixes
 	#6507# Correct new-by-reference syntax
 	#6509# PHP files missing closing ?>
 	#6564# Allow editor to mark proofreading as complete
-	#6577# empty password passes LDAP authorisation in OJS
+	#6577# empty password passes LDAP authorisation in CLA
 	#6611# Settings pages reorganization
 	#6620# Change http to https for google JS loader
 	#6637# Relax NOTNULL constraints for the purposes of upgrade
@@ -137,8 +137,8 @@ Bug Fixes
 	#6717# Escape ##octothorped.locale.keys## when displaying.
 	#6735# Fulltext & restricted icons are incorrect
 	#6738# User Interests do not clear when the interests field is submitted empty
-	#6739# DuraCloud integration with OJS
-	#6748# PKPSubmissionFileDAO calls fromRow with wrong paremters
+	#6739# DuraCloud integration with CLA
+	#6748# SEPSubmissionFileDAO calls fromRow with wrong paremters
 	#6771# Fix Breadcrumbs
 	#6774# mods34 insead of dc elements via OAI
 	#6792# Overhaul of Notifications implementation
@@ -161,7 +161,7 @@ Bug Fixes
 	#6973# Include Dublin Core basic set on metadata form
 	#6984# Streamline AppLocale::requireComponents(...) calls
 	#6985# values not casted to integers in certain SQL statements
-	#6991# OJS Regrets / Previous Rounds reviewer lettering goes into Martian
+	#6991# CLA Regrets / Previous Rounds reviewer lettering goes into Martian
 	#7004# Minor help file revisions
 	#7012# Fix static calls to FileManager and subclasses into instance method calls.
 	#7013# Clean up file management classes
@@ -169,7 +169,7 @@ Bug Fixes
 	#7066# Add new theme to OxS
 	#7149# Notifications are listed ordered by notification id, should first be listed by level id and then notification id
 	#7155# review_rounds upgrade fails
-	#7160# Remove/clean up instances of "Journal" appearing in lib/pkp, elsewhere
+	#7160# Remove/clean up instances of "Journal" appearing in lib/sep, elsewhere
 	#7176# Announcements display / conventions cleanup
 	#7185# postgresql install error: relation »notification_settings_pkey« aready exists
 	#7186# postgresql install error: locale field in plugin_settings cannot be NULL
@@ -185,7 +185,7 @@ Bug Fixes
 	#7381# Fix variable typo in TinyMCE image upload plugin
 	#7385# Add Upgrade nag message to authorized User Home pages
 	#7402# Incomplete articles appear in Articles Report
-	#7406# Fix OJS 2.1.1 upgrade issue
+	#7406# Fix CLA 2.1.1 upgrade issue
 	#7411# Article title tags displayed in page head/title
 	#7412# Prevent due dates from being overridden in successive review rounds
 	#7422# Issue select box spills over into sidebar

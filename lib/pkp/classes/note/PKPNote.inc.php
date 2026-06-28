@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file classes/note/PKPNote.inc.php
+ * @file classes/note/SEPNote.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
@@ -9,16 +9,16 @@
  *
  * @class Note
  * @ingroup note
- * @see PKPNoteDAO
+ * @see SEPNoteDAO
  * @brief Class for Note.
  */
 
 
-class PKPNote extends DataObject {
+class SEPNote extends DataObject {
 	/**
 	 * Constructor.
 	 */
-	function PKPNote() {
+	function SEPNote() {
 		parent::DataObject();
 	}
 

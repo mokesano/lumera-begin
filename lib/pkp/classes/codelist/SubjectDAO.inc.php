@@ -15,8 +15,8 @@
  *
  */
 
-import('lib.pkp.classes.codelist.Subject');
-import('lib.pkp.classes.codelist.CodelistItemDAO');
+import('lib.sep.classes.codelist.Subject');
+import('lib.sep.classes.codelist.CodelistItemDAO');
 
 
 class SubjectDAO extends CodelistItemDAO {
@@ -37,7 +37,7 @@ class SubjectDAO extends CodelistItemDAO {
 		if (!AppLocale::isLocaleValid($locale)) {
 			$locale = AppLocale::MASTER_LOCALE;
 		}
-		return "lib/pkp/locale/$locale/bic21subjects.xml";
+		return "lib/sep/locale/$locale/bic21subjects.xml";
 	}
 
 	/**

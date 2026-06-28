@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/fa_IR/manager.xml
@@ -27,7 +27,7 @@
 	<message key="manager.journalManagement">مدیریت ژورنال</message>
 	<message key="manager.language.confirmDefaultSettingsOverwrite">این عمل تنظیمات وابسته به زبان را جایگزین میکند</message>
 	<message key="manager.language.reloadLocalizedDefaultSettings">بارکردن مجدد تنظیمات پیش فرض وابسته به زبان</message>
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS میتواند در دسترس کاربران زبانهائی که توسط سیستم حمایت میشود قرار گیرد. همچنین OJS میتواند به عنوان یک سیستم نسبتا چند زبانی عمل کند و امکان تغییر زبان توسط کاربران در هر صفحه را فراهم کند. همچنین داده های خاصی را ممکن است بتوان حداکثر به دو زبان وارد کرد.<br /><br />چنانچه یک زبان مود حمایت OJS در لیست زیر موجود نباشد از مدیر سایت بخواهید تا آن زبان را نصب کند. برای اطلاع از نحوه افزودن حمایت برای یک زبان جدید به مستندات OJS مراجعه کنید.]]></message>
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA میتواند در دسترس کاربران زبانهائی که توسط سیستم حمایت میشود قرار گیرد. همچنین CLA میتواند به عنوان یک سیستم نسبتا چند زبانی عمل کند و امکان تغییر زبان توسط کاربران در هر صفحه را فراهم کند. همچنین داده های خاصی را ممکن است بتوان حداکثر به دو زبان وارد کرد.<br /><br />چنانچه یک زبان مود حمایت CLA در لیست زیر موجود نباشد از مدیر سایت بخواهید تا آن زبان را نصب کند. برای اطلاع از نحوه افزودن حمایت برای یک زبان جدید به مستندات CLA مراجعه کنید.]]></message>
 	<message key="manager.languages.noneAvailable">متاسفانه زبان دیگری موجود نیست. در صورت تمایل از مدیر سایت بخواهید تا نسبت به نصب آنها اقدام کند.</message>
 	<message key="manager.languages.primaryLocaleInstructions">این زبان پیش فرض سایت مجله خواهد بود.</message>
 	<message key="manager.managementPages">صفحات مدیریتی</message>
@@ -37,7 +37,7 @@
 	<message key="manager.payment.authorFees">قیمت ها برای نویسنده</message>
 	<message key="manager.payment.authorFeesDescription">گزینه های انتخابی همراه با شرح و قیمت های آن (که در ایت قسمت قابل ویرایش است) در مرحله ۱ ساب میشن و در قسمت &quot;در باره مجله&quot; تحت قسمت ساب میشن, و همچنین هر جا که پرداخت لازم باشد, خواهد آمد.</message>
 	<message key="manager.payment.currency">واحد پولی</message>
-	<message key="manager.payment.currencymessage">هیچ تبدیل واحد پولی را انجام نمی دهد. چنانچه پرداخت برای اشتراکها را قبول می کنید باید از تطابق واحد پولی پرداختها از آنچه در اینجا ذکر شده اطمینان حاصل کنید OJS </message>
+	<message key="manager.payment.currencymessage">هیچ تبدیل واحد پولی را انجام نمی دهد. چنانچه پرداخت برای اشتراکها را قبول می کنید باید از تطابق واحد پولی پرداختها از آنچه در اینجا ذکر شده اطمینان حاصل کنید CLA </message>
 	<message key="manager.payment.description">توصیف</message>
 	<message key="manager.payment.details">جزئیات</message>
 	<message key="manager.payment.editSubscription">ویرایش اشتراک</message>
@@ -212,7 +212,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription">شورای نویسندگان امور دبیری را سرپرستی میکند ، دبیر هر مقاله را تعیین می کند ، و با کمک شهرت دبیران موجب شهرت مجله میشود. شورای کارشناسی نقش مشابهی دارد ، به علاوه کارشناسی را نیز به عهده دارند. اعضای شورای کارشناسا ن به قسمت های مدیریتی سیستم دسترسی ندارند بلکه توسط دبیران برای انجام کارشناسی منصوب می شوند.</message>
 	<message key="manager.setup.emailBounceAddress">آدرس برگشت</message>
 	<message key="manager.setup.emailBounceAddressDescription">اگر ایمیلی برگشت بخورد پیغامی به این ادرس ارسال می شود</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>توجه:</strong> برای فعال ساختن این گزینه مدیر سایت میبایست گزینه <tt>allow_envelope_sender</tt> در فایل تنظیمات OJS فعال سازد. همچنین ممکن است ویژگی خاص سرور نیز لازم باشد که ممکن است همه سرور ها آن را نداشته باشند. برای اطلاعات بیشتر به مستندات OJS مراجعه کنید.]]></message>
+	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>توجه:</strong> برای فعال ساختن این گزینه مدیر سایت میبایست گزینه <tt>allow_envelope_sender</tt> در فایل تنظیمات CLA فعال سازد. همچنین ممکن است ویژگی خاص سرور نیز لازم باشد که ممکن است همه سرور ها آن را نداشته باشند. برای اطلاعات بیشتر به مستندات CLA مراجعه کنید.]]></message>
 	<message key="manager.setup.emails">شناسائی ایمیل</message>
 	<message key="manager.setup.emailSignature">امضا</message>
 	<message key="manager.setup.emailSignatureDescription">تمام ایمیلهای از قبل تهیه شده که از طرف مجله ارسال میشود در انتها دارای امضای زیر است.</message>
@@ -234,7 +234,7 @@
 	<message key="manager.setup.focusScope">فوکوس و حیطه</message>
 	<message key="manager.setup.focusScopeDescription"><![CDATA[<b>مثال داده HTML</b>]]></message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">برای اندکس کارهای نویسنده</message>
-	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS بر مبنای  پروتوکل <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> برای استخراج متاداه عمل می کند. این پروتوکل اتاندارد در حال تدوین برای دسترسی کاملا اندکس شده به منابع پژوهشی الکترونیکی در یک مقیاس جهانی میباشد. برای وارد کردن این اطلاعات فرم مشابهی در دسترس نویسندگان قرار میگیرد تا متاداده ساب میشن خود را وارد کنند. مدیر مجله می تواند قسمت هائی که برای اندکس کردن می خواهد انتخاب کند و مثالهائی نیز برای نویسنگان فراهم نماید تا به آنها در جهت اندکس کردن فعالیت های خود کمک کند.]]></message>
+	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[CLA بر مبنای  پروتوکل <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> برای استخراج متاداه عمل می کند. این پروتوکل اتاندارد در حال تدوین برای دسترسی کاملا اندکس شده به منابع پژوهشی الکترونیکی در یک مقیاس جهانی میباشد. برای وارد کردن این اطلاعات فرم مشابهی در دسترس نویسندگان قرار میگیرد تا متاداده ساب میشن خود را وارد کنند. مدیر مجله می تواند قسمت هائی که برای اندکس کردن می خواهد انتخاب کند و مثالهائی نیز برای نویسنگان فراهم نماید تا به آنها در جهت اندکس کردن فعالیت های خود کمک کند.]]></message>
 	<message key="manager.setup.form.contactEmailRequired">ایمیل تماس اصلی لازم است</message>
 	<message key="manager.setup.form.contactNameRequired">آدرس تماس اصلی لازم است</message>
 	<message key="manager.setup.form.journalInitialsRequired">حروف اختصاری مجله لازم است</message>
@@ -257,7 +257,7 @@
 	<message key="manager.setup.information.forLibrarians">برای کتابداران</message>
 	<message key="manager.setup.information.forReaders">برای خوانندگان</message>
 	<message key="manager.setup.initialIssue">شماره نخست</message>
-	<message key="manager.setup.initialIssueDescription">بر حسب فرمات انتخاب شده ، شماره ، دوره ، ویا سال اولین شماره مجله را که قرار است با سیستم OJS منتشر شود وارد کنید:</message>
+	<message key="manager.setup.initialIssueDescription">بر حسب فرمات انتخاب شده ، شماره ، دوره ، ویا سال اولین شماره مجله را که قرار است با سیستم CLA منتشر شود وارد کنید:</message>
 	<message key="manager.setup.institution">انستیتو</message>
 	<message key="manager.setup.issuePerVolume">تعداد شماره در هر دوره</message>
 	<message key="manager.setup.itemsDescription">مواردی را میتوان به اقلام موجود در منوی گشت و گذار افزود. اقلام موجود عبارت اند از: خانه ، درباره ، صفحه خانگی ، و غیره که در بالای هر صفحه ظاهر می شوند.</message>
@@ -368,7 +368,7 @@
 	<message key="manager.setup.reviewGuidelinesDescription">راهنمای کارشناسی ضوابط قضاوت در مورد قابل چاپ بودن ساب میشن در اختیار کارشناس میگذارد. همچنین دستورالعمل تهیه یک کارشناسی مناسب را نشان میدهد.</message>
 	<message key="manager.setup.reviewOptions">گزینه های کارشناسی</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">ایمیل های اتوماتیک یادآور که در ایمیلهای آماده سیستم موجود است را میتوان دو موقع برای کارشناس فرستاد. البته خود دبیر هر وقت بخواهد میتواند ایمیل یاد آور بفرستد.</message>
-	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>توجه: </strong> برای فعال ساختن این گزینه مدیر سایت میبایست گزینه <tt>scheduled_tasks</tt> را در فایل تنظیمات سیستم فعال سازد. برای این گزینه ممکن است تنظیم ویژگیهای خاصی در سرور لازم باشد که ممکن است در همه سرورها مقدور نباشد. در مستندات OJS به این موضوع اشاره شده است.]]></message>
+	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>توجه: </strong> برای فعال ساختن این گزینه مدیر سایت میبایست گزینه <tt>scheduled_tasks</tt> را در فایل تنظیمات سیستم فعال سازد. برای این گزینه ممکن است تنظیم ویژگیهای خاصی در سرور لازم باشد که ممکن است در همه سرورها مقدور نباشد. در مستندات CLA به این موضوع اشاره شده است.]]></message>
 	<message key="manager.setup.reviewOptions.blindReview">کارشناسی محرمانه</message>
 	<message key="manager.setup.reviewOptions.noteOnModification">هنکام پردازش مقاله قابل تغییر است</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">متوسط مهلت کارشناسی</message>
@@ -387,7 +387,7 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[لینک <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">اطمینان از کارشناسی محرمانه</a> در صفحاتی که نویسندگان و کارشناسان فایل آپلود میکنند ظاهر میشود.]]></message>
 	<message key="manager.setup.reviewPolicy">سیاست های کارشناسی</message>
 	<message key="manager.setup.reviewProcess">روند کارشناسی</message>
-	<message key="manager.setup.reviewProcessDescription"><![CDATA[OJS از دو مدل برای اداره کارشناسی تبعیت میکند: روش استاندارد کارشناسی که مورد توصیه است موجب میشود که کارشناس مراحل مختلف را به تربتیب انجام دهد و بدین ترتیب تاریخچه کاملی از کارشناسی در سیستم ذخیره می شود. همچنین امکان فعال سازی ارساب اتوماتیک ایمیل یادآور را فراهم میسازد. بعلاوه گزینه های استاندارد کارشناسی مانند قبول ، رد و غیره را در معرض انتخاب کارشناس میگذارد.<br /><br />یکی از گزینه های زیر را انتخاب کنید:]]></message>
+	<message key="manager.setup.reviewProcessDescription"><![CDATA[CLA از دو مدل برای اداره کارشناسی تبعیت میکند: روش استاندارد کارشناسی که مورد توصیه است موجب میشود که کارشناس مراحل مختلف را به تربتیب انجام دهد و بدین ترتیب تاریخچه کاملی از کارشناسی در سیستم ذخیره می شود. همچنین امکان فعال سازی ارساب اتوماتیک ایمیل یادآور را فراهم میسازد. بعلاوه گزینه های استاندارد کارشناسی مانند قبول ، رد و غیره را در معرض انتخاب کارشناس میگذارد.<br /><br />یکی از گزینه های زیر را انتخاب کنید:]]></message>
 	<message key="manager.setup.reviewProcessEmail">روند کارشناسی بر مبنای ایمیل</message>
 	<message key="manager.setup.reviewProcessStandard">روند کارشناسی استاندارد</message>
 	<message key="manager.setup.reviewProcessStandardDescription">در این روش دبیر عنوان و چکیده مقاله را به کارشناس انتخاب شده ایمیل میکنند و از وی جهت انجام کارشناسی دعوت به عمل می آورند. از کارشناس میخواهند که وارد سایت مجله شده و کارشناسی را کامل کند. کارشناس میبایست وارد سایت مجله شود و در آنجا موافقت خود را برای انجام کارشناسی اعلام کند وسپس فایل مقاله را دانلود کرده و پس از تکمیل کارشناسی نتیجه را وارد سایت کرده و یک گزینه کارشناسی را انتخاب کند و در نهایت تمام کار خود را ساب میت کند.</message>
@@ -397,7 +397,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">چنانچه انواع مقالات تعیین نشود ، مقالات ارسالی به عنوان پیش فرض مقاله ساب میت می شوند.</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[برای تعریف انواع مقالات و یا تغییر آنها برای این مجله به قسمت مدیریت انواع مقالات بروید. <br /><br />انتخاب نوع مقاله توسط نویسنده.]]></message>
 	<message key="manager.setup.securitySettings">تنظیمات دستیابی و امنیتی</message>
-	<message key="manager.setup.securitySettingsDescription">OJS تعدادی گزینه امنیتی دارد که میتواند دستیابی به قسمتهای مختلف را محدود کند.</message>
+	<message key="manager.setup.securitySettingsDescription">CLA تعدادی گزینه امنیتی دارد که میتواند دستیابی به قسمتهای مختلف را محدود کند.</message>
 	<message key="manager.setup.selectEditorDescription">دبیری که مسئول رسیدگی به مقاله است</message>
 	<message key="manager.setup.selectSectionDescription">نوع مقاله که ایتم مورد نظر به آن تعلق دارد</message>
 	<message key="manager.setup.showGalleyLinksDescription">همیشه لینک تمام متن را نشان بده و همزمان تذکر بده که دسترسی محدود است</message>
@@ -481,7 +481,7 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">هفته قبل از انقضای اشتراک</message>
 	<message key="manager.subscriptionPolicies.expiryReminders">یادآور انقضای اشتراک</message>
 	<message key="manager.subscriptionPolicies.expiryRemindersDescription">یادآوری اتوماتیک با ایمیل که متن آن در قسمت ایمیلهای از قبل تهیه شده قابل ویرایش است. این ایمیل قبل و بعد از انقضای اشتراک برای کاربر ارسال میشود</message>
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>توجه:</strong> برای فعال ساختن این گزینه ها ، مدیر سایت باید گزینه <tt>scheduled_tasks</tt> را در فایل تنظیمات  OJS فعال سازد. البته برای راه افتادن این گزینه ، سرور میبایست ویژگیهای لازم را داشته باشد که ممکن است تحت تمام سرورها مقدور نباشد. برای اطلاعات بیشتر به مستندات OJS مراجعه کنید.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong>توجه:</strong> برای فعال ساختن این گزینه ها ، مدیر سایت باید گزینه <tt>scheduled_tasks</tt> را در فایل تنظیمات  CLA فعال سازد. البته برای راه افتادن این گزینه ، سرور میبایست ویژگیهای لازم را داشته باشد که ممکن است تحت تمام سرورها مقدور نباشد. برای اطلاعات بیشتر به مستندات CLA مراجعه کنید.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne">لطفا یکی از موارد زیر را انتخاب کنید</message>
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[HTML را میتوان در نواحی متنی برای تنظیمات مختلف مثل اندازه فونت یا رنگ آن وارد کرد. در این متن ها انتهای پاراگراف بطور اتوماتیک با  <tt>&lt;br&gt;</tt> مشخص میشود. ویراستار HTML با مرورگر فایرفاکس کار میکند.]]></message>
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid">لطفا مقدار صحیحی برای تعداد ماههای باقیمانده بعد از انقضای اشتراک وارد کنید</message>
@@ -489,7 +489,7 @@
 	<message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid">لطفا مقدار صحیحی برای تعداد هفته های باقیمانده بعد از انقضای اشتراک وارد کنید</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid">لطفا مقدار صحیحی برای تعداد هفته های باقیمانده قبل از انقضای اشتراک وارد کنید</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription">خوانندگان ثبت نام کرده میتوانند فهرست مطالب شماره جدید را به محض منتشر شدن دریافت کنند.</message>
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>توجه:</strong> برای فعال ساختن این پزینه ، مدیر سایت میبایست گزینه  <tt>scheduled_tasks</tt> را در فایل تنظیمات OJS فعال سازد. البته برای راه افتادن این گزینه ، سرور میبایست ویژگیهای لازم را داشته باشد که ممکن است تحت تمام سرورها مقدور نباشد. برای اطلاعات بیشتر به مستندات OJS مراجعه کنید.]]></message>
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong>توجه:</strong> برای فعال ساختن این پزینه ، مدیر سایت میبایست گزینه  <tt>scheduled_tasks</tt> را در فایل تنظیمات CLA فعال سازد. البته برای راه افتادن این گزینه ، سرور میبایست ویژگیهای لازم را داشته باشد که ممکن است تحت تمام سرورها مقدور نباشد. برای اطلاعات بیشتر به مستندات CLA مراجعه کنید.]]></message>
 	<message key="manager.subscriptionPolicies.openAccessOptions">گزینه های دسترسی آزاد برای مجلات غیر مجانی</message>
 	<message key="manager.subscriptionPolicies.openAccessOptionsDescription">مجلات غیر مجانی میتوانند دسترسی آزاد تاخیری ویا بایکانی توسط خود نویسنده را به رسمیت بشناسند و بدین وسیله خوانندگان خود را افزایش دهند. سیاست اتخاذ شده در قسمت درباره مجله خواهد آمد.</message>
 	<message key="manager.subscriptionPolicies.subscriptionAdditionalInformation">اطلاعات اشتراک</message>

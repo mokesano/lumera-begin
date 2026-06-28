@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 <!--
   * 000001.xml
   *
-  * Aquesta traducció al català de l’OJS (versió 2.2.3) fou realitzada per Judith Rodriguez
+  * Aquesta traducció al català de l’CLA (versió 2.2.3) fou realitzada per Judith Rodriguez
   * amb el suport de la revista Athenea Digital i el Departament de Psicologia Social de la
   * Universitat Autònoma de Barcelona.
   * La traducció amplia la tasca previament realitzada per a la UOC i l'IEC incorporant les
@@ -13,7 +13,7 @@
   * Copyright (c) 2003-2016 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Credits: http://pkp.sfu.ca/wiki/index.php?title=OJS:_Catalan_%28ca_ES%29
+  * Credits: http://lumera.sangia.org/wiki/index.php?title=CLA:_Catalan_%28ca_ES%29
   *
   * Frequently Asked Questions 
   *
@@ -23,9 +23,9 @@
 	<section>
 		<![CDATA[
 <ol>
-	<li><a href="#section1">Com puc començar a crear una revista amb l'OJS?</a></li>
-	<li><a href="#section2">On puc trobar assistència tècnica, trametre errors i suggerir millores per a l'OJS?</a></li>
-	<li><a href="#section3">Què puc fer per a traduir l'OJS a una altra llengua?</a></li>
+	<li><a href="#section1">Com puc començar a crear una revista amb l'CLA?</a></li>
+	<li><a href="#section2">On puc trobar assistència tècnica, trametre errors i suggerir millores per a l'CLA?</a></li>
+	<li><a href="#section3">Què puc fer per a traduir l'CLA a una altra llengua?</a></li>
 	<li><a href="#section4">Per què hi ha autors/es que reben un missatge segons el qual la revista «no accepta trameses actualment»?</a></li>
 	<li><a href="#section5">Què he de fer per a atorgar accés als manuscrits que es trobin en els processos de revisió o de «publicació preliminar» anteriors a la publicació a la revista?</a></li>
 	<li><a href="#section6">Com puc donar a conèixer la meva revista a Internet?</a></li>
@@ -36,26 +36,26 @@
 </ol>
 		]]>	
 	</section>
-	<section title="1. Com puc començar a crear una revista amb l'OJS?">
+	<section title="1. Com puc començar a crear una revista amb l'CLA?">
 		<![CDATA[
 <ol type="a">
-	<li><a href="http://pkp.sfu.ca/ojs_download" target="_blank">Baixeu</a> l'OJS i instal·leu-lo seguint les instruccions de l'script d'instal·lació en un servidor web que compleixi els requisits del programa.</li>
-	<li>Utilitzeu el nom d'usuari/usuària i la contrasenya d'administració generats durant la instal·lació de l'OJS per a iniciar la sessió.</li>
+	<li><a href="http://lumera.sangia.org/cla_download" target="_blank">Baixeu</a> l'CLA i instal·leu-lo seguint les instruccions de l'script d'instal·lació en un servidor web que compleixi els requisits del programa.</li>
+	<li>Utilitzeu el nom d'usuari/usuària i la contrasenya d'administració generats durant la instal·lació de l'CLA per a iniciar la sessió.</li>
 	<li>Creeu una nova revista a la secció «Revistes allotjades».</li>
 	<li>L'administrador/a del lloc web obté automàticament el rol d'administrador/a de la revista, però si voleu podeu crear un o més usuaris/usuàries nous i atorgar-los aquesta funció.</li>
 	<li>A continuació, l'administrador/a de la revista és l'encarregat d'accedir a la configuració i de fer-ne els cinc passos (no cal enllestir-los tots a la vegada) per a crear un lloc web destinat a rebre trameses, gestionar el procés editorial i publicar la revista en línia.</li>
-	<li>Consulteu el document <a href="http://pkp.sfu.ca/files/OJSinanHour.pdf" target="_blank">OJS in an Hour (en anglès)</a> si necessiteu més informació sobre com començar a treballar amb l'OJS.</li>
+	<li>Consulteu el document <a href="http://lumera.sangia.org/files/CLAinanHour.pdf" target="_blank">CLA in an Hour (en anglès)</a> si necessiteu més informació sobre com començar a treballar amb l'CLA.</li>
 </ol>
 		]]>
 	</section>
-	<section title="2. On puc trobar assistència tècnica, trametre errors i suggerir millores per a l'OJS?">
+	<section title="2. On puc trobar assistència tècnica, trametre errors i suggerir millores per a l'CLA?">
 		<![CDATA[
-<p>El Public Knowledge Project posa a la vostra disposició un <a href="http://forum.pkp.sfu.ca/" target="_blank">fòrum de suport</a> on podeu cercar respostes als vostres dubtes als fils de discussió existents (actualment ja n'hi ha més d'un miler), o bé crear un fil nou. Així, per exemple hi podeu cercar missatges d'error per a veure les solucions proposades per a problemes coneguts. En cas que el fòrum no solucioni el vostre problema, podeu enviar les vostres consultes a <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>. A més, podeu trametre informes d'errors a través de la plataforma <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github issues</a> del PKP.
+<p>El Sangia Editorial Project posa a la vostra disposició un <a href="http://forum.lumera.sangia.org/" target="_blank">fòrum de suport</a> on podeu cercar respostes als vostres dubtes als fils de discussió existents (actualment ja n'hi ha més d'un miler), o bé crear un fil nou. Així, per exemple hi podeu cercar missatges d'error per a veure les solucions proposades per a problemes coneguts. En cas que el fòrum no solucioni el vostre problema, podeu enviar les vostres consultes a <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>. A més, podeu trametre informes d'errors a través de la plataforma <a href="https://github.com/sep/sep-lib#issues" target="_blank">Github issues</a> del SEP.
 		]]>
 	</section>
-	<section title="3. Què puc fer per a traduir l'OJS a una altra llengua?">
+	<section title="3. Què puc fer per a traduir l'CLA a una altra llengua?">
 		<![CDATA[
-<p>Trobareu instruccions per a la traducció a altres llengües al fitxer «docs/README» que s'inclou amb la baixada de l'OJS. A més, podeu trobar informació addicional sobre problemes habituals relacionats amb la traducció de l'OJS al <a href="http://forum.pkp.sfu.ca/" target="_blank">fòrum de suport del PKP</a>.</p>
+<p>Trobareu instruccions per a la traducció a altres llengües al fitxer «docs/README» que s'inclou amb la baixada de l'CLA. A més, podeu trobar informació addicional sobre problemes habituals relacionats amb la traducció de l'CLA al <a href="http://forum.lumera.sangia.org/" target="_blank">fòrum de suport del SEP</a>.</p>
 		]]>
 	</section>
 	<section title='4. Per què hi ha autors/es que reben un missatge segons el qual la revista «no accepta trameses actualment»?'>
@@ -65,12 +65,12 @@
 	</section>
 	<section title='5. Què he de fer per a atorgar accés als manuscrits que es trobin en els processos de revisió o de «publicació preliminar» anteriors a la publicació a la revista?'>
 		<![CDATA[
-	<p>Els editors/es disposen de dues opcions per a oferir «accés a publicacions preliminars». Així, en primer lloc poden crear una secció de publicacions preliminars on s'afegiran els articles que hagin estat aprovats per a un número d'aparició propera però que encara no estiguin a punt per a ser publicats. Els articles en publicació preliminar s'afegeixen al sumari del número actual. Una vegada el nou número ja sigui a punt per a ser publicat, l'editor/a ha de suprimir els articles del número anterior i els ha d'afegir a aquest nou número. La segona opció de què disposen els editors/es és l'addició d'un URL anomenat «Visualitza la prova» a la pàgina d'edició, que permet crear una visualització de publicació preliminar per a la tramesa. Aquest URL, doncs, proporciona accés de «publicació preliminar» a l'article (només als usuaris/usuàries amb permís atorgat) abans que aquest es publiqui en un número de la revista. Actualment l'equip del PKP està valorant l'interès generat per aquesta funció amb l'objectiu de determinar si cal convertir-la en un procés formal.</p>
+	<p>Els editors/es disposen de dues opcions per a oferir «accés a publicacions preliminars». Així, en primer lloc poden crear una secció de publicacions preliminars on s'afegiran els articles que hagin estat aprovats per a un número d'aparició propera però que encara no estiguin a punt per a ser publicats. Els articles en publicació preliminar s'afegeixen al sumari del número actual. Una vegada el nou número ja sigui a punt per a ser publicat, l'editor/a ha de suprimir els articles del número anterior i els ha d'afegir a aquest nou número. La segona opció de què disposen els editors/es és l'addició d'un URL anomenat «Visualitza la prova» a la pàgina d'edició, que permet crear una visualització de publicació preliminar per a la tramesa. Aquest URL, doncs, proporciona accés de «publicació preliminar» a l'article (només als usuaris/usuàries amb permís atorgat) abans que aquest es publiqui en un número de la revista. Actualment l'equip del SEP està valorant l'interès generat per aquesta funció amb l'objectiu de determinar si cal convertir-la en un procés formal.</p>
 		]]>
 	</section>
 	<section title="6. Com puc donar a conèixer la meva revista a Internet?">
 		<![CDATA[
-<p>Poc després d'haver estat creada, la revista començarà a aparèixer als resultats de cerca de Google i d'altres cercadors importants, però a banda també podeu fer altres passos per a aconseguir que la vostra publicació tingui més visibilitat. Assegureu-vos de registrar la revista amb el PKP Harvester al pas 3 de la configuració per tal d'indexar la revista als índexs de l'Open Archives Initiative, entre els quals s'inclouen el <a href="http://pkp.sfu.ca/harvester/" target="_blank">PKP Harvester</a> i l'<a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Si la vostra revista ofereix accés obert, demaneu a la biblioteca de la vostra universitat com podeu incloure la revista a la seva llista de publicacions electròniques i com us podeu posar en contacte amb altres biblioteques de recerca mitjançant una llista de distribució de bibliotecaris/àries. També podeu intentar utilitzar els llocs web o les llistes de distribució d'associacions professionals per a anunciar una «petició d'articles» o el llançament de la revista. Finalment, és recomanable que a la secció de paràmetres de seguretat i accés de la configuració (pas 2.7) l'administrador/a de la revista permeti que els usuaris/usuàries es registrin com a lectors/es per tal que rebin notificacions periòdiques sobre la publicació de nous números.</p>
+<p>Poc després d'haver estat creada, la revista començarà a aparèixer als resultats de cerca de Google i d'altres cercadors importants, però a banda també podeu fer altres passos per a aconseguir que la vostra publicació tingui més visibilitat. Assegureu-vos de registrar la revista amb el SEP Harvester al pas 3 de la configuració per tal d'indexar la revista als índexs de l'Open Archives Initiative, entre els quals s'inclouen el <a href="http://lumera.sangia.org/harvester/" target="_blank">SEP Harvester</a> i l'<a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Si la vostra revista ofereix accés obert, demaneu a la biblioteca de la vostra universitat com podeu incloure la revista a la seva llista de publicacions electròniques i com us podeu posar en contacte amb altres biblioteques de recerca mitjançant una llista de distribució de bibliotecaris/àries. També podeu intentar utilitzar els llocs web o les llistes de distribució d'associacions professionals per a anunciar una «petició d'articles» o el llançament de la revista. Finalment, és recomanable que a la secció de paràmetres de seguretat i accés de la configuració (pas 2.7) l'administrador/a de la revista permeti que els usuaris/usuàries es registrin com a lectors/es per tal que rebin notificacions periòdiques sobre la publicació de nous números.</p>
 		]]>
 	</section>
 	<section title="7. Com pot la revista presentar un registre de l'historial de persones que han treballat a l'equip editorial?">

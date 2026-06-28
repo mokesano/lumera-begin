@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * @file plugins/generic/objectsForReview/locale/pt_BR/locale.xml
@@ -78,7 +78,7 @@
 	<message key="plugins.generic.objectsForReview.settings.enableDueReminderBeforeDays2">dia(s) antes da data de conclusão.</message>
 	<message key="plugins.generic.objectsForReview.settings.enableDueReminderAfterDays1">Enviar lembrete ao autor</message>
 	<message key="plugins.generic.objectsForReview.settings.enableDueReminderAfterDays2">dia(s) após a data de conclusão.</message>
-	<message key="plugins.generic.objectsForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Nota:</strong> Para ativar estas opções, o administrador do sistema deve habilitar a opção <tt>scheduled_tasks</tt> no arquivo de configuração do OJS. Configurações adicionais no servidor de hospedagem pode ser necessárias para suportar esta funcionalidade (o que pode não ser possível em todos os servidores), conforme indicado na documentação do OJS.]]></message>
+	<message key="plugins.generic.objectsForReview.settings.scheduledTasksDisabled"><![CDATA[<strong>Nota:</strong> Para ativar estas opções, o administrador do sistema deve habilitar a opção <tt>scheduled_tasks</tt> no arquivo de configuração do CLA. Configurações adicionais no servidor de hospedagem pode ser necessárias para suportar esta funcionalidade (o que pode não ser possível em todos os servidores), conforme indicado na documentação do CLA.]]></message>
 	<message key="plugins.generic.objectsForReview.settings.additionalInformation">Informações adicionais</message>
 	<message key="plugins.generic.objectsForReview.settings.additionalInformationDescription">Informações adicionais publicadas com a lista de objetos para revisão.</message>
 	<message key="plugins.generic.objectsForReview.search.field.title">Título</message>

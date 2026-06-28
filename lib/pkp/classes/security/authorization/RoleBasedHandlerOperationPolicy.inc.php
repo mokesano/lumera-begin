@@ -13,7 +13,7 @@
  *  control.
  */
 
-import('lib.pkp.classes.security.authorization.HandlerOperationPolicy');
+import('lib.sep.classes.security.authorization.HandlerOperationPolicy');
 
 class RoleBasedHandlerOperationPolicy extends HandlerOperationPolicy {
 	/** @var array the target roles */
@@ -27,7 +27,7 @@ class RoleBasedHandlerOperationPolicy extends HandlerOperationPolicy {
 
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $roles array|integer either a single role ID or an array of role ids
 	 * @param $operations array|string either a single operation or a list of operations that
 	 *  this policy is targeting.

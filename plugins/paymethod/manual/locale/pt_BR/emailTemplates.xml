@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/sep/dtd/emailTemplateData.dtd">
 <!--
   * plugins/paymethod/manual/locale/pt_BR/emailTemplateData.xml
   *
@@ -17,7 +17,7 @@
 O item adquirido é "{$itemName}".
 Valor em ({$itemCurrencyCode}): {$itemCost}
 
-Esta é uma mensagem automática da ferramenta de Pagamento manual do Open Journal Systems.</body>
+Esta é uma mensagem automática da ferramenta de Pagamento manual do Code Lumera Editorial.</body>
 		<description>Mensagem automática notificando editor-gerente que um pagamento manual foi realizado e exige processamento.</description>
 	</email_text>
 </email_texts>

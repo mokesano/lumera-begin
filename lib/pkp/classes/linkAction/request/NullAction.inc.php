@@ -13,7 +13,7 @@
  */
 
 
-import('lib.pkp.classes.linkAction.request.LinkActionRequest');
+import('lib.sep.classes.linkAction.request.LinkActionRequest');
 
 class NullAction extends LinkActionRequest {
 	/**
@@ -31,7 +31,7 @@ class NullAction extends LinkActionRequest {
 	 * @see LinkActionRequest::getJSLinkActionRequest()
 	 */
 	function getJSLinkActionRequest() {
-		return '$.pkp.classes.linkAction.NullAction';
+		return '$.sep.classes.linkAction.NullAction';
 	}
 }
 

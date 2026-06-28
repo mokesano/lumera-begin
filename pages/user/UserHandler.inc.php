@@ -26,7 +26,7 @@ class UserHandler extends Handler {
 	/**
 	 * Display user index page.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function index($args, &$request) {
 		$this->validate();
@@ -94,8 +94,8 @@ class UserHandler extends Handler {
 					|| $subscriptionTypeDao->subscriptionTypesExistByInstitutional($journalId, true)) ? true : false;
 			$templateMgr->assign('subscriptionsEnabled', $subscriptionsEnabled);
 
-			import('classes.payment.ojs.OJSPaymentManager');
-			$paymentManager = new OJSPaymentManager($request);
+			import('classes.payment.cla.CLAPaymentManager');
+			$paymentManager = new CLAPaymentManager($request);
 			$acceptGiftPayments = $paymentManager->acceptGiftPayments();
 			$templateMgr->assign('acceptGiftPayments', $acceptGiftPayments);
 			$membershipEnabled = $paymentManager->membershipEnabled();
@@ -121,7 +121,7 @@ class UserHandler extends Handler {
 	/**
 	 * Display user gifts page
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function gifts($args, $request) {
 		$this->validate();
@@ -130,8 +130,8 @@ class UserHandler extends Handler {
 		if (!$journal) $request->redirect(null, 'user');
 
 		// Ensure gift payments are enabled
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptGiftPayments = $paymentManager->acceptGiftPayments();
 		if (!$acceptGiftPayments) $request->redirect(null, 'user');
 
@@ -163,7 +163,7 @@ class UserHandler extends Handler {
 	/**
 	 * User redeems a gift
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function redeemGift($args, $request) {
 		$this->validate();
@@ -174,8 +174,8 @@ class UserHandler extends Handler {
 		if (!$journal) $request->redirect(null, 'user');
 
 		// Ensure gift payments are enabled
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptGiftPayments = $paymentManager->acceptGiftPayments();
 		if (!$acceptGiftPayments) $request->redirect(null, 'user');
 
@@ -229,7 +229,7 @@ class UserHandler extends Handler {
 	/**
 	 * Display subscriptions page
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function subscriptions($args, &$request) {
 		$this->validate();
@@ -265,8 +265,8 @@ class UserHandler extends Handler {
 			$userInstitutionalSubscriptions =& $subscriptionDao->getSubscriptionsByUserForJournal($userId, $journalId);
 		}
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptSubscriptionPayments = $paymentManager->acceptSubscriptionPayments();
 
 		$this->setupTemplate($request, true);
@@ -392,7 +392,7 @@ class UserHandler extends Handler {
 	/**
 	 * Become a given role.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function become($args, &$request) {
 		parent::validate(true);
@@ -440,7 +440,7 @@ class UserHandler extends Handler {
 		$this->validate(true);
 		$authorizationMessage = htmlentities($request->getUserVar('message'));
 		$this->setupTemplate($request, true);
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_USER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_USER);
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('message', $authorizationMessage);
 		return $templateMgr->display('common/message.tpl');
@@ -460,12 +460,12 @@ class UserHandler extends Handler {
 
 	/**
 	 * Setup common template variables.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $subclass boolean set to true if caller is below this handler in the hierarchy
 	 */
 	function setupTemplate(&$request, $subclass = false) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_AUTHOR, LOCALE_COMPONENT_OJS_EDITOR, LOCALE_COMPONENT_OJS_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_AUTHOR, LOCALE_COMPONENT_CLA_EDITOR, LOCALE_COMPONENT_CLA_MANAGER);
 		$templateMgr =& TemplateManager::getManager();
 		if ($subclass) {
 			$templateMgr->assign('pageHierarchy', array(array($request->url(null, 'user'), 'navigation.user')));
@@ -478,7 +478,7 @@ class UserHandler extends Handler {
 
 	function viewCaptcha($args, $request) {
 		$captchaId = (int) array_shift($args);
-		import('lib.pkp.classes.captcha.CaptchaManager');
+		import('lib.sep.classes.captcha.CaptchaManager');
 		$captchaManager = new CaptchaManager();
 		if ($captchaManager->isEnabled()) {
 			$captchaDao =& DAORegistry::getDAO('CaptchaDAO');
@@ -495,7 +495,7 @@ class UserHandler extends Handler {
 	 * View the public user profile for a user, specified by user ID,
 	 * if that user should be exposed for public view.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function viewPublicProfile($args, &$request) {
 		$this->validate(false);
@@ -529,7 +529,7 @@ class UserHandler extends Handler {
 	/**
 	 * Purchase a subscription.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function purchaseSubscription($args, &$request) {
 		$this->validate();
@@ -540,8 +540,8 @@ class UserHandler extends Handler {
 		if (!$journal) $request->redirect(null, 'user');
 		if ($journal->getSetting('publishingMode') != PUBLISHING_MODE_SUBSCRIPTION) $request->redirect(null, 'user');
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptSubscriptionPayments = $paymentManager->acceptSubscriptionPayments();
 		if (!$acceptSubscriptionPayments) $request->redirect(null, 'user');
 
@@ -608,7 +608,7 @@ class UserHandler extends Handler {
 	/**
 	 * Pay for a subscription purchase.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function payPurchaseSubscription($args, &$request) {
 		$this->validate();
@@ -619,8 +619,8 @@ class UserHandler extends Handler {
 		if (!$journal) $request->redirect(null, 'user');
 		if ($journal->getSetting('publishingMode') != PUBLISHING_MODE_SUBSCRIPTION) $request->redirect(null, 'user');
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptSubscriptionPayments = $paymentManager->acceptSubscriptionPayments();
 		if (!$acceptSubscriptionPayments) $request->redirect(null, 'user');
 
@@ -712,7 +712,7 @@ class UserHandler extends Handler {
 	/**
 	 * Complete the purchase subscription process.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function completePurchaseSubscription($args, &$request) {
 		$this->validate();
@@ -723,8 +723,8 @@ class UserHandler extends Handler {
 		if (!$journal) $request->redirect(null, 'user');
 		if ($journal->getSetting('publishingMode') != PUBLISHING_MODE_SUBSCRIPTION) $request->redirect(null, 'user');
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptSubscriptionPayments = $paymentManager->acceptSubscriptionPayments();
 		if (!$acceptSubscriptionPayments) $request->redirect(null, 'user');
 
@@ -763,7 +763,7 @@ class UserHandler extends Handler {
 	/**
 	 * Pay the "renew subscription" fee.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function payRenewSubscription($args, &$request) {
 		$this->validate();
@@ -774,8 +774,8 @@ class UserHandler extends Handler {
 		if (!$journal) $request->redirect(null, 'user');
 		if ($journal->getSetting('publishingMode') != PUBLISHING_MODE_SUBSCRIPTION) $request->redirect(null, 'user');
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 		$acceptSubscriptionPayments = $paymentManager->acceptSubscriptionPayments();
 		if (!$acceptSubscriptionPayments) $request->redirect(null, 'user');
 
@@ -821,14 +821,14 @@ class UserHandler extends Handler {
 	/**
 	 * Pay for a membership.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function payMembership($args, &$request) {
 		$this->validate();
 		$this->setupTemplate($request);
 
-		import('classes.payment.ojs.OJSPaymentManager');
-		$paymentManager = new OJSPaymentManager($request);
+		import('classes.payment.cla.CLAPaymentManager');
+		$paymentManager = new CLAPaymentManager($request);
 
 		$journal =& $request->getJournal();
 		$user =& $request->getUser();

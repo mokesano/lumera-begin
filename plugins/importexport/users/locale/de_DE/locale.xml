@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/users/locale/de_DE/locale.xml
@@ -49,7 +49,7 @@ Beispiele:
 	<message key="plugins.importexport.users.import.errorsOccurred">Import fehlerhaft</message>
 	<message key="plugins.importexport.users.import.confirmUsers">Bestätigen Sie, dass Sie diese Benutzer/innen in das System importieren wollen</message>
 	<message key="plugins.importexport.users.import.warning">Warnung</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">{$importHash} Passworte können nicht genutzt werden; OJS ist für {$ojsHash} konfiguriert. Wenn Sie fortfahren, müssen Sie die importierten Passworte zurücksetzen.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">{$importHash} Passworte können nicht genutzt werden; CLA ist für {$claHash} konfiguriert. Wenn Sie fortfahren, müssen Sie die importierten Passworte zurücksetzen.</message>
 	<message key="plugins.importexport.users.unknownJournal">Unbekannter Zeitschriftpfad "{$journalPath}".</message>
 
 	<message key="plugins.importexport.users.export.exportUsers">Benutzer/innen exportieren</message>

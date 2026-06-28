@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE toc SYSTEM "../../../../lib/pkp/dtd/helpToc.dtd">
+<!DOCTYPE toc SYSTEM "../../../../lib/sep/dtd/helpToc.dtd">
 
 <!--
   * 000000.xml
@@ -12,8 +12,8 @@
   *
   -->
 
-<toc id="index/toc/000000" locale="da_DK" title="Hjælp til OJS" parent_topic="index/topic/000000">
-	<topic id="intro/topic/000000" title="Introduktion til OJS"/>
+<toc id="index/toc/000000" locale="da_DK" title="Hjælp til CLA" parent_topic="index/topic/000000">
+	<topic id="intro/topic/000000" title="Introduktion til CLA"/>
 	<topic id="site/topic/000000" title="Administration af websted"/>
 	<topic id="journal/topic/000000" title="Administration af tidsskrift"/>
 	<topic id="submission/topic/000000" title="Indleveringsforløbet"/>

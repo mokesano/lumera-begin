@@ -12,7 +12,7 @@
  * Operations for retrieving and modifying StaticPages objects.
  *
  */
-import('lib.pkp.classes.db.DAO');
+import('lib.sep.classes.db.DAO');
 
 class StaticPagesDAO extends DAO {
 	/** @var $parentPluginName Name of parent plugin */

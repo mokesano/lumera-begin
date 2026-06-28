@@ -85,7 +85,7 @@
 		<p class="content-type">{$section->getLocalizedIdentifyType()|escape}</p>
 			{else}
 		<p class="content-type">	
-		{translate key="rt.metadata.pkp.peerReviewed"}
+		{translate key="rt.metadata.sep.peerReviewed"}
 		</p>
 		{/if}
 
@@ -167,7 +167,7 @@
 		{if $section && $section->getLocalizedIdentifyType()}
 		<p class="content-type">{$section->getLocalizedIdentifyType()|escape}</p>
 			{else}
-		<p class="content-type">{translate key="rt.metadata.pkp.peerReviewed"}</p>
+		<p class="content-type">{translate key="rt.metadata.sep.peerReviewed"}</p>
 		{/if}
 
 		<div class="lozenges"></div>

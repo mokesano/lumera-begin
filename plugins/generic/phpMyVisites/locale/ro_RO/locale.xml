@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/phpMyVisites/locale/ro_RO/locale.xml
@@ -16,7 +16,7 @@
 
 	<!-- phpMyVisites -->
 	<message key="plugins.generic.phpmv.displayName">Modulul phpMyVisites</message>
-	<message key="plugins.generic.phpmv.description"><![CDATA[Integrează OJS cu phpMyVisites: o aplicaţie open source pentru analiza traficului pe site. Necesită instalarea deja a lui phpMyVisites. Vedeţi <a href="http://www.phpmyvisites.us/" title="phpMyVisites site">siteul phpMyVisites</a> pentru mai multe informaţii.]]></message>
+	<message key="plugins.generic.phpmv.description"><![CDATA[Integrează CLA cu phpMyVisites: o aplicaţie open source pentru analiza traficului pe site. Necesită instalarea deja a lui phpMyVisites. Vedeţi <a href="http://www.phpmyvisites.us/" title="phpMyVisites site">siteul phpMyVisites</a> pentru mai multe informaţii.]]></message>
 
 	<!-- phpMyVisites Settings Management -->
 	<message key="plugins.generic.phpmv.manager.settings">Setări</message>

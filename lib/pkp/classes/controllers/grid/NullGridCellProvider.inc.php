@@ -15,7 +15,7 @@
  * purposes using flags, for example).
  */
 
-import('lib.pkp.classes.controllers.grid.GridCellProvider');
+import('lib.sep.classes.controllers.grid.GridCellProvider');
 
 class NullGridCellProvider extends GridCellProvider {
 	/**

@@ -13,7 +13,7 @@
  * @brief DOAJ import/export plugin DOM functions for export
  */
 
-import('lib.pkp.classes.xml.XMLCustomWriter');
+import('lib.sep.classes.xml.XMLCustomWriter');
 
 class DOAJExportDom {
 	/**

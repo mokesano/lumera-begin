@@ -13,7 +13,7 @@
  * @brief Form for adding/editing a citation.
  */
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 define('CITATION_FORM_FULL_TEMPLATE', 'controllers/grid/citation/form/citationForm.tpl');
 define('CITATION_FORM_COMPARISON_TEMPLATE', 'controllers/grid/citation/form/citationFormErrorsAndComparison.tpl');
@@ -40,7 +40,7 @@ class CitationForm extends Form {
 
 	/**
 	 * Constructor.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $citation Citation
 	 * @param $assocObject DataObject
 	 */
@@ -185,7 +185,7 @@ class CitationForm extends Form {
 		}
 
 		// Extract data from citation form fields and inject it into the citation
-		import('lib.pkp.classes.metadata.MetadataDescription');
+		import('lib.sep.classes.metadata.MetadataDescription');
 		$metadataSchemas = $citation->getSupportedMetadataSchemas();
 		foreach($metadataSchemas as $metadataSchema) { /* @var $metadataSchema MetadataSchema */
 			// Instantiate a meta-data description for the given schema
@@ -218,7 +218,7 @@ class CitationForm extends Form {
 							break;
 
 						case isset($allowedTypes[METADATA_PROPERTY_TYPE_DATE]):
-							import('lib.pkp.classes.metadata.DateStringNormalizerFilter');
+							import('lib.sep.classes.metadata.DateStringNormalizerFilter');
 							$dateStringFilter = new DateStringNormalizerFilter();
 							assert($dateStringFilter->supportsAsInput($fieldValue));
 							$typedFieldValues = array($dateStringFilter->execute($fieldValue));
@@ -236,7 +236,7 @@ class CitationForm extends Form {
 							}
 
 							// Try to transform the field to a name composite.
-							import('lib.pkp.plugins.metadata.nlm30.filter.PersonStringNlm30NameSchemaFilter');
+							import('lib.sep.plugins.metadata.nlm30.filter.PersonStringNlm30NameSchemaFilter');
 							$personStringFilter = new PersonStringNlm30NameSchemaFilter($assocType, PERSON_STRING_FILTER_MULTIPLE);
 							assert($personStringFilter->supportsAsInput($fieldValue));
 							$typedFieldValues =& $personStringFilter->execute($fieldValue);
@@ -526,7 +526,7 @@ class CitationForm extends Form {
 				// name arrays to strings.
 				$allowedAssocTypes = $allowedTypes[METADATA_PROPERTY_TYPE_COMPOSITE];
 				assert(in_array(ASSOC_TYPE_AUTHOR, $allowedAssocTypes) || in_array(ASSOC_TYPE_EDITOR, $allowedAssocTypes));
-				import('lib.pkp.plugins.metadata.nlm30.filter.Nlm30NameSchemaPersonStringFilter');
+				import('lib.sep.plugins.metadata.nlm30.filter.Nlm30NameSchemaPersonStringFilter');
 				$personStringFilter = new Nlm30NameSchemaPersonStringFilter(PERSON_STRING_FILTER_MULTIPLE);
 				assert($personStringFilter->supportsAsInput($value));
 				$stringValue = $personStringFilter->execute($value);

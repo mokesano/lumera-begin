@@ -1,23 +1,23 @@
 <?php
 
 /**
- * @file classes/oai/ojs/OAIDAO.inc.php
+ * @file classes/oai/cla/OAIDAO.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class OAIDAO
- * @ingroup oai_ojs
+ * @ingroup oai_cla
  * @see OAI
  *
- * @brief DAO operations for the OJS OAI interface.
+ * @brief DAO operations for the CLA OAI interface.
  */
 
-import('lib.pkp.classes.oai.PKPOAIDAO');
+import('lib.sep.classes.oai.SEPOAIDAO');
 import('classes.issue.Issue');
 
-class OAIDAO extends PKPOAIDAO {
+class OAIDAO extends SEPOAIDAO {
 
 	/** Helper DAOs */
 	var $journalDao;
@@ -37,7 +37,7 @@ class OAIDAO extends PKPOAIDAO {
 	 * Constructor.
 	 */
 	function OAIDAO() {
-		parent::PKPOAIDAO();
+		parent::SEPOAIDAO();
 		$this->journalDao =& DAORegistry::getDAO('JournalDAO');
 		$this->sectionDao =& DAORegistry::getDAO('SectionDAO');
 		$this->publishedArticleDao =& DAORegistry::getDAO('PublishedArticleDAO');
@@ -52,7 +52,7 @@ class OAIDAO extends PKPOAIDAO {
 	}
 
 	/**
-	 * @see lib/pkp/classes/oai/PKPOAIDAO::getEarliestDatestamp()
+	 * @see lib/sep/classes/oai/SEPOAIDAO::getEarliestDatestamp()
 	 */
 	function getEarliestDatestamp($setIds = array()) {
 		return parent::getEarliestDatestamp('SELECT	CASE WHEN COALESCE(dot.date_deleted, a.last_modified) > i.last_modified THEN i.last_modified ELSE COALESCE(dot.date_deleted, a.last_modified) END', $setIds);
@@ -177,7 +177,7 @@ class OAIDAO extends PKPOAIDAO {
 	// Protected methods.
 	//
 	/**
-	 * @see lib/pkp/classes/oai/PKPOAIDAO::getRecordSelectStatement()
+	 * @see lib/sep/classes/oai/SEPOAIDAO::getRecordSelectStatement()
 	 */
 	function getRecordSelectStatement() {
 		return 'SELECT	CASE WHEN COALESCE(dot.date_deleted, a.last_modified) < i.last_modified THEN i.last_modified ELSE COALESCE(dot.date_deleted, a.last_modified) END AS last_modified,
@@ -191,7 +191,7 @@ class OAIDAO extends PKPOAIDAO {
 	}
 
 	/**
-	 * @see lib/pkp/classes/oai/PKPOAIDAO::getRecordJoinClause()
+	 * @see lib/sep/classes/oai/SEPOAIDAO::getRecordJoinClause()
 	 */
 	function getRecordJoinClause($articleId = null, $setIds = array(), $set = null) {
 		if (isset($setIds[1])) {
@@ -210,14 +210,14 @@ class OAIDAO extends PKPOAIDAO {
 	}
 
 	/**
-	 * @see lib/pkp/classes/oai/PKPOAIDAO::getAccessibleRecordWhereClause()
+	 * @see lib/sep/classes/oai/SEPOAIDAO::getAccessibleRecordWhereClause()
 	 */
 	function getAccessibleRecordWhereClause() {
 		return 'WHERE ((s.section_id IS NOT NULL AND i.published = 1 AND j.enabled = 1 AND a.status <> ' . STATUS_ARCHIVED . ') OR dot.data_object_id IS NOT NULL)';
 	}
 
 	/**
-	 * @see lib/pkp/classes/oai/PKPOAIDAO::getDateRangeWhereClause()
+	 * @see lib/sep/classes/oai/SEPOAIDAO::getDateRangeWhereClause()
 	 */
 	function getDateRangeWhereClause($from, $until) {
 		return (isset($from) ? ' AND CASE WHEN COALESCE(dot.date_deleted, a.last_modified) < i.last_modified THEN (i.last_modified >= ' . $this->datetimeToDB($from) . ') ELSE ((dot.date_deleted IS NOT NULL AND dot.date_deleted >= ' . $this->datetimeToDB($from) . ') OR (dot.date_deleted IS NULL AND a.last_modified >= ' . $this->datetimeToDB($from) . ')) END' : '')
@@ -226,7 +226,7 @@ class OAIDAO extends PKPOAIDAO {
 	}
 
 	/**
-	 * @see lib/pkp/classes/oai/PKPOAIDAO::setOAIData()
+	 * @see lib/sep/classes/oai/SEPOAIDAO::setOAIData()
 	 */
 	function &setOAIData(&$record, &$row, $isRecord = true) {
 		$journal =& $this->getJournal($row['journal_id']);

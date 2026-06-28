@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/googleAnalytics/locale/uk_UA/locale.xml
@@ -18,7 +18,7 @@
 
        <!-- Google Analytics -->
        <message key="plugins.generic.googleAnalytics.displayName">Модуль Google Analytics</message>
-       <message key="plugins.generic.googleAnalytics.description"><![CDATA[Інтеграція OJS з Google Analytics - інструментом Google для аналізу трафіку веб-сайту. Вимагається вже налаштований обліковий запис Google Analytics. Для отримання додаткової інформації, будь ласка, див. <a href="http://www.google.com/analytics/" title="Google Analytics site">сайт Google Analytics</a>.]]></message>
+       <message key="plugins.generic.googleAnalytics.description"><![CDATA[Інтеграція CLA з Google Analytics - інструментом Google для аналізу трафіку веб-сайту. Вимагається вже налаштований обліковий запис Google Analytics. Для отримання додаткової інформації, будь ласка, див. <a href="http://www.google.com/analytics/" title="Google Analytics site">сайт Google Analytics</a>.]]></message>
 
        <!-- Google Analytics Settings Management -->
        <message key="plugins.generic.googleAnalytics.manager.settings">Налаштування</message>

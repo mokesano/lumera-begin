@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/ml_IN/locale.xml
@@ -339,25 +339,25 @@
 
 	<!-- Site Administration -->
 	
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[To have the contents of all journals hosted on this site indexed within a globally distributed system of research databases, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">register</a> your site's URL with the Public Knowledge Project metadata <a href="http://pkp.sfu.ca/harvester/" target="_blank">harvester</a>. This tool collects the metadata from each indexed item in this journal, enabling accurate and collective searching among the research sites that adhere to the <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[To have the contents of all journals hosted on this site indexed within a globally distributed system of research databases, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">register</a> your site's URL with the Sangia Editorial Project metadata <a href="http://lumera.sangia.org/harvester/" target="_blank">harvester</a>. This tool collects the metadata from each indexed item in this journal, enabling accurate and collective searching among the research sites that adhere to the <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a>.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Click here</a> and enter <span class="highlight">{$siteUrl}</span> under <strong>Site URL</strong>, and <span class="highlight">{$oaiUrl}</span> under <strong>Base URL for OAI Archive</strong>.
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Click here</a> and enter <span class="highlight">{$siteUrl}</span> under <strong>Site URL</strong>, and <span class="highlight">{$oaiUrl}</span> under <strong>Base URL for OAI Archive</strong>.
 <br /><br />
-Note that the OAI interface can be disabled for this site by editing the OJS system configuration. Future versions of OJS will allow the OAI interface to be enabled or disabled for individual journals within the site.]]></message>
+Note that the OAI interface can be disabled for this site by editing the CLA system configuration. Future versions of CLA will allow the OAI interface to be enabled or disabled for individual journals within the site.]]></message>
 
 	
 	
 	<!-- Languages -->
-	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Downloading language packs from the Public Knowledge Project web server is not currently available because:</p>
+	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Downloading language packs from the Sangia Editorial Project web server is not currently available because:</p>
 	<ul>
 		<li>Your server does not have or allow execution of the GNU "tar" utility</li>
-		<li>OJS is unable to modify the locale registry file, typically "registry/locales.xml".</li>
+		<li>CLA is unable to modify the locale registry file, typically "registry/locales.xml".</li>
 	</ul>
-<p>Language packs can be manually downloaded from the <a href="http://pkp.sfu.ca">PKP web site</a>.</p>]]></message>
+<p>Language packs can be manually downloaded from the <a href="http://sep.sfu.ca">SEP web site</a>.</p>]]></message>
 
-	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>Specifying a default authentication source other than OJS has the following effects:</p>
+	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>Specifying a default authentication source other than CLA has the following effects:</p>
 <ul>
-	<li>If a user attempts to register a new account with this site with a username that exists on the authentication source (but not in the OJS database), the registration attempt is only allowed if the supplied password is valid for that user account.</li>
+	<li>If a user attempts to register a new account with this site with a username that exists on the authentication source (but not in the CLA database), the registration attempt is only allowed if the supplied password is valid for that user account.</li>
 </ul>]]></message>
 	
 	<!-- System Information -->
@@ -421,9 +421,9 @@ Note that the OAI interface can be disabled for this site by editing the OJS sys
 	Reviewers the request to review with the submission attached to the email. Reviewers email editors their assent (or regrets), as well as the review and recommendation. Editors enter Reviewers' assent (or regrets), as well as the review and recommendation on the submission's Review page, to record the review process.</message>
 
 
-	<message key="manager.setup.lockssDescription"><![CDATA[Open Journal Systems supports the <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) system to ensure a secure and permanent archive for the journal. LOCKSS is open source software developed at Stanford University Library that enables libraries to preserve selected web journals by regularly polling registered journal websites for newly published content and archiving it. Each archive is continually validated against other library caches, and if content is found to be corrupted or lost, the other caches or the journal is used to restore it.
+	<message key="manager.setup.lockssDescription"><![CDATA[Code Lumera Editorial supports the <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) system to ensure a secure and permanent archive for the journal. LOCKSS is open source software developed at Stanford University Library that enables libraries to preserve selected web journals by regularly polling registered journal websites for newly published content and archiving it. Each archive is continually validated against other library caches, and if content is found to be corrupted or lost, the other caches or the journal is used to restore it.
 <br /><br />
-Setting up LOCKSS support for Open Journal Systems does not need to take place until after publishing is fully underway, at which point follow these two steps:]]></message>
+Setting up LOCKSS support for Code Lumera Editorial does not need to take place until after publishing is fully underway, at which point follow these two steps:]]></message>
 	
 	<!-- Setup Step 3 -->
 	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Proposed Creative Commons Copyright Notices</h3>
@@ -853,14 +853,14 @@ current password.<br /><br />Enter your email address below to reset your passwo
 	<message key="about.journalSponsorship">ജര്‍ണലിന്റെ സ്പോണ്‍സര്‍ഷിപ്പ്</message>
 	<message key="about.aboutThisPublishingSystem">ഈ പബ്ലിഷിങ്ങ് സിസ്റ്റത്തെക്കുറിച്ച്</message>
 	<message key="about.aboutThisPublishingSystem.altText">ഒജെഎസ് എഡിറ്റോറിയലും പ്രസിദ്ധീകരണ പ്രക്രിയയും</message>
-	<message key="about.aboutOJSJournal"><![CDATA[This journal uses Open Journal Systems {$ojsVersion}, which is open source journal management and publishing software developed, supported, and freely distributed by the <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> under the GNU General Public License.]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[This site uses Open Journal Systems {$ojsVersion}, which is open source journal management and publishing software developed, supported, and freely distributed by the <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> under the GNU General Public License.]]></message>
+	<message key="about.aboutCLAJournal"><![CDATA[This journal uses Code Lumera Editorial {$claVersion}, which is open source journal management and publishing software developed, supported, and freely distributed by the <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> under the GNU General Public License.]]></message>
+	<message key="about.aboutCLASite"><![CDATA[This site uses Code Lumera Editorial {$claVersion}, which is open source journal management and publishing software developed, supported, and freely distributed by the <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> under the GNU General Public License.]]></message>
 	
 	<!-- Announcement -->
 
 	<!-- Help -->
-	<message key="help.ojsHelp">ഓപ്പണ്‍ ജര്‍ണല്‍ സിസ്റ്റംസ് ഹെല്‍പ്പ്</message>
-	<message key="help.ojsHelpAbbrev">ഒജെഎസ് ഹെല്‍പ്പ്</message>	
+	<message key="help.claHelp">ഓപ്പണ്‍ ജര്‍ണല്‍ സിസ്റ്റംസ് ഹെല്‍പ്പ്</message>
+	<message key="help.claHelpAbbrev">ഒജെഎസ് ഹെല്‍പ്പ്</message>	
 	<message key="help.searchReturnResults">റിസള്‍ട്ട് തിരയുന്നതിലേക്ക് തിരിച്ച് പോകുക</message>
 
 	<!-- Donations -->
@@ -905,15 +905,15 @@ current password.<br /><br />Enter your email address below to reset your passwo
 	<message key="payment.subscription.expires">കാലവധി കഴിഞ്ഞവ</message>	
 
 	<!-- Installer -->
-	<message key="installer.ojsInstallation">ഒജെഎസ് ഇന്‍സ്റ്റാളേഷന്‍</message>
-	<message key="installer.ojsUpgrade">ഒജെഎസ് അപ്ഗ്രേഡ്</message>
-	<message key="installer.installationInstructions"><![CDATA[<h4>OJS Version {$version}</h4>
+	<message key="installer.claInstallation">ഒജെഎസ് ഇന്‍സ്റ്റാളേഷന്‍</message>
+	<message key="installer.claUpgrade">ഒജെഎസ് അപ്ഗ്രേഡ്</message>
+	<message key="installer.installationInstructions"><![CDATA[<h4>CLA Version {$version}</h4>
 
-<p>Thank you for downloading the Public Knowledge Project's <strong>Open Journal Systems</strong>. Before proceeding, please read the <a href="{$baseUrl}/docs/README">README</a> file included with this software. For more information about the Public Knowledge Project and its software projects, please visit the <a href="http://pkp.sfu.ca/" target="_blank">PKP web site</a>. If you have bug reports or technical support inquiries about Open Journal Systems, see the <a href="http://forum.pkp.sfu.ca" target="_blank">support forum</a> or visit PKP's online <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">bug reporting system</a>. Although the support forum is the preferred method of contact, you can also email the team at <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>Thank you for downloading the Sangia Editorial Project's <strong>Code Lumera Editorial</strong>. Before proceeding, please read the <a href="{$baseUrl}/docs/README">README</a> file included with this software. For more information about the Sangia Editorial Project and its software projects, please visit the <a href="http://lumera.sangia.org/" target="_blank">SEP web site</a>. If you have bug reports or technical support inquiries about Code Lumera Editorial, see the <a href="http://forum.sep.sfu.ca" target="_blank">support forum</a> or visit SEP's online <a href="https://github.com/sep/sep-lib#issues" target="_blank">bug reporting system</a>. Although the support forum is the preferred method of contact, you can also email the team at <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
 
 <h4>Upgrade</h4>
 
-<p>If you are upgrading an existing installation of OJS 2.x, <a href="{$upgradeUrl}">click here</a> to proceed.</p>
+<p>If you are upgrading an existing installation of CLA 2.x, <a href="{$upgradeUrl}">click here</a> to proceed.</p>
 
 <h4>Recommended system requirements</h4>
 
@@ -924,13 +924,13 @@ current password.<br /><br />Enter your email address below to reset your passwo
 	<li>Operating system: Any OS that supports the above software, including <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.oracle.com/sun/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, <a href="http://www.microsoft.com/">Windows</a></li>
 </ul>
 
-<p>As PKP does not have the resources to test every possible combination of software versions and platforms, no guarantee of correct operation or support is implied.</p>
+<p>As SEP does not have the resources to test every possible combination of software versions and platforms, no guarantee of correct operation or support is implied.</p>
 
-<p>Changes to these settings can be made after installation by editing the file <tt>config.inc.php</tt> in the base OJS directory, or using the site administration web interface.</p>
+<p>Changes to these settings can be made after installation by editing the file <tt>config.inc.php</tt> in the base CLA directory, or using the site administration web interface.</p>
 
 <h4>Supported database systems</h4>
 
-<p>OJS has currently only been tested on MySQL and PostgreSQL, although other database management systems supported by <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> may work (in full or partially). Compatibility reports and/or code patches for alternative DBMSs can be sent to the OJS team.</p>
+<p>CLA has currently only been tested on MySQL and PostgreSQL, although other database management systems supported by <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> may work (in full or partially). Compatibility reports and/or code patches for alternative DBMSs can be sent to the CLA team.</p>
 
 <h4>Pre-Installation Steps</h4>
 
@@ -948,11 +948,11 @@ current password.<br /><br />Enter your email address below to reset your passwo
 
 <h4>Manual installation</h4>
 
-<p>Select <strong>Manual Install</strong> to display the SQL statements necessary to create the OJS database schema and initial data so that database installation can be performed manually. This option is useful when debugging installation problems, particularly on unsupported platforms. Note that this installation method will not attempt to create the database or any tables, although the configuration file will still be written with the supplied database settings.</p>]]></message>
-	<message key="installer.upgradeInstructions"><![CDATA[<h4>OJS Version {$version}</h4>
+<p>Select <strong>Manual Install</strong> to display the SQL statements necessary to create the CLA database schema and initial data so that database installation can be performed manually. This option is useful when debugging installation problems, particularly on unsupported platforms. Note that this installation method will not attempt to create the database or any tables, although the configuration file will still be written with the supplied database settings.</p>]]></message>
+	<message key="installer.upgradeInstructions"><![CDATA[<h4>CLA Version {$version}</h4>
 	
-<p>Thank you for downloading the Public Knowledge Project's <strong>Open Journal Systems</strong>. Before proceeding, please read the <a href="{$baseUrl}/docs/README">README</a> and <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> files included with this software. For more information about the Public Knowledge Project and its software projects, please visit the <a href="http://pkp.sfu.ca/" target="_blank">PKP web site</a>. If you have bug reports or technical support inquiries about Open Journal Systems, see the <a href="http://forum.pkp.sfu.ca" target="_blank">support forum</a> or visit PKP's online <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">bug reporting system</a>. Although the support forum is the preferred method of contact, you can also email the team at <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
-<p>It is <strong>strongly recommended</strong> that you back up your database, files directory, and OJS installation directory before proceeding.</p>
+<p>Thank you for downloading the Sangia Editorial Project's <strong>Code Lumera Editorial</strong>. Before proceeding, please read the <a href="{$baseUrl}/docs/README">README</a> and <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> files included with this software. For more information about the Sangia Editorial Project and its software projects, please visit the <a href="http://lumera.sangia.org/" target="_blank">SEP web site</a>. If you have bug reports or technical support inquiries about Code Lumera Editorial, see the <a href="http://forum.sep.sfu.ca" target="_blank">support forum</a> or visit SEP's online <a href="https://github.com/sep/sep-lib#issues" target="_blank">bug reporting system</a>. Although the support forum is the preferred method of contact, you can also email the team at <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>.</p>
+<p>It is <strong>strongly recommended</strong> that you back up your database, files directory, and CLA installation directory before proceeding.</p>
 <p>If you are running in <a href="http://www.php.net/features.safe-mode" target="_blank">PHP Safe Mode</a>, please ensure that the max_execution_time directive in your php.ini configuration file is set to a high limit. If this or any other time limit (e.g. Apache's "Timeout" directive) is reached and the upgrade process is interrupted, manual intervention will be required.</p>]]></message>
 	<message key="installer.localeSettingsInstructions"><![CDATA[For complete Unicode (UTF-8) support, select UTF-8 for all character set settings. Note that this support currently requires a MySQL >= 4.1.1 or PostgreSQL >= 7.1 database server. Please also note that full Unicode support requires PHP >= 4.3.0 compiled with support for the <a href="http://www.php.net/mbstring" target="_blank">mbstring</a> library (enabled by default in most recent PHP installations). You may experience problems using extended character sets if your server does not meet these requirements.
 <br /><br />
@@ -960,26 +960,26 @@ Your server currently supports mbstring: <strong>{$supportsMBString}</strong>]]>
 	<message key="installer.localeInstructions">പ്രഥമ ഭാഷ സിസ്റ്റത്തിനു വേണ്ടി ഉപയോഗിക്കുന്നു. ഇവിടെ പറഞ്ഞിട്ടില്ലാത്ത ഭാഷകള്‍ സപ്പോര്‍ട്ട് ചെയ്യുന്നതില്‍ താങ്കള്‍ക്ക് താല്‍പര്യം ഉണ്ടെങ്കില്‍ ഒജെഎസ് ഡോക്യുമെന്റേഷനില്‍ വിദഗ്ദ്ധാഭിപ്രായം നേടുക.</message>
 	<message key="installer.additionalLocalesInstructions">ഈ സിസ്റ്റത്തെ സപ്പോര്‍ട്ട് ചെയ്യുന്നതിനായി ഇതിനു പുറമേ ഒരു ഭാഷ തിരഞ്ഞെടുക്കുക. ഈ ഭാഷകള്‍ ഈ സൈറ്റില്‍ ഹോസ്റ്റ് ചെയ്തിരിക്കുന്ന ജര്‍ണലുകളുടെ ഉപയോഗത്തിനായി ലഭ്യമാക്കിയിരിക്കുന്നു. കൂടുതലായി തിരഞ്ഞെടുത്ത ഭാഷകള്‍ എപ്പോള്‍ വേണമെങ്കിലും അഡ്മിനിട്രേഷന്‍ ഇന്‍റ്റര്‍ഫേസ് വഴി ഇന്‍സ്റ്റാള്‍ ചെയ്യവുന്നതാണ്.</message>
 	<message key="installer.filesDirInstructions"><![CDATA[Enter full pathname to an existing directory where uploaded files are to be kept. This directory should not be directly web-accessible. <strong>Please ensure that this directory exists and is writable prior to installation.</strong> Windows path names should use forward slashes, e.g. "C:/myjournal/files".]]></message>
-	<message key="installer.databaseSettingsInstructions">OJS requires access to a SQL database to store its data. See the system requirements above for a list of supported databases. In the fields below, provide the settings to be used to connect to the database.</message>
+	<message key="installer.databaseSettingsInstructions">CLA requires access to a SQL database to store its data. See the system requirements above for a list of supported databases. In the fields below, provide the settings to be used to connect to the database.</message>
 	<message key="installer.installApplication">ഓപ്പണ്‍ ജര്‍ണല്‍ സിസ്റ്റംസ് ഇന്‍സ്റ്റാള്‍ ചെയ്യുക</message>
 	<message key="installer.upgradeApplication">ഓപ്പണ്‍ ജര്‍ണല്‍ സിസ്റ്റംസ് അപ്ഗ്രേഡ് ചെയ്യുക</message>
-	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>Warning:</strong> If installation failed part way through database installation you may need to drop your OJS database or database tables before attempting to reinstall the database.]]></message>
+	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>Warning:</strong> If installation failed part way through database installation you may need to drop your CLA database or database tables before attempting to reinstall the database.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>IMPORTANT!</h4>
 <p>The installer could not automatically overwrite the configuration file. Before attempting to use the system, please open <tt>config.inc.php</tt> in a suitable text editor and replace its contents with the contents of the text field below.</p>]]></message>
 	<message key="installer.manualSQLInstructions"><![CDATA[<h4>Manual installation</h4>
-<p>The SQL statements to create the OJS database schema and initial data are displayed below. Note that the system will be unusable until these statements have been executed manually. You will also have to manually configure the <tt>config.inc.php</tt> configuration file.</p>]]></message>
-	<message key="installer.installationComplete"><![CDATA[<p>Installation of OJS has completed successfully.</p>
+<p>The SQL statements to create the CLA database schema and initial data are displayed below. Note that the system will be unusable until these statements have been executed manually. You will also have to manually configure the <tt>config.inc.php</tt> configuration file.</p>]]></message>
+	<message key="installer.installationComplete"><![CDATA[<p>Installation of CLA has completed successfully.</p>
 <p>To begin using the system, <a href="{$loginUrl}">login</a> with the username and password entered on the previous page.</p>
 <p>If you wish to receive news and updates, you can:</p>
 <ol>
-	<li><a href="http://pkp.sfu.ca/ojs/register" target="_new">Register</a> your journal, conference, or harvester and receive updates on software upgrades, security patches, and more.</li>
-	<li>Join our <a href="http://pkp.sfu.ca/informed" target="_new">discussion list</a> for OJS, OCS, the Harvester, Lemon8-XML, OMP, or all of the above.</li>
-	<li>Subscribe to the <a href="http://pkp.sfu.ca/blog" target="_new">PKP blog</a> <a href="http://pkp.sfu.ca/blog/feed" target="_new">RSS feed</a>.</li>
+	<li><a href="http://lumera.sangia.org/cla/register" target="_new">Register</a> your journal, conference, or harvester and receive updates on software upgrades, security patches, and more.</li>
+	<li>Join our <a href="http://lumera.sangia.org/informed" target="_new">discussion list</a> for CLA, OCS, the Harvester, Lemon8-XML, OMP, or all of the above.</li>
+	<li>Subscribe to the <a href="http://lumera.sangia.org/blog" target="_new">SEP blog</a> <a href="http://lumera.sangia.org/blog/feed" target="_new">RSS feed</a>.</li>
 </ol>
-<p>If you have questions or comments, please visit the <a href="http://forum.pkp.sfu.ca" target="_new">support forum</a>.</p>]]></message>
-	<message key="installer.upgradeComplete"><![CDATA[<p>Upgrade of OJS to version {$version} has completed successfully.</p>
+<p>If you have questions or comments, please visit the <a href="http://forum.sep.sfu.ca" target="_new">support forum</a>.</p>]]></message>
+	<message key="installer.upgradeComplete"><![CDATA[<p>Upgrade of CLA to version {$version} has completed successfully.</p>
 <p>Don't forget to set the "installed" setting in your config.inc.php configuration file back to <em>On</em>.</p>
-<p>If you haven't already registered and wish to receive news and updates, <strong>please register at <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a>.</strong> If you have questions or comments, please visit the <a href="http://forum.pkp.sfu.ca" target="_new">support forum</a>.</p>]]></message>
+<p>If you haven't already registered and wish to receive news and updates, <strong>please register at <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a>.</strong> If you have questions or comments, please visit the <a href="http://forum.sep.sfu.ca" target="_new">support forum</a>.</p>]]></message>
 
 
 	<!-- Article Logs -->
@@ -1066,9 +1066,9 @@ Validation may fail on search URLs that require posted form data.]]></message>
 
 	<message key="rt.metadata.dublinCore.primaryAuthor">സൃഷ്ടാവ്</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">ലേഖകന്റെ പേര്,അംഗീകാരം,രാജ്യം</message>
-	<message key="rt.metadata.pkp.peerReviewed">പിയര്‍-റിവ്യൂവ്ഡ് ആര്‍ട്ടിക്കിള്‍</message>
-	<message key="rt.metadata.pkp.doi">ഡിജിറ്റല്‍ ഒബ്ജക്ട് ഐഡന്റിഫയര്‍</message>
+	<message key="rt.metadata.sep.primaryAuthor">ലേഖകന്റെ പേര്,അംഗീകാരം,രാജ്യം</message>
+	<message key="rt.metadata.sep.peerReviewed">പിയര്‍-റിവ്യൂവ്ഡ് ആര്‍ട്ടിക്കിള്‍</message>
+	<message key="rt.metadata.sep.doi">ഡിജിറ്റല്‍ ഒബ്ജക്ട് ഐഡന്റിഫയര്‍</message>
 
 
 

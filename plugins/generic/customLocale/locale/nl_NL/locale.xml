@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/customLocale/locale/nl_NL/locale.xml
@@ -16,11 +16,11 @@
  
 <locale name="nl_NL" full_name="Nederlands">
 	<message key="plugins.generic.customLocale.name">Custom Locale Plugin</message>
-	<message key="plugins.generic.customLocale.description">Deze plugin levert aanpassingsmogelijkheden van de standaard gebruikersinterface-teksten van OJS.</message>
+	<message key="plugins.generic.customLocale.description">Deze plugin levert aanpassingsmogelijkheden van de standaard gebruikersinterface-teksten van CLA.</message>
 
 	<message key="plugins.generic.customLocale.longDescription">Deze pagina toont alle talen die voor het tijdschrift geïnstalleerd zijn.</message>
 	<message key="plugins.generic.customLocale.localeDescription">Deze pagina toont alle bestanden die beschikbaar zijn voor de geselecteerde taal.</message>
-	<message key="plugins.generic.customLocale.fileDescription">Voer tekst in bij het corresponderende aangepaste tekstveld. Laat het aangepaste tekstveld leeg als de standaard OJS tekst gebruikt moet worden.</message>
+	<message key="plugins.generic.customLocale.fileDescription">Voer tekst in bij het corresponderende aangepaste tekstveld. Laat het aangepaste tekstveld leeg als de standaard CLA tekst gebruikt moet worden.</message>
 	<message key="plugins.generic.customLocale.localeName">Naam</message>
 	<message key="plugins.generic.customLocale.localeKey">Sleutel</message>
 	<message key="plugins.generic.customLocale.localeKeyValue">Waarde</message>

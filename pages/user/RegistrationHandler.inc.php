@@ -26,7 +26,7 @@ class RegistrationHandler extends UserHandler {
 	/**
 	 * Display registration form for new users.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function register($args, &$request) {
 		$this->validate($request);
@@ -62,7 +62,7 @@ class RegistrationHandler extends UserHandler {
 	/**
 	 * Validate user registration information and register new user.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function registerUser($args, &$request) {
 		$this->validate($request);
@@ -129,7 +129,7 @@ class RegistrationHandler extends UserHandler {
 
 	/**
 	 * Show error message if user registration is not allowed.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function registrationDisabled($request) {
 		$this->setupTemplate($request, true);
@@ -144,7 +144,7 @@ class RegistrationHandler extends UserHandler {
 	/**
 	 * Check credentials and activate a new user
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @author Marc Bria <marc.bria@uab.es>
 	 */
 	function activateUser($args, &$request) {
@@ -157,7 +157,7 @@ class RegistrationHandler extends UserHandler {
 		if (!$user) $request->redirect(null, 'login');
 
 		// Checks user & token
-		import('lib.pkp.classes.security.AccessKeyManager');
+		import('lib.sep.classes.security.AccessKeyManager');
 		$accessKeyManager = new AccessKeyManager();
 		$accessKeyHash = AccessKeyManager::generateKeyHash($accessKeyCode);
 		$accessKey =& $accessKeyManager->validateKey(
@@ -184,7 +184,7 @@ class RegistrationHandler extends UserHandler {
 	/**
 	 * Validation check.
 	 * Checks if journal allows user registration.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */	
 	function validate(&$request) {
 		parent::validate(false);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -35,7 +35,7 @@
 	</section>
 	
 	<section title="التنزيل">
-		<![CDATA[<p>نظام المجلات المفتوحة يمكن تنزيله من <a href="http://pkp.sfu.ca/ojs/" target="_blank">موقع مشروع المعرفة العامة</a>.</p>]]>
+		<![CDATA[<p>نظام المجلات المفتوحة يمكن تنزيله من <a href="http://lumera.sangia.org/cla/" target="_blank">موقع مشروع المعرفة العامة</a>.</p>]]>
 	</section>
 	
 	<section title="التنصيب">
@@ -46,8 +46,8 @@
 			</li>
 			<li>
 				إفتح ضغط رزمة النظام إلى حافظة ملفات تختارها ضمن شجرة ملفات ملقم الإنترنت في حاسبتك:<br />
-				<tt>$ tar -zxf ojs-2.*.tar.gz<br />
-				$ mv ojs-* /var/www/myjournal</tt>
+				<tt>$ tar -zxf cla-2.*.tar.gz<br />
+				$ mv cla-* /var/www/myjournal</tt>
 			</li>
 			<li>
 				إجعل الملفات وحوافظها الآتية قابلة للتعديل (أي مستعملاً الأمر chown أو chmod):<br />

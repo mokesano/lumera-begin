@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file classes/core/PKPPageRouter.inc.php
+ * @file classes/core/SEPPageRouter.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPPageRouter
+ * @class SEPPageRouter
  * @ingroup core
  *
  * @brief Class mapping an HTTP request to a handler or context.
@@ -16,9 +16,9 @@
 define('ROUTER_DEFAULT_PAGE', './pages/index/index.php');
 define('ROUTER_DEFAULT_OP', 'index');
 
-import('lib.pkp.classes.core.PKPRouter');
+import('lib.sep.classes.core.SEPRouter');
 
-class PKPPageRouter extends PKPRouter {
+class SEPPageRouter extends SEPRouter {
 	/** @var array pages that don't need an installed system to be displayed */
 	var $_installationPages = array('install', 'help', 'header');
 
@@ -55,7 +55,7 @@ class PKPPageRouter extends PKPRouter {
 
 	/**
 	 * Determine whether or not the request is cacheable.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $testOnly boolean required for unit test to
 	 *  bypass session check.
 	 * @return boolean
@@ -82,7 +82,7 @@ class PKPPageRouter extends PKPRouter {
 
 	/**
 	 * Get the page requested in the URL.
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @return String the page path (under the "pages" directory)
 	 */
 	function getRequestedPage(&$request) {
@@ -94,7 +94,7 @@ class PKPPageRouter extends PKPRouter {
 
 	/**
 	 * Get the operation requested in the URL (assumed to exist in the requested page handler).
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @return string
 	 */
 	function getRequestedOp(&$request) {
@@ -106,7 +106,7 @@ class PKPPageRouter extends PKPRouter {
 
 	/**
 	 * Get the arguments requested in the URL.
-	 * @param $request PKPRequest the request to be routed
+	 * @param $request SEPRequest the request to be routed
 	 * @return array
 	 */
 	function getRequestedArgs(&$request) {
@@ -115,10 +115,10 @@ class PKPPageRouter extends PKPRouter {
 
 
 	//
-	// Implement template methods from PKPRouter
+	// Implement template methods from SEPRouter
 	//
 	/**
-	 * @see PKPRouter::getCacheFilename()
+	 * @see SEPRouter::getCacheFilename()
 	 */
 	function getCacheFilename(&$request) {
 		if (!isset($this->_cacheFilename)) {
@@ -140,7 +140,7 @@ class PKPPageRouter extends PKPRouter {
 	}
 
 	/**
-	 * @see PKPRouter::route()
+	 * @see SEPRouter::route()
 	 */
 	function route(&$request) {
 		// Determine the requested page and operation
@@ -177,7 +177,7 @@ class PKPPageRouter extends PKPRouter {
 		// opportunity to load required resources and set HANDLER_CLASS.
 		if (!HookRegistry::call('LoadHandler', array(&$page, &$op, &$sourceFile))) {
 			if (file_exists($sourceFile)) require('./'.$sourceFile);
-			elseif (file_exists('lib/pkp/'.$sourceFile)) require('./lib/pkp/'.$sourceFile);
+			elseif (file_exists('lib/sep/'.$sourceFile)) require('./lib/sep/'.$sourceFile);
 			elseif (empty($page)) require(ROUTER_DEFAULT_PAGE);
 			else {
 				$dispatcher =& $this->getDispatcher();
@@ -221,7 +221,7 @@ class PKPPageRouter extends PKPRouter {
 	}
 
 	/**
-	 * @see PKPRouter::url()
+	 * @see SEPRouter::url()
 	 */
 	function url(&$request, $newContext = null, $page = null, $op = null, $path = null,
 				$params = null, $anchor = null, $escape = false) {
@@ -262,7 +262,7 @@ class PKPPageRouter extends PKPRouter {
 		//
 
 		// Are we in a page request?
-		$currentRequestIsAPageRequest = is_a($request->getRouter(), 'PKPPageRouter');
+		$currentRequestIsAPageRequest = is_a($request->getRouter(), 'SEPPageRouter');
 
 		// Determine the operation
 		if ($op) {
@@ -368,7 +368,7 @@ class PKPPageRouter extends PKPRouter {
 	}
 
 	/**
-	 * @see PKPRouter::handleAuthorizationFailure()
+	 * @see SEPRouter::handleAuthorizationFailure()
 	 */
 	function handleAuthorizationFailure($request, $authorizationMessage) {
 		// Redirect to the authorization denied page.
@@ -385,12 +385,12 @@ class PKPPageRouter extends PKPRouter {
 	 * url using the passed callback method.
 	 * @param $callback array Core method to retrieve
 	 * page, operation or arguments from url.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return array|string|null
 	 */
 	function _getRequestedUrlParts($callback, &$request) {
 		$url = null;
-		assert(is_a($request->getRouter(), 'PKPPageRouter'));
+		assert(is_a($request->getRouter(), 'SEPPageRouter'));
 		$isPathInfoEnabled = $request->isPathInfoEnabled();
 
 		if ($isPathInfoEnabled) {

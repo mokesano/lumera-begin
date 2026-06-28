@@ -13,7 +13,7 @@
  * @brief Class for related items block plugin
  */
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 class RelatedItemsBlockPlugin extends BlockPlugin {
 	/**

@@ -14,7 +14,7 @@
  * @brief Validation check for email addresses.
  */
 
-import('lib.pkp.classes.validation.ValidatorRegExp');
+import('lib.sep.classes.validation.ValidatorRegExp');
 
 class ValidatorEmail extends ValidatorRegExp {
 	/**

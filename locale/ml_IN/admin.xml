@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/ml_IN/admin.xml
@@ -28,10 +28,10 @@
 	<message key="admin.languages.download">ഡൗണ്‍ലോഡ് ലൊക്കേല്‍</message>
 	<message key="admin.languages.download.cannotOpen">പി.കെ.പി വെബ് സൈറ്റില്‍ നിന്ന് ലാങ്ങ്വേജ് ഡിസ്ക്രിപ്റ്റര്‍ തുറക്കാന്‍ സാധിക്കുന്നില്ല.</message>
 	<message key="admin.languages.download.cannotModifyRegistry">ലൊക്കേല്‍ രജിസ്റ്ററി ഫയലിലേക്ക് പുതിയ ലൊക്കേല്‍ ചേര്‍ക്കാന്‍ സാധിക്കുന്നില്ല. മാതൃകയായി, "registry/locales.xml".</message>
-	<message key="admin.auth.ojs">ഒ.ജെ.എസ് യൂസര്‍ ഡേറ്റാബേസ്</message>
-	<message key="admin.auth.enableSyncProfiles">Enable user profile synchronization (if supported by this authentication plug-in). User profile information will be automatically updated from the remote source when a user logs in, and profile changes (including password changes) made within OJS will be automatically updated on the remote source. If this option is not enabled OJS profile information will be kept separate from remote source profile information.</message>
-	<message key="admin.auth.enableSyncPasswords">Enable user password modification (if supported by this authentication plug-in). Enabling this option allows users to modify their password from within OJS and to use the OJS "lost password" feature to reset a forgotten password. These functions will be unavailable to users with this authentication source if this option is not enabled.</message>
-	<message key="admin.auth.enableCreateUsers">Enable user creation (if supported by this authentication plug-in). Users created within OJS with this authentication source will be automatically added to the remote authentication source if they do not already exist. Additionally, if this source is the default authentication source, OJS accounts created through user registration will also be added to the remote authentication source.</message>
+	<message key="admin.auth.cla">ഒ.ജെ.എസ് യൂസര്‍ ഡേറ്റാബേസ്</message>
+	<message key="admin.auth.enableSyncProfiles">Enable user profile synchronization (if supported by this authentication plug-in). User profile information will be automatically updated from the remote source when a user logs in, and profile changes (including password changes) made within CLA will be automatically updated on the remote source. If this option is not enabled CLA profile information will be kept separate from remote source profile information.</message>
+	<message key="admin.auth.enableSyncPasswords">Enable user password modification (if supported by this authentication plug-in). Enabling this option allows users to modify their password from within CLA and to use the CLA "lost password" feature to reset a forgotten password. These functions will be unavailable to users with this authentication source if this option is not enabled.</message>
+	<message key="admin.auth.enableCreateUsers">Enable user creation (if supported by this authentication plug-in). Users created within CLA with this authentication source will be automatically added to the remote authentication source if they do not already exist. Additionally, if this source is the default authentication source, CLA accounts created through user registration will also be added to the remote authentication source.</message>
 	<message key="admin.systemVersion">ഒ.ജെ.എസ് വേര്‍ഷന്‍</message>
 	<message key="admin.systemConfiguration">ഒ.ജെ.എസ് കോണ്‍ഫിഗറേഷന്‍</message>
 	<message key="admin.systemConfigurationDescription"><![CDATA[<tt>config.inc.php</tt> ല്‍ നിന്നുമുള്ള ഒ.ജെ.എസ് കോണ്‍ഫിഗറേഷന്‍ ക്രമീകരണങ്ങള്‍.]]></message>
@@ -47,10 +47,10 @@
 	<message key="admin.journals.form.pathExists">തിരഞ്ഞെടുത്ത പാത്ത് നേരത്തെ തന്നെ മറ്റൊരു ജേണല്‍ ഉപയോഗിക്കുന്നതാണ്.</message>
 	<message key="admin.journals.enableJournalInstructions">സൈറ്റില്‍ പൊതുവായി പ്രത്യക്ഷപ്പെടാന്‍ ഈ ജേണലിനെ പ്രാപ്തമാക്കുക.</message>
 	<message key="admin.journals.journalDescription">ജേണല്‍ വിവരണം</message>
-	<message key="admin.journal.pathImportInstructions">നിലവിലുള്ള ജേണല്‍ പാത്ത് അല്ലെങ്കില്‍ സൃഷ്ടിക്കാനുള്ള പാത്ത്  (e.g., "ojs").</message>
+	<message key="admin.journal.pathImportInstructions">നിലവിലുള്ള ജേണല്‍ പാത്ത് അല്ലെങ്കില്‍ സൃഷ്ടിക്കാനുള്ള പാത്ത്  (e.g., "cla").</message>
 	<message key="admin.journals.importSubscriptions">ഇംപോര്‍ട്ട് സബ്സ്ക്രിപ്ഷന്‍സ്</message>
 	<message key="admin.journals.transcode">ട്രാന്‍സ്കോഡ് ആര്‍ട്ടിക്കിള്‍ മെറ്റാഡേറ്റ ഫ്രം ISO8859-1</message>
-	<message key="admin.journals.redirect">ജനറേറ്റ് കോഡ് ടു മാപ്  OJS 1 URLs to OJS 2 URLs</message>
+	<message key="admin.journals.redirect">ജനറേറ്റ് കോഡ് ടു മാപ്  CLA 1 URLs to CLA 2 URLs</message>
 	<message key="admin.journals.form.importPathRequired">ഇംപോര്‍ട്ട് പാത്ത് ആവശ്യമാണ്.</message>
 	<message key="admin.journals.importErrors">ഇംപോര്‍ട്ടിങ്ങ് വിജയകരമായി പൂര്‍ത്തിയാക്കുന്നതില്‍ പരാജയപ്പെട്ടിരിക്കുന്നു.</message>
 	<message key="admin.mergeUsers">മെര്‍ജ് യൂസേഴ്സ്</message>

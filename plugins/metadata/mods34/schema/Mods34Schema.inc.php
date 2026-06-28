@@ -13,21 +13,21 @@
  *
  * @class Mods34Schema
  * @ingroup plugins_metadata_mods34_schema
- * @see PKPMods34Schema
+ * @see SEPMods34Schema
  *
- * @brief OJS-specific implementation of the Mods34Schema.
+ * @brief CLA-specific implementation of the Mods34Schema.
  */
 
 
-import('lib.pkp.plugins.metadata.mods34.schema.PKPMods34Schema');
+import('lib.sep.plugins.metadata.mods34.schema.SEPMods34Schema');
 
-class Mods34Schema extends PKPMods34Schema {
+class Mods34Schema extends SEPMods34Schema {
 	/**
 	 * Constructor
 	 */
 	function Mods34Schema() {
 		// Configure the MODS schema.
-		parent::PKPMods34Schema(ASSOC_TYPE_ARTICLE);
+		parent::SEPMods34Schema(ASSOC_TYPE_ARTICLE);
 	}
 }
 ?>

@@ -27,7 +27,7 @@ class PluginHandler extends ManagerHandler {
 	/**
 	 * Display a list of plugins along with management options.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function plugins($args, &$request) {
 		$category = isset($args[0])?$args[0]:null;
@@ -110,7 +110,7 @@ class PluginHandler extends ManagerHandler {
 
 	/**
 	 * Set the page's breadcrumbs
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $subclass boolean
 	 */
 	function setBreadcrumbs($request, $subclass = false) {

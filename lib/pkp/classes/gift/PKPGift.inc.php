@@ -5,15 +5,15 @@
  */
 
 /**
- * @file classes/gift/PKPGift.inc.php
+ * @file classes/gift/SEPGift.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPGift
+ * @class SEPGift
  * @ingroup gift
- * @see GiftDAO, PKPGiftDAO
+ * @see GiftDAO, SEPGiftDAO
  *
  * @brief Basic class describing a gift.
  */
@@ -24,11 +24,11 @@ define('GIFT_STATUS_NOT_REDEEMED', 0x03);
 define('GIFT_STATUS_REDEEMED', 0x04);
 define('GIFT_STATUS_OTHER', 0x10);
 
-class PKPGift extends DataObject {
+class SEPGift extends DataObject {
 	/**
 	 * Constructor
 	 */
-	function PKPGift() {
+	function SEPGift() {
 		parent::DataObject();
 	}
 

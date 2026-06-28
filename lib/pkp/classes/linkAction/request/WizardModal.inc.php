@@ -13,7 +13,7 @@
  */
 
 
-import('lib.pkp.classes.linkAction.request.AjaxModal');
+import('lib.sep.classes.linkAction.request.AjaxModal');
 
 class WizardModal extends AjaxModal {
 	/**
@@ -36,7 +36,7 @@ class WizardModal extends AjaxModal {
 	 */
 	function getLocalizedOptions() {
 		$options = parent::getLocalizedOptions();
-		$options['modalHandler'] = '$.pkp.controllers.modal.WizardModalHandler';
+		$options['modalHandler'] = '$.sep.controllers.modal.WizardModalHandler';
 		return $options;
 	}
 }

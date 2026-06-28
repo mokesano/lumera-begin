@@ -35,10 +35,10 @@ class AdminHandler extends Handler {
 
 		$templateMgr =& TemplateManager::getManager();
 
-		// Display a warning message if there is a new version of OJS available
+		// Display a warning message if there is a new version of CLA available
 		$newVersionAvailable = false;
 		if (Config::getVar('general', 'show_upgrade_warning')) {
-			import('lib.pkp.classes.site.VersionCheck');
+			import('lib.sep.classes.site.VersionCheck');
 			if($latestVersion = VersionCheck::checkIfNewVersionExists()) {
 				$newVersionAvailable = true;
 				$templateMgr->assign('latestVersion', $latestVersion);
@@ -58,7 +58,7 @@ class AdminHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_ADMIN, LOCALE_COMPONENT_OJS_ADMIN, LOCALE_COMPONENT_OJS_MANAGER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_ADMIN, LOCALE_COMPONENT_CLA_ADMIN, LOCALE_COMPONENT_CLA_MANAGER);
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('pageHierarchy',
 			$subclass ? array(array(Request::url(null, 'user'), 'navigation.user'), array(Request::url(null, 'admin'), 'admin.siteAdmin'))

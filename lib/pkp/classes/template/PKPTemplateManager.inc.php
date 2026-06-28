@@ -5,7 +5,7 @@
  */
 
 /**
- * @file classes/template/PKPTemplateManager.inc.php
+ * @file classes/template/SEPTemplateManager.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
@@ -20,10 +20,10 @@
 
 
 /* This definition is required by Smarty */
-define('SMARTY_DIR', Core::getBaseDir() . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'pkp' . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'smarty' . DIRECTORY_SEPARATOR);
+define('SMARTY_DIR', Core::getBaseDir() . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'sep' . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'smarty' . DIRECTORY_SEPARATOR);
 
-require_once('./lib/pkp/lib/smarty/Smarty.class.php');
-require_once('./lib/pkp/lib/smarty/plugins/modifier.escape.php'); // Seems to be needed?
+require_once('./lib/sep/lib/smarty/Smarty.class.php');
+require_once('./lib/sep/lib/smarty/plugins/modifier.escape.php'); // Seems to be needed?
 
 define('CACHEABILITY_NO_CACHE',		'no-cache');
 define('CACHEABILITY_NO_STORE',		'no-store');
@@ -34,7 +34,7 @@ define('CACHEABILITY_PROXY_REVALIDATE',	'proxy-revalidate');
 define('CDN_JQUERY_VERSION', '1.4.4');
 define('CDN_JQUERY_UI_VERSION', '1.8.6');
 
-class PKPTemplateManager extends Smarty {
+class SEPTemplateManager extends Smarty {
 	/** @var $styleSheets array of URLs to stylesheets */
 	var $styleSheets;
 
@@ -51,26 +51,26 @@ class PKPTemplateManager extends Smarty {
 	/** @var $fbv object The form builder vocabulary class. */
 	var $fbv;
 
-	/** @var $request PKPRequest */
+	/** @var $request SEPRequest */
 	var $request;
 
 	/**
 	 * Constructor.
 	 * Initialize template engine and assign basic template variables.
-	 * @param $request PKPRequest FIXME: is optional for backwards compatibility only - make mandatory
+	 * @param $request SEPRequest FIXME: is optional for backwards compatibility only - make mandatory
 	 */
-	function PKPTemplateManager($request = null) {
+	function SEPTemplateManager($request = null) {
 		// FIXME: for backwards compatibility only - remove
 		if (!isset($request)) {
 			$this->request =& Registry::get('request');
 		} else {
 			$this->request =& $request;
 		}
-		assert(is_a($this->request, 'PKPRequest'));
+		assert(is_a($this->request, 'SEPRequest'));
 
 		// Retrieve the router
 		$router =& $this->request->getRouter();
-		assert(is_a($router, 'PKPRouter'));
+		assert(is_a($router, 'SEPRouter'));
 
 		parent::Smarty();
 
@@ -81,7 +81,7 @@ class PKPTemplateManager extends Smarty {
 		// Set the default template dir (app's template dir)
 		$this->app_template_dir = $baseDir . DIRECTORY_SEPARATOR . 'templates';
 		// Set fallback template dir (core's template dir)
-		$this->core_template_dir = $baseDir . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'pkp' . DIRECTORY_SEPARATOR . 'templates';
+		$this->core_template_dir = $baseDir . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'sep' . DIRECTORY_SEPARATOR . 'templates';
 
 		$this->template_dir = array($this->app_template_dir, $this->core_template_dir);
 		$this->compile_dir = $cachePath . DIRECTORY_SEPARATOR . 't_compile';
@@ -101,7 +101,7 @@ class PKPTemplateManager extends Smarty {
 		$this->assign('basePath', $this->request->getBasePath());
 		$this->assign('baseUrl', $this->request->getBaseUrl());
 		$this->assign('requiresFormRequest', $this->request->isPost());
-		if (is_a($router, 'PKPPageRouter')) $this->assign('requestedPage', $router->getRequestedPage($this->request));
+		if (is_a($router, 'SEPPageRouter')) $this->assign('requestedPage', $router->getRequestedPage($this->request));
 		$this->assign('currentUrl', $this->request->getCompleteUrl());
 		$this->assign('dateFormatTrunc', Config::getVar('general', 'date_format_trunc'));
 		$this->assign('dateFormatShort', Config::getVar('general', 'date_format_short'));
@@ -120,7 +120,7 @@ class PKPTemplateManager extends Smarty {
 		// If there's a locale-specific stylesheet, add it.
 		if (($localeStyleSheet = AppLocale::getLocaleStyleSheet($locale)) != null) $this->addStyleSheet($this->request->getBaseUrl() . '/' . $localeStyleSheet);
 
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$this->assign('pageTitle', $application->getNameKey());
 		$this->assign('exposedConstants', $application->getExposedConstants());
 		$this->assign('jsLocaleKeys', $application->getJSLocaleKeys());
@@ -191,7 +191,7 @@ class PKPTemplateManager extends Smarty {
 			 */
 			$this->assign('isUserLoggedIn', Validation::isLoggedIn());
 
-			$application =& PKPApplication::getApplication();
+			$application =& SEPApplication::getApplication();
 			$currentVersion =& $application->getCurrentVersion();
 			$this->assign('currentVersionString', $currentVersion->getVersionString());
 
@@ -303,7 +303,7 @@ class PKPTemplateManager extends Smarty {
 	 * @return string JSON message with the template rendered
 	 */
 	function fetchJson($template, $status = true) {
-		import('lib.pkp.classes.core.JSONMessage');
+		import('lib.sep.classes.core.JSONMessage');
 
 		$json = new JSONMessage($status, $this->fetch($template));
 		return $json->getString();
@@ -375,7 +375,7 @@ class PKPTemplateManager extends Smarty {
 
 	/**
 	 * Return an instance of the template manager.
-	 * @param $request PKPRequest FIXME: is optional for backwards compatibility only - make mandatory
+	 * @param $request SEPRequest FIXME: is optional for backwards compatibility only - make mandatory
 	 * @return TemplateManager the template manager object
 	 */
 	function &getManager($request = null) {
@@ -393,7 +393,7 @@ class PKPTemplateManager extends Smarty {
 	 */
 	function &getFBV() {
 		if(!$this->fbv) {
-			import('lib.pkp.classes.form.FormBuilderVocabulary');
+			import('lib.sep.classes.form.FormBuilderVocabulary');
 			$this->fbv = new FormBuilderVocabulary();
 		}
 		return $this->fbv;
@@ -406,7 +406,7 @@ class PKPTemplateManager extends Smarty {
 	//
 
 	/**
-	 * Resource function to get a "core" (pkp-lib) template.
+	 * Resource function to get a "core" (sep-lib) template.
 	 * @param $template string
 	 * @param $templateSource string reference
 	 * @param $smarty Smarty
@@ -418,7 +418,7 @@ class PKPTemplateManager extends Smarty {
 	}
 
 	/**
-	 * Resource function to get the timestamp of a "core" (pkp-lib)
+	 * Resource function to get the timestamp of a "core" (sep-lib)
 	 * template.
 	 * @param $template string
 	 * @param $templateTimestamp int reference
@@ -432,7 +432,7 @@ class PKPTemplateManager extends Smarty {
 	}
 
 	/**
-	 * Resource function to determine whether a "core" (pkp-lib) template
+	 * Resource function to determine whether a "core" (sep-lib) template
 	 * is secure.
 	 * @return boolean
 	 */
@@ -441,7 +441,7 @@ class PKPTemplateManager extends Smarty {
 	}
 
 	/**
-	 * Resource function to determine whether a "core" (pkp-lib) template
+	 * Resource function to determine whether a "core" (sep-lib) template
 	 * is trusted.
 	 */
 	function smartyResourceCoreGetTrusted($template, &$smarty) {
@@ -501,7 +501,7 @@ class PKPTemplateManager extends Smarty {
 		$image = isset($params['image'])?$params['image']:null;
 		$translate = isset($params['translate'])?false:true;
 
-		import('lib.pkp.classes.linkAction.request.NullAction');
+		import('lib.sep.classes.linkAction.request.NullAction');
 		$key = $translate ? __($key) : $key;
 		$linkAction = new LinkAction($id, new NullAction(), $key, $image);
 		$this->assign('action', new LinkAction(
@@ -623,7 +623,7 @@ class PKPTemplateManager extends Smarty {
 			if (isset($params['name'])) {
 				// build image tag with standarized size of 16x16
 				$disabled = (isset($params['disabled']) && !empty($params['disabled']));
-				if (!isset($params['path'])) $params['path'] = 'lib/pkp/templates/images/icons/';
+				if (!isset($params['path'])) $params['path'] = 'lib/sep/templates/images/icons/';
 				$iconHtml = '<img src="' . $smarty->get_template_vars('baseUrl') . '/' . $params['path'];
 				$iconHtml .= $params['name'] . ($disabled ? '_disabled' : '') . '.gif" width="16" height="14" alt="';
 
@@ -712,18 +712,18 @@ class PKPTemplateManager extends Smarty {
 		if (Config::getVar('debug', 'show_stats')) {
 			$smarty->assign('enableDebugStats', true);
 
-			// provide information from the PKPProfiler class
-			$pkpProfiler =& Registry::get('system.debug.profiler');
-			foreach ($pkpProfiler->getData() as $output => $value) {
+			// provide information from the SEPProfiler class
+			$sepProfiler =& Registry::get('system.debug.profiler');
+			foreach ($sepProfiler->getData() as $output => $value) {
 				$smarty->assign($output, $value);
 			}
-			$smarty->assign('pqpCss', $this->request->getBaseUrl() . '/lib/pkp/lib/pqp/css/pQp.css');
-			$smarty->assign('pqpTemplate', BASE_SYS_DIR . '/lib/pkp/lib/pqp/pqp.tpl');
+			$smarty->assign('pqpCss', $this->request->getBaseUrl() . '/lib/sep/lib/pqp/css/pQp.css');
+			$smarty->assign('pqpTemplate', BASE_SYS_DIR . '/lib/sep/lib/pqp/pqp.tpl');
 		}
 	}
 
 	/**
-	 * Generate a URL into a PKPApp.
+	 * Generate a URL into a SEPApp.
 	 * @param $params array
 	 * @param $smarty object
 	 * Available parameters:
@@ -774,7 +774,7 @@ class PKPTemplateManager extends Smarty {
 
 		// Set the default router
 		if (is_null($router)) {
-			if (is_a($this->request->getRouter(), 'PKPComponentRouter')) {
+			if (is_a($this->request->getRouter(), 'SEPComponentRouter')) {
 				$router = ROUTE_COMPONENT;
 			} else {
 				$router = ROUTE_PAGE;
@@ -782,7 +782,7 @@ class PKPTemplateManager extends Smarty {
 		}
 
 		// Check the router
-		$dispatcher =& PKPApplication::getDispatcher();
+		$dispatcher =& SEPApplication::getDispatcher();
 		$routerShortcuts = array_keys($dispatcher->getRouterNames());
 		assert(in_array($router, $routerShortcuts));
 
@@ -1445,7 +1445,7 @@ class PKPTemplateManager extends Smarty {
 			});
 			// -->
 			</script>
-			<div class='pkp_controllers_modal_titleBar'>" .
+			<div class='sep_controllers_modal_titleBar'>" .
 				$iconHtml .
 				$keyHtml .
 				$canCloseHtml .

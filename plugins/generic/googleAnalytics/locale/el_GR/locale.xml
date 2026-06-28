@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/googleAnalytics/locale/el_GR/locale.xml
@@ -23,7 +23,7 @@
 
 	<!-- Google Analytics -->
 	<message key="plugins.generic.googleAnalytics.displayName">Πρόσθετο Google Analytics</message>
-	<message key="plugins.generic.googleAnalytics.description"><![CDATA[Ενσωμματώνει το OJS με το Google Analytics, την εφαρμογή για την ανάλυση της κίνησης ενός ιστοτόπου της  Google. Απαιτεί την ύπαρξη ενός λογαριασμού στο Google Analytics. Δείτε τον ιστότοπο του <a href="http://www.google.com/analytics/" title="Google Analytics site">Google Analytics </a> για περισσότερες πληροφορίες.]]></message>
+	<message key="plugins.generic.googleAnalytics.description"><![CDATA[Ενσωμματώνει το CLA με το Google Analytics, την εφαρμογή για την ανάλυση της κίνησης ενός ιστοτόπου της  Google. Απαιτεί την ύπαρξη ενός λογαριασμού στο Google Analytics. Δείτε τον ιστότοπο του <a href="http://www.google.com/analytics/" title="Google Analytics site">Google Analytics </a> για περισσότερες πληροφορίες.]]></message>
 
 	<!-- Google Analytics Settings Management -->
 	<message key="plugins.generic.googleAnalytics.manager.settings">Ρυθμίσεις</message>

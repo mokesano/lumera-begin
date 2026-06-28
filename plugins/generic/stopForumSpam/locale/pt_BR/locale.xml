@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/stopForumSpam/locale/pt_BR/locale.xml
@@ -14,11 +14,11 @@
 <locale name="pt_BR" full_name="Português (Brasil)">
 
 	<message key="plugins.generic.stopForumSpam.displayName">Stop Forum Spam</message>
-	<message key="plugins.generic.stopForumSpam.description">Integre o OJS com o sistema de prevenção Stop Forum Spam, que busca reduzir a quantidade de cadastros fantasmas.</message>
+	<message key="plugins.generic.stopForumSpam.description">Integre o CLA com o sistema de prevenção Stop Forum Spam, que busca reduzir a quantidade de cadastros fantasmas.</message>
 
 	<message key="plugins.generic.stopForumSpam.manager.settings">Configurações</message>
 	<message key="plugins.generic.stopForumSpam.manager.stopForumSpamSettings">Configurações do Stop Forum Spam</message>
-	<message key="plugins.generic.stopForumSpam.manager.settings.description"><![CDATA[<p>Ao habilitar o plugin, o OJS verificará se o cadastro realizado contém elementos contidos na lista do Stop Forum Spam. Em caso positivo, os cadastros serão negados.</p>]]></message>
+	<message key="plugins.generic.stopForumSpam.manager.settings.description"><![CDATA[<p>Ao habilitar o plugin, o CLA verificará se o cadastro realizado contém elementos contidos na lista do Stop Forum Spam. Em caso positivo, os cadastros serão negados.</p>]]></message>
 	<message key="plugins.generic.stopForumSpam.manager.settings.checkIp">Verificar IP</message>
 	<message key="plugins.generic.stopForumSpam.manager.settings.checkEmail">Verificar e-mail</message>
 	<message key="plugins.generic.stopForumSpam.manager.settings.checkUsername">Verificar login (cuidado ao habilitar!)</message>

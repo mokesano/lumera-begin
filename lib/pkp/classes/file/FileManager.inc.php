@@ -263,7 +263,7 @@ class FileManager {
 			header('Pragma: public');
 
 			// Beware of converting to instance call
-			// https://github.com/pkp/pkp-lib/commit/82f4a36db406ecac3eb88875541a74123e455713#commitcomment-1459396
+			// https://github.com/sep/sep-lib/commit/82f4a36db406ecac3eb88875541a74123e455713#commitcomment-1459396
 			FileManager::readFile($filePath, true);
 
 			if ($postDownloadHooks) {
@@ -577,7 +577,7 @@ class FileManager {
 	 * or false in case of fail. 
 	 */
 	function _executeGzip($filePath, $decompress = false, &$errorMsg) {
-		PKPLocale::requireComponents(LOCALE_COMPONENT_PKP_ADMIN);
+		SEPLocale::requireComponents(LOCALE_COMPONENT_SEP_ADMIN);
 		$gzipPath = Config::getVar('cli', 'gzip');
 		if (!is_executable($gzipPath)) {
 			$errorMsg = __('admin.error.executingUtil', array('utilPath' => $gzipPath, 'utilVar' => 'gzip'));

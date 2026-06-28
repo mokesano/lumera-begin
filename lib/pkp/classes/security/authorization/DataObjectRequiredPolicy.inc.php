@@ -12,10 +12,10 @@
  * @brief Abstract base class for policies that check for a data object from a parameter.
  */
 
-import('lib.pkp.classes.security.authorization.AuthorizationPolicy');
+import('lib.sep.classes.security.authorization.AuthorizationPolicy');
 
 class DataObjectRequiredPolicy extends AuthorizationPolicy {
-	/** @var PKPRequest */
+	/** @var SEPRequest */
 	var $_request;
 
 	/** @var array */
@@ -32,7 +32,7 @@ class DataObjectRequiredPolicy extends AuthorizationPolicy {
 	//
 	/**
 	 * Return the request.
-	 * @return PKPRequest
+	 * @return SEPRequest
 	 */
 	function &getRequest() {
 		return $this->_request;
@@ -48,7 +48,7 @@ class DataObjectRequiredPolicy extends AuthorizationPolicy {
 
 	/**
 	 * Constructor
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $args array request parameters
 	 * @param $parameterName string the request parameter we expect
 	 * @param $message string
@@ -98,7 +98,7 @@ class DataObjectRequiredPolicy extends AuthorizationPolicy {
 		// Identify the data object id.
 		$router =& $this->_request->getRouter();
 		switch(true) {
-			case is_a($router, 'PKPPageRouter'):
+			case is_a($router, 'SEPPageRouter'):
 				if ( is_numeric($this->_request->getUserVar($this->_parameterName)) ) {
 					// We may expect a object id in the user vars
 					return (int) $this->_request->getUserVar($this->_parameterName);
@@ -108,7 +108,7 @@ class DataObjectRequiredPolicy extends AuthorizationPolicy {
 				}
 				break;
 
-			case is_a($router, 'PKPComponentRouter'):
+			case is_a($router, 'SEPComponentRouter'):
 				// We expect a named object id argument.
 				if (isset($this->_args[$this->_parameterName])
 						&& is_numeric($this->_args[$this->_parameterName])) {

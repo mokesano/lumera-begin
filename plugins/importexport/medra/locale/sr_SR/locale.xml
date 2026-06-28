@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/medra/locale/sr_SR/locale.xml
@@ -18,7 +18,7 @@
 	<message key="plugins.importexport.medra.intro"><![CDATA[Ako želite da registrujete DOI-e u mEDRA, pratite uputstva na
 		<a href="http://www.medra.org/en/guide.htm" target="_blank">mEDRA stranici</a>
 		da biste dobili korisničko ime i lozinku. Ukoliko nemate korisničko ime i lozinku i dalje ćete biti u mogućnosti da izvezete u mEDRA XML format (Onix za DOI)
-		ali ne možete da registrujete vaše DOI-e sa mEDRA iz OJS-a. 
+		ali ne možete da registrujete vaše DOI-e sa mEDRA iz CLA-a. 
 		Lozinka će biti sačuvana kao tekst, bez enkripcije u skladu sa potrebama mEDRA servisa.]]></message>
 
 	<message key="plugins.importexport.medra.settings.description"><![CDATA[Molimo Vas da <a href="{$settingsUrl}">podesite</a>  mEDRA dodatak pre prvog korišćenja.]]></message>

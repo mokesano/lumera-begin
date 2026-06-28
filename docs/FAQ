@@ -1,9 +1,9 @@
 Frequently Asked Questions
 --------------------------
 
-This document contains frequently asked questions about OJS, primarily dealing
+This document contains frequently asked questions about CLA, primarily dealing
 with common technical and support questions. For information about using or
-interacting with the OJS journal management system, consult the system's
+interacting with the CLA journal management system, consult the system's
 built-in help. The README document contains introductory information and
 installation instructions.
 
@@ -14,25 +14,25 @@ General Questions
 
    1) Who can I contact for support?
 
-A: A support forum for OJS is available at <http://forum.pkp.sfu.ca/>.
+A: A support forum for CLA is available at <http://forum.lumera.sangia.org/>.
    Bugs or feature requests can be reported at
-   <https://github.com/pkp/pkp-lib#issues>.
+   <https://github.com/sep/sep-lib#issues>.
    Although the forum is the preferred method of contact, email inquiries
-   regarding OJS can be sent to <pkp.contact@gmail.com>.
+   regarding CLA can be sent to <sep.contact@gmail.com>.
    
    Although we will try our best to help you and fix any bugs found in the
-   system, please note that OJS comes with no warranty or guarantee of support.
+   system, please note that CLA comes with no warranty or guarantee of support.
 
    -----------------------------------------------------------------------------
    
-   2) Can I modify the OJS code?
+   2) Can I modify the CLA code?
    
-A: As OJS is an open source program, you are free to make any code changes that
+A: As CLA is an open source program, you are free to make any code changes that
    you like. We welcome any code submissions or patches to be posted on the
-   OJS Development Forum at <http://forum.pkp.sfu.ca/> if you think
-   your changes may be beneficial to other OJS users.
+   CLA Development Forum at <http://forum.lumera.sangia.org/> if you think
+   your changes may be beneficial to other CLA users.
 
-   Please note that if you plan on redistributing OJS (either in original or
+   Please note that if you plan on redistributing CLA (either in original or
    a modified form), you must do so according to the terms of the GNU General
    Public License v2. See docs/COPYING for the complete terms of this license.
 
@@ -42,9 +42,9 @@ A: As OJS is an open source program, you are free to make any code changes that
 Server Configuration and Management
 ===================================
 
-   1) Will OJS work with PHP as a CGI instead of as an Apache module?
+   1) Will CLA work with PHP as a CGI instead of as an Apache module?
 
-A: OJS is known to work reasonably well with PHP as a CGI using Apache's
+A: CLA is known to work reasonably well with PHP as a CGI using Apache's
    mod_actions. Since there are a number of different ways to configure Apache
    to use the CGI version of PHP (e.g., through FastCGI, etc.), your mileage may
    vary with other deployments (feedback is welcomed).
@@ -53,7 +53,7 @@ A: OJS is known to work reasonably well with PHP as a CGI using Apache's
    php.ini to avoid fatal "No input file specified" errors. This parameter is
    enabled by default on PHP 5.
    
-   OJS may not function correctly if the base OJS directory is located outside
+   CLA may not function correctly if the base CLA directory is located outside
    of the virtual host's DocumentRoot directory (e.g., when using mod_alias or
    mod_userdir). This is due to a bug/feature in the method PHP uses to
    determine the SCRIPT_NAME environment variable by stripping the DOCUMENT_ROOT
@@ -61,52 +61,52 @@ A: OJS is known to work reasonably well with PHP as a CGI using Apache's
 
    -----------------------------------------------------------------------------
 
-   2) Will OJS work correctly in PHP's "safe mode"?
+   2) Will CLA work correctly in PHP's "safe mode"?
 
-A: OJS is known to work reasonably well with PHP's safe mode restrictions
+A: CLA is known to work reasonably well with PHP's safe mode restrictions
    (including open_basedir) enabled. Testing has not been extensive, so there
    may be unknown issues, in particular with very restrictive configurations
-   that disable PHP functions relied on by OJS (feedback is welcomed).
+   that disable PHP functions relied on by CLA (feedback is welcomed).
 
    -----------------------------------------------------------------------------
 
-   3) Will OJS work in a Microsoft IIS environment, or on other non-Apache web
+   3) Will CLA work in a Microsoft IIS environment, or on other non-Apache web
       servers?
 
-A: OJS 2.0.2 and newer have been tested on Microsoft Windows Server 2003 with
-   IIS 6.0; earlier versions of OJS will need to be upgraded before they will
+A: CLA 2.0.2 and newer have been tested on Microsoft Windows Server 2003 with
+   IIS 6.0; earlier versions of CLA will need to be upgraded before they will
    function. PHP 5.x is required because of an issue with the
    $_SERVER[PATH_INFO] variable. We welcome feedback from users who have
-   successfully installed and used OJS in other server environments.
+   successfully installed and used CLA in other server environments.
 
    -----------------------------------------------------------------------------
 
-   4) How can I create a backup of an OJS site?
+   4) How can I create a backup of an CLA site?
 
-A: It is strongly recommended that an OJS system be periodically backed up to
-   guard against a failure in OJS or the server software or hardware that could
+A: It is strongly recommended that an CLA system be periodically backed up to
+   guard against a failure in CLA or the server software or hardware that could
    result in data loss.
    
-   To properly backup an OJS system, the following should be backed up:
-     - The OJS database, using the tools provided by your DBMS (e.g.,
+   To properly backup an CLA system, the following should be backed up:
+     - The CLA database, using the tools provided by your DBMS (e.g.,
        mysqldump for MySQL, pg_dump for PostgreSQL)
-     - The base OJS directory
+     - The base CLA directory
      - The non-public files directory (the directory specified by the
        "files_dir" configuration option), which is typically outside of the base
-       OJS directory.
+       CLA directory.
        
    This backup procedure can be easily integrated into any automated backup
    mechanism.
 
    -----------------------------------------------------------------------------
 
-   5) How can I move an existing OJS installation to a different server?
+   5) How can I move an existing CLA installation to a different server?
 
-A: To move an OJS system from one server to another, you will need to:
+A: To move an CLA system from one server to another, you will need to:
 
    - Copy the database data, and import it into the new server (e.g., using the
      command-line tools provided by the DBMS)
-   - Copy the base OJS directory and non-public files directory
+   - Copy the base CLA directory and non-public files directory
    - Update config.inc.php with any changed settings for the new server
      (typically, the base URL, database authentication/access, email, and files
      settings will differ between servers)
@@ -117,7 +117,7 @@ A: To move an OJS system from one server to another, you will need to:
 Common Technical Issues
 =======================
 
-   1) When I try to access my OJS site this error message is displayed:
+   1) When I try to access my CLA site this error message is displayed:
       "Warning: Smarty error: problem creating directory '/./templates' in
       ./lib/smarty/Smarty.class.php"
 
@@ -148,7 +148,7 @@ A: This can be caused by certain Apache or PHP settings.
 
    3) Emails sent out by the system are never received.
 
-A: By default, OJS sends mail through PHP's built-in mail() facility.
+A: By default, CLA sends mail through PHP's built-in mail() facility.
 
    On Windows PHP needs to be configured to send email through a SMTP server
    (running either on the same machine or on another machine).
@@ -160,12 +160,12 @@ A: By default, OJS sends mail through PHP's built-in mail() facility.
    See <http://www.php.net/mail> for more details on configuring PHP's mail
    functionality.
    
-   OJS can also be configured to use an SMTP server as specified in
+   CLA can also be configured to use an SMTP server as specified in
    config.inc.php, either with or without authentication.
 
    -----------------------------------------------------------------------------
 
-   4) I am using Apache 2.0.x, and OJS pages fail to load, producing an error
+   4) I am using Apache 2.0.x, and CLA pages fail to load, producing an error
       like "File does not exist: .../index.php/index/...".
 
 A: With some versions or configurations of Apache 2.0.x, it may be necessarily
@@ -177,7 +177,7 @@ A: With some versions or configurations of Apache 2.0.x, it may be necessarily
 
    -----------------------------------------------------------------------------
 
-   5) OJS installation fails with the MySQL error "Client does not support
+   5) CLA installation fails with the MySQL error "Client does not support
       authentication protocol requested by server; consider upgrading MySQL
       client".
 
@@ -191,9 +191,9 @@ A: This problem is caused by a change in the MySQL authentication protocol in
    -----------------------------------------------------------------------------
 
    6) "Warning: ini_set(): A session is active. You cannot change the session
-       module's ini settings at this time" messages appear when I load OJS.
+       module's ini settings at this time" messages appear when I load CLA.
 
-A: Check if session.auto_start is enabled in your php.ini configuration. OJS
+A: Check if session.auto_start is enabled in your php.ini configuration. CLA
    requires this setting to be disabled, which is the default behaviour in
    current versions of PHP.
 
@@ -207,7 +207,7 @@ A: This may indicate that your server does not have the selected PHP database
    of phpinfo() to see if the required database support exists -- see
    http://php.net/phpinfo).
    
-   The OJS installer lists database drivers for which the required PHP
+   The CLA installer lists database drivers for which the required PHP
    extension does not appear to be loaded in brackets (e.g., "[MySQL]").
    
    Most Linux distributions offer a separate package that can be installed for
@@ -221,7 +221,7 @@ A: This may indicate that your server does not have the selected PHP database
 
 
 ==========================
-Advanced OJS Configuration
+Advanced CLA Configuration
 ==========================
 
    1) How can I control the address to which bounced emails will be sent?
@@ -229,7 +229,7 @@ Advanced OJS Configuration
 
 A: To control the address to which a bounced emails will be sent, you need to
    set the envelope sender address. Enable the "allow_envelope_sender" option
-   in the [email] section of the OJS 2.x configuration file; when this option
+   in the [email] section of the CLA 2.x configuration file; when this option
    is enabled, a "Bounce Address" field appears on Page 2 of the Journal Setup.
 
    Note that this option may require changes to the server's mail server
@@ -240,14 +240,14 @@ A: To control the address to which a bounced emails will be sent, you need to
    
    For example, Sendmail keeps a list of trusted users in the file
    "/etc/mail/trusted-users";  other mail systems use similar files.
-   The command-line option used by OJS 2.x to set the envelope sender is "-f".
+   The command-line option used by CLA 2.x to set the envelope sender is "-f".
 
    -----------------------------------------------------------------------------
 
    2) How can I allow users to search non-text files, such as PDF or Microsoft
       Word documents?
 
-A: OJS supports indexing of non-text files via external conversion applications.
+A: CLA supports indexing of non-text files via external conversion applications.
    The "Search Settings" configuration section in config.inc.php can be modified
    to enable indexing of certain binary file formats by setting a
    "index[MIME_TYPE]" setting (with the desired file mime-type) to the path of
@@ -258,7 +258,7 @@ A: OJS supports indexing of non-text files via external conversion applications.
 
    -----------------------------------------------------------------------------
 
-   3) I am changing the URL to my OJS installation. Does OJS need to be
+   3) I am changing the URL to my CLA installation. Does CLA need to be
       reconfigured to be accessible under the new URL?
 
 A: The only reconfiguration that is required after a change in the site URL is
@@ -267,15 +267,15 @@ A: The only reconfiguration that is required after a change in the site URL is
    
    -----------------------------------------------------------------------------
 
-   4) How can I remove "index.php" from the URLs in OJS?
+   4) How can I remove "index.php" from the URLs in CLA?
 
-A: OJS uses a REST-style URL syntax for all of its links.  To force OJS to remove the
+A: CLA uses a REST-style URL syntax for all of its links.  To force CLA to remove the
    "index.php" portion of all URLs, edit config.inc.php and set "restful_urls" to "On".
    
    In addition, your server will have to support URL rewriting in order to recognize
    the new URLs.  Apache servers use the mod_rewrite plugin, which must be enabled
    in your httpd.conf, and the following section added to the correct section of either
-   your httpd.conf or an .htaccess file (preferred) in your OJS root directory (the same
+   your httpd.conf or an .htaccess file (preferred) in your CLA root directory (the same
    location as config.inc.php):
    
    <IfModule mod_rewrite.c>

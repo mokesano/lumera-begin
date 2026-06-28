@@ -26,7 +26,7 @@ class PaymentHandler extends Handler {
 	/**
 	 * Pass request to plugin.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function plugin($args, &$request) {
 		$paymentMethodPlugins =& PluginRegistry::loadCategory('paymethod');

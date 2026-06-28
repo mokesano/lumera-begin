@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000003.xml
@@ -20,7 +20,7 @@
 	</section>
 
 	<section title="Información do Sistema">
-		<![CDATA[<p>Información xeral sobre o servidor e a historia desta versión de OJS (abranxendo actualizacións anteriores). Proporciónase tamén unha interface baseada en Web para modificar a configuración de OJS.</p>]]>
+		<![CDATA[<p>Información xeral sobre o servidor e a historia desta versión de CLA (abranxendo actualizacións anteriores). Proporciónase tamén unha interface baseada en Web para modificar a configuración de CLA.</p>]]>
 	</section>
 
 	<section title="Sesións de Usuarios expiradas">

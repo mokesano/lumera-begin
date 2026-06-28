@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.form.Form');
 
 define('COVER_PAGE_IMAGE_NAME', 'coverPage');
 
@@ -87,7 +87,7 @@ class MetadataForm extends Form {
 			$this->addCheck(new FormValidatorArrayCustom($this, 'authors', 'required', 'user.profile.form.urlInvalid', create_function('$url, $regExp', 'return empty($url) ? true : String::regexp_match($regExp, $url);'), array(ValidatorUrl::getRegexp()), false, array('url')));
 
 			// Add ORCiD validation
-			import('lib.pkp.classes.validation.ValidatorORCID');
+			import('lib.sep.classes.validation.ValidatorORCID');
 			$this->addCheck(new FormValidatorArrayCustom($this, 'authors', 'required', 'user.profile.form.orcidInvalid', create_function('$orcid', '$validator = new ValidatorORCID(); return empty($orcid) ? true : $validator->isValid($orcid);'), array(), false, array('orcid')));
 
 		} else {
@@ -202,7 +202,7 @@ class MetadataForm extends Form {
 		$roleDao =& DAORegistry::getDAO('RoleDAO');
 		$sectionDao =& DAORegistry::getDAO('SectionDAO');
 
-		AppLocale::requireComponents(LOCALE_COMPONENT_OJS_EDITOR); // editor.cover.xxx locale keys; FIXME?
+		AppLocale::requireComponents(LOCALE_COMPONENT_CLA_EDITOR); // editor.cover.xxx locale keys; FIXME?
 
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('articleId', isset($this->article)?$this->article->getId():null);
@@ -316,7 +316,7 @@ class MetadataForm extends Form {
 
 	/**
 	 * Save changes to article.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return int the article ID
 	 */
 	function execute(&$request) {

@@ -14,8 +14,8 @@
  *
  */
 
-import('lib.pkp.classes.controllers.grid.feature.GridFeature');
-import('lib.pkp.classes.linkAction.request.NullAction');
+import('lib.sep.classes.controllers.grid.feature.GridFeature');
+import('lib.sep.classes.linkAction.request.NullAction');
 
 class GridCategoryAccordionFeature extends GridFeature{
 
@@ -30,7 +30,7 @@ class GridCategoryAccordionFeature extends GridFeature{
 	 * @see GridFeature::getJSClass()
 	 */
 	function getJSClass() {
-		return '$.pkp.classes.features.GridCategoryAccordionFeature';
+		return '$.sep.classes.features.GridCategoryAccordionFeature';
 	}
 
 

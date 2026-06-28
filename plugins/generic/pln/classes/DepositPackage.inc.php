@@ -14,7 +14,7 @@
  */
 
 import('classes.file.JournalFileManager');
-import('lib.pkp.classes.scheduledTask.ScheduledTask');
+import('lib.sep.classes.scheduledTask.ScheduledTask');
 
 class DepositPackage {
 
@@ -135,7 +135,7 @@ class DepositPackage {
 		$atom = new DOMDocument('1.0', 'utf-8');
 		$entry = $atom->createElementNS('http://www.w3.org/2005/Atom', 'entry');
 		$entry->setAttributeNS('http://www.w3.org/2000/xmlns/' ,'xmlns:dcterms', 'http://purl.org/dc/terms/');
-		$entry->setAttributeNS('http://www.w3.org/2000/xmlns/' ,'xmlns:pkp', 'http://pkp.sfu.ca/SWORD');
+		$entry->setAttributeNS('http://www.w3.org/2000/xmlns/' ,'xmlns:sep', 'http://lumera.sangia.org/SWORD');
 		
 		$email = $this->_generateElement($atom, 'email', $journal->getSetting('contactEmail'));
 		$entry->appendChild($email);
@@ -143,14 +143,14 @@ class DepositPackage {
 		$title = $this->_generateElement($atom, 'title', $journal->getLocalizedTitle());
 		$entry->appendChild($title);
 		
-		$pkpJournalUrl = $this->_generateElement($atom, 'pkp:journal_url', $journal->getUrl(), 'http://pkp.sfu.ca/SWORD');
-		$entry->appendChild($pkpJournalUrl);
+		$sepJournalUrl = $this->_generateElement($atom, 'sep:journal_url', $journal->getUrl(), 'http://lumera.sangia.org/SWORD');
+		$entry->appendChild($sepJournalUrl);
 
-		$pkpPublisher = $this->_generateElement($atom, 'pkp:publisherName', $journal->getSetting('publisherInstitution'), 'http://pkp.sfu.ca/SWORD');
-		$entry->appendChild($pkpPublisher);
+		$sepPublisher = $this->_generateElement($atom, 'sep:publisherName', $journal->getSetting('publisherInstitution'), 'http://lumera.sangia.org/SWORD');
+		$entry->appendChild($sepPublisher);
 
-		$pkpPublisherUrl = $this->_generateElement($atom, 'pkp:publisherUrl', $journal->getSetting('publisherUrl'), 'http://pkp.sfu.ca/SWORD');
-		$entry->appendChild($pkpPublisherUrl);
+		$sepPublisherUrl = $this->_generateElement($atom, 'sep:publisherUrl', $journal->getSetting('publisherUrl'), 'http://lumera.sangia.org/SWORD');
+		$entry->appendChild($sepPublisherUrl);
 
 		$issn = '';
 		
@@ -160,8 +160,8 @@ class DepositPackage {
 			$issn = $journal->getSetting('printIssn');
 		}
 		
-		$pkpIssn = $this->_generateElement($atom, 'pkp:issn', $issn, 'http://pkp.sfu.ca/SWORD');
-		$entry->appendChild($pkpIssn);
+		$sepIssn = $this->_generateElement($atom, 'sep:issn', $issn, 'http://lumera.sangia.org/SWORD');
+		$entry->appendChild($sepIssn);
 		
 		$id = $this->_generateElement($atom, 'id', 'urn:uuid:'.$this->_deposit->getUUID());
 		$entry->appendChild($id);
@@ -170,8 +170,8 @@ class DepositPackage {
 		$entry->appendChild($updated);
 		
 		$url = $journal->getUrl() . '/' . PLN_PLUGIN_ARCHIVE_FOLDER . '/deposits/' . $this->_deposit->getUUID();
-		$pkpDetails = $this->_generateElement($atom, 'pkp:content', $url, 'http://pkp.sfu.ca/SWORD');
-		$pkpDetails->setAttribute('size', ceil(filesize($packageFile)/1000));
+		$sepDetails = $this->_generateElement($atom, 'sep:content', $url, 'http://lumera.sangia.org/SWORD');
+		$sepDetails->setAttribute('size', ceil(filesize($packageFile)/1000));
 		
 		$objectVolume = "";
 		$objectIssue = "";
@@ -202,30 +202,30 @@ class DepositPackage {
 				break;
 		}
 		
-		$pkpDetails->setAttribute('volume', $objectVolume);
-		$pkpDetails->setAttribute('issue', $objectIssue);
-		$pkpDetails->setAttribute('pubdate', strftime("%F",strtotime($objectPublicationDate)));
+		$sepDetails->setAttribute('volume', $objectVolume);
+		$sepDetails->setAttribute('issue', $objectIssue);
+		$sepDetails->setAttribute('pubdate', strftime("%F",strtotime($objectPublicationDate)));
 		
 		switch ($plnPlugin->getSetting($journal->getId(), 'checksum_type')) {
 			case 'SHA-1':
-				$pkpDetails->setAttribute('checksumType', 'SHA-1');
-				$pkpDetails->setAttribute('checksumValue', sha1_file($packageFile));
+				$sepDetails->setAttribute('checksumType', 'SHA-1');
+				$sepDetails->setAttribute('checksumValue', sha1_file($packageFile));
 				break;
 			case 'MD5':
-				$pkpDetails->setAttribute('checksumType', 'MD5');
-				$pkpDetails->setAttribute('checksumValue', md5_file($packageFile));
+				$sepDetails->setAttribute('checksumType', 'MD5');
+				$sepDetails->setAttribute('checksumValue', md5_file($packageFile));
 				break;
 		}
 
-		$entry->appendChild($pkpDetails);
+		$entry->appendChild($sepDetails);
 		$atom->appendChild($entry);
 
 		$locale = $journal->getPrimaryLocale();
-		$license = $atom->createElementNS('http://pkp.sfu.ca/SWORD', 'license');
-		$license->appendChild($this->_generateElement($atom, 'openAccessPolicy', $journal->getLocalizedSetting('openAccessPolicy', $locale), 'http://pkp.sfu.ca/SWORD'));
-		$license->appendChild($this->_generateElement($atom, 'licenseURL', $journal->getLocalizedSetting('licenseURL', $locale), 'http://pkp.sfu.ca/SWORD'));
+		$license = $atom->createElementNS('http://lumera.sangia.org/SWORD', 'license');
+		$license->appendChild($this->_generateElement($atom, 'openAccessPolicy', $journal->getLocalizedSetting('openAccessPolicy', $locale), 'http://lumera.sangia.org/SWORD'));
+		$license->appendChild($this->_generateElement($atom, 'licenseURL', $journal->getLocalizedSetting('licenseURL', $locale), 'http://lumera.sangia.org/SWORD'));
 		
-		$mode = $atom->createElementNS('http://pkp.sfu.ca/SWORD', 'publishingMode');
+		$mode = $atom->createElementNS('http://lumera.sangia.org/SWORD', 'publishingMode');
 		switch($journal->getSetting('publishingMode')) {
 			case PUBLISHING_MODE_OPEN:
 				$mode->nodeValue = 'Open';
@@ -238,9 +238,9 @@ class DepositPackage {
 				break;
 		}
 		$license->appendChild($mode);
-		$license->appendChild($this->_generateElement($atom, 'copyrightNotice', $journal->getLocalizedSetting('copyrightNotice', $locale), 'http://pkp.sfu.ca/SWORD'));
-		$license->appendChild($this->_generateElement($atom, 'copyrightBasis', $journal->getLocalizedSetting('copyrightBasis'), 'http://pkp.sfu.ca/SWORD'));
-		$license->appendChild($this->_generateElement($atom, 'copyrightHolder', $journal->getLocalizedSetting('copyrightHolder'), 'http://pkp.sfu.ca/SWORD'));
+		$license->appendChild($this->_generateElement($atom, 'copyrightNotice', $journal->getLocalizedSetting('copyrightNotice', $locale), 'http://lumera.sangia.org/SWORD'));
+		$license->appendChild($this->_generateElement($atom, 'copyrightBasis', $journal->getLocalizedSetting('copyrightBasis'), 'http://lumera.sangia.org/SWORD'));
+		$license->appendChild($this->_generateElement($atom, 'copyrightHolder', $journal->getLocalizedSetting('copyrightHolder'), 'http://lumera.sangia.org/SWORD'));
 		
 		$entry->appendChild($license);
 		$atom->save($atomFile);
@@ -278,8 +278,8 @@ class DepositPackage {
 		// set up folder and file locations
 		$bagDir = $this->getDepositDir() . DIRECTORY_SEPARATOR . $this->_deposit->getUUID();
 		$packageFile = $this->getPackageFilePath();
-		$exportFile =  tempnam(sys_get_temp_dir(), 'ojs-pln-export-');
-		$termsFile =  tempnam(sys_get_temp_dir(), 'ojs-pln-terms-');
+		$exportFile =  tempnam(sys_get_temp_dir(), 'cla-pln-export-');
+		$termsFile =  tempnam(sys_get_temp_dir(), 'cla-pln-terms-');
 		
 		$bag = new BagIt($bagDir);
 		
@@ -328,20 +328,20 @@ class DepositPackage {
 		$termsXml = new DOMDocument('1.0', 'utf-8');
 		$entry = $termsXml->createElementNS('http://www.w3.org/2005/Atom', 'entry');
 		$entry->setAttributeNS('http://www.w3.org/2000/xmlns/' ,'xmlns:dcterms', 'http://purl.org/dc/terms/');
-		$entry->setAttributeNS('http://www.w3.org/2000/xmlns/' ,'xmlns:pkp', PLN_PLUGIN_NAME);
+		$entry->setAttributeNS('http://www.w3.org/2000/xmlns/' ,'xmlns:sep', PLN_PLUGIN_NAME);
 
 		$terms = unserialize($plnPlugin->getSetting($this->_deposit->getJournalId(), 'terms_of_use'));
 		$agreement = unserialize($plnPlugin->getSetting($this->_deposit->getJournalId(), 'terms_of_use_agreement'));
 		
-		$pkpTermsOfUse = $termsXml->createElementNS(PLN_PLUGIN_NAME, 'pkp:terms_of_use');
+		$sepTermsOfUse = $termsXml->createElementNS(PLN_PLUGIN_NAME, 'sep:terms_of_use');
 		foreach ($terms as $termName => $termData) {
 			$element = $termsXml->createElementNS(PLN_PLUGIN_NAME, $termName, $termData['term']);
 			$element->setAttribute('updated',$termData['updated']);
 			$element->setAttribute('agreed', $agreement[$termName]);
-			$pkpTermsOfUse->appendChild($element);
+			$sepTermsOfUse->appendChild($element);
 		}
 
-		$entry->appendChild($pkpTermsOfUse);
+		$entry->appendChild($sepTermsOfUse);
 		$termsXml->appendChild($entry);
 		$termsXml->save($termsFile);
 

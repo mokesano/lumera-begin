@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/id_ID/manager.xml
@@ -30,7 +30,7 @@
 	<message key="manager.language.forms"> Form </message> 
 	<message key="manager.language.confirmDefaultSettingsOverwrite"> Ini akan menggantikan pengaturan jurnal bahasa khusus apapun yang Anda miliki untuk bahasa ini</message> 
 	<message key="manager.language.reloadLocalizedDefaultSettings"> Reload default </message> 
-	<message key="manager.languages.languageInstructions"><![CDATA[OJS dapat digunakan dalam bahasa apa pun yang tersedia (bahasa yang didukung oleh OJS). OJS juga dapat beroperasi sebagai sistem multilingual yang memungkinkan pengguna untuk berpindah dari satu bahasa ke bahasa lain pada halaman yang sama, dan memungkinkan data tertentu untuk dimasukkan ke dalam beberapa bahasa tambahan.<br /><br />Jika bahasa yang didukung oleh OJS tidak terdaftar di bawah ini, tanya Administrator Situs Anda untuk menginstal bahasa pendukung tersebut dari antarmuka administrasi situs. Untuk instruksi penambahan dukungan untuk bahasa baru, berkonsultasilah dengan dokumentasi OJS]]></message> 
+	<message key="manager.languages.languageInstructions"><![CDATA[CLA dapat digunakan dalam bahasa apa pun yang tersedia (bahasa yang didukung oleh CLA). CLA juga dapat beroperasi sebagai sistem multilingual yang memungkinkan pengguna untuk berpindah dari satu bahasa ke bahasa lain pada halaman yang sama, dan memungkinkan data tertentu untuk dimasukkan ke dalam beberapa bahasa tambahan.<br /><br />Jika bahasa yang didukung oleh CLA tidak terdaftar di bawah ini, tanya Administrator Situs Anda untuk menginstal bahasa pendukung tersebut dari antarmuka administrasi situs. Untuk instruksi penambahan dukungan untuk bahasa baru, berkonsultasilah dengan dokumentasi CLA]]></message> 
 	<message key="manager.languages.noneAvailable"> Maaf, tidak tersedia bahasa tambahan dalam situs ini. Hubungi administrator situs Anda jika Anda ingin menggunakan bahasa pendukung untuk jurnal ini.</message>	
 <message key="manager.languages.primaryLocaleInstructions"> Bahasa default untuk situs jurnal.</message> 
 	<message key="manager.managementPages"> Halaman Manajemen
@@ -41,7 +41,7 @@
 	<message key="manager.payment.authorFees">Biaya Penulis </message> 
 	<message key="manager.payment.authorFeesDescription"> Pilihan yang dipilih, dengan deskripsi dan biaya (yang dapat diedit di bawah ini), akan ditampilkan di Langkah 1 proses penyerahan naskah dan di Tentang Kami di bawah penyerahan naskah, serta di bagian mana pun pembayaran diperlukan.</message>	
 <message key="manager.payment.currency"> Mata uang </message> 
-	<message key="manager.payment.currencymessage"> OJS tidak menyediakan konversi mata uang apa pun. Jika menerima pembayaran untuk langganan, Anda harus pastikan bahwa mata uang langganan sesuai dengan yang ada di sini.</message>	
+	<message key="manager.payment.currencymessage"> CLA tidak menyediakan konversi mata uang apa pun. Jika menerima pembayaran untuk langganan, Anda harus pastikan bahwa mata uang langganan sesuai dengan yang ada di sini.</message>	
 <message key="manager.payment.description"> Deskripsi </message> 
 	<message key="manager.payment.details">Detail</message> 
 	<message key="manager.payment.editSubscription">Edit Langganan </message> 
@@ -245,7 +245,7 @@
 	<message key="manager.setup.doiPrefix"> Awalan DOI </message> 
 	<message key="manager.setup.doiPrefixDescription"><![CDATA[Awalan DOI (Digital Object Identifier) ditugaskan oleh <a href="http://www.crossref.org" target="_new">CrossRef</a> dan dalam format 10.xxxx (contoh: 10.1234).]]></message> 
 	<message key="manager.setup.doiSuffix"> Akhiran DOI </message>	<message key="manager.setup.doiSuffixDefault"> Gunakan pola default (%j.v%vi%i.%a).</message> 
-<message key="manager.setup.doiSuffixPattern"> Gunakan pola yang akan dimasukkan pada kolom dibawah ini untuk menghasilkan akhiran DOI. Gunakan %j untuk inisial jurnal, %v untuk nomor volume, %i untuk nomor terbitan, %a untuk ID artikel OJS, dan %p untuk nomor halaman.</message> 
+<message key="manager.setup.doiSuffixPattern"> Gunakan pola yang akan dimasukkan pada kolom dibawah ini untuk menghasilkan akhiran DOI. Gunakan %j untuk inisial jurnal, %v untuk nomor volume, %i untuk nomor terbitan, %a untuk ID artikel CLA, dan %p untuk nomor halaman.</message> 
 <message key="manager.setup.doiSuffixPattern.example"> Sebagai contoh, vol%viss%ipp%p dapat membuat DOI 10.1234/vol3iss2pp230 </message>
 	<message key="manager.setup.doiSuffixDescription"> Akhiran DOI dapat berbentuk apapun, tetapi harus unik untuk masing-masing item yang telah yang diterbitkan.</message>	
 <message key="manager.setup.doiSuffixCustomIdentifier"> Gunakan "Custom Identifier" untuk item yang telah diterbitkan sebagai akhiran DOI (harus diaktifkan pada langkah 4).</message>
@@ -260,7 +260,7 @@
 	<message key="manager.setup.editorialReviewBoardDescription"> Jurnal memiliki Dewan Editorial untuk mengawasi arah editorial jurnal, berpartisipasi dalam penunjukan editor dan karena reputasi anggota dewan, memberikan jurnal reputasi di bidang itu. Anggota dewan Reviewer tidak akan memiliki akses ke sistem administrasi jurnal tapi akan ditambahkan ke daftar yang tersedia/ yang bisa untuk mengerjakan peer review.</message> 
 	<message key="manager.setup.emailBounceAddress">Bounce Address</message> 
 	<message key="manager.setup.emailBounceAddressDescription">Setiap email yang tidak terkirim akan menghasilkan pesan eror ke alamat ini.</message> 
-	<message  key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Catatan:</strong> Untuk mengaktifkan pilihan ini, administrator situs harus mengaktifkan pilihan <tt>allow_envelope_sender</tt> di file konfigurasi OJS. Konfigurasi server tambahan mungkin diperlukan untuk mensupport fungsi ini (yang tidak dapat dilakukan pada semua server), seperti yang tercantum di dokumentasi OJS.]]></message> 
+	<message  key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Catatan:</strong> Untuk mengaktifkan pilihan ini, administrator situs harus mengaktifkan pilihan <tt>allow_envelope_sender</tt> di file konfigurasi CLA. Konfigurasi server tambahan mungkin diperlukan untuk mensupport fungsi ini (yang tidak dapat dilakukan pada semua server), seperti yang tercantum di dokumentasi CLA.]]></message> 
 	<message key="manager.setup.emails"> Identifikasi Email </message> 
 	<message key="manager.setup.emailSignature"> Signature </message> 
 	<message key="manager.setup.emailSignatureDescription"> Email yang disiapkan dan dikirim oleh sistem untuk kepentingan jurnal memiliki signature yang ditambahkan di akhir. Badan email tersedia di bawah Manajemen Jurnal untuk pengeditan.</message>	
@@ -307,7 +307,7 @@
 	<message key="manager.setup.information.forLibrarians"> Untuk Pustakawan </message> 
 	<message key="manager.setup.information.forReaders"> Untuk Pembaca </message> 
 	<message key="manager.setup.initialIssue"> Terbitan Awal
-</message>	<message key="manager.setup.initialIssueDescription"> Tergantung pada format yang dipilih, mengidentifikasi terbitan, volume, dan/ atau tahun terbitan pertama untuk diterbitkan dnegan OJS:</message> 
+</message>	<message key="manager.setup.initialIssueDescription"> Tergantung pada format yang dipilih, mengidentifikasi terbitan, volume, dan/ atau tahun terbitan pertama untuk diterbitkan dnegan CLA:</message> 
 	<message key="manager.setup.institution">Institusi</message> 
 	<message key="manager.setup.issnDescription"><![CDATA[ISSN (International Standard Serial Number) adalah delapan digit nomor yang mengidentifikasi penerbitan berkala, termasuk penerbitan berkala elektronik. ISSN dikelola oleh World Wide Network of National Centres yang dikoordinasikan oleh International Centre yang berkedudukan di Paris yang didukung oleh Unesco dan Pemerintah Perancis. ISSN bisa didapatkan di <a href="http://www.issn.org" target="_new">Website ISSN</a>.]]></message>
 <message key="manager.setup.issuePerVolume"> Terbitan per volume </message> 
@@ -451,7 +451,7 @@
 	<message key="manager.setup.sectionsDefaultSectionDescription">( Jika bagian tidak ditambahkan, item diserahkan kepada bagian Artikel by default.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Untuk membuat atau memodifikasi bagian untuk jurnal (contoh: artikel, review buku, dll), pergi ke manajemen bagian.<br /><br /> Penulis dalam menyerahkan item untuk jurnal akan menunjukkan....]]></message>
 	<message key="manager.setup.securitySettings"> Pengaturan Akses dan Keamanan</message> 
-	<message key="manager.setup.securitySettingsDescription"> OJS menyediakan sejumlah pilihan yang berkaitan dengan keamanan yang dapat digunakan untuk membatasi konten jurnal, dan menjaga informasi tambahan tentang naskah untuk proses audit.</message> 
+	<message key="manager.setup.securitySettingsDescription"> CLA menyediakan sejumlah pilihan yang berkaitan dengan keamanan yang dapat digunakan untuk membatasi konten jurnal, dan menjaga informasi tambahan tentang naskah untuk proses audit.</message> 
 	<message key="manager.setup.selectEditorDescription"> Editor jurnal akan mengecek melalui proses editorial.</message>	
 <message key="manager.setup.selectSectionDescription"> Bagian jurnal di mana item akan dipertimbangkan.</message>
 	<message key="manager.setup.showGalleyLinksDescription"> Selalu tunjukkan tautan galley dan menandakan akses dibatasi.</message>
@@ -500,7 +500,7 @@
 	<message key="manager.statistics.statistics.count.revise"> Serahkan Ulang</message>	
 <message key="manager.statistics.statistics.daysPerReview"> Hari untuk mereview</message> 
 	<message key="manager.statistics.statistics.daysToPublication"> Hari untuk penerbitan </message> 
-	<message key="manager.statistics.statistics.description">OJS menghitung statistik berikut ini untuk masing-masing jurnal. "Hari untuk mereview" dihitung dari tanggal penyerahan naskah (atau penunjukan Versi Review) hingga keputusan Editor awal, sedangkan "hari untuk menerbitkan" diukur untuk penyerahan naskah yang diterima dari versi aslinya saat diunggah hingga penerbitannya.</message> 
+	<message key="manager.statistics.statistics.description">CLA menghitung statistik berikut ini untuk masing-masing jurnal. "Hari untuk mereview" dihitung dari tanggal penyerahan naskah (atau penunjukan Versi Review) hingga keputusan Editor awal, sedangkan "hari untuk menerbitkan" diukur untuk penyerahan naskah yang diterima dari versi aslinya saat diunggah hingga penerbitannya.</message> 
 	<message key="manager.statistics.statistics.itemsPublished">Item yang telah diterbitkan</message> 
 	<message key="manager.statistics.statistics.makePublic"> Centang item agar tersedia untuk pembaca di Tentang Kami.</message>	
 <message key="manager.statistics.statistics.note"> Catatan: persentase untuk naskah yang dipeer review mungkin tidak sampai 100%, karena item yang diserahkan ulang bisa diterima, ditolak, atau masih dalam proses.</message> 
@@ -534,17 +534,17 @@
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks1">Beritahu pelanggan melalui email</message> 
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeWeeks2">minggu sebelum masa berakhir langganan.</message> 
 	<message key="manager.subscriptionPolicies.expiryReminders">Pengingat masa berakhir langganan</message> 
-	<message key="manager.subscriptionPolicies.expiryRemindersDescription"> Email pengingat otomatis(tersedua untuk mengedit oleh manajer jurnal di email yang disiapkan OJS) dapat dikirimkan ke pelanggan sebelum atau sesudah langganan berakhir.</message> 
-	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong> Catatan:</strong> Untuk mengaktifkan pilihan ini, Administrator situs harus memudahkan pilihan <tt>scheduled_tasks</tt> di file konfigurasi OJS. Konfigurasi server tambahan mungkin diperlukan untuk mensupport fungsi ini, seperti ditunjukkan di dokumentasi OJS.]]></message>
+	<message key="manager.subscriptionPolicies.expiryRemindersDescription"> Email pengingat otomatis(tersedua untuk mengedit oleh manajer jurnal di email yang disiapkan CLA) dapat dikirimkan ke pelanggan sebelum atau sesudah langganan berakhir.</message> 
+	<message key="manager.subscriptionPolicies.expiryRemindersDisabled"><![CDATA[<strong> Catatan:</strong> Untuk mengaktifkan pilihan ini, Administrator situs harus memudahkan pilihan <tt>scheduled_tasks</tt> di file konfigurasi CLA. Konfigurasi server tambahan mungkin diperlukan untuk mensupport fungsi ini, seperti ditunjukkan di dokumentasi CLA.]]></message>
 	<message key="manager.subscriptionPolicies.expirySelectOne"> Pilih satu dari berikut ini:</message> 
 	<message key="manager.subscriptionPolicies.htmlInstructions"><![CDATA[HTML dapat digunakan di area teks (untuk ukuran huruf, warna, dll.), dengan "kembali"  <tt>&lt;br&gt;</tt>; Editor HTML bekerja dengan perambah firefox.]]></message> 
 	<message key="manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid"> Pilih nilai valid untuk jumlah bulan setelah masa berakhir langganan.</message>	<message key="manager.subscriptionPolicies.numMonthsBeforeSubscriptionExpiryReminderValid"> Pilih nilai valid untuk jumlah bulan sebelum masa berakhir langganan.</message>	
 <message key="manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid"> Pilih nilai valid untuk jumlah minggu setelah masa berakhir langganan.</message>
 	<message key="manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid"> Pilih nilai valid untuk jumlah minggu sebelum masa berakhir langganan.</message>
 	<message key="manager.subscriptionPolicies.openAccessNotificationDescription"> Pembaca terdaftar akan memilih pilihan menerima daftar isi melalui email saat terbitan menjadi akses terbuka.</message> 
-	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong> Catatan:</strong> Untuk mengaktifkan pilihan ini, administrator situs harus memudahkan pilihan <tt>scheduled_tasks</tt> di file konfigurasi OJS. Konfigurasi server tambahan mungkin dieprlukan untuk support fungsi ini (yang bisa tidak mungkin di semua server), seperti ditunjukkan di dokumentasi OJS.]]></message>	
+	<message key="manager.subscriptionPolicies.openAccessNotificationDisabled"><![CDATA[<strong> Catatan:</strong> Untuk mengaktifkan pilihan ini, administrator situs harus memudahkan pilihan <tt>scheduled_tasks</tt> di file konfigurasi CLA. Konfigurasi server tambahan mungkin dieprlukan untuk support fungsi ini (yang bisa tidak mungkin di semua server), seperti ditunjukkan di dokumentasi CLA.]]></message>	
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications"> Notifikasi Pembayaran Online</message> 
-	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription"> Notifikasi email otomatis (tersedia untuk pengeditan oleh manajer jurnal di email yang disiapkan OJS) dapat dikirim ke manajer langganan setelah penyelesaian pembayaran online langganan.</message> 
+	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription"> Notifikasi email otomatis (tersedia untuk pengeditan oleh manajer jurnal di email yang disiapkan CLA) dapat dikirim ke manajer langganan setelah penyelesaian pembayaran online langganan.</message> 
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual"> Memberitahu manajer langganan melalui email setelah pembelian online langganan individu.</message> 
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseInstitutional"> Memberitahu manajer langganan melalui email setelah pembelian online langganan institusi.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationRenewIndividual"> Memberitahu manajer langganan melalui email setelah pembaruan online langganan individu.</message> 

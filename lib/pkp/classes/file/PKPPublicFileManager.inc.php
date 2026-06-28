@@ -1,27 +1,27 @@
 <?php
 
 /**
- * @file classes/file/PKPPublicFileManager.inc.php
+ * @file classes/file/SEPPublicFileManager.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPPublicFileManager
+ * @class SEPPublicFileManager
  * @ingroup file
  *
  * @brief Wrapper class for uploading files to a site/journal's public directory.
  */
 
 
-import('lib.pkp.classes.file.FileManager');
+import('lib.sep.classes.file.FileManager');
 
-class PKPPublicFileManager extends FileManager {
+class SEPPublicFileManager extends FileManager {
 
 	/**
 	 * Constructor
 	 */
-	function PKPPublicFileManager() {
+	function SEPPublicFileManager() {
 		parent::FileManager();
 	}
 

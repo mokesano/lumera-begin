@@ -16,7 +16,7 @@
  */
 
 
-import('lib.pkp.plugins.metadata.openurl10.schema.Openurl10BaseSchema');
+import('lib.sep.plugins.metadata.openurl10.schema.Openurl10BaseSchema');
 
 // "dissertation" is not defined as genre in the standard. We only use it internally.
 define('OPENURL10_PSEUDOGENRE_DISSERTATION', 'dissertation');
@@ -28,7 +28,7 @@ class Openurl10DissertationSchema extends Openurl10BaseSchema {
 	function Openurl10DissertationSchema() {
 		parent::Openurl10BaseSchema(
 			'openurl-1.0-dissertation',
-			'lib.pkp.plugins.metadata.openurl10.schema.Openurl10DissertationSchema'
+			'lib.sep.plugins.metadata.openurl10.schema.Openurl10DissertationSchema'
 		);
 
 		// Add meta-data properties that only appear in the OpenURL dissertation standard

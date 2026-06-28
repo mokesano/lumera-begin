@@ -13,7 +13,7 @@
  * @brief Google Analytics plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+import('lib.sep.classes.plugins.GenericPlugin');
 
 class GoogleAnalyticsPlugin extends GenericPlugin {
 	/**

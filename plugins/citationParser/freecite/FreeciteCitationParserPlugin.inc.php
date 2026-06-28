@@ -18,14 +18,14 @@
  */
 
 
-import('lib.pkp.plugins.citationParser.freecite.PKPFreeciteCitationParserPlugin');
+import('lib.sep.plugins.citationParser.freecite.SEPFreeciteCitationParserPlugin');
 
-class FreeciteCitationParserPlugin extends PKPFreeciteCitationParserPlugin {
+class FreeciteCitationParserPlugin extends SEPFreeciteCitationParserPlugin {
 	/**
 	 * Constructor
 	 */
 	function FreeciteCitationParserPlugin() {
-		parent::PKPFreeciteCitationParserPlugin();
+		parent::SEPFreeciteCitationParserPlugin();
 	}
 }
 

@@ -15,7 +15,7 @@
  */
 
 
-import('lib.pkp.classes.cache.GenericCache');
+import('lib.sep.classes.cache.GenericCache');
 
 // FIXME This should use connection pooling
 // WARNING: This cache MUST be loaded in batch, or else many cache

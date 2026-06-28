@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000002.xml
@@ -15,7 +15,7 @@
 
 <topic id="site/topic/000002" locale="it_IT" title="Gestione del sito" toc="site/toc/000000" key="site.siteManagement">
 	<section>
-		<![CDATA[<p>OJS &#x00E8; costruito per essere un sistema multi-rivista, e l'amministratore del sito &#x00E8; responsabile per configurare i livelli del sito  e creare le nuove riviste che saranno ospitate nel sito.</p>]]>	
+		<![CDATA[<p>CLA &#x00E8; costruito per essere un sistema multi-rivista, e l'amministratore del sito &#x00E8; responsabile per configurare i livelli del sito  e creare le nuove riviste che saranno ospitate nel sito.</p>]]>	
 	</section>
 	
 	<section title="impostazioni del sito">
@@ -24,15 +24,15 @@
 	</section>
 	
 	<section title="Riviste ospitate">
-		<![CDATA[<p>Dato che OJS permette di gestire quante riviste si voglia, esse possono essere create e gestite in ogni momento. Ogni rivista che &#x00E8; stata creata pu&#00F2; essere reggiunta tramite un URL unica dal sito OJS pricipale che &#x00E8; basata su un path inserito dall'amministratore del sito. Le nuove riviste, non ancora in produzione,  possono essere nascosti dal sito principale fino a che sono pronti per essere attivate.</p>]]>
+		<![CDATA[<p>Dato che CLA permette di gestire quante riviste si voglia, esse possono essere create e gestite in ogni momento. Ogni rivista che &#x00E8; stata creata pu&#00F2; essere reggiunta tramite un URL unica dal sito CLA pricipale che &#x00E8; basata su un path inserito dall'amministratore del sito. Le nuove riviste, non ancora in produzione,  possono essere nascosti dal sito principale fino a che sono pronti per essere attivate.</p>]]>
 	</section>
 	
 	<section title="Lingue">
-		<![CDATA[<p>OJS &#x00E8; costruito per essere un sistema multilingua, e permette alle riviste il supporto di una vasta gamma di lingue da ospitare in un singolo sito. L'amministratore del sito pu&#x00F2; specificare la lingua di default del sito e installare lingue addizionali quando sono disponibili. I siti dei journal sono completamente indipendenti, ad eccezione degli account degli utenti; sebbene ogni utente possa asssociare al suo account diversi ruoli e riviste diverse, in ogni combinazione, email e username saranno le stesse per ognuna.</p>
-		<p>Pacchetti di lingue aggiuntive sono disponibil per essere scaricate dal sito web di <a href="http://pkp.sfu.ca/ojs" target="_blank">Open Journal Systems</a> non appena vengono ricevute traduzioni dagli utenti contributori. Questi pacchetti possono essere installati in sistema OJS esistente per renderle disponibili ai journal.</p>
-		<p>La traduzione in lingua italiana è resa disponibile da <a href="http://www.aepic.it/ojs.php" target="_blank">AePIC team, CILEA</a>. ]]>
+		<![CDATA[<p>CLA &#x00E8; costruito per essere un sistema multilingua, e permette alle riviste il supporto di una vasta gamma di lingue da ospitare in un singolo sito. L'amministratore del sito pu&#x00F2; specificare la lingua di default del sito e installare lingue addizionali quando sono disponibili. I siti dei journal sono completamente indipendenti, ad eccezione degli account degli utenti; sebbene ogni utente possa asssociare al suo account diversi ruoli e riviste diverse, in ogni combinazione, email e username saranno le stesse per ognuna.</p>
+		<p>Pacchetti di lingue aggiuntive sono disponibil per essere scaricate dal sito web di <a href="http://lumera.sangia.org/cla" target="_blank">Code Lumera Editorial</a> non appena vengono ricevute traduzioni dagli utenti contributori. Questi pacchetti possono essere installati in sistema CLA esistente per renderle disponibili ai journal.</p>
+		<p>La traduzione in lingua italiana è resa disponibile da <a href="http://www.aepic.it/cla.php" target="_blank">AePIC team, CILEA</a>. ]]>
 	</section>
 		<section title="Fonti di autenticazione">
-		<![CDATA[<p>Per default, OJS autentica gli utenti sul suo database interno. &#200; tuttavia possibile usare altri metodi di autenticazione, come LDAP. ALtri metodi di autenticazione sono forniti dai plugin di OJS; si veda la documentazione di questi ultimi per ulteriori informazioni</p>]]>
+		<![CDATA[<p>Per default, CLA autentica gli utenti sul suo database interno. &#200; tuttavia possibile usare altri metodi di autenticazione, come LDAP. ALtri metodi di autenticazione sono forniti dai plugin di CLA; si veda la documentazione di questi ultimi per ulteriori informazioni</p>]]>
 	</section>
 </topic>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE toc SYSTEM "../../../../lib/pkp/dtd/helpToc.dtd">
+<!DOCTYPE toc SYSTEM "../../../../lib/sep/dtd/helpToc.dtd">
 
 <!--
   * 000000.xml
@@ -12,8 +12,8 @@
   *
   -->
 
-<toc id="index/toc/000000" locale="fr_CA" title="Aide pour OJS" parent_topic="index/topic/000000">
-	<topic id="intro/topic/000000" title="Introduction à OJS" />
+<toc id="index/toc/000000" locale="fr_CA" title="Aide pour CLA" parent_topic="index/topic/000000">
+	<topic id="intro/topic/000000" title="Introduction à CLA" />
 	<topic id="site/topic/000000" title="Site de l’administration" />
 	<topic id="journal/topic/000000" title="Gestion de la revue" />
 	<topic id="submission/topic/000000" title="Processus des présentations" />

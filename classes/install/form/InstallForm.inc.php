@@ -19,8 +19,8 @@
  */
 
 import('classes.install.Install');
-import('lib.pkp.classes.site.VersionCheck');
-import('lib.pkp.classes.form.Form');
+import('lib.sep.classes.site.VersionCheck');
+import('lib.sep.classes.form.Form');
 
 class InstallForm extends Form {
 
@@ -155,11 +155,11 @@ class InstallForm extends Form {
 			'filesDir' =>  $docRoot . 'files',
 			'databaseDriver' => 'mysql',
 			'databaseHost' => 'localhost',
-			'databaseUsername' => 'ojs',
+			'databaseUsername' => 'cla',
 			'databasePassword' => '',
-			'databaseName' => 'ojs',
+			'databaseName' => 'cla',
 			'createDatabase' => 1,
-			'oaiRepositoryId' => 'ojs.' . Request::getServerHost(),
+			'oaiRepositoryId' => 'cla.' . Request::getServerHost(),
 			'enableBeacon'=> true
 		);
 	}

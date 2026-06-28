@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<!DOCTYPE version SYSTEM "../../lib/pkp/dtd/rtVersion.dtd">
+<!DOCTYPE version SYSTEM "../../lib/sep/dtd/rtVersion.dtd">
 <!--
   * Art_Architecture.xml
   *
@@ -33,8 +33,8 @@
     <search>
       <search_title>استخراج کننده آرشیو رایگان مربوط به پروژه دانش عمومی</search_title>
       <search_description>استخراج کننده آرشیو رایگان پروژه دانش عمومی یک سیستم اندکس کننده متاداده رایگان است که توسط پروژه دانش عمومی در جهت افزایش دستیابی به منابع پژوهشی ایجاد شده است. با این ابزار میتوانید اندکس قابل جستجوئی از متاداده مطابق با استاندارد راهنمای آرشیو آزاد مانند سایت هاسی که او ج اس را نسب کرده اند ایجاد کنید.</search_description>
-      <url>http://pkp.sfu.ca/harvester/</url>
-      <search_url>http://pkp.sfu.ca/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
+      <url>http://lumera.sangia.org/harvester/</url>
+      <search_url>http://lumera.sangia.org/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
     </search>
     <search>
       <search_title>SPIRO (کتابخانه اسلاید معماری دانشگاه کالیفرنیا - برکلی)</search_title>

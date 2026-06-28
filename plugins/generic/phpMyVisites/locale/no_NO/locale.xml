@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/phpMyVisites/locale/no_NO/locale.xml
@@ -16,7 +16,7 @@
 
 	<!-- phpMyVisites -->
 	<message key="plugins.generic.phpmv.displayName">Programutvidelse for phpMyVisites</message>
-	<message key="plugins.generic.phpmv.description"><![CDATA[IntegrerOJS med phpMyVisites, et gratis og open source verktøy for analyse av nettstedstrafikk. phpMyVisites må være installert. Se <a href="http://www.phpmyvisites.us/" title="phpMyVisites site">phpMyVisites nettsted</a> for mer informasjon.]]></message>
+	<message key="plugins.generic.phpmv.description"><![CDATA[IntegrerCLA med phpMyVisites, et gratis og open source verktøy for analyse av nettstedstrafikk. phpMyVisites må være installert. Se <a href="http://www.phpmyvisites.us/" title="phpMyVisites site">phpMyVisites nettsted</a> for mer informasjon.]]></message>
 	<!-- phpMyVisites Settings Management -->
 	<message key="plugins.generic.phpmv.manager.settings">Innstillinger</message>
 	<message key="plugins.generic.phpmv.manager.phpmvSettings">Innstillinger for phpMyVisites</message>

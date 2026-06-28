@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.controllers.listbuilder.ListbuilderGridColumn');
+import('lib.sep.classes.controllers.listbuilder.ListbuilderGridColumn');
 
 class MultilingualListbuilderGridColumn extends ListbuilderGridColumn {
 	/**

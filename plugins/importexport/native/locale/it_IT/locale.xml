@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/native/locale/it_IT/locale.xml
@@ -51,7 +51,7 @@ I seguenti formati sono accettati:
 	<message key="plugins.importexport.native.import.articles.description">Il file che stai importando contiene uno o più articoli. Devi scegliere un fascicolo e una sezione per importare questi articoli; se non desideri importarli tutti dentro la stessa sezione e fascicolo, puoi separarli in diversi file XML o spostarli in sezioni e fascicoli appropriati dopo l'importazione.</message>
 
 	<message key="plugins.importexport.native.import">Importa dati</message>
-	<message key="plugins.importexport.native.import.description"><![CDATA[Questo plugin supporta l'import dei dati basandosi su native.dtd Document Type Definition. I root nodes supportati sono &lt;article&gt;, &lt;articles&gt;, &lt;issue&gt;, and &lt;issues&gt;. Vedi istruzioni dettagliate alla pagina <a href="http://pkp.sfu.ca/wiki/index.php/Importing_and_Exporting_Data#Articles_and_Issues_XML_Plugin">http://pkp.sfu.ca/wiki/index.php/Importing_and_Exporting_Data#Articles_and_Issues_XML_Plugin</a>]]></message>
+	<message key="plugins.importexport.native.import.description"><![CDATA[Questo plugin supporta l'import dei dati basandosi su native.dtd Document Type Definition. I root nodes supportati sono &lt;article&gt;, &lt;articles&gt;, &lt;issue&gt;, and &lt;issues&gt;. Vedi istruzioni dettagliate alla pagina <a href="http://lumera.sangia.org/wiki/index.php/Importing_and_Exporting_Data#Articles_and_Issues_XML_Plugin">http://lumera.sangia.org/wiki/index.php/Importing_and_Exporting_Data#Articles_and_Issues_XML_Plugin</a>]]></message>
 
 	<message key="plugins.importexport.native.import.error">Errore durante l'importazione</message>
 	<message key="plugins.importexport.native.import.error.description">Uno o più errori si sono presentati durante l'import. Si prega di controllare che il formato del file importato si adatti alle richieste. I dettagli degli errori sono elencati di sotto.</message>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/importexport/users/locale/sr_SR/locale.xml
@@ -48,7 +48,7 @@ Primeri:
 	<message key="plugins.importexport.users.import.errorsOccurred">Došlo je do grešaka prilikom uvoza</message>
 	<message key="plugins.importexport.users.import.confirmUsers">Potvrdite da su ovo korisnici koje želite da uvezete u sistem.</message>
 	<message key="plugins.importexport.users.import.warning">Upozorenje</message>
-	<message key="plugins.importexport.users.import.encryptionMismatch">Ne mogu se koristiti lozinke u hešu sa  {$importHash}; OJS je konfigurisan da koristi {$ojsHash}. Ukoliko nastavite moraćete da resetujete lozinke uvezenih korisnika.</message>
+	<message key="plugins.importexport.users.import.encryptionMismatch">Ne mogu se koristiti lozinke u hešu sa  {$importHash}; CLA je konfigurisan da koristi {$claHash}. Ukoliko nastavite moraćete da resetujete lozinke uvezenih korisnika.</message>
 	<message key="plugins.importexport.users.unknownJournal">Definisana je nepoznata putanja časopisa "{$journalPath}".</message>
 
 	<message key="plugins.importexport.users.export.exportUsers">Izvezi korisnike</message>

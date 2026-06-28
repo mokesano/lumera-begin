@@ -13,7 +13,7 @@
  * @brief Form validation check to make sure the form is POSTed.
  */
 
-import ('lib.pkp.classes.form.validation.FormValidator');
+import ('lib.sep.classes.form.validation.FormValidator');
 
 class FormValidatorPost extends FormValidator {
 	/**

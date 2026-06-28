@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/usageStats/locale/it_IT/locale.xml
@@ -48,7 +48,7 @@
 	<message key="plugins.generic.usageStats.failedCounterBotList">La lista COUNTER dei bot {$botlist} non può essere aperta. Il file {$file} non può essere processato.</message>
 	
 	<message key="plugins.reports.usageStats.report.displayName">Report delle statistiche d'uso</message>
-	<message key="plugins.reports.usageStats.report.description">Report delle statistiche OJS (compatibili COUNTER)</message>
+	<message key="plugins.reports.usageStats.report.description">Report delle statistiche CLA (compatibili COUNTER)</message>
 	
 	<message key="plugins.reports.usageStats.optout.displayName">Informazioni sulla privacy delle statistiche d'uso</message>
 	<message key="plugins.reports.usageStats.optout.description">Informazioni sulla privacy delle statistiche d'uso</message>
@@ -77,6 +77,6 @@
 		<p>Ricordati che i log generali del server non sono toccati dalla tua decisione di essere escluso dal rilevamento statistico degli accessi. Fai riferimento alla nostra <a href="{$privacyStatementUrl}">privacy statement</a>.</p>]]></message>
 
 	
-	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
-	<message key="plugins.reports.usageStats.metricType.full">Statistiche OJS (compatibili COUNTER)</message>
+	<message key="plugins.reports.usageStats.metricType">CLA/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Statistiche CLA (compatibili COUNTER)</message>
 </locale>

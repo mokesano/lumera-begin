@@ -13,19 +13,19 @@
  * @brief Issue file class.
  */
 
-import('lib.pkp.classes.file.PKPFile');
+import('lib.sep.classes.file.SEPFile');
 
 /* File content type IDs */
 define('ISSUE_FILE_PUBLIC', 0x000001);
 
 
-class IssueFile extends PKPFile {
+class IssueFile extends SEPFile {
 
 	/**
 	 * Constructor.
 	 */
 	function IssueFile() {
-		parent::PKPFile();
+		parent::SEPFile();
 	}
 
 	//

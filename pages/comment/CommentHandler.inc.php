@@ -14,8 +14,8 @@
  *
  */
 
-import('classes.rt.ojs.RTDAO');
-import('classes.rt.ojs.JournalRT');
+import('classes.rt.cla.RTDAO');
+import('classes.rt.cla.JournalRT');
 import('classes.handler.Handler');
 
 class CommentHandler extends Handler {
@@ -148,7 +148,7 @@ class CommentHandler extends Handler {
 	/**
 	 * Delete the specified comment and all its children.
 	 * @params $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function delete($args, &$request) {
 		$articleId = isset($args[0]) ? (int) $args[0] : 0;
@@ -175,7 +175,7 @@ class CommentHandler extends Handler {
 
 	/**
 	 * Validation
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $articleId int
 	 */
 	function validate(&$request, $articleId) {
@@ -220,14 +220,14 @@ class CommentHandler extends Handler {
 
 	/**
 	 * Set up the comment template.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $article Article
 	 * @param $galleyId int
 	 * @param $comment Comment
 	 */
 	function setupTemplate(&$request, $article, $galleyId, $comment = null) {
 		parent::setupTemplate();
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_READER);
 		$templateMgr =& TemplateManager::getManager();
 		$journal =& $request->getJournal();
 

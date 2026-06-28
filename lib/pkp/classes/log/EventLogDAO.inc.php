@@ -15,7 +15,7 @@
  */
 
 
-import ('lib.pkp.classes.log.EventLogEntry');
+import ('lib.sep.classes.log.EventLogEntry');
 
 class EventLogDAO extends DAO {
 	/**

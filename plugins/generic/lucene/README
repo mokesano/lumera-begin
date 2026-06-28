@@ -1,7 +1,7 @@
 Contents
 --------
 
-  1)  Welcome to the OJS Lucene/Solr Plug-In!
+  1)  Welcome to the CLA Lucene/Solr Plug-In!
   2)  Should I use the Lucene/Solr Plug-In?
   3)  Decisions to take before enabling the Plug-In
   4)  Embedded versus Remote Server Mode
@@ -15,14 +15,14 @@ Contents
   12) Subscription-Based Publications
 
 
-1 Welcome to the OJS Lucene/Solr Plug-In!
+1 Welcome to the CLA Lucene/Solr Plug-In!
 -----------------------------------------
 
 This README file contains important information with respect to the correct and
-secure installation of the OJS Lucene/Solr plug-in. Please make sure you read it
+secure installation of the CLA Lucene/Solr plug-in. Please make sure you read it
 in full before enabling the plug-in.
 
-While most of the code of this plug-in is published under the usual OJS license
+While most of the code of this plug-in is published under the usual CLA license
 terms, some configuration file code is based on files from the Solr and Jetty
 distributions. These projects are governed by the Apache License 2.0. We
 therefore included a copy of this license in the root directory of this plug-in,
@@ -37,7 +37,7 @@ For more details please visit the Jetty and Solr web sites:
 ---------------------------------------
 
 The first decision to take is whether to use the plug-in at all. The main
-advantages of the plug-in's search implementation over the default OJS search
+advantages of the plug-in's search implementation over the default CLA search
 are:
 
 - Support for multi-lingual search. The plug-in provides language-aware
@@ -55,10 +55,10 @@ are:
 
 - Additional document formats: The Tika document parser is able to convert a
   large number of documents. Most notably it supports ePub format which is not
-  otherwise supported by the default OJS search implementation. You'll find a
+  otherwise supported by the default CLA search implementation. You'll find a
   current list of all supported document formats on the Tika website.
 
-Caution: The default OJS search installation supports parsing of PostScript
+Caution: The default CLA search installation supports parsing of PostScript
 documents. If you have articles that contain information in PostScript documents
 and you do not use any alternative galley format that can be understood by Tika
 then please do not use this plug-in. Tika is not able to parse PostScript
@@ -68,7 +68,7 @@ documents.
 3 Decisions to take before enabling the Plug-In
 -----------------------------------------------
 
-This plug-in is an adapter between OJS and the Solr search server. It requires a
+This plug-in is an adapter between CLA and the Solr search server. It requires a
 working Solr server somewhere on your network.
 
 You should have a basic understanding of how the Solr search server works before
@@ -82,7 +82,7 @@ This plug-in can be deployed in two quite different ways:
 
 Independently of the deployment scenario, you can choose from two index update
 modes:
-1) push processing: OJS will push all article changes to the Solr server
+1) push processing: CLA will push all article changes to the Solr server
 2) pull processing: The Solr server will request article changes in regular
    intervals.
 
@@ -94,22 +94,22 @@ to these configuration alternatives.
 ------------------------------------
 
 In embedded server mode, the Solr search server will run on the same server as
-OJS itself. If you have only a single OJS installation on your server then
+CLA itself. If you have only a single CLA installation on your server then
 embedded server mode is almost certainly what you want. It will be very easy to
 install and configure and you don't have to worry about any Solr configuration
 as we provide a default configuration that should work for you unchanged.
 
-If you have multiple OJS installations on a single server then you still
+If you have multiple CLA installations on a single server then you still
 may run in embedded server mode but please make sure that you only start a
 single embedded Solr instance per server. To do so you should choose one of your
-OJS installations and always run the start/stop scripts (see below) from just
+CLA installations and always run the start/stop scripts (see below) from just
 that installation. If you follow the installation procedure for the embedded
 server below for just one installation then you're on the right track.
 
-If you are a larger OJS provider and you have many OJS installations on one or
+If you are a larger CLA provider and you have many CLA installations on one or
 several servers then central server mode is probably better suited to your
 needs. In central server mode you'll be able to install a single Solr instance
-somewhere on your network and use it for all your OJS installations. This will
+somewhere on your network and use it for all your CLA installations. This will
 make your deployment much easier to monitor and administer.
 
 If you deploy in central server mode then you'll have to understand Solr a bit
@@ -124,17 +124,17 @@ all.
 
 If you deploy in central server mode you'll also have to decide which journals
 you want to collocate. You have to keep in mind that you only can search across
-OJS installations if you collocate articles from various installations in one
+CLA installations if you collocate articles from various installations in one
 core. On the other hand you should not collocate documents from various
 installations if you don't want to search across these documents. Collocating
 documents can have negative effects on ranking and may require additional
 maintenance effort (e.g. when having to rebuild an index from scratch after
-some Solr server downtime, etc.). So please make sure you know which OJS
+some Solr server downtime, etc.). So please make sure you know which CLA
 installations should be bundled in which core before you start deploying your
 Solr server.
 
 As a final preliminary step you'll have to make sure that your server meets the
-necessary installation requirements to install Solr. This is the OJS server if
+necessary installation requirements to install Solr. This is the CLA server if
 you decide to deploy in embedded server mode or the central search server if you
 deploy in central server mode:
 
@@ -145,8 +145,8 @@ deploy in central server mode:
   150 MB of free disk space for the Solr/Jetty installation files. The disc your
   index will reside on should have enough free disk to accommodate at least
   twice the space occupied by all your galleys and supplementary files in the
-  files folders of your OJS installations. In embedded mode the index will be
-  installed into the "files" directory of your OJS installation. So this
+  files folders of your CLA installations. In embedded mode the index will be
+  installed into the "files" directory of your CLA installation. So this
   directory should reside on a disk with sufficient free space.
 
 - RAM: Memory requirements depend a lot on the size of your index. If you have
@@ -162,7 +162,7 @@ deploy in central server mode:
 
 - PHP configuration: The minimum PHP version for this plug-in is 5.0.0. The
   plug-in relies on the PHP curl. Please activate it before enabling the
-  plug-in. If you have a large OJS installation then rebuilding your index
+  plug-in. If you have a large CLA installation then rebuilding your index
   (see the dedicated chapter) may require lots of memory. Please increase
   the 'memory_limit' in php.ini until you no longer get 'Allowed memory size
   ... exhausted' errors.
@@ -171,11 +171,11 @@ deploy in central server mode:
 5 Embedded Server Mode: Installation and Configuration
 ------------------------------------------------------
 
-As we do not want to unnecessarily blow up our default OJS distribution and want
+As we do not want to unnecessarily blow up our default CLA distribution and want
 to make sure that you always install the latest release of Solr, we do not
 distribute the Solr/Jetty java binaries with this plug-in. You'll have to
 download and install them before you can use the plug-in. The following
-paragraphs will explain how to do this. This will transform your OJS server into
+paragraphs will explain how to do this. This will transform your CLA server into
 a Solr search server.
 
   1) secure your server (IMPORTANT):
@@ -188,7 +188,7 @@ a Solr search server.
 
      - Edit plugins/generic/lucene/embedded/etc/realm.properties
 
-     - Change the line "admin: ojsojs,content_updater,admin" to
+     - Change the line "admin: clacla,content_updater,admin" to
        "admin: xxxxxxx,content_updater,admin" where xxxxxxx is to be replaced
        with a password you choose.
 
@@ -202,10 +202,10 @@ a Solr search server.
 
      - Jetty: Get the Jetty 6.1.26 binary, e.g. from 
        http://get.jenv.mvnsearch.org/download/jetty/jetty-6.1.26.zip
-       and unzip it into plugins/generic/lucene/lib in your OJS application
+       and unzip it into plugins/generic/lucene/lib in your CLA application
        directory.
 
-       Execute something like (from the OJS application directory):
+       Execute something like (from the CLA application directory):
           #> cd plugins/generic/lucene/lib
           #> wget http://get.jenv.mvnsearch.org/download/jetty/jetty-6.1.26.zip
           #> unzip jetty-6.1.26.zip
@@ -217,9 +217,9 @@ a Solr search server.
           #> ln -s jetty-6.1.26 jetty
 
      - Solr: Get Solr 3.6.2 binary from an Apache download mirror and unzip
-       it into plugins/generic/lucene/lib in your OJS application directory.
+       it into plugins/generic/lucene/lib in your CLA application directory.
 
-       Execute something like (from the OJS application directory):
+       Execute something like (from the CLA application directory):
           #> cd plugins/generic/lucene/lib
           #> wget http://archive.apache.org/dist/lucene/solr/3.6.2/
                                                           apache-solr-3.6.2.zip
@@ -233,7 +233,7 @@ a Solr search server.
      We provide a script that finalizes the installation and helps you to make
      sure that you correctly installed Jetty and Solr.
 
-     Please execute (from the OJS directory):
+     Please execute (from the CLA directory):
          #> cd plugins/generic/lucene/embedded/bin
          #> ./chkconfig.sh
 
@@ -242,7 +242,7 @@ a Solr search server.
      
   5) Try starting the Solr server for the first time:
      Go to the directory plugins/generic/lucene/embedded/bin and execute the
-     start script there. This would be (from the OJS application
+     start script there. This would be (from the CLA application
      directory):
          #> cd plugins/generic/lucene/embedded/bin
          #> ./start.sh
@@ -251,7 +251,7 @@ a Solr search server.
          #> ps -ef | grep solr
      you should see the java process of your running Solr instance.
      
-  6) Now open up your web browser and log into your OJS journal manager account.
+  6) Now open up your web browser and log into your CLA journal manager account.
 
      Go to "Journal Manager -> System Plugins -> Generic Plugins" and enable the
      "Lucene Search Plugin".
@@ -267,7 +267,7 @@ a Solr search server.
      Back to the command line go to the tools directory and execute the script
      to rebuild your index.
      
-     From the OJS directory this becomes:
+     From the CLA directory this becomes:
         #> cd tools
         #> php rebuildSearchIndex.php
 
@@ -281,7 +281,7 @@ a Solr search server.
 
   7) Execute some searches
 
-     Go to your OJS web frontend and test whether searching with Solr works as
+     Go to your CLA web frontend and test whether searching with Solr works as
      expected.
 
 
@@ -289,12 +289,12 @@ a Solr search server.
 -----------------------------------------------------
 
 Solr can be installed and deployed in many different ways and there is no one
-best deployment for large OJS providers. You'll have to understand Solr
+best deployment for large CLA providers. You'll have to understand Solr
 sufficiently well to be able to install and configure a Solr server before you
-should try to use it with OJS.
+should try to use it with CLA.
 
 We assume that you have this prior knowledge and will only describe the steps
-specific to the OJS Lucene/Solr plug-in:
+specific to the CLA Lucene/Solr plug-in:
 
   1) Please decide which journals you would like to collocate in which cores and
      make a list of required cores.
@@ -315,11 +315,11 @@ specific to the OJS Lucene/Solr plug-in:
      You'll probably have to change paths and security configuration in
      jetty.xml, webdefault.xml and solrconfig.xml.
 
-     In most cases you can leave dih-ojs.xml and schema.xml unchanged. You may
+     In most cases you can leave dih-cla.xml and schema.xml unchanged. You may
      want to have a look at the analysis and query chains in schema.xml if you
      have specific analysis requirements. Be careful, though, not to change any
-     field definitions as this may have unexpected effects and break the OJS/
-     Solr indexing protocol unless you also edit dih-ojs.xml.
+     field definitions as this may have unexpected effects and break the CLA/
+     Solr indexing protocol unless you also edit dih-cla.xml.
 
      Sooner or later you'll probably want to edit the stopword lists and you may
      want to insert synonym lists or exchange the stemmers.
@@ -337,8 +337,8 @@ specific to the OJS Lucene/Solr plug-in:
      init scripts so that you do not need start/stop scripts at all.
 
   4) Once you have a working Solr configuration you'll have to enable the Solr
-     plug-in in all OJS installations that you want to connect to your Solr
-     server. To do so, open up your web browser and log into your OJS journal
+     plug-in in all CLA installations that you want to connect to your Solr
+     server. To do so, open up your web browser and log into your CLA journal
      manager account.
 
      Go to "Journal Manager -> System Plugins -> Generic Plugins" and enable the
@@ -352,8 +352,8 @@ specific to the OJS Lucene/Solr plug-in:
      changed them for your Solr server.
 
      Finally you'll have to enter an installation ID that is unique within the
-     core that you'll index that OJS installation in. If you index journals from
-     three different OJS installations in one core then you'll need three
+     core that you'll index that CLA installation in. If you index journals from
+     three different CLA installations in one core then you'll need three
      distinct installation IDs.
 
   6) Build your lucene index:
@@ -374,7 +374,7 @@ specific to the OJS Lucene/Solr plug-in:
 
   7) Execute some searches
 
-     Go to the OJS web frontend of each installation and test whether searching
+     Go to the CLA web frontend of each installation and test whether searching
      with Solr works as expected.
 
 
@@ -388,7 +388,7 @@ the following:
   rebuild then you have to increase your 'memory_limit' setting in php.ini.
   Doing a huge index rebuild may require considerable memory resources. This
   cannot be fixed easily as it is due to memory leaks in the PHP mysql
-  extension used by OJS.
+  extension used by CLA.
 
 - Check whether your Solr server is really running:
 
@@ -406,11 +406,11 @@ the following:
 
      #> php tools/rebuildSearchIndex.php
 
-  6) Execute a test search request in OJS.
+  6) Execute a test search request in CLA.
 
 
 - Once the server is running, check whether your index contains data. To do so,
-  open a browser window and navigate to the URL 'http://localhost:8983/solr/ojs/
+  open a browser window and navigate to the URL 'http://localhost:8983/solr/cla/
   admin/luke'. The browser should ask you for the user name and password you
   configured for your Solr web server. Once you entered your credentials, you
   should see an XML that gives details about the index content. The field
@@ -431,22 +431,22 @@ the following:
 
      #> php tools/rebuildSearchIndex.php
 
-  5) Check the index again via the URL 'http://localhost:8983/solr/ojs/admin/
+  5) Check the index again via the URL 'http://localhost:8983/solr/cla/admin/
      luke'.
 
-  6) Execute a test search request in OJS.
+  6) Execute a test search request in CLA.
 
 
-- If your index contains data and you still do not get any search results in OJS
+- If your index contains data and you still do not get any search results in CLA
   then try deleting your cache.
 
   You can execute:
 
      #> rm -f cache/*.php
 
-  Alternatively you can delete the cache via OJS' administrator tools.
+  Alternatively you can delete the cache via CLA' administrator tools.
 
-  Now execute another test search request in OJS.
+  Now execute another test search request in CLA.
 
 
 - If the previous steps didn't give you a working search index then have a look
@@ -454,8 +454,8 @@ the following:
   server. Sometimes a solution to your problem may be obvious from the error
   messages, e.g. in the case of permission problems or erroneous symlinks. If
   you have difficulties in interpreting error messages in the log then please
-  register a bug report at 'https://github.com/pkp/pkp-lib#issues' and post the
-  most recent error message. This will help OJS developers to resolve your
+  register a bug report at 'https://github.com/sep/sep-lib#issues' and post the
+  most recent error message. This will help CLA developers to resolve your
   problem.
 
 If you get errors when STARTING or STOPPING the solr server:
@@ -471,7 +471,7 @@ If you get errors when STARTING or STOPPING the solr server:
 If you find that binary files (i.e. galleys or supplementary files) are NOT
 being correctly INDEXED:
 
-- Please make sure that the 'base_url' parameter in your OJS directory points
+- Please make sure that the 'base_url' parameter in your CLA directory points
   to the correct URL (without trailing slash).
 
 If search is performing more slowly than anticipated check your custom ranking
@@ -487,7 +487,7 @@ server side (pull processing). Both options have their strengths and weaknesses.
 
 Advantages of push configuration:
 
-- Indexing can be done on-demand when new documents are added to OJS. This
+- Indexing can be done on-demand when new documents are added to CLA. This
   guarantees that the index is always up-to-date.
 
 - Simple configuration, works out-of-the-box.
@@ -495,7 +495,7 @@ Advantages of push configuration:
 
 Advantages of pull configuration:
 
-- Pull processing makes the OJS user interface more responsive as no synchronous
+- Pull processing makes the CLA user interface more responsive as no synchronous
   indexing will take place. Marking an article for update is as fast as a single
   database access. This can make a perceivable difference when articles have
   many galleys or supplementary files attached.
@@ -509,7 +509,7 @@ Advantages of pull configuration:
 
 - Pull provides a process that makes it easy to restart indexing after client-
   side outage or other indexing problems. All meta-data retrieved from the
-  OJS clients will be saved to a staging area on the file system. Files that
+  CLA clients will be saved to a staging area on the file system. Files that
   cannot be successfully indexed will be moved to a special folder where they
   can be checked and corrected manually and then re-submitted to the indexing
   processing chain. A full index rebuild is not required.
@@ -528,7 +528,7 @@ To do so you have to:
 - edit the configuration file ('plugins/generic/lucene/embedded/etc/pull.conf')
   of the pull processing script on the Solr server (see the inline comments
   there),
-- enable pull-processing in the Lucene plugin settings of all OJS clients,
+- enable pull-processing in the Lucene plugin settings of all CLA clients,
 - schedule the pull download script ('plugins/generic/lucene/embedded/bin/
   pull.sh') on the Solr server, e.g. as a cron job. We recommend scheduling
   this script once or twice a day during off-hours when server load is low.
@@ -536,7 +536,7 @@ To do so you have to:
   load.sh') on the Solr server, e.g. as a cron job. We recommend scheduling
   this script about every 15 minutes. It polls the staging folder and will do
   nothing if no files are staged for load.
-- trigger a full index rebuild on all OJS clients (either on the Lucene plugin
+- trigger a full index rebuild on all CLA clients (either on the Lucene plugin
   settings page or through the 'tools/rebuildSearchIndex.php' script),
 - regularly monitor the staging, reject and archive queues on the Solr server.
 
@@ -561,7 +561,7 @@ languages) then your index needs to be syncronized, too.
 In these cases you'll have to rebuild your search index so that searches can
 be reliably executed again.
 
-To do so please go to the command line, change to the OJS tools directory and
+To do so please go to the command line, change to the CLA tools directory and
 execute the script to rebuild the index. This would be something like:
    #> cd tools
    #> php rebuildSearchIndex.php
@@ -580,13 +580,13 @@ server as you would for any other process.
 
 All Solr configuration files come with inline comments that hint you about what
 can be changed and what you better leave alone so as not to interrupt
-communication between OJS and Solr.
+communication between CLA and Solr.
 
 Common customizations will above all concern the Solr analysis process, e.g.
 customizing multi-language support, adding additional stopwords, introducing
 synonyms, etc.
 
-The default configuration already comes equipped with support for all OJS
+The default configuration already comes equipped with support for all CLA
 languages when Solr/Lucene supports these. Languages that are not directly
 supported by Solr will be treated in a language-agnostic way so that you should
 at least get basic search support.
@@ -599,7 +599,7 @@ analysis process first. You may want to read:
 - https://wiki.apache.org/solr/LanguageAnalysis
 
 Our schema works with dynamic types. There is one field type for each language.
-The OJS locale-language assignment is then done with dynamic fields. You find
+The CLA locale-language assignment is then done with dynamic fields. You find
 both, the type definition and the dynamic field definition in the schema.xml
 file.
 
@@ -667,7 +667,7 @@ that you will have to add to solr/lib.
 -----------------------------------
 
 In order for the Solr server to gain access to subscription-only content on the
-OJS server, its server IP will have to be authorized as an "institutional
+CLA server, its server IP will have to be authorized as an "institutional
 subscriber" of the journals to be indexed.
 
 We ensure that subscription checks will be valid in a pull scenario (see the

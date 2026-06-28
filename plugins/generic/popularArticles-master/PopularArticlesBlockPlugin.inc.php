@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.sep.classes.plugins.BlockPlugin');
 
 define('POPULAR_ARTICLES_BLOCK_PLUGIN_DEFAULT_MAX_ARTICLES_COUNT', 10);
 
@@ -39,35 +39,35 @@ class PopularArticlesBlockPlugin extends BlockPlugin {
 	}
 
 	/**
-	 * @copydoc PKPPlugin::getName()
+	 * @copydoc SEPPlugin::getName()
 	 */
 	function getName() {
 		return 'popularArticlesBlockPlugin';
 	}
 
 	/**
-	 * @copydoc PKPPlugin::getDisplayName()
+	 * @copydoc SEPPlugin::getDisplayName()
 	 */
 	function getDisplayName() {
 		return __('plugins.block.PopularArticles.displayName');
 	}
 
 	/**
-	 * @copydoc PKPPlugin::getDescription()
+	 * @copydoc SEPPlugin::getDescription()
 	 */
 	function getDescription() {
 		return __('plugins.block.PopularArticles.description');
 	}
 
 	/**
-         * @copydoc PKPPlugin::getTemplatePath()
+         * @copydoc SEPPlugin::getTemplatePath()
          */
 	function getTemplatePath() {
 		return parent::getTemplatePath() . 'templates/';
 	}
 
 	/** 
-	 * @copydoc PKPPlugin::getManagementVerbs()
+	 * @copydoc SEPPlugin::getManagementVerbs()
 	 */
 	function getManagementVerbs() {
 		$verbs = parent::getManagementVerbs();
@@ -78,7 +78,7 @@ class PopularArticlesBlockPlugin extends BlockPlugin {
 	}
 
 	/**
-	 * @copydoc PKPPlugin::manage()
+	 * @copydoc SEPPlugin::manage()
 	 */
 	function manage($verb, $args, &$message, &$messageParams) {
 		$returner = parent::manage($verb, $args, $message, $messageParams);
@@ -132,7 +132,7 @@ class PopularArticlesBlockPlugin extends BlockPlugin {
 	 * @return Journal
 	 */
 	function &_getCurrentJournal() {
-		$application =& PKPApplication::getApplication();
+		$application =& SEPApplication::getApplication();
 		$request =& $application->getRequest();
 		$router =& $request->getRouter();
 		return $router->getContext($request);
@@ -168,7 +168,7 @@ class PopularArticlesBlockPlugin extends BlockPlugin {
 		$months = $this->getSetting($journalId, 'months');
 		$mixOldStats = $this->getSetting($journalId, 'mixOldStats');
 
-		import('lib.pkp.classes.db.DBResultRange');
+		import('lib.sep.classes.db.DBResultRange');
 		$dbResultRange = new DBResultRange($maxArticlesCount);
 		$metricsDao =& DAORegistry::getDAO('MetricsDAO'); /* @var $metricsDao MetricsDAO */
 
@@ -176,7 +176,7 @@ class PopularArticlesBlockPlugin extends BlockPlugin {
 		PluginRegistry::loadCategory('reports');
 		$metricType = array($journal->getDefaultMetricType());
 		if ($mixOldStats) {
-			$metricType[] = OJS_METRIC_TYPE_LEGACY_DEFAULT;
+			$metricType[] = CLA_METRIC_TYPE_LEGACY_DEFAULT;
 		}
 
 		$stats = $metricsDao->getMetrics(

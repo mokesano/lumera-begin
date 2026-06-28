@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000031.xml
@@ -14,9 +14,9 @@
 
 <topic id="journal/topic/000031" locale="fr_CA" title="Importer/Exporter les données" toc="journal/toc/000001" key="journal.managementPages.importExport">
 	<section>
-		<![CDATA[<p>La fonction d’importation/exportation des données, disponible à partir de «Gestion de la revue» permet au directeur de revue d’ajouter ou d’extraire des données d’OJS.</p>
+		<![CDATA[<p>La fonction d’importation/exportation des données, disponible à partir de «Gestion de la revue» permet au directeur de revue d’ajouter ou d’extraire des données d’CLA.</p>
 		<p>L’importation/exportation de données est accomplie par l’usage de plugiciels, avec chaque format ou type de données fournis par un plugiciel différent. Pour des informations plus précises, référer à la documentation de chacun des plugiciels.</p>
-		<p>Trois plugiciels d’importation/exportation sont inclus avec OJS : Les articles &amp; le plugiciel XML pour les numéros, le XML pour les utilisateurs, et le plugiciel Erudit Article Export. Ceux-ci sont documentés ci-dessous.</p>
+		<p>Trois plugiciels d’importation/exportation sont inclus avec CLA : Les articles &amp; le plugiciel XML pour les numéros, le XML pour les utilisateurs, et le plugiciel Erudit Article Export. Ceux-ci sont documentés ci-dessous.</p>
 		<p>Le fonctionnement d’importation/exportation est aussi disponible comme  outils de ligne de commande : voir tools/importExport.php pour de plus amples informations.</p>]]>
 	</section>
 	<section title="Articles &amp; Numéros XML Plugin">

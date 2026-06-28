@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000028.xml
@@ -20,7 +20,7 @@
 	</section>
 	<section title="Recherches GET">
 		<![CDATA[<p>Pour les recherches GET,  exécuter une recherche et regarder l’adresse URL qui en résulte . Par exemple, avec Google, une recherche pour ‘’FOOBAR’’ donne l’adresse URL</p>
-		<p><samp class="code">http://www.google.ca/search?hl=en&q=FOOBAR&meta=</samp></p><p>Remplacer le terme de recherche FOOBAR par la variable &#123;$formKeywords&#125. Lorsque OJS rencontrera cette variable, il la remplacera par la valeur appropriée des métadonnées de l’article. Ceci nous donne une recherche URL de</p>
+		<p><samp class="code">http://www.google.ca/search?hl=en&q=FOOBAR&meta=</samp></p><p>Remplacer le terme de recherche FOOBAR par la variable &#123;$formKeywords&#125. Lorsque CLA rencontrera cette variable, il la remplacera par la valeur appropriée des métadonnées de l’article. Ceci nous donne une recherche URL de</p>
 		<p><samp class="code">http://www.google.ca/search?hl=en&q=&#123;$formKeywords&#125;&meta=</samp></p><p>pour le RT. Cependant, vu que les autres paramètres ne sont pas nécessaires dans ce cas-ci, on peut donc utiliser une adresse URL simplifiée de<p><samp class="code">http://www.google.ca/search?q=&#123;$formKeywords&#125;</samp></p><p>for the RT.</p>]]>
 	</section>
 	<section title="Recherches POST">

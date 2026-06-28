@@ -14,7 +14,7 @@
  *  and returns an array of raw citation strings.
  */
 
-import('lib.pkp.classes.filter.Filter');
+import('lib.sep.classes.filter.Filter');
 
 class CitationListTokenizerFilter extends Filter {
 	/**

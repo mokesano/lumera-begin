@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<!DOCTYPE version SYSTEM "../../lib/pkp/dtd/rtVersion.dtd">
+<!DOCTYPE version SYSTEM "../../lib/sep/dtd/rtVersion.dtd">
 <!--
   * Mathematics.xml
   *
@@ -32,15 +32,15 @@
     </search>
     <search>
       <search_title>پروژه OAIster ( بانک های اطلاعاتی تحقیقاتی آرشیوهای باز ) </search_title>
-      <search_description>جمع آوری کننده آرشیو های باز PKP یک سیستم رایگان فهرست بندی متادیتا است که توسط پروژهء اطلاعات عمومی بر اثر تلاشهای صورت گرفته در این پروژه به منظور گسترش و بهینه سازی دسترسی به تحقیقات ابداء شده است هزینه این پروژه از طریق بودجه فدرال تامین شده است جمع آوری کنندهء PKP OAI به شما امکان میدهد که یک فهرست با قابلیت جستجو را از متادیتاهای آرشیوهای باز مانند سایتهایی که از سیستمهای ژورنال آزاد یا سیستمهای کنفرانس ازاد استفاده میکنند تهیه کنید </search_description>
+      <search_description>جمع آوری کننده آرشیو های باز SEP یک سیستم رایگان فهرست بندی متادیتا است که توسط پروژهء اطلاعات عمومی بر اثر تلاشهای صورت گرفته در این پروژه به منظور گسترش و بهینه سازی دسترسی به تحقیقات ابداء شده است هزینه این پروژه از طریق بودجه فدرال تامین شده است جمع آوری کنندهء SEP OAI به شما امکان میدهد که یک فهرست با قابلیت جستجو را از متادیتاهای آرشیوهای باز مانند سایتهایی که از سیستمهای ژورنال آزاد یا سیستمهای کنفرانس ازاد استفاده میکنند تهیه کنید </search_description>
       <url>http://oaister.umdl.umich.edu/</url>
       <search_url>http://oaister.umdl.umich.edu/cgi/b/bib/bib-idx?type=boolean&amp;size=10&amp;c=oaister&amp;q1=&amp;rgn1=entire+record&amp;op2=and&amp;q2=&amp;rgn2=entire+record&amp;op3=And&amp;q3=&amp;rgn3=title&amp;op4=And&amp;rgn4=author&amp;op5=And&amp;q5=&amp;rgn5=subject&amp;op6=And&amp;rgn6=norm&amp;q6=all+types&amp;sort=author%2Fcreator&amp;submit2=search&amp;q4={$formKeywords}</search_url>
     </search>
     <search>
       <search_title>جمع اورکنندهء آرشیوهای پروژهء اطلاعات عمومی</search_title>
-      <search_description>جمع آوری کننده آرشیو های باز PKP یک سیستم رایگان فهرست بندی متادیتا است که توسط پروژهء اطلاعات عمومی بر اثر تلاشهای صورت گرفته در این پروژه به منظور گسترش و بهینه سازی دسترسی به تحقیقات ابداء شده است هزینه این پروژه از طریق بودجه فدرال تامین شده است جمع آوری کنندهء PKP OAI به شما امکان میدهد که یک فهرست با قابلیت جستجو را از متادیتاهای آرشیوهای باز مانند سایتهایی که از سیستمهای ژورنال آزاد یا سیستمهای کنفرانس ازاد استفاده میکنند تهیه کنید </search_description>
-      <url>http://pkp.sfu.ca/harvester/</url>
-      <search_url>http://pkp.sfu.ca/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
+      <search_description>جمع آوری کننده آرشیو های باز SEP یک سیستم رایگان فهرست بندی متادیتا است که توسط پروژهء اطلاعات عمومی بر اثر تلاشهای صورت گرفته در این پروژه به منظور گسترش و بهینه سازی دسترسی به تحقیقات ابداء شده است هزینه این پروژه از طریق بودجه فدرال تامین شده است جمع آوری کنندهء SEP OAI به شما امکان میدهد که یک فهرست با قابلیت جستجو را از متادیتاهای آرشیوهای باز مانند سایتهایی که از سیستمهای ژورنال آزاد یا سیستمهای کنفرانس ازاد استفاده میکنند تهیه کنید </search_description>
+      <url>http://lumera.sangia.org/harvester/</url>
+      <search_url>http://lumera.sangia.org/harvester/search.php?limit=author&amp;query={$formKeywords}</search_url>
     </search>
     <search>
       <search_title>euler</search_title>

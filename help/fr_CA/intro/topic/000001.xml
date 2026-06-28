@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+<!DOCTYPE topic SYSTEM "../../../../lib/sep/dtd/helpTopic.dtd">
 
 <!--
   * 000001.xml
@@ -16,9 +16,9 @@
 	<section>
 		<![CDATA[
 <ol>
-	<li><a href="#section1">Comment puis-je commencer une revue avec OJS?</a></li>
-	<li><a href="#section2">Où puis-je trouver un support technique, soumettre les bogues et suggérer des améliorations possibles en utilisant OJS?</a></li>
-	<li><a href="#section3">Comment faire pour traduire OJS dans une autre langue?</a></li>
+	<li><a href="#section1">Comment puis-je commencer une revue avec CLA?</a></li>
+	<li><a href="#section2">Où puis-je trouver un support technique, soumettre les bogues et suggérer des améliorations possibles en utilisant CLA?</a></li>
+	<li><a href="#section3">Comment faire pour traduire CLA dans une autre langue?</a></li>
 	<li><a href="#section4">Pourquoi les auteurs reçoivent-ils un message à l’effet que la revue «n’accepte pas de soumission pour le moment »?</a></li>
 	<li><a href="#section5">Que puis-je faire si  je veux donner accès à des manuscrits qui sont en révision ou à l’étape «pré-impression» avant qu’ils soient publiés par le journal?</a></li>
 	<li><a href="#section6">Comment puis-je faire connaître ma revue sur le Web?</a></li>
@@ -29,26 +29,26 @@
 </ol>
 		]]>	
 	</section>
-	<section title="1. Comment commencer une revue avec OJS?">
+	<section title="1. Comment commencer une revue avec CLA?">
 		<![CDATA[
 <ol type="a">
-	<li><a href="http://pkp.sfu.ca/ojs/ojs_download" target="_blank">Télécharger </a> OJS  et  procéder à l’installation  en suivant les instructions d’installation, sur un serveur Web qui rencontre les conditions requises par le logiciel. </li>
-	<li>Utiliser le nom d’usager d’administrateur et le mot de passe générés lors de l’installation d’OJS  pour ouvrir une session.</li>
+	<li><a href="http://lumera.sangia.org/cla/cla_download" target="_blank">Télécharger </a> CLA  et  procéder à l’installation  en suivant les instructions d’installation, sur un serveur Web qui rencontre les conditions requises par le logiciel. </li>
+	<li>Utiliser le nom d’usager d’administrateur et le mot de passe générés lors de l’installation d’CLA  pour ouvrir une session.</li>
 	<li>Créer un nouvelle revue sous une revue hébergé.</li>
 	<li>L’administrateur du site sera automatiquement porté sur la liste comme directeur de la revue pour la nouvelle revue, mais si nécessaire, voir à créer un nouveau nom d’usager(s) ayant le rôle de directeur de revue.</li>
 	<li>Le directeur de revue va alors à la «Configuration» et procède à travers les cinq étapes (bien que pas nécessairement en une fois) ce qui résultera en un site Web prêt à recevoir des soumissions, avec la capacité de gérer le processus éditorial et de publier une revue en ligne.</li>
-	<li>Consultez <a href="http://pkp.sfu.ca/ojs/OJSinanHour.pdf" target="_blank">OJS en une heure </a> pour plus d’information sur comment débuter avec OJS</li>
+	<li>Consultez <a href="http://lumera.sangia.org/cla/CLAinanHour.pdf" target="_blank">CLA en une heure </a> pour plus d’information sur comment débuter avec CLA</li>
 </ol>
 		]]>
 	</section>
-	<section title="2. Où puis-je trouver du support technique, poser des questions sur les bogues, et suggérer des améliorations en utilisant OJS?">
+	<section title="2. Où puis-je trouver du support technique, poser des questions sur les bogues, et suggérer des améliorations en utilisant CLA?">
 		<![CDATA[
-<p> Le projet Public Knowledge  entretient un<a href="http://forum.pkp.sfu.ca/" target="_blank">forum de support </a> avec plus d’un millier d’échanges où les réponses peuvent être recherchées, ou une question posée. Par exemple, les messages d’erreur peuvent être recherchés, ce qui vous amène  à des solutions pour des problèmes connus. Si insuffisant, les usagers peuvent envoyer des questions à <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>. Les rapports de bogues devraient être soumis via  PKP <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github issues</a>.</p>
+<p> Le projet Public Knowledge  entretient un<a href="http://forum.lumera.sangia.org/" target="_blank">forum de support </a> avec plus d’un millier d’échanges où les réponses peuvent être recherchées, ou une question posée. Par exemple, les messages d’erreur peuvent être recherchés, ce qui vous amène  à des solutions pour des problèmes connus. Si insuffisant, les usagers peuvent envoyer des questions à <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a>. Les rapports de bogues devraient être soumis via  SEP <a href="https://github.com/sep/sep-lib#issues" target="_blank">Github issues</a>.</p>
 		]]>
 	</section>
-	<section title="3. Comment faire pour traduire OJS dans une autre langue?">
+	<section title="3. Comment faire pour traduire CLA dans une autre langue?">
 		<![CDATA[
-<p>Les instructions sont fournies dans le fichier docs/README lequel est inclus lors du téléchargement d’OJS. Des informations supplémentaires sur des problèmes de traductions courants peuvent être trouvés à <a href="http://forum.pkp.sfu.ca/" target="_blank">PKP Support Forum</a>.</p>
+<p>Les instructions sont fournies dans le fichier docs/README lequel est inclus lors du téléchargement d’CLA. Des informations supplémentaires sur des problèmes de traductions courants peuvent être trouvés à <a href="http://forum.lumera.sangia.org/" target="_blank">SEP Support Forum</a>.</p>
 		]]>
 	</section>
 	<section title="4. Pourquoi les auteurs reçoivent-ils un message à l’effet que la revue n’accepte pas de présentations  à ce moment-ci?">
@@ -58,12 +58,12 @@
 	</section>
 	<section title="5.Que pouvons-nous faire si nous voulons donner accès à des manuscrits qui sont en révision ou à l’étape de pré-impression, avant qu’ils soient publiés par la revue?">
 		<![CDATA[
-<p>Il n’y a pas actuellement  pas de façon précise d’accéder à des articles en particulier à l’étape de pré-impression ou de prépublication. Cependant, tout ce qu’un rédacteur a besoin de faire pour l’article en question  est d’utiliser l’adresse URL pour «Voir l’épreuve» à partir de l’étape de la «Mise en page» sur la page «Révision» de l’article. Cette adresse URL donne accès à une prévisualisation de l’article (aux usagers qui en ont le privilège), avant qu’il soit publié dans un numéro de la revue. Entretemps, PKP prend note de l’intérêt à cette fonction et peut considérer créer une option précise à cet effet.</p>
+<p>Il n’y a pas actuellement  pas de façon précise d’accéder à des articles en particulier à l’étape de pré-impression ou de prépublication. Cependant, tout ce qu’un rédacteur a besoin de faire pour l’article en question  est d’utiliser l’adresse URL pour «Voir l’épreuve» à partir de l’étape de la «Mise en page» sur la page «Révision» de l’article. Cette adresse URL donne accès à une prévisualisation de l’article (aux usagers qui en ont le privilège), avant qu’il soit publié dans un numéro de la revue. Entretemps, SEP prend note de l’intérêt à cette fonction et peut considérer créer une option précise à cet effet.</p>
 		]]>
 	</section>
 	<section title="6.Comment puis-je faire connaître ma revue sur le Web?">
 		<![CDATA[
-<p>Votre revue commencera à apparaitre dans Google et les autres principaux  moteurs de recherche avant longtemps, mais vous pouvez aussi faire d’autres démarches. Assurez-vous d’enregistrer votre revue avec le «Harvester» de PKP dans la «Configuration» à l’étape 3, ce qui fera que votre revue sera indexé dans les index d’Open Archives Initiatives, incluant le <a href="http://pkp.sfu.ca/harvester/" target="_blank">PKP Harvester</a> et <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Si votre revue est à accès ouvert, demandez au bibliothécaire de votre université comment votre revue peut être listé parmi les revues électroniques de la bibliothèque, et comment vous pouvez communiquer avec de nombreuses autres bibliothèques de recherches par une série d’annuaires de bibliothécaires. Voir aussi si vous pouvez utiliser le site Web ou l’annuaire d’associations professionnelles ayant un rapport avec votre revue, pour annoncer son lancement. Finalement, dans la «Configuration», sous « Gestion » et « Paramètres d'accès et de sécurité » (4.1), le directeur du journal devrait permettre aux usagers de s’enregistrer comme lecteurs, de façon à être avisés des nouveaux numéros.</p>
+<p>Votre revue commencera à apparaitre dans Google et les autres principaux  moteurs de recherche avant longtemps, mais vous pouvez aussi faire d’autres démarches. Assurez-vous d’enregistrer votre revue avec le «Harvester» de SEP dans la «Configuration» à l’étape 3, ce qui fera que votre revue sera indexé dans les index d’Open Archives Initiatives, incluant le <a href="http://lumera.sangia.org/harvester/" target="_blank">SEP Harvester</a> et <a href="http://oaister.umdl.umich.edu/o/oaister/" target="_blank">OAIster</a>. Si votre revue est à accès ouvert, demandez au bibliothécaire de votre université comment votre revue peut être listé parmi les revues électroniques de la bibliothèque, et comment vous pouvez communiquer avec de nombreuses autres bibliothèques de recherches par une série d’annuaires de bibliothécaires. Voir aussi si vous pouvez utiliser le site Web ou l’annuaire d’associations professionnelles ayant un rapport avec votre revue, pour annoncer son lancement. Finalement, dans la «Configuration», sous « Gestion » et « Paramètres d'accès et de sécurité » (4.1), le directeur du journal devrait permettre aux usagers de s’enregistrer comme lecteurs, de façon à être avisés des nouveaux numéros.</p>
 		]]>
 	</section>
 	<section title="7. Comment la revue peut-elle présenter un historique de qui a contribué à son équipe éditoriale?">

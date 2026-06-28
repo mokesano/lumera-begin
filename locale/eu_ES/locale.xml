@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale/eu_ES/locale.xml
@@ -53,7 +53,7 @@
 	-->
 
 	<!-- Common Messages -->
-	<message key="common.openJournalSystems">Open Journal Systems</message>
+	<message key="common.openJournalSystems">Code Lumera Editorial</message>
 	<message key="common.confirmComplete">Ziur zaude bukatutako gisa markatu nahi duzula zeregin hau? Gero ezingo duzu aldaketarik egin.</message>
 	<message key="common.payment">Ordainketa</message>
 	<message key="common.payments">Ordainketak</message>
@@ -304,25 +304,25 @@
 
 	<!-- Site Administration -->
 
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Gune honetan ostatatutako aldizkari guztien edukia datu-baseetan bilaketak egiteko sistema banatu batean indexatuta edukitzeko, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">erregistratu</a> zuen gunearen URLa Public Knowledge Project-en <a href="http://pkp.sfu.ca/harvester/" target="_blank">harvester</a> metadatu-biltzailean. Tresna horrek aldizkari honetako elementu indexatu guztietako metadatuak bilduko ditu, bilaketa zehatzak eta kolektiboak egin ahal izateko <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a> protokoloari atxikitako bilaketa-guneen bitartez.
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Gune honetan ostatatutako aldizkari guztien edukia datu-baseetan bilaketak egiteko sistema banatu batean indexatuta edukitzeko, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">erregistratu</a> zuen gunearen URLa Sangia Editorial Project-en <a href="http://lumera.sangia.org/harvester/" target="_blank">harvester</a> metadatu-biltzailean. Tresna horrek aldizkari honetako elementu indexatu guztietako metadatuak bilduko ditu, bilaketa zehatzak eta kolektiboak egin ahal izateko <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a> protokoloari atxikitako bilaketa-guneen bitartez.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Egin klik hemen</a> eta idatzi <span class="highlight">{$siteUrl}</span> <strong>Gunearen URLa</strong>n eta <span class="highlight">{$oaiUrl}</span> <strong>OAI Base URL</strong> eremuan.
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Egin klik hemen</a> eta idatzi <span class="highlight">{$siteUrl}</span> <strong>Gunearen URLa</strong>n eta <span class="highlight">{$oaiUrl}</span> <strong>OAI Base URL</strong> eremuan.
 <br /><br />
-Kontuan izan OAI interfazea desgaitu daitekeela gune honetarako, OJS sistema-konfigurazioa editatuz. OJS bertsio berriagoetan aukera izango da gune barruko aldizkariak banaka gaitzeko edo desgaitzeko.]]></message>
+Kontuan izan OAI interfazea desgaitu daitekeela gune honetarako, CLA sistema-konfigurazioa editatuz. CLA bertsio berriagoetan aukera izango da gune barruko aldizkariak banaka gaitzeko edo desgaitzeko.]]></message>
 
 	
 	
 	<!-- Languages -->
-	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Orain ezin da hizkuntza-paketerik deskargatu Public Knowledge Project web-zerbitzaritik:</p>
+	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Orain ezin da hizkuntza-paketerik deskargatu Sangia Editorial Project web-zerbitzaritik:</p>
 	<ul>
 		<li>Zure zerbitzariak ez dauka edo ez du uzten exekutatzen GNUren "tar" utilitatea</li>
-		<li>OJSk ezin du aldatu localeen erregistro-fitxategia, normalean "registry/locales.xml".</li>
+		<li>CLAk ezin du aldatu localeen erregistro-fitxategia, normalean "registry/locales.xml".</li>
 	</ul>
-<p>Hizkuntza-paketeak eskuz deskarga daitezke <a href="http://pkp.sfu.ca">PKP webgunetik</a>.</p>]]></message>
+<p>Hizkuntza-paketeak eskuz deskarga daitezke <a href="http://sep.sfu.ca">SEP webgunetik</a>.</p>]]></message>
 
-	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>OJS ez den autentifikazio-iturburu bat lehenetsi gisa ezartzeak, ondorio hauek izango ditu:</p>
+	<message key="admin.auth.defaultSourceDescription"><![CDATA[<p>CLA ez den autentifikazio-iturburu bat lehenetsi gisa ezartzeak, ondorio hauek izango ditu:</p>
 <ul>
-	<li>Erabiltzaile bat saiatzen bada gune honetan kontu berri bat erregistratzen, lehendik autentifikazio-iturburuan dagoen (baina OJS datu-basean ez dagoen) erabiltzaile-izen batekin, ematen den pasahitza erabiltzaile-kontu horrentzat baliozkoa bada bakarrik onartuko da erregistratzeko ahalegina.</li>
+	<li>Erabiltzaile bat saiatzen bada gune honetan kontu berri bat erregistratzen, lehendik autentifikazio-iturburuan dagoen (baina CLA datu-basean ez dagoen) erabiltzaile-izen batekin, ematen den pasahitza erabiltzaile-kontu horrentzat baliozkoa bada bakarrik onartuko da erregistratzeko ahalegina.</li>
 </ul>]]></message>
 	
 	<!-- System Information -->
@@ -344,13 +344,13 @@ key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>ABISUA!</h4>
 	
 	<!-- Payment Management -->
 	<!-- General plugin information -->
-	<message key="plugins.categories.auth.description">Baimena emateko pluginen bidez, erabiltzaile-autentifikazioa beste sistema batzuei delega diezaieke Open Journal Systems-ek, esate baterako LDAP zerbitzariei.</message>
+	<message key="plugins.categories.auth.description">Baimena emateko pluginen bidez, erabiltzaile-autentifikazioa beste sistema batzuei delega diezaieke Code Lumera Editorial-ek, esate baterako LDAP zerbitzariei.</message>
 
 
 	<message key="plugins.categories.citationFormats.description">Aipamen-formatuen pluginen bidez, erabiltzaileek hainbat formatu izango dituzte aipamenak ikusteko.</message>
 
 
-	<message key="plugins.categories.generic.description">Plugin generikoek Open Journal Systems hedatzen dute, gainerako plugin kategoriek egin ezin dituzten hainbat gauzatarako.</message>
+	<message key="plugins.categories.generic.description">Plugin generikoek Code Lumera Editorial hedatzen dute, gainerako plugin kategoriek egin ezin dituzten hainbat gauzatarako.</message>
 
 	<message key="plugins.categories.implicitAuth">Autentifikazio inplizituko pluginak</message>
 	<message key="plugins.categories.implicitAuth.description">Autentifikazio inplizituko pluginek, erabiltzaileak http goiburuetan oinarrituta autentifikatzeko euskarria ematen dute.</message>
@@ -373,9 +373,9 @@ editoreari onartzen duten ala ez, eta bide beretik bidaltzen dizkiote ebaluazioa
 eta gomendioa ere. Ebaluatzaileen onarpena (edo ezespena), eta ondorengo 
 ebaluazio-txostena eta gomendioa Editoreek sartzen dute bidalketaren 
 Ebaluazio-orrian, ebaluazio-prozesua erregistratuta uzteko.</message>
-	<message key="manager.setup.lockssDescription"><![CDATA[Open Journal Systems-ek <a href="http://www.lockss.org/" target="_blank"> LOCKSS</a> (Lots of Copies Keep Stuff Safe) sistema erabiltzen du aldizkariaren artxibo seguru eta iraunkorra segurtatzeko. LOCKSS iturburu irekiko softwarea da, Stanford-eko Unibertsitateko Liburutegiak garatua, liburutegiei hautatutako web-aldizkariak mantentzen laguntzeko. LOCKSSek erregularki begiratzen du erregistratutako aldizkarien webguneetan, zenbaki edo eduki berririk argitaratu den ikusteko eta, hala bada, artxibatzeko. Artxibo bakoitza etengabe balidatzen da liburutegiko beste cache batzuen kontra, eta eduki hondatu edo galdurik aurkitzen bada, beste cacheak edo aldizkaria erabiltzen dira leheneratzeko.
+	<message key="manager.setup.lockssDescription"><![CDATA[Code Lumera Editorial-ek <a href="http://www.lockss.org/" target="_blank"> LOCKSS</a> (Lots of Copies Keep Stuff Safe) sistema erabiltzen du aldizkariaren artxibo seguru eta iraunkorra segurtatzeko. LOCKSS iturburu irekiko softwarea da, Stanford-eko Unibertsitateko Liburutegiak garatua, liburutegiei hautatutako web-aldizkariak mantentzen laguntzeko. LOCKSSek erregularki begiratzen du erregistratutako aldizkarien webguneetan, zenbaki edo eduki berririk argitaratu den ikusteko eta, hala bada, artxibatzeko. Artxibo bakoitza etengabe balidatzen da liburutegiko beste cache batzuen kontra, eta eduki hondatu edo galdurik aurkitzen bada, beste cacheak edo aldizkaria erabiltzen dira leheneratzeko.
 <br /><br />
-Argitaratzen hasi arte, ez da beharrezkoa LOCKSS euskarria gehitzea Open Journal Systems-i. Orduan, bi urrats hauek egin beharko dira:]]></message>
+Argitaratzen hasi arte, ez da beharrezkoa LOCKSS euskarria gehitzea Code Lumera Editorial-i. Orduan, bi urrats hauek egin beharko dira:]]></message>
 	
 	<!-- Setup Step 3 -->
 	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Creative Commons Copyright informazio proposatuak</h3>
@@ -396,11 +396,11 @@ Aldizkari honetan argitaratzen duten egileak ados daude baldintza hauekin:
 </ol>]]></message>
 	<message key="manager.setup.subjectClassificationDescription"><![CDATA[[Interneten erabilgarri dagoen sistema bat erabiliko du aldizkariak gaika sailkatzeko.<br />
 Sailkapen-sistemaren titulua]]></message>
-	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Aldizkari honen edukia datu-baseetan bilaketak egiteko sistema banatu batean indexatuta edukitzeko, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">erregistratu</a> zuen gunearen URLa Public Knowledge Project-en <a href="http://pkp.sfu.ca/harvester/" target="_blank">harvester</a> metadatu-biltzailean. Tresna horrek aldizkari honetako elementu indexatu guztien metadatuak bilduko ditu, bilaketa zehatzak eta kolektiboak egin ahal izateko <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a> protokoloari atxikitako bilaketa-guneen bitartez.
+	<message key="manager.setup.registerJournalForIndexingDescription"><![CDATA[Aldizkari honen edukia datu-baseetan bilaketak egiteko sistema banatu batean indexatuta edukitzeko, <a href="http://lumera.sangia.org/harvester/add.php" target="_blank">erregistratu</a> zuen gunearen URLa Sangia Editorial Project-en <a href="http://lumera.sangia.org/harvester/" target="_blank">harvester</a> metadatu-biltzailean. Tresna horrek aldizkari honetako elementu indexatu guztien metadatuak bilduko ditu, bilaketa zehatzak eta kolektiboak egin ahal izateko <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a> protokoloari atxikitako bilaketa-guneen bitartez.
 <br /><br />
-Kontuan izan, zuen gune-administratzaileak dagoeneko gunea erregistratu badu PKP Harverster biltzailean, zuen aldizkaria automatikoki indexatuko dela eta ez daukazula aldizkaria erregistratu beharrik.
+Kontuan izan, zuen gune-administratzaileak dagoeneko gunea erregistratu badu SEP Harverster biltzailean, zuen aldizkaria automatikoki indexatuko dela eta ez daukazula aldizkaria erregistratu beharrik.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Egin klik hemen</a> eta sartu <span class="highlight">{$siteUrl}</span> <strong>Gunearen URLa</strong>n, eta <span class="highlight">{$oaiUrl}</span> <span class="highlight">OAI base URL</span> eremuan.]]></message>
+<a href="http://lumera.sangia.org/harvester/add.php" target="_blank">Egin klik hemen</a> eta sartu <span class="highlight">{$siteUrl}</span> <strong>Gunearen URLa</strong>n, eta <span class="highlight">{$oaiUrl}</span> <span class="highlight">OAI base URL</span> eremuan.]]></message>
 
 	<!-- Setup Step 4 -->
 	<message key="manager.setup.basicEditorialStepsDescription"><![CDATA[Urratsak: Bidalketen ilara &gt; Bidalketen ebaluazioa &gt; Bidalketen edizioa &gt; Aurkibidea.<br /><br />
@@ -755,16 +755,16 @@ da bidali zuzentzeko fitxategia hautatu arte Ebaluazio-orrian, Editorearen eraba
 	<message key="about.memberships">Kidetzak</message>
 	<message key="about.journalSponsorship">Aldizkariaren babesleak</message>
 	<message key="about.aboutThisPublishingSystem">Argitalpen-sistema honi buruz</message>
-	<message key="about.aboutThisPublishingSystem.altText">OJSren 
+	<message key="about.aboutThisPublishingSystem.altText">CLAren 
 Prozesu editoriala eta argitaratze-prozesua</message>
-	<message key="about.aboutOJSJournal"><![CDATA[Aldizkari honek Open Journal Systems {$ojsVersion} (OJS) erabiltzen du. Aldizkariak kudeatzeko eta argitaratzeko iturburu irekiko software bat da OJS; <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> proiektuak garatzen eta sostengatzen du, eta doan banatzen du GNUren lizentzia publiko orokorrarekin (General Public License).]]></message>
-	<message key="about.aboutOJSSite"><![CDATA[Gune honek Open Journal Systems {$ojsVersion} erabiltzen du (OJS). Aldizkariak kudeatzeko eta argitaratzeko iturburu irekiko software bat da OJS; <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> proiektuak garatzen eta sostengatzen du, eta doan banatzen du GNUren lizentzia publiko orokorrarekin (General Public License).]]></message>
+	<message key="about.aboutCLAJournal"><![CDATA[Aldizkari honek Code Lumera Editorial {$claVersion} (CLA) erabiltzen du. Aldizkariak kudeatzeko eta argitaratzeko iturburu irekiko software bat da CLA; <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> proiektuak garatzen eta sostengatzen du, eta doan banatzen du GNUren lizentzia publiko orokorrarekin (General Public License).]]></message>
+	<message key="about.aboutCLASite"><![CDATA[Gune honek Code Lumera Editorial {$claVersion} erabiltzen du (CLA). Aldizkariak kudeatzeko eta argitaratzeko iturburu irekiko software bat da CLA; <a href="http://lumera.sangia.org/">Sangia Editorial Project</a> proiektuak garatzen eta sostengatzen du, eta doan banatzen du GNUren lizentzia publiko orokorrarekin (General Public License).]]></message>
 	
 	<!-- Announcement -->
 
 	<!-- Help -->
-	<message key="help.ojsHelp">Open Journal Systems-en laguntza</message>
-	<message key="help.ojsHelpAbbrev">OJS laguntza</message>	
+	<message key="help.claHelp">Code Lumera Editorial-en laguntza</message>
+	<message key="help.claHelpAbbrev">CLA laguntza</message>	
 	<message key="help.searchReturnResults">Itzuli bilaketaren emaitzara</message>
 
 	<!-- Donations -->
@@ -807,15 +807,15 @@ Prozesu editoriala eta argitaratze-prozesua</message>
 	<message key="payment.subscription.expires">Iraungi</message>	
 
 	<!-- Installer -->
-	<message key="installer.ojsInstallation">OJS instalazioa</message>
-	<message key="installer.ojsUpgrade">OJS bertsio-berritzea</message>
-	<message key="installer.installationInstructions"><![CDATA[<h4>OJS {$version} bertsioa</h4>
+	<message key="installer.claInstallation">CLA instalazioa</message>
+	<message key="installer.claUpgrade">CLA bertsio-berritzea</message>
+	<message key="installer.installationInstructions"><![CDATA[<h4>CLA {$version} bertsioa</h4>
 
-<p>Eskerrik asko Public Knowledge Project-en <strong>Open Journal Systems</strong> deskargatzeagatik. Aurrera egin aurretik, irakur ezazu mesedez software honekin batera ematen den <a href="{$baseUrl}/docs/README">README</a> fitxategia. Public Knowledge Project-i eta dituen software-proiektuei buruzko informazio gehiago nahi izanez gero, jo <a href="http://pkp.sfu.ca/" target="_blank">PKP webgunera</a>. Open Journal Systems-en akatsen berri emateko edo laguntza teknikoa eskatzeko, ikus <a href="http://forum.pkp.sfu.ca">laguntza teknikoko foroa</a> edo PKPren <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">akatsen berri emateko</a> lineako sistema. Laguntza teknikoko foroa hobetsi arren kontaktuetarako, mezua ere mezua ere bidal diezaiokezu taldeari <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a> helbidera.</p>
+<p>Eskerrik asko Sangia Editorial Project-en <strong>Code Lumera Editorial</strong> deskargatzeagatik. Aurrera egin aurretik, irakur ezazu mesedez software honekin batera ematen den <a href="{$baseUrl}/docs/README">README</a> fitxategia. Sangia Editorial Project-i eta dituen software-proiektuei buruzko informazio gehiago nahi izanez gero, jo <a href="http://lumera.sangia.org/" target="_blank">SEP webgunera</a>. Code Lumera Editorial-en akatsen berri emateko edo laguntza teknikoa eskatzeko, ikus <a href="http://forum.sep.sfu.ca">laguntza teknikoko foroa</a> edo SEPren <a href="https://github.com/sep/sep-lib#issues" target="_blank">akatsen berri emateko</a> lineako sistema. Laguntza teknikoko foroa hobetsi arren kontaktuetarako, mezua ere mezua ere bidal diezaiokezu taldeari <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a> helbidera.</p>
 
 <h4>Bertsio-berritzea</h4>
 
-<p>Lehendik daukazun OJS 2.x bertsioa berritzera bazoaz, egin klik <a href="{$upgradeUrl}">hemen</a>.</p>
+<p>Lehendik daukazun CLA 2.x bertsioa berritzera bazoaz, egin klik <a href="{$upgradeUrl}">hemen</a>.</p>
 
 <h4>Gomendatutako sistema-eskakizunak</h4>
 
@@ -826,14 +826,14 @@ Prozesu editoriala eta argitaratze-prozesua</message>
 	<li>Sistema eragilea: Goiko softwarea onartzen duen edozein SE, besteak beste: <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.oracle.com/sun/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, <a href="http://www.microsoft.com/">Windows</a></li>
 </ul>
 
-<p>Hala ere, PKPk ez dauka software-bertsio eta plataforma konbinazio posible guztiak probatzeko adina baliabide eta, beraz, ezin du bermatu denek ondo funtzionatuko dutenik.</p>
+<p>Hala ere, SEPk ez dauka software-bertsio eta plataforma konbinazio posible guztiak probatzeko adina baliabide eta, beraz, ezin du bermatu denek ondo funtzionatuko dutenik.</p>
 
-<p>Instalazioa egin ondoren ezarpen hauek aldatu ahal izango dira, OJSren 
+<p>Instalazioa egin ondoren ezarpen hauek aldatu ahal izango dira, CLAren 
 oinarriko direktorioko <tt>config.inc.php</tt> fitxategia editatuz, edo gune-administratzailearen web interfazearen bidez.</p>
 
 <h4>Onartzen diren datu-base sistemak</h4>
 
-<p>OJS MySQL eta PostgreSQL sistemetan bakarrik probatu da oraingoz, baina <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a>k onartzen dituen datu-baseak kudeatzeko beste sistema batzuek ere funtziona dezakete (guztiz edo zati batean). Beste DBMS batzuen bateragarritasunari buruzko txostenak eta/edo kode-adabakiak OJS taldeari bidal dakizkioke.</p>
+<p>CLA MySQL eta PostgreSQL sistemetan bakarrik probatu da oraingoz, baina <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a>k onartzen dituen datu-baseak kudeatzeko beste sistema batzuek ere funtziona dezakete (guztiz edo zati batean). Beste DBMS batzuen bateragarritasunari buruzko txostenak eta/edo kode-adabakiak CLA taldeari bidal dakizkioke.</p>
 
 <h4>Instalatu aurreko urratsak</h4>
 
@@ -852,33 +852,33 @@ oinarriko direktorioko <tt>config.inc.php</tt> fitxategia editatuz, edo gune-adm
 <h4>Eskuzko instalazioa</h4>
 
 <p>Datu-basea eskuz instalatu ahal izateko, hautatu <strong>Eskuzko 
-instalazioa</strong> OJS datu-basearen eskema eta hasierako datuak sortzeko SQL 
+instalazioa</strong> CLA datu-basearen eskema eta hasierako datuak sortzeko SQL 
 instrukzioak bistaratzeko. Aukera hau praktikoa da instalazioan sortzen diren 
 problemak konpontzeko, batez ere euskarri gabeko plataformetan. Kontuan izan 
 instalazio-metodo hau ez dela saiatuko datu-basea edo taulak sortzen, 
 datu-basearen ezarpenak konfigurazio-fitxategian idatziko diren 
 arren.</p>]]></message>
-	<message key="installer.upgradeInstructions"><![CDATA[<h4>OJS {$version} bertsioa</h4>
+	<message key="installer.upgradeInstructions"><![CDATA[<h4>CLA {$version} bertsioa</h4>
 	
-<p>Eskerrik asko Public Knowledge Project-en <strong>Open Journal Systems</strong> deskargatzeagatik. Aurrera egin aurretik, irakur itzazu mesedez software honekin batera ematen diren <a href="{$baseUrl}/docs/README">README</a> eta <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> fitxategiak. Public Knowledge Project-i eta lantzen dituen software-proiektuei buruzko informazio gehiago nahi izanez gero, jo <a href="http://pkp.sfu.ca/" target="_blank">PKP webgunera</a>. Open Journal Systems-en akatsen berri emateko edo laguntza teknikoa eskatzeko, ikus <a href="http://forum.pkp.sfu.ca">laguntza teknikoko foroa</a> edo PKPren <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">akatsen berri emateko</a> lineako sistema. Laguntza teknikoko foroa hobetsi arren kontaktuetarako, mezua ere bidal diezaiokezu taldeari <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a> helbidera.</p>
-<p>Aurrera jarraitu aurretik, <strong>biziki gomendatzen dizugu</strong> datu-basearen, fitxategien direktorioaren eta OJSren instalazio-direktorioaren kopiak egitea.</p>
+<p>Eskerrik asko Sangia Editorial Project-en <strong>Code Lumera Editorial</strong> deskargatzeagatik. Aurrera egin aurretik, irakur itzazu mesedez software honekin batera ematen diren <a href="{$baseUrl}/docs/README">README</a> eta <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> fitxategiak. Sangia Editorial Project-i eta lantzen dituen software-proiektuei buruzko informazio gehiago nahi izanez gero, jo <a href="http://lumera.sangia.org/" target="_blank">SEP webgunera</a>. Code Lumera Editorial-en akatsen berri emateko edo laguntza teknikoa eskatzeko, ikus <a href="http://forum.sep.sfu.ca">laguntza teknikoko foroa</a> edo SEPren <a href="https://github.com/sep/sep-lib#issues" target="_blank">akatsen berri emateko</a> lineako sistema. Laguntza teknikoko foroa hobetsi arren kontaktuetarako, mezua ere bidal diezaiokezu taldeari <a href="mailto:sep.contact@gmail.com">sep.contact@gmail.com</a> helbidera.</p>
+<p>Aurrera jarraitu aurretik, <strong>biziki gomendatzen dizugu</strong> datu-basearen, fitxategien direktorioaren eta CLAren instalazio-direktorioaren kopiak egitea.</p>
 <p><a href="http://www.php.net/features.safe-mode" target="_blank">PHP modu seguruan</a> exekutatzen ari bazara, ziurtatu zure php.ini konfigurazio-fitxategiko max_execution_time direktibaren muga altu jarrita dagoela. Muga horretara edo besteren batera (adib. Apache-ren "Timeout" direktibarenera) heltzen bada eta bertsio-berritzeko prozesua geratzen bada, eskuz konpondu behar da.</p>]]></message>
 	<message key="installer.localeSettingsInstructions"><![CDATA[Unicode (UTF-8) euskarri osoa edukitzeko, hautatu UTF-8 karaktere-joko guztien ezarpenetan. Kontuan izan, euskarri horrek MySQL >= 4.1.1 edo PostgreSQL >= 7.1 datu-base zerbitzaria eskatzen duela. Kontuan izan, halaber, Unicode euskarri osoa edukitzeko, PHP >= 4.3.0 eduki behar dela <a href="http://www.php.net/mbstring" target="_blank">mbstring</a> liburutegirako euskarriarekin konpilatuta (lehenespenez gaitzen da PHP instalazio berrietan). Zure zerbitzariak baldintza horiek betetzen ez baditu, problemak izan ditzakezu karaktere-joko hedatuak erabiltzeko.
 <br /><br />
 Zure zerbitzariak mbstring hau onartzen du: <strong>{$supportsMBString}</strong>]]></message>
-	<message key="installer.localeInstructions">Sistema honetan erabiltzeko lehenengo hizkuntza: Zerrendan ez dagoen hizkuntzaren bat erabili nahi baduzu, kontsultatu OJS dokumentazioa.</message>
+	<message key="installer.localeInstructions">Sistema honetan erabiltzeko lehenengo hizkuntza: Zerrendan ez dagoen hizkuntzaren bat erabili nahi baduzu, kontsultatu CLA dokumentazioa.</message>
 	<message key="installer.additionalLocalesInstructions">Hautatu sistema honetan erabili nahi dituzun beste hizkuntzak. Hizkuntza horiek erabilgarri egongo dira gune honetan ostatatutako aldizkarietan. Hizkuntzak edozein unetan instala daitezke gune-administratzailearen interfazetik.</message>
 	<message key="installer.filesDirInstructions"><![CDATA[Idatzi dagoeneko sortuta dagoen direktorio baten bide-izen osoa, kargatutako fitxategiak gordetzeko. Ez da komeni direktorio horretan zuzenean Internetetik sartu ahal izatea. <strong>Instalazioa egiten hasi aurretik, ziurtatu direktorio hori sortuta dagoela eta idazgarria dela.</strong> Windows-eko bide-izenetan barrak erabiltzen dira, adib.: "C:/aldizkaria/fitxategiak".]]></message>
-	<message key="installer.databaseSettingsInstructions">OJSk SQL datu-baserako sarbidea behar du datuak gordetzeko. Goian azaltzen dira onartutako datu-baseen sistema-eskakizunak. Zehaztu beheko eremuetan datu-basearekin konektatzeko erabiliko diren ezarpenak.</message>
-	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>Kontuz:</strong> Datu-basea instalatzean huts egin badu instalazioak, zure OJS datu-basea edo datu-baseko taulak askatu beharko dituzu datu-basea instalatzen saiatu aurretik.]]></message>
+	<message key="installer.databaseSettingsInstructions">CLAk SQL datu-baserako sarbidea behar du datuak gordetzeko. Goian azaltzen dira onartutako datu-baseen sistema-eskakizunak. Zehaztu beheko eremuetan datu-basearekin konektatzeko erabiliko diren ezarpenak.</message>
+	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>Kontuz:</strong> Datu-basea instalatzean huts egin badu instalazioak, zure CLA datu-basea edo datu-baseko taulak askatu beharko dituzu datu-basea instalatzen saiatu aurretik.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>GARRANTZITSUA!</h4>
 <p>Instalatzaileak ezin izan du automatikoki gainidatzi konfigurazio-fitxategia. Sistema erabiltzen saiatu aurretik, ireki <tt>config.inc.php</tt> testu-editore egoki batekin eta ordeztu bertako edukia beheko testu-eremuaren edukiarekin.</p>]]></message>
-	<message key="installer.installationComplete"><![CDATA[<p>OJS ondo instalatu da.</p>
+	<message key="installer.installationComplete"><![CDATA[<p>CLA ondo instalatu da.</p>
 <p>Sistema erabiltzen hasteko, <a href="{$loginUrl}">hasi saioa</a> aurreko orrian sartutako erabiltzaile-izenarekin eta pasahitzarekin.</p>
-<p>Albisteen eta eguneratzeen berri jakin nahi baduzu, <strong>erregistratu <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a> helbidean.</strong> Galderarik edo oharrik egin nahi baduzu, bisitatu <a href="http://forum.pkp.sfu.ca" target="_new">laguntza teknikoko foroa</a>.</p>]]></message>
-	<message key="installer.upgradeComplete"><![CDATA[<p>Ondo berritu da OJS {$version} bertsiora.</p>
+<p>Albisteen eta eguneratzeen berri jakin nahi baduzu, <strong>erregistratu <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a> helbidean.</strong> Galderarik edo oharrik egin nahi baduzu, bisitatu <a href="http://forum.sep.sfu.ca" target="_new">laguntza teknikoko foroa</a>.</p>]]></message>
+	<message key="installer.upgradeComplete"><![CDATA[<p>Ondo berritu da CLA {$version} bertsiora.</p>
 <p>Ez ahaztu config.inc.php konfigurazio-fitxategiko "installed" ezarpena berriro ere <em>On</em> jartzeaz.</p>
-<p>Oraindik ez bazara erregistratu, eta albisteen eta eguneratzeen berri jakin nahi baduzu, <strong>erregistratu <a href="http://pkp.sfu.ca/ojs/register" target="_new">http://pkp.sfu.ca/ojs/register</a> helbidean.</strong> Galderarik edo oharrik egin nahi baduzu, bisitatu <a href="http://forum.pkp.sfu.ca" target="_new">laguntza teknikoko foroa</a>.</p>]]></message>
+<p>Oraindik ez bazara erregistratu, eta albisteen eta eguneratzeen berri jakin nahi baduzu, <strong>erregistratu <a href="http://lumera.sangia.org/cla/register" target="_new">http://lumera.sangia.org/cla/register</a> helbidean.</strong> Galderarik edo oharrik egin nahi baduzu, bisitatu <a href="http://forum.sep.sfu.ca" target="_new">laguntza teknikoko foroa</a>.</p>]]></message>
 
 
 	<!-- Article Logs -->
@@ -969,8 +969,8 @@ Balidazioak huts egin dezake bilaketa egiteko inprimaki-datuak bidaltzea eskatze
 
 	<message key="rt.metadata.dublinCore.primaryAuthor">Sortzailea</message>
 
-	<message key="rt.metadata.pkp.primaryAuthor">Egilearen izena, erakundea, herrialdea</message>
-	<message key="rt.metadata.pkp.peerReviewed">Adituek ebaluatutako artikulua</message>
+	<message key="rt.metadata.sep.primaryAuthor">Egilearen izena, erakundea, herrialdea</message>
+	<message key="rt.metadata.sep.peerReviewed">Adituek ebaluatutako artikulua</message>
 	<message key="rt.beNotifiedWhen">Jakinarazi....</message>
 
 	<message key="rt.thisJournal">Bilatu aldizkarian</message>
@@ -1076,8 +1076,8 @@ Balidazioak huts egin dezake bilaketa egiteko inprimaki-datuak bidaltzea eskatze
 	<message key="about.subscriptionTypes.cost">Kostua</message>
 	<message key="payment.authorFees">Egile-tarifak</message>
 	<message key="payment.subscription.purchase">Erosi harpidetza</message>
-	<message key="installer.installApplication">Instalatu Open Journal Systems</message>
-	<message key="installer.upgradeApplication">Bertsio-berritu Open Journal Systems</message>
+	<message key="installer.installApplication">Instalatu Code Lumera Editorial</message>
+	<message key="installer.upgradeApplication">Bertsio-berritu Code Lumera Editorial</message>
 	<message key="notification.mailListDescription">Sartu zure helbide eletkronikoa aldizkariari gehitu zaizkion eduki berri garrantzitsuen jakinarazpenak berehala jasotzeko.</message>
 	<message key="notification.notificationsPublicDescription"><![CDATA[Orri honek aldizkariarekin lotutako eguneraketa garrantzitsuak erakusten ditu, hala nola gai edo anuntzio berriak. Jakinarazpen horietan izen-eman dezakezu, bai RSS jarioekin (eskuineko irudietan klik eginez), bai <a href="{$emailUrl}">posta elektronikoz. </a>]]></message>
 	<message key="notification.type.articleSubmitted">Artikulu berri bat, "{$title}", aurkeztu da.</message>
@@ -1151,8 +1151,8 @@ Balidazioak huts egin dezake bilaketa egiteko inprimaki-datuak bidaltzea eskatze
 	<message key="payment.type.gift">Oparia</message>
 	<message key="installer.allowFileUploads"><![CDATA[Zure zerbitzariak fitxategiak gora kargatzen uzten du gaur egun: <strong>{$allowFileUploads}</strong>]]></message>
 	<message key="installer.maxFileUploadSize"><![CDATA[Zure zerbitzariak gehienez tamaina hau duten fitxategiak gora kargatzen uzten du gaur egun: <strong>{$maxFileUploadSize}</strong>]]></message>
-	<message key="site.upgradeAvailable.admin"><![CDATA[OJSren bertsio berri bat dago eskuragarri! Gaur egun OJS {$currentVersion} erabiltzen ari zara. Azken bertsioa OJS {$latestVersion} da. Mesedez, zoaz <a href="http://pkp.sfu.ca/ojs_download" target="_new">this page</a> orrira azken bertsioa kargatzeko eta eguneratzeko argibideak aurkitzeko.]]></message>
-	<message key="site.upgradeAvailable.manager"><![CDATA[OJSren bertsio berri bat dago eskuragarri! Une honetan OJS {$currentVersion} erabiltzen ari zara. Azken bertsioa OJS {$latestVersion} da. Mesedez, jarri harremanetan zure Webguneko Administratzailearekin ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) bertsio berria atera dela jakinarazteko. Informazio gehiago aurki daiteke hemen: <a href="http://pkp.sfu.ca/ojs_download" target="_new">here</a>.]]></message>
+	<message key="site.upgradeAvailable.admin"><![CDATA[CLAren bertsio berri bat dago eskuragarri! Gaur egun CLA {$currentVersion} erabiltzen ari zara. Azken bertsioa CLA {$latestVersion} da. Mesedez, zoaz <a href="http://lumera.sangia.org/cla_download" target="_new">this page</a> orrira azken bertsioa kargatzeko eta eguneratzeko argibideak aurkitzeko.]]></message>
+	<message key="site.upgradeAvailable.manager"><![CDATA[CLAren bertsio berri bat dago eskuragarri! Une honetan CLA {$currentVersion} erabiltzen ari zara. Azken bertsioa CLA {$latestVersion} da. Mesedez, jarri harremanetan zure Webguneko Administratzailearekin ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) bertsio berria atera dela jakinarazteko. Informazio gehiago aurki daiteke hemen: <a href="http://lumera.sangia.org/cla_download" target="_new">here</a>.]]></message>
 	<message key="editor.submissionEditing.notes"><![CDATA[<ol>
 	<![CDATA[<ol>
 	<li>Azpimarratutako itemek editore batek esku hartzea beharrezkoa dela adierazten dute; honela etikatuta daude:
@@ -1164,4 +1164,3 @@ Balidazioak huts egin dezake bilaketa egiteko inprimaki-datuak bidaltzea eskatze
 	</li>
 </ol>]]></message>
 </locale>
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * plugins/generic/usageStats/locale/tr_TR/locale.xml
@@ -29,7 +29,7 @@
 	<message key="plugins.generic.usageStats.noCounterBotList">COUNTER sayacı listesi bulunamadı veya birden fazla liste mevcut.  {$file} dosyası için işlem yapılamadı.</message>
 	<message key="plugins.generic.usageStats.failedCounterBotList">{$botlist} adlı COUNTER sayaç listesi açılamadı. {$file} dosyası için işlem yapılamadı.</message>
 	
-	<message key="plugins.reports.usageStats.report.displayName">OJS kullanım istatisitkleri raporu</message>
+	<message key="plugins.reports.usageStats.report.displayName">CLA kullanım istatisitkleri raporu</message>
 	<message key="plugins.reports.usageStats.report.description">ADS varsayılan kullanım istatistikleri raporu (COUNTER uyumlu)</message>
 	
 	<message key="plugins.reports.usageStats.optout.displayName">Kullanım İstatistikleri Gizlilik Bilgisi</message>
@@ -46,6 +46,3 @@
 	<message key="plugins.generic.usageStats.settings.archives">Arşivler</message>
 	<message key="plugins.generic.usageStats.settings.compressArchives">Sıkıştırılmış arşivler</message>
 </locale>
-
-
-

@@ -20,7 +20,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Display objects for review listing pages.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function objectsForReview($args, &$request) {
 		$journal =& $request->getJournal();
@@ -171,7 +171,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Edit and update object for review (plug-in) settings.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function objectsForReviewSettings($args, &$request) {
 		$journal =& $request->getJournal();
@@ -203,7 +203,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Create/edit object for review.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function createObjectForReview($args, &$request) {
 		$this->editObjectForReview($args, $request);
@@ -212,7 +212,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Create/edit object for review.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editObjectForReview($args, &$request) {
 		$objectId = array_shift($args);
@@ -246,7 +246,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Update object for review.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateObjectForReview($args, &$request) {
 		$objectId = (int) $request->getUserVar('objectId');
@@ -338,7 +338,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Remove object for review cover page image.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function removeObjectForReviewCoverPage($args, &$request) {
 		$objectId = array_shift($args);
@@ -371,7 +371,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Delete object for review.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function deleteObjectForReview($args, &$request) {
 		$objectId = array_shift($args);
@@ -391,7 +391,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Display a list of authors from which to choose an object reviewer.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function selectObjectForReviewAuthor($args, &$request) {
 		$objectId = array_shift($args);
@@ -455,7 +455,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Assign an object for review author.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function assignObjectForReviewAuthor($args, &$request) {
 		$objectId = array_shift($args);
@@ -493,7 +493,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Accept an object for review author.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function acceptObjectForReviewAuthor($args, &$request) {
 		$returnPage = $this->_getReturnpage($request);
@@ -528,7 +528,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Deny an object for review request.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function denyObjectForReviewAuthor($args, &$request) {
 		$returnPage = $this->_getReturnpage($request);
@@ -568,7 +568,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Mark an object for review assignment as mailed.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function notifyObjectForReviewMailed($args, &$request) {
 		$returnPage = $this->_getReturnpage($request);
@@ -617,7 +617,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Remove object reviewer assignment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function removeObjectForReviewAssignment($args, &$request) {
 		$returnPage = $this->_getReturnpage($request);
@@ -659,7 +659,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Display a list of submissions from which to choose an object review submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function selectObjectForReviewSubmission($args, &$request) {
 		$returnPage = $this->_getReturnpage($request);
@@ -740,7 +740,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Assign an object for review submission.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function assignObjectForReviewSubmission($args, &$request) {
 		$returnPage = $this->_getReturnpage($request);
@@ -791,7 +791,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Edit object for review assignment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function editObjectForReviewAssignment($args, &$request) {
 		$returnPage = $this->_getReturnpage($request);
@@ -827,7 +827,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Update object for review assignment.
 	 * @param $args array
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function updateObjectForReviewAssignment($args, &$request) {
 		$returnPage = $this->_getReturnpage($request);
@@ -881,7 +881,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 
 	/**
 	 * Ensure that we have a journal, plugin is enabled, and user is editor.
-	 * @see PKPHandler::authorize()
+	 * @see SEPHandler::authorize()
 	 */
 	function authorize(&$request, &$args, $roleAssignments) {
 		$journal =& $request->getJournal();
@@ -900,7 +900,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 
 	/**
 	 * Setup common template variables.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $subclass boolean (optional) set to true if caller is below this handler in the hierarchy
 	 * @param $objectId int (optional)
 	 */
@@ -956,7 +956,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 
 	/**
 	 * Get return page
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return string
 	 */
 	function _getReturnpage(&$request) {
@@ -1022,7 +1022,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	 * @param $objectForReview ObjectForReview
 	 * @param $author User
 	 * @param $returnUrl string
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _assign($ofrAssignment, $objectForReview, $author, $returnUrl, &$request) {
 		import('classes.mail.MailTemplate');
@@ -1077,7 +1077,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	 * @param $user User
 	 * @param $returnUrl string
 	 * @param $action string
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _displayEmailForm($email, $objectForReview, $user, $returnUrl, $action, $request) {
 		if (!$request->getUserVar('continued')) {
@@ -1145,7 +1145,7 @@ class ObjectsForReviewEditorHandler extends Handler {
 	/**
 	 * Create trivial notification
 	 * @param $notificationType int
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 */
 	function _createTrivialNotification($notificationType, &$request) {
 		$user =& $request->getUser();

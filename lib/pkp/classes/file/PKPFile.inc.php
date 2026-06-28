@@ -1,23 +1,23 @@
 <?php
 
 /**
- * @file classes/file/PKPFile.inc.php
+ * @file classes/file/SEPFile.inc.php
  *
  * Copyright (c) 2013-2017 Simon Fraser University
  * Copyright (c) 2000-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class PKPFile
+ * @class SEPFile
  * @ingroup file
  *
- * @brief Base PKP file class.
+ * @brief Base SEP file class.
  */
 
-class PKPFile extends DataObject {
+class SEPFile extends DataObject {
 	/**
 	 * Constructor.
 	 */
-	function PKPFile() {
+	function SEPFile() {
 		parent::DataObject();
 	}
 

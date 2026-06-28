@@ -14,18 +14,18 @@
  */
 
 // Import the base Handler.
-import('lib.pkp.classes.handler.PKPHandler');
+import('lib.sep.classes.handler.SEPHandler');
 
 // Import action class.
-import('lib.pkp.classes.linkAction.LinkAction');
-import('lib.pkp.classes.linkAction.LegacyLinkAction');
+import('lib.sep.classes.linkAction.LinkAction');
+import('lib.sep.classes.linkAction.LegacyLinkAction');
 
 // Import grid classes.
-import('lib.pkp.classes.controllers.grid.GridColumn');
-import('lib.pkp.classes.controllers.grid.GridRow');
+import('lib.sep.classes.controllers.grid.GridColumn');
+import('lib.sep.classes.controllers.grid.GridRow');
 
 // Import JSON class for use with all AJAX requests.
-import('lib.pkp.classes.core.JSONMessage');
+import('lib.sep.classes.core.JSONMessage');
 
 // Grid specific action positions.
 define('GRID_ACTION_POSITION_DEFAULT', 'default');
@@ -33,7 +33,7 @@ define('GRID_ACTION_POSITION_ABOVE', 'above');
 define('GRID_ACTION_POSITION_LASTCOL', 'lastcol');
 define('GRID_ACTION_POSITION_BELOW', 'below');
 
-class GridHandler extends PKPHandler {
+class GridHandler extends SEPHandler {
 
 	/** @var string grid title locale key */
 	var $_title = '';
@@ -76,7 +76,7 @@ class GridHandler extends PKPHandler {
 	 */
 	function GridHandler($dataProvider = null) {
 		$this->_dataProvider =& $dataProvider;
-		parent::PKPHandler();
+		parent::SEPHandler();
 	}
 
 
@@ -283,7 +283,7 @@ class GridHandler extends PKPHandler {
 
 	/**
 	 * Get the grid data.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return array
 	 */
 	function &getGridDataElements($request) {
@@ -403,10 +403,10 @@ class GridHandler extends PKPHandler {
 	}
 
 	//
-	// Overridden methods from PKPHandler
+	// Overridden methods from SEPHandler
 	//
 	/**
-	 * @see PKPHandler::authorize()
+	 * @see SEPHandler::authorize()
 	 */
 	function authorize(&$request, &$args, $roleAssignments) {
 		$dataProvider =& $this->getDataProvider();
@@ -425,13 +425,13 @@ class GridHandler extends PKPHandler {
 	}
 
 	/**
-	 * @see PKPHandler::initialize()
+	 * @see SEPHandler::initialize()
 	 */
 	function initialize(&$request, $args = null) {
 		parent::initialize($request, $args);
 
 		// Load grid-specific translations
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_GRID, LOCALE_COMPONENT_APPLICATION_COMMON);
+		AppLocale::requireComponents(LOCALE_COMPONENT_SEP_GRID, LOCALE_COMPONENT_APPLICATION_COMMON);
 
 		// Give a chance to grid add features before calling hooks.
 		// Because we must control when features are added to a grid,
@@ -553,14 +553,14 @@ class GridHandler extends PKPHandler {
 	 * @return string
 	 */
 	function getJSHandler() {
-		return '$.pkp.controllers.grid.GridHandler';
+		return '$.sep.controllers.grid.GridHandler';
 	}
 
 	/**
 	 * Create a data element from a request. This is used to format
 	 * new rows prior to their insertion or existing rows that have
 	 * been edited but not saved.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $elementId int Reference to be filled with element
 	 *  ID (if one is to be used)
 	 * @return object
@@ -571,10 +571,10 @@ class GridHandler extends PKPHandler {
 
 	/**
 	 * FIXME: temporary shadow method of parent to disable paging on all grids.
-	 * @see PKPHandler::getRangeInfo()
+	 * @see SEPHandler::getRangeInfo()
 	 */
 	function getRangeInfo($rangeName, $contextData = null) {
-		import('lib.pkp.classes.db.DBResultRange');
+		import('lib.sep.classes.db.DBResultRange');
 		$returner = new DBResultRange(-1, -1);
 		return $returner;
 	}
@@ -584,7 +584,7 @@ class GridHandler extends PKPHandler {
 	 * data source that corresponds to the requested row id.
 	 * Raises a fatal error if such an element cannot be
 	 * found.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $args array
 	 * @return GridRow the requested grid row, already
 	 *  configured with id and data or null if the row
@@ -672,7 +672,7 @@ class GridHandler extends PKPHandler {
 	 * Method that extracts the user's filter selection from the request either
 	 * by instantiating the filter's Form object or by reading the request directly
 	 * (if using a simple filter template only).
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @return array
 	 */
 	function getFilterSelectionData($request) {
@@ -681,7 +681,7 @@ class GridHandler extends PKPHandler {
 
 	/**
 	 * Render the filter (a template or a Form).
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $filterData Array Data to be used by the filter template.
 	 * @return string
 	 */
@@ -826,7 +826,7 @@ class GridHandler extends PKPHandler {
 	 * NB: You must have initialized the row
 	 * before you call this method.
 	 *
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $row GridRow
 	 * @return string the row HTML
 	 */
@@ -899,7 +899,7 @@ class GridHandler extends PKPHandler {
 
 	/**
 	 * Cycle through the data and get generate the row HTML.
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $elements array The grid data elements to be rendered.
 	 * @return array of HTML Strings for Grid Rows.
 	 */
@@ -925,7 +925,7 @@ class GridHandler extends PKPHandler {
 	 * NB: You must have initialized the row
 	 * before you call this method.
 	 *
-	 * @param $request PKPRequest
+	 * @param $request SEPRequest
 	 * @param $row GridRow
 	 * @param $column GridColumn
 	 * @return string the cell HTML
@@ -935,7 +935,7 @@ class GridHandler extends PKPHandler {
 		// override the assigned GridCellProvider and provide the default.
 		$element =& $row->getData();
 		if ( is_null($element) && $row->getIsModified() ) {
-			import('lib.pkp.classes.controllers.grid.GridCellProvider');
+			import('lib.sep.classes.controllers.grid.GridCellProvider');
 			$cellProvider = new GridCellProvider();
 			return $cellProvider->render($request, $row, $column);
 		}

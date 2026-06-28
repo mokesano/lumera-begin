@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../../lib/sep/dtd/locale.dtd">
 
 <!--
   * locale.xml
@@ -58,7 +58,7 @@
 	<message key="plugins.generic.externalFeed.form.titleRequired">Veuillez fournir un titre pour ce flux</message>
 	<message key="plugins.generic.externalFeed.form.feedUrl">URL</message>
 	<message key="plugins.generic.externalFeed.form.feedUrlValid">Veuillez fournir un URL de flux valide (incluant http://)</message>
-	<message key="plugins.generic.externalFeed.form.feedUrlDescription">L'URL du flux de syndication Atom/RSS externe (par ex., http://pkp.sfu.ca/blog/feed)</message>
+	<message key="plugins.generic.externalFeed.form.feedUrlDescription">L'URL du flux de syndication Atom/RSS externe (par ex., http://lumera.sangia.org/blog/feed)</message>
 	<message key="plugins.generic.externalFeed.form.display">Affichage</message>
 	<message key="plugins.generic.externalFeed.form.displayHomepage">Afficher dans la page d'accueil</message>
 	<message key="plugins.generic.externalFeed.form.displayBlockNone">Ne pas afficher en bloc</message>

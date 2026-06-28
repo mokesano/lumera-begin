@@ -15,7 +15,7 @@
 
 define('SESSION_DISABLE_INIT', 1); // FIXME?
 
-import('classes.oai.ojs.JournalOAI');
+import('classes.oai.cla.JournalOAI');
 import('classes.handler.Handler');
 
 class OAIHandler extends Handler {
@@ -48,7 +48,7 @@ class OAIHandler extends Handler {
 	}
 
 	/**
-	 * @see PKPHandler::requireSSL()
+	 * @see SEPHandler::requireSSL()
 	 */
 	function requireSSL() {
 		return false;

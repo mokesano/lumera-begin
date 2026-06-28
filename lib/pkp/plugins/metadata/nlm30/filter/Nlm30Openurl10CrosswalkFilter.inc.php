@@ -18,11 +18,11 @@
  *  OpenURL schemas.
  */
 
-import('lib.pkp.classes.metadata.CrosswalkFilter');
-import('lib.pkp.plugins.metadata.nlm30.schema.Nlm30CitationSchema');
-import('lib.pkp.plugins.metadata.openurl10.schema.Openurl10JournalSchema');
-import('lib.pkp.plugins.metadata.openurl10.schema.Openurl10BookSchema');
-import('lib.pkp.plugins.metadata.openurl10.schema.Openurl10DissertationSchema');
+import('lib.sep.classes.metadata.CrosswalkFilter');
+import('lib.sep.plugins.metadata.nlm30.schema.Nlm30CitationSchema');
+import('lib.sep.plugins.metadata.openurl10.schema.Openurl10JournalSchema');
+import('lib.sep.plugins.metadata.openurl10.schema.Openurl10BookSchema');
+import('lib.sep.plugins.metadata.openurl10.schema.Openurl10DissertationSchema');
 
 class Nlm30Openurl10CrosswalkFilter extends CrosswalkFilter {
 	/**

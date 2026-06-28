@@ -14,7 +14,7 @@
  */
 
 
-import('lib.pkp.classes.linkAction.request.RedirectAction');
+import('lib.sep.classes.linkAction.request.RedirectAction');
 
 class PostAndRedirectAction extends RedirectAction {
 
@@ -51,7 +51,7 @@ class PostAndRedirectAction extends RedirectAction {
 	 * @see LinkActionRequest::getJSLinkActionRequest()
 	 */
 	function getJSLinkActionRequest() {
-		return '$.pkp.classes.linkAction.PostAndRedirectRequest';
+		return '$.sep.classes.linkAction.PostAndRedirectRequest';
 	}
 
 	/**

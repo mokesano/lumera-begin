@@ -47,7 +47,7 @@ define ('PERMISSIONS_FIELD_LICENSE_URL', 1);
 define ('PERMISSIONS_FIELD_COPYRIGHT_HOLDER', 2);
 define ('PERMISSIONS_FIELD_COPYRIGHT_YEAR', 3);
 
-import('lib.pkp.classes.submission.Submission');
+import('lib.sep.classes.submission.Submission');
 
 class Article extends Submission {
 	/**
