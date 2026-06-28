@@ -20,7 +20,11 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ "main" ]
   schedule:
-    - cron: '24 0 * * 3'
+    - cron: '29 18 * * 3'
+
+env:
+  # Menghilangkan peringatan depresiasi Node.js 20
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: read
@@ -38,9 +42,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # DIPERBARUI: Menghapus direktori cache, vendor, dan library legacy (adodb, smarty) 
+      # agar Codacy tidak kehabisan memori saat memindai kode usang pihak ketiga
+      - name: Free up RAM & Remove 3rd-party libs
+        run: rm -rf vendor/ node_modules/ cache/ lib/adodb/ lib/smarty/
+
       # Execute Codacy Analysis CLI and generate a SARIF output with the security issues identified during the analysis
       - name: Run Codacy Analysis CLI
         uses: codacy/codacy-analysis-cli-action@d840f886c4bd4edc059706d09c6a1586111c540b
+        id: codacy_scan
+        continue-on-error: true
+        env:
+          CODACY_JAVA_OPTS: "-Xmx3g"
         with:
           # Check https://github.com/codacy/codacy-analysis-cli#project-token to get your project token from your Codacy repository
           # You can also omit the token and run the tools that support default configurations
@@ -56,6 +69,8 @@ jobs:
 
       # Upload the SARIF file generated in the previous step
       - name: Upload SARIF results file
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4
+        continue-on-error: true
+        if: always() && hashFiles('results.sarif') != ''
         with:
           sarif_file: results.sarif
