@@ -1,0 +1,753 @@
+/**
+ * common.css
+ *
+ * Copyright (c) 2013-2017 Simon Fraser University
+ * Copyright (c) 2000-2016 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * PKP-wide shared stylesheet.
+ * DEPRECATED. Do not modify.
+ */
+
+/**
+ * Common HTML elements
+ */
+html {
+    font: 62.5% "Helvetica Neue",Arial,Helvetica,sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FBFBF3;
+	color: #111;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	text-align: center;
+}
+
+div {
+	text-align: left;
+}
+
+p {
+	margin: 1em 0; /* Making default stylesheet explicit - fixes IE7 margin collapsing. */
+}
+
+table {
+	border: 0;
+	border-spacing: 0;
+	font-size: 1.0em;
+}
+
+form {
+	margin: 0;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a.plain {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0.25em 0 0.75em 0;
+	padding: 0 0 0 2.5em;
+}
+
+tt {
+	font-size: 1.25em;
+}
+
+label {
+}
+
+label.error {
+	color: #900;
+}
+
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	background-color: #F0F0E8;
+	color: #000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	border-top: 2px solid #666;
+	border-left: 2px solid #666;
+	border-bottom: 2px solid #E8E8E1;
+	border-right: 2px solid #E8E8E1;
+	font-size: 1em;
+}
+
+input.button {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #E8E8E1;
+	font-size: 1em;
+}
+
+input.defaultButton {
+	background-color: #375;
+	color: #FBFBF3;
+	font-weight: bold;
+}
+
+.fileView, .fileSize {
+	color: #999;
+	font-weight: 300;
+}
+
+/**
+ * Main layout elements
+ */
+
+#container {
+	width: 100% !important;
+	min-width: 730px !important;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#header {
+	width: 100%;
+	text-align: center;
+}
+
+#headerTitle {
+	text-align: left !important;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+#header h1 {
+	margin: 0 auto;
+	padding: 0.5em 0 0.5em 10%;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+	background: #e5e5e5 url(../images/grdnt_grey_f8f8f8_e5e5e5_l.gif) repeat-x;
+	background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+}
+
+#footer {
+	width: 100%;
+	min-height: 50px;
+	position: static;
+	clear: both;
+	text-align: center;
+}
+
+#footerContent {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 10%;
+}
+
+#main {
+	padding: 0.5em 0em 2em 0em;
+}
+
+#main h2 {
+	margin: 0em 1em 0.5em 0em;
+	padding-top: 0.5em;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+}
+
+#main h3 {
+	margin: 0em 1em 0.5em 0em;
+	padding-top: 0em;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+}
+
+#navbar {
+	margin-right: 0;
+	padding-bottom: 0.5em;
+	border-bottom: 2px dotted #000;
+}
+
+#breadcrumb {
+	padding: 1em 0;
+	font-size: 0.7em;
+}
+
+#content {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+	font-size: 0.8em;
+	border-top: 2px dotted #000;
+	margin-bottom: 2em;
+}
+
+#content h3 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+	font-size: 1.8em;
+}
+
+#content h4 {
+	margin: .75em 1em 0.25em 0em;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+#content h5 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+/**
+ * Breadcrumbs
+ */
+
+#breadcrumb a {
+	text-decoration: none;
+}
+
+#breadcrumb a.current {
+	font-weight: bold;
+}
+
+
+/**
+ * Footer elements
+ */
+
+#footer div.debugStats {
+	font-size: 0.6em;
+}
+
+
+/**
+ * Additional text styles
+ */
+
+span.disabled, label.disabled {
+	color: #666;
+}
+
+a.action, a.file {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+
+a.icon {
+	text-decoration: none;
+}
+
+a.icon img {
+	border: 0;
+}
+
+a.icon:hover {
+	background: none;
+}
+
+span.formRequired {
+	color: #333;
+	font-size: 0.9em;
+}
+
+span.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+
+span.highlight {
+	border-bottom: 1px dotted #000;
+}
+
+div.warningMessage {
+	background: url(../templates/images/icons/icon_alert.gif) no-repeat 3px 40%;
+	margin: 5px;
+	padding: 5px 5px 5px 25px;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+/**
+ * Table styles
+ */
+
+table.info td {
+	padding: 0;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+}
+
+table.listing td {
+	padding: 0.25em 1.5em 0.25em 0.5em;
+}
+
+table.listing tr.heading td, table.listing td.heading, table.info td.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 0.75em 1.5em 1em 0.5em;
+}
+
+table.info td.heading {
+	padding-left: 0;
+}
+
+
+table.listing td.nodata, table.info td.nodata {
+	text-align: center;
+	font-style: italic;
+}
+
+table.listing td.headseparator {
+	border-top: 1px dotted #000;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.listing td.endseparator {
+	border-top: 1px dotted #000;
+	font-size: 0.25em;
+	line-height: 10%;
+}
+
+table.listing td.separator, table.info td.separator {
+	border-top: 1px dotted #DDDDD0;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data tr {
+}
+
+table.data td {
+	padding-bottom: 0.25em;
+}
+
+table.data td.label {
+	padding-right: 1em;
+}
+
+table.data td.value {
+}
+
+table.data td.separator {
+	padding: 0.5em;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data td.heading {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+table.nested tr {
+	padding: 0;
+	margin: 0;
+}
+
+span.nested {
+	padding: 0 4px 0 0;
+	font-size: 1.2em;
+}
+
+/**
+ * Form-specific elements
+ */
+
+span.pkp_form_error { /* Named for compatibility with new lessphp structure */
+	color: #900;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+span.pkp_form_success { /* Named for compatibility with new lessphp structure */
+	color: #090;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+ul.pkp_form_error_list { /* Named for compatibility with new lessphp structure */
+	color: #900;
+}
+
+
+/**
+ * Other organizational elements
+ */
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	margin: 0;
+	padding: 0;
+	padding-right: 1.5em;
+	display: inline;
+}
+
+ul.menu li.current {
+	font-weight: bold;
+}
+
+ul.menu a {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+ul.steplist {
+	margin: 0;
+	padding: 0;
+	list-style-type: decimal;
+}
+
+ul.steplist li {
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+	padding-right: 0.5em;
+	display: inline;
+	text-transform: uppercase;
+}
+
+ul.steplist li.current {
+	font-weight: bold;
+}
+
+ul.steplist a {
+	text-decoration: none;
+}
+
+ul.plain {
+	list-style-type: none;
+	padding-left: 1.5em;
+}
+
+ul.filter {
+	margin: 0;
+	padding: 1.5em 0 1.5em 0;
+	list-style-type: none;
+}
+
+ul.filter li {
+	padding-right: 1.5em;
+	display: inline;
+}
+
+
+/**
+ * Other organizational elements
+ */
+
+div.separator {
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	padding: 0;
+	border-bottom: 1px dotted #000;
+	font-size: 0.5em;
+	line-height: 25%;
+}
+
+/* add footer journal */
+div #journal-footer {
+	overflow: auto;
+	width: 1080px !important;
+	padding: 20px 32px;
+	font-size: initial;
+	box-sizing: border-box;
+}
+
+#pageFooter {
+    clear: both;
+    border-top: 1px solid #ff0066;
+    padding: 0 1em;
+    font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: 400;
+    font-size: initial;
+    color: #505050;
+    box-sizing: border-box;
+}
+
+/* stamp cosire Indonesia */
+nav {
+    width: 100%;
+    background-color: #0b265b;
+    overflow: auto;
+    border-top: 1px solid #e9711c;
+    padding: .7% 0;
+}
+nav a {
+    color: #1b3051;
+    font-size: .9em;
+    font-weight: 500;
+    font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+#fullNav {
+    display: flex;
+}
+#top-navbar {
+    display: block;
+    font-size: .76rem;
+    font-weight: 600;
+    font-family: Roboto,sans-serif;
+    letter-spacing: 0em;
+    padding: 0 0 0 1%;
+    /*! float: right; */
+    width: 100%;
+}
+#top-navbar {
+    max-width: 1440px;
+    padding: 0 1% 0 0;
+    font-size: .76rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+    vertical-align: middle;
+
+}
+#top-navbar {
+    max-width: 1244px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    display: block;
+    font-size: .76rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+.c-navbar {
+    position: relative;
+}
+
+#u-container {
+    margin-right: 18px;
+}
+
+/* footer setting */
+#cosire-footer {
+    clear: both;
+    text-align: left;
+    border-top-width: .0625em;
+    border-top-style: solid;
+    background: #f2f2f2 linear-gradient(#f2f2f2,#d9d9d9);
+    border-top: 1px solid #ff0066;
+    padding: 1.7% 0 30px;
+    font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: 400;
+    font-size: .897rem;
+    color: #505050;
+}
+
+#cosire-footer.commone {
+	display: none;
+}
+#standardFooter {
+    font-weight: 400;
+    font-size: 1.49rem;
+    text-align: left;
+    max-width: 1440px;
+    overflow: auto;
+    /*! line-height: 1rem; */
+    font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    padding: 0.5em 10% 0.25em;
+}
+
+#standardFooter p {
+    /*! font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; */
+    color: #333;
+    margin: 0;
+}
+b {
+    color: #333;
+    font-size: inherit;
+    line-height: 1.5rem;
+    font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: 400;
+}
+#footer.common {
+	padding: 0 7.7%;
+}
+#footer {
+    clear: both;
+    background: #f2f2f2 linear-gradient(#f2f2f2,#d9d9d9);
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #505050;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#footer {
+	background: #e5e5e5 url(../images/grdnt_grey_f8f8f8_e5e5e5_l.gif) repeat-x;
+	background-image: url("../images/grdnt_grey_f8f8f8_e5e5e5_l.gif");
+	background-image: url("../images/grdnt_grey_f8f8f8_e5e5e5_l.gif");
+	background-image: url("../images/grdnt_grey_f8f8f8_e5e5e5_l.gif");
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#e5e5e5));
+	background-image: -webkit-linear-gradient(top,#f8f8f8,#e5e5e5);
+	background-image: -moz-linear-gradient(top,#f8f8f8,#e5e5e5);
+	background-image: -ms-linear-gradient(top,#f8f8f8,#e5e5e5);
+	background-image: -o-linear-gradient(top,#f8f8f8,#e5e5e5);
+	background-image: linear-gradient(top,#f8f8f8,#e5e5e5);
+}
+#footer #footer-wunaraha.wunaraha {
+    min-height: 20px;
+    padding: 20px 32px;
+}
+#footer #footer-info.wunaraha, #footer #footer-legal.wunaraha {
+    padding: 12px 32px;
+}
+#footer-info {
+    zoom: 1;
+    margin-bottom: 12px;
+    position: relative;
+}
+#footer .wunaraha {
+    border-top: 1px solid #f9f9f9;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 10px;
+}
+#footer-wunaraha {
+    zoom: 1;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+#footer-wunaraha::before, #footer-wunaraha::after {
+    content: "";
+    display: table;
+}
+#footer-wunaraha .strapline {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+#footer-wunaraha .strapline {
+    display: block;
+    font-size: 15px;
+    font-size: 1.6rem;
+}
+#footer #footer-info {
+	border-bottom: none;
+}
+#footer-info {
+    display: block;
+    margin-bottom: 0;
+}
+#footer-info .block {
+    -webkit-box-shadow: 1px 0 0 0 rgba(255,255,255,.7);
+    -moz-box-shadow: 1px 0 0 0 rgba(255,255,255,.7);
+    box-shadow: 1px 0 0 0 rgba(255,255,255,.7);
+    border-right: 1px solid rgba(197,196,196,.5);
+    display: block;
+    float: left;
+    margin: 10px 2% 0 0;
+    min-height: 145px;
+    padding: 0 21px 10px 0;
+    width: 21%;
+}
+#footer-info::before {
+    background: url(//media.stipwunaraha.ac.id/img/SRM-mono.png) no-repeat;
+    content: "";
+    display: block;
+    height: 86px;
+    width: 7.43455%;
+    position: absolute;
+    right: 26px;
+    bottom: 21px;
+}
+#footer-info::after {
+    clear: both;
+}
+#footer-info::before, #footer-info::after {
+    content: "";
+    display: table;
+}
+#footer-info h2 {
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    font-size: 1.5rem;
+}
+#footer-info ul li a {
+    list-style: none;
+    color: #555;
+}
+#footer-info li {
+    line-height: 1.7;
+    list-style: none;
+    font-size: 12.4px;
+}
+#footer-info li:before {
+	content: none;
+}
+#footer-info ul {
+	padding: 0;
+	font-size: 100%;
+}
+#footer-legal, #footer-branding {
+    font-weight: 400;
+    font-size: .95rem;
+    text-align: left;
+    overflow: auto;
+    line-height: 1rem;
+    font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    padding: 12px 32px;
+    /*! padding: 0 32px; */
+}
+#legal {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: 0 0;
+    line-height: 1.45;
+    font-size: 1.2rem;
+    margin-top: 0;
+    padding-top: 0;
+    overflow: hidden;
+}
+#legal {
+    margin: 18px -32px 0 -32px;
+    padding: 12px 32px;
+}
+
+#footer-legal p {
+    font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: .95em;
+    color: #333;
+    margin: 0;
+}
+#legal a img {
+	display: block;
+}
+#legal a, #legal span {
+    font-size: 1.49rem;
+    font-family: inherit;
+}
+#legal a, #legal span {
+    color: #555;
+}
+#legal span {
+	box-sizing: border-box;
+}
+
+#footer-branding {
+	display: none;
+}
+b {
+    color: #333;
+    font-size: inherit;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+/* close HERE */

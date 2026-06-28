@@ -1,0 +1,2476 @@
+/*********************
+GENERAL STYLES
+*********************/
+html {
+  font-size: 15px; }
+
+body {
+  font-family: "Europa", sans-serif;
+  font-size: 16.8px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333333;
+  background-color: #FFF; }
+:root {
+ --font-family-sans:'Trebuchet MS';
+ --font-family-sans-fallback:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+ --font-family-serif:Georgia;
+ --font-family-serif-fallback:Palatino,serif
+}
+html,body,div,applet,object,iframe,h1,h2,h3,h4,h5,.tocTitle,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,table tr.heading,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+ margin:0;
+ padding:0;
+ border:0;
+ font:inherit;
+ font-size:100%;
+ vertical-align:baseline;
+ font-family:'Trebuchet MS',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+}
+body {
+  color: #333;
+  font-family: 'Trebuchet MS',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+  line-height: 1.61803;
+}
+.strong {
+  font-weight: 700;
+}
+.highlight {
+  color: #ff0066;
+  font-weight: 600;
+}
+tt {
+  font-family: NexusSans;
+  font-size: 1.04em;
+}
+.formRequired {
+  color: #ff0066;
+}
+.file {
+  color: #00729a;
+}
+.fileSize {
+  color: #999;
+}
+.fileView, .fileCount {
+  font-size: 70%;
+  color: #999;
+}
+.fileClick {
+  font-size: 60%;
+  color: #919191;
+  font-family: inherit;
+  background: #e9e9e9;
+  top: -1px;
+  position: relative;
+  padding: 0.21em 0.42em;
+  border-radius: 10px;
+  min-width: 0.5em;
+}
+span {
+ font-size:inherit;
+ font-style:normal;
+ font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+sub,sup {
+ font-style:normal;
+ font-size:.7em;
+ line-height: normal;
+}
+html {
+ line-height:150%;
+ font-family:sans-serif;
+ -webkit-text-size-adjust:100%
+}
+/ img {
+ max-width:100%;
+ height:auto;
+ margin-top:0;
+ margin-right:20px;
+ float:left;
+ margin-bottom:20px
+}
+ol,ul {
+ list-style:arabic-indic;
+ /*! font-family:var(--font-family-sans),var(--font-family-sans-fallback); */
+ font-family: inherit;
+}
+table {
+ border-collapse:collapse;
+ border-spacing:0
+}
+caption,th,table tr.heading,td {
+ text-align:left;
+ font-weight:400;
+ vertical-align:middle;
+}
+q,blockquote {
+ quotes:none
+}
+q:before,q:after,blockquote:before,blockquote:after {
+ content:"";
+ content:none
+}
+a img {
+ border:none;
+ margin-right:initial;
+ font-size: inherit;
+ font-family: inherit;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+ display:block
+}
+*,*:before,*:after {
+ -moz-box-sizing:border-box;
+ -webkit-box-sizing:border-box;
+ box-sizing:border-box
+}
+.roundedborder,input,select,textarea,a.file {
+ -moz-border-radius:4px;
+ -webkit-border-radius:4px;
+ border-radius:4px;
+}
+.button,.toggleExtras-inactive,.toggleExtras-active,#setup .options {
+ padding:5.7px 14px;
+ -moz-border-radius:4px;
+ -webkit-border-radius:4px;
+ border-radius:4px;
+ border:1px solid #1b3051;
+ background:#1b3051 linear-gradient(to bottom,#1b3051,#182b49);
+ font-weight:400;
+ margin-right:1px;
+ font-size:.83em;
+}
+.button:hover,.toggleExtras-inactive:hover,.toggleExtras-active:hover,#setup .options:hover,.button:focus,.action:focus,.toggleExtras-inactive:focus,.toggleExtras-active:focus,#setup .options:focus {
+ background: #0195f6 linear-gradient(to bottom,#0195f6,#0186dd);
+  border: 1px solid #0195f6;
+}
+.button a:hover, .button a:focus {
+  color: #fff;
+}
+.adminMenu ul,#sidebar .block ul,#sidebarUser ul,table.listing ul {
+ padding:0em;
+ margin:.5em 0;
+ font-size:.64rem;
+ line-height:1.7em;
+ list-style-type:none;
+ font-family:inherit;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-weight:400;
+ font-family:Roboto,sans-serif;
+ letter-spacing:.01rem
+}
+#group ul.editorialTeam, .editorialTeam li, .member li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em;
+}
+.pseudoMenu ul {
+ padding:0em;
+ margin:.5em 0;
+ font-size:.92rem;
+ line-height:1.7em;
+ list-style-type:none
+}
+.pseudoMenu ul li {
+ padding:.7px;
+ display:block;
+ list-style-type:circle
+}
+.adminMenu ul li,table.listing ul li {
+ padding:.7px;
+ display:block;
+ list-style-type:circle
+}
+.adminMenu ul li a:before,.pseudoMenu ul li a:before,#sidebar .block ul li a:before,#sidebarUser ul li a:before,table.listing ul li a:before {
+ padding-right:5px
+}
+#sidebar .block ul li,#sidebarUser ul li,table.listing ul li {
+ font-size:1.33114em;
+ line-height:1.8em;
+ font-weight:400;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+}
+@viewport {
+ width:device-width
+}
+html {
+ box-sizing:content-box
+}
+html, html {
+ font-size:100%;
+ line-height:1.5em
+}
+*,*:before,*:after {
+ box-sizing:border-box;
+ font-size:inherit;
+ font-family: inherit;
+}
+html. body {
+ font-family:NexusSan, Arial, Georgia, sans-serif, serif;
+ font-size:.92rem;
+ line-height:24px;
+ background-color:white;
+ color:#333;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+}
+body figure {
+ font-style:inherit;
+ font-family:inherit;
+ font-weight: initial;
+}
+i, em {
+ font-style:italic;
+ font-family:inherit;
+ font-weight: inherit;
+}
+.member em {
+  font-family: 
+"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; 
+  font-weight: inherit;
+  font-size: 1.05rem;
+}
+strong {
+ font-weight:600;
+ font-family: inherit;
+}
+blockquote {
+ padding:1em 1em 1em 2em
+}
+ul {
+ padding-left:1.7em;
+ list-style-type:disc;
+ padding-top:.27em;
+ padding-bottom:.27em;
+ font-size: initial;
+ line-height: initial;
+}
+ol {
+ list-style-type:decimal;
+ list-style-position:inherit;
+ padding-left:5px;
+ line-height: initial;
+ font-size: 1.04em;
+}
+ol li {
+ padding:5px 0;
+ margin-left:20px;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+#container {
+ background-color:#fff;
+ overflow:auto;
+ padding-bottom:1.7em;
+}
+#body {
+ overflow:auto;
+ max-width:1440px;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:1.7%;
+ padding-top:.6em;
+ padding-bottom:0em;
+ margin-bottom:2em;
+ padding:0 7%;
+ margin-top: 2em;
+}
+#body p {
+ font-size:1rem;
+ line-height:1.589em;
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ margin:1.17em 0;
+ font-weight:400;
+ font-family: Arial;
+ margin-top: .5em;
+}
+#body .block p {
+  margin-top: 0;
+}
+#body .article-content p, #peerReviewProcess .article-content p {
+  margin-top: 1.17em;
+}
+#references .citationRef {
+ font-size:.920em
+}
+#div p {
+ font-size:.99em;
+ line-height:7em
+}
+.p-section-title {
+
+    font-weight: 400;
+    font-size: .9rem;
+    color: #505050;
+    margin-bottom: .5em;
+    line-height: 1.4;
+    text-transform: capitalize;
+    padding-top: 0;
+}
+.p-section-title__item {
+  padding: 0;
+} 
+.p-section-title__item li {
+    list-style-type: none;
+    padding: .6em 0;
+    font-size: .9em;
+    line-height: initial;
+}
+.c-social-links {
+
+    list-style: none;
+    padding: 0;
+    margin: -8px 0 0;
+
+}
+.c-social-links__item {
+
+    float: left;
+    line-height: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+
+}
+.c-social-links__item button {
+
+    background: 0 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+}
+#member,#editorialTeam a k {
+ font-family:Roboto,sans-serif;
+ color:#505050
+}
+#skip-to-content {
+ padding:1em;
+ position:absolute;
+ top:-40px;
+ left:1em;
+ z-index:1000;
+ color:white
+}
+#skip-to-content:focus {
+ position:absolute;
+ top:0;
+ background:#4593ff
+}
+h1,h2,h3,h4,h5,.tocTitle,h6 {
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+}
+h1 {
+ font-weight:600;
+ font-size:1.8rem;
+ line-height:1.32789em
+}
+h2 {
+ font-family:'Trebuchet MS',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ line-height:1.2em;
+ padding-bottom:0em;
+ font-size:1.42716em;
+ font-weight:500;
+ color:#1b3051;
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+}
+h2 {
+ font-size:1.7em;
+ font-weight:600;
+ padding:.7em 0;
+ margin-bottom:.7em;
+ /*! margin-top:.7em */
+}
+h3 {
+ font-size:1.378rem;
+ font-weight:600;
+ padding-left:0;
+ /*! margin-top:1.27em; */
+ margin-bottom:1px;
+ line-height:1.2em;
+ color:#1b3051;
+ padding-top: 1.27em;
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+}
+#contact h3 {
+  font-size: 1.12em;
+  padding-bottom: 1em;
+}
+#article__list h3 {
+  border-bottom: 2px solid #ebebeb;
+  padding-bottom: .7em;
+}
+
+h4 {
+ font-size:1.211rem;
+ font-weight:600;
+ margin-top:.5em;
+ /*! font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; */
+ padding-top: 1.27em;
+ padding: 1.7% 0;
+ margin-bottom: .7em;
+ padding-top: 3%;
+ padding-bottom: 0;
+}
+h4 .tocTitle {
+ font-size:90%;
+ margin-top:1.6em;
+ margin-bottom:.3em;
+ font-weight:600;
+ color:#0067c5
+}
+#group h5 {
+  padding-bottom: 0;
+  margin-bottom: 1em;
+  font-weight: 600;
+  font-size: 1.17em;
+  margin-top: 1em;
+}
+h5,.tocTitle {
+ font-size:1.19rem;
+ font-weight:400;
+ padding-top:.2rem;
+ padding-bottom:.3rem;
+ line-height:1.4;
+}
+.tocTitle a {
+ font-size:1.15rem;
+ font-weight:400;
+ padding-top:.2rem;
+ padding-bottom:.3rem;
+ color:#0067c5;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+.tocTitle a :visited {
+ font-size:1.19rem;
+ font-weight:400;
+ padding-top:.2rem;
+ padding-bottom:.3rem;
+ line-height:1.5em;
+ color:#0067c5
+}
+h5 {
+ font-size:1.03em;
+ margin-top:1.6em;
+ margin-bottom:0;
+ font-weight:500
+}
+h6 {
+ font-size:1em;
+ margin-top:1.2em;
+ margin-bottom:unset;
+ color:#333;
+ font-family:'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ font-weight:500;
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+}
+h7 {
+ font-size:.87rem;
+ font-weight:400;
+ color:#666;
+ font-style:unset;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ margin-top: 0;
+}
+h8 {
+ font-size:90%;
+ margin-top:1.16em;
+ font-weight:400;
+ color:#555
+}
+#citation {
+ border-top: 1px solid #ebebeb;
+ border-bottom: 1px solid #ebebeb;
+ margin: 10px 0px;
+ padding: 20px 0;
+ font-size: 18px;
+ line-height: normal; 
+ font-family: NexusSans,Source Sans Pro,serif;
+}
+#citation h6 {
+  margin: 0;
+}
+a {
+ text-decoration:none;
+ color:#0067c5;
+ margin-bottom:initial;
+ font-family:inherit;
+}
+a:hover,a:focus {
+ text-decoration:underline
+}
+a:visited, a:active {
+  color: #inherit;
+  background-color: inherit;
+  background: transparent;
+}
+a:focus {
+ color:#ff0066
+}
+a:hover {
+ color:#ff0066
+}
+
+#references p a:after {
+ color:#333;
+ content:'';
+ background-image:url(https://hmr.biomedcentral.com/static/images/bmc/fulltext/ext-link-94d621da52.svg);
+ background-repeat:no-repeat;
+ background-size:contain;
+ background-position:center;
+ display:inline-block;
+ position:relative;
+ width:10px;
+ height:10px;
+ margin-left:4px
+}
+#references a {
+ font-family:Roboto,sans-serif;
+ font-size:.9rem
+}
+#content p a:after {
+ color:#333;
+ content:'';
+ background-image:url(https://hmr.biomedcentral.com/static/images/bmc/fulltext/ext-link-94d621da52.svg);
+ background-repeat:no-repeat;
+ background-size:contain;
+ background-position:center;
+ display:inline-block;
+ position:relative;
+ width:10px;
+ height:10px;
+ margin-left:4px
+}
+#content li a:after {
+ color:#333;
+ content:'';
+ background-image:url(https://hmr.biomedcentral.com/static/images/bmc/fulltext/ext-link-94d621da52.svg);
+ background-repeat:no-repeat;
+ background-size:contain;
+ background-position:center;
+ display:inline-block;
+ position:relative;
+ width:10px;
+ height:10px;
+ margin-left:4px
+}
+#content #plugins li a:after {
+  display: none;
+}
+#aboutPeople li a:after {
+  display: none
+}
+#aboutPolicies li a:after {
+  display: none
+}
+#aboutSubmissions li a:after {
+  display: none
+}
+#aboutOther li a:after {
+  display: none
+}
+#managerRoles li a:after {
+ display: none
+}
+#managerUsers li a:after {
+ display: none
+}
+#group li a:after {
+ display:none
+}
+#group a {
+ /*! color:#505050; */
+ margin-bottom:inherit;
+ text-align:left;
+ font-size:1.05rem;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-weight: 500;
+ /*! text-decoration: underline; */
+}
+
+#group .editor-name a, #group .editor-mail a {
+  font-family: NexusSerif;
+}
+
+#group .editor-name a {
+    font-size: inherit;
+}
+
+#group a:hover,a:focus {
+ text-decoration:none
+}
+#group a:visited {
+ /*color:#505050*/
+}
+#group a:focus {
+ color:red;
+}
+#group a:hover {
+ color:blue
+}
+#group a:active {
+ color:#0067c5
+}
+#group {
+  border-bottom: 1px solid #ccc;
+  /*! padding-bottom: 1.7em; */
+}
+#group:last-child {
+  border-bottom: none;
+}
+.member {
+  display: flow-root;
+}
+#main .member img {
+  height: auto;
+  float: right;
+  /*! margin-bottom: 1rem; */
+  margin-left: 1rem;
+  border: 1px solid #bababa;
+  max-width: 100px;
+  font-family: NexusSans;
+  line-height: normal;
+  width: auto;
+}
+#profile-image {
+  float: left;
+  padding-right: 1.2em;
+  padding-bottom: 1.2em;
+}
+.member a {
+  font-size: 1.04em;
+  color: #007398;
+}
+#editor-publication.editor {
+  margin: 1rem 0 2rem;
+  font-family: NexusSerif,Georgia,Serif;
+  /*! font-size: 1.125rem; */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0 0 .7em;
+}
+#editor-publication.editor:last-child {
+  margin-bottom: 1rem;
+}
+#editor-publication.reviewer {
+  border-bottom: 1px solid #ccc;
+  padding: 1.27rem 0;
+  margin: 0;
+}
+#editor-publication.reviewer:first-child {
+  padding-top: .27rem;
+}
+#editor-publication.reviewer:last-child {
+  border-bottom: none;
+}
+.publication-editor {
+  
+  margin-bottom: 0;
+}
+.editor-name {
+  
+  font-family: NexusSerif;
+  font-size: 1.29rem;
+  margin-bottom: .17em;
+}
+.editor-affiliation {
+  margin-top: .47em;
+}
+.editor-affiliation, .editor-mail {
+  font-family: NexusSerif,Georgia,Serif;
+  font-size: 1.12em;
+}
+
+.affiliation-editor {
+  font-size: 1.127rem;
+}
+
+.clearfix::after, .clearfix::before {
+    content: " ";
+    display: table;
+}
+.editor-person {
+  
+  margin-top: 1.27em;
+  padding-top: 1.27em;
+  border-top: 1px solid #ccc;
+}
+h4.person {
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: .27em;
+  line-height: normal;
+}
+
+h5.person {  
+  margin-top: 1.7rem;
+  padding-top: 0;
+}
+
+.popup #main a:after {
+ display:none
+}
+#content .menu li a:after {
+ display:none
+}
+#managementPages li a:after {
+ display:none
+}
+nav a {
+ color:#1b3051;
+ font-size:.9em;
+ font-weight:500;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+}
+nav a:visited {
+ color:white
+}
+nav a:focus {
+ color:#1b3051
+}
+nav a:hover {
+ color:#1EB568
+}
+nav a:active {
+ color:#266BA8
+}
+#c-journal-footer {
+  /*! border-bottom: 1px solid #ccc; */
+  /*! border-top:1px solid #ccc; */
+  padding: 24px 0;
+  background: linear-gradient(#fcfcfc,#fcfcfc);
+  background: #fff;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #f4f4f4, #ffffff);
+  background-image: -moz-linear-gradient(top, #f4f4f4, #ffffff);
+  background-image: -ms-linear-gradient(top, #f4f4f4, #ffffff);
+  background-image: -o-linear-gradient(top, #f4f4f4, #ffffff);
+  background-image: linear-gradient(top, #f4f4f4, #ffffff);
+}
+#c-journal-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  padding: 0 7%;
+}
+#c-journal-footer__summary {
+  display: flow-root;
+  font-style: normal;
+}
+#c-journal-footer__title {
+  font-size: inherit;
+  margin-bottom: get-spacing(xs);
+  display: flex;
+  font-style: normal;
+}
+#c-journal-footer-logo figure img {
+ width:auto;
+ height:45px;
+ float: left;
+ margin-right: 2%;
+  font-size: 23px;
+font-family: 'Trebuchet MS',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+.c-journal-footer__title-text {
+  margin-top: inherit;
+  font-size:21px;
+  font-family: 'Europa',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  padding: 0;
+  color: #1b3051;
+  font-family: "Bliss Pro","Daytona W01 Regular";
+}
+.c-journal-footer__issn {
+  font-size: inherit;
+  padding-top: 2.23em;
+  display: grid;
+  font-family: "Bliss Pro","Daytona W01 Regular";
+}
+#c-journal-footer__contact {
+  font-family:inherit;
+  /*! width: 40%; */
+}
+.c-journal-footer__contact-title {
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 1.04em;
+  color: #333;
+  font-family: Bliss Pro,"Daytona W01 Regular";
+}
+ul.editorialTeam {
+  list-style:none;
+  padding-left: 0;
+  font-size: initial;
+  line-height: 1.7em; 
+}
+ul.c-journal-footer__contact-list {
+  list-style:none;
+  /*! padding-left: 0; */
+  padding-top: 1.27em;
+  padding-bottom: .27em;
+  font-size: initial;
+  line-height: initial;
+  font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+}
+li.c-journal-footer__contact-item {
+  line-height: 1.5em;
+  font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+  font-size: 1.04em;
+  font-weight: 400;
+  font-family: "Bliss Pro","Daytona W01 Regular";
+}
+
+#pageFooter a {
+ color:#333;
+ font-size:inherit;
+ line-height:1.5rem;
+ font-weight:400;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ text-decoration: underline;
+}
+#pageFooter a:visited {
+ color:#333;
+ text-align:left;
+ text-decoration:none
+}
+#pageFooter a:focus {
+ color:#333;
+ text-align:left;
+ font-weight:400;
+ text-decoration:none
+}
+#pageFooter a:hover {
+ color:#333;
+ text-decoration: none;
+}
+#pageFooter a:active {
+ color:#333;
+}
+input.defaultButton, input.defaultButton:link {
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+.button,.toggleExtras-inactive,.toggleExtras-active,#setup .options,.options a {
+ color:#fff;
+ font-size: .87em;
+}
+.button:visited,.toggleExtras-inactive:visited,.toggleExtras-active:visited,#setup .options:visited,.options a:visited {
+ color:#fff
+}
+.button:focus,.toggleExtras-inactive:focus,.toggleExtras-active:focus,#setup .options:focus,.options a:focus {
+ color:#333
+}
+.button:hover,.toggleExtras-inactive:hover,.toggleExtras-active:hover,#setup .options:hover,.options a:hover {
+ color:#fff
+}
+.button:active,.toggleExtras-inactive:active,.toggleExtras-active:active,#setup .options:active,.options a:active {
+ color:#FF6C3E
+}
+a .action {
+ color:red;
+}
+.action {
+ color:#0067c5;
+}
+.action:focus {
+  background-color: none;
+}
+
+a.pdf {
+  font-size: initial;
+}
+
+b {
+ color:#333;
+ font-size:inherit;
+ line-height:1.5rem;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-weight:400;
+}
+#userRegister {
+  color: #e4002b;
+}
+input,select,textarea {
+ margin:0 .7985em 0 0;
+ font-size:1em;
+ line-height:1.5em;
+ font-style:normal;
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+ box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.20);
+}
+input,select,textarea {
+ font-size:.87em;
+ line-height:inherit;
+ border:1px solid #ccc;
+ margin-bottom:3px;
+ margin-top:3px;
+ margin-left:0;
+ padding:3px 2px 4px 6px;
+ border-radius:1;
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+}
+textarea {
+  width: 100%;
+  margin-right: 0;
+}
+.popup textarea {
+  font-family: NexusSans,serif;
+}
+select {
+  width: inherit;
+}
+input:focus,select:focus,textarea:focus {
+ border-color:#66afe9!important;
+ box-shadow:0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(102,175,233,.6)!important;
+ outline:0 none!important
+}
+.label {
+ width:auto
+}
+form {
+ padding-top:0em;
+ padding-bottom:0em;
+ /*! margin-bottom:1.5em; */
+}
+#form-manager {
+  margin-bottom:1.5em;
+}
+.popup form {
+  margin: 1em 0;
+  font-family: NexusSans,sans-serif;
+}
+.popup label {
+  font-family: Lora;
+}
+.popup h2 {
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 23px;
+}
+form.pkp_form {
+ margin:initial
+}
+input {
+ /*! padding:2px; */
+}
+.notes {
+  background: #fff2cc;
+  padding: 1em;
+  border: 1px solid #f2f2f2;
+}
+#editors .listing tbody {
+  width: 100%;
+  max-width: 100%;
+}
+#metadata h4 {
+  padding: .27em .7em;
+  background-color: #e6e7e8;
+}
+#metadata .data {
+  margin: 0;
+}
+table {
+ width:100%;
+ margin:.5em 0;
+}
+table tr.heading {
+  background: #f2f2f2;
+  border-top: 2px solid #D1D3D5;
+  border-bottom: none;
+}
+table th,table tr.heading {
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size:.91727em;
+ line-height:1.33333em;
+ /*! background-color:transparent; */
+ border-bottom:2px solid #D1D3D5;
+ text-transform:capitalize;
+ padding:.5em .25em
+}
+table tr {
+ margin:1.5em 0;
+ border: 1px solid #ccc;
+}
+table td {
+ vertical-align:top;
+ /*! padding-bottom:.5em; */
+ /*! margin-bottom:1em; */
+ /*padding-top:1em*/
+ font-size: initial;
+}
+.table-borders tr {
+ border-bottom:1px solid #D1D3D5
+}
+.menu {
+ margin:0;
+ padding:0;
+ margin:0;
+ padding:0;
+ border:0;
+ *zoom:1;
+ overflow:auto
+}
+.menu li {
+ list-style-image:none;
+ list-style-type:none;
+ margin-left:0;
+ white-space:nowrap;
+ float:left;
+ padding-right:1em;
+ border-right:1px solid #ccc;
+ margin-right: 1em;
+ color: #333;
+}
+.menu li:first-child {
+ padding-left:0
+}
+.menu li:last-child {
+ padding-right:0
+}
+.menu li.last {
+ padding-right:0
+}
+.menu li:last-child {
+ border-right:none
+}
+#articleInfoList li {
+  /*! margin-top:1em; */
+}
+#articleInfoList,#listwear .tocMenuArticle {
+ margin:0;
+ /*! padding:0; */
+ /*! border:0; */
+ /*! overflow:auto; */
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size:.9rem;
+ line-height: 1.5em;
+}
+.tocMenuArticle {
+ padding:0;
+ margin:0;
+ border:0;
+ overflow:auto
+}
+.tocMenuArticle li {
+ list-style-image:none;
+ list-style-type:none;
+ margin-left:0;
+ white-space:nowrap;
+ float:left;
+ margin-right:.69em;
+ padding-right:.69em;
+ border-right:1.5px solid #666;
+ /*! letter-spacing:.009em; */
+}
+.tocMenuArticle li:first-child {
+ padding-left:0
+}
+.tocMenuArticle li:last-child {
+ padding-right:0
+}
+.tocMenuArticle li.last {
+ padding-right:0
+}
+.tocMenuArticle li:last-child {
+ border-right:none
+}
+.info {
+ /*! margin:.5em 0; */
+ padding:0;
+ border:0;
+ overflow:auto;
+ line-height: 1.7em;
+}
+.info li {
+ list-style-image:none;
+ list-style-type:none;
+ white-space:nowrap;
+ float:left;
+ margin-right:.69em;
+ padding-right:.69em;
+ border-right:1px solid #ccc;
+ letter-spacing:.009em
+}
+.info li:first-child {
+ padding-left:0
+}
+.info li:last-child {
+ padding-right:0
+}
+.info li.last {
+ padding-right:0
+}
+.info li:last-child {
+ border-right:none
+}
+.callout {
+ font-size:1.125em;
+ line-height:1.33333em;
+ font-weight:600
+}
+.article-content li {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  line-height: 1.5;
+  font-size: 1.04em;
+}
+.block {
+ padding-top:0em;
+ padding-bottom:0em;
+ margin-bottom:.7em;
+ height:100%;
+ clear:both;
+ display:block;
+ font-weight:400;
+ /*! font-family:Roboto,serif; */
+}
+.block .reviewer td {
+  font-size: 1.27em;
+  padding: .25em .7em;
+}
+.inline-block {
+ display:inline-block;
+ margin-top:1.5em;
+ padding-top:0em;
+ padding-bottom:0em;
+ margin-bottom:1.4em;
+ font-style:normal;
+ font-size:1em;
+ margin-bottom:24px
+}
+._fulltextButton a, ._largeButton a {
+    text-decoration: none;
+    font-size: .94em;
+}
+._largeButton a {
+ color:#fff;
+ display:block;
+ padding:.7em;
+ box-shadow:0 0 5px #333;
+ border-radius:3px;
+ text-align:center;
+ background:#1b3051 linear-gradient(to bottom,#1b3051,#182b49);
+ line-height:1.2em;
+ letter-spacing:0;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-weight:normal;
+ transition:background .2s ease;
+ width:auto;
+}
+._largeButton a:hover, ._largeButton a:focus, ._largeButton a:visited {
+ background: #0195f6 linear-gradient(to bottom,#0195f6,#0186dd);
+}
+.c-button--primary, .c-button--primary a, .c-button--secondary {
+  box-shadow: none;
+  border: 1px solid #b6b6b6;
+  border: none;
+  margin-top: 1em;
+}
+.c-button--secondary a {
+
+    background: #f2f2f2 -webkit-gradient(linear,left top,left bottom,from(#f2f2f2),to(#dadada));
+    background: #f2f2f2 linear-gradient(to bottom,#f2f2f2,#dadada);
+    border: 1px solid #b6b6b6;
+    color: #333;
+    box-shadow: none;
+}
+.c-button--secondary a:hover, .c-button--secondary a:focus, .c-button--secondary a:visited {
+  background: #f2f2f2 linear-gradient(to bottom,#fcfcfc,#f2f2f2);
+  box-shadow: none;
+}
+.headseparator {
+ display:none
+}
+.tocArticle .TOC {
+ border-bottom:2px solid #e6e6e6;
+ padding:1em 0 0 0;
+ line-height:1.4;
+ margin-top:1.5em;
+}
+.TOC:nth-child(odd) {
+ border-bottom:2px solid #e6e6e6;
+ line-height:1.4;
+ margin-bottom:inherit;
+ /*! background-color: #e6e6e6; */
+}
+.TOC:last-child {
+  border-bottom: none;
+}
+.pseudoHeading {
+ font-size:1.25em;
+ line-height:1.2em;
+ padding:.5em 0 .25em;
+ font-size: initial;
+}
+#announcementList .announcements p {
+  margin-top: 0;
+}
+.announcements tr, #sectionPolicies table tr, #sidebar table tr {
+  border: none;
+}
+.pseudoMenu,#sidebar .block,#sidebarUser {
+ margin-top:0em;
+}
+.pseudoMenu ul {
+  border-bottom: 1px solid #ccc;
+}
+.pseudoMenu ul li {
+  padding: .27em;
+  border: 1px solid #fcfcfc;
+}
+.pseudoMenu ul li a {
+  padding: 0 .27em;
+  /*! border-left: 4px solid #ccc; */
+  /*! margin: .7em 0; */
+}
+.pseudoMenu ul li:hover {
+  background-color: #ccc;
+}
+#sidebarKeywordCloud span {
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+}
+ol.key--cloud {
+    padding-left: 0;
+    line-height: 1.5;
+    margin: 9px 0;
+}
+.key--cloud a:hover {
+    text-decoration: none;
+}
+.key--cloud span {
+    font-size: .9em;
+    background: #d7df23;
+    padding: 3%;
+    color: #202020;
+    border-radius: 3px;
+}
+.key--cloud span:hover {
+    background: #abb319;
+    color: #fff;
+}
+.block ul .keyLink--cloud span {
+    list-style-type: none;
+}
+ul .keyLink--cloud {
+    padding-left: 0;
+    list-style-type: none;
+}
+.sidemenu, .custom a, .custom p {
+  font-size: .9em;
+}
+.label {
+ font-weight:600
+}
+.separator {
+ display:none
+}
+.sort {
+ border-bottom:1px solid
+}
+.sort form {
+ padding:.25em;
+ margin:.25em 0
+}
+.heading,#setup .pkp_controllers_grid table th,#setup .pkp_controllers_grid table tr.heading {
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size:1.125em;
+ line-height:1.33333em;
+ background-color:#dee0e1;
+ padding:.25em
+}
+.heading td:last-child,#setup .pkp_controllers_grid table th td:last-child,#setup .pkp_controllers_grid table tr.heading td:last-child {
+ text-align:center;
+}
+.selectMenu {
+ font-size:.875em;
+ line-height:1.71429em
+}
+nav {
+ width:100%;
+ background-color:#1b3051;
+ overflow:auto
+}
+#mobileNav {
+ display:none
+}
+#navbar {
+ max-width:1244px;
+ margin-left:auto;
+ margin-right:auto;
+ padding:5px 10px;
+ display:block;
+ font-size:.76rem;
+ font-weight:600;
+ letter-spacing:0em
+}
+#navbar:after {
+ content:" ";
+ display:block;
+ clear:both
+}
+ul.navMenu {
+ float:left;
+ margin-right:0%;
+ font-family:Roboto,sans-serif;
+ font-weight:700;
+ letter-spacing:0em;
+ text-transform:none;
+ transform:translateY(1px)
+}
+ul.navMenu li {
+ border-right:1px solid #1b3051;
+ font-family:Roboto,sans-serif;
+ font-weight:500;
+ letter-spacing:0em
+}
+ul.navMenu li:last-child {
+ border:none
+}
+.menu li a:focus {
+ color:#e9711c
+}
+.menu li a:hover {
+ color:#e9711c
+}
+#searchbar {
+ width:25%;
+ float:right;
+ margin-right:0;
+ text-align:right;
+ font-style:unset
+}
+#searchbar form {
+ margin:0;
+}
+#searchbar form input {
+ padding:2px 6px;
+ /*! margin:0; */
+ font-family:var(--font-family-sans),var(--font-family-sans-fallback);
+ font-weight:400;
+}
+#breadcrumb {
+ font-size:.904em;
+ line-height:1.71429em;
+ border-bottom:0em;
+ margin-left:auto;
+ font-family: NexusSans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+ color: currentColor;
+}
+#header {
+ margin-top:0em;
+ padding-top:0em;
+ padding-bottom:0em;
+ /*! margin-bottom:-2.4em; */
+ min-height:10px;
+ text-align:left;
+ max-width:1440px;
+ /*! border-bottom:30px solid #dcdcdc; */
+ /*! border-top:4px solid #e9711c; */
+ font-family:Roboto,sans-serif
+}
+#header h1,#header img {
+ vertical-align:top;
+ display:inline-block;
+ margin-left:auto;
+ margin:1.2%;
+ margin-left:4.5%;
+ font-weight:600;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ line-height:.987em
+}
+#headerTitle {
+ padding:0em;
+ max-width:1440px;
+ color:#1b3051;
+ font-weight:700;
+ line-height:1.32789em;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+}
+#headerTitle figure {
+ max-width:1440px;
+ margin:0%;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+}
+#headerTitle figure img {
+ width:100%;
+ height:auto
+}
+#headerTitle a {
+ color:#1b3051
+}
+#headerTitle a:hover,a:focus {
+ text-decoration:underline
+}
+#sidebar {
+ height:100%;
+}
+#sidebar #submit-button {
+ color:#fff;
+ display:block;
+ padding:.9em;
+ box-shadow:0 0 5px #333;
+ border-radius:3px;
+ text-align:center;
+ background:#1b3051 linear-gradient(to bottom,#dcdcdc,#dcdcdc);
+ line-height:1.2em;
+ letter-spacing:0;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-weight:600;
+ transition:background .2s ease;
+ width:auto;
+ font-size:1.09em
+}
+#sidebar form {
+ margin:0
+}
+#sidebar .block .articleToolItem a {
+ display:inline-block;
+ vertical-align:top;
+ font-size: inherit;
+}
+#sidebar .block h3 {
+ font-weight:400
+}
+#leftSidebar {
+ width:15%;
+ float:left;
+ font-size:.83em;
+ line-height:1.5em;
+ display:inherit;
+ margin-top:0;
+ font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+ /*! padding-top: .5em; */
+}
+#rightSidebar {
+ width:17%;
+ float:right;
+ margin-right:0%;
+ font-size:.83em;
+ line-height:1.5em;
+ margin-top:0;
+ /*! padding-top: .5em; */
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+}
+#customblock-CrossRef-Member img {
+  width: 100%;
+}
+.blockTitle,#sidebar .block h3 {
+ font-family:serif;
+ font-size:18px;
+ line-height:1.5em;
+ display:block;
+ padding:0;
+ margin-bottom:.5em;
+ font-weight:500;
+ border-bottom:2px solid #ebebeb;
+ font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ padding-top: .5em;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+}
+.blockSubtitle {
+ font-size:1.125em;
+ line-height:1.33333em;
+ display:block;
+ border-bottom:1px double #D1D3D5
+}
+#sidebarFontSize {
+ display:none
+}
+#sidebarRTAuthorBios .authorBio {
+ padding:0em 0;
+ border-bottom:1px solid #D1D3D5
+}
+.authorBio p {
+ padding:0 0 .25em 0
+}
+#main {
+ width:65%;
+ float:left;
+ /*! margin-right:2.5%; */
+ /*! margin-left:2.5%; */
+ box-sizing:inherit
+}
+#main img {
+ /*! max-width:100%; */
+ /*! height:auto; */
+ /*! margin-top:4px; */
+ /*! margin-bottom:0 */
+}
+#tocCoverImage img {
+ display:none
+}
+.details td {
+ margin-bottom:1.5em;
+ border-bottom:1px solid #D1D3D5
+}
+#pageFooter {
+ clear:both;
+ text-align:left;
+ border-top-width:.0625em;
+ border-top-style:solid;
+ /*! background:#f2f2f2 linear-gradient(#f2f2f2,#d9d9d9); */
+ /*! border-top:3px solid #ff0066; */
+ padding:.7% 7%;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-weight:400;
+ font-size:.897rem;
+ color:#505050;
+ border-bottom: 7px solid #f06;
+ border-bottom: 7px solid #d83b5b;
+}
+#pageFooter #social {
+ font-size:2.25em;
+ line-height:1.33333em;
+ display:inline-block;
+ line-height:1em
+}
+#pageFooter #social ul {
+ margin:0;
+ padding:0;
+ border:0;
+ overflow:hidden;
+ *zoom:1
+}
+#pageFooter #social li {
+ padding:0;
+ list-style-image:none;
+ list-style-type:none;
+ margin-left:0;
+ white-space:nowrap;
+ float:left;
+ padding-left:4px;
+ padding-right:4px
+}
+#pageFooter #social li:first-child {
+ padding-left:0
+}
+#pageFooter #social li:last-child {
+ padding-right:0
+}
+#pageFooter #social li.last {
+ padding-right:0
+}
+#pageFooter #social li i {
+ padding-right:5px
+}
+#standardFooter {
+ font-weight:400;
+ font-size:.95rem;
+ text-align:left;
+ max-width:1440px;
+ overflow:auto;
+ line-height:1rem;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+#standardFooter img {
+  height: auto;
+}
+#standardFooter a img {
+ max-width:350px;
+ align-content:right
+}
+#standardFooter p {
+  font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: .95em;
+  color: #333;
+}
+#results table {
+ margin-top:1.5em;
+ padding-top:0em;
+ padding-bottom:0em;
+ margin-bottom:1.5em
+}
+#results table thead th,#results table thead tr.heading {
+ border-bottom:1px solid #87908F
+}
+#results table tfoot th,#results table tfoot tr.heading,#results table tfoot td {
+ border-top:1px solid #87908F
+}
+#results table th:first-child,#results table tr.heading:first-child {
+ border-right:1px solid #87908F
+}
+#results table th:first-child,#results table tr.heading:first-child {
+ border-right:none
+}
+#results table tr:nth-child(odd) {
+ border-bottom:1px solid #D1D3D5
+}
+#issues .list {
+ padding:.1em 0;
+}
+#issues .list .issueCoverImage {
+ display:inline-block;
+ max-width:30%
+}
+#issues .list .issueCoverImage img {
+ width:100%;
+ border:1px solid #D1D3D5
+}
+#issues .list .issueDescriptionImage {
+ padding:.5em;
+ vertical-align:top;
+ display:inline-block;
+ max-width:69%
+}
+#issues .list h4:before {
+ content:initial
+}
+a.file {
+ background-color:transparent;
+ padding:0em;
+ fill:12em
+}
+.tocArticleGalleysPages,.tocGalleys {
+ display:none;
+ text-align:end;
+ vertical-align:bottom
+}
+.tocPages,.tocAuthors {
+ font-weight:600;
+ font-size:.89rem;
+ font-family:"Europa",'Trebuchet MS',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ line-height:1.2727rem;
+ font-family: var(--font-family-sans),var(--font-family-sans-fallback);
+}
+.tocCoverImage a.file {
+ padding:0;
+ border:none
+}
+.altmetric-embed {
+ display:inline-block;
+ padding-top:0em;
+ padding-bottom:0em;
+}
+.right {
+ float:right
+}
+#journalLogo {
+ float:left;
+ min-width:60px;
+ vertical-align:top
+}
+#journalLogo img {
+ width:80px;
+ height:100px
+}
+#TitlesJournal {
+ padding:0;
+ margin-bottom:0;
+ margin-top:0
+}
+#JournalName {
+ line-height:30px;
+ font-size:1.29rem;
+ text-align:center;
+ font-family:Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ font-weight:400;
+ /*padding:0 2px;*/
+ vertical-align:middle
+}
+#JournalName a {
+ color:#505050
+}
+#InfoVolIssue {
+ text-align:center;
+ font-size:.9rem;
+ vertical-align:middle;
+ margin:0 8px
+}
+#articleCoverImage {
+ max-width:110%;
+ float:right;
+ vertical-align:top
+}
+#articleCoverImage img {
+ height:100px;
+ width:110%
+}
+#articleType {
+ color:#e9711c;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size: .9rem;
+}
+#articleTypeTop {
+ border-bottom:1px solid #ccc
+}
+#articleTitle {
+ float:left;
+ width:100%;
+ line-height:28px;
+ font-family:Roboto,sans-serif;
+ font-weight:700;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ margin-bottom:-.07em;
+ margin-top: .7em;
+}
+#articleTitle h3 {
+ background-color:initial;
+ margin-top:0;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size:23px;
+ color:#505050;
+ font-weight:700;
+ line-height:28px;
+ font-family:Roboto,sans-serif
+}
+#author {
+ font-weight:700;
+ font-size:13px;
+ color:#737373;
+ line-height: 110%;
+}
+#icon,.icon-person {
+ height:9px;
+ width:10px;
+ /*! fill:currentColor */
+}
+.author-group .icon {
+ height:12px;
+ width:12px;
+ fill:#505050
+}
+#affiliation {
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size:1em;
+ font-weight:400;
+ line-height:1.5em;
+ margin-top:0;
+}
+#affiliationid {
+ font-size:.8rem;
+ font-weight:400;
+ line-height:1.5em;
+ margin-top:1.5em;
+ margin-bottom:1.5em;
+ color:#737373;
+ font-family:Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif
+}
+#affiliationid dt {
+ clear:left;
+ float:left;
+ width:2.3em;
+ text-align:right
+}
+#affiliationid dd {
+ margin-left:3em
+}
+#ContextInformationJournalTitles {
+ font-size:.85rem;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+}
+#TitlesJournal {
+ font-size:.8rem
+}
+#DOI {
+ font-size:.85em;
+ font-weight:400;
+ color:#333;
+ font-family:Roboto,sans-serif;
+ font-family:Europa,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+}
+.pubDOI,#DOI li {
+ color:#505050;
+ font-family:Europa,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size:.845rem;
+ font-family:Roboto,sans-serif
+}
+.pubDOI li a {
+  color: #0067c5;
+  text-decoration: underline;
+}
+.pubDOI:hover,.pubDOI:focus {
+ text-decoration:none;
+ color: #505050;
+}
+.pubDOI:visited {
+ color:#0067c5;
+ text-decoration:none
+}
+.pubDOI:focus {
+ color:#e9711c
+}
+.pubDOI:hover {
+ color: currentColor;
+}
+.pubDOI:active {
+ color:#505050
+}
+#articleMetric,#articleInfo,#articleLicense {
+ font-size:.845rem;
+ font-family:Roboto,sans-serif;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ color:#333;
+ line-height:140%;
+}
+#articleMetric .articleInfo {
+  padding: 0 0 1em;
+}
+.article #content {
+ margin-top:.5em;
+ padding-bottom:0em;
+ margin-bottom:inherit;
+ font-size:medium
+}
+.article #main h3 {
+ background-color:initial;
+ padding-left:0;
+ padding-bottom:.7em;
+ font-weight:700;
+ font-family:Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif
+}
+.list {
+ /*border-bottom:1px solid #D1D3D5;*/
+ padding-top:.27em;
+ padding-bottom:.27em;
+}
+.list li {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-size: 1.04rem;
+}
+.list h4:before {
+ content:'\00BB';
+ padding-right:5px
+}
+h3.issue {
+ background:none;
+ margin-top:0;
+ font-weight:500;
+ font-size:1.27em;
+ padding: .69em 0 .5em;
+ border-bottom: 1px solid #ccc;
+}
+#content {
+  margin-top: 0;
+}
+#accessKey {
+  font-family: 
+josefin-sans, Josefin Slab, sans-serif; 
+  padding-top: .89em;
+  font-size: .89em;
+  font-weight: 400;
+}
+#content #pdfDownloadLinkContainer {
+ padding-bottom:.5em;
+ border-bottom: 1px solid #ccc;
+ margin-bottom: .7em;
+ text-align: left;
+}
+#content a.pdf {
+  font-size: inherit;
+}
+#pdfObject,#pdfCanvasContainer iframe {
+ width:100%;
+ min-height:700px!important
+}
+.sectionBlock {
+ margin-top:1.5em;
+ padding-top:0em;
+ padding-bottom:0em;
+ margin-bottom:1.5em
+}
+#selectSections select {
+ width:50%
+}
+table.alt-color tbody tr:nth-child(even) {
+ background-color:#e6e7e8
+}
+table.alt-color-odd tbody tr:nth-child(odd) {
+ background-color:#e6e7e8
+}
+table.info {
+ margin-top:1.5em;
+ padding-top:0em;
+ padding-bottom:0em;
+ margin-bottom:1.5em
+}
+table.info th,table.info tr.heading {
+ text-align:center;
+ font-weight:700
+}
+table.info td,table.info th,table.info tr.heading {
+ padding:2px
+}
+table.info td.numeric,table.info th.numeric,table.info tr.numeric.heading {
+ text-align:right
+}
+.tableHeading {
+  background: #f2f2f2;
+  border-top: 2px solid #D1D3D5;
+}
+table.info .tableHeading {
+ font-family:Lato;
+ font-size:1.125em;
+ line-height:1.33333em;
+ /*background-color:transparent*/
+}
+table.info a {
+ display:contents;
+}
+table.info tr {
+ border-bottom:1px solid #D1D3D5;
+}
+table.info tr:last-child {
+ border-bottom:none
+}
+table.info td:first-child {
+ text-align:left
+}
+table.info td {
+ text-align:center
+}
+table.listing .heading a,#setup .pkp_controllers_grid table.listing th a,#setup .pkp_controllers_grid table.listing tr.heading a {
+ color:#000
+}
+table.listing tr {
+ border-bottom:1px solid #D1D3D5;
+ border-left: none;
+ border-right: none;
+}
+table.listing tr:last-child {
+ border-bottom:none
+}
+table.listing td {
+ text-align:left;
+ line-height: 1.27;
+ padding: .27em;
+}
+.actionRole {
+  float: right;
+}
+table.listing .heading td {
+  padding: .41em;
+}
+table.settings {
+ margin-top:1.5em;
+ padding-top:0em;
+ padding-bottom:0em;
+ margin-bottom:1.5em;
+ border:1px solid #D1D3D5
+}
+table.settings thead th,table.settings thead tr.heading {
+ border-bottom:1px solid #D1D3D5
+}
+table.settings tfoot th,table.settings tfoot tr.heading,table.settings tfoot td {
+ border-top:1px solid #D1D3D5
+}
+table.settings th:first-child,table.settings tr.heading:first-child {
+ border-right:1px solid #D1D3D5
+}
+table.settings td.label {
+ vertical-align:middle
+}
+table.checklist td {
+ vertical-align:middle
+}
+table.email tr:nth-child(odd) {
+ background-color:#e6e7e8
+}
+table.listing span.instruct {
+ margin:0
+}
+table.nested {
+ font-size:.875em;
+ line-height:1.71429em
+}
+table.single {
+ border-top:2px solid #D1D3D5;
+ border-bottom:2px solid #D1D3D5
+}
+#profile table tr {
+ border-bottom:1px solid #D1D3D5
+}
+#systemConfiguration h4 {
+ text-transform:capitalize;
+ margin-top:1em;
+ padding:.25em;
+ background-color:#ececed
+}
+#systemConfiguration table tr {
+ border-bottom:1px solid #D1D3D5
+}
+.highlightReviewerNotNotified,.highlightCopyediting {
+ background-color:#EDEBC4;
+}
+.highlightReviewerNotNotified:before,.highlightCopyediting:before {
+ content:"\00b9";
+ padding:0 4px
+}
+.highlightNoDecision {
+ background-color:#07355E;
+ color:white
+}
+.highlightNoDecision:before {
+ content:"\00b2";
+ padding:0 4px
+}
+.highlightReviewerConfirmationOverdue {
+ background-color:#FF6C3E
+}
+.highlightReviewerConfirmationOverdue:before {
+ content:"\2020";
+ padding:0 4px
+}
+.highlightRevisedCopyUploaded,.highlightLayoutEditing {
+ background-color:#D8E9BD;
+}
+.highlightRevisedCopyUploaded:before,.highlightLayoutEditing:before {
+ content:"\2666";
+ padding:0 4px
+}
+.highlightReviewerCompletionOverdue,.higlightProofreading {
+ background-color:#C6EBE4;
+ /*! color:white */
+}
+.highlightReviewerCompletionOverdue:before,.higlightProofreading:before {
+ content:"\25CA";
+ padding:0 4px
+}
+.highlightCopyediting a,.highlightLayoutEditing a,.highlightNoDecision a,.highlightReviewerCompletionOverdue a,.highlightRevisedCopyUploaded a,.highlightReviewerConfirmationOverdue a,.highlightReviewerNotNotified a,.higlightProofreading a {
+ background-color:initial;
+ border-color:initial
+}
+#notes ul {
+ padding:0
+}
+#notes ul li {
+ padding:.5em;
+ list-style-type:none
+}
+span.instruct {
+ display:block;
+ margin:.5em 0
+}
+#assignBlocksToSidebars {
+ border:1px solid #D1D3D5
+}
+#assignBlocksToSidebars .heading,#assignBlocksToSidebars #setup .pkp_controllers_grid table th,#setup .pkp_controllers_grid table #assignBlocksToSidebars th,#assignBlocksToSidebars #setup .pkp_controllers_grid table tr.heading,#setup .pkp_controllers_grid table #assignBlocksToSidebars tr.heading {
+ text-align:center;
+ border:1px solid #87908F
+}
+#assignBlocksToSidebars input {
+ padding:2px 0
+}
+#assignBlocksToSidebars td.centerButton {
+ vertical-align:middle!important
+}
+#setup .options {
+ margin-top:2em
+}
+#setup .pkp_controllers_grid table {
+ margin-top:1.5em;
+ padding-top:0em;
+ padding-bottom:0em;
+ margin-bottom:1.5em;
+ border:1px solid #87908F
+}
+#setup .pkp_controllers_grid table th,#setup .pkp_controllers_grid table tr.heading,#setup .pkp_controllers_grid table td {
+ border-right:1px solid #D1D3D5;
+ border-bottom:1px solid #D1D3D5;
+ border-left-width:0;
+ border-top-width:0
+}
+#setup .pkp_controllers_grid table th:last-child,#setup .pkp_controllers_grid table tr.heading:last-child,#setup .pkp_controllers_grid table td:last-child {
+ border-right-width:0
+}
+#setup .pkp_controllers_grid table th.last,#setup .pkp_controllers_grid table tr.last.heading,#setup .pkp_controllers_grid table td.last {
+ border-right-width:0
+}
+#setup .pkp_controllers_grid table tbody tr:last-child th,#setup .pkp_controllers_grid table tbody tr:last-child tr.heading,#setup .pkp_controllers_grid table tbody tr:last-child td,#setup .pkp_controllers_grid table tfoot tr:last-child th,#setup .pkp_controllers_grid table tfoot tr:last-child tr.heading,#setup .pkp_controllers_grid table tfoot tr:last-child td {
+ border-bottom-width:0
+}
+#setup .pkp_controllers_grid table tbody tr.last th,#setup .pkp_controllers_grid table tbody tr.last tr.heading,#setup .pkp_controllers_grid table tbody tr.last td,#setup .pkp_controllers_grid table tfoot tr.last th,#setup .pkp_controllers_grid table tfoot tr.last tr.heading,#setup .pkp_controllers_grid table tfoot tr.last td {
+ border-bottom-width:0
+}
+#setup .pkp_controllers_grid table thead th,#setup .pkp_controllers_grid table thead tr.heading {
+ border-bottom:1px solid #87908F
+}
+#setup .pkp_controllers_grid table tfoot th,#setup .pkp_controllers_grid table tfoot tr.heading,#setup .pkp_controllers_grid table tfoot td {
+ border-top:1px solid #87908F
+}
+#setup .pkp_controllers_grid table th:first-child,#setup .pkp_controllers_grid table tr.heading:first-child {
+ border-right:1px solid #87908F
+}
+td form {
+ margin:0
+}
+.refbacks .menu {
+ margin:1em 0
+}
+.endseparator {
+ display:none
+}
+.composite-ui {
+ font-size:.875em;
+ line-height:1.71429em
+}
+.composite-ui div.pane div.help-message {
+ margin:10px;
+ padding:0
+}
+.composite-ui div.two-pane table.pane_header {
+ margin-top:0
+}
+.composite-ui>.ui-tabs ul.main-tabs a {
+ font-size:1.25em
+}
+.pkp_controllers_grid h3 {
+ background-color:initial
+}
+.steplist {
+ padding:0
+}
+.steplist li {
+ list-style-type:none
+}
+.pseudoMenu .current,#sidebar .block .current,#sidebarUser .current {
+ color:#0067c5;
+ font-weight:600;
+ fill-opacity:context-fill-opacity
+}
+#plugins a.action {
+ display:inline-block
+}
+#plugins a.action:before {
+ content:initial
+}
+.pluginList ul {
+ padding:0;
+ margin:.5em 0
+}
+.pluginList ul li {
+ list-style-type:none;
+ padding:10px 0 5px 5px;
+ border-bottom:1px solid #D1D3D5
+}
+.pluginList ul li p:before {
+ content:'\00BB';
+ padding-right:5px
+}
+.popup #header {
+ margin:.5em 0;
+ min-height:initial;
+ color:white;
+ text-align:right;
+ font-size:.875em;
+ line-height:1.71429em
+}
+.popup #header #headerTitle {
+ padding:0
+}
+.popup #body {
+ width:auto;
+ padding:2em 5.7%;
+ /*! margin-top:0; */
+ margin-left: 10%;
+ margin-right: 10%;
+}
+.popup #main {
+ width:100%
+}
+.popup #main h3 {
+ background-color:initial;
+ font-weight:400;
+ padding:10px 0;
+ font-family: Lora;
+ font-size: 25px;
+ margin: 10px 0;
+}
+.popup table {
+ margin-top:0
+}
+.popup pre {
+  line-height: 1.2em;
+  font-family: NexusSans,serif;
+  font-size: 1em !important;
+}
+#articleComments table {
+ border:1px solid #D1D3D5
+}
+#articleComments table thead th,#articleComments table thead tr.heading {
+ border-bottom:1px solid #D1D3D5
+}
+#articleComments table tfoot th,#articleComments table tfoot tr.heading,#articleComments table tfoot td {
+ border-top:1px solid #D1D3D5
+}
+#articleComments table th:first-child,#articleComments table tr.heading:first-child {
+ border-right:1px solid #D1D3D5
+}
+#articleComments table th,#articleComments table tr.heading,#articleComments table td {
+ border-right:1px solid #D1D3D5;
+ border-bottom:1px solid #D1D3D5;
+ border-left-width:0;
+ border-top-width:0
+}
+#articleComments table th:last-child,#articleComments table tr.heading:last-child,#articleComments table td:last-child {
+ border-right-width:0
+}
+#articleComments table th.last,#articleComments table tr.last.heading,#articleComments table td.last {
+ border-right-width:0
+}
+#articleComments table tbody tr:last-child th,#articleComments table tbody tr:last-child tr.heading,#articleComments table tbody tr:last-child td,#articleComments table tfoot tr:last-child th,#articleComments table tfoot tr:last-child tr.heading,#articleComments table tfoot tr:last-child td {
+ border-bottom-width:0
+}
+#articleComments table tbody tr.last th,#articleComments table tbody tr.last tr.heading,#articleComments table tbody tr.last td,#articleComments table tfoot tr.last th,#articleComments table tfoot tr.last tr.heading,#articleComments table tfoot tr.last td {
+ border-bottom-width:0
+}
+#articleComments table .commentNote {
+ font-weight:700
+}
+#articleComments table .comments {
+ margin-top:1.5em;
+ padding-top:0em;
+ padding-bottom:0em;
+ margin-bottom:1.5em
+}
+.commentTitle {
+ font-family:Lato,Trabuchet,sans-serif;
+ text-decoration:underline;
+ font-size:1.0625em;
+ line-height:1.41176em
+}
+.fancyList ul,#signinForm ul {
+ padding:0;
+ margin:.5em 0
+}
+.fancyList ul li,#signinForm ul li {
+ list-style-type:none;
+ padding:10px 0 5px 5px;
+ /*! border-bottom:1px solid #D1D3D5 */
+}
+.fancyList ul li:before, #signinForm ul li:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  content: "\f054";
+  margin-right: .4em;
+  color: currentColor;
+}
+#interests .ui-widget-content.ui-autocomplete-input {
+ width:99%
+}
+.tagit-close .ui-icon.ui-icon-close {
+ display:none
+}
+@media screen and (max-width:1060px) {
+ #fullNav {
+  display:none
+ }
+ 
+ #mobileNav .navicon {
+  display:none
+ }
+ #mobileNav a.navicon {
+  display:inline-block;
+  float:right;
+  height:20px;
+  width:24px;
+  margin:5px;
+  /*! border-top:12px double #FFF; */
+  /*! border-bottom:4px solid #FFF; */
+  font-size:0;
+  text-align:right;
+  margin-right:2%;
+  margin-top:1.1%
+ }
+ #mobileNav .menu {
+  /*! display:none; */
+  float:right;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+  min-width:100%
+ }
+ #journalLogo {
+ float:left;
+ min-width:60px;
+ vertical-align:top
+ }
+ #articleCoverImage {
+  display:block;
+  min-width:60px;
+  float:right
+ }
+ #articleCoverImage img {
+  width:70px;
+  height:100px
+ }
+ #main {
+  width:70%;
+  float:left;
+  margin-right:3%;
+  margin-left:0%;
+  box-sizing:inherit
+ }
+ #rightSidebar {
+  width:27%;
+  float:right;
+  margin-right:0%;
+  font-size:.8em;
+  line-height:1.5em
+ }
+ #leftSidebar {
+  display:none
+ }
+ #mobileNav .menu li {
+  clear:both;
+  display:block;
+  width:100%;
+  text-align:left;
+  text-transform:none;
+  letter-spacing:0em;
+  margin:2px 0;
+  padding:0 0 0 8px;
+  font-family:var(--font-family-sans),var(--font-family-sans-fallback);
+  font-weight:600
+ }
+ #mobileNav .menu li:last-child {
+  border:none
+ }
+ #mobileNav .menu li a {
+  display:block;
+  color:white;
+  font-family:"Asia",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+ }
+ #mobileNav .menu li a:visited {
+  color:white
+ }
+ #mobileNav .menu li a:focus {
+  color:#e9711c
+ }
+ #mobileNav .menu li a:hover {
+  color:#e9711c
+ }
+ #mobileNav .menu li a:active {
+  color:#266BA8
+ }
+ #mobileNav .menu li #searchbar {
+  display:block;
+  width:100%;
+  float:left;
+  text-align:center;
+  font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+ }
+ #header h1,#header img {
+  vertical-align:top;
+  display:inline-block;
+  margin-left:auto;
+  margin:1.2%;
+  margin-left:3%;
+  font-weight:600;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  line-height:1.1727em;
+  padding:.3em 0
+ }
+ #header {
+  margin-top:0;
+  font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+ }
+ #body {
+  padding:0 3%;
+  font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+ }
+ #main img {
+  max-width:-moz-max-content;
+  height:-moz-fit-content
+ }
+ #copyrightBadge img {
+  max-width:30px;
+  display:none
+ }
+}
+@media screen and (max-width:800px) {
+ #main {
+  width:72%;
+  float:left;
+  margin-left:0;
+  margin-right:0;
+  padding-right:0
+ }
+ #main img {
+  max-width:250px;
+  height:auto
+ }
+ #copyrightBadge img {
+  max-width:30px;
+  display:none
+ }
+ #journalLogo img {
+  max-width:-moz-fit-content
+ }
+ #articleCoverImage img {
+  max-width:-moz-fit-content
+ }
+ #leftSidebar {
+  display:none
+ }
+ #rightSidebar {
+  width:25.5%;
+  float:right;
+  margin-left:2.5%;
+  font-size:.8em;
+  line-height:1.5em
+ }
+ #pdfObject,#pdfCanvasContainer iframe {
+  min-height:400px!important
+ }
+ #standardFooter a img {
+  max-width:800px
+ }
+ #issues .list .issueCoverImage,#issues .list .issueDescriptionImage {
+  max-width:100%
+ }
+ #JournalName {
+  line-height:30px;
+  font-size:1.29rem;
+  text-align:center;
+  font-family:Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  font-weight:400;
+  margin:0 8px
+ }
+}
+@media screen and (max-width:600px) {
+ #main {
+  width:100%;
+  float:left;
+  margin-left:0;
+  margin-right:0;
+  padding-right:0
+ }
+ #main img {
+  max-width:250px;
+  height:auto;
+ }
+ #journalLogo img {
+ display: none
+ }
+ #articleCoverImage img {
+  display: none   
+ }
+ #copyrightBadge img {
+  max-width:30px;
+  display:none
+ }
+ #sidebar {
+  display:none
+ }
+ #pdfObject,#pdfCanvasContainer iframe {
+  min-height:400px!important
+ }
+ #standardFooter a img {
+  max-width:250px
+ }
+ #issues .list .issueCoverImage,#issues .list .issueDescriptionImage {
+  max-width:100%
+ }
+}

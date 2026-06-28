@@ -1,0 +1,791 @@
+#header.articleHeader {
+  /*! display: none; */
+  padding: .8em 0;
+}
+#navbarMenu.c-Article--menu  {
+  display: none;
+}
+#leftSidebar.articleView, #rightSidebar.articleView {
+  width: 21%;
+}
+#body\ articleView #sidebar #rightSidebar {
+    width: 19%;
+    margin-left: 0;
+}
+#main.articleMain {
+  margin-top: 0;
+  width: 59%;
+  margin-right: 3%;
+}
+#body\ articleView {
+  margin-top: .69em;
+  padding: 0 5.7%;
+}
+#topBar {
+  margin: 0 0 .5em 0;
+}
+#COSIRELogo {
+ float:left;
+ min-width:60px;
+ vertical-align:top;
+ margin-bottom: .5em;
+}
+#COSIRELogo img {
+ /*! width:80px; */
+ /*! height:100px; */
+ max-height: 88px;
+ width: auto;
+}
+#TitlesJournal {
+ padding:0;
+ margin-bottom:0;
+ margin-top:0
+}
+#JournalName {
+ line-height:30px;
+ font-size:1.28rem;
+ text-align:center;
+ font-family:'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ font-weight:500;
+ padding:0 .230789%;
+ vertical-align:middle;
+}
+#JournalName a {
+ color:#505050;
+ font-size: 24px;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ /*! font-family: NexusSerif,Georgia,serif; */
+}
+#journalLogo {
+ float:inherit;
+ min-width:60px;
+ vertical-align:top
+}
+#coverArticleIssue {
+  margin-bottom: .5em;
+}
+#COSIRELogo img:before, #coverArticleIssue img:before {
+  font-family: NexusSans,Georgia,serif;
+  line-height: 1.4;
+  font-size: initial;
+}
+#coverArticleIssue img {
+ /*! width:72px; */
+ /*! height:95px; */
+ float: right;
+ max-height: 88px;
+ width: auto;
+}
+#InfoVolIssue {
+ text-align:center;
+ font-size:.9rem;
+ vertical-align:middle;
+ margin:0;
+ font-family: 'NexusSans',"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+#InfoVolIssue a {
+  color: #0067c5;
+  font-family: 'NexusSans',"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: 1em;
+}
+#InfoVolIssue a:hover {
+  color: #fd5704;
+}
+#articleCoverImage {
+ max-width:110%;
+ float:right;
+ vertical-align:top
+}
+#articleCoverImage img {
+ height:100px;
+ width:110%
+}
+#accessKey, .articleType {
+  font-size: .69em;
+  margin-top: 0;
+  padding-top: 0;
+  color: orangered;
+}
+#articleType, #articleType li {
+  font-family: NexusSans,serif;
+ color:#fd5704;
+ font-size: .89rem;
+ padding: .12em 0;
+}
+#articleType .openaccess:before {
+ display: inline-block;
+ font: normal normal normal 14px/1 FontAwesome;
+ text-rendering: auto;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ transform: translate(0, 0);
+ content: "\f13e";
+ margin-right: .4em;
+ color: currentColor;
+}
+#crossmark {
+  /*! margin-bottom: 1em; */
+}
+#openaccess h7 {
+ font-size:1em;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ color: #737373;
+ line-height: 1;
+}
+#openaccess h7:before {  
+ display: inline-block;
+ font: normal normal normal 14px/1 FontAwesome;
+ text-rendering: auto;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ transform: translate(0, 0);
+ content: "\f13e";
+ margin-right: .4em;
+ color: currentColor;
+}
+#articleTypeTop {
+ border-bottom:1px solid #ccc
+}
+#articleTitle {
+ float:left;
+ width:100%;
+ line-height:29px;
+ font-family:Roboto,sans-serif;
+ font-weight:500;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ margin: 12px 0;
+}
+#articleTitle h3 {
+ background-color:initial;
+ margin-top:0;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size:23px;
+ color:#505050;
+ font-weight:700;
+ line-height:28px;
+ font-family:Roboto,sans-serif
+}
+#author {
+ font-weight:500;
+ font-size:14.69px;
+ color:#737373;
+ line-height: 140%;
+ font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ color: inherit;
+ font-size: .8969em;
+ /*! margin-bottom: .5em; */
+}
+.authorName a {
+  font-family: josefin-sans, Josefin Slab, sans-serif;
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  color: #016bb2;
+  /*! border-bottom: 1px dashed #ccc; */
+}
+.authorName a:hover {
+  color: #fd5704;
+}
+#icon,.icon-person {
+ height:12px;
+ width:12px;
+ fill:currentColor;
+}
+.author-group .icon {
+ height:12px;
+ width:12px;
+ fill:#505050
+}
+#more {
+  /*! display: none; */
+}
+.show-hide-details {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0;
+    padding: 0;
+    color: #007398;
+    background-color: #fff;
+}
+.u-font-sans {
+    font-family: NexusSans,Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif !important;
+}
+#affiliation {
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size:1em;
+ font-weight:400;
+ line-height:1.5em;
+ margin-top:initial;
+}
+#affiliationid {
+ font-size:.91rem;
+ font-weight:400;
+ line-height:1.2em;
+ margin-top:1.69em;
+ margin-bottom:1.69em;
+ color:#333;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-family: Roboto, sans-serif;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+}
+#affiliationid dt {
+ clear:left;
+ float:left;
+ width:2em;
+ text-align:right;
+ color: #737373;
+ font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-size: 1.069em;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+}
+#affiliationid dd {
+ margin-left:3em;
+ font-family: "Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ font-weight: 300;
+ color: #737373;
+ /*! margin-bottom: .4em; */
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ font-size: .994em;
+ line-height: 1.45;
+}
+#ContextInformationJournalTitles {
+ font-size:.85rem;
+ font-family:"Europa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+}
+#TitlesJournal {
+ font-size:.8rem
+}
+.rightandpermission {
+  margin-top: .51em;
+}
+.articleContent .toggleExtras {
+  margin-bottom: 0;
+}
+#DOI {
+ font-size:.9em;
+ font-weight:400;
+ color:#333;
+ font-family:Europa,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+ line-height: 1.5em;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+}
+.pubDOI,#DOI li {
+ color:#505050;
+ font-family:'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ font-size:.9rem;
+ padding-top: 0;
+ padding-bottom: 0;
+}
+.pubDOI a {
+  color: #417db9;
+}
+.pubDOI li a {
+  color: #0c7dbb;
+  text-decoration: none;
+}
+.pubDOI li a:hover,.pubDOI li a:focus {
+ text-decoration:underline;
+ color: #fd5704;
+}
+.pubDOI:visited {
+ color:#0067c5;
+ text-decoration:none
+}
+.pubDOI:focus {
+ color:#e9711c
+}
+.pubDOI:hover {
+ color: #737373;
+}
+.pubDOI:active {
+ color:#505050
+}
+#permission a {
+  text-decoration: none;
+}
+#permission a:hover {
+  text-decoration: underline;
+}
+#articleMetric,#articleInfo,#articleLicense {
+ font-size:.9rem;
+ font-family:var(--font-family-sans),var(--font-family-sans-fallback);
+ color:#737373;
+ line-height:150%;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+}
+#articleMetric .articleInfo {
+  padding: 0 0 1em;
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  font-size: 14.3px;
+  color: #2e2e2e;
+  line-height: 22px;
+  /*! margin-bottom: .5em; */
+}
+#articleAbstract {
+ line-height:1.6em;
+ padding:1.3em 0;
+ color:#333;
+ padding-bottom: .7em;
+ margin-bottom: 1.5em;
+ padding-top: 0;
+ padding-bottom: 0;
+}
+#articleAbstract h6 {
+  padding-top: .6em;
+  padding-bottom: .6em;
+}
+.abstractId, .subjectId, .SuppFiles, .supplement-files--label {
+ font-size:16.9px;
+ line-height:150%;
+ padding-top:0;
+ font-size: 17.89px;
+ font-family: NexusSerif,Georgia,Palatino,'Lora',Times,'Times New Roman',serif;
+}
+#abstract p {
+  margin-top: 0;
+  font-family: 'Lora',Palatino,Times,'Times New Roman',serif;
+  margin-bottom: 0;
+  font: inherit;
+}
+#articleSubject {
+  margin-bottom: 1.69em;
+}
+#articleSubject .subjectId {
+ margin-top: 0;
+}
+.subjectId--value {
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    margin-bottom: .3em;
+    margin-right: .3em;
+    padding: 0 .2em;
+}
+.subjectId--value {
+    display: inline-block;
+    font-family: var(--font-family-serif),var(--font-family-serif-fallback);
+}
+.subjectId--value::after {
+    content: "";
+}
+#detailArticle {
+  padding-top: 0;
+  margin: 1.69em 0;
+}
+.article #content {
+ margin-top:0;
+ padding-bottom:1em;
+  margin-bottom: 1em;
+ /*! margin-bottom:inherit; */
+ font-size:medium;
+ border-bottom: 1px solid #ccc;
+}
+.article #main h2 {
+    font-weight: 500;
+    word-wrap: break-word;
+    font-family: Source Serif Pro,Georgia,Lora,Gulliver,serif;
+    font-size: 30px;
+    line-height: 1.3;
+    font-family: NexusSerif,Georgia,Lora,Gulliver,serif;
+    font-size: 1.89rem;
+}
+.article #main h3 {
+ /*! background-color:transparent; */
+ /*! padding-left:.9em; */
+ padding-bottom:.6em;
+ font-weight:500;
+  font-style: italic;
+ font-family:Georgia,NexusSerif,'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ padding-top: 3%;
+ font-size: 18px;
+}
+.articleAbstract h6, .subjectId h6, .Suplementary h6, .Declaration h6, .References h6, .copyrightHolder h6, .articleNotes h6, .additionalNotes h6 {
+  margin-top: 0;
+  font-size: 20px;
+  padding: .6em 0;
+  font-size: 24px;
+  font-family: NexusSerif,Georgia,serif;
+}
+#articleFullText {
+  margin-top: 14px;
+  margin-bottom: 16px;
+  margin-left: 5px;
+}
+#articleFullText h6 {
+  margin-top: 6px;
+}
+#articleFullText .file {
+  background-image: url('/public/sites/image/logo-pdf.png');
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  vertical-align: top;
+  margin-left: 2.5%;
+  /*! text-decoration: underline; */
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+}
+#articleFullText a {
+  background-image: url('/public/sites/image/pdf.png');
+  text-decoration: none;
+  color: currentColor;
+  margin-right: 2%;
+}
+#articleFullText:hover,#articleFullText:focus {
+ text-decoration:none;
+ color: #fd5704;
+}
+#articleFullText:visited {
+ color:#fd5704;
+ text-decoration:underline
+}
+#articleFullText:focus {
+ color:#fd5704;
+ text-decoration: underline;
+}
+#articleFullText:hover {
+ color: #fd5704;
+}
+#articleFullText:hover a {
+ text-decoration: underline;
+ color: #fd5704;
+ font-weight: 500;
+}
+#articleFullText:active {
+ color:#505050
+}
+#SuppFiles {
+  margin-bottom: 1.769em;
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  font-size: 17.69px;
+  border-top: 1px solid #ccc;
+  margin-top: 1.69em;
+  padding-top: 1em;
+  /*! margin-bottom: 0; */
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#SuppFiles h6 {
+  padding-top: 0;
+  padding-bottom: .2em;
+  /*! margin-top: 1em; */
+}
+#SuppFiles .SuppFiles {
+  line-height: 1.32;
+  /*! padding-top: 1em; */
+}
+.supplement-files--value {
+  margin-bottom: 1em;
+}
+.supplement-files--value:last-child {
+  margin-bottom: 0;
+}
+h4.supplement-files--label {
+  margin-top: 0;
+  font-size: inherit;
+}
+.supplement-files--label {
+  font-family: var(--font-family-serif),var(--font-family-serif-fallback);
+  line-height: 1.35;
+}
+.strong {
+  font-weight: 700;
+  font-family: inherit;
+}
+.anchor svg.icon:first-child {
+    margin-right: .5rem;
+}
+.anchor svg.icon {
+    fill: currentColor;
+    vertical-align: middle;
+}
+.PdfDownloadButton .pdf-icon {
+    height: 30px;
+    width: 30px;
+}
+.PdfDownloadButton .pdf-icon {
+    height: 20px;
+    width: 20px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+#articleSubject h6 {
+  padding: 0;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: .25em;
+  font-family: NexusSerif,Georgia,serif;
+}
+#References h6 {
+  padding-top: .2em;
+  padding-bottom: .2em;
+  /*! margin-bottom: 1em; */
+  /*! border-bottom: 1px solid #ccc; */
+  padding-bottom: 0;
+}
+#References {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#References .citationId p {
+ font-size:15.69px;
+ line-height:1.37;
+ margin:.1em 0;
+ font-weight:400;
+ color:#333;
+ padding: .5em 0;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  /*! padding-left: 1.69em; */
+ /*! padding-right: .75em; */
+}
+.citationId p {
+  padding-left: 1.5em;
+}
+#References .citationId a {
+  display: inline-block;
+  /*! padding-top: .27em; */
+  /*! padding-right: .69em; */
+  /*! margin-right: .69em; */
+  width: -moz-max-content;
+  max-block-size: -moz-fit-content;
+  text-decoration: underline;
+}
+#References .citationId a:after {
+  content: '';
+  background-image: url(/public/site/images/ext-link.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /*! display: inline-block; */
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+}
+.citationId p a {
+  display: inline-block;
+  /*! border-right: 1px solid #ccc; */
+}
+#References ol, #References li, #References .citationId ol li, .citationId, .citationId li {
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  font-family: var(--font-family-serif),var(--font-family-serif-fallback);
+  font-size: 16.69px;
+  margin-left: 1.069em;
+  line-height: 1.5;
+  padding-bottom: 7.69px;
+  padding-top: 7.69px;
+  padding-left: .369em;
+  list-style: url;
+  margin-bottom: 1rem;
+  margin-left: .69em;
+  font-size: 1.089rem;
+}
+#Declaration h6 {
+  margin-top: 1.27em;
+  margin-bottom: 0;
+  padding-top: 1.5em;
+  padding-bottom: 0;
+  /*! border-bottom: 1px solid #ccc; */
+  /*! padding-bottom: 0; */
+  border-top: 1px solid #ccc;
+}
+#supportingAgencies {
+  line-height: 1.5em;
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  font-size: 17.69px;
+  list-style: none;
+}
+#supportingAgencies h6 {
+  padding-bottom: .5em;
+  font-size: 23px;
+  padding: .29em 1em;
+  font-weight: 500;
+}
+.stateCompeting, .stateAgencies, .statePublisher, .stateCiteAs, .stateDeclaration {
+  line-height: 1.5em;
+  font-family: NexusSerif,Georgia,serif;
+  /*! padding-left: 1em; */
+  font-size: 17px;
+  font-size: 1.089rem;
+}
+#copyright .stateDeclaration {
+  font-size: 16px;
+}
+#copyright {
+ margin-top:1.2em;
+ font-size: 15px;
+ padding-top: 1em;
+}
+#Notes {
+  padding: 0;
+  display: none;
+}
+#Notes .Note__adjacent {
+  padding-bottom: .69em;
+}
+#Notes .Note__adjacent h3 {
+  font-size: 1em;
+  padding: 0;
+}
+#Notes .statteNotes {
+  padding-bottom: .69em;
+}
+#additionalNotes {
+  margin-top: 1.2em;
+  padding-top: 1em;
+}
+#copyright h6 {
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+#Notes h6 {
+  margin-top: 1em;
+  padding: 0;
+  margin-bottom: .2em;
+}
+#additionalNotes h6 {
+  padding-top: 0;
+  padding-bottom: .3em;
+  font-style: italic;
+  border-bottom: 1px solid #ccc;
+}
+#bibliometricts-info {
+  /*! padding-left: 12px; */
+  margin-top: .69em;
+  margin-bottom: 0;
+}
+.bibliographic-information {
+    zoom: 1;
+    letter-spacing: .017em;
+    font-size: 14px;
+    font-size: 1.169rem;
+    line-height: 1.4;
+    position: relative;
+    margin-bottom: 24px;
+}
+.bibliographic-information::after, .bibliographic-information::before {
+  content: "";
+  display: table;
+}
+.crossmark {
+  font-size: initial;
+  margin-bottom: 0;
+}
+.crossmark {
+  float: left;
+  padding-right: 24px;
+  margin-bottom: 16px;
+}
+.statteCrossmark {
+  padding-top: 0;
+  margin-bottom: 1em;
+  padding-left: .69em;
+}
+
+#bibliometricts-info .crossmark__adjacent h3 {
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  padding-left: 0;
+  padding-bottom: .27em;
+  padding-top: 0;
+  font-size: .969em;
+  font-style: normal;
+}
+#bibliometricts-info .crossmark__adjacent {
+  /*! font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif; */
+  font-size: 1.02rem;
+  line-height: 1.3em;
+  /*! padding: 1em; */
+  margin-bottom: 1em;
+}
+.crossmark__adjacent h3 {
+  /*! margin-top: 1em; */
+}
+.crossmark + .crossmark__adjacent {
+    overflow: hidden;
+    border-left: 1px solid #ccc;
+    padding-left: 24px;
+    padding-top: .69em;
+    padding-bottom: 1em;
+}
+.bibliometricts .__dimensions_badge_embed__, .bibliometricts .altmetric-embed {
+  padding-left: .69em;
+}
+.copyrightHolder {
+  font-size: 17px;
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  line-height: 1.5em;
+}
+.stateCopyright {
+  font-size: 16.9px;
+  /*! padding-left: 1em; */
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  font-family: var(--font-family-serif),var(--font-family-serif-fallback);
+}
+#peer-review {
+  margin-left: 1.27em;
+  margin-top: 1em;
+  font-family: NexusSans,NexusSerif,Georgia,serif;
+  font-size: .96em;
+}
+#Declaration {
+  font-size: 16px;
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  line-height: 1.5em;
+  /*! background-color: #f2f2f2; */
+  /*! padding-left: .69em; */
+  /*! padding-right: .69em; */
+  padding-bottom: 1em;
+}
+#CiteAs {
+  /*! border: 1px solid; */
+  /*! padding-bottom: .69em; */
+  padding: 1em;
+  background-color: #fcfcfc;
+}
+.CiteAs {
+  border: 1px solid #ccc;
+  /*! background-color: #f2fcfc; */
+  font-size: 15.69px;
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+  line-height: 1.3em;
+}
+#additionalNotes .CiteAs h3 {
+  padding-bottom: 0;
+  padding-right: 1em;
+  padding-left: .9em;
+  padding-top: 1em;
+  font-size: 1em;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.CiteAs .stateCiteAs {
+  font-size: 14.69px;
+  line-height: 1.2em;
+  /*! padding-bottom: 1em; */
+  padding-right: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+}
+#copyrightBadge {
+ font-size:.98rem;
+ line-height:1.4em;
+ /*! margin-top: -2em; */
+ /*! text-align: right; */
+ display: block;
+ font-family: 'NexusSans',Arial,Helvetica,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,STIXGeneral,Cambria Math,Arial Unicode MS,sans-serif;
+ padding-left: 0;
+}
+#copyrightBadge img {
+ display:none;
+}
+#copyrightBadge a {
+ color:#0067c5;
+}
+#addthis_container {
+ display:block;
+}

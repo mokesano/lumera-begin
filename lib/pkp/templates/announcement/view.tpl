@@ -1,0 +1,27 @@
+{**
+ * view.tpl
+ *
+ * Copyright (c) 2013-2017 Simon Fraser University
+ * Copyright (c) 2000-2016 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * View full announcement text.
+ *
+ *}
+{strip}
+{assign var="pageTitleTranslated" value=$announcementTitle}
+{assign var="pageId" value="announcement.view"}
+{include file="common/header.tpl"}
+{/strip}
+
+<table id="announcementDescription" width="100%">
+	<tr>
+		<td>{$announcement->getLocalizedDescription()|nl2br}</td>
+	</tr>
+	<tr class="details">
+		<td class="posted">{translate key="announcement.posted"}: {$announcement->getDatePosted()|date_format:"%e %B %Y"}</td>
+	</tr>
+</table>
+
+{include file="common/footer.tpl"}
+
